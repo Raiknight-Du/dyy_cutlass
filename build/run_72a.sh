@@ -39,19 +39,6 @@ echo "开始执行 NCU 性能分析任务..."
 for item in "${TEST_LIST[@]}"; do
     IFS=' ' read -r shape_num M N K <<< "$item"
     OUTPUT_FILE="ncu_72a_shape${shape_num}"
-    
-    # === 新增逻辑：检查文件是否已存在 ===
-    if [ -f "${OUTPUT_FILE}.ncu-rep" ]; then
-        echo "跳过 Shape ${shape_num}: 文件 ${OUTPUT_FILE}.ncu-rep 已存在"
-        # 同时记录到日志文件中，保持日志完整性
-        echo "" >> "$LOG_FILE"
-        echo ">>> Shape ${shape_num} SKIPPED <<<" >> "$LOG_FILE"
-        echo "Reason: File ${OUTPUT_FILE}.ncu-rep already exists." >> "$LOG_FILE"
-        echo "Time: $(date '+%Y-%m-%d %H:%M:%S')" >> "$LOG_FILE"
-        continue
-    fi
-    # =====================================
-    
     echo "----------------------------------------"
     echo "Processing Shape ${shape_num}: M=${M}, N=${N}, K=${K}"
     
@@ -64,7 +51,7 @@ for item in "${TEST_LIST[@]}"; do
     echo "----------------------------------------" >> "$LOG_FILE"
     
     # 执行 NCU 命令
-    if ncu -o "$OUTPUT_FILE" -f --set full -c 2 "$VMLINUX_EXE" --m="$M" --n="$N" --k="$K" >> "$LOG_FILE" 2>&1; then
+    if ncu  -f --section SpeedOfLight -c 2 "$VMLINUX_EXE" --m="$M" --n="$N" --k="$K" >> "$LOG_FILE" 2>&1; then
         echo "Success: Shape ${shape_num} completed."
         echo "Status: SUCCESS" >> "$LOG_FILE"
     else

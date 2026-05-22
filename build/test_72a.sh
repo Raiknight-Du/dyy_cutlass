@@ -25,7 +25,7 @@ VMLINUX_EXE="./examples/72_blackwell_narrow_precision_gemm/72a_blackwell_nvfp4_b
 for item in "${TEST_LIST[@]}"; do
     IFS=' ' read -r shape_num M N K <<< "$item"
     echo "Running test: $item" | tee -a "$OUTPUT_FILE"
-    $VMLINUX_EXE --m="$M" --n="$N" --k="$K" | tee -a "$OUTPUT_FILE"
+    $VMLINUX_EXE --m="$M" --n="$N" --k="$K" --iterations=100000 | tee -a "$OUTPUT_FILE"
     echo "" | tee -a "$OUTPUT_FILE"
 done
 

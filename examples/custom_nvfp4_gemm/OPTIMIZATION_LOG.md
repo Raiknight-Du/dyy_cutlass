@@ -3,7 +3,7 @@
 ## Goal
 Optimize custom_nvfp4_gemm to achieve 10% performance improvement across all test cases.
 
-## Test Cases
+### Test Cases
 1. M=8192, N=4096, K=128
 2. M=32768, N=768, K=128
 3. M=16384, N=768, K=128
@@ -17,6 +17,33 @@ Optimize custom_nvfp4_gemm to achieve 10% performance improvement across all tes
 11. M=170100, N=5120, K=5120
 12. M=510300, N=13824, K=5120
 13. M=170100, N=13824, K=5120
+
+### Baseline
+序号   Shape (M×K, N×K)                         Runtime(ms)  Perf(Gflops)   
+-------------------------------------------------------------------------------
+1    M×K: 8192×128, N×K: 4096×128               0.035        2.44450e+05
+2    M×K: 32768×128, N×K: 768×128               0.035        1.83024e+05
+3    M×K: 16384×128, N×K: 768×128               0.023        1.39206e+05
+4    M×K: 32768×128, N×K: 4096×128              0.108        3.17294e+05
+5    M×K: 16384×2048, N×K: 4096×2048            0.141        1.94342e+06
+6    M×K: 8192×2048, N×K: 4096×2048             0.077        1.77846e+06
+7    M×K: 32768×4096, N×K: 768×4096             0.132        1.56750e+06
+8    M×K: 16384×4096, N×K: 768×4096             0.075        1.37714e+06
+9    M×K: 8192×4096, N×K: 768×4096              0.048        1.07307e+06
+10   M×K: 510300×5120, N×K: 5120×5120           10.14        2.63851e+06
+11   M×K: 170100×5120, N×K: 5120×5120           3.43         2.60003e+06
+12   M×K: 510300×5120, N×K: 13824×5120          25.13        2.87454e+06
+13   M×K: 170100×5120, N×K: 13824×5120          8.26         2.91513e+06
+### Instructions
+To compile the target, run the following command inside the `build` directory:
+```bash
+make -j16 custom_nvfp4_gemm
+```
+
+To test the performance, run the following command inside the `build` directory:
+```bash
+bash test_custom_nvfp4_gemm.sh
+```
 
 ## Optimization Strategies
 
