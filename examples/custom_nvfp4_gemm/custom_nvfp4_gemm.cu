@@ -117,12 +117,14 @@ using ArchTag             = cutlass::arch::Sm100;                           // T
 using OperatorClass       = cutlass::arch::OpClassBlockScaledTensorOp;      // Operator class tag
 
 // Kernel Perf config
-using MmaTileShape        = Shape<_128,_256,_128>;                          // MMA's tile size - smaller K for varied problems
-using ClusterShape        = Shape<_2,_2,_1>;                                // Shape of the threadblocks in a cluster
+using MmaTileShapeSmallK   = Shape<_128,_256,_128>;                          // MMA's tile size for small-K problems
+using MmaTileShapeLargeK   = Shape<_128,_128,_256>;                          // MMA's tile size for larger-K problems
+using ClusterShapeSmall    = Shape<_2,_2,_1>;                                // Shape of the threadblocks in a small cluster
+using ClusterShapeBig      = Shape<_1,_4,_1>;                                // Shape of the threadblocks in a big cluster
 
-using CollectiveEpilogue = typename cutlass::epilogue::collective::CollectiveBuilder<
+using CollectiveEpilogueSmallK = typename cutlass::epilogue::collective::CollectiveBuilder<
     ArchTag, OperatorClass,
-    MmaTileShape, ClusterShape,
+    MmaTileShapeSmallK, ClusterShapeSmall,
     cutlass::epilogue::collective::EpilogueTileAuto,
     ElementAccumulator, ElementAccumulator,
     ElementC, LayoutCTag, AlignmentC,
@@ -130,24 +132,53 @@ using CollectiveEpilogue = typename cutlass::epilogue::collective::CollectiveBui
     cutlass::epilogue::collective::EpilogueScheduleAuto                      // Epilogue schedule policy
   >::CollectiveOp;
 
-using CollectiveMainloop = typename cutlass::gemm::collective::CollectiveBuilder<
+using CollectiveMainloopSmallK = typename cutlass::gemm::collective::CollectiveBuilder<
     ArchTag, OperatorClass,
     ElementA, LayoutATag, AlignmentA,
     ElementB, LayoutBTag, AlignmentB,
     ElementAccumulator,
-    MmaTileShape, ClusterShape,
-    cutlass::gemm::collective::StageCountAutoCarveout<static_cast<int>(sizeof(typename CollectiveEpilogue::SharedStorage))>,
+    MmaTileShapeSmallK, ClusterShapeSmall,
+    cutlass::gemm::collective::StageCountAutoCarveout<static_cast<int>(sizeof(typename CollectiveEpilogueSmallK::SharedStorage))>,
     cutlass::gemm::collective::KernelScheduleAuto                             // Kernel schedule policy. Auto or using targeted scheduling policy
   >::CollectiveOp;
 
-using GemmKernel = cutlass::gemm::kernel::GemmUniversal<
+using GemmKernelSmallK = cutlass::gemm::kernel::GemmUniversal<
     Shape<int,int,int,int>,                                                   // Indicates ProblemShape
-    CollectiveMainloop,
-    CollectiveEpilogue,
+    CollectiveMainloopSmallK,
+    CollectiveEpilogueSmallK,
     void>;
 
-using Gemm = cutlass::gemm::device::GemmUniversalAdapter<GemmKernel>;
+using GemmSmallK = cutlass::gemm::device::GemmUniversalAdapter<GemmKernelSmallK>;
 
+using CollectiveEpilogueLargeK = typename cutlass::epilogue::collective::CollectiveBuilder<
+    ArchTag, OperatorClass,
+    MmaTileShapeLargeK, ClusterShapeBig,
+    cutlass::epilogue::collective::EpilogueTileAuto,
+    ElementAccumulator, ElementAccumulator,
+    ElementC, LayoutCTag, AlignmentC,
+    ElementD, LayoutDTag, AlignmentD,
+    cutlass::epilogue::collective::EpilogueScheduleAuto                      // Epilogue schedule policy
+  >::CollectiveOp;
+
+using CollectiveMainloopLargeK = typename cutlass::gemm::collective::CollectiveBuilder<
+    ArchTag, OperatorClass,
+    ElementA, LayoutATag, AlignmentA,
+    ElementB, LayoutBTag, AlignmentB,
+    ElementAccumulator,
+    MmaTileShapeLargeK, ClusterShapeBig,
+    cutlass::gemm::collective::StageCountAutoCarveout<static_cast<int>(sizeof(typename CollectiveEpilogueLargeK::SharedStorage))>,
+    cutlass::gemm::collective::KernelScheduleAuto                             // Kernel schedule policy. Auto or using targeted scheduling policy
+  >::CollectiveOp;
+
+using GemmKernelLargeK = cutlass::gemm::kernel::GemmUniversal<
+    Shape<int,int,int,int>,                                                   // Indicates ProblemShape
+    CollectiveMainloopLargeK,
+    CollectiveEpilogueLargeK,
+    void>;
+
+using GemmLargeK = cutlass::gemm::device::GemmUniversalAdapter<GemmKernelLargeK>;
+
+using Gemm = GemmSmallK;
 // Reference device GEMM implementation type
 using StrideA   = typename Gemm::GemmKernel::StrideA;
 using LayoutA   = decltype(cute::make_layout(make_shape(0,0,0), StrideA{}));
@@ -399,9 +430,10 @@ void initialize(const Options &options) {
 }
 
 // Populates a Gemm::Arguments structure from the given commandline options
-typename Gemm::Arguments args_from_options(const Options &options)
+template <typename GemmT>
+typename GemmT::Arguments args_from_options(const Options &options)
 {
-  typename Gemm::Arguments arguments {
+  typename GemmT::Arguments arguments {
     cutlass::gemm::GemmUniversalMode::kGemm,
     {options.m, options.n, options.k, 1},
     { // Mainloop arguments
@@ -438,7 +470,7 @@ int run(Options &options)
   Gemm gemm;
 
   // Create a structure of gemm kernel arguments suitable for invoking an instance of Gemm
-  auto arguments = args_from_options(options);
+  auto arguments = args_from_options<Gemm>(options);
 
   // Using the arguments, query for extra workspace required for matrix multiplication computation
   size_t workspace_size = Gemm::get_workspace_size(arguments);
@@ -491,6 +523,18 @@ int run(Options &options)
   return 0;
 }
 
+int run_selected_gemm(Options &options) {
+#if defined(CUTLASS_ARCH_MMA_SM100_SUPPORTED)
+  if (options.k <= 128) {
+    return run<GemmSmallK>(options);
+  } else {
+    return run<GemmLargeK>(options);
+  }
+#else
+  return 0;
+#endif
+}
+
 #endif // defined(CUTLASS_ARCH_MMA_SM100_SUPPORTED)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -533,7 +577,7 @@ int main(int argc, char const **args) {
   // Evaluate CUTLASS kernels
   //
 #if defined(CUTLASS_ARCH_MMA_SM100_SUPPORTED)
-  run<Gemm>(options);
+  run_selected_gemm(options);
 #endif // defined(CUTLASS_ARCH_MMA_SM100_SUPPORTED)
 
   return 0;

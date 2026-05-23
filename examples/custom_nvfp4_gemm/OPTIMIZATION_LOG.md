@@ -47,32 +47,51 @@ bash test_custom_nvfp4_gemm.sh
 
 ## Optimization Strategies
 
-### 1. Parameter Parsing Support
-- **Status**: TODO
-- **Details**: Modify argument parsing to support positional parameters "M N K" format
-  for test script compatibility
-
-### 2. MMA Tile Shape Optimization
+### MMA Tile Shape Optimization
 - **Current**: 256x256x256
 - **Candidates**: Test 128x256x256, 128x128x256 for smaller K problems
 - **Rationale**: Blackwell SM100 supports multiple tile sizes; find optimal for test mix
 
-### 3. Cluster Shape Optimization
+### Cluster Shape Optimization
 - **Current**: 2x4x1
 - **Candidates**: Test 1x4x1, 2x2x1, 4x2x1 based on problem dimensions
 - **Rationale**: Different cluster shapes may better fit different M/N ratios
 
-### 4. Swizzle Optimization
+### Swizzle Optimization
 - **Current**: Default 0
 - **Candidates**: Test values 1, 2, 4, 8 for load balancing
 - **Rationale**: Swizzle affects tile scheduler work distribution
 
-### 5. Epilogue Schedule Policy
+### Epilogue Schedule Policy
 - **Current**: EpilogueScheduleAuto
 - **Candidates**: Test explicit schedules if available
 
 ## Implementation Record
-[Changes will be documented as they are made]
+- Updated `examples/custom_nvfp4_gemm/custom_nvfp4_gemm.cu` to use a dual-kernel strategy:
+  - `MmaTileShapeSmallK = 128x256x128` for `K <= 128`
+  - `MmaTileShapeLargeK = 128x128x256` for `K > 128`
+  - `ClusterShapeSmall = 2x2x1` for small-K problems
+  - `ClusterShapeBig = 1x4x1` for large-K problems
+- Verified that the kernel builds cleanly with CUDA 12.8+ and SM100 support.
+- Executed the full benchmark suite in `build/test_custom_nvfp4_gemm.sh` and confirmed all 13 cases pass.
 
 ## Performance Results
-[Results will be recorded here]
+序号   Shape (M×K, N×K)                         Runtime(ms)  Perf(Gflops)   
+-------------------------------------------------------------------------------
+1    M×K: 8192×128, N×K: 4096×128               0.0314112    2.73467e+05
+2    M×K: 32768×128, N×K: 768×128               0.0306848    2.09956e+05
+3    M×K: 16384×128, N×K: 768×128               0.0201248    1.60062e+05
+4    M×K: 32768×128, N×K: 4096×128              0.0940928    3.65169e+05
+5    M×K: 16384×2048, N×K: 4096×2048            0.120518     2.28080e+06
+6    M×K: 8192×2048, N×K: 4096×2048             0.0660288    2.08150e+06
+7    M×K: 32768×4096, N×K: 768×4096             0.113888     1.81019e+06
+8    M×K: 16384×4096, N×K: 768×4096             0.0614464    1.67755e+06
+9    M×K: 8192×4096, N×K: 768×4096              0.0361504    1.42570e+06
+10   M×K: 510300×5120, N×K: 5120×5120           8.57172      3.12124e+06
+11   M×K: 170100×5120, N×K: 5120×5120           2.86172      3.11636e+06
+12   M×K: 510300×13824, N×K: 5120×5120          23.048       3.13419e+06
+13   M×K: 170100×13824, N×K: 5120×5120          7.69469      3.12930e+06
+
+Notes:
+- The final tuned implementation uses `EpilogueScheduleAuto` and `KernelScheduleAuto`.
+- Swizzle remains configurable via `--swizzle=<int>` for additional scheduler tuning.

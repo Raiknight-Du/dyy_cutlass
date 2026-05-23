@@ -46,8 +46,7 @@ for item in "${TEST_LIST[@]}"; do
     echo "" >> "$LOG_FILE"
     echo ">>> Shape ${shape_num} Start <<<" >> "$LOG_FILE"
     echo "Time Location: $(date '+%Y-%m-%d %A %H:%M:%S')" >> "$LOG_FILE"
-    echo "Parameters: --m=${M} --n=${N} --k=${K}" >> "$LOG_FILE"
-    echo "Command: ncu -o ${OUTPUT_FILE} -f --section SpeedOfLight ${VMLINUX_EXE} ..." >> "$LOG_FILE"
+    echo "Command: ncu -f --section SpeedOfLight ${OUTPUT_FILE} -c 2 ${VMLINUX_EXE} --m=$M --n=$N --k=$K" >> "$LOG_FILE"
     echo "----------------------------------------" >> "$LOG_FILE"
     
     # 执行 NCU 命令
