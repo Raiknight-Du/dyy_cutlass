@@ -1,0 +1,124 @@
+{
+  "status": "CPU_METADATA_COMPILED_PENDING_STATIC_REVIEW",
+  "layout": "S",
+  "shape": 16384,
+  "gpu_kernel_invoked": false,
+  "metadata_device": "cuda",
+  "K4_store_final_state": false,
+  "note": "Public CP invokes K4 state=None; K3 already writes requested output state",
+  "tensors": {
+    "q": {
+      "shape": [
+        16384,
+        16,
+        128
+      ],
+      "stride": [
+        2048,
+        128,
+        1
+      ],
+      "dtype": "torch.float16",
+      "source_device": "cpu"
+    },
+    "k": {
+      "shape": [
+        16384,
+        16,
+        128
+      ],
+      "stride": [
+        2048,
+        128,
+        1
+      ],
+      "dtype": "torch.float16",
+      "source_device": "cpu"
+    },
+    "v": {
+      "shape": [
+        16384,
+        16,
+        128
+      ],
+      "stride": [
+        2048,
+        128,
+        1
+      ],
+      "dtype": "torch.float16",
+      "source_device": "cpu"
+    },
+    "gate": {
+      "shape": [
+        16384,
+        16
+      ],
+      "stride": [
+        16,
+        1
+      ],
+      "dtype": "torch.float32",
+      "source_device": "cpu"
+    },
+    "t": {
+      "shape": [
+        64,
+        64,
+        16,
+        256
+      ],
+      "stride": [
+        64,
+        1,
+        4096,
+        65536
+      ],
+      "dtype": "torch.float16",
+      "source_device": "cpu"
+    },
+    "fixed": {
+      "shape": [
+        8,
+        16,
+        128,
+        128
+      ],
+      "stride": [
+        262144,
+        16384,
+        128,
+        1
+      ],
+      "dtype": "torch.float32",
+      "source_device": "cpu"
+    },
+    "initial": {
+      "shape": [
+        1,
+        16,
+        128,
+        128
+      ],
+      "stride": [
+        262144,
+        16384,
+        128,
+        1
+      ],
+      "dtype": "torch.float32",
+      "source_device": "cpu"
+    },
+    "cu": {
+      "shape": [
+        2
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.int64",
+      "source_device": "cpu"
+    }
+  },
+  "model_enabled": false
+}

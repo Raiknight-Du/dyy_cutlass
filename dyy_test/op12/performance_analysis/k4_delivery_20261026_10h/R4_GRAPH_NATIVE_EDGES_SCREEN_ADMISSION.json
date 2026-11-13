@@ -1,0 +1,14 @@
+{
+  "round": "R4",
+  "approved_modes": [
+    "screen"
+  ],
+  "source_SHA256": "690d1432059d27dc1e6b0de3c45738e6d7b11a3ba7092adb413064335fab9d9b",
+  "max_N": 256,
+  "watchdog_seconds": 120,
+  "protocol": "New graph Event cohort, exactly3nodes2edges,20actual graph warmups/5sample; one direct CONTROL128 lazy call separately recorded",
+  "kernel_or_NCU_changed": false,
+  "model_enabled": false,
+  "edge_audit": "Owned native cuGraphGetEdges_v2 zero buffers + NULL edgeData full lossless validation; Python fields diagnostic only",
+  "authorization": "Lead approved after same-graph native API audit proof"
+}

@@ -1,0 +1,11 @@
+{
+  "round": "R8",
+  "approved_modes": [
+    "prepare"
+  ],
+  "source_SHA256": "9e7b8f5aba3a86dfd7ac70903550b3715fb9ef36456b94b565bfbc663426a89a",
+  "max_N": 256,
+  "helper_or_gold_authorized": false,
+  "authorization_source": "Lead explicit R8 actual metadata prepare-only admission 2026-10-26",
+  "model_enabled": false
+}

@@ -1,0 +1,28 @@
+{
+  "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "shape": [
+    1,
+    16,
+    32768,
+    128
+  ],
+  "C": 4096,
+  "P": 8,
+  "grid": 128,
+  "block": 384,
+  "input_sha256": "5953da3926a1ab008c08b995fe574688c40edbb91ad0db561a8204c796c97d98",
+  "sample_CTA": 16,
+  "layout": "S",
+  "qualified": [
+    "PBASE",
+    "FRAME0",
+    "FRAME7"
+  ],
+  "runtime_mask": {
+    "FRAME0": 0,
+    "FRAME7": 7
+  },
+  "same_cubin": true,
+  "local_bias_bound_cycles": null,
+  "model_enabled": false
+}

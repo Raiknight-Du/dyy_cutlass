@@ -1,0 +1,10 @@
+{
+  "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+  "archive_sha256": "e1b07e7262b25fa71d729c88ebad49515aa0fa7234a43465f6012cdfd34f35bf",
+  "archive_bytes": 3645830,
+  "manifest_sha256": "0623c8aad0ebae1a49a34213305e4a18945513860ecd46ceea195badea47ae7b",
+  "portable_files": 202,
+  "tensor_files_B200_only": 3,
+  "tensor_sha_verified": true,
+  "upstream_clean": true
+}

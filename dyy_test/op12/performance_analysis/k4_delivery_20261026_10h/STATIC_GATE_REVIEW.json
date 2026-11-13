@@ -1,0 +1,239 @@
+{
+  "status": "STATIC_REJECT",
+  "reasons": [
+    "INIT_LIVEIN_UNIFORM_REGISTER_ALLOCATION_CHANGED_PENDING_LEAD_REVIEW"
+  ],
+  "binary_hashes": {
+    "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+    "CLOCK": "2d67694769e415d2aba5323fcdc6efab420b3dc1a851dd99ef4669b9461aaa4a",
+    "FRAME": "710d99de197cf0c4e69ec9e4c5a6a579ad0132b351e53efc8b1d243a75065223"
+  },
+  "resources": {
+    "B0": {
+      "REG": [
+        "168"
+      ],
+      "STACK": [
+        "24"
+      ],
+      "SHARED": [
+        "1024"
+      ]
+    },
+    "CLOCK": {
+      "REG": [
+        "168"
+      ],
+      "STACK": [
+        "24"
+      ],
+      "SHARED": [
+        "1024"
+      ]
+    },
+    "FRAME": {
+      "REG": [
+        "168"
+      ],
+      "STACK": [
+        "24"
+      ],
+      "SHARED": [
+        "1024"
+      ]
+    }
+  },
+  "counts": {
+    "B0": {
+      "LDL": 41,
+      "STL": 5,
+      "LDG": 198,
+      "STG": 64,
+      "LDTM": 13,
+      "STTM": 24,
+      "UTCHMMA": 44,
+      "UTMALDG": 7,
+      "UTMASTG": 2,
+      "BAR": 8,
+      "SYNCS": 314,
+      "FENCE": 27,
+      "MEMBAR": 9,
+      "UTCBAR": 16
+    },
+    "CLOCK": {
+      "LDL": 41,
+      "STL": 5,
+      "LDG": 198,
+      "STG": 73,
+      "LDTM": 13,
+      "STTM": 24,
+      "UTCHMMA": 44,
+      "UTMALDG": 7,
+      "UTMASTG": 2,
+      "BAR": 8,
+      "SYNCS": 314,
+      "FENCE": 27,
+      "MEMBAR": 9,
+      "UTCBAR": 16
+    },
+    "FRAME": {
+      "LDL": 41,
+      "STL": 5,
+      "LDG": 198,
+      "STG": 73,
+      "LDTM": 13,
+      "STTM": 24,
+      "UTCHMMA": 44,
+      "UTMALDG": 7,
+      "UTMASTG": 2,
+      "BAR": 8,
+      "SYNCS": 323,
+      "FENCE": 27,
+      "MEMBAR": 9,
+      "UTCBAR": 16
+    }
+  },
+  "extra_static_ops": {
+    "LDCU": 5,
+    "UMOV": 3,
+    "ULOP3": 4,
+    "UISETP": 3,
+    "USHF": 1,
+    "UIADD3": 10,
+    "SHF": 3,
+    "BRA": 12,
+    "UTMACCTL": 5,
+    "SYNCS": 9,
+    "MOV": 4,
+    "NANOSLEEP": 3
+  },
+  "removed_static_ops": {
+    "IMAD": 1,
+    "NOP": 5
+  },
+  "INIT": {
+    "CLOCK_pc": [
+      "0x59e0",
+      "0x6e50"
+    ],
+    "FRAME_pc": [
+      "0x5a40",
+      "0x6eb0"
+    ],
+    "instructions": 328,
+    "register_operand_and_instruction_sequence_equal_after_label_rename": false,
+    "sequence_equal_after_explicit_livein_alias_mapping": false,
+    "livein_alias_mapping": {
+      "FRAME_UR14": "CLOCK_UR20",
+      "FRAME_UR35": "CLOCK_UR31"
+    },
+    "changed_instruction_count": 3,
+    "CTAID_Y_definitions": {
+      "CLOCK": "0x0020 S2UR UR31, SR_CTAID.Y",
+      "FRAME": "0x0020 S2UR UR35, SR_CTAID.Y"
+    },
+    "address_offset_livein_note": "UR20/UR14 comes from unchanged get_cp_work address computation; preheader allocation/scheduling differs. Not a proof of whole-binary RAW equivalence."
+  },
+  "INIT_END_to_first_CG1_RETURN": {
+    "instructions": 631,
+    "register_operand_and_instruction_sequence_equal_after_label_rename": true
+  },
+  "gates": {
+    "W9": {
+      "wait_pc": "0xbec0",
+      "descriptor_first_store_pc": "0xbfa0",
+      "phase_register": "R5=0",
+      "full_slot": "[UR22+0x100]"
+    },
+    "W8": {
+      "role_guard_pc": "0x9c90",
+      "tmem_retrieve_barrier_pc": "0x9cd0",
+      "wait_pc": "0x9d50",
+      "postgate_prefetch_first_pc": "0x9e20",
+      "phase_register": "R5=0",
+      "full_slot": "[UR22+0x100]"
+    },
+    "W11": {
+      "wait_pc": "0xe620",
+      "descriptor_first_store_pc": "0xe700",
+      "phase_register": "R5=0",
+      "full_slot": "[UR22+0x100]"
+    }
+  },
+  "original_full_arrival_pcs": [
+    "0x67f0",
+    "0x6e80"
+  ],
+  "native_global_projection_order_equal": false,
+  "global_projection_note": "W9/W11 branch text is placed in a different binary region; not a runtime cross-warp ordering claim. INIT/CG1 startup local register-level sequence is separately compared.",
+  "original_prefetch_mask0_pcs": [
+    "0x0b60",
+    "0x0b80",
+    "0x0ba0",
+    "0x0be0",
+    "0x0bf0"
+  ],
+  "prefetch_source_control_paths": [
+    [
+      "ready_gate_mask & 4 == 0",
+      "warp_idx == self.mma_warp_id"
+    ],
+    [
+      "ready_gate_mask & 4 == 0",
+      "warp_idx == self.mma_warp_id"
+    ],
+    [
+      "ready_gate_mask & 4 == 0",
+      "warp_idx == self.mma_warp_id"
+    ],
+    [
+      "ready_gate_mask & 4 == 0",
+      "warp_idx == self.mma_warp_id"
+    ],
+    [
+      "ready_gate_mask & 4 == 0",
+      "warp_idx == self.mma_warp_id"
+    ],
+    [
+      "(chunk_len > 0) & (ready_gate_mask & 4 != 0)",
+      "warp_idx == self.mma_warp_id",
+      "not (warp_idx >= self.compute_group_1_warp_ids[0] and warp_idx <= self.compute_group_1_warp_ids[-1])"
+    ],
+    [
+      "(chunk_len > 0) & (ready_gate_mask & 4 != 0)",
+      "warp_idx == self.mma_warp_id",
+      "not (warp_idx >= self.compute_group_1_warp_ids[0] and warp_idx <= self.compute_group_1_warp_ids[-1])"
+    ],
+    [
+      "(chunk_len > 0) & (ready_gate_mask & 4 != 0)",
+      "warp_idx == self.mma_warp_id",
+      "not (warp_idx >= self.compute_group_1_warp_ids[0] and warp_idx <= self.compute_group_1_warp_ids[-1])"
+    ],
+    [
+      "(chunk_len > 0) & (ready_gate_mask & 4 != 0)",
+      "warp_idx == self.mma_warp_id",
+      "not (warp_idx >= self.compute_group_1_warp_ids[0] and warp_idx <= self.compute_group_1_warp_ids[-1])"
+    ],
+    [
+      "(chunk_len > 0) & (ready_gate_mask & 4 != 0)",
+      "warp_idx == self.mma_warp_id",
+      "not (warp_idx >= self.compute_group_1_warp_ids[0] and warp_idx <= self.compute_group_1_warp_ids[-1])"
+    ]
+  ],
+  "early_SASS_predicate_proof": {
+    "mask_load": "0x0110 UR32=c[0][0x9b8]",
+    "warp": "0x0910 R2=tid>>5; 0x0940 UR23=R2",
+    "mask_bit": "0x0980 UR10=UR32>>2; 0x09c0 UP2=(UR10&1)!=0",
+    "role_combine": "0x09f0 UP2=(UR23!=8) OR UP2",
+    "skip": "0x0af0 BRA.U UP2 skips early prefetch; only warp8 AND bit4 clear falls through"
+  },
+  "prefetch_static_count": 10,
+  "prefetch_runtime_per_CTA": 5,
+  "extra_arrivals": 0,
+  "extra_barrier_storage_bytes": 0,
+  "extra_release": 0,
+  "gpu_kernel_executed": false,
+  "local_absolute_bias_bound_cycles": null,
+  "model_enabled": false,
+  "caveat": "Branch-label renaming comparison preserves every register operand but is not a whole-binary RAW-equivalence proof. Phase lifetime safety still depends on original dataflow and must pass bitwise correctness/watchdog. Global ordering differs by branch placement; do not claim full projection equality."
+}

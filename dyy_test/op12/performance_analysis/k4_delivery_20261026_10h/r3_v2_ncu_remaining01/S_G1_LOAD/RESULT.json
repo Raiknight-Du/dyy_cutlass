@@ -1,0 +1,11 @@
+{
+  "round": "R3",
+  "configuration": "S_G1_LOAD",
+  "N": 512,
+  "start_time_ns": 1792964906107927235,
+  "status": "REPORT_CREATED",
+  "clock_policy": "temporary1845request_actual_sampled",
+  "model_enabled": false,
+  "returncode": 0,
+  "end_time_ns": 1792964933907639489
+}

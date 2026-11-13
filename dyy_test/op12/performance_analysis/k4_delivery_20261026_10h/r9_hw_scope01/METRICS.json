@@ -1,0 +1,13 @@
+[
+  "dram__bytes_read.sum",
+  "lts__t_sectors_srcunit_tex_op_read.sum",
+  "lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum",
+  "lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum",
+  "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.sum",
+  "sm__cycles_elapsed.avg",
+  "l1tex__cycles_elapsed.avg",
+  "lts__cycles_elapsed.avg",
+  "dram__cycles_elapsed.avg",
+  "gpu__time_duration.sum",
+  "profiler__replayer_passes"
+]

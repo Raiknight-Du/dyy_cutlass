@@ -1,0 +1,6 @@
+COMPILED REF 06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814
+COMPILED FRAME 04e9af17c4ba5a21c4c13ccc610acbd4dbb44a9249633504a93381e5a8ccf100
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_round01.py", line 162, in <module>
+    assert artifacts['FRAME']['cubin_sha256'] == expected['FRAME']['cubin_sha256']
+AssertionError

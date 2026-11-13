@@ -1,0 +1,11 @@
+K2 major-cost audit, 2026-10-22. Additive evidence only.
+Scope: e77a4a0d276367895c3b50a642fd8f326c03fb72; B200; FP16; B1 H16 D128; P8; S8192/16384/32768, C=S/8. Full CP rotating4 history.
+Primary comparison envelope (frozen before new measurement): for one invocation and one CTA, minimum of the 8 compute warps' loop-begin timestamps (after M/N init publication) to maximum of their loop-end timestamps (before M/N workspace store). Model uses identical CG0/CG1 endpoints, with concurrent producers and prior init/prefetch retained. This is the entire partition compute body, not whole kernel or assembled stage medians.
+Secondary: per-CG same-warp loop duration; native whole K2 CUDA Event independently.
+Acceptance: signed relative body error within about +/-10%, AND mechanisms supported by native work and dynamic evidence. Resource lower bounds retain that name. Matching a scalar alone is insufficient.
+Existing IKET pipeline trace has isolated HOT provenance; it is structural evidence, not a matched complete-CP observation.
+Minimal measurement: original B0; inherited no-marker B1; P1 outer clock64/globaltimer (CTA0); P8 same endpoints (CTAs 0,16,...112). All 8 compute warps lane0; no per-block timestamps or added barriers; unchanged math and pipeline.
+Budget: first S32768, at most 2 instrumentation revisions. If gates pass, same two probes on S8192/S16384. Maximum 9 formal processes total, 20 warmup + 100 Event samples per variant/process; 12 separate complete-CP trace invocations per variant/process. No throughput rate fitting or new formal parameter approval.
+Compile gate: no additional stack/LDL/STL, no residency change, preserved core opcode work; inspect local loop boundaries. Event screening <=5%; cross-density CTA0 envelope sensitivity <=3% is diagnostic, not a proven absolute local-error bound.
+GPU admission: three idle snapshots >=30 seconds apart; no outside compute jobs. No global clock changes. Record frequency/temperature/power and raw cycle/ns in-window pair; do not multiply historical Event by nominal MHz. Competition invalidates samples and halts further runs.
+No optimization, no upstream writes. New parameters remain model_enabled=false, effective_model_value=null.

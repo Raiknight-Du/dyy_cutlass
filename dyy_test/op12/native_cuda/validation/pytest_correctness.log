@@ -1,0 +1,25 @@
+.......................................                                  [100%]
+=============================== warnings summary ===============================
+../upstreams/flashinfer/flashinfer/cute_dsl/utils.py:91
+  /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/cute_dsl/utils.py:91: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+tests/test_correctness.py: 24 warnings
+  /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/lib/python3.10/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/_mlir_helpers/op.py:360: DeprecationWarning: FastDivmodDivisor is deprecated in favor of cute.FastDivmodDivisorV2 / cute.fast_divmod_create_divisor_v2. V2 additionally carries the scalar divisor across kernel boundaries (2 MLIR values per object instead of 1), so '.divisor' is readable inside kernels; arithmetic (divmod, //, %) is unchanged.
+    res_or_list = opFunc(*args, **kwargs, loc=loc)
+
+tests/test_correctness.py: 12 warnings
+  /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/gdn_kernels/blackwell/gated_delta_net_chunked.py:4484: DSLOptimizationWarning: This static loop has 64 iterations, which may be very slow to compile, consider using `cutlass.range(..., unroll_full=True)` instead.
+    for k in cutlass.range_constexpr(cute.size(tTR_tCcShared)):
+
+tests/test_correctness.py::test_cp_semantics_against_flashinfer[seq_lens0-heads0-dtype0]
+tests/test_correctness.py::test_cp_semantics_against_flashinfer[seq_lens0-heads0-dtype1]
+tests/test_correctness.py::test_cp_semantics_against_flashinfer[seq_lens0-heads1-dtype0]
+tests/test_correctness.py::test_cp_semantics_against_flashinfer[seq_lens0-heads1-dtype1]
+tests/test_correctness.py::test_cp_semantics_against_flashinfer[seq_lens0-heads2-dtype0]
+tests/test_correctness.py::test_cp_semantics_against_flashinfer[seq_lens0-heads2-dtype1]
+  /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py:2986: DSLOptimizationWarning: This static loop has 64 iterations, which may be very slow to compile, consider using `cutlass.range(..., unroll_full=True)` instead.
+    for k in cutlass.range_constexpr(cute.size(tTR_tCcShared)):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+39 passed, 43 warnings in 33.17s

@@ -1,0 +1,8 @@
+{
+  "host_only_change": true,
+  "graph_target_launches": 64,
+  "reported_event_us": "elapsed graph Event time /64, includes device launch gaps",
+  "source_runner_sha256": "cc5723c86c5d05f3509a09c048374b9c61e06e7cb8a1dd653a6365ac1626a0e8",
+  "batch_runner_sha256": "8e25e4a4436f1adab6a32b0ffc7bc4e46564ea866157bb624e0b183ce872a0fc",
+  "device_source_sha256": "0b8795b8e7c9c091d8c0c2f69a74f08e62f5ee23c30d8093c33ed89b1a9a7267"
+}

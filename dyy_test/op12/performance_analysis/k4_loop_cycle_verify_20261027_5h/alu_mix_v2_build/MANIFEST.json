@@ -1,0 +1,7 @@
+{
+  "cubin_sha256": "8becbb9599657d3f348872b4d10580ad16d1ece72e5103489a0696b40141572a",
+  "pack_static": 256,
+  "int_requires_native_review": true,
+  "prediction": "perN PACK4096 native lane + IADD4096 native lane; shared64lane/cy predicts128cy/N; independent resources predict64cy/N, plus bounded loop control.",
+  "model_enabled": false
+}

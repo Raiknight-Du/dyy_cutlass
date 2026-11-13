@@ -1,0 +1,33 @@
+completed additional repeat=1 samples=33
+completed additional repeat=2 samples=66
+completed additional repeat=3 samples=99
+completed additional repeat=4 samples=132
+completed additional repeat=5 samples=165
+completed additional repeat=6 samples=198
+completed additional repeat=7 samples=231
+completed additional repeat=8 samples=264
+completed additional repeat=9 samples=297
+completed additional repeat=10 samples=330
+completed additional repeat=11 samples=363
+completed additional repeat=12 samples=396
+completed additional repeat=13 samples=429
+completed additional repeat=14 samples=462
+completed additional repeat=15 samples=495
+completed additional repeat=16 samples=528
+completed additional repeat=17 samples=561
+completed additional repeat=18 samples=594
+completed additional repeat=19 samples=627
+completed additional repeat=20 samples=660
+FINAL_WINNER,1,S2_M256_N256_K256_E64x32_C4x1x1,5.398932861 ms,tiebreak_25
+FINAL_WINNER,2,S2_M256_N256_K256_E64x32_C4x1x1,17.545290222 ms,independent_5
+FINAL_WINNER,3,S2_M256_N256_K256_Eauto_C2x1x1,1.873023735 ms,tiebreak_25
+FINAL_WINNER,4,S2_M256_N256_K256_E64x32_C4x1x1,5.773731339 ms,tiebreak_25
+FINAL_WINNER,5,S2_M256_N192_K512_E128x32_C2x1x1,0.019149184 ms,tiebreak_25
+FINAL_WINNER,6,S2_M256_N256_K256_E128x64_C4x1x1,0.029659648 ms,tiebreak_25
+FINAL_WINNER,7,S2_M256_N256_K256_E64x32_C2x1x1,0.058446720 ms,independent_5
+FINAL_WINNER,8,S2_M256_N256_K256_E128x64_C2x1x1,0.040051200 ms,tiebreak_25
+FINAL_WINNER,9,S2_M256_N256_K256_E64x32_C2x1x1,0.077750656 ms,tiebreak_25
+FINAL_WINNER,10,S2_M256_N256_K256_Eauto_C2x1x1,0.047075712 ms,tiebreak_25
+FINAL_WINNER,11,S2_M256_N192_K256_Eauto_C2x1x1,0.009249024 ms,tiebreak_25
+FINAL_WINNER,12,S2_M256_N256_K256_E128x64_C2x1x1,0.013290752 ms,tiebreak_25
+FINAL_WINNER,13,S2_M256_N256_K256_Eauto_C2x1x1,0.015023104 ms,tiebreak_25

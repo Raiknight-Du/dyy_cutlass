@@ -1,0 +1,7 @@
+component,mean_us,ci95_half_us
+mma_exposed_with_all_remaining_work,4.264959999999999,0.07535715124410335
+hidden_by_utccp,1.4791680000000007,0.1553373549659742
+hidden_by_d_store,2.361728,0.16119954335675918
+hidden_by_tmem_load_convert_smem_staging,7.26848,0.07948878531013026
+mma_exposed_without_input_or_epilogue,15.374336,0.06386271830810426
+total_hidden_by_remaining_work,11.109376000000001,0.09726772686649418

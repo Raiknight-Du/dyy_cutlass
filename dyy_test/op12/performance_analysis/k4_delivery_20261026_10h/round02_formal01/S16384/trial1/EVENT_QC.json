@@ -1,0 +1,20 @@
+{
+  "CP_EVENT_REF__CLOCK_RETURNS": {
+    "paired_change_pct": -0.0585654039189476,
+    "CI95_pct": [
+      -0.21982798807531623,
+      0.0
+    ],
+    "paired_saving_us": 0.12800097465515137,
+    "equivalent": true
+  },
+  "K4_EVENT_REF__CLOCK_RETURNS": {
+    "paired_change_pct": 0.1232496927069393,
+    "CI95_pct": [
+      0.0,
+      1.0683742641264815
+    ],
+    "paired_saving_us": -0.11200085282325745,
+    "equivalent": true
+  }
+}

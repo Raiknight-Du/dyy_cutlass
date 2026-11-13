@@ -1,0 +1,4469 @@
+{
+  "status": "CPU_READ_ONLY_REUSE_CANDIDATE_NO_GPU_ADMISSION",
+  "old_root": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01",
+  "source_hashes": {
+    "run_matched.py": "82889a50c9cb6edddf8d23efa491a215afc9470f59c8836b5fabd3c700d0b2d4",
+    "run_ncu.py": "ba6109c5df2191c4fce5e9fdd1b4220204ddb6f744adb8659472e5001e7b69c0",
+    "APPROVAL.json": "e0cef34783a432f691e62b49ea1c69f2a9e05f43848778b5c2bae3b1e44e79bc",
+    "CONTRACT.json": "a03518a37bda0fd53b46b74c28a3d7a051c465b4b11df3fd2c2f18f50ec9032e",
+    "SOURCE_DIFF.json": "c21ac8db15c6831d88f28d25b653fd0d4420c9eccb4d499d9bf6704dd9de50c6"
+  },
+  "old_replay_compile_audits": [
+    {
+      "profile_role": "B0",
+      "path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/B0_replays/replay_pid994648/COMPILE_AUDIT.json",
+      "hashes": {
+        "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+      }
+    },
+    {
+      "profile_role": "B0",
+      "path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/B0_replays/replay_pid994849/COMPILE_AUDIT.json",
+      "hashes": {
+        "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+      }
+    },
+    {
+      "profile_role": "B0",
+      "path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/B0_replays/replay_pid995020/COMPILE_AUDIT.json",
+      "hashes": {
+        "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+      }
+    },
+    {
+      "profile_role": "B0",
+      "path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/B0_replays/replay_pid995196/COMPILE_AUDIT.json",
+      "hashes": {
+        "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+      }
+    },
+    {
+      "profile_role": "B0",
+      "path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/B0_replays/replay_pid995370/COMPILE_AUDIT.json",
+      "hashes": {
+        "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+      }
+    },
+    {
+      "profile_role": "B0",
+      "path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/B0_replays/replay_pid995537/COMPILE_AUDIT.json",
+      "hashes": {
+        "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+      }
+    },
+    {
+      "profile_role": "B0",
+      "path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/B0_replays/replay_pid995710/COMPILE_AUDIT.json",
+      "hashes": {
+        "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+      }
+    },
+    {
+      "profile_role": "V0",
+      "path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/V0_replays/replay_pid995919/COMPILE_AUDIT.json",
+      "hashes": {
+        "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+      }
+    },
+    {
+      "profile_role": "V0",
+      "path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/V0_replays/replay_pid996136/COMPILE_AUDIT.json",
+      "hashes": {
+        "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+      }
+    },
+    {
+      "profile_role": "V0",
+      "path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/V0_replays/replay_pid996311/COMPILE_AUDIT.json",
+      "hashes": {
+        "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+      }
+    },
+    {
+      "profile_role": "V0",
+      "path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/V0_replays/replay_pid996480/COMPILE_AUDIT.json",
+      "hashes": {
+        "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+      }
+    },
+    {
+      "profile_role": "V0",
+      "path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/V0_replays/replay_pid996719/COMPILE_AUDIT.json",
+      "hashes": {
+        "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+      }
+    },
+    {
+      "profile_role": "V0",
+      "path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/V0_replays/replay_pid996900/COMPILE_AUDIT.json",
+      "hashes": {
+        "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+      }
+    },
+    {
+      "profile_role": "V0",
+      "path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/V0_replays/replay_pid997109/COMPILE_AUDIT.json",
+      "hashes": {
+        "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+      }
+    }
+  ],
+  "expected_CUBIN_hashes": {
+    "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+    "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+  },
+  "first_replay_evidence": {
+    "B0": {
+      "IDENTITY.json": {
+        "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+        "shape": [
+          1,
+          16,
+          32768,
+          128
+        ],
+        "C": 4096,
+        "P": 8,
+        "L": 64,
+        "input_sha256": "5953da3926a1ab008c08b995fe574688c40edbb91ad0db561a8204c796c97d98",
+        "content_signature": "eb62764b4f2bc92c04c1accddf62db3211f657a1206bdc2279e6fe006bb94d1e",
+        "evict_bytes": 530579456,
+        "trial": 0,
+        "requested_MHz": 1845,
+        "model_enabled": false,
+        "specialization": {
+          "needs_initial_state": "True",
+          "store_final_state": "False",
+          "num_regs_compute_group_0": "224",
+          "num_regs_compute_group_1": "256",
+          "num_regs_other": "24",
+          "tmem_alloc_cols": "512"
+        }
+      },
+      "ADDRESS_BINDINGS.json": {
+        "shared_by_all_variants": true,
+        "method": "capture original public runtime arguments once per rotating buffer; direct same compiled prefix",
+        "buffers": {
+          "0": {
+            "K1": [
+              {
+                "ptr": 139836618964992,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139837537517568,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 139838766448640,
+                "shape": [
+                  33554432
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "16",
+              "16",
+              "512",
+              "512",
+              "1",
+              "<CUstream 0x55f3e58092e0>"
+            ],
+            "K2": [
+              {
+                "ptr": 139836618964992,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139836484747264,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139838766448640,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 139837535420416,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 139838665785344,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139838674173952,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "16",
+              "16",
+              "16",
+              "8",
+              "8",
+              "1",
+              "<CUstream 0x55f3e58092e0>"
+            ],
+            "K3": [
+              {
+                "ptr": 139838665785344,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  1,
+                  128,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139838674173952,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  128,
+                  1,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139837556391936,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 139838686756864,
+                "shape": [
+                  262144
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 139838632230912,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139837531226112,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "8",
+              "1",
+              "16",
+              "<CUstream 0x55f3e58092e0>"
+            ],
+            "K4": [
+              {
+                "ptr": 139836753182720,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139836618964992,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139836484747264,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139837535420416,
+                "shape": [
+                  32768,
+                  16
+                ],
+                "stride": [
+                  16,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 139838766448640,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 139836350529536,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              {
+                "ptr": 139838632230912,
+                "shape": [
+                  8,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139838686756864,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              "4096",
+              "8",
+              "8",
+              "1",
+              "0.08838834764831843",
+              {
+                "ptr": 139838687805440,
+                "shape": [
+                  81920
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.uint8",
+                "bytes": 81920
+              },
+              "<CUstream 0x55f3e58092e0>"
+            ]
+          },
+          "1": {
+            "K1": [
+              {
+                "ptr": 139836082094080,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139837537517568,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 139838430904320,
+                "shape": [
+                  33554432
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "16",
+              "16",
+              "512",
+              "512",
+              "1",
+              "<CUstream 0x55f3e58092e0>"
+            ],
+            "K2": [
+              {
+                "ptr": 139836082094080,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139835947876352,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139838430904320,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 139837535420416,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 139838640619520,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139838397349888,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "16",
+              "16",
+              "16",
+              "8",
+              "8",
+              "1",
+              "<CUstream 0x55f3e58092e0>"
+            ],
+            "K3": [
+              {
+                "ptr": 139838640619520,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  1,
+                  128,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139838397349888,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  128,
+                  1,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139837556391936,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 139838418321408,
+                "shape": [
+                  262144
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 139838405738496,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139837532274688,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "8",
+              "1",
+              "16",
+              "<CUstream 0x55f3e58092e0>"
+            ],
+            "K4": [
+              {
+                "ptr": 139836216311808,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139836082094080,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139835947876352,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139837535420416,
+                "shape": [
+                  32768,
+                  16
+                ],
+                "stride": [
+                  16,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 139838430904320,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 139835813658624,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              {
+                "ptr": 139838405738496,
+                "shape": [
+                  8,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139838418321408,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              "4096",
+              "8",
+              "8",
+              "1",
+              "0.08838834764831843",
+              {
+                "ptr": 139838687887360,
+                "shape": [
+                  81920
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.uint8",
+                "bytes": 81920
+              },
+              "<CUstream 0x55f3e58092e0>"
+            ]
+          },
+          "2": {
+            "K1": [
+              {
+                "ptr": 139835545223168,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139837537517568,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 139838330241024,
+                "shape": [
+                  33554432
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "16",
+              "16",
+              "512",
+              "512",
+              "1",
+              "<CUstream 0x55f3e58092e0>"
+            ],
+            "K2": [
+              {
+                "ptr": 139835545223168,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139835411005440,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139838330241024,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 139837535420416,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 139838296686592,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139838305075200,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "16",
+              "16",
+              "16",
+              "8",
+              "8",
+              "1",
+              "<CUstream 0x55f3e58092e0>"
+            ],
+            "K3": [
+              {
+                "ptr": 139838296686592,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  1,
+                  128,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139838305075200,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  128,
+                  1,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139837556391936,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 139838419369984,
+                "shape": [
+                  262144
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 139834572144640,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139837533323264,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "8",
+              "1",
+              "16",
+              "<CUstream 0x55f3e58092e0>"
+            ],
+            "K4": [
+              {
+                "ptr": 139835679440896,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139835545223168,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139835411005440,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139837535420416,
+                "shape": [
+                  32768,
+                  16
+                ],
+                "stride": [
+                  16,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 139838330241024,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 139835276787712,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              {
+                "ptr": 139834572144640,
+                "shape": [
+                  8,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139838419369984,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              "4096",
+              "8",
+              "8",
+              "1",
+              "0.08838834764831843",
+              {
+                "ptr": 139838687969280,
+                "shape": [
+                  81920
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.uint8",
+                "bytes": 81920
+              },
+              "<CUstream 0x55f3e58092e0>"
+            ]
+          },
+          "3": {
+            "K1": [
+              {
+                "ptr": 139835008352256,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139837537517568,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 139834370818048,
+                "shape": [
+                  33554432
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "16",
+              "16",
+              "512",
+              "512",
+              "1",
+              "<CUstream 0x55f3e58092e0>"
+            ],
+            "K2": [
+              {
+                "ptr": 139835008352256,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139834874134528,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139834370818048,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 139837535420416,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 139834580533248,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139834337263616,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "16",
+              "16",
+              "16",
+              "8",
+              "8",
+              "1",
+              "<CUstream 0x55f3e58092e0>"
+            ],
+            "K3": [
+              {
+                "ptr": 139834580533248,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  1,
+                  128,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139834337263616,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  128,
+                  1,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139837556391936,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 139834358235136,
+                "shape": [
+                  262144
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 139834345652224,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139837534371840,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "8",
+              "1",
+              "16",
+              "<CUstream 0x55f3e58092e0>"
+            ],
+            "K4": [
+              {
+                "ptr": 139835142569984,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139835008352256,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139834874134528,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139837535420416,
+                "shape": [
+                  32768,
+                  16
+                ],
+                "stride": [
+                  16,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 139834370818048,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 139834739916800,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 139837557440512,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              {
+                "ptr": 139834345652224,
+                "shape": [
+                  8,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 139834358235136,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              "4096",
+              "8",
+              "8",
+              "1",
+              "0.08838834764831843",
+              {
+                "ptr": 139838688051200,
+                "shape": [
+                  81920
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.uint8",
+                "bytes": 81920
+              },
+              "<CUstream 0x55f3e58092e0>"
+            ]
+          }
+        }
+      },
+      "GRAPHS.json": [
+        {
+          "variant": "B0",
+          "buffer": 0,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "c2bd6425a3f14e12579d17b2f4d20f7e45e8350e0d76b14651e7fea4257267cd"
+        },
+        {
+          "variant": "B0",
+          "buffer": 1,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "757cfb3917367bc54ffd6f6f5387af855f1e29e2ca4ebec137c45c1ade3959f2"
+        },
+        {
+          "variant": "B0",
+          "buffer": 2,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "55b0d2b41c33101e50b75b405c7326b449a7f3f9708a79767841235775653f5d"
+        },
+        {
+          "variant": "B0",
+          "buffer": 3,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "ed360166dfc828a37c56bd73d41187afb994f53d32bc50f92fd3231c29d50be8"
+        },
+        {
+          "variant": "V0",
+          "buffer": 0,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "1f49cf2fc0540b0b24bee268e331af0f8b8f1bc7d0fa8d85fa7c54d2c6c89b06"
+        },
+        {
+          "variant": "V0",
+          "buffer": 1,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "3110f35df5cc9aeb6f209db08983b05766af26cbfc2b9106ffe9cc012f3e233b"
+        },
+        {
+          "variant": "V0",
+          "buffer": 2,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "c35b1e528607e136b57c69f4d206a3624a5774dd771eb374e3472b2d753626d1"
+        },
+        {
+          "variant": "V0",
+          "buffer": 3,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "ae2c087c6543f8639a868253c56d385e93011d89558292e50a930eaa12daaf5c"
+        }
+      ],
+      "PROFILE_COMPLETE.json": {
+        "role": "B0",
+        "hash": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+        "full_CP": true,
+        "cold_before_K1": true
+      },
+      "CORRECTNESS.json": {
+        "B0": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "V0": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "ENVIRONMENT.json": {
+        "host": "metallic-matrix-fin-03",
+        "GPU": "_CudaDeviceProperties(name='NVIDIA B200', major=10, minor=0, total_memory=182631MB, multi_processor_count=148, uuid=6abbea3c-b8d3-7f4b-ca76-85d612930fdf, pci_bus_id=5, pci_device_id=0, pci_domain_id=0, L2_cache_size=126MB)",
+        "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "cutlass": "4.7.0",
+        "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Tue_Jun_09_02:43:40_PM_PDT_2026\nCuda compilation tools, release 13.3, V13.3.73\nBuild cuda_13.3.r13.3/compiler.38244171_0",
+        "smi": "==============NVSMI LOG==============\n\nTimestamp                                              : Fri Oct 23 21:04:58 2026\nDriver Version                                         : 580.159.03\nCUDA Version                                           : 13.0\n\nAttached GPUs                                          : 1\nGPU 00000000:05:00.0\n    Product Name                                       : NVIDIA B200\n    Product Brand                                      : NVIDIA\n    Product Architecture                               : Blackwell\n    Display Mode                                       : Requested functionality has been deprecated\n    Display Attached                                   : Yes\n    Display Active                                     : Disabled\n    Persistence Mode                                   : Enabled\n    Addressing Mode                                    : None\n    MIG Mode\n        Current                                        : Disabled\n        Pending                                        : Disabled\n    Accounting Mode                                    : Disabled\n    Accounting Mode Buffer Size                        : 4000\n    Driver Model\n        Current                                        : N/A\n        Pending                                        : N/A\n    Serial Number                                      : 1653725070206\n    GPU UUID                                           : GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf\n    GPU PDI                                            : 0x21b7bc19b4bdebe9\n    Minor Number                                       : 0\n    VBIOS Version                                      : 97.00.FA.00.09\n    MultiGPU Board                                     : No\n    Board ID                                           : 0x500\n    Board Part Number                                  : 692-2G525-0220-500\n    GPU Part Number                                    : 2901-886-A1\n    FRU Part Number                                    : N/A\n    Platform Info\n        Chassis Serial Number                          : \n        Slot Number                                    : N/A\n        Tray Index                                     : N/A\n        Host ID                                        : 1\n        Peer Type                                      : Switch Connected\n        Module Id                                      : 3\n        GPU Fabric GUID                                : 0xa7ac1a000347bb4c\n    Inforom Version\n        Image Version                                  : G525.0220.00.03\n        OEM Object                                     : 2.1\n        ECC Object                                     : 7.16\n        Power Management Object                        : N/A\n    Inforom BBX Object Flush\n        Latest Timestamp                               : 2026/10/23 20:28:26.205\n        Latest Duration                                : 64778 us\n    GPU Operation Mode\n        Current                                        : N/A\n        Pending                                        : N/A\n    GPU C2C Mode                                       : Disabled\n    GPU Virtualization Mode\n        Virtualization Mode                            : Pass-Through\n        Host VGPU Mode                                 : N/A\n        vGPU Heterogeneous Mode                        : N/A\n    GPU Recovery Action                                : None\n    GSP Firmware Version                               : 580.159.03\n    IBMNPU\n        Relaxed Ordering Mode                          : N/A\n    PCI\n        Bus                                            : 0x05\n        Device                                         : 0x00\n        Domain                                         : 0x0000\n        Base Classcode                                 : 0x3\n        Sub Classcode                                  : 0x2\n        Device Id                                      : 0x290110DE\n        Bus Id                                         : 00000000:05:00.0\n        Sub System Id                                  : 0x199910DE\n        GPU Link Info\n            PCIe Generation\n                Max                                    : 5\n                Current                                : 5\n                Device Current                         : 5\n                Device Max                             : 5\n                Host Max                               : N/A\n            Link Width\n                Max                                    : 16x\n                Current                                : 16x\n        Bridge Chip\n            Type                                       : N/A\n            Firmware                                   : N/A\n        Replays Since Reset                            : 0\n        Replay Number Rollovers                        : 0\n        Tx Throughput                                  : 1221 KB/s\n        Rx Throughput                                  : 669 KB/s\n        Atomic Caps Outbound                           : FETCHADD_32 FETCHADD_64 SWAP_32 SWAP_64 CAS_32 CAS_64 \n        Atomic Caps Inbound                            : FETCHADD_32 FETCHADD_64 SWAP_32 SWAP_64 CAS_32 CAS_64 \n    Fan Speed                                          : N/A\n    Performance State                                  : P0\n    Clocks Event Reasons\n        Idle                                           : Active\n        Applications Clocks Setting                    : Not Active\n        SW Power Cap                                   : Not Active\n        HW Slowdown                                    : Not Active\n            HW Thermal Slowdown                        : Not Active\n            HW Power Brake Slowdown                    : Not Active\n        Sync Boost                                     : Not Active\n        SW Thermal Slowdown                            : Not Active\n        Display Clock Setting                          : Not Active\n    Clocks Event Reasons Counters\n        SW Power Capping                               : 2086376089 us\n        Sync Boost                                     : 0 us\n        SW Thermal Slowdown                            : 1745568744 us\n        HW Thermal Slowdown                            : 0 us\n        HW Power Braking                               : 0 us\n    Sparse Operation Mode                              : N/A\n    FB Memory Usage\n        Total                                          : 183359 MiB\n        Reserved                                       : 728 MiB\n        Used                                           : 4 MiB\n        Free                                           : 182628 MiB\n    BAR1 Memory Usage\n        Total                                          : 262144 MiB\n        Used                                           : 5 MiB\n        Free                                           : 262139 MiB\n    Conf Compute Protected Memory Usage\n        Total                                          : 0 MiB\n        Used                                           : 0 MiB\n        Free                                           : 0 MiB\n    Compute Mode                                       : Default\n    Utilization\n        GPU                                            : 0 %\n        Memory                                         : 0 %\n        Encoder                                        : 0 %\n        Decoder                                        : 0 %\n        JPEG                                           : 0 %\n        OFA                                            : 0 %\n    Encoder Stats\n        Active Sessions                                : 0\n        Average FPS                                    : 0\n        Average Latency                                : 0\n    FBC Stats\n        Active Sessions                                : 0\n        Average FPS                                    : 0\n        Average Latency                                : 0\n    DRAM Encryption Mode\n        Current                                        : N/A\n        Pending                                        : N/A\n    ECC Mode\n        Current                                        : Enabled\n        Pending                                        : Enabled\n    ECC Errors\n        Volatile\n            SRAM Correctable                           : 0\n            SRAM Uncorrectable Parity                  : 0\n            SRAM Uncorrectable SEC-DED                 : 0\n            DRAM Correctable                           : 0\n            DRAM Uncorrectable                         : 0\n        Aggregate\n            SRAM Correctable                           : 0\n            SRAM Uncorrectable Parity                  : 0\n            SRAM Uncorrectable SEC-DED                 : 0\n            DRAM Correctable                           : 0\n            DRAM Uncorrectable                         : 0\n            SRAM Threshold Exceeded                    : No\n        Aggregate Uncorrectable SRAM Sources\n            SRAM L2                                    : 0\n            SRAM SM                                    : 0\n            SRAM Microcontroller                       : 0\n            SRAM PCIE                                  : 0\n            SRAM Other                                 : 0\n        Channel Repair Pending                         : No\n        TPC Repair Pending                             : No\n        Unrepairable Memory                            : No\n    Retired Pages\n        Single Bit ECC                                 : N/A\n        Double Bit ECC                                 : N/A\n        Pending Page Blacklist                         : N/A\n    Remapped Rows\n        Correctable Error                              : 0\n        Inactive Correctable Error                     : 0\n        Uncorrectable Error                            : 0\n        Inactive Uncorrectable Error                   : 0\n        Pending                                        : No\n        Remapping Failure Occurred                     : No\n        Bank Remap Availability Histogram\n            Max                                        : 3840 bank(s)\n            High                                       : 0 bank(s)\n            Partial                                    : 0 bank(s)\n            Low                                        : 0 bank(s)\n            None                                       : 0 bank(s)\n    Temperature\n        GPU Current Temp                               : 33 C\n        GPU T.Limit Temp                               : 55 C\n        GPU Shutdown T.Limit Temp                      : -5 C\n        GPU Slowdown T.Limit Temp                      : -3 C\n        GPU Max Operating T.Limit Temp                 : 0 C\n        GPU Target Temperature                         : N/A\n        Memory Current Temp                            : 32 C\n        Memory Max Operating T.Limit Temp              : 0 C\n    GPU Power Readings\n        Average Power Draw                             : 234.04 W\n        Instantaneous Power Draw                       : 234.84 W\n        Current Power Limit                            : 1000.00 W\n        Requested Power Limit                          : 1000.00 W\n        Default Power Limit                            : 1000.00 W\n        Min Power Limit                                : 200.00 W\n        Max Power Limit                                : 1000.00 W\n    GPU Memory Power Readings \n        Average Power Draw                             : 19.71 W\n        Instantaneous Power Draw                       : N/A\n    Module Power Readings\n        Average Power Draw                             : N/A\n        Instantaneous Power Draw                       : N/A\n        Current Power Limit                            : N/A\n        Requested Power Limit                          : N/A\n        Default Power Limit                            : N/A\n        Min Power Limit                                : N/A\n        Max Power Limit                                : N/A\n    Power Smoothing                                    : Insufficient Permissions\n    Workload Power Profiles\n        Requested Profiles                             : N/A\n        Enforced Profiles                              : N/A\n    Clocks\n        Graphics                                       : 1845 MHz\n        SM                                             : 1845 MHz\n        Memory                                         : 3996 MHz\n        Video                                          : 1747 MHz\n    Applications Clocks\n        Graphics                                       : 1965 MHz\n        Memory                                         : 3996 MHz\n    Default Applications Clocks\n        Graphics                                       : 1965 MHz\n        Memory                                         : 3996 MHz\n    Deferred Clocks\n        Memory                                         : N/A\n    Max Clocks\n        Graphics                                       : 1965 MHz\n        SM                                             : 1965 MHz\n        Memory                                         : 3996 MHz\n        Video                                          : 1965 MHz\n    Max Customer Boost Clocks\n        Graphics                                       : 1965 MHz\n    Clock Policy\n        Auto Boost                                     : N/A\n        Auto Boost Default                             : N/A\n    Fabric\n        State                                          : Completed\n        Status                                         : Success\n        CliqueId                                       : 0\n        ClusterUUID                                    : 00000000-0000-0000-0000-000000000000\n        Health\n            Summary                                    : Healthy\n            Bandwidth                                  : N/A\n            Route Recovery in progress                 : N/A\n            Route Unhealthy                            : N/A\n            Access Timeout Recovery                    : False\n            Incorrect Configuration                    : N/A\n            Partition Assigned                         : N/A\n    Processes                                          : None\n    Capabilities\n        EGM                                            : disabled",
+        "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+        "import_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py"
+      },
+      "COMPILE_AUDIT.json": {
+        "B0": {
+          "cubin": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/B0_replays/replay_pid994648/binary/B0/cutlass___call___flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgm.sm_100a.cubin",
+          "cubin_sha256": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+          "resources": "Resource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_Sh_0:\n  REG:168 STACK:24 SHARED:1024 LOCAL:0 CONSTANT[2]:16 CONSTANT[0]:2480 TEXTURE:0 SURFACE:0 SAMPLER:0",
+          "registers": [
+            "168"
+          ],
+          "stack": [
+            "24"
+          ],
+          "counts": {
+            "LDL": 41,
+            "STL": 5,
+            "UTCHMMA": 44,
+            "UTMALDG": 7,
+            "UTMASTG": 2,
+            "LDTM": 13,
+            "STTM": 24,
+            "HMMA": 0,
+            "LDG": 198,
+            "STG": 64,
+            "F2FP": 223,
+            "BAR": 8,
+            "UTCBAR": 16,
+            "SYNCS": 314,
+            "FENCE": 27,
+            "MEMBAR": 9,
+            "FFMA": 0,
+            "FMUL": 94,
+            "FADD": 125,
+            "LDSM": 12,
+            "STSM": 16,
+            "LDS": 144,
+            "STS": 22,
+            "PRMT": 0
+          },
+          "normalized_sha256": "ffdd0bfd34810db217be4b5eb1e7404c06fffb21a064bb0345a6c380f2136976",
+          "clock_pc": [],
+          "smid_pc": []
+        },
+        "V0": {
+          "cubin": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/B0_replays/replay_pid994648/binary/V0/cutlass___call___flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgm.sm_100a.cubin",
+          "cubin_sha256": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4",
+          "resources": "Resource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_Sh_0:\n  REG:168 STACK:24 SHARED:1024 LOCAL:0 CONSTANT[2]:16 CONSTANT[0]:2480 TEXTURE:0 SURFACE:0 SAMPLER:0",
+          "registers": [
+            "168"
+          ],
+          "stack": [
+            "24"
+          ],
+          "counts": {
+            "LDL": 41,
+            "STL": 5,
+            "UTCHMMA": 44,
+            "UTMALDG": 7,
+            "UTMASTG": 2,
+            "LDTM": 13,
+            "STTM": 24,
+            "HMMA": 0,
+            "LDG": 102,
+            "STG": 64,
+            "F2FP": 223,
+            "BAR": 8,
+            "UTCBAR": 16,
+            "SYNCS": 314,
+            "FENCE": 27,
+            "MEMBAR": 9,
+            "FFMA": 0,
+            "FMUL": 94,
+            "FADD": 125,
+            "LDSM": 12,
+            "STSM": 16,
+            "LDS": 144,
+            "STS": 22,
+            "PRMT": 0
+          },
+          "normalized_sha256": "0eb98faddf0c0ba776cd5c47c0a47b61495bdc96b659da193ba46bfde8e61d69",
+          "clock_pc": [],
+          "smid_pc": []
+        }
+      }
+    },
+    "V0": {
+      "IDENTITY.json": {
+        "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+        "shape": [
+          1,
+          16,
+          32768,
+          128
+        ],
+        "C": 4096,
+        "P": 8,
+        "L": 64,
+        "input_sha256": "5953da3926a1ab008c08b995fe574688c40edbb91ad0db561a8204c796c97d98",
+        "content_signature": "eb62764b4f2bc92c04c1accddf62db3211f657a1206bdc2279e6fe006bb94d1e",
+        "evict_bytes": 530579456,
+        "trial": 0,
+        "requested_MHz": 1845,
+        "model_enabled": false,
+        "specialization": {
+          "needs_initial_state": "True",
+          "store_final_state": "False",
+          "num_regs_compute_group_0": "224",
+          "num_regs_compute_group_1": "256",
+          "num_regs_other": "24",
+          "tmem_alloc_cols": "512"
+        }
+      },
+      "ADDRESS_BINDINGS.json": {
+        "shared_by_all_variants": true,
+        "method": "capture original public runtime arguments once per rotating buffer; direct same compiled prefix",
+        "buffers": {
+          "0": {
+            "K1": [
+              {
+                "ptr": 140695780196352,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140696698748928,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 140697927680000,
+                "shape": [
+                  33554432
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "16",
+              "16",
+              "512",
+              "512",
+              "1",
+              "<CUstream 0x55d565863760>"
+            ],
+            "K2": [
+              {
+                "ptr": 140695780196352,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140695645978624,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140697927680000,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 140696696651776,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 140697827016704,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140697835405312,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "16",
+              "16",
+              "16",
+              "8",
+              "8",
+              "1",
+              "<CUstream 0x55d565863760>"
+            ],
+            "K3": [
+              {
+                "ptr": 140697827016704,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  1,
+                  128,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140697835405312,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  128,
+                  1,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140696717623296,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 140697847988224,
+                "shape": [
+                  262144
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 140697793462272,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140696692457472,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "8",
+              "1",
+              "16",
+              "<CUstream 0x55d565863760>"
+            ],
+            "K4": [
+              {
+                "ptr": 140695914414080,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140695780196352,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140695645978624,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140696696651776,
+                "shape": [
+                  32768,
+                  16
+                ],
+                "stride": [
+                  16,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 140697927680000,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 140695511760896,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              {
+                "ptr": 140697793462272,
+                "shape": [
+                  8,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140697847988224,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              "4096",
+              "8",
+              "8",
+              "1",
+              "0.08838834764831843",
+              {
+                "ptr": 140697849036800,
+                "shape": [
+                  81920
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.uint8",
+                "bytes": 81920
+              },
+              "<CUstream 0x55d565863760>"
+            ]
+          },
+          "1": {
+            "K1": [
+              {
+                "ptr": 140695243325440,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140696698748928,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 140697592135680,
+                "shape": [
+                  33554432
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "16",
+              "16",
+              "512",
+              "512",
+              "1",
+              "<CUstream 0x55d565863760>"
+            ],
+            "K2": [
+              {
+                "ptr": 140695243325440,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140695109107712,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140697592135680,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 140696696651776,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 140697801850880,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140697558581248,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "16",
+              "16",
+              "16",
+              "8",
+              "8",
+              "1",
+              "<CUstream 0x55d565863760>"
+            ],
+            "K3": [
+              {
+                "ptr": 140697801850880,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  1,
+                  128,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140697558581248,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  128,
+                  1,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140696717623296,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 140697579552768,
+                "shape": [
+                  262144
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 140697566969856,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140696693506048,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "8",
+              "1",
+              "16",
+              "<CUstream 0x55d565863760>"
+            ],
+            "K4": [
+              {
+                "ptr": 140695377543168,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140695243325440,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140695109107712,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140696696651776,
+                "shape": [
+                  32768,
+                  16
+                ],
+                "stride": [
+                  16,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 140697592135680,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 140694974889984,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              {
+                "ptr": 140697566969856,
+                "shape": [
+                  8,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140697579552768,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              "4096",
+              "8",
+              "8",
+              "1",
+              "0.08838834764831843",
+              {
+                "ptr": 140697849118720,
+                "shape": [
+                  81920
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.uint8",
+                "bytes": 81920
+              },
+              "<CUstream 0x55d565863760>"
+            ]
+          },
+          "2": {
+            "K1": [
+              {
+                "ptr": 140694706454528,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140696698748928,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 140697491472384,
+                "shape": [
+                  33554432
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "16",
+              "16",
+              "512",
+              "512",
+              "1",
+              "<CUstream 0x55d565863760>"
+            ],
+            "K2": [
+              {
+                "ptr": 140694706454528,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140694572236800,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140697491472384,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 140696696651776,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 140697457917952,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140697466306560,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "16",
+              "16",
+              "16",
+              "8",
+              "8",
+              "1",
+              "<CUstream 0x55d565863760>"
+            ],
+            "K3": [
+              {
+                "ptr": 140697457917952,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  1,
+                  128,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140697466306560,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  128,
+                  1,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140696717623296,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 140697580601344,
+                "shape": [
+                  262144
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 140693733376000,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140696694554624,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "8",
+              "1",
+              "16",
+              "<CUstream 0x55d565863760>"
+            ],
+            "K4": [
+              {
+                "ptr": 140694840672256,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140694706454528,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140694572236800,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140696696651776,
+                "shape": [
+                  32768,
+                  16
+                ],
+                "stride": [
+                  16,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 140697491472384,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 140694438019072,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              {
+                "ptr": 140693733376000,
+                "shape": [
+                  8,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140697580601344,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              "4096",
+              "8",
+              "8",
+              "1",
+              "0.08838834764831843",
+              {
+                "ptr": 140697849200640,
+                "shape": [
+                  81920
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.uint8",
+                "bytes": 81920
+              },
+              "<CUstream 0x55d565863760>"
+            ]
+          },
+          "3": {
+            "K1": [
+              {
+                "ptr": 140694169583616,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140696698748928,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 140693532049408,
+                "shape": [
+                  33554432
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "16",
+              "16",
+              "512",
+              "512",
+              "1",
+              "<CUstream 0x55d565863760>"
+            ],
+            "K2": [
+              {
+                "ptr": 140694169583616,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140694035365888,
+                "shape": [
+                  128,
+                  32768,
+                  16
+                ],
+                "stride": [
+                  1,
+                  2048,
+                  128
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140693532049408,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 140696696651776,
+                "shape": [
+                  524288
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 140693741764608,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140693498494976,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "16",
+              "16",
+              "16",
+              "8",
+              "8",
+              "1",
+              "<CUstream 0x55d565863760>"
+            ],
+            "K3": [
+              {
+                "ptr": 140693741764608,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  1,
+                  128,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140693498494976,
+                "shape": [
+                  128,
+                  128,
+                  16,
+                  8
+                ],
+                "stride": [
+                  128,
+                  1,
+                  16384,
+                  262144
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140696717623296,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 140693519466496,
+                "shape": [
+                  262144
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              {
+                "ptr": 140693506883584,
+                "shape": [
+                  2097152
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140696695603200,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              "4096",
+              "8",
+              "1",
+              "16",
+              "<CUstream 0x55d565863760>"
+            ],
+            "K4": [
+              {
+                "ptr": 140694303801344,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140694169583616,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140694035365888,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140696696651776,
+                "shape": [
+                  32768,
+                  16
+                ],
+                "stride": [
+                  16,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 2097152
+              },
+              {
+                "ptr": 140693532049408,
+                "shape": [
+                  64,
+                  64,
+                  16,
+                  512
+                ],
+                "stride": [
+                  64,
+                  1,
+                  4096,
+                  65536
+                ],
+                "dtype": "torch.float16",
+                "bytes": 67108864
+              },
+              {
+                "ptr": 140693901148160,
+                "shape": [
+                  32768,
+                  16,
+                  128
+                ],
+                "stride": [
+                  2048,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float16",
+                "bytes": 134217728
+              },
+              {
+                "ptr": 140696718671872,
+                "shape": [
+                  2
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.int64",
+                "bytes": 16
+              },
+              {
+                "ptr": 140693506883584,
+                "shape": [
+                  8,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 8388608
+              },
+              {
+                "ptr": 140693519466496,
+                "shape": [
+                  1,
+                  16,
+                  128,
+                  128
+                ],
+                "stride": [
+                  262144,
+                  16384,
+                  128,
+                  1
+                ],
+                "dtype": "torch.float32",
+                "bytes": 1048576
+              },
+              "None",
+              "4096",
+              "8",
+              "8",
+              "1",
+              "0.08838834764831843",
+              {
+                "ptr": 140697849282560,
+                "shape": [
+                  81920
+                ],
+                "stride": [
+                  1
+                ],
+                "dtype": "torch.uint8",
+                "bytes": 81920
+              },
+              "<CUstream 0x55d565863760>"
+            ]
+          }
+        }
+      },
+      "GRAPHS.json": [
+        {
+          "variant": "B0",
+          "buffer": 0,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "a7246cd33a0f6d3eb6f68b440345e04295f0d3a48eded5f349bada9247d0790c"
+        },
+        {
+          "variant": "B0",
+          "buffer": 1,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "efe88b4f6f6555378c2e77670f0e7ad82bf08e7ce8266a91112aadb4d49e8276"
+        },
+        {
+          "variant": "B0",
+          "buffer": 2,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "38042a2bafcadb89879a9f42c439f5cb4b9724c2a1ce528f660f998c7e6e3fab"
+        },
+        {
+          "variant": "B0",
+          "buffer": 3,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "e2a3220e6809f03ff5deee606b9a254ebf56ea34ef11d4c885bd065756e65b2a"
+        },
+        {
+          "variant": "V0",
+          "buffer": 0,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "953a5e8e856dd2d0a5b4e0e2f24886930d725de9e6213ba02a7392e4d1bbe07b"
+        },
+        {
+          "variant": "V0",
+          "buffer": 1,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "6f4ba9447b31b3dd51c449ad1d72eabe6f6f2b19e79c9c3e73f65930235bf486"
+        },
+        {
+          "variant": "V0",
+          "buffer": 2,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "3194b7833344102eb146e15dfe0def88783e60b8d652140ca4a118bdf3e94226"
+        },
+        {
+          "variant": "V0",
+          "buffer": 3,
+          "scope": "CLOCK",
+          "roles": [
+            "K1",
+            "K2",
+            "K3",
+            "K4"
+          ],
+          "node_positions": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "launch": [
+            [
+              8192,
+              128,
+              24960
+            ],
+            [
+              128,
+              384,
+              159744
+            ],
+            [
+              32,
+              256,
+              164864
+            ],
+            [
+              128,
+              384,
+              225280
+            ]
+          ],
+          "sha256": "a380f32138c4bcb05dc4c6fe3cf4e199767e1429c75981e989c7cf08c29ac108"
+        }
+      ],
+      "PROFILE_COMPLETE.json": {
+        "role": "V0",
+        "hash": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4",
+        "full_CP": true,
+        "cold_before_K1": true
+      },
+      "CORRECTNESS.json": {
+        "B0": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "V0": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "ENVIRONMENT.json": {
+        "host": "metallic-matrix-fin-03",
+        "GPU": "_CudaDeviceProperties(name='NVIDIA B200', major=10, minor=0, total_memory=182631MB, multi_processor_count=148, uuid=6abbea3c-b8d3-7f4b-ca76-85d612930fdf, pci_bus_id=5, pci_device_id=0, pci_domain_id=0, L2_cache_size=126MB)",
+        "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "cutlass": "4.7.0",
+        "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Tue_Jun_09_02:43:40_PM_PDT_2026\nCuda compilation tools, release 13.3, V13.3.73\nBuild cuda_13.3.r13.3/compiler.38244171_0",
+        "smi": "==============NVSMI LOG==============\n\nTimestamp                                              : Fri Oct 23 21:06:43 2026\nDriver Version                                         : 580.159.03\nCUDA Version                                           : 13.0\n\nAttached GPUs                                          : 1\nGPU 00000000:05:00.0\n    Product Name                                       : NVIDIA B200\n    Product Brand                                      : NVIDIA\n    Product Architecture                               : Blackwell\n    Display Mode                                       : Requested functionality has been deprecated\n    Display Attached                                   : Yes\n    Display Active                                     : Disabled\n    Persistence Mode                                   : Enabled\n    Addressing Mode                                    : None\n    MIG Mode\n        Current                                        : Disabled\n        Pending                                        : Disabled\n    Accounting Mode                                    : Disabled\n    Accounting Mode Buffer Size                        : 4000\n    Driver Model\n        Current                                        : N/A\n        Pending                                        : N/A\n    Serial Number                                      : 1653725070206\n    GPU UUID                                           : GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf\n    GPU PDI                                            : 0x21b7bc19b4bdebe9\n    Minor Number                                       : 0\n    VBIOS Version                                      : 97.00.FA.00.09\n    MultiGPU Board                                     : No\n    Board ID                                           : 0x500\n    Board Part Number                                  : 692-2G525-0220-500\n    GPU Part Number                                    : 2901-886-A1\n    FRU Part Number                                    : N/A\n    Platform Info\n        Chassis Serial Number                          : \n        Slot Number                                    : N/A\n        Tray Index                                     : N/A\n        Host ID                                        : 1\n        Peer Type                                      : Switch Connected\n        Module Id                                      : 3\n        GPU Fabric GUID                                : 0xa7ac1a000347bb4c\n    Inforom Version\n        Image Version                                  : G525.0220.00.03\n        OEM Object                                     : 2.1\n        ECC Object                                     : 7.16\n        Power Management Object                        : N/A\n    Inforom BBX Object Flush\n        Latest Timestamp                               : 2026/10/23 20:28:26.205\n        Latest Duration                                : 64778 us\n    GPU Operation Mode\n        Current                                        : N/A\n        Pending                                        : N/A\n    GPU C2C Mode                                       : Disabled\n    GPU Virtualization Mode\n        Virtualization Mode                            : Pass-Through\n        Host VGPU Mode                                 : N/A\n        vGPU Heterogeneous Mode                        : N/A\n    GPU Recovery Action                                : None\n    GSP Firmware Version                               : 580.159.03\n    IBMNPU\n        Relaxed Ordering Mode                          : N/A\n    PCI\n        Bus                                            : 0x05\n        Device                                         : 0x00\n        Domain                                         : 0x0000\n        Base Classcode                                 : 0x3\n        Sub Classcode                                  : 0x2\n        Device Id                                      : 0x290110DE\n        Bus Id                                         : 00000000:05:00.0\n        Sub System Id                                  : 0x199910DE\n        GPU Link Info\n            PCIe Generation\n                Max                                    : 5\n                Current                                : 5\n                Device Current                         : 5\n                Device Max                             : 5\n                Host Max                               : N/A\n            Link Width\n                Max                                    : 16x\n                Current                                : 16x\n        Bridge Chip\n            Type                                       : N/A\n            Firmware                                   : N/A\n        Replays Since Reset                            : 0\n        Replay Number Rollovers                        : 0\n        Tx Throughput                                  : 1220 KB/s\n        Rx Throughput                                  : 673 KB/s\n        Atomic Caps Outbound                           : FETCHADD_32 FETCHADD_64 SWAP_32 SWAP_64 CAS_32 CAS_64 \n        Atomic Caps Inbound                            : FETCHADD_32 FETCHADD_64 SWAP_32 SWAP_64 CAS_32 CAS_64 \n    Fan Speed                                          : N/A\n    Performance State                                  : P0\n    Clocks Event Reasons\n        Idle                                           : Active\n        Applications Clocks Setting                    : Not Active\n        SW Power Cap                                   : Not Active\n        HW Slowdown                                    : Not Active\n            HW Thermal Slowdown                        : Not Active\n            HW Power Brake Slowdown                    : Not Active\n        Sync Boost                                     : Not Active\n        SW Thermal Slowdown                            : Not Active\n        Display Clock Setting                          : Not Active\n    Clocks Event Reasons Counters\n        SW Power Capping                               : 2191276140 us\n        Sync Boost                                     : 0 us\n        SW Thermal Slowdown                            : 1850468795 us\n        HW Thermal Slowdown                            : 0 us\n        HW Power Braking                               : 0 us\n    Sparse Operation Mode                              : N/A\n    FB Memory Usage\n        Total                                          : 183359 MiB\n        Reserved                                       : 728 MiB\n        Used                                           : 4 MiB\n        Free                                           : 182628 MiB\n    BAR1 Memory Usage\n        Total                                          : 262144 MiB\n        Used                                           : 5 MiB\n        Free                                           : 262139 MiB\n    Conf Compute Protected Memory Usage\n        Total                                          : 0 MiB\n        Used                                           : 0 MiB\n        Free                                           : 0 MiB\n    Compute Mode                                       : Default\n    Utilization\n        GPU                                            : 0 %\n        Memory                                         : 0 %\n        Encoder                                        : 0 %\n        Decoder                                        : 0 %\n        JPEG                                           : 0 %\n        OFA                                            : 0 %\n    Encoder Stats\n        Active Sessions                                : 0\n        Average FPS                                    : 0\n        Average Latency                                : 0\n    FBC Stats\n        Active Sessions                                : 0\n        Average FPS                                    : 0\n        Average Latency                                : 0\n    DRAM Encryption Mode\n        Current                                        : N/A\n        Pending                                        : N/A\n    ECC Mode\n        Current                                        : Enabled\n        Pending                                        : Enabled\n    ECC Errors\n        Volatile\n            SRAM Correctable                           : 0\n            SRAM Uncorrectable Parity                  : 0\n            SRAM Uncorrectable SEC-DED                 : 0\n            DRAM Correctable                           : 0\n            DRAM Uncorrectable                         : 0\n        Aggregate\n            SRAM Correctable                           : 0\n            SRAM Uncorrectable Parity                  : 0\n            SRAM Uncorrectable SEC-DED                 : 0\n            DRAM Correctable                           : 0\n            DRAM Uncorrectable                         : 0\n            SRAM Threshold Exceeded                    : No\n        Aggregate Uncorrectable SRAM Sources\n            SRAM L2                                    : 0\n            SRAM SM                                    : 0\n            SRAM Microcontroller                       : 0\n            SRAM PCIE                                  : 0\n            SRAM Other                                 : 0\n        Channel Repair Pending                         : No\n        TPC Repair Pending                             : No\n        Unrepairable Memory                            : No\n    Retired Pages\n        Single Bit ECC                                 : N/A\n        Double Bit ECC                                 : N/A\n        Pending Page Blacklist                         : N/A\n    Remapped Rows\n        Correctable Error                              : 0\n        Inactive Correctable Error                     : 0\n        Uncorrectable Error                            : 0\n        Inactive Uncorrectable Error                   : 0\n        Pending                                        : No\n        Remapping Failure Occurred                     : No\n        Bank Remap Availability Histogram\n            Max                                        : 3840 bank(s)\n            High                                       : 0 bank(s)\n            Partial                                    : 0 bank(s)\n            Low                                        : 0 bank(s)\n            None                                       : 0 bank(s)\n    Temperature\n        GPU Current Temp                               : 34 C\n        GPU T.Limit Temp                               : 54 C\n        GPU Shutdown T.Limit Temp                      : -5 C\n        GPU Slowdown T.Limit Temp                      : -3 C\n        GPU Max Operating T.Limit Temp                 : 0 C\n        GPU Target Temperature                         : N/A\n        Memory Current Temp                            : 33 C\n        Memory Max Operating T.Limit Temp              : 0 C\n    GPU Power Readings\n        Average Power Draw                             : 238.74 W\n        Instantaneous Power Draw                       : 238.83 W\n        Current Power Limit                            : 1000.00 W\n        Requested Power Limit                          : 1000.00 W\n        Default Power Limit                            : 1000.00 W\n        Min Power Limit                                : 200.00 W\n        Max Power Limit                                : 1000.00 W\n    GPU Memory Power Readings \n        Average Power Draw                             : 21.26 W\n        Instantaneous Power Draw                       : N/A\n    Module Power Readings\n        Average Power Draw                             : N/A\n        Instantaneous Power Draw                       : N/A\n        Current Power Limit                            : N/A\n        Requested Power Limit                          : N/A\n        Default Power Limit                            : N/A\n        Min Power Limit                                : N/A\n        Max Power Limit                                : N/A\n    Power Smoothing                                    : Insufficient Permissions\n    Workload Power Profiles\n        Requested Profiles                             : N/A\n        Enforced Profiles                              : N/A\n    Clocks\n        Graphics                                       : 1845 MHz\n        SM                                             : 1845 MHz\n        Memory                                         : 3996 MHz\n        Video                                          : 1747 MHz\n    Applications Clocks\n        Graphics                                       : 1965 MHz\n        Memory                                         : 3996 MHz\n    Default Applications Clocks\n        Graphics                                       : 1965 MHz\n        Memory                                         : 3996 MHz\n    Deferred Clocks\n        Memory                                         : N/A\n    Max Clocks\n        Graphics                                       : 1965 MHz\n        SM                                             : 1965 MHz\n        Memory                                         : 3996 MHz\n        Video                                          : 1965 MHz\n    Max Customer Boost Clocks\n        Graphics                                       : 1965 MHz\n    Clock Policy\n        Auto Boost                                     : N/A\n        Auto Boost Default                             : N/A\n    Fabric\n        State                                          : Completed\n        Status                                         : Success\n        CliqueId                                       : 0\n        ClusterUUID                                    : 00000000-0000-0000-0000-000000000000\n        Health\n            Summary                                    : Healthy\n            Bandwidth                                  : N/A\n            Route Recovery in progress                 : N/A\n            Route Unhealthy                            : N/A\n            Access Timeout Recovery                    : False\n            Incorrect Configuration                    : N/A\n            Partition Assigned                         : N/A\n    Processes                                          : None\n    Capabilities\n        EGM                                            : disabled",
+        "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+        "import_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py"
+      },
+      "COMPILE_AUDIT.json": {
+        "B0": {
+          "cubin": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/V0_replays/replay_pid995919/binary/B0/cutlass___call___flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgm.sm_100a.cubin",
+          "cubin_sha256": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+          "resources": "Resource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_Sh_0:\n  REG:168 STACK:24 SHARED:1024 LOCAL:0 CONSTANT[2]:16 CONSTANT[0]:2480 TEXTURE:0 SURFACE:0 SAMPLER:0",
+          "registers": [
+            "168"
+          ],
+          "stack": [
+            "24"
+          ],
+          "counts": {
+            "LDL": 41,
+            "STL": 5,
+            "UTCHMMA": 44,
+            "UTMALDG": 7,
+            "UTMASTG": 2,
+            "LDTM": 13,
+            "STTM": 24,
+            "HMMA": 0,
+            "LDG": 198,
+            "STG": 64,
+            "F2FP": 223,
+            "BAR": 8,
+            "UTCBAR": 16,
+            "SYNCS": 314,
+            "FENCE": 27,
+            "MEMBAR": 9,
+            "FFMA": 0,
+            "FMUL": 94,
+            "FADD": 125,
+            "LDSM": 12,
+            "STSM": 16,
+            "LDS": 144,
+            "STS": 22,
+            "PRMT": 0
+          },
+          "normalized_sha256": "ffdd0bfd34810db217be4b5eb1e7404c06fffb21a064bb0345a6c380f2136976",
+          "clock_pc": [],
+          "smid_pc": []
+        },
+        "V0": {
+          "cubin": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/NCU/V0_replays/replay_pid995919/binary/V0/cutlass___call___flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgm.sm_100a.cubin",
+          "cubin_sha256": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4",
+          "resources": "Resource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_Sh_0:\n  REG:168 STACK:24 SHARED:1024 LOCAL:0 CONSTANT[2]:16 CONSTANT[0]:2480 TEXTURE:0 SURFACE:0 SAMPLER:0",
+          "registers": [
+            "168"
+          ],
+          "stack": [
+            "24"
+          ],
+          "counts": {
+            "LDL": 41,
+            "STL": 5,
+            "UTCHMMA": 44,
+            "UTMALDG": 7,
+            "UTMASTG": 2,
+            "LDTM": 13,
+            "STTM": 24,
+            "HMMA": 0,
+            "LDG": 102,
+            "STG": 64,
+            "F2FP": 223,
+            "BAR": 8,
+            "UTCBAR": 16,
+            "SYNCS": 314,
+            "FENCE": 27,
+            "MEMBAR": 9,
+            "FFMA": 0,
+            "FMUL": 94,
+            "FADD": 125,
+            "LDSM": 12,
+            "STSM": 16,
+            "LDS": 144,
+            "STS": 22,
+            "PRMT": 0
+          },
+          "normalized_sha256": "0eb98faddf0c0ba776cd5c47c0a47b61495bdc96b659da193ba46bfde8e61d69",
+          "clock_pc": [],
+          "smid_pc": []
+        }
+      }
+    }
+  },
+  "no_CUDA_context_created": true,
+  "old_sources_modified": false,
+  "constraints": [
+    "Old run_ncu.py hardcodes old/NCU and mkdir(exist_ok=False); cannot rerun that orchestrator in place.",
+    "Use new R6 orchestrator with original run_matched.py --mode profile --profile B0|V0 --out NEW; original script, sources, inputs and kernels remain unchanged.",
+    "Original run_matched compiles both B0/V0 each replay and asserts old APPROVAL exact hashes before target NVTX action; full gold/correctness and CP graph warmup remain original.",
+    "No GPU compile or experimental invocation is authorized by this audit."
+  ],
+  "prediction_only": {
+    "Data_read_WF_B0_minus_V0": 1376256,
+    "basis": "112 fixed CTA * (16384 - 4096); original initial16CTA and all other native clients presumed unchanged pending Source/perPC and hardware checks",
+    "model_input": false
+  },
+  "model_enabled": false
+}

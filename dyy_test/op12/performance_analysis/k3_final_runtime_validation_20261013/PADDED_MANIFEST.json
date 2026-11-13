@@ -1,0 +1,14 @@
+{
+  "changes": "scratch row stride132 rather than128 FP32; preserve vector16 alignment; verify wavefronts rather than assume conflict freedom",
+  "extra_smem_vs_coalesced_bytes": 1024,
+  "global_payload_unchanged": true,
+  "barriers_unchanged": true,
+  "k3_graph_target_launches": 64,
+  "micro_graph_target_launches": 1,
+  "files": {
+    "runtime_k3_padded.py": "cd865a5982f81afcfaab4743be6f9439d2fe728fe6f5944ac4f21fb52b040690",
+    "final_helper_padded.py": "534de2399d0e93abe71d669464ce7258b0bac687703ef8d4fe0e221f49146386",
+    "run_padded.py": "071f5191c684eab575f3fea6862c9e85dc57f71d15c8c4c506acd2d1aefc5b0b",
+    "run_padded_suite.py": "85a7dca23cd1699b66b47ff008d6c3fc2b18ee81023eb32a7a701a1f88c6ed8d"
+  }
+}

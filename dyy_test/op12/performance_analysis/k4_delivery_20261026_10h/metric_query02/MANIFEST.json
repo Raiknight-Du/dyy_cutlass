@@ -1,0 +1,47 @@
+[
+  {
+    "file": "RELEVANT_BASE_ROWS.txt",
+    "bytes": 10060,
+    "sha256": "c33a8583faf9ba64c639bad08a5661714a43224c5555a7d67c3bdd21a027500a"
+  },
+  {
+    "file": "MemoryWorkloadAnalysis_Tables.section",
+    "bytes": 5253,
+    "sha256": "ea846c1feb31ce94366655c44de7ddc7b962f425d2fdf720a8ef99df407ebfe2"
+  },
+  {
+    "file": "GB100_BASE_METRICS.txt",
+    "bytes": 600681,
+    "sha256": "7a0934d1245e8fda9ed99b2d835071cca9e049908e55cec8d6fc0f189bd8c95f"
+  },
+  {
+    "file": "PmSampling.section",
+    "bytes": 133041,
+    "sha256": "478c135e364d8370fe126fff4379075f0ed2502673a03b333175413ee0a6a89d"
+  },
+  {
+    "file": "MemoryWorkloadAnalysis_Chart.section",
+    "bytes": 3848,
+    "sha256": "8949aa77ac4c3eb4bcd9cc7e7db0df4c4a0f7322d5b17e288e4ee1b8a1854238"
+  },
+  {
+    "file": "COMMANDS.json",
+    "bytes": 4590,
+    "sha256": "fa1002849da25a716851598b448f3d57f559050c8c0363f22b0425fad745128d"
+  },
+  {
+    "file": "SharedMemoryConflicts.py",
+    "bytes": 6221,
+    "sha256": "ccfac40af4b695f1a2f91189e8c9c6b26369ddcc8542a8e5b25d8235774a759d"
+  },
+  {
+    "file": "MemoryWorkloadAnalysis.section",
+    "bytes": 6010,
+    "sha256": "ab13d7f9aca275ff3122ec0e3f1f03de085ac112ac0aafdd72e69f2368ea8a72"
+  },
+  {
+    "file": "GB100_RELEVANT_SUFFIXES.txt",
+    "bytes": 936907,
+    "sha256": "16b4f80ac643d7811c8dac9f9e2fa5436ae3d440cbd27504a6aebcde0a37c634"
+  }
+]

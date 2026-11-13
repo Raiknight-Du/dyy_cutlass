@@ -1,0 +1,38 @@
+{
+  "command_returncode": 0,
+  "reset_record": {
+    "command": [
+      "sudo",
+      "-n",
+      "nvidia-smi",
+      "-i",
+      "0",
+      "-rgc"
+    ],
+    "epoch": 1792965090.2127326,
+    "returncode": 0,
+    "stdout": "All done.\n",
+    "stderr": ""
+  },
+  "post_reset_observations": [
+    {
+      "time_ns": 1792965090328673848,
+      "returncode": 0,
+      "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 1965, 3996, 1965, 1965, 0x0000000000000024\n",
+      "stderr": ""
+    },
+    {
+      "time_ns": 1792965090597118649,
+      "returncode": 0,
+      "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 1965, 3996, 1965, 1965, 0x0000000000000001\n",
+      "stderr": ""
+    },
+    {
+      "time_ns": 1792965090864143509,
+      "returncode": 0,
+      "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 1965, 3996, 1965, 1965, 0x0000000000000001\n",
+      "stderr": ""
+    }
+  ],
+  "model_enabled": false
+}

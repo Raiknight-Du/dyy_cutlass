@@ -1,0 +1,2 @@
+pairs,mean_delta_us,median_delta_us,trimmed_mean_delta_us,stdev_delta_us,ci95_half_delta_us,mean_relative_delta_pct,e128_wins,e64_wins
+50,0.6245159999999997,0.6113500000000016,0.6236199999999996,0.06121577881159571,0.01696814818681168,2.078971283644246,0,50

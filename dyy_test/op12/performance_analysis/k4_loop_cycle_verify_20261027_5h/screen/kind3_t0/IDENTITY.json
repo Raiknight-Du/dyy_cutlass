@@ -1,0 +1,54 @@
+{
+  "source_SHA256": {
+    "matched_shared.py": "8ec0390fb4a4acff443bdfad4952f972520b1e8c055261a61361d4bcfc177f80",
+    "FAMILIES.json": "8ce329e67bd9bc485fb8dc7c9a3642de1a674cb8ebced86932eec8fbb18eb5e5",
+    "old_qk_resident.py": "8104391107dd2ba916438c0643d92c69d3eb49ec698c4325db9f96de28311599"
+  },
+  "CUBIN_SHA256": "96a6cb02e34d902a3c71f0b05fb77b9d3f7a2f4bbbdfc297a289292c45a28527",
+  "SASS_SHA256": "d3b91412727a028a33428593fb11e9f0fdcaf8be6fef9af1be79d9c95d8c6d12",
+  "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_matched_sharedMatchedShared_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_Layout_B_1_0:\n  REG:58 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1256 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+  "target_static_op_counts": {
+    "LDSM.16.MT88.4": 8
+  },
+  "native_LDL_STL": 0,
+  "grid": 128,
+  "threads": 192,
+  "SMEM_reserved_B": 225280,
+  "family": {
+    "id": 3,
+    "name": "CG1_LDSM",
+    "original_PCs": [
+      "0x7bd0",
+      "0x7bf0",
+      "0x7c00",
+      "0x7c10",
+      "0x7c20",
+      "0x7c30",
+      "0x7c40",
+      "0x7c50"
+    ],
+    "opcodes": [
+      "LDSM.16.MT88.4",
+      "LDSM.16.MT88.4",
+      "LDSM.16.MT88.4",
+      "LDSM.16.MT88.4",
+      "LDSM.16.MT88.4",
+      "LDSM.16.MT88.4",
+      "LDSM.16.MT88.4",
+      "LDSM.16.MT88.4"
+    ],
+    "ptx": "ldmatrix.sync.aligned.m8n8.x4.trans.shared.b16",
+    "expected_Source_WF_per_round_CTA": 128,
+    "participating_warps": 4,
+    "offset_units": "B from alignedscratchbase",
+    "original_stage_slot": 0,
+    "scope": "Nativeinstruction family, same laneaddress/predicate/width and4warps; synthetic resident input, generalTC QK SS competitor",
+    "all_instructions_have_active_lanes": true
+  },
+  "python": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+  "torch": "2.11.0+cu130",
+  "cutlass": "4.7.0",
+  "device": "_CudaDeviceProperties(name='NVIDIA B200', major=10, minor=0, total_memory=182631MB, multi_processor_count=148, uuid=6abbea3c-b8d3-7f4b-ca76-85d612930fdf, pci_bus_id=5, pci_device_id=0, pci_domain_id=0, L2_cache_size=126MB)",
+  "profile": false,
+  "model_enabled": false
+}

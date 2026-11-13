@@ -1,0 +1,19 @@
+{
+  "status": "CHILD_FAILED",
+  "command": [
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/clock_lease.py",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/run_compare.py",
+    "--mode",
+    "compile",
+    "--variants",
+    "baseline,layout",
+    "--tag",
+    "layout_v1"
+  ],
+  "returncode": 1,
+  "invalid_observations": [],
+  "automatic_clock_change": false,
+  "model_enabled": false
+}

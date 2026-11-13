@@ -1,0 +1,141 @@
+{
+  "phase": "smoke",
+  "idle_checks": [
+    {
+      "apps": {
+        "argv": [
+          "nvidia-smi",
+          "--query-compute-apps=pid",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "unix_ns": 1791844498305354187
+      },
+      "status": {
+        "argv": [
+          "nvidia-smi",
+          "--query-gpu=uuid,utilization.gpu,clocks.sm",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 0 %, 1965 MHz\n",
+        "stderr": "",
+        "unix_ns": 1791844498319475536
+      }
+    },
+    {
+      "apps": {
+        "argv": [
+          "nvidia-smi",
+          "--query-compute-apps=pid",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "unix_ns": 1791844528372580385
+      },
+      "status": {
+        "argv": [
+          "nvidia-smi",
+          "--query-gpu=uuid,utilization.gpu,clocks.sm",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 0 %, 1965 MHz\n",
+        "stderr": "",
+        "unix_ns": 1791844528386494277
+      }
+    },
+    {
+      "apps": {
+        "argv": [
+          "nvidia-smi",
+          "--query-compute-apps=pid",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "unix_ns": 1791844558428900199
+      },
+      "status": {
+        "argv": [
+          "nvidia-smi",
+          "--query-gpu=uuid,utilization.gpu,clocks.sm",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 0 %, 1965 MHz\n",
+        "stderr": "",
+        "unix_ns": 1791844558442588004
+      }
+    }
+  ],
+  "commands": [
+    {
+      "name": "smoke_t1",
+      "argv": [
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/run_experiment.py",
+        "--phase",
+        "smoke",
+        "--trial",
+        "1",
+        "--out",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/smoke_v1/smoke_t1",
+        "--repeats",
+        "16",
+        "32",
+        "64",
+        "128",
+        "256",
+        "512",
+        "1024",
+        "2048"
+      ],
+      "start_ns": 1791844558741681600,
+      "end_ns": 1791844563947692363,
+      "returncode": 1
+    }
+  ],
+  "prior_lock_range": "UNKNOWN; reset to driver defaults",
+  "lock": {
+    "argv": [
+      "sudo",
+      "-n",
+      "nvidia-smi",
+      "-i",
+      "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf",
+      "--lock-gpu-clocks=1845,1845",
+      "--mode=0"
+    ],
+    "returncode": 0,
+    "stdout": "GPU clocks set to \"(gpuClkMin 1845, gpuClkMax 1845)\" for GPU 00000000:05:00.0\nAll done.\n",
+    "stderr": "",
+    "unix_ns": 1791844558489321155
+  },
+  "status": "FAILED_OR_PAUSED",
+  "error": "AssertionError('smoke_t1 failed; inspect log')",
+  "reset": {
+    "argv": [
+      "sudo",
+      "-n",
+      "nvidia-smi",
+      "-i",
+      "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf",
+      "--reset-gpu-clocks"
+    ],
+    "returncode": 0,
+    "stdout": "All done.\n",
+    "stderr": "",
+    "unix_ns": 1791844563982318891
+  },
+  "sm_mhz_histogram": {
+    "1845": 514
+  },
+  "competition": [],
+  "frequency_valid": true
+}

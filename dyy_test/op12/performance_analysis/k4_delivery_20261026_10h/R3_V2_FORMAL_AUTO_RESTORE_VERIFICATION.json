@@ -1,0 +1,39 @@
+{
+  "reset_command": {
+    "command": [
+      "sudo",
+      "-n",
+      "nvidia-smi",
+      "-i",
+      "0",
+      "-rgc"
+    ],
+    "epoch": 1792964740.9235146,
+    "returncode": 0,
+    "stdout": "All done.\n",
+    "stderr": ""
+  },
+  "post_reset_observations": [
+    {
+      "time_ns": 1792964741079510244,
+      "returncode": 0,
+      "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 1965, 3996, 1965, 1965, 0x0000000000000000\n",
+      "stderr": ""
+    },
+    {
+      "time_ns": 1792964741347488482,
+      "returncode": 0,
+      "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 1965, 3996, 1965, 1965, 0x0000000000000000\n",
+      "stderr": ""
+    },
+    {
+      "time_ns": 1792964741614658381,
+      "returncode": 0,
+      "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 1965, 3996, 1965, 1965, 0x0000000000000000\n",
+      "stderr": ""
+    }
+  ],
+  "command_returncode": 0,
+  "limitation": "Reset success plus subsequent sampled state; requested SM clock never substituted for measured native cycles.",
+  "model_enabled": false
+}

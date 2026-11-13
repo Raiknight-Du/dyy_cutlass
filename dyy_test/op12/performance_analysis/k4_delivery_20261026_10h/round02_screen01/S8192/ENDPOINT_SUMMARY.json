@@ -1,0 +1,135 @@
+{
+  "S": 8192,
+  "C": 1024,
+  "L": 16,
+  "CTA": 16,
+  "variant": "CLOCK_RETURNS",
+  "middle_interval_return_indices": [
+    4,
+    11
+  ],
+  "valid_calls": 12,
+  "expected_events": 49,
+  "all_same_SM_per_call": true,
+  "summary": {
+    "CP_EVENT": {
+      "INIT_cycles": {
+        "n": 6,
+        "median": 31769.5,
+        "mean": 31375.333333333332,
+        "p5": 29140.5,
+        "p95": 33242.25
+      },
+      "INIT_END_to_first_CG1_RETURN": {
+        "n": 6,
+        "median": 10086.5,
+        "mean": 10387.833333333334,
+        "p5": 9742.75,
+        "p95": 11353.25
+      },
+      "INIT_BEGIN_to_last_CG1_RETURN": {
+        "n": 6,
+        "median": 90112.0,
+        "mean": 88999.5,
+        "p5": 86412.0,
+        "p95": 90369.25
+      },
+      "first_to_last_CG1_RETURN": {
+        "n": 6,
+        "median": 47254.5,
+        "mean": 47236.333333333336,
+        "p5": 46840.25,
+        "p95": 47695.0
+      },
+      "middle_mean_inter_return_cycles": {
+        "n": 6,
+        "median": 3183.5,
+        "mean": 3187.1666666666665,
+        "p5": 3143.5,
+        "p95": 3230.9375
+      },
+      "tail_inter_return_cycles": {
+        "n": 6,
+        "median": 2800.5,
+        "mean": 2797.5,
+        "p5": 2761.25,
+        "p95": 2827.25
+      },
+      "tail_minus_middle_cycles": {
+        "n": 6,
+        "median": -368.5,
+        "mean": -389.6666666666667,
+        "p5": -469.6875,
+        "p95": -335.0
+      },
+      "tail_over_middle": {
+        "n": 6,
+        "median": 0.8840661848428985,
+        "mean": 0.8778925936941676,
+        "p5": 0.8546293175169571,
+        "p95": 0.893524891336909
+      }
+    },
+    "K4_EVENT": {
+      "INIT_cycles": {
+        "n": 6,
+        "median": 32009.0,
+        "mean": 31652.833333333332,
+        "p5": 28965.0,
+        "p95": 34039.75
+      },
+      "INIT_END_to_first_CG1_RETURN": {
+        "n": 6,
+        "median": 10068.5,
+        "mean": 10460.0,
+        "p5": 9563.75,
+        "p95": 11903.0
+      },
+      "INIT_BEGIN_to_last_CG1_RETURN": {
+        "n": 6,
+        "median": 90541.0,
+        "mean": 89526.83333333333,
+        "p5": 86326.75,
+        "p95": 91689.0
+      },
+      "first_to_last_CG1_RETURN": {
+        "n": 6,
+        "median": 47459.0,
+        "mean": 47414.0,
+        "p5": 46989.25,
+        "p95": 47764.25
+      },
+      "middle_mean_inter_return_cycles": {
+        "n": 6,
+        "median": 3204.5,
+        "mean": 3202.7708333333335,
+        "p5": 3158.4375,
+        "p95": 3257.21875
+      },
+      "tail_inter_return_cycles": {
+        "n": 6,
+        "median": 2802.0,
+        "mean": 2796.3333333333335,
+        "p5": 2771.75,
+        "p95": 2815.25
+      },
+      "tail_minus_middle_cycles": {
+        "n": 6,
+        "median": -410.25,
+        "mean": -406.4375,
+        "p5": -451.59375,
+        "p95": -353.1875
+      },
+      "tail_over_middle": {
+        "n": 6,
+        "median": 0.8722857862781108,
+        "mean": 0.8732003513111563,
+        "p5": 0.8612335707819254,
+        "p95": 0.8881898122695214
+      }
+    }
+  },
+  "interpretation": "Within-process descriptive endpoint distributions. Helper returns are neither first TMA issue nor physical completion. Middle selection does not redefine the formal model boundary. No fitted intercept is a theoretical node.",
+  "local_absolute_bias_bound_cycles": null,
+  "model_enabled": false
+}

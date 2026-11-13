@@ -1,0 +1,7 @@
+{"status": "SUPERVISED_COMMAND_COMPLETE", "returncode": 1, "model_enabled": false}
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_r8_prepare.py", line 7, in <module>
+    subprocess.run([sys.executable,str(O/'gpu_telemetry_sidecar.py'),'--out',str(O/'r8_actual_prepare01_telemetry'),'--command-json',str(p),'--interval-ms','100'],check=True,timeout=300)
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python', '/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/gpu_telemetry_sidecar.py', '--out', '/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r8_actual_prepare01_telemetry', '--command-json', '/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/R8_PREPARE_COMMAND.json', '--interval-ms', '100']' returned non-zero exit status 1.

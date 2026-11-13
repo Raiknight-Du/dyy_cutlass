@@ -1,0 +1,14 @@
+{
+  "B0": {
+    "structural_pass": true,
+    "reasons": [],
+    "relative_to": "B0",
+    "local_bias_bound_cycles": null
+  },
+  "V0": {
+    "structural_pass": true,
+    "reasons": [],
+    "relative_to": "B0",
+    "local_bias_bound_cycles": null
+  }
+}

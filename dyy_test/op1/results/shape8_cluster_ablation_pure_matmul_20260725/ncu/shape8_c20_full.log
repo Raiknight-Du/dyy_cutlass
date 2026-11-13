@@ -1,0 +1,7 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 4055090 (/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/shape8_cluster_ablation_pure_matmul_20260725/bin/full)
+==PROF== Profiling "device_kernel" - 0 (1/1): 0%....50%....100% - 16 passes
+RESULT,8,M256_N256_K256_E64x64_C4x1x1,ok,1,1102
+==PROF== Disconnected from process 4055090
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/shape8_cluster_ablation_pure_matmul_20260725/ncu/shape8_c20_full.ncu-rep

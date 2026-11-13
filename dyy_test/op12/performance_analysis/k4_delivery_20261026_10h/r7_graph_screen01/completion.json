@@ -1,0 +1,13 @@
+{
+  "completed": true,
+  "invocations": 20,
+  "correctness": true,
+  "input_pattern": "varying exact FP16 quarter integers; all8Cslots initializedzero",
+  "full_output_elements_per_CTA": 32768,
+  "direct_lazy_invocations_per_source": 1,
+  "graph_warm_replays_per_config_per_N": 20,
+  "graph_external_EventRecord_kernel_EventRecord": true,
+  "warmup": 20,
+  "samples": 5,
+  "model_enabled": false
+}

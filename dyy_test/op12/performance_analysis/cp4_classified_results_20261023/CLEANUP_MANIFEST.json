@@ -1,0 +1,33 @@
+{
+  "deleted_irrecoverably": false,
+  "entries": [
+    {
+      "original": "cp4_inchain_frequency_retest_20261023",
+      "archive": "_superseded/cp4_frequency_20261023/cp4_inchain_frequency_retest_20261023",
+      "original_manifest_sha256": "325ba3e00ff26f64db8fed5eb39bfd6810b6a5681d6a6a9afe2feeaa99b123c2",
+      "verified_manifest_files": 472,
+      "action": "recoverable directory move; no content changes"
+    },
+    {
+      "original": "cp4_inchain_frequency_retest_20261023_transport.tar.gz",
+      "archive": "_superseded/cp4_frequency_20261023/cp4_inchain_frequency_retest_20261023_transport.tar.gz",
+      "sha256": "f0b8712a4bbe3bf1f6639e7a52522e1e10e2d6f788a483b28139af25b0edc141",
+      "bytes": 397389535,
+      "action": "recoverable move"
+    },
+    {
+      "original": "cp4_cold_l2_lock1845_20261023",
+      "archive": "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023",
+      "original_manifest_sha256": "3b7c9649aa450935b0f13f6647448ea3af6843fba7949b6c89456ddb90b69ee2",
+      "verified_manifest_files": 598,
+      "action": "recoverable directory move; no content changes"
+    },
+    {
+      "original": "cp4_cold_l2_lock1845_20261023_transport.tar.gz",
+      "archive": "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023_transport.tar.gz",
+      "sha256": "2f7f6649460aa886e933cee10cea883f58c8f84176f17dbed18efd535e317e5e",
+      "bytes": 137398436,
+      "action": "recoverable move"
+    }
+  ]
+}

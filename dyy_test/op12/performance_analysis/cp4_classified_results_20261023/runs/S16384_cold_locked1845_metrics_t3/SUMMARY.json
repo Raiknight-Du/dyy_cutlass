@@ -1,0 +1,17 @@
+{
+  "S": 16384,
+  "cache": "cold",
+  "clock": "locked1845",
+  "mode": "metrics",
+  "trial": 3,
+  "CP_Event_us": {
+    "n": 300,
+    "median": 225.3440022468567,
+    "mean": 226.1987185974916,
+    "p5": 224.95999932289124,
+    "p95": 227.4239957332611,
+    "cv_percent": 0.580023182290867
+  },
+  "event_scope": "complete K1-K4 only, each eviction excluded; no internal kernel Events",
+  "model_enabled": false
+}

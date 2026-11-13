@@ -1,0 +1,350 @@
+{
+  "checked_at_utc": "2026-09-26T20:05:16.576Z",
+  "model_frozen_at_utc": "2026-09-26T20:03:19.512Z",
+  "model_freeze_sha256": "8ae8882686be2807ffe6891719c7023412a1e0f126e3abc98eca13ddaa58a121",
+  "model_hashes_verified_before_target_timing_read": true,
+  "fit_model_to_measurements": false,
+  "reference_clock_Hz": 1965000000,
+  "measurement_method": "Archived CUDA Event; independent stage Python-wrapper calls use two warmup/twenty events on repeated fixed tensors; end-to-end uses twenty warmup/hundred events and rotating Q/K/V. Three trial medians. No NCU duration used.",
+  "limitations": [
+    "Several archived independent-stage CVs exceed5%; only trend/order-of-magnitude sanity check, not tight validation.",
+    "Clock snapshots1965MHz are not continuous clock traces.",
+    "Independent-stage median sums are not true end-to-end latency.",
+    "Repeated inputs/workspace permit cache reuse; model all-request-HBM scenario does not measure this.",
+    "No target ablation or profiling counter is used to retune constants."
+  ],
+  "sources": [
+    {
+      "path": "../evidence_gap_ablation_20260920/cp_stage_same_round/trial1.json",
+      "sha256": "150c4a52b26bfe2c14dd58c8f784f7414315ee285577092403aa7ed7e48ae57e"
+    },
+    {
+      "path": "../evidence_gap_ablation_20260920/cp_stage_same_round/trial2.json",
+      "sha256": "3288182743165e3489a5dab1d4f996427debdd42b93d55d3866d4f723779d18a"
+    },
+    {
+      "path": "../evidence_gap_ablation_20260920/cp_stage_same_round/trial3.json",
+      "sha256": "409157359853f567e80c32eeed442f9f05af9344c96cb6d3234d09d9fc69755a"
+    }
+  ],
+  "cases": [
+    {
+      "S": 8192,
+      "C": 1024,
+      "L": 16,
+      "P": 8,
+      "stages": [
+        {
+          "kernel": "K1",
+          "source_calendar_cycles": 30879,
+          "theory_us_at_reference_clock": 15.714503816793894,
+          "event_median_of_three_trial_medians_us": 21.920000202953815,
+          "event_reference_cycles": 43072.80039880425,
+          "residual_us": 6.205496386159922,
+          "residual_reference_cycles": 12193.800398804247,
+          "event_to_theory_ratio": 1.394889743800131,
+          "trial_medians_us": [
+            21.79200015962124,
+            22.160000167787075,
+            21.920000202953815
+          ],
+          "trial_cv_percent": [
+            15.948365757366833,
+            24.613897184554393,
+            15.473210694917777
+          ]
+        },
+        {
+          "kernel": "K2",
+          "source_calendar_cycles": 46619,
+          "theory_us_at_reference_clock": 23.724681933842238,
+          "event_median_of_three_trial_medians_us": 38.176000118255615,
+          "event_reference_cycles": 75015.84023237228,
+          "residual_us": 14.451318184413378,
+          "residual_reference_cycles": 28396.840232372284,
+          "event_to_theory_ratio": 1.6091258978607925,
+          "trial_medians_us": [
+            38.176000118255615,
+            38.28799910843372,
+            38.11199963092804
+          ],
+          "trial_cv_percent": [
+            12.11926083853684,
+            12.125233312250641,
+            12.582496429739793
+          ]
+        },
+        {
+          "kernel": "K3",
+          "source_calendar_cycles": 50203,
+          "theory_us_at_reference_clock": 25.548600508905853,
+          "event_median_of_three_trial_medians_us": 27.888000011444092,
+          "event_reference_cycles": 54799.92002248764,
+          "residual_us": 2.339399502538239,
+          "residual_reference_cycles": 4596.92002248764,
+          "event_to_theory_ratio": 1.091566639891792,
+          "trial_medians_us": [
+            27.83999964594841,
+            27.888000011444092,
+            29.343999922275543
+          ],
+          "trial_cv_percent": [
+            14.952361938586229,
+            14.000682243922864,
+            13.685771293174042
+          ]
+        },
+        {
+          "kernel": "K4",
+          "source_calendar_cycles": 57560,
+          "theory_us_at_reference_clock": 29.29262086513995,
+          "event_median_of_three_trial_medians_us": 71.1199976503849,
+          "event_reference_cycles": 139750.79538300633,
+          "residual_us": 41.82737678524495,
+          "residual_reference_cycles": 82190.79538300633,
+          "event_to_theory_ratio": 2.4279151386901727,
+          "trial_medians_us": [
+            72.00000062584877,
+            70.44799998402596,
+            71.1199976503849
+          ],
+          "trial_cv_percent": [
+            5.82716765473651,
+            4.707440993049749,
+            5.997128205644063
+          ]
+        }
+      ],
+      "end_to_end_event_median_of_three_trial_medians_us": 145.10399848222733,
+      "source_four_stage_sum_cycles": 185261,
+      "independent_stage_event_median_sum_us": 159.10399798303843,
+      "finite_output_and_state": true,
+      "clock_snapshots_MHz": [
+        [
+          1965,
+          1965
+        ],
+        [
+          1965,
+          1965
+        ],
+        [
+          1965,
+          1965
+        ]
+      ]
+    },
+    {
+      "S": 16384,
+      "C": 2048,
+      "L": 32,
+      "P": 8,
+      "stages": [
+        {
+          "kernel": "K1",
+          "source_calendar_cycles": 61753,
+          "theory_us_at_reference_clock": 31.426463104325702,
+          "event_median_of_three_trial_medians_us": 39.11999985575676,
+          "event_reference_cycles": 76870.79971656203,
+          "residual_us": 7.693536751431058,
+          "residual_reference_cycles": 15117.799716562033,
+          "event_to_theory_ratio": 1.2448107738338547,
+          "trial_medians_us": [
+            38.39999996125698,
+            39.32799957692623,
+            39.11999985575676
+          ],
+          "trial_cv_percent": [
+            8.108388234721334,
+            8.119621134333057,
+            7.407966684311342
+          ]
+        },
+        {
+          "kernel": "K2",
+          "source_calendar_cycles": 83643,
+          "theory_us_at_reference_clock": 42.566412213740456,
+          "event_median_of_three_trial_medians_us": 64.7520013153553,
+          "event_reference_cycles": 127237.68258467317,
+          "residual_us": 22.185589101614845,
+          "residual_reference_cycles": 43594.682584673166,
+          "event_to_theory_ratio": 1.5211994139936775,
+          "trial_medians_us": [
+            65.08799642324448,
+            64.30399790406227,
+            64.7520013153553
+          ],
+          "trial_cv_percent": [
+            6.134505280407174,
+            6.278022018361954,
+            6.7620964359136515
+          ]
+        },
+        {
+          "kernel": "K3",
+          "source_calendar_cycles": 50203,
+          "theory_us_at_reference_clock": 25.548600508905853,
+          "event_median_of_three_trial_medians_us": 28.495999984443188,
+          "event_reference_cycles": 55994.639969430864,
+          "residual_us": 2.9473994755373347,
+          "residual_reference_cycles": 5791.639969430864,
+          "event_to_theory_ratio": 1.1153644198440504,
+          "trial_medians_us": [
+            28.44800055027008,
+            28.495999984443188,
+            29.392000287771225
+          ],
+          "trial_cv_percent": [
+            15.160244940504647,
+            13.177123076059194,
+            13.488958093148609
+          ]
+        },
+        {
+          "kernel": "K4",
+          "source_calendar_cycles": 107032,
+          "theory_us_at_reference_clock": 54.46921119592875,
+          "event_median_of_three_trial_medians_us": 99.13600236177444,
+          "event_reference_cycles": 194802.24464088678,
+          "residual_us": 44.666791165845694,
+          "residual_reference_cycles": 87770.24464088678,
+          "event_to_theory_ratio": 1.8200374153607033,
+          "trial_medians_us": [
+            99.13600236177444,
+            99.98400136828423,
+            98.12800213694572
+          ],
+          "trial_cv_percent": [
+            3.21424334031701,
+            3.4887379042179423,
+            4.129229217079841
+          ]
+        }
+      ],
+      "end_to_end_event_median_of_three_trial_medians_us": 214.7039994597435,
+      "source_four_stage_sum_cycles": 302631,
+      "independent_stage_event_median_sum_us": 231.5040035173297,
+      "finite_output_and_state": true,
+      "clock_snapshots_MHz": [
+        [
+          1965,
+          1965
+        ],
+        [
+          1965,
+          1965
+        ],
+        [
+          1965,
+          1965
+        ]
+      ]
+    },
+    {
+      "S": 32768,
+      "C": 4096,
+      "L": 64,
+      "P": 8,
+      "stages": [
+        {
+          "kernel": "K1",
+          "source_calendar_cycles": 123487,
+          "theory_us_at_reference_clock": 62.84325699745547,
+          "event_median_of_three_trial_medians_us": 70.65600156784058,
+          "event_reference_cycles": 138839.04308080673,
+          "residual_us": 7.812744570385107,
+          "residual_reference_cycles": 15352.043080806732,
+          "event_to_theory_ratio": 1.124321127574617,
+          "trial_medians_us": [
+            71.15199789404869,
+            70.48000022768974,
+            70.65600156784058
+          ],
+          "trial_cv_percent": [
+            4.780431780889874,
+            4.641885736709024,
+            4.634716001157847
+          ]
+        },
+        {
+          "kernel": "K2",
+          "source_calendar_cycles": 157691,
+          "theory_us_at_reference_clock": 80.2498727735369,
+          "event_median_of_three_trial_medians_us": 112.41599917411804,
+          "event_reference_cycles": 220897.43837714198,
+          "residual_us": 32.16612640058115,
+          "residual_reference_cycles": 63206.43837714198,
+          "event_to_theory_ratio": 1.4008246404496258,
+          "trial_medians_us": [
+            112.41599917411804,
+            112.41599917411804,
+            112.44799941778183
+          ],
+          "trial_cv_percent": [
+            4.600388094025669,
+            4.4278230751835395,
+            4.431324916571649
+          ]
+        },
+        {
+          "kernel": "K3",
+          "source_calendar_cycles": 50203,
+          "theory_us_at_reference_clock": 25.548600508905853,
+          "event_median_of_three_trial_medians_us": 27.904000133275986,
+          "event_reference_cycles": 54831.36026188731,
+          "residual_us": 2.3553996243701327,
+          "residual_reference_cycles": 4628.360261887312,
+          "event_to_theory_ratio": 1.0921929020554013,
+          "trial_medians_us": [
+            27.888000011444092,
+            29.37600016593933,
+            27.904000133275986
+          ],
+          "trial_cv_percent": [
+            14.177971925833749,
+            12.574860907418884,
+            14.401446705459108
+          ]
+        },
+        {
+          "kernel": "K4",
+          "source_calendar_cycles": 205976,
+          "theory_us_at_reference_clock": 104.82239185750636,
+          "event_median_of_three_trial_medians_us": 153.26400101184845,
+          "event_reference_cycles": 301163.7619882822,
+          "residual_us": 48.44160915434209,
+          "residual_reference_cycles": 95187.7619882822,
+          "event_to_theory_ratio": 1.4621303549359255,
+          "trial_medians_us": [
+            153.29600125551224,
+            153.1200036406517,
+            153.26400101184845
+          ],
+          "trial_cv_percent": [
+            2.852938608895431,
+            3.4697933051051364,
+            2.370920535045987
+          ]
+        }
+      ],
+      "end_to_end_event_median_of_three_trial_medians_us": 352.08000242710114,
+      "source_four_stage_sum_cycles": 537357,
+      "independent_stage_event_median_sum_us": 364.24000188708305,
+      "finite_output_and_state": true,
+      "clock_snapshots_MHz": [
+        [
+          1965,
+          1965
+        ],
+        [
+          1965,
+          1965
+        ],
+        [
+          1965,
+          1965
+        ]
+      ]
+    }
+  ]
+}

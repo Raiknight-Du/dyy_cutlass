@@ -1,0 +1,88 @@
+[
+  {
+    "wall_ns": 1792757836560359372,
+    "monotonic_ns": 4580129697300726,
+    "SM_MHz": 1965,
+    "memory_MHz": 3996,
+    "power_mW": 241102,
+    "temperature_C": 33,
+    "throttle": 0,
+    "util": 30,
+    "processes": [
+      622635
+    ],
+    "power_violation": {
+      "violationTime": 491721854304,
+      "referenceTime": 1792757836562595,
+      "unit": "NVML raw nanoseconds"
+    },
+    "thermal_violation": {
+      "violationTime": 0,
+      "referenceTime": 1792757836564895,
+      "unit": "NVML raw nanoseconds"
+    }
+  },
+  {
+    "wall_ns": 1792757866595087068,
+    "monotonic_ns": 4580159732027052,
+    "SM_MHz": 120,
+    "memory_MHz": 3996,
+    "power_mW": 189033,
+    "temperature_C": 32,
+    "throttle": 1,
+    "util": 0,
+    "processes": [],
+    "power_violation": {
+      "violationTime": 491721854304,
+      "referenceTime": 1792757866595945,
+      "unit": "NVML raw nanoseconds"
+    },
+    "thermal_violation": {
+      "violationTime": 0,
+      "referenceTime": 1792757866597491,
+      "unit": "NVML raw nanoseconds"
+    }
+  },
+  {
+    "wall_ns": 1792757896627934330,
+    "monotonic_ns": 4580189764874564,
+    "SM_MHz": 120,
+    "memory_MHz": 3996,
+    "power_mW": 188733,
+    "temperature_C": 32,
+    "throttle": 1,
+    "util": 0,
+    "processes": [],
+    "power_violation": {
+      "violationTime": 491721854304,
+      "referenceTime": 1792757896628770,
+      "unit": "NVML raw nanoseconds"
+    },
+    "thermal_violation": {
+      "violationTime": 0,
+      "referenceTime": 1792757896630297,
+      "unit": "NVML raw nanoseconds"
+    }
+  },
+  {
+    "wall_ns": 1792757926656417718,
+    "monotonic_ns": 4580219793357832,
+    "SM_MHz": 120,
+    "memory_MHz": 3996,
+    "power_mW": 188965,
+    "temperature_C": 32,
+    "throttle": 1,
+    "util": 0,
+    "processes": [],
+    "power_violation": {
+      "violationTime": 491721854304,
+      "referenceTime": 1792757926657259,
+      "unit": "NVML raw nanoseconds"
+    },
+    "thermal_violation": {
+      "violationTime": 0,
+      "referenceTime": 1792757926658785,
+      "unit": "NVML raw nanoseconds"
+    }
+  }
+]

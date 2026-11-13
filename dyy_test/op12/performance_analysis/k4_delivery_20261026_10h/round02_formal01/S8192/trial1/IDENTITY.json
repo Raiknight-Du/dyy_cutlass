@@ -1,0 +1,19 @@
+{
+  "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "shape": [
+    1,
+    16,
+    8192,
+    128
+  ],
+  "C": 1024,
+  "L": 16,
+  "P": 8,
+  "grid": 128,
+  "block": 384,
+  "input_sha256": "1b743c454f06a1a15582d5310f00325df3823ac4abb2947e677683835ac2f780",
+  "sample_CTA": 16,
+  "expected_events": 49,
+  "local_bias_bound_cycles": null,
+  "model_enabled": false
+}

@@ -1,0 +1,22 @@
+{
+  "status": "CPU_SOURCE_PREPARED_NO_GPU",
+  "algorithm_revision": "v2 slot-major",
+  "address": "((iteration&7)*gridDim.x+CTA)*65536+thread*512+column*4",
+  "host_checksum": "separate grid1/grid128 expectations from same source allocation",
+  "host_only_additions": [
+    "ADDRESS_MAPPING.json",
+    "host start/end ns outside unchanged CUDA Event interval"
+  ],
+  "toolchain_plan": "nvcc13.0.88 native-only -gencode arch=compute_100a,code=sm_100a; standalone PTX audit",
+  "JIT_policy": "No PTX in application fatbin; unset process-wide CUDA_DISABLE_PTX_JIT to avoid constraining profiler internals",
+  "model_enabled": false,
+  "files": {
+    "analyze_rates.py": "93eb3bf9fad1e644a5886ae2ca4faafa74e04d05db34b5c352b6e25c2819a22e",
+    "generate_kernel.py": "1a1c7feabf2fcce8439e9a83e40953ec07bd9e0cd03c5bc1f638e04e4323982f",
+    "GENERATION_RECORD.json": "74451631a6ca857ce27d8e50283d5ecb2ef52f9edd36275815e0eecc1af897da",
+    "ldg_service.cu": "49bf11c98c6eb0d3812f57d90c70a36783f4d18cbbeeb645b24a6fcb900fec7f",
+    "ldg_service_template.cu.in": "83e0d4a311edd313a625a94d6059877a112e30c9680ce0e3c298dadbddea233f",
+    "profile_one.py": "93716a553a998e42c2c2183d80c59505ddcbb41e302de56475d29e2b3eab7179",
+    "run_batch.py": "bc634ee41349d31c3ae7a1ea63577120436d85575570055a2dde769ac7c22cdf"
+  }
+}

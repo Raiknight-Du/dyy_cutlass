@@ -1,0 +1,28 @@
+[
+  {
+    "S": 8192,
+    "trial": 3,
+    "exit_code": 0,
+    "elapsed_s": 9.65857481956482,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/runner/measure_cp4_event.py",
+      "--repo",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+      "--output-root",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929",
+      "--s",
+      "8192",
+      "--trial",
+      "3",
+      "--pilot",
+      "--samples",
+      "20",
+      "--warmup",
+      "20",
+      "--native-repeats",
+      "3"
+    ],
+    "log": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/logs/pilot_S8192_trial3.log"
+  }
+]

@@ -1,0 +1,100 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 2154916 (/usr/bin/python3.10)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2154916/chain_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2154916/chain_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2154916/chain_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2154916/chain_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+==PROF== Profiling "kernel_cutlass_kernel_vjoin_QSJOINK4VJoin_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_ShapeMNK646416_TVLayoutA1641664164_TVLayoutB1641664164_TVLayoutC16464_0": Application replay pass 1
+==PROF== Connected to process 2155097 (/usr/bin/nvidia-smi)
+==PROF== Disconnected from process 2155097
+QSJOIN COMPLETE
+==PROF== Disconnected from process 2154916
+==PROF== Connected to process 2155152 (/usr/bin/python3.10)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155152/chain_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155152/chain_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155152/chain_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155152/chain_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+==PROF== Profiling "kernel_cutlass_kernel_vjoin_QSJOINK4VJoin_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_ShapeMNK646416_TVLayoutA1641664164_TVLayoutB1641664164_TVLayoutC16464_0": Application replay pass 2
+==PROF== Connected to process 2155325 (/usr/bin/nvidia-smi)
+==PROF== Disconnected from process 2155325
+QSJOIN COMPLETE
+==PROF== Disconnected from process 2155152
+==PROF== Connected to process 2155375 (/usr/bin/python3.10)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155375/chain_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155375/chain_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155375/chain_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155375/chain_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+==PROF== Profiling "kernel_cutlass_kernel_vjoin_QSJOINK4VJoin_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_ShapeMNK646416_TVLayoutA1641664164_TVLayoutB1641664164_TVLayoutC16464_0": Application replay pass 3
+==PROF== Connected to process 2155559 (/usr/bin/nvidia-smi)
+==PROF== Disconnected from process 2155559
+QSJOIN COMPLETE
+==PROF== Disconnected from process 2155375
+==PROF== Connected to process 2155611 (/usr/bin/python3.10)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155611/chain_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155611/chain_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155611/chain_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155611/chain_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+==PROF== Profiling "kernel_cutlass_kernel_vjoin_QSJOINK4VJoin_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_ShapeMNK646416_TVLayoutA1641664164_TVLayoutB1641664164_TVLayoutC16464_0": Application replay pass 4
+==PROF== Connected to process 2155776 (/usr/bin/nvidia-smi)
+==PROF== Disconnected from process 2155776
+QSJOIN COMPLETE
+==PROF== Disconnected from process 2155611
+==PROF== Connected to process 2155836 (/usr/bin/python3.10)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155836/chain_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155836/chain_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155836/chain_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2155836/chain_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+==PROF== Profiling "kernel_cutlass_kernel_vjoin_QSJOINK4VJoin_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_ShapeMNK646416_TVLayoutA1641664164_TVLayoutB1641664164_TVLayoutC16464_0": Application replay pass 5
+==PROF== Connected to process 2156016 (/usr/bin/nvidia-smi)
+==PROF== Disconnected from process 2156016
+QSJOIN COMPLETE
+==PROF== Disconnected from process 2155836
+==PROF== Connected to process 2156069 (/usr/bin/python3.10)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2156069/chain_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2156069/chain_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2156069/chain_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2/replay_pid2156069/chain_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+==PROF== Profiling "kernel_cutlass_kernel_vjoin_QSJOINK4VJoin_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_ShapeMNK646416_TVLayoutA1641664164_TVLayoutB1641664164_TVLayoutC16464_0": Application replay pass 6
+==PROF== Connected to process 2156237 (/usr/bin/nvidia-smi)
+==PROF== Disconnected from process 2156237
+QSJOIN COMPLETE
+==PROF== Disconnected from process 2156069
+==PROF== Creating report from application replay data: 0%........100%
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry2_ncu/QSJOIN_t2.ncu-rep

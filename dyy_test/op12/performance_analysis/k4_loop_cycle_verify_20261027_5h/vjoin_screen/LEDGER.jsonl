@@ -1,0 +1,5 @@
+{"event": "admission", "quiet": 1, "state": {"UTC": "2026-10-26T19:21:39.338801+00:00", "gpu": "0, 120, 3996, 32, 188.99", "apps": ""}}
+{"event": "admission", "quiet": 2, "state": {"UTC": "2026-10-26T19:22:09.402310+00:00", "gpu": "0, 120, 3996, 32, 189.11", "apps": ""}}
+{"event": "admission", "quiet": 3, "state": {"UTC": "2026-10-26T19:22:39.465108+00:00", "gpu": "0, 120, 3996, 32, 188.97", "apps": ""}}
+{"event": "start", "tag": "QSJOIN_t0", "before": {"UTC": "2026-10-26T19:22:39.499944+00:00", "gpu": "0, 120, 3996, 32, 188.96", "apps": ""}, "command": ["/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python", "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_v_join.py", "--variant", "QSJOIN", "--out", "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_screen/QSJOIN_t0", "--samples", "3"]}
+{"event": "finish", "tag": "QSJOIN_t0", "returncode": 1, "after": {"UTC": "2026-10-26T19:22:46.757339+00:00", "gpu": "0, 1965, 3996, 33, 245.19", "apps": ""}}

@@ -1,0 +1,52 @@
+{
+  "status": "INVALID_COMPETITION",
+  "command": [
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/clock_lease.py",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/job_queue.py"
+  ],
+  "returncode": 1,
+  "invalid_observations": [
+    {
+      "utc_epoch": 1794195093.7413986,
+      "gpu": {
+        "uuid": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf",
+        "utilization.gpu": "0",
+        "clocks.sm": "1845",
+        "clocks.mem": "3996",
+        "temperature.gpu": "33",
+        "power.draw": "236.34",
+        "pstate": "P0"
+      },
+      "util": 0.0,
+      "external": [
+        {
+          "pid": 794070,
+          "description": "794070, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python"
+        }
+      ]
+    },
+    {
+      "utc_epoch": 1794195094.6686738,
+      "gpu": {
+        "uuid": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf",
+        "utilization.gpu": "0",
+        "clocks.sm": "1965",
+        "clocks.mem": "3996",
+        "temperature.gpu": "33",
+        "power.draw": "236.85",
+        "pstate": "P0"
+      },
+      "util": 0.0,
+      "external": [
+        {
+          "pid": 794070,
+          "description": "794070, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python"
+        }
+      ]
+    }
+  ],
+  "automatic_clock_change": false,
+  "model_enabled": false
+}

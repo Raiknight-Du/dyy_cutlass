@@ -1,0 +1,28 @@
+
+Fatbin elf code:
+================
+arch = sm_100a
+code version = [1,8]
+host = linux
+compile_size = 64bit
+identifier = /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/ldg_service.cu 
+
+Resource usage:
+ Common:
+  GLOBAL:0
+
+Fatbin elf code:
+================
+arch = sm_100a
+code version = [1,8]
+host = linux
+compile_size = 64bit
+identifier = /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/ldg_service.cu
+
+Resource usage:
+ Common:
+  GLOBAL:0
+ Function _Z13r3_ldg_kernelILb1EEvPKjjjPjP5Trace:
+  REG:140 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:928 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _Z13r3_ldg_kernelILb0EEvPKjjjPjP5Trace:
+  REG:139 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:928 TEXTURE:0 SURFACE:0 SAMPLER:0

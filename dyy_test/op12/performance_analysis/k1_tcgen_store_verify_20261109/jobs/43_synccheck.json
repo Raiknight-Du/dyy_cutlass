@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/usr/local/cuda/bin/compute-sanitizer",
+    "--tool",
+    "synccheck",
+    "--error-exitcode",
+    "99",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/run_compare.py",
+    "--mode",
+    "validate",
+    "--s",
+    "65",
+    "--tag",
+    "synccheck_fp16_v1"
+  ],
+  "timeout": 1800
+}

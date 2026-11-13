@@ -1,0 +1,107 @@
+## shape 5: top long_sb 0x7f82d75c52f0
+0x7f82d75c51f0  IMAD.U32 R4, RZ, RZ, UR6                                               all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c5200  MOV R7, UR5                                                            all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c5210  IMAD.U32 R6, RZ, RZ, UR4                                               all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c5220  MOV R11, UR9                                                           all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c5230  IMAD.U32 R10, RZ, RZ, UR8                                              all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c5240  LEPC R20, 0x7f82d75c5260                                               all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c5250  CALL.ABS.NOINC R14                                                     all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c5260  NOP                                                                    all=    2 long=    0 wait=    0 short=    0
+0x7f82d75c5270  BSYNC.RECONVERGENT B6                                                  all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c5280  LEA R41, R23, UR47, 0x3                                                all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c5290  IMAD R22, R23, 0xc0, R2                                                all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c52a0  SHF.L.U32 R0, R44, 0x1f, RZ                                            all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c52b0  SYNCS.PHASECHK.TRANS64.TRYWAIT P1, [R41+URZ+0xf0], R0                  all=    1 long=    0 wait=    1 short=    0
+0x7f82d75c52c0  SHF.R.U32.HI R3, RZ, 0x15, R22                                         all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c52d0  LOP3.LUT P0, RZ, R3, 0x3, R40, 0x48, !PT                               all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c52e0  @!UPT UIADD3 URZ, UPT, UPT, URZ, URZ, URZ                              all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c52f0  @P1   BRA 0x7f82d75c5320                                               all=  280 long=  280 wait=    0 short=    0
+0x7f82d75c5300  SYNCS.PHASECHK.TRANS64.TRYWAIT P1, [R41+URZ+0xf0], R0                  all=    1 long=    0 wait=    1 short=    0
+0x7f82d75c5310  @!P1  BRA 0x7f82d75c7fa0                                               all=    8 long=    8 wait=    0 short=    0
+0x7f82d75c5320  @!P0  BRA 0x7f82d75c5430                                               all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c5330  LDCU.64 UR8, c[0x4][0xe0]                                              all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c5340  MOV R15, 0x0                                                           all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c5350  HFMA2 R12, -RZ, RZ, 0, 5.9604644775390625e-08                          all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c5360  IMAD.MOV.U32 R8, RZ, RZ, 0x192                                         all=    0 long=    0 wait=    0 short=    0
+0x7f82d75c5370  IMAD.MOV.U32 R13, RZ, RZ, RZ                                           all=    0 long=    0 wait=    0 short=    0
+
+## shape 8: top long_sb 0x7f90535c4e10
+0x7f90535c4d10  IMAD.U32 R6, RZ, RZ, UR4                                               all=    0 long=    0 wait=    0 short=    0
+0x7f90535c4d20  MOV R11, UR9                                                           all=    0 long=    0 wait=    0 short=    0
+0x7f90535c4d30  IMAD.U32 R10, RZ, RZ, UR8                                              all=    0 long=    0 wait=    0 short=    0
+0x7f90535c4d40  LEPC R20, 0x7f90535c4d60                                               all=    0 long=    0 wait=    0 short=    0
+0x7f90535c4d50  CALL.ABS.NOINC R14                                                     all=    0 long=    0 wait=    0 short=    0
+0x7f90535c4d60  IMAD.U32 R4, RZ, RZ, UR43                                              all=    5 long=    0 wait=    0 short=    0
+0x7f90535c4d70  ISETP.NE.U32.AND P0, PT, RZ, UR43, PT                                  all=    0 long=    0 wait=    0 short=    0
+0x7f90535c4d80  IMAD.U32 R3, RZ, RZ, UR43                                              all=    3 long=    0 wait=    0 short=    0
+0x7f90535c4d90  SHF.L.U32 R0, R4, 0x1f, RZ                                             all=    1 long=    0 wait=    1 short=    0
+0x7f90535c4da0  IMAD R16, R3, 0xc0, R2                                                 all=    0 long=    0 wait=    0 short=    0
+0x7f90535c4db0  SEL R93, RZ, 0xc0, P0                                                  all=    0 long=    0 wait=    0 short=    0
+0x7f90535c4dc0  SYNCS.PHASECHK.TRANS64.TRYWAIT P1, [UR45+0xd0], R0                     all=    0 long=    0 wait=    0 short=    0
+0x7f90535c4dd0  IMAD.IADD R56, R16, 0x1, R93                                           all=    3 long=    0 wait=    2 short=    0
+0x7f90535c4de0  SHF.R.U32.HI R5, RZ, 0x15, R56                                         all=    1 long=    0 wait=    1 short=    0
+0x7f90535c4df0  LOP3.LUT P0, RZ, R5, 0x3, R18, 0x48, !PT                               all=    0 long=    0 wait=    0 short=    0
+0x7f90535c4e00  @!UPT UIADD3 URZ, UPT, UPT, URZ, URZ, URZ                              all=    1 long=    0 wait=    0 short=    0
+0x7f90535c4e10  @P1   BRA 0x7f90535c4e40                                               all=  945 long=  945 wait=    0 short=    0
+0x7f90535c4e20  SYNCS.PHASECHK.TRANS64.TRYWAIT P1, [UR45+0xd0], R0                     all=    0 long=    0 wait=    0 short=    0
+0x7f90535c4e30  @!P1  BRA 0x7f90535c76c0                                               all=    1 long=    1 wait=    0 short=    0
+0x7f90535c4e40  @!P0  BRA 0x7f90535c4f50                                               all=    1 long=    0 wait=    1 short=    0
+0x7f90535c4e50  LDCU.64 UR8, c[0x4][0xe0]                                              all=    1 long=    0 wait=    1 short=    0
+0x7f90535c4e60  MOV R15, 0x0                                                           all=    0 long=    0 wait=    0 short=    0
+0x7f90535c4e70  HFMA2 R12, -RZ, RZ, 0, 5.9604644775390625e-08                          all=    0 long=    0 wait=    0 short=    0
+0x7f90535c4e80  IMAD.MOV.U32 R8, RZ, RZ, 0x192                                         all=    0 long=    0 wait=    0 short=    0
+0x7f90535c4e90  IMAD.MOV.U32 R13, RZ, RZ, RZ                                           all=    0 long=    0 wait=    0 short=    0
+
+## shape 11: top long_sb 0x7efdeb5c4f20
+0x7efdeb5c4e20  IMAD.U32 R4, RZ, RZ, UR8                                               all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4e30  MOV R7, UR7                                                            all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4e40  IMAD.U32 R6, RZ, RZ, UR6                                               all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4e50  MOV R11, UR5                                                           all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4e60  IMAD.U32 R10, RZ, RZ, UR4                                              all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4e70  LEPC R20, 0x7efdeb5c4e90                                               all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4e80  CALL.ABS.NOINC R14                                                     all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4e90  NOP                                                                    all=    5 long=    0 wait=    0 short=    0
+0x7efdeb5c4ea0  BSYNC.RECONVERGENT B6                                                  all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4eb0  LEA R109, R93, UR45, 0x3                                               all=    1 long=    0 wait=    0 short=    0
+0x7efdeb5c4ec0  IMAD R91, R93, 0xc0, R2                                                all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4ed0  SHF.L.U32 R0, R103, 0x1f, RZ                                           all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4ee0  SYNCS.PHASECHK.TRANS64.TRYWAIT P1, [R109+URZ+0xd0], R0                 all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4ef0  SHF.R.U32.HI R4, RZ, 0x15, R91                                         all=    1 long=    0 wait=    0 short=    0
+0x7efdeb5c4f00  LOP3.LUT P0, RZ, R4, 0x3, R99, 0x48, !PT                               all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4f10  @!UPT UIADD3 URZ, UPT, UPT, URZ, URZ, URZ                              all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4f20  @P1   BRA 0x7efdeb5c4f50                                               all=   17 long=   17 wait=    0 short=    0
+0x7efdeb5c4f30  SYNCS.PHASECHK.TRANS64.TRYWAIT P1, [R109+URZ+0xd0], R0                 all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4f40  @!P1  BRA 0x7efdeb5c6da0                                               all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4f50  @!P0  BRA 0x7efdeb5c5060                                               all=    1 long=    0 wait=    1 short=    0
+0x7efdeb5c4f60  LDCU.64 UR8, c[0x4][0xe0]                                              all=    1 long=    0 wait=    1 short=    0
+0x7efdeb5c4f70  MOV R15, 0x0                                                           all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4f80  HFMA2 R12, -RZ, RZ, 0, 5.9604644775390625e-08                          all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4f90  IMAD.MOV.U32 R8, RZ, RZ, 0x192                                         all=    0 long=    0 wait=    0 short=    0
+0x7efdeb5c4fa0  IMAD.MOV.U32 R13, RZ, RZ, RZ                                           all=    0 long=    0 wait=    0 short=    0
+
+## shape 13: top long_sb 0x7fda5b5c1c10
+0x7fda5b5c1b10  UMOV UR9, UR41                                                         all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1b20  UTMALDG.4D.2CTA [UR24], [UR38], desc[UR50]                             all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1b30  UTMALDG.4D.MULTICAST.2CTA [UR16], [UR30], UR5, desc[UR50]              all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1b40  UTMALDG.4D.2CTA [UR8], [UR22], desc[UR50]                              all=    1 long=    0 wait=    0 short=    0
+0x7fda5b5c1b50  NOP                                                                    all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1b60  NOP                                                                    all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1b70  BSYNC.RECONVERGENT B0                                                  all=    1 long=    1 wait=    0 short=    0
+0x7fda5b5c1b80  UIADD3 UR12, UPT, UPT, UR12, 0x1, URZ                                  all=    1 long=    0 wait=    0 short=    0
+0x7fda5b5c1b90  UMOV UR4, UR14                                                         all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1ba0  UISETP.NE.U32.AND UP0, UPT, UR12, UR37, UPT                            all=    1 long=    0 wait=    1 short=    0
+0x7fda5b5c1bb0  BRA.U UP0, 0x7fda5b5c1810                                              all=    1 long=    0 wait=    0 short=    0
+0x7fda5b5c1bc0  LEA R13, R10, UR45, 0x3                                                all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1bd0  NOP                                                                    all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1be0  SHF.L.U32 R0, R9, 0x1f, RZ                                             all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1bf0  IMAD R4, R10, 0x8, R13                                                 all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1c00  SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [R13+URZ+0xb0], R0                  all=    1 long=    0 wait=    0 short=    0
+0x7fda5b5c1c10  @!P0  BRA 0x7fda5b5c6fe0                                               all=   76 long=   76 wait=    0 short=    0
+0x7fda5b5c1c20  LDS.128 R4, [R4+0x110]                                                 all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1c30  LDCU UR20, c[0x0][0x11a4]                                              all=    1 long=    0 wait=    0 short=    0
+0x7fda5b5c1c40  VIADD R0, R13, 0xc0                                                    all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1c50  @!PT  LDS RZ, [RZ]                                                     all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1c60  @!PT  LDS RZ, [RZ]                                                     all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1c70  @!PT  LDS RZ, [RZ]                                                     all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1c80  @!PT  LDS RZ, [RZ]                                                     all=    0 long=    0 wait=    0 short=    0
+0x7fda5b5c1c90  MEMBAR.ALL.CTA                                                         all=    0 long=    0 wait=    0 short=    0

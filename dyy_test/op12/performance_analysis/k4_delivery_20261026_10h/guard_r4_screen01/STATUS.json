@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETED_PENDING_REVIEW",
+  "command": [
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/gpu_telemetry_sidecar.py",
+    "--out",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r4_screen01_telemetry",
+    "--command-json",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/R4_SCREEN_COMMAND.json",
+    "--interval-ms",
+    "100"
+  ],
+  "returncode": 0,
+  "invalid_observations": [],
+  "automatic_clock_change": false,
+  "model_enabled": false
+}

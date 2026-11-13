@@ -1,0 +1,23 @@
+{
+  "task": "K1 tcgen05 Wkk and coalesced output layout, separately and combined",
+  "primary_scope": "B1/H16/S32768/D128/FP16, full uninstrumented K1",
+  "status": "COMPLETED_PRIMARY_FOUR_VARIANT_VERIFICATION",
+  "formal_processes": 3,
+  "warmup_per_cache": 20,
+  "samples_per_variant_per_cache_per_process": 100,
+  "primary_correctness": "all tested variant outputs bitwise equal to original",
+  "primary_no_spill": true,
+  "profile_reports": 4,
+  "measurement": "CUDA Event latency; NCU counters, not replay latency",
+  "qualification": "per-job windows checked; later guard3 competition retained",
+  "bf16_layout": "REJECTED_SPILL_NOT_TIMED",
+  "bulk_store_additional_candidate": "REJECTED_CORRECTNESS_NOT_TIMED",
+  "memcheck_synccheck_full_harness": "BLOCKED_HOST_ABORT_NOT_PASS",
+  "minimal_torch_memcheck": "PASS",
+  "upstream_head": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "upstream_clean_after": true,
+  "gpu_workers_running_after": false,
+  "sm_clock_restored_to_automatic": true,
+  "formal_model_or_old_reports_modified": false,
+  "model_enabled": false
+}

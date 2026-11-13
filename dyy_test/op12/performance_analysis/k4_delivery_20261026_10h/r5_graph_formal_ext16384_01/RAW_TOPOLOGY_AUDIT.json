@@ -1,0 +1,36 @@
+{
+  "status": "ALL2880_LAUNCH_368640CTA_768LAZY_96GRAPH_VALID",
+  "records": [
+    {
+      "trial": 0,
+      "launches": 960,
+      "CTA_records": 122880,
+      "lazy_CONTROL_CTA_records": 256,
+      "graph_certificates": 32,
+      "unique_SM_hist": {
+        "128": 960
+      }
+    },
+    {
+      "trial": 1,
+      "launches": 960,
+      "CTA_records": 122880,
+      "lazy_CONTROL_CTA_records": 256,
+      "graph_certificates": 32,
+      "unique_SM_hist": {
+        "128": 960
+      }
+    },
+    {
+      "trial": 2,
+      "launches": 960,
+      "CTA_records": 122880,
+      "lazy_CONTROL_CTA_records": 256,
+      "graph_certificates": 32,
+      "unique_SM_hist": {
+        "128": 960
+      }
+    }
+  ],
+  "model_enabled": false
+}

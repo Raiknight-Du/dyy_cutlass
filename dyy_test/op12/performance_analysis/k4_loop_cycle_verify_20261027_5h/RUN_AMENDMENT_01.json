@@ -1,0 +1,16 @@
+{
+  "scope": "Continue the authorized 5h K4 loop analysis; deadline remains 2026-10-26 23:39:17 UTC.",
+  "first_batch_status": "24 accepted counter captures across six native shared families, after diagnostic retakes. Invalid candidates are retained and excluded.",
+  "retakes": [
+    "v1 register reuse created artificial WAW: diagnostic captures excluded.",
+    "v2 scalar loads hoisted: eight captures excluded, matrix families retained.",
+    "v3 vector volatile scalarized LDS.64: four gate captures excluded; v4 b64 retained width and passed dynamic count gates."
+  ],
+  "second_batch": "B0/KSJOIN/QSJOIN/GATEJOIN complete-CP controls, same arithmetic and transfer work, moved existing ready waits only. Three independent NCU applications per accepted variant. V gather and gate-ready order checked in actual SASS.",
+  "third_batch": "Two narrow ambiguities: M128N64 TS competitor versus SS, and one-instruction TMEM read/address RAW chain. Screening first; formal only after retention, correctness and no added spill. No whole-phase timing enters model.",
+  "permission": "Current user authorized executing the proposed matched family comparisons and necessary validation to explain loop cycles. No upstream modification, no parameter activation, no clock policy change.",
+  "all_gpu_jobs_serial": true,
+  "time_and_count_roles_separate": true,
+  "model_enabled": false,
+  "effective_model_value": null
+}

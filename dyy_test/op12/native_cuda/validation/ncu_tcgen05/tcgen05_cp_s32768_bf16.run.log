@@ -1,0 +1,12 @@
+==PROF== Connected to process 2341447 (/usr/bin/python3.10)
+==WARNING== Unable to access the following 6 metrics: ctc__rx_bytes_data_user.sum, ctc__rx_bytes_data_user.sum.pct_of_peak_sustained_elapsed, ctc__rx_bytes_data_user.sum.per_second, ctc__tx_bytes_data_user.sum, ctc__tx_bytes_data_user.sum.pct_of_peak_sustained_elapsed, ctc__tx_bytes_data_user.sum.per_second.
+
+
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 0: 0%....50%....100% - 41 passes
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 1: 0%....50%....100% - 41 passes
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 2: 0%....50%....100% - 41 passes
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 3: 0%....50%....100% - 41 passes
+PROFILE_OK case=cp_s32768_bf16 native=/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/native_cuda shape=(1,16,32768,128) dtype=torch.bfloat16 use_cp=True
+==PROF== Disconnected from process 2341447
+==WARNING== No source files were imported. Check that the target application was compiled with -lineinfo.
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/native_cuda/validation/ncu_tcgen05/tcgen05_cp_s32768_bf16.ncu-rep

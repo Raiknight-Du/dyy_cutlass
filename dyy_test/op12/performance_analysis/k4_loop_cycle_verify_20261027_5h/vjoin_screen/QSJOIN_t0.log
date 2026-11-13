@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_v_join.py", line 59, in <module>
+    chunk_gated_delta_rule(b['q'],b['k'],b['v'],g=shared['gate'],beta=shared['beta'],scale=1/(128**.5),
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/api_logging.py", line 2333, in _auto_dump_wrapper
+    return _inner(*args, **kwargs)
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/gdn_prefill.py", line 443, in chunk_gated_delta_rule
+    cp_delta_rule_dsl(
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py", line 1110, in cp_delta_rule_dsl_sm100
+    cp_delta_rule_prefill_dsl_sm100(
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py", line 887, in cp_delta_rule_prefill_dsl_sm100
+    compiled = cached_compile(kernel, *kernel_args, compile_options=compile_options)
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_v_join.py", line 48, in compiler
+    fn=compile4('B0',k,args,compile_options) if r=='K4' else cute.compile[compile_options](k,*args)
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_v_join.py", line 42, in compile4
+    assert not ops['LDL'] and not ops['STL'],('SPILL',name,ops)
+AssertionError: ('SPILL', 'B0', {'LDL': 41, 'STL': 5, 'LDSM': 12, 'LDS': 144, 'STSM': 16, 'STS': 22, 'LDTM': 13, 'STTM': 24, 'UTCHMMA': 44, 'UTMALDG': 7, 'UTMASTG': 2, 'F2FP': 223, 'FMUL2': 192, 'MUFU': 108, 'SYNCS': 314})

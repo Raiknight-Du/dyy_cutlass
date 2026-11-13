@@ -1,0 +1,58 @@
+GENERATED_COARSE_FINE
+RUNNER_READY
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B0_G0_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B0_G0_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B0_G0_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B0_G0_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B0_G1_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B0_G1_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B0_G1_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B0_G1_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B1_G0_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B1_G0_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B1_G0_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B1_G0_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B1_G1_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B1_G1_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B1_G1_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0/B1_G1_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/run_trace.py", line 93, in <module>
+    invoke(bi)
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/run_trace.py", line 87, in invoke
+    return chunk_gated_delta_rule(b['q'],b['k'],b['v'],g=shared['gate'],beta=shared['beta'],scale=1/math.sqrt(128),initial_state=shared['initial'],output_final_state=True,cu_seqlens=shared['cu_seqlens'],use_qk_l2norm_in_kernel=False,output=b['output'],output_state=b['state'],use_cp=True)
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/api_logging.py", line 2333, in _auto_dump_wrapper
+    return _inner(*args, **kwargs)
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/gdn_prefill.py", line 443, in chunk_gated_delta_rule
+    cp_delta_rule_dsl(
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py", line 1075, in cp_delta_rule_dsl_sm100
+    local_transfer, local_state = cp_delta_rule_mn_precompute_dsl_sm100(
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py", line 327, in cp_delta_rule_mn_precompute_dsl_sm100
+    compiled = cached_compile(kernel, *kernel_args, compile_options=compile_options)
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/run_trace.py", line 74, in compile_target
+    if record['local_ops']>base['local_ops'] or max(record['stack'],default=0)>max(base['stack'],default=0):raise RuntimeError('New local/spill: '+active)
+RuntimeError: New local/spill: COARSE
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/batch.py", line 8, in <module>
+    subprocess.run([sys.executable,str(R/'run_trace.py'),'--out',str(R/'trial_b32_t0'),'--trial','0','--sample-block','32','--warmup','20','--samples','100'],check=True,timeout=1200)
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python', '/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/run_trace.py', '--out', '/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/trial_b32_t0', '--trial', '0', '--sample-block', '32', '--warmup', '20', '--samples', '100']' returned non-zero exit status 1.

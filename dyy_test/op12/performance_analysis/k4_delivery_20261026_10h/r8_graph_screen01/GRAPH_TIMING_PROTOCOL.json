@@ -1,0 +1,18 @@
+{
+  "direct_lazy_invocations_per_source": 1,
+  "direct_lazy_N": 128,
+  "direct_lazy_mode": "BLOCKED",
+  "graph_warm_replays_per_config_per_N": 20,
+  "capture_does_not_execute_kernel": true,
+  "external_EventRecord_nodes": true,
+  "required_nodes": 3,
+  "required_edges": 2,
+  "Event_measurement": "EventRecord/kernel/EventRecord inside graph; no outerevents around replay",
+  "kernel_source_unchanged": true,
+  "kernel_source_SHA256": "9e7b8f5aba3a86dfd7ac70903550b3715fb9ef36456b94b565bfbc663426a89a",
+  "graph_helper_SHA256": {
+    "audited_event_graph.py": "f1c93643ebddd4338300e6b01dcdd13905c0a0273876632c4bbe07f9de787de4",
+    "graph_edge_native_audit.py": "2ab3981b328815531ad5cd73d445acecd266710a6935d5363f9e1e54619057e6"
+  },
+  "model_enabled": false
+}

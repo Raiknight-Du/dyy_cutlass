@@ -1,0 +1,30 @@
+{
+  "status": "ALL2520_LAUNCH_322560_CTA_ENDPOINTS_VALID",
+  "records": [
+    {
+      "trial": 0,
+      "launches": 840,
+      "CTA_records": 107520,
+      "unique_SMs_per_launch_histogram": {
+        "128": 840
+      }
+    },
+    {
+      "trial": 1,
+      "launches": 840,
+      "CTA_records": 107520,
+      "unique_SMs_per_launch_histogram": {
+        "128": 840
+      }
+    },
+    {
+      "trial": 2,
+      "launches": 840,
+      "CTA_records": 107520,
+      "unique_SMs_per_launch_histogram": {
+        "128": 840
+      }
+    }
+  ],
+  "model_enabled": false
+}

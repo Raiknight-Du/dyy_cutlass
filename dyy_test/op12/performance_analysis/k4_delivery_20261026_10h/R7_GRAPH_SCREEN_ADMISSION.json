@@ -1,0 +1,14 @@
+{
+  "round":"R7",
+  "approved_modes":["screen"],
+  "source_SHA256":"c9d64d025a749d810b3b6d35a7b7506295190a7e3449c1b11da79620ef018e5a",
+  "max_N":256,
+  "warmup_actual_graph_replays":20,
+  "samples":5,
+  "configurations":["C1","C8"],
+  "direct_lazy_C1":1,
+  "frequency_policy":"temporary1845SMrequest_actualtelemetry_finallyauto",
+  "negative_stop_rule":"If internal cycle differences at bothN <3% and no anomalies, finish negative finite control; no further GPU",
+  "no_NCU_or_formal_rate":true,
+  "model_enabled":false
+}

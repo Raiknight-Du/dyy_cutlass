@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2026-08-29T15:10:00.000Z" agent="Codex" version="26.0.9" type="device">
+  <diagram id="op12-tensor-backends" name="Tensor Core后端边界">
+    <mxGraphModel dx="1900" dy="980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="980" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="op12 Tensor Core 后端边界与调度" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=34;fontStyle=1;fontColor=#153B66;" vertex="1" parent="1">
+          <mxGeometry x="80" y="35" width="1000" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="同一 Python API；不能混淆独立性与性能结论" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontColor=#607286;" vertex="1" parent="1">
+          <mxGeometry x="82" y="95" width="950" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="api" value="&lt;b&gt;chunk_gated_delta_rule&lt;/b&gt;&lt;br&gt;TND / FP16-BF16 / D128 / GQA-GVA / state" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FB;strokeColor=#3478C0;strokeWidth=3;fontSize=20;fontStyle=1;fontColor=#152536;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="610" y="165" width="680" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="scalar" value="&lt;b&gt;scalar&lt;/b&gt;&lt;br&gt;&lt;br&gt;独立 CUDA C&lt;br&gt;逐 token recurrence&lt;br&gt;FP32 FFMA&lt;br&gt;47.53 ms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E5;strokeColor=#D9852B;strokeWidth=3;fontSize=20;fontColor=#152536;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="80" y="500" width="480" height="290" as="geometry"/>
+        </mxCell>
+        <mxCell id="wmma" value="&lt;b&gt;wmma&lt;/b&gt;&lt;br&gt;&lt;br&gt;独立 CUDA C&lt;br&gt;64-token 七组 GEMM&lt;br&gt;HMMA.16816.F32&lt;br&gt;15.39 ms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF6EF;strokeColor=#3E8E61;strokeWidth=3;fontSize=20;fontColor=#152536;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="710" y="500" width="480" height="290" as="geometry"/>
+        </mxCell>
+        <mxCell id="tcgen05" value="&lt;b&gt;tcgen05（默认）&lt;/b&gt;&lt;br&gt;&lt;br&gt;固定上游派生 CuTe DSL&lt;br&gt;TMA + TMEM + UTCHMMA&lt;br&gt;非 CP / CP 四 kernel&lt;br&gt;0.258 ms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FB;strokeColor=#3478C0;strokeWidth=3;fontSize=20;fontColor=#152536;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="500" width="480" height="290" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#153B66;strokeWidth=3;" edge="1" parent="1" source="api" target="scalar">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#153B66;strokeWidth=3;" edge="1" parent="1" source="api" target="wmma">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#153B66;strokeWidth=3;" edge="1" parent="1" source="api" target="tcgen05">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="note" value="验收口径：WMMA 证明独立 Tensor Core 数据流；性能一致由固定提交派生 tcgen05 路径实现，并明确披露复用关系。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F6F7F9;strokeColor=#D9E1E8;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#152536;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="250" y="855" width="1400" height="80" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

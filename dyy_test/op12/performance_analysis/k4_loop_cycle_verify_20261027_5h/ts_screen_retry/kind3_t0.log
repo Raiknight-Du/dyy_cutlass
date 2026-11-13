@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_matched_ts.py", line 90, in <module>
+    if __name__=='__main__':main()
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_matched_ts.py", line 80, in main
+    raise AssertionError(('MMA_output',fam['name'],n,m,dbg))
+AssertionError: ('MMA_output', 'CG1_LDSM', 128, 2, {'mode': 2, 'go_unique': [0.0, 128.0], 'sample': [[128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0], [128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0], [128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0], [128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0], [128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0], [128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0], [128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0], [128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0]]})

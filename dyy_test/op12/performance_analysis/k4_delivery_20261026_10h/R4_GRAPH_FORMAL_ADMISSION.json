@@ -1,0 +1,33 @@
+{
+  "round": "R4",
+  "approved_modes": [
+    "formal"
+  ],
+  "source_SHA256": "690d1432059d27dc1e6b0de3c45738e6d7b11a3ba7092adb413064335fab9d9b",
+  "max_N": 8192,
+  "processes": 3,
+  "warmup": 20,
+  "samples": 30,
+  "modes": [
+    "CONTROL",
+    "SHADER_ONLY",
+    "TC_ONLY",
+    "BOTH"
+  ],
+  "points": [
+    128,
+    256,
+    512,
+    1024,
+    2048,
+    4096,
+    8192
+  ],
+  "frequency_policy": "temporary1845SM_request_actualsampled_finallyauto",
+  "condition": "BOTH and remaining3 mode PC/resource PASS; raw/control-corrected active strict1% dual-domain; control separately disclosed",
+  "extra_16384_allowed_once_if_needed": true,
+  "model_enabled": false,
+  "protocol": "Graph external timing Event->same original kernel->Event; owned native_v2+NULL edges;20actualgraphwarm;direct lazy1 separate per process",
+  "authorization": "Lead independent raw screen40calls/5120CTA+8native graphs PASS, explicit full graph batch approval",
+  "old_direct_failed_cohort_preserved": true
+}

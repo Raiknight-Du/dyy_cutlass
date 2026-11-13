@@ -1,0 +1,26 @@
+{
+  "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "shape": [
+    1,
+    16,
+    32768,
+    128
+  ],
+  "C": 4096,
+  "P": 8,
+  "L": 64,
+  "input_sha256": "5953da3926a1ab008c08b995fe574688c40edbb91ad0db561a8204c796c97d98",
+  "content_signature": "eb62764b4f2bc92c04c1accddf62db3211f657a1206bdc2279e6fe006bb94d1e",
+  "evict_bytes": 530579456,
+  "trial": 0,
+  "requested_MHz": 1845,
+  "model_enabled": false,
+  "specialization": {
+    "needs_initial_state": "True",
+    "store_final_state": "False",
+    "num_regs_compute_group_0": "224",
+    "num_regs_compute_group_1": "256",
+    "num_regs_other": "24",
+    "tmem_alloc_cols": "512"
+  }
+}

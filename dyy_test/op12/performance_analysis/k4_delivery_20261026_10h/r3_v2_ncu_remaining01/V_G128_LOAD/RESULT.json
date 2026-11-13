@@ -1,0 +1,11 @@
+{
+  "round": "R3",
+  "configuration": "V_G128_LOAD",
+  "N": 512,
+  "start_time_ns": 1792965037676217613,
+  "status": "REPORT_CREATED",
+  "clock_policy": "temporary1845request_actual_sampled",
+  "model_enabled": false,
+  "returncode": 0,
+  "end_time_ns": 1792965063721592982
+}

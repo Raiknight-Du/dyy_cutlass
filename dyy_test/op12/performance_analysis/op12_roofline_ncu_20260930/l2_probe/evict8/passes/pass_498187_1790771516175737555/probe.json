@@ -1,0 +1,10 @@
+{
+  "factor": 8,
+  "l2_bytes": 132644864,
+  "target_bytes": 8388608,
+  "evict_bytes": 1061158912,
+  "warm": 1048385.625,
+  "hot": 1048385.625,
+  "cold": 1048385.625,
+  "eviction_checksum": 132649400.0
+}

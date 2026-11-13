@@ -1,0 +1,188 @@
+{
+  "status": "PASS",
+  "scope": "Conditional grouped/FIFO schedule; aggregate issue-capacity feasibility, not a per-SMSP simulator or unbiased original-phase proof.",
+  "comparisons": [
+    {
+      "S": 8192,
+      "C": 1024,
+      "L": 16,
+      "calls": 180,
+      "observed_cycle_slope": 3175.3252645502644,
+      "conditional_model_min": 3430.25,
+      "conditional_model_max": 3435.25,
+      "signed_error_min": 0.08028303062232643,
+      "signed_error_max": 0.08185767245691913,
+      "model_window": "return4..11",
+      "sensitivity_min": 3436.625,
+      "sensitivity_max": 3441.625,
+      "all_cases_within10": true,
+      "comparison_scope": "Instrumented same-invocation CG1 return regression; local bias not fully bounded; not original-kernel phase ground truth.",
+      "model_enabled": false
+    },
+    {
+      "S": 16384,
+      "C": 2048,
+      "L": 32,
+      "calls": 180,
+      "observed_cycle_slope": 3163.680890522876,
+      "conditional_model_min": 3430.25,
+      "conditional_model_max": 3435.25,
+      "signed_error_min": 0.0842591647835465,
+      "signed_error_max": 0.08583960230965035,
+      "model_window": "return8..23",
+      "sensitivity_min": 3436.625,
+      "sensitivity_max": 3441.625,
+      "all_cases_within10": true,
+      "comparison_scope": "Instrumented same-invocation CG1 return regression; local bias not fully bounded; not original-kernel phase ground truth.",
+      "model_enabled": false
+    },
+    {
+      "S": 32768,
+      "C": 4096,
+      "L": 64,
+      "calls": 180,
+      "observed_cycle_slope": 3141.200245151252,
+      "conditional_model_min": 3430.25,
+      "conditional_model_max": 3435.25,
+      "signed_error_min": 0.09201888841531966,
+      "signed_error_max": 0.09361063666751021,
+      "model_window": "return8..55",
+      "sensitivity_min": 3436.625,
+      "sensitivity_max": 3441.625,
+      "all_cases_within10": true,
+      "comparison_scope": "Instrumented same-invocation CG1 return regression; local bias not fully bounded; not original-kernel phase ground truth.",
+      "model_enabled": false
+    }
+  ],
+  "resource_overlap_checks": [
+    {
+      "resource": "ISSUE_SLOTS",
+      "segments": 125600,
+      "service_cycles": 114440.0,
+      "overlaps": 0
+    },
+    {
+      "resource": "ISSUE",
+      "segments": 15040,
+      "service_cycles": 15040.0,
+      "overlaps": 0
+    },
+    {
+      "resource": "SMEM_Read",
+      "segments": 14880,
+      "service_cycles": 110720.0,
+      "overlaps": 0
+    },
+    {
+      "resource": "TC",
+      "segments": 2880,
+      "service_cycles": 92160.0,
+      "overlaps": 0
+    },
+    {
+      "resource": "LSU_Data",
+      "segments": 13280,
+      "service_cycles": 69760.0,
+      "overlaps": 0
+    },
+    {
+      "resource": "ALU_PACK",
+      "segments": 37200,
+      "service_cycles": 74400.0,
+      "overlaps": 0
+    },
+    {
+      "resource": "TMEM",
+      "segments": 2320,
+      "service_cycles": 89600.0,
+      "overlaps": 0
+    },
+    {
+      "resource": "FMA_HEAVY",
+      "segments": 3440,
+      "service_cycles": 6880.0,
+      "overlaps": 0
+    },
+    {
+      "resource": "FP",
+      "segments": 30720,
+      "service_cycles": 49120.0,
+      "overlaps": 0
+    },
+    {
+      "resource": "SFU",
+      "segments": 6080,
+      "service_cycles": 32000.0,
+      "overlaps": 0
+    },
+    {
+      "resource": "HALF",
+      "segments": 2640,
+      "service_cycles": 10560.0,
+      "overlaps": 0
+    },
+    {
+      "resource": "SMEM_Write",
+      "segments": 1280,
+      "service_cycles": 20480.0,
+      "overlaps": 0
+    }
+  ],
+  "native_PCs": 1384,
+  "counter_checks": [
+    {
+      "metric": "UTCHMMA warp-inst",
+      "per_block": 36,
+      "fixed_per_CTA": 0,
+      "blocks": 8192,
+      "CTAs": 128,
+      "observed": 294912.0,
+      "interpretation": "Six GEMMs,8+8+8+4+4+4 atoms",
+      "predicted": 294912
+    },
+    {
+      "metric": "LDTM warp-inst",
+      "per_block": 52,
+      "fixed_per_CTA": 0,
+      "blocks": 8192,
+      "CTAs": 128,
+      "observed": 425984.0,
+      "interpretation": "Explicit shader TMEM loads only",
+      "predicted": 425984
+    },
+    {
+      "metric": "STTM warp-inst",
+      "per_block": 64,
+      "fixed_per_CTA": 16,
+      "blocks": 8192,
+      "CTAs": 128,
+      "observed": 526336.0,
+      "interpretation": "64/block plus initial-state publication",
+      "predicted": 526336
+    },
+    {
+      "metric": "Source shared WF",
+      "per_block": 876,
+      "fixed_per_CTA": 18,
+      "blocks": 8192,
+      "CTAs": 128,
+      "observed": 7178496.0,
+      "interpretation": "616read+260write/block, plus fixed read/write/atomic",
+      "predicted": 7178496
+    },
+    {
+      "metric": "TC implicit shared WF",
+      "per_block": 768,
+      "fixed_per_CTA": 0,
+      "blocks": 8192,
+      "CTAs": 128,
+      "observed": 6291456.0,
+      "interpretation": "Dedicated TC counter, not LSU instruction count",
+      "predicted": 6291456
+    }
+  ],
+  "measured_fullphase_time_used_as_node": false,
+  "target_residual_used_as_input": false,
+  "model_enabled": false,
+  "effective_model_value": null
+}

@@ -1,0 +1,6 @@
+RESULT,5,M256_N192_K256_Eauto_C2x2x1,ok,10,0.0158592
+Collecting data...
+Generating '/tmp/nsys-report-e0ea.qdstrm'
+[1/1] [0%                          ] shape05_nsys.nsys-rep[1/1] [0%                          ] shape05_nsys.nsys-rep[1/1] [==========49%               ] shape05_nsys.nsys-rep[1/1] [========================98% ] shape05_nsys.nsys-rep[1/1] [========================100%] shape05_nsys.nsys-rep[1/1] [========================100%] shape05_nsys.nsys-rep
+Generated:
+	/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/bottleneck_13shape_20260724/shape05_nsys.nsys-rep

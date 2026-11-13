@@ -1,0 +1,10 @@
+==PROF== Connected to process 2324294 (/usr/bin/python3.10)
+==WARNING== Unable to access the following 6 metrics: ctc__rx_bytes_data_user.sum, ctc__rx_bytes_data_user.sum.pct_of_peak_sustained_elapsed, ctc__rx_bytes_data_user.sum.per_second, ctc__tx_bytes_data_user.sum, ctc__tx_bytes_data_user.sum.pct_of_peak_sustained_elapsed, ctc__tx_bytes_data_user.sum.per_second.
+
+
+==PROF== Profiling "gdn_cp_affine_kernel" - 0: 0%....50%....100% - 41 passes
+==PROF== Profiling "gdn_cp_fixup_kernel" - 1: 0%....50%....100% - 41 passes
+==PROF== Profiling "gdn_cp_final_kernel" - 2: 0%....50%....100% - 41 passes
+PROFILE_OK case=cp_s8192_bf16 native=/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/native_cuda shape=(1,16,8192,128) dtype=torch.bfloat16 use_cp=True
+==PROF== Disconnected from process 2324294
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/native_cuda/validation/ncu/native_cp_s8192_bf16.ncu-rep

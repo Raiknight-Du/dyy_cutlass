@@ -1,0 +1,75 @@
+{
+  "source_SHA256": {
+    "matched_shared.py": "d989120bb4cbe6abe66d786de464de23ab94ccc2a37fb4283feffe6485f10f4d",
+    "FAMILIES.json": "a6ce1835a2301a5dcefdd2a7e49c95038ac63b18d901ccd592b88083ae32f3ac",
+    "old_qk_resident.py": "8104391107dd2ba916438c0643d92c69d3eb49ec698c4325db9f96de28311599"
+  },
+  "CUBIN_SHA256": "af2648d9daad16996e6279fa9f237cbb1782a6cfc5358338777b85888c135ed1",
+  "SASS_SHA256": "0860ce6b0b7c9a2bbe2e90c00ef7f78b861940ef7a1b1565e173a04209472cb7",
+  "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_matched_sharedMatchedShared_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_Layout_B_1_0:\n  REG:58 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1256 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+  "target_static_op_counts": {
+    "STSM.16.MT88.4": 8
+  },
+  "native_LDL_STL": 0,
+  "grid": 128,
+  "threads": 192,
+  "SMEM_reserved_B": 225280,
+  "family": {
+    "id": 5,
+    "name": "CG1_STSM",
+    "original_PCs": [
+      "0x92b0",
+      "0x9310",
+      "0x9340",
+      "0x93a0",
+      "0x9400",
+      "0x9440",
+      "0x9470",
+      "0x9480"
+    ],
+    "opcodes": [
+      "STSM.16.MT88.4",
+      "STSM.16.MT88.4",
+      "STSM.16.MT88.4",
+      "STSM.16.MT88.4",
+      "STSM.16.MT88.4",
+      "STSM.16.MT88.4",
+      "STSM.16.MT88.4",
+      "STSM.16.MT88.4"
+    ],
+    "ptx": "stmatrix.sync.aligned.m8n8.x4.trans.shared.b16",
+    "widths": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "value_starts": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28
+    ],
+    "value_count": 32,
+    "expected_Source_WF_per_round_CTA": 128,
+    "participating_warps": 4,
+    "offset_units": "B from alignedscratchbase",
+    "original_stage_slot": 0,
+    "scope": "Nativeinstruction family, same laneaddress/predicate/width and4warps; independentperaccessregisters toavoid syntheticWAW; count mechanism only, notmatchednativeintervalrate; syntheticresident input andQK SS competitor",
+    "all_instructions_have_active_lanes": true
+  },
+  "python": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+  "torch": "2.11.0+cu130",
+  "cutlass": "4.7.0",
+  "device": "_CudaDeviceProperties(name='NVIDIA B200', major=10, minor=0, total_memory=182631MB, multi_processor_count=148, uuid=6abbea3c-b8d3-7f4b-ca76-85d612930fdf, pci_bus_id=5, pci_device_id=0, pci_domain_id=0, L2_cache_size=126MB)",
+  "profile": false,
+  "model_enabled": false
+}

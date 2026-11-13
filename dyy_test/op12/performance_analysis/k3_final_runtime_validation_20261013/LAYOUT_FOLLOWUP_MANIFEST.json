@@ -1,0 +1,12 @@
+{
+  "source_original_runtime_sha256": "0b8795b8e7c9c091d8c0c2f69a74f08e62f5ee23c30d8093c33ed89b1a9a7267",
+  "changes": "scratch layout only: Float32 element-offset Swizzle<3,2,5>, preserve low2 bits for 16B vector alignment; verify counters, not assume conflict freedom",
+  "stage_count": "same scratch GMEM payload, same barriers, same 32KiB scratch",
+  "graph_target_launches": 64,
+  "files": {
+    "runtime_k3_swizzled.py": "fa76ee340ee270e2f4935ac504cda42fbe8e73ea10f489b92a3299ca46fdaf6c",
+    "final_helper_swizzled.py": "b5f37263b512a4e927e9a5aeb82943c10be1870390e8fcb23328e061dd46c2a5",
+    "run_layout.py": "1e155eedf25e006115555f008762917523b533abe59dd6c4f29409c882cf6d17",
+    "run_layout_suite.py": "a19d7da46a8e1034a3d451921c2485d46aff45ec2ae224fa448fff0fd9c36a74"
+  }
+}

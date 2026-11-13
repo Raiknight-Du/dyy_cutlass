@@ -1,0 +1,17 @@
+{
+  "context_initialized_before": false,
+  "graph_handle_roundtrip": 1,
+  "edge_type_field_available": true,
+  "edge_type_default": 0,
+  "kernel_params_fields": {
+    "func": true,
+    "gridDimX": true,
+    "gridDimY": true,
+    "gridDimZ": true,
+    "blockDimX": true,
+    "blockDimY": true,
+    "blockDimZ": true,
+    "sharedMemBytes": true
+  },
+  "context_initialized_after": false
+}

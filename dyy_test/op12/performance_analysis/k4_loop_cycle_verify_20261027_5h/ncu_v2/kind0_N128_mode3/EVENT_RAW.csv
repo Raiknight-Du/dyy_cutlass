@@ -1,0 +1,2 @@
+trial,kind,family,mode,N,sample,event_us,cta_cycle_median,cta_cycle_p5,cta_cycle_p95,SMs,valid
+0,0,CG0_LDS,3,128,0,764031.1279296875,92404.0,91925,92762,128,1

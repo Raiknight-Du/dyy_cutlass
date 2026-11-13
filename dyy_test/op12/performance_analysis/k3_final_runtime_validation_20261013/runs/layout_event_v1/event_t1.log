@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/run_layout.py", line 260, in <module>
+    main()
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/run_layout.py", line 126, in main
+    assert check['passed'], check
+AssertionError: {'style': 'SWIZZLED', 'mode': 1, 'fixed_max_abs': nan, 'final_max_abs': None, 'sentinel': True, 'passed': False}

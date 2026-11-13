@@ -1,0 +1,27 @@
+{
+  "reconstructed_sha256": "f9f10377d0e7d03cf164d0c72cf61e16fea103fda806b418bbf58101063fb263",
+  "newline_encoding": "CRLF",
+  "checks": [
+    {
+      "manifest": "runs/padded_event_v1/event_t3/manifest.json",
+      "expected": "f9f10377d0e7d03cf164d0c72cf61e16fea103fda806b418bbf58101063fb263",
+      "matches": true
+    },
+    {
+      "manifest": "runs/padded_event_v1/event_t2/manifest.json",
+      "expected": "f9f10377d0e7d03cf164d0c72cf61e16fea103fda806b418bbf58101063fb263",
+      "matches": true
+    },
+    {
+      "manifest": "runs/padded_event_v1/event_t1/manifest.json",
+      "expected": "f9f10377d0e7d03cf164d0c72cf61e16fea103fda806b418bbf58101063fb263",
+      "matches": true
+    },
+    {
+      "manifest": "runs/padded_slope_v1/slope_t1/manifest.json",
+      "expected": "f9f10377d0e7d03cf164d0c72cf61e16fea103fda806b418bbf58101063fb263",
+      "matches": true
+    }
+  ],
+  "padded_slope_v1": "excluded: micro graph repeated64 times; owned run stopped and rerun with one helper per graph"
+}

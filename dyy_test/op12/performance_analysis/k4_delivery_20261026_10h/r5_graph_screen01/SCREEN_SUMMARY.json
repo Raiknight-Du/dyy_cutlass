@@ -1,0 +1,162 @@
+{
+  "status": "SCREEN40CALL_5120CTA_256LAZY_8GRAPH_ALL_PASS_PENDING_LEAD",
+  "cases": [
+    {
+      "configuration": "SS_CONTROL",
+      "N": 128,
+      "Event_us_median": 5.95200015231967,
+      "CTA_cycle_median": 805.5,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "configuration": "SS_CONTROL",
+      "N": 256,
+      "Event_us_median": 5.760000087320805,
+      "CTA_cycle_median": 808.5,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "configuration": "SS_LOAD",
+      "N": 128,
+      "Event_us_median": 26.399999856948853,
+      "CTA_cycle_median": 33842.0,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "configuration": "SS_LOAD",
+      "N": 256,
+      "Event_us_median": 45.43999955058098,
+      "CTA_cycle_median": 66609.0,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "configuration": "TS_CONTROL",
+      "N": 128,
+      "Event_us_median": 10.56000031530857,
+      "CTA_cycle_median": 183.5,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "configuration": "TS_CONTROL",
+      "N": 256,
+      "Event_us_median": 10.048000141978264,
+      "CTA_cycle_median": 419.5,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "configuration": "TS_LOAD",
+      "N": 128,
+      "Event_us_median": 30.6560005992651,
+      "CTA_cycle_median": 33104.0,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "configuration": "TS_LOAD",
+      "N": 256,
+      "Event_us_median": 49.0880012512207,
+      "CTA_cycle_median": 66312.5,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    }
+  ],
+  "metadata": {
+    "SS": {
+      "actual_CUBIN_SHA256": "60b132f31202059cf0d7a29a49b2097f0c4109909de97a4645cf73706cd08038",
+      "native_text_hashes": {
+        ".text.kernel_cutlass_kernel_operand_sourceOperandSourceProbe_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_Layou_0": "087fc0fd1c1acd978ab257f01814682c810841be3d5196fab3d37aa34b87bc36"
+      },
+      "CPU_text_exact_match": true,
+      "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_operand_sourceOperandSourceProbe_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_Layou_0:\n  REG:52 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1248 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "python": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "torch": "2.11.0+cu130",
+      "cutlass": "4.7.0",
+      "torch_cuda": "13.0",
+      "device": "_CudaDeviceProperties(name='NVIDIA B200', major=10, minor=0, total_memory=182631MB, multi_processor_count=148, uuid=6abbea3c-b8d3-7f4b-ca76-85d612930fdf, pci_bus_id=5, pci_device_id=0, pci_domain_id=0, L2_cache_size=126MB)",
+      "grid": 128,
+      "threads": 192,
+      "reserved_dynamic_SMEM_B": 225280,
+      "used_struct_SMEM_B": 33792,
+      "TMEM_columns": 512,
+      "admission": {
+        "round": "R5",
+        "approved_modes": [
+          "screen"
+        ],
+        "source_SHA256": "5311b72c38a7c7efcbba7a15fb569bd1a28c924b04aa444e48df42f799eb3e0a",
+        "max_N": 256,
+        "warmup": 20,
+        "samples": 5,
+        "direct_CONTROL_lazy_per_source": 1,
+        "conditions": "Graph native owned v2+NULL strict3node2edge; SS52/TS158 and fullCUBIN gate; full4096gold/CTA; no formal or NCU",
+        "frequency_policy": "automatic",
+        "model_enabled": false
+      },
+      "helper_invoked": true,
+      "model_enabled": false,
+      "max_CTA_per_SM": 1,
+      "direct_lazy_invocations": 1,
+      "direct_lazy_completed_and_gold": true,
+      "actual_invocations_total": 40
+    },
+    "TS": {
+      "actual_CUBIN_SHA256": "34e6c4bdffb18e076cf1d0809a6645277a85c1e7e1a60ec47b92e1a1fb0b5ebf",
+      "native_text_hashes": {
+        ".text.kernel_cutlass_kernel_operand_sourceOperandSourceProbe_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_Layou_0": "d01f64f91aa804e771ce8d972cc04fa616324b39dbfdf43cb6afa857d15999d9"
+      },
+      "CPU_text_exact_match": true,
+      "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_operand_sourceOperandSourceProbe_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_Layou_0:\n  REG:158 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1248 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "python": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "torch": "2.11.0+cu130",
+      "cutlass": "4.7.0",
+      "torch_cuda": "13.0",
+      "device": "_CudaDeviceProperties(name='NVIDIA B200', major=10, minor=0, total_memory=182631MB, multi_processor_count=148, uuid=6abbea3c-b8d3-7f4b-ca76-85d612930fdf, pci_bus_id=5, pci_device_id=0, pci_domain_id=0, L2_cache_size=126MB)",
+      "grid": 128,
+      "threads": 192,
+      "reserved_dynamic_SMEM_B": 225280,
+      "used_struct_SMEM_B": 33792,
+      "TMEM_columns": 512,
+      "admission": {
+        "round": "R5",
+        "approved_modes": [
+          "screen"
+        ],
+        "source_SHA256": "5311b72c38a7c7efcbba7a15fb569bd1a28c924b04aa444e48df42f799eb3e0a",
+        "max_N": 256,
+        "warmup": 20,
+        "samples": 5,
+        "direct_CONTROL_lazy_per_source": 1,
+        "conditions": "Graph native owned v2+NULL strict3node2edge; SS52/TS158 and fullCUBIN gate; full4096gold/CTA; no formal or NCU",
+        "frequency_policy": "automatic",
+        "model_enabled": false
+      },
+      "helper_invoked": true,
+      "model_enabled": false,
+      "max_CTA_per_SM": 1,
+      "direct_lazy_invocations": 1,
+      "direct_lazy_completed_and_gold": true,
+      "actual_invocations_total": 40
+    }
+  },
+  "completion": {
+    "completed": true,
+    "invocations": 40,
+    "correctness": true,
+    "input_pattern": "varying exact FP16 quarter integers; TMEM holes=-7.5",
+    "full_output_elements_per_CTA": 4096,
+    "direct_lazy_invocations_per_source": 1,
+    "graph_warm_replays_per_config_per_N": 20,
+    "graph_external_EventRecord_kernel_EventRecord": true,
+    "warmup": 20,
+    "samples": 5,
+    "model_enabled": false
+  },
+  "main_rate_gate": "Only raw SS_LOAD/TS_LOAD Event/native; CONTROL has no N-dependent MMA loop; sensitivity subtraction diagnostic only",
+  "model_enabled": false
+}

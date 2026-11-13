@@ -1,0 +1,189 @@
+{
+  "created_UTC": "2026-10-26T00:45:03.799909+00:00",
+  "purpose": "Final read-only upstream/source and GPU state record; no experiment or context initialization",
+  "upstream_HEAD": {
+    "command": [
+      "git",
+      "-C",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+      "rev-parse",
+      "HEAD"
+    ],
+    "start_time_ns": 1792975501600132789,
+    "end_time_ns": 1792975501600806280,
+    "returncode": 0,
+    "stdout": "e77a4a0d276367895c3b50a642fd8f326c03fb72\n",
+    "stderr": ""
+  },
+  "upstream_status": {
+    "command": [
+      "git",
+      "-C",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+      "status",
+      "--porcelain"
+    ],
+    "start_time_ns": 1792975501600807980,
+    "end_time_ns": 1792975501627821988,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "upstream_pin_match": true,
+  "upstream_clean": true,
+  "sources": [
+    {
+      "path": "flashinfer/gdn_kernels/blackwell/__init__.py",
+      "working_source_SHA256": "f0d6ff9dabfb3a2cd0887b9f921902c3e3e9c7efb63a6969adaebd4279aeab0c",
+      "HEAD_source_SHA256": "f0d6ff9dabfb3a2cd0887b9f921902c3e3e9c7efb63a6969adaebd4279aeab0c",
+      "same_as_HEAD": true,
+      "git_show_returncode": 0
+    },
+    {
+      "path": "flashinfer/gdn_kernels/blackwell/gated_delta_net_chunked.py",
+      "working_source_SHA256": "faaf28508f419a255cc030678ef86e73f47153631cc9403176d058b6a0bd715b",
+      "HEAD_source_SHA256": "faaf28508f419a255cc030678ef86e73f47153631cc9403176d058b6a0bd715b",
+      "same_as_HEAD": true,
+      "git_show_returncode": 0
+    },
+    {
+      "path": "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py",
+      "working_source_SHA256": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+      "HEAD_source_SHA256": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+      "same_as_HEAD": true,
+      "git_show_returncode": 0
+    },
+    {
+      "path": "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py",
+      "working_source_SHA256": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+      "HEAD_source_SHA256": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+      "same_as_HEAD": true,
+      "git_show_returncode": 0
+    },
+    {
+      "path": "flashinfer/gdn_kernels/blackwell/gated_delta_net_tile_scheduler.py",
+      "working_source_SHA256": "96654e5e496907907f211b0768a993144b1793c094d2dd9919a5bc78502ed4a9",
+      "HEAD_source_SHA256": "96654e5e496907907f211b0768a993144b1793c094d2dd9919a5bc78502ed4a9",
+      "same_as_HEAD": true,
+      "git_show_returncode": 0
+    },
+    {
+      "path": "flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py",
+      "working_source_SHA256": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+      "HEAD_source_SHA256": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+      "same_as_HEAD": true,
+      "git_show_returncode": 0
+    },
+    {
+      "path": "flashinfer/gdn_kernels/blackwell/gdn_prefill.py",
+      "working_source_SHA256": "dba25861bb34245a344fc4d4fb443419ecf3f425feb9053823bcd7d7165efe01",
+      "HEAD_source_SHA256": "dba25861bb34245a344fc4d4fb443419ecf3f425feb9053823bcd7d7165efe01",
+      "same_as_HEAD": true,
+      "git_show_returncode": 0
+    }
+  ],
+  "all_sources_equal_HEAD": true,
+  "GPU_snapshots": [
+    {
+      "index": 0,
+      "gpu": {
+        "command": [
+          "nvidia-smi",
+          "--query-gpu=uuid,pstate,utilization.gpu,clocks.sm,clocks.mem,power.draw,temperature.gpu,clocks_event_reasons.active",
+          "--format=csv,noheader,nounits"
+        ],
+        "start_time_ns": 1792975501644378982,
+        "end_time_ns": 1792975501665540326,
+        "returncode": 0,
+        "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, P0, 0, 120, 3996, 188.87, 32, 0x0000000000000001\n",
+        "stderr": ""
+      },
+      "apps": {
+        "command": [
+          "nvidia-smi",
+          "--query-compute-apps=pid,process_name",
+          "--format=csv,noheader"
+        ],
+        "start_time_ns": 1792975501665541157,
+        "end_time_ns": 1792975501678190771,
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "index": 1,
+      "gpu": {
+        "command": [
+          "nvidia-smi",
+          "--query-gpu=uuid,pstate,utilization.gpu,clocks.sm,clocks.mem,power.draw,temperature.gpu,clocks_event_reasons.active",
+          "--format=csv,noheader,nounits"
+        ],
+        "start_time_ns": 1792975502679206942,
+        "end_time_ns": 1792975502700442285,
+        "returncode": 0,
+        "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, P0, 0, 120, 3996, 188.83, 32, 0x0000000000000001\n",
+        "stderr": ""
+      },
+      "apps": {
+        "command": [
+          "nvidia-smi",
+          "--query-compute-apps=pid,process_name",
+          "--format=csv,noheader"
+        ],
+        "start_time_ns": 1792975502700443585,
+        "end_time_ns": 1792975502713256228,
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "index": 2,
+      "gpu": {
+        "command": [
+          "nvidia-smi",
+          "--query-gpu=uuid,pstate,utilization.gpu,clocks.sm,clocks.mem,power.draw,temperature.gpu,clocks_event_reasons.active",
+          "--format=csv,noheader,nounits"
+        ],
+        "start_time_ns": 1792975503713603147,
+        "end_time_ns": 1792975503734335126,
+        "returncode": 0,
+        "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, P0, 0, 120, 3996, 188.74, 32, 0x0000000000000001\n",
+        "stderr": ""
+      },
+      "apps": {
+        "command": [
+          "nvidia-smi",
+          "--query-compute-apps=pid,process_name",
+          "--format=csv,noheader"
+        ],
+        "start_time_ns": 1792975503734337176,
+        "end_time_ns": 1792975503746563227,
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  ],
+  "GPU_detail": {
+    "command": [
+      "nvidia-smi",
+      "-q",
+      "-d",
+      "CLOCK,PERFORMANCE,POWER"
+    ],
+    "start_time_ns": 1792975503746565017,
+    "end_time_ns": 1792975503799904602,
+    "returncode": 0,
+    "stdout": "\n==============NVSMI LOG==============\n\nTimestamp                                              : Mon Oct 26 00:45:03 2026\nDriver Version                                         : 580.159.03\nCUDA Version                                           : 13.0\n\nAttached GPUs                                          : 1\nGPU 00000000:05:00.0\n    Performance State                                  : P0\n    Clocks Event Reasons\n        Idle                                           : Active\n        Applications Clocks Setting                    : Not Active\n        SW Power Cap                                   : Not Active\n        HW Slowdown                                    : Not Active\n            HW Thermal Slowdown                        : Not Active\n            HW Power Brake Slowdown                    : Not Active\n        Sync Boost                                     : Not Active\n        SW Thermal Slowdown                            : Not Active\n        Display Clock Setting                          : Not Active\n    Clocks Event Reasons Counters\n        SW Power Capping                               : 11284229372 us\n        Sync Boost                                     : 0 us\n        SW Thermal Slowdown                            : 10941608646 us\n        HW Thermal Slowdown                            : 0 us\n        HW Power Braking                               : 0 us\n    Sparse Operation Mode                              : N/A\n    GPU Power Readings\n        Average Power Draw                             : 188.74 W\n        Instantaneous Power Draw                       : 188.60 W\n        Current Power Limit                            : 1000.00 W\n        Requested Power Limit                          : 1000.00 W\n        Default Power Limit                            : 1000.00 W\n        Min Power Limit                                : 200.00 W\n        Max Power Limit                                : 1000.00 W\n    Power Samples\n        Duration                                       : 2.36 sec\n        Number of Samples                              : 119\n        Max                                            : 189.26 W\n        Min                                            : 187.29 W\n        Avg                                            : 188.83 W\n    GPU Memory Power Readings \n        Average Power Draw                             : 23.68 W\n        Instantaneous Power Draw                       : N/A\n    Module Power Readings\n        Average Power Draw                             : N/A\n        Instantaneous Power Draw                       : N/A\n        Current Power Limit                            : N/A\n        Requested Power Limit                          : N/A\n        Default Power Limit                            : N/A\n        Min Power Limit                                : N/A\n        Max Power Limit                                : N/A\n    Clocks\n        Graphics                                       : 120 MHz\n        SM                                             : 120 MHz\n        Memory                                         : 3996 MHz\n        Video                                          : 600 MHz\n    Applications Clocks\n        Graphics                                       : 1965 MHz\n        Memory                                         : 3996 MHz\n    Default Applications Clocks\n        Graphics                                       : 1965 MHz\n        Memory                                         : 3996 MHz\n    Deferred Clocks\n        Memory                                         : N/A\n    Max Clocks\n        Graphics                                       : 1965 MHz\n        SM                                             : 1965 MHz\n        Memory                                         : 3996 MHz\n        Video                                          : 1965 MHz\n    Max Customer Boost Clocks\n        Graphics                                       : 1965 MHz\n    SM Clock Samples\n        Duration                                       : N/A\n        Number of Samples                              : N/A\n        Max                                            : N/A\n        Min                                            : N/A\n        Avg                                            : N/A\n    Memory Clock Samples\n        Duration                                       : N/A\n        Number of Samples                              : N/A\n        Max                                            : N/A\n        Min                                            : N/A\n        Avg                                            : N/A\n    Clock Policy\n        Auto Boost                                     : N/A\n        Auto Boost Default                             : N/A\n\n",
+    "stderr": ""
+  },
+  "clock_restore_limit": "Read-only current state is paired with prior successful finally -rgc records; current MHz alone cannot prove absence of a requested lock.",
+  "CUDA_imported": false,
+  "kernel_launched": false,
+  "clock_changed": false,
+  "system_changed": false,
+  "script_SHA256": "cd3d7d8306907d3448e8bed708eda59b68d5f5650117f1ee1d65226ff8ef4050",
+  "model_enabled": false
+}

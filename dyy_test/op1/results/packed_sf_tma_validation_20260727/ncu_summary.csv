@@ -1,0 +1,3 @@
+variant,event_mean_ms,event_effective_tib_s,expected_tma_loads,duration_ms,tma_load_instructions,tma_load_bytes,sm_instructions,active_warps_per_scheduler,eligible_warps_per_scheduler,issue_active_pct,long_scoreboard_per_issue,barrier_stall_per_issue,mio_throttle_per_issue,no_eligible_pct,eligible_over_active_pct
+separate,4.8353,9.959893,5745600,4.84096,5745600.0,52.95145,282791250.0,0.999753,0.202114,20.211374,0.192054,0.0,0.0,79.788626,20.216393449181947
+packed,2.951934,16.31441,2872800,2.963552,2872800.0,52.95145,174702150.0,0.999801,0.204803,20.480272,0.327509,0.0,0.0,79.519728,20.48437639090179

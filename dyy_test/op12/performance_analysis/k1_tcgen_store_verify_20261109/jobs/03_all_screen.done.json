@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/run_compare.py",
+    "--mode",
+    "screen",
+    "--tag",
+    "all_v1"
+  ],
+  "returncode": 0,
+  "epoch_start": 1794194953.8386497,
+  "epoch_end": 1794194959.3091369
+}

@@ -1,0 +1,156 @@
+{
+  "source": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py",
+  "source_sha256": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+  "variant_sha256": "c681b7a5d4b0582a4ae84e13f43a1e9b51e7a292c2347c664dc3fac0a4bfbc28",
+  "stages": {
+    "0": "ROLE_LOOP_BODY",
+    "1": "ROLE_INIT",
+    "2": "ROLE_FINAL",
+    "3": "SELECTED_BLOCK",
+    "4": "M_ALPHA_X_READY",
+    "5": "X_MATERIALIZE_PUBLISH",
+    "6": "M_OPERAND_PUBLISH",
+    "7": "Z_ACC_WAIT",
+    "8": "Z_CONVERT_PUBLISH",
+    "9": "M_COEFF_UPDATE_WAIT",
+    "10": "M_SCALE_RELEASE",
+    "11": "N_V_ALPHA_READY",
+    "12": "N_OPERAND_PUBLISH",
+    "13": "Y_ACC_WAIT",
+    "14": "Y_PROCESS_SCALE_PUBLISH",
+    "15": "N_UPDATE_WAIT_RELEASE",
+    "16": "K_READY_WAIT",
+    "17": "M_OPERAND_WAIT",
+    "18": "Z_ISSUE_COMMIT",
+    "19": "Z_READY_WAIT_RELEASE",
+    "20": "X_READY_M_SLOT",
+    "21": "M_UPDATE_ISSUE_RELEASE",
+    "22": "KT_READY_X_SLOT",
+    "23": "X_ISSUE_COMMIT_RELEASE_T",
+    "24": "X_N_READY_Y_SLOT",
+    "25": "Y_ISSUE_COMMIT_RELEASE",
+    "26": "Y_READY_N_SLOT",
+    "27": "N_UPDATE_ISSUE_RELEASE",
+    "28": "K_TMA_CALL",
+    "29": "V_TMA_CALL",
+    "30": "T_TMA_CALL",
+    "31": "ALPHA_PRODUCE_BLOCK"
+  },
+  "semantics": {
+    "0": "mixed role loop; includes waits, excludes init/final store",
+    "1": "compute TMEM initialization+publish or issuer init-ready wait",
+    "2": "M/N final store and done handoff; CG1 includes wait for CG0 done",
+    "3": "one complete source loop body at runtime selected block",
+    "4": "wait alpha/X plus X producer slot acquire",
+    "5": "TMEM load/FP16 pack/SMEM store/fence and publish",
+    "6": "TMEM read/FP16 pack/TMEM store/fence and m_in publish",
+    "7": "consumer wait call; not MMA latency",
+    "8": "TMEM read/pack/TMEM write/fence and z_ready publish",
+    "9": "coefficient load plus m_acc consumer wait",
+    "10": "TMEM scale and releases; no extra completion barrier",
+    "11": "V/alpha consumer waits",
+    "12": "N conversion/TMEM publish",
+    "13": "Y consumer wait",
+    "14": "coefficient+V/Y processing+N scale+fence+publish; joined",
+    "15": "n_acc consumer wait and releases",
+    "16": "W8 K ready wait",
+    "17": "W8 m_in ready wait",
+    "18": "8 Z MMA atoms+original z_acc acquire/commit; not completion",
+    "19": "W8 z_ready wait and operand release",
+    "20": "W8 X ready wait plus M accumulator slot acquire",
+    "21": "M-update atoms+commit and operand releases",
+    "22": "W11 K/T waits plus X accumulator slot acquire",
+    "23": "X atoms+commit+T release",
+    "24": "W11 X/n_in waits plus Y slot acquire",
+    "25": "Y atoms+commit+input releases",
+    "26": "Y ready wait plus N accumulator slot acquire",
+    "27": "N-update atoms+commit+X release",
+    "28": "K slot acquire/TMA submit; not transfer completion",
+    "29": "V slot acquire/TMA submit; not transfer completion",
+    "30": "T slot acquire/TMA submit; not transfer completion",
+    "31": "alpha slot acquire/global load/scan/SMEM/fence/commit"
+  },
+  "overrides": {
+    "B1": {
+      "__call__": {
+        "source_start": 920,
+        "source_end": 1110
+      },
+      "kernel": {
+        "source_start": 1113,
+        "source_end": 1516
+      }
+    },
+    "COARSE": {
+      "__call__": {
+        "source_start": 920,
+        "source_end": 1110
+      },
+      "kernel": {
+        "source_start": 1113,
+        "source_end": 1516
+      },
+      "run_compute_group_0": {
+        "source_start": 778,
+        "source_end": 848
+      },
+      "run_compute_group_1": {
+        "source_start": 851,
+        "source_end": 917
+      },
+      "run_transfer_mma_role": {
+        "source_start": 573,
+        "source_end": 670
+      },
+      "run_state_mma_role": {
+        "source_start": 673,
+        "source_end": 775
+      },
+      "run_load_alpha_role_sm100": {
+        "source_start": 192,
+        "source_end": 224
+      }
+    },
+    "FINE": {
+      "__call__": {
+        "source_start": 920,
+        "source_end": 1110
+      },
+      "kernel": {
+        "source_start": 1113,
+        "source_end": 1516
+      },
+      "run_compute_group_0": {
+        "source_start": 778,
+        "source_end": 848
+      },
+      "run_compute_group_1": {
+        "source_start": 851,
+        "source_end": 917
+      },
+      "run_transfer_mma_role": {
+        "source_start": 573,
+        "source_end": 670
+      },
+      "run_state_mma_role": {
+        "source_start": 673,
+        "source_end": 775
+      },
+      "run_load_alpha_role_sm100": {
+        "source_start": 192,
+        "source_end": 224
+      }
+    }
+  },
+  "trace_shape": [
+    12,
+    48,
+    2,
+    2
+  ],
+  "sample_CTA": 0,
+  "anonymous_loop_rename": "only _ -> blk; no source arithmetic/pipeline edit",
+  "frequency_request_MHz": 1845,
+  "model_enabled": false,
+  "local_bias_bound": null
+}

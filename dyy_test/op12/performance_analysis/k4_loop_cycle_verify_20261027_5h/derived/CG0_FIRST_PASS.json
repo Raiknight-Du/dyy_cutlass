@@ -1,0 +1,1061 @@
+{
+  "fails": [],
+  "PC": {
+    "0x2580": {
+      "actual_pred_on": 48,
+      "expected_pred_on": 48.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x25c0": {
+      "actual_pred_on": 48,
+      "expected_pred_on": 48.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x2750": {
+      "actual_pred_on": 52,
+      "expected_pred_on": 52.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x2780": {
+      "actual_pred_on": 52,
+      "expected_pred_on": 52.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x27d0": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x2810": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x2840": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x2870": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x28a0": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x28d0": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x2920": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x2950": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x29d0": {
+      "actual_pred_on": 48,
+      "expected_pred_on": 48.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x2a10": {
+      "actual_pred_on": 48,
+      "expected_pred_on": 48.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x2bf0": {
+      "actual_pred_on": 80,
+      "expected_pred_on": 80.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x2c20": {
+      "actual_pred_on": 80,
+      "expected_pred_on": 80.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x2c70": {
+      "actual_pred_on": 52,
+      "expected_pred_on": 52.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x2ca0": {
+      "actual_pred_on": 52,
+      "expected_pred_on": 52.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x2ce0": {
+      "actual_pred_on": 84,
+      "expected_pred_on": 84.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x2d10": {
+      "actual_pred_on": 84,
+      "expected_pred_on": 84.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x2d50": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x2d70": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x2da0": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x2db0": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x2de0": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x2e00": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x2f70": {
+      "actual_pred_on": 80,
+      "expected_pred_on": 80.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x2fa0": {
+      "actual_pred_on": 80,
+      "expected_pred_on": 80.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x2fe0": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x3010": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x3050": {
+      "actual_pred_on": 84,
+      "expected_pred_on": 84.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x3070": {
+      "actual_pred_on": 84,
+      "expected_pred_on": 84.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x3090": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x30c0": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x30e0": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x3110": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x3150": {
+      "actual_pred_on": 112,
+      "expected_pred_on": 112.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x3160": {
+      "actual_pred_on": 112,
+      "expected_pred_on": 112.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x32d0": {
+      "actual_pred_on": 116,
+      "expected_pred_on": 116.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x3300": {
+      "actual_pred_on": 116,
+      "expected_pred_on": 116.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x3370": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x33a0": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x33d0": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x33f0": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x3400": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x3410": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x3420": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x3430": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x3450": {
+      "actual_pred_on": 112,
+      "expected_pred_on": 112.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x3470": {
+      "actual_pred_on": 112,
+      "expected_pred_on": 112.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x35e0": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 16,
+      "expected_Source_WF": 16.0,
+      "max_address_conflict": 1
+    },
+    "0x3640": {
+      "actual_pred_on": 116,
+      "expected_pred_on": 116.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x3670": {
+      "actual_pred_on": 116,
+      "expected_pred_on": 116.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x36a0": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 16,
+      "expected_Source_WF": 16.0,
+      "max_address_conflict": 1
+    },
+    "0x36d0": {
+      "actual_pred_on": 16,
+      "expected_pred_on": 16.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x3700": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 16,
+      "expected_Source_WF": 16.0,
+      "max_address_conflict": 1
+    },
+    "0x3730": {
+      "actual_pred_on": 20,
+      "expected_pred_on": 20.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x3740": {
+      "actual_pred_on": 20,
+      "expected_pred_on": 20.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x3750": {
+      "actual_pred_on": 16,
+      "expected_pred_on": 16.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x3760": {
+      "actual_pred_on": 20,
+      "expected_pred_on": 20.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x3780": {
+      "actual_pred_on": 20,
+      "expected_pred_on": 20.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x37b0": {
+      "actual_pred_on": 16,
+      "expected_pred_on": 16.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x3810": {
+      "actual_pred_on": 16,
+      "expected_pred_on": 16.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x3880": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 16,
+      "expected_Source_WF": 16.0,
+      "max_address_conflict": 1
+    },
+    "0x3d10": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 16,
+      "expected_Source_WF": 16.0,
+      "max_address_conflict": 1
+    },
+    "0x3d40": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 16,
+      "expected_Source_WF": 16.0,
+      "max_address_conflict": 1
+    },
+    "0x3d70": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 16,
+      "expected_Source_WF": 16.0,
+      "max_address_conflict": 1
+    },
+    "0x3dc0": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 16,
+      "expected_Source_WF": 16.0,
+      "max_address_conflict": 1
+    },
+    "0x40c0": {
+      "actual_pred_on": 116,
+      "expected_pred_on": 116.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x4100": {
+      "actual_pred_on": 116,
+      "expected_pred_on": 116.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x4150": {
+      "actual_pred_on": 112,
+      "expected_pred_on": 112.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x4180": {
+      "actual_pred_on": 112,
+      "expected_pred_on": 112.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x4190": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x41a0": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x41b0": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x41c0": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x41d0": {
+      "actual_pred_on": 112,
+      "expected_pred_on": 112.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x41e0": {
+      "actual_pred_on": 112,
+      "expected_pred_on": 112.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x41f0": {
+      "actual_pred_on": 116,
+      "expected_pred_on": 116.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x4210": {
+      "actual_pred_on": 116,
+      "expected_pred_on": 116.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x4310": {
+      "actual_pred_on": 84,
+      "expected_pred_on": 84.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x4360": {
+      "actual_pred_on": 84,
+      "expected_pred_on": 84.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x43c0": {
+      "actual_pred_on": 80,
+      "expected_pred_on": 80.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x4400": {
+      "actual_pred_on": 80,
+      "expected_pred_on": 80.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x4460": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x4480": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x44a0": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x44b0": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x44c0": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x44d0": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x44f0": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x4510": {
+      "actual_pred_on": 96,
+      "expected_pred_on": 96.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x45d0": {
+      "actual_pred_on": 84,
+      "expected_pred_on": 84.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x4640": {
+      "actual_pred_on": 80,
+      "expected_pred_on": 80.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x4680": {
+      "actual_pred_on": 80,
+      "expected_pred_on": 80.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x46d0": {
+      "actual_pred_on": 84,
+      "expected_pred_on": 84.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 3,
+      "expected_Source_WF": 3.0,
+      "max_address_conflict": 1
+    },
+    "0x4710": {
+      "actual_pred_on": 48,
+      "expected_pred_on": 48.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x4730": {
+      "actual_pred_on": 48,
+      "expected_pred_on": 48.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x4750": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x4770": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x4780": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x4790": {
+      "actual_pred_on": 64,
+      "expected_pred_on": 64.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x47a0": {
+      "actual_pred_on": 52,
+      "expected_pred_on": 52.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x47b0": {
+      "actual_pred_on": 52,
+      "expected_pred_on": 52.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x48d0": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x4900": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x4930": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x4970": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x49d0": {
+      "actual_pred_on": 48,
+      "expected_pred_on": 48.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x49f0": {
+      "actual_pred_on": 16,
+      "expected_pred_on": 16.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x4a00": {
+      "actual_pred_on": 16,
+      "expected_pred_on": 16.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x4a10": {
+      "actual_pred_on": 20,
+      "expected_pred_on": 20.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x4a20": {
+      "actual_pred_on": 20,
+      "expected_pred_on": 20.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x4a30": {
+      "actual_pred_on": 52,
+      "expected_pred_on": 52.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x4a40": {
+      "actual_pred_on": 52,
+      "expected_pred_on": 52.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x4a60": {
+      "actual_pred_on": 48,
+      "expected_pred_on": 48.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 2,
+      "expected_Source_WF": 2.0,
+      "max_address_conflict": 1
+    },
+    "0x4b50": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x4b90": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x4bc0": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x4c00": {
+      "actual_pred_on": 32,
+      "expected_pred_on": 32.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x4c50": {
+      "actual_pred_on": 16,
+      "expected_pred_on": 16.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x4c80": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x4cb0": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x4cd0": {
+      "actual_pred_on": 16,
+      "expected_pred_on": 16.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x4cf0": {
+      "actual_pred_on": 20,
+      "expected_pred_on": 20.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x4d20": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x4d40": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 4,
+      "expected_Source_WF": 4.0,
+      "max_address_conflict": 1
+    },
+    "0x4d60": {
+      "actual_pred_on": 20,
+      "expected_pred_on": 20.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 1,
+      "expected_Source_WF": 1.0,
+      "max_address_conflict": 1
+    },
+    "0x5370": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 16,
+      "expected_Source_WF": 16.0,
+      "max_address_conflict": 1
+    },
+    "0x53a0": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 16,
+      "expected_Source_WF": 16.0,
+      "max_address_conflict": 1
+    },
+    "0x53d0": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 16,
+      "expected_Source_WF": 16.0,
+      "max_address_conflict": 1
+    },
+    "0x53f0": {
+      "actual_pred_on": 128,
+      "expected_pred_on": 128.0,
+      "unknown_addresses": 0,
+      "bank_predicted_WF": 16,
+      "expected_Source_WF": 16.0,
+      "max_address_conflict": 1
+    }
+  }
+}

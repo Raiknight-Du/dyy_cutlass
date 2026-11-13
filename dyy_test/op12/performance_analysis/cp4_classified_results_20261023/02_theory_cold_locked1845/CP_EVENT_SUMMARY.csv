@@ -1,0 +1,4 @@
+﻿S,C,P,clock,cache,independent_CP_Event_median3_us,profiled_CP_Event_median3_us,model_enabled
+8192,1024,8,locked1845,cold_before_K1_only,153.53600680828094,151.48800611495972,False
+16384,2048,8,locked1845,cold_before_K1_only,228.33599895238876,227.02399641275406,False
+32768,4096,8,locked1845,cold_before_K1_only,374.783992767334,374.6879994869232,False

@@ -1,0 +1,2971 @@
+{
+  "version": "k4-source-only-20260927-v2-s2g-direction",
+  "kernel": "K4 final CP prefill",
+  "pinned_revision": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "source_files": [
+    {
+      "path": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+      "sha256": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc"
+    },
+    {
+      "path": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gdn_cp_prefill.py",
+      "sha256": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5"
+    }
+  ],
+  "scope": {
+    "B": 1,
+    "H": 16,
+    "DK": 128,
+    "DV": 128,
+    "io_dtype": [
+      "fp16",
+      "bf16"
+    ],
+    "state_dtype": "fp32",
+    "P": 8,
+    "C": [
+      1024,
+      2048,
+      4096
+    ],
+    "L": [
+      16,
+      32,
+      64
+    ],
+    "grid": [
+      128,
+      1,
+      1
+    ],
+    "threads_per_cta": 384,
+    "cta_group": 1,
+    "user_initial_and_final_enabled": true,
+    "public_K4_initial_enabled": true,
+    "public_K4_store_final_state": false,
+    "precomputed_T": true,
+    "excluded": [
+      "Wkk",
+      "inverse",
+      "beta input",
+      "K1/K2/K3 work",
+      "old timings",
+      "old empirical conclusions"
+    ]
+  },
+  "rates": {
+    "f_ref_hz": 1965000000,
+    "sm_count": 148,
+    "tensor16_flop_per_sm_cycle": 7736.744377965752,
+    "tf32_flop_per_sm_cycle": 3782.408362561034,
+    "global_hbm_bytes_per_cycle": 3918.5750636132316,
+    "scenario_equal_share_hbm_bytes_per_cta_cycle": 26.47685853792724,
+    "smem_bytes_per_cycle": 128,
+    "tmem_copy_bytes_per_cycle": 512,
+    "conversion_elements_per_cycle": 64,
+    "simt_scalar_operations_per_cycle": 128,
+    "simt_scalar_results_per_sm_cycle": 128,
+    "scalar_unit": "arithmetic scalar results (FMA=1result/2FLOP). K4 non-tensor source nominal has no FMA:82338results=82338FLOP."
+  },
+  "warp_roles": [
+    {
+      "warps": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "role": "CG0 T transform then QK materialization",
+      "registers_per_thread": 224
+    },
+    {
+      "warps": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "role": "CG1 state and output epilogues",
+      "registers_per_thread": 256
+    },
+    {
+      "warps": [
+        8
+      ],
+      "role": "QK tensor issue",
+      "registers_per_thread": 24
+    },
+    {
+      "warps": [
+        9
+      ],
+      "role": "K,Q,V,T TMA issue",
+      "registers_per_thread": 24
+    },
+    {
+      "warps": [
+        10
+      ],
+      "role": "KS,QS,NV,Ointra,dS tensor issue",
+      "registers_per_thread": 24
+    },
+    {
+      "warps": [
+        11
+      ],
+      "role": "gate preprocessing and blocking O TMA store",
+      "registers_per_thread": 24
+    }
+  ],
+  "rings": {
+    "Q": 2,
+    "K": 3,
+    "V": 3,
+    "T": 2,
+    "Ainv": 3,
+    "QK": 2,
+    "O": 2,
+    "gate": 5,
+    "state_acc": 1,
+    "QS_O_acc": 1,
+    "state_io": 1,
+    "CG0_QK_acc": 2,
+    "CG1_KS_NV_acc": 1,
+    "VKS_NV_Delta_inputs": 2
+  },
+  "tmem_views": [
+    {
+      "name": "S_fp32",
+      "columns": [
+        0,
+        128
+      ],
+      "logical_shape": [
+        128,
+        128
+      ],
+      "bytes": 65536
+    },
+    {
+      "name": "QS_and_O_fp32",
+      "columns": [
+        128,
+        192
+      ],
+      "logical_shape": [
+        128,
+        64
+      ],
+      "bytes": 32768
+    },
+    {
+      "name": "S_io",
+      "columns": [
+        192,
+        256
+      ],
+      "logical_shape": [
+        128,
+        128
+      ],
+      "bytes": 32768
+    },
+    {
+      "name": "CG0_QK_acc_ring",
+      "columns": [
+        256,
+        384
+      ],
+      "stages": 2,
+      "producer_fragment_view": [
+        128,
+        64
+      ],
+      "logical_each": [
+        64,
+        64
+      ],
+      "logical_each_bytes": 16384,
+      "physical_reserved_bytes": 65536
+    },
+    {
+      "name": "CG1_KS_NV_fp32",
+      "columns": [
+        384,
+        448
+      ],
+      "logical_shape": [
+        128,
+        64
+      ],
+      "bytes": 32768
+    },
+    {
+      "name": "input0_VKS_then_NV_io",
+      "columns": [
+        448,
+        480
+      ],
+      "logical_shape": [
+        128,
+        64
+      ],
+      "bytes": 16384
+    },
+    {
+      "name": "input1_Delta_io",
+      "columns": [
+        480,
+        512
+      ],
+      "logical_shape": [
+        128,
+        64
+      ],
+      "bytes": 16384
+    }
+  ],
+  "data_ledger_per_block": {
+    "bulk_gmem_bytes": 73984,
+    "explicit_tmem_copy_bytes": 393216,
+    "source_requested_smem_bytes_excluding_tensor_feed": 231424,
+    "nominal_tensor_smem_operand_feed_bytes": 98304,
+    "nominal_total_smem_bytes_if_tensor_feed_shares_same_budget": 329728,
+    "nominal_tensor_tmem_operand_feed_bytes": 114688,
+    "nominal_tmem_copy_plus_tensor_operand_feed_bytes": 507904,
+    "ordinary_scalar_operations": 82338,
+    "conversion_elements": 61440,
+    "source_sfu_invocations_before_CSE": 12480,
+    "gate_warp_shuffle_instructions": 11,
+    "tensor_flops": 9437184,
+    "tcgen05_atoms": 36,
+    "ordinary_fp32_scalar_operations": 74146,
+    "ordinary_io_scalar_operations": 8192,
+    "per_warp_gate_reuse_hypothesis_smem_bytes_excluding_tensor_feed": 135712,
+    "per_warp_gate_reuse_hypothesis_gate_bytes": 4640,
+    "ordinary_scalar_arithmetic_results": 82338,
+    "source_non_tensor_fma_results": 0,
+    "source_scalar_flops": 82338
+  },
+  "nodes": [
+    {
+      "serial": 0,
+      "id": "setup",
+      "stage": "CTA mapping, descriptor initialization, pipeline init, TMEM allocation",
+      "scope": "once per CTA",
+      "cycles": {
+        "ideal_resource_scenario": 0,
+        "symbolic": "tau_setup"
+      },
+      "substage": [
+        "tau_setup"
+      ],
+      "parallelwork": "Setup branches execute on different warps. Descriptor copying/updating and allocator latency unknown.",
+      "dependency": [],
+      "datavolume": {
+        "descriptor_workspace_reserved_bytes": 640,
+        "descriptor_used_qkv_o_bytes": 512,
+        "tmem_columns_reserved": 512
+      },
+      "resource": [
+        "control/barrier/descriptor"
+      ],
+      "throughput": [
+        {
+          "resource": "control/barrier/descriptor",
+          "rate": null
+        }
+      ],
+      "cycleformula": "tau_setup",
+      "substepcycles": [
+        {
+          "name": "tau_setup",
+          "resource": "control/barrier/descriptor",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Setup branches execute on different warps. Descriptor copying/updating and allocator latency unknown.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          958,
+          1237
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": "",
+      "ordinary_scalar_operations": 0
+    },
+    {
+      "serial": 1,
+      "id": "initial_state",
+      "stage": "FP32 initial or fixed-state load and publish",
+      "scope": "once per CTA",
+      "cycles": {
+        "ideal_resource_scenario": 2604,
+        "symbolic": "ceil(65536/26.47685853792724) + ceil(65536/512) + tau_init_state_barrier"
+      },
+      "substage": [
+        "S G2R",
+        "S R2T",
+        "tau_init_state_barrier"
+      ],
+      "parallelwork": "May overlap warp9 loads and warp11 gate warmup; all consume common HBM if serviced concurrently.",
+      "dependency": [
+        "setup"
+      ],
+      "datavolume": {
+        "gmem_read_bytes": 65536,
+        "tmem_write_bytes": 65536
+      },
+      "resource": [
+        "HBM",
+        "TMEM_copy",
+        "sync"
+      ],
+      "throughput": [
+        {
+          "resource": "HBM",
+          "rate": 26.47685853792724
+        },
+        {
+          "resource": "TMEM_copy",
+          "rate": 512
+        },
+        {
+          "resource": "sync",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(65536/26.47685853792724) + ceil(65536/512) + tau_init_state_barrier",
+      "substepcycles": [
+        {
+          "name": "S G2R",
+          "resource": "HBM",
+          "work": 65536,
+          "rate": 26.47685853792724,
+          "cycles": 2476
+        },
+        {
+          "name": "S R2T",
+          "resource": "TMEM_copy",
+          "work": 65536,
+          "rate": 512,
+          "cycles": 128
+        },
+        {
+          "name": "tau_init_state_barrier",
+          "resource": "sync",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "May overlap warp9 loads and warp11 gate warmup; all consume common HBM if serviced concurrently.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          2180,
+          2359
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "S": [
+          128,
+          128
+        ],
+        "dtype": "fp32"
+      },
+      "ordinary_scalar_operations": 0
+    },
+    {
+      "serial": 2,
+      "id": "gate_load",
+      "stage": "Scalar alpha load",
+      "scope": "once per 64-token block i",
+      "cycles": {
+        "ideal_resource_scenario": 10,
+        "symbolic": "ceil(256/26.47685853792724)"
+      },
+      "substage": [
+        "alpha G2R"
+      ],
+      "parallelwork": "Current block gates are prefetched. Warp11 order: G0,G1,G2,G3,G4,O0,G5,O1,....",
+      "dependency": [
+        "gate_slot_free(i-5)",
+        "warp11 source order"
+      ],
+      "datavolume": {
+        "gmem_read_bytes": 256
+      },
+      "resource": [
+        "HBM"
+      ],
+      "throughput": [
+        {
+          "resource": "HBM",
+          "rate": 26.47685853792724
+        }
+      ],
+      "cycleformula": "ceil(256/26.47685853792724)",
+      "substepcycles": [
+        {
+          "name": "alpha G2R",
+          "resource": "HBM",
+          "work": 256,
+          "rate": 26.47685853792724,
+          "cycles": 10
+        }
+      ],
+      "overlap": "Current block gates are prefetched. Warp11 order: G0,G1,G2,G3,G4,O0,G5,O1,....",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          1678,
+          1701
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "alpha": [
+          64
+        ],
+        "dtype": "fp32"
+      },
+      "ordinary_scalar_operations": 0
+    },
+    {
+      "serial": 3,
+      "id": "gate_scan",
+      "stage": "Log2, two 32-lane inclusive scans, intersegment carry, exp2",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 3,
+        "symbolic": "ceil(354/128) + 64 log2 +64 exp2 +11 shuffles +warp issue"
+      },
+      "substage": [
+        "epsilon and scan adds",
+        "64 log2 +64 exp2 +11 shuffles +warp issue"
+      ],
+      "parallelwork": "One warp. Nominal source:64 epsilon adds+258 active scan adds+32 carry adds;13 warp add instructions,11 shuffles. The single-warp issue bound is symbolic.",
+      "dependency": [
+        "gate_load(i)"
+      ],
+      "datavolume": {},
+      "resource": [
+        "SIMT",
+        "SFU/shuffle/warp11"
+      ],
+      "throughput": [
+        {
+          "resource": "SIMT",
+          "rate": 128
+        },
+        {
+          "resource": "SFU/shuffle/warp11",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(354/128) + 64 log2 +64 exp2 +11 shuffles +warp issue",
+      "substepcycles": [
+        {
+          "name": "epsilon and scan adds",
+          "resource": "SIMT",
+          "work": 354,
+          "rate": 128,
+          "cycles": 3
+        },
+        {
+          "name": "64 log2 +64 exp2 +11 shuffles +warp issue",
+          "resource": "SFU/shuffle/warp11",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "One warp. Nominal source:64 epsilon adds+258 active scan adds+32 carry adds;13 warp add instructions,11 shuffles. The single-warp issue bound is symbolic.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          1703,
+          1723
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "cumsumlog": [
+          64
+        ],
+        "cumprod": [
+          64
+        ]
+      },
+      "ordinary_scalar_operations": 354
+    },
+    {
+      "serial": 4,
+      "id": "gate_publish",
+      "stage": "Write both gate channels and commit",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 4,
+        "symbolic": "ceil(512/128) + tau_gate_commit"
+      },
+      "substage": [
+        "gate R2S",
+        "tau_gate_commit"
+      ],
+      "parallelwork": "Gate stage is released only after CG0 QK epilogue and CG1 gate expansion finish.",
+      "dependency": [
+        "gate_scan(i)"
+      ],
+      "datavolume": {
+        "smem_write_bytes": 512
+      },
+      "resource": [
+        "SMEM",
+        "barrier"
+      ],
+      "throughput": [
+        {
+          "resource": "SMEM",
+          "rate": 128
+        },
+        {
+          "resource": "barrier",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(512/128) + tau_gate_commit",
+      "substepcycles": [
+        {
+          "name": "gate R2S",
+          "resource": "SMEM",
+          "work": 512,
+          "rate": 128,
+          "cycles": 4
+        },
+        {
+          "name": "tau_gate_commit",
+          "resource": "barrier",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Gate stage is released only after CG0 QK epilogue and CG1 gate expansion finish.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          1724,
+          1732
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "gate_channels": [
+          64,
+          2
+        ],
+        "dtype": "fp32"
+      },
+      "ordinary_scalar_operations": 0
+    },
+    {
+      "serial": 5,
+      "id": "load_k",
+      "stage": "K TMA",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 747,
+        "symbolic": "ceil(16384/B_HCTA)+ceil(16384/B_SMEM)+tau_response_issue"
+      },
+      "substage": [
+        "packet HBM service",
+        "packet SMEM service",
+        "tau_load_k_response_issue"
+      ],
+      "parallelwork": "Issue order is K→Q→V→T, but a cute.copy is asynchronous. A later issue does not require the earlier transfer to finish.",
+      "dependency": [
+        "warp9 TMA issue T(i-1)",
+        "QK_release(i-3)",
+        "dS_release(i-3)"
+      ],
+      "datavolume": {
+        "gmem_read_bytes": 16384,
+        "smem_write_bytes": 16384
+      },
+      "resource": [
+        "HBM",
+        "SMEM",
+        "TMA_response/control"
+      ],
+      "throughput": [
+        {
+          "resource": "HBM",
+          "rate": 26.47685853792724
+        },
+        {
+          "resource": "SMEM",
+          "rate": 128
+        },
+        {
+          "resource": "TMA_response/control",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(16384/B_HCTA)+ceil(16384/B_SMEM)+tau_response_issue",
+      "substepcycles": [
+        {
+          "name": "packet HBM service",
+          "resource": "HBM",
+          "work": 16384,
+          "rate": 26.47685853792724,
+          "cycles": 619
+        },
+        {
+          "name": "packet SMEM service",
+          "resource": "SMEM",
+          "work": 16384,
+          "rate": 128,
+          "cycles": 128
+        },
+        {
+          "name": "tau_load_k_response_issue",
+          "resource": "TMA_response/control",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Issue order is K→Q→V→T, but a cute.copy is asynchronous. A later issue does not require the earlier transfer to finish.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          2104,
+          2117
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "tile": [
+          64,
+          128
+        ],
+        "dtype": "fp16/bf16"
+      },
+      "ordinary_scalar_operations": 0
+    },
+    {
+      "serial": 6,
+      "id": "load_q",
+      "stage": "Q TMA",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 747,
+        "symbolic": "ceil(16384/B_HCTA)+ceil(16384/B_SMEM)+tau_response_issue"
+      },
+      "substage": [
+        "packet HBM service",
+        "packet SMEM service",
+        "tau_load_q_response_issue"
+      ],
+      "parallelwork": "Issue order is K→Q→V→T, but a cute.copy is asynchronous. A later issue does not require the earlier transfer to finish.",
+      "dependency": [
+        "warp9 K_issue(i)",
+        "QK_release(i-2)",
+        "QS_release(i-2)"
+      ],
+      "datavolume": {
+        "gmem_read_bytes": 16384,
+        "smem_write_bytes": 16384
+      },
+      "resource": [
+        "HBM",
+        "SMEM",
+        "TMA_response/control"
+      ],
+      "throughput": [
+        {
+          "resource": "HBM",
+          "rate": 26.47685853792724
+        },
+        {
+          "resource": "SMEM",
+          "rate": 128
+        },
+        {
+          "resource": "TMA_response/control",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(16384/B_HCTA)+ceil(16384/B_SMEM)+tau_response_issue",
+      "substepcycles": [
+        {
+          "name": "packet HBM service",
+          "resource": "HBM",
+          "work": 16384,
+          "rate": 26.47685853792724,
+          "cycles": 619
+        },
+        {
+          "name": "packet SMEM service",
+          "resource": "SMEM",
+          "work": 16384,
+          "rate": 128,
+          "cycles": 128
+        },
+        {
+          "name": "tau_load_q_response_issue",
+          "resource": "TMA_response/control",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Issue order is K→Q→V→T, but a cute.copy is asynchronous. A later issue does not require the earlier transfer to finish.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          2135,
+          2146
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "tile": [
+          64,
+          128
+        ],
+        "dtype": "fp16/bf16"
+      },
+      "ordinary_scalar_operations": 0
+    },
+    {
+      "serial": 7,
+      "id": "load_v",
+      "stage": "V TMA",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 747,
+        "symbolic": "ceil(16384/B_HCTA)+ceil(16384/B_SMEM)+tau_response_issue"
+      },
+      "substage": [
+        "packet HBM service",
+        "packet SMEM service",
+        "tau_load_v_response_issue"
+      ],
+      "parallelwork": "Issue order is K→Q→V→T, but a cute.copy is asynchronous. A later issue does not require the earlier transfer to finish.",
+      "dependency": [
+        "warp9 Q_issue(i)",
+        "CG1_NV_wait_releaseV(i-3)"
+      ],
+      "datavolume": {
+        "gmem_read_bytes": 16384,
+        "smem_write_bytes": 16384
+      },
+      "resource": [
+        "HBM",
+        "SMEM",
+        "TMA_response/control"
+      ],
+      "throughput": [
+        {
+          "resource": "HBM",
+          "rate": 26.47685853792724
+        },
+        {
+          "resource": "SMEM",
+          "rate": 128
+        },
+        {
+          "resource": "TMA_response/control",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(16384/B_HCTA)+ceil(16384/B_SMEM)+tau_response_issue",
+      "substepcycles": [
+        {
+          "name": "packet HBM service",
+          "resource": "HBM",
+          "work": 16384,
+          "rate": 26.47685853792724,
+          "cycles": 619
+        },
+        {
+          "name": "packet SMEM service",
+          "resource": "SMEM",
+          "work": 16384,
+          "rate": 128,
+          "cycles": 128
+        },
+        {
+          "name": "tau_load_v_response_issue",
+          "resource": "TMA_response/control",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Issue order is K→Q→V→T, but a cute.copy is asynchronous. A later issue does not require the earlier transfer to finish.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          2164,
+          2175
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "tile": [
+          128,
+          64
+        ],
+        "dtype": "fp16/bf16"
+      },
+      "ordinary_scalar_operations": 0
+    },
+    {
+      "serial": 8,
+      "id": "load_t",
+      "stage": "precomputed T TMA",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 374,
+        "symbolic": "ceil(8192/B_HCTA)+ceil(8192/B_SMEM)+tau_response_issue"
+      },
+      "substage": [
+        "packet HBM service",
+        "packet SMEM service",
+        "tau_load_t_response_issue"
+      ],
+      "parallelwork": "Issue order is K→Q→V→T, but a cute.copy is asynchronous. A later issue does not require the earlier transfer to finish.",
+      "dependency": [
+        "warp9 V_issue(i)",
+        "T_transform_release(i-2)"
+      ],
+      "datavolume": {
+        "gmem_read_bytes": 8192,
+        "smem_write_bytes": 8192
+      },
+      "resource": [
+        "HBM",
+        "SMEM",
+        "TMA_response/control"
+      ],
+      "throughput": [
+        {
+          "resource": "HBM",
+          "rate": 26.47685853792724
+        },
+        {
+          "resource": "SMEM",
+          "rate": 128
+        },
+        {
+          "resource": "TMA_response/control",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(8192/B_HCTA)+ceil(8192/B_SMEM)+tau_response_issue",
+      "substepcycles": [
+        {
+          "name": "packet HBM service",
+          "resource": "HBM",
+          "work": 8192,
+          "rate": 26.47685853792724,
+          "cycles": 310
+        },
+        {
+          "name": "packet SMEM service",
+          "resource": "SMEM",
+          "work": 8192,
+          "rate": 128,
+          "cycles": 64
+        },
+        {
+          "name": "tau_load_t_response_issue",
+          "resource": "TMA_response/control",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Issue order is K→Q→V→T, but a cute.copy is asynchronous. A later issue does not require the earlier transfer to finish.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          1604,
+          1623
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "tile": [
+          64,
+          64
+        ],
+        "dtype": "fp16/bf16"
+      },
+      "ordinary_scalar_operations": 0
+    },
+    {
+      "serial": 9,
+      "id": "qk",
+      "stage": "QK = Q K^T",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 136,
+        "symbolic": "ceil(1048576/7736.744377965752) + tau_QK_response_commit"
+      },
+      "substage": [
+        "native QK tensor service",
+        "tau_QK_response_commit"
+      ],
+      "parallelwork": "Warp8 issues two ordinary QK blocks per pair; may run ahead until the two accumulator slots or Q/K rings fill.",
+      "dependency": [
+        "load_q(i)",
+        "load_k(i)",
+        "CG0_acc_free(i-2)",
+        "warp8 issue QK(i-1)"
+      ],
+      "datavolume": {
+        "smem_mma_operand_read_bytes": 32768,
+        "tmem_mma_result_bytes": 16384
+      },
+      "resource": [
+        "tensor16",
+        "MMA_response/control"
+      ],
+      "throughput": [
+        {
+          "resource": "tensor16",
+          "rate": 7736.744377965752
+        },
+        {
+          "resource": "MMA_response/control",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(1048576/7736.744377965752) + tau_QK_response_commit",
+      "substepcycles": [
+        {
+          "name": "native QK tensor service",
+          "resource": "tensor16",
+          "work": 1048576,
+          "rate": 7736.744377965752,
+          "cycles": 136
+        },
+        {
+          "name": "tau_QK_response_commit",
+          "resource": "MMA_response/control",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Warp8 issues two ordinary QK blocks per pair; may run ahead until the two accumulator slots or Q/K rings fill.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          1754,
+          1782
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "logical": [
+          64,
+          64,
+          128
+        ],
+        "declared_atom": [
+          64,
+          64,
+          16
+        ],
+        "atom_count": 8,
+        "operand_A": "SMEM",
+        "operand_B": "SMEM",
+        "dtype": "fp16/bf16->fp32"
+      },
+      "ordinary_scalar_operations": 0,
+      "tensor_flops": 1048576,
+      "eta_shape": "eta64, primary1, sensitivity0.5; no source padding"
+    },
+    {
+      "serial": 10,
+      "id": "t_transform",
+      "stage": "Signed T gate sandwich and transpose to Ainv",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 435,
+        "symbolic": "ceil(8192/128) + ceil(16640/128) + ceil(6176/128) + ceil(8192/64) + ceil(8192/128) + 2080 exp2+predicate+named barrier"
+      },
+      "substage": [
+        "T S2R",
+        "two gate operands per triangular cell",
+        "gamma subtraction and signed multiply",
+        "T widen+output narrow",
+        "Ainv R2S",
+        "2080 exp2+predicate+named barrier"
+      ],
+      "parallelwork": "Ainv is published before waiting for QK; CG0 then blocks on its QK materialization before transforming T(i+1). No inverse or Wkk computation.",
+      "dependency": [
+        "gate_publish(i)",
+        "load_t(i)",
+        "Ainv_free(i-3)",
+        "CG0 QK_epilogue(i-1)"
+      ],
+      "datavolume": {
+        "smem_read_bytes": 8192,
+        "smem_gate_lane_requested_read_bytes": 16640,
+        "smem_write_bytes": 8192,
+        "conversion_elements": 8192
+      },
+      "resource": [
+        "SMEM",
+        "SMEM_lane_request",
+        "SIMT",
+        "conversion",
+        "SFU/control/sync"
+      ],
+      "throughput": [
+        {
+          "resource": "SMEM",
+          "rate": 128
+        },
+        {
+          "resource": "SMEM_lane_request",
+          "rate": 128
+        },
+        {
+          "resource": "SIMT",
+          "rate": 128
+        },
+        {
+          "resource": "conversion",
+          "rate": 64
+        },
+        {
+          "resource": "SMEM",
+          "rate": 128
+        },
+        {
+          "resource": "SFU/control/sync",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(8192/128) + ceil(16640/128) + ceil(6176/128) + ceil(8192/64) + ceil(8192/128) + 2080 exp2+predicate+named barrier",
+      "substepcycles": [
+        {
+          "name": "T S2R",
+          "resource": "SMEM",
+          "work": 8192,
+          "rate": 128,
+          "cycles": 64
+        },
+        {
+          "name": "two gate operands per triangular cell",
+          "resource": "SMEM_lane_request",
+          "work": 16640,
+          "rate": 128,
+          "cycles": 130
+        },
+        {
+          "name": "gamma subtraction and signed multiply",
+          "resource": "SIMT",
+          "work": 6176,
+          "rate": 128,
+          "cycles": 49
+        },
+        {
+          "name": "T widen+output narrow",
+          "resource": "conversion",
+          "work": 8192,
+          "rate": 64,
+          "cycles": 128
+        },
+        {
+          "name": "Ainv R2S",
+          "resource": "SMEM",
+          "work": 8192,
+          "rate": 128,
+          "cycles": 64
+        },
+        {
+          "name": "2080 exp2+predicate+named barrier",
+          "resource": "SFU/control/sync",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Ainv is published before waiting for QK; CG0 then blocks on its QK materialization before transforming T(i+1). No inverse or Wkk computation.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          1836,
+          1900
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "T": [
+          64,
+          64
+        ],
+        "Ainv": [
+          64,
+          64
+        ],
+        "causal_cells": 2080
+      },
+      "ordinary_scalar_operations": 6176
+    },
+    {
+      "serial": 11,
+      "id": "qk_epilogue",
+      "stage": "Read QK, apply causal gamma and scale, publish QK operand",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 371,
+        "symbolic": "ceil(16384/512) + ceil(16640/128) + ceil(10272/128) + ceil(4096/64) + ceil(8192/128) + 2080 exp2+predicate+commit"
+      },
+      "substage": [
+        "QK T2R",
+        "two gate operands per triangular cell",
+        "gamma subtraction and two multiplies",
+        "QK fp32->io",
+        "QK R2S",
+        "2080 exp2+predicate+commit"
+      ],
+      "parallelwork": "Separate from QK tensor service. Last full block takes the final-block predicate branch even though all64 tokens are valid.",
+      "dependency": [
+        "t_transform(i)",
+        "qk(i)",
+        "QK_smem_free(i-2)"
+      ],
+      "datavolume": {
+        "tmem_read_bytes": 16384,
+        "smem_gate_lane_requested_read_bytes": 16640,
+        "smem_write_bytes": 8192,
+        "conversion_elements": 4096
+      },
+      "resource": [
+        "TMEM_copy",
+        "SMEM_lane_request",
+        "SIMT",
+        "conversion",
+        "SMEM",
+        "SFU/control/sync"
+      ],
+      "throughput": [
+        {
+          "resource": "TMEM_copy",
+          "rate": 512
+        },
+        {
+          "resource": "SMEM_lane_request",
+          "rate": 128
+        },
+        {
+          "resource": "SIMT",
+          "rate": 128
+        },
+        {
+          "resource": "conversion",
+          "rate": 64
+        },
+        {
+          "resource": "SMEM",
+          "rate": 128
+        },
+        {
+          "resource": "SFU/control/sync",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(16384/512) + ceil(16640/128) + ceil(10272/128) + ceil(4096/64) + ceil(8192/128) + 2080 exp2+predicate+commit",
+      "substepcycles": [
+        {
+          "name": "QK T2R",
+          "resource": "TMEM_copy",
+          "work": 16384,
+          "rate": 512,
+          "cycles": 32
+        },
+        {
+          "name": "two gate operands per triangular cell",
+          "resource": "SMEM_lane_request",
+          "work": 16640,
+          "rate": 128,
+          "cycles": 130
+        },
+        {
+          "name": "gamma subtraction and two multiplies",
+          "resource": "SIMT",
+          "work": 10272,
+          "rate": 128,
+          "cycles": 81
+        },
+        {
+          "name": "QK fp32->io",
+          "resource": "conversion",
+          "work": 4096,
+          "rate": 64,
+          "cycles": 64
+        },
+        {
+          "name": "QK R2S",
+          "resource": "SMEM",
+          "work": 8192,
+          "rate": 128,
+          "cycles": 64
+        },
+        {
+          "name": "2080 exp2+predicate+commit",
+          "resource": "SFU/control/sync",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Separate from QK tensor service. Last full block takes the final-block predicate branch even though all64 tokens are valid.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          1902,
+          1942
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "QK": [
+          64,
+          64
+        ]
+      },
+      "ordinary_scalar_operations": 10272
+    },
+    {
+      "serial": 12,
+      "id": "state_publish",
+      "stage": "Read old FP32 state, cast to io, publish state operand",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 448,
+        "symbolic": "ceil(65536/512) + ceil(16384/64) + ceil(32768/512) + tau_state_publish_fence_commit"
+      },
+      "substage": [
+        "S T2R",
+        "S fp32->io",
+        "S_io R2T",
+        "tau_state_publish_fence_commit"
+      ],
+      "parallelwork": "Published before decaying S, allowing KS/QS tensor work to overlap CG1 decay and gate expansion.",
+      "dependency": [
+        "initial_state if i=0 else dS(i-1)",
+        "CG1 O_stage(i-1)",
+        "gate_publish(i)"
+      ],
+      "datavolume": {
+        "tmem_read_bytes": 65536,
+        "tmem_write_bytes": 32768,
+        "conversion_elements": 16384
+      },
+      "resource": [
+        "TMEM_copy",
+        "conversion",
+        "sync"
+      ],
+      "throughput": [
+        {
+          "resource": "TMEM_copy",
+          "rate": 512
+        },
+        {
+          "resource": "conversion",
+          "rate": 64
+        },
+        {
+          "resource": "TMEM_copy",
+          "rate": 512
+        },
+        {
+          "resource": "sync",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(65536/512) + ceil(16384/64) + ceil(32768/512) + tau_state_publish_fence_commit",
+      "substepcycles": [
+        {
+          "name": "S T2R",
+          "resource": "TMEM_copy",
+          "work": 65536,
+          "rate": 512,
+          "cycles": 128
+        },
+        {
+          "name": "S fp32->io",
+          "resource": "conversion",
+          "work": 16384,
+          "rate": 64,
+          "cycles": 256
+        },
+        {
+          "name": "S_io R2T",
+          "resource": "TMEM_copy",
+          "work": 32768,
+          "rate": 512,
+          "cycles": 64
+        },
+        {
+          "name": "tau_state_publish_fence_commit",
+          "resource": "sync",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Published before decaying S, allowing KS/QS tensor work to overlap CG1 decay and gate expansion.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          2917,
+          2940
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "S": [
+          128,
+          128
+        ],
+        "S_io": [
+          128,
+          128
+        ]
+      },
+      "ordinary_scalar_operations": 0
+    },
+    {
+      "serial": 13,
+      "id": "state_decay",
+      "stage": "Scale old FP32 state by end gate and return to state accumulator",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 256,
+        "symbolic": "ceil(16384/128) + ceil(65536/512) + tau_decay_fence_release"
+      },
+      "substage": [
+        "end gate*S",
+        "decayed S R2T",
+        "tau_decay_fence_release"
+      ],
+      "parallelwork": "dS accumulator acquisition waits this state-slot release. State input for KS/QS remains the undecayed io copy.",
+      "dependency": [
+        "state_publish(i)"
+      ],
+      "datavolume": {
+        "tmem_write_bytes": 65536
+      },
+      "resource": [
+        "SIMT",
+        "TMEM_copy",
+        "sync"
+      ],
+      "throughput": [
+        {
+          "resource": "SIMT",
+          "rate": 128
+        },
+        {
+          "resource": "TMEM_copy",
+          "rate": 512
+        },
+        {
+          "resource": "sync",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(16384/128) + ceil(65536/512) + tau_decay_fence_release",
+      "substepcycles": [
+        {
+          "name": "end gate*S",
+          "resource": "SIMT",
+          "work": 16384,
+          "rate": 128,
+          "cycles": 128
+        },
+        {
+          "name": "decayed S R2T",
+          "resource": "TMEM_copy",
+          "work": 65536,
+          "rate": 512,
+          "cycles": 128
+        },
+        {
+          "name": "tau_decay_fence_release",
+          "resource": "sync",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "dS accumulator acquisition waits this state-slot release. State input for KS/QS remains the undecayed io copy.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          2972,
+          2985
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "S": [
+          128,
+          128
+        ]
+      },
+      "ordinary_scalar_operations": 16384
+    },
+    {
+      "serial": 14,
+      "id": "cg1_gate",
+      "stage": "Expand gamma and end/current decay ratios",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 584,
+        "symbolic": "ceil(66560/128) + ceil(8192/128) + 8192 source exp2 invocations+gate release"
+      },
+      "substage": [
+        "source gate lane requests",
+        "packed decay differences, scalar equivalent",
+        "8192 source exp2 invocations+gate release"
+      ],
+      "parallelwork": "66560B counts32768B cumprod requests+32768B cumsumlog requests+two128-lane scalar requests. Shared broadcasts/CSE can reduce physical traffic and SFU work.",
+      "dependency": [
+        "state_decay(i)",
+        "gate_publish(i)"
+      ],
+      "datavolume": {
+        "smem_gate_lane_requested_read_bytes": 66560
+      },
+      "resource": [
+        "SMEM_lane_request",
+        "SIMT",
+        "SFU/control"
+      ],
+      "throughput": [
+        {
+          "resource": "SMEM_lane_request",
+          "rate": 128
+        },
+        {
+          "resource": "SIMT",
+          "rate": 128
+        },
+        {
+          "resource": "SFU/control",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(66560/128) + ceil(8192/128) + 8192 source exp2 invocations+gate release",
+      "substepcycles": [
+        {
+          "name": "source gate lane requests",
+          "resource": "SMEM_lane_request",
+          "work": 66560,
+          "rate": 128,
+          "cycles": 520
+        },
+        {
+          "name": "packed decay differences, scalar equivalent",
+          "resource": "SIMT",
+          "work": 8192,
+          "rate": 128,
+          "cycles": 64
+        },
+        {
+          "name": "8192 source exp2 invocations+gate release",
+          "resource": "SFU/control",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "66560B counts32768B cumprod requests+32768B cumsumlog requests+two128-lane scalar requests. Shared broadcasts/CSE can reduce physical traffic and SFU work.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          2911,
+          2915,
+          2986,
+          3004
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "expanded_gamma": [
+          128,
+          64
+        ],
+        "expanded_decay": [
+          128,
+          64
+        ],
+        "unique_gamma_entries": 64,
+        "unique_decay_entries": 64
+      },
+      "ordinary_scalar_operations": 8192
+    },
+    {
+      "serial": 15,
+      "id": "ks",
+      "stage": "KS = S_io K^T",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 272,
+        "symbolic": "ceil(2097152/7736.744377965752) + tau_KS_response_commit"
+      },
+      "substage": [
+        "KS tensor service",
+        "tau_KS_response_commit"
+      ],
+      "parallelwork": "Warp10 waits both K and Q before KS, although KS mathematically needs only K. valid_state=True even first block.",
+      "dependency": [
+        "state_publish(i)",
+        "load_k(i)",
+        "load_q(i)",
+        "warp10 dS_issue(i-1)",
+        "CG1_acc_free(NV i-1)"
+      ],
+      "datavolume": {
+        "tmem_mma_operand_read_bytes": 32768,
+        "smem_mma_operand_read_bytes": 16384,
+        "tmem_mma_result_bytes": 32768
+      },
+      "resource": [
+        "tensor16",
+        "MMA_response/control"
+      ],
+      "throughput": [
+        {
+          "resource": "tensor16",
+          "rate": 7736.744377965752
+        },
+        {
+          "resource": "MMA_response/control",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(2097152/7736.744377965752) + tau_KS_response_commit",
+      "substepcycles": [
+        {
+          "name": "KS tensor service",
+          "resource": "tensor16",
+          "work": 2097152,
+          "rate": 7736.744377965752,
+          "cycles": 272
+        },
+        {
+          "name": "tau_KS_response_commit",
+          "resource": "MMA_response/control",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Warp10 waits both K and Q before KS, although KS mathematically needs only K. valid_state=True even first block.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          2552,
+          2570
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "logical": [
+          128,
+          64,
+          128
+        ],
+        "declared_atom": [
+          128,
+          64,
+          16
+        ],
+        "atom_count": 8,
+        "operand_A": "TMEM",
+        "operand_B": "SMEM"
+      },
+      "ordinary_scalar_operations": 0,
+      "tensor_flops": 2097152
+    },
+    {
+      "serial": 16,
+      "id": "qs",
+      "stage": "QS = S_io Q^T",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 272,
+        "symbolic": "ceil(2097152/7736.744377965752) + tau_QS_response_commit_release"
+      },
+      "substage": [
+        "QS tensor service",
+        "tau_QS_response_commit_release"
+      ],
+      "parallelwork": "QS may overlap CG1 residual work after KS completes; release of state input is after QS commit and precedes NV publication.",
+      "dependency": [
+        "KS_issue(i)",
+        "state_publish(i)",
+        "load_q(i)",
+        "QS_slot_free(O_stage i-1)"
+      ],
+      "datavolume": {
+        "tmem_mma_operand_read_bytes": 32768,
+        "smem_mma_operand_read_bytes": 16384,
+        "tmem_mma_result_bytes": 32768
+      },
+      "resource": [
+        "tensor16",
+        "MMA_response/control"
+      ],
+      "throughput": [
+        {
+          "resource": "tensor16",
+          "rate": 7736.744377965752
+        },
+        {
+          "resource": "MMA_response/control",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(2097152/7736.744377965752) + tau_QS_response_commit_release",
+      "substepcycles": [
+        {
+          "name": "QS tensor service",
+          "resource": "tensor16",
+          "work": 2097152,
+          "rate": 7736.744377965752,
+          "cycles": 272
+        },
+        {
+          "name": "tau_QS_response_commit_release",
+          "resource": "MMA_response/control",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "QS may overlap CG1 residual work after KS completes; release of state input is after QS commit and precedes NV publication.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          2572,
+          2585
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "logical": [
+          128,
+          64,
+          128
+        ],
+        "declared_atom": [
+          128,
+          64,
+          16
+        ],
+        "atom_count": 8,
+        "operand_A": "TMEM",
+        "operand_B": "SMEM"
+      },
+      "ordinary_scalar_operations": 0,
+      "tensor_flops": 2097152
+    },
+    {
+      "serial": 17,
+      "id": "residual",
+      "stage": "VKS = V - round_io(gamma*KS) in fixed input slot0",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 480,
+        "symbolic": "ceil(16384/128) + ceil(32768/512) + ceil(8192/128) + ceil(8192/64) + ceil(8192/128) + ceil(16384/512) + tau_VKS_fence_commit"
+      },
+      "substage": [
+        "V S2R",
+        "KS T2R",
+        "gamma*KS",
+        "KS fp32->io",
+        "V-KS",
+        "VKS R2T",
+        "tau_VKS_fence_commit"
+      ],
+      "parallelwork": "KS accumulator slot is released after KS read+multiply, before conversion/subtract/publish; NV still waits VKS-ready.",
+      "dependency": [
+        "cg1_gate(i)",
+        "load_v(i)",
+        "ks(i)",
+        "NV_read_complete(i-1)",
+        "CG1 source order"
+      ],
+      "datavolume": {
+        "smem_read_bytes": 16384,
+        "tmem_read_bytes": 32768,
+        "tmem_write_bytes": 16384,
+        "conversion_elements": 8192
+      },
+      "resource": [
+        "SMEM",
+        "TMEM_copy",
+        "SIMT",
+        "conversion",
+        "sync"
+      ],
+      "throughput": [
+        {
+          "resource": "SMEM",
+          "rate": 128
+        },
+        {
+          "resource": "TMEM_copy",
+          "rate": 512
+        },
+        {
+          "resource": "SIMT",
+          "rate": 128
+        },
+        {
+          "resource": "conversion",
+          "rate": 64
+        },
+        {
+          "resource": "SIMT",
+          "rate": 128
+        },
+        {
+          "resource": "TMEM_copy",
+          "rate": 512
+        },
+        {
+          "resource": "sync",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(16384/128) + ceil(32768/512) + ceil(8192/128) + ceil(8192/64) + ceil(8192/128) + ceil(16384/512) + tau_VKS_fence_commit",
+      "substepcycles": [
+        {
+          "name": "V S2R",
+          "resource": "SMEM",
+          "work": 16384,
+          "rate": 128,
+          "cycles": 128
+        },
+        {
+          "name": "KS T2R",
+          "resource": "TMEM_copy",
+          "work": 32768,
+          "rate": 512,
+          "cycles": 64
+        },
+        {
+          "name": "gamma*KS",
+          "resource": "SIMT",
+          "work": 8192,
+          "rate": 128,
+          "cycles": 64
+        },
+        {
+          "name": "KS fp32->io",
+          "resource": "conversion",
+          "work": 8192,
+          "rate": 64,
+          "cycles": 128
+        },
+        {
+          "name": "V-KS",
+          "resource": "SIMT",
+          "work": 8192,
+          "rate": 128,
+          "cycles": 64
+        },
+        {
+          "name": "VKS R2T",
+          "resource": "TMEM_copy",
+          "work": 16384,
+          "rate": 512,
+          "cycles": 32
+        },
+        {
+          "name": "tau_VKS_fence_commit",
+          "resource": "sync",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "KS accumulator slot is released after KS read+multiply, before conversion/subtract/publish; NV still waits VKS-ready.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          3006,
+          3039
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "VKS": [
+          128,
+          64
+        ],
+        "dtype": "fp16/bf16"
+      },
+      "ordinary_scalar_operations": 16384
+    },
+    {
+      "serial": 18,
+      "id": "qs_scale",
+      "stage": "Scale QS by gamma and scale in-place in FP32",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 256,
+        "symbolic": "ceil(32768/512) + ceil(16384/128) + ceil(32768/512) + tau_QS_fence_release"
+      },
+      "substage": [
+        "QS T2R",
+        "two QS multiplies",
+        "scaled QS R2T",
+        "tau_QS_fence_release"
+      ],
+      "parallelwork": "Releasing QS slot after the in-place store permits Ointra accumulation. Cannot move before residual in source order.",
+      "dependency": [
+        "residual(i)",
+        "qs(i)"
+      ],
+      "datavolume": {
+        "tmem_read_bytes": 32768,
+        "tmem_write_bytes": 32768
+      },
+      "resource": [
+        "TMEM_copy",
+        "SIMT",
+        "sync"
+      ],
+      "throughput": [
+        {
+          "resource": "TMEM_copy",
+          "rate": 512
+        },
+        {
+          "resource": "SIMT",
+          "rate": 128
+        },
+        {
+          "resource": "TMEM_copy",
+          "rate": 512
+        },
+        {
+          "resource": "sync",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(32768/512) + ceil(16384/128) + ceil(32768/512) + tau_QS_fence_release",
+      "substepcycles": [
+        {
+          "name": "QS T2R",
+          "resource": "TMEM_copy",
+          "work": 32768,
+          "rate": 512,
+          "cycles": 64
+        },
+        {
+          "name": "two QS multiplies",
+          "resource": "SIMT",
+          "work": 16384,
+          "rate": 128,
+          "cycles": 128
+        },
+        {
+          "name": "scaled QS R2T",
+          "resource": "TMEM_copy",
+          "work": 32768,
+          "rate": 512,
+          "cycles": 64
+        },
+        {
+          "name": "tau_QS_fence_release",
+          "resource": "sync",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Releasing QS slot after the in-place store permits Ointra accumulation. Cannot move before residual in source order.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          3041,
+          3056
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "QS": [
+          128,
+          64
+        ],
+        "dtype": "fp32"
+      },
+      "ordinary_scalar_operations": 16384
+    },
+    {
+      "serial": 19,
+      "id": "nv",
+      "stage": "NV = VKS Ainv^T",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 136,
+        "symbolic": "ceil(1048576/7736.744377965752) + tau_NV_response_commit_release"
+      },
+      "substage": [
+        "NV tensor service",
+        "tau_NV_response_commit_release"
+      ],
+      "parallelwork": "NV can execute during QS-scale; uses the same one-slot CG1 accumulator as KS.",
+      "dependency": [
+        "residual(i)",
+        "t_transform(i)",
+        "KS_acc_read_release(i)",
+        "QS_issue(i)"
+      ],
+      "datavolume": {
+        "tmem_mma_operand_read_bytes": 16384,
+        "smem_mma_operand_read_bytes": 8192,
+        "tmem_mma_result_bytes": 32768
+      },
+      "resource": [
+        "tensor16",
+        "MMA_response/control"
+      ],
+      "throughput": [
+        {
+          "resource": "tensor16",
+          "rate": 7736.744377965752
+        },
+        {
+          "resource": "MMA_response/control",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(1048576/7736.744377965752) + tau_NV_response_commit_release",
+      "substepcycles": [
+        {
+          "name": "NV tensor service",
+          "resource": "tensor16",
+          "work": 1048576,
+          "rate": 7736.744377965752,
+          "cycles": 136
+        },
+        {
+          "name": "tau_NV_response_commit_release",
+          "resource": "MMA_response/control",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "NV can execute during QS-scale; uses the same one-slot CG1 accumulator as KS.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          2587,
+          2600
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "logical": [
+          128,
+          64,
+          64
+        ],
+        "declared_atom": [
+          128,
+          64,
+          16
+        ],
+        "atom_count": 4,
+        "operand_A": "TMEM",
+        "operand_B": "SMEM"
+      },
+      "ordinary_scalar_operations": 0,
+      "tensor_flops": 1048576
+    },
+    {
+      "serial": 20,
+      "id": "nv_delta",
+      "stage": "Read FP32 NV, cast NV and Delta, publish fixed slots0 and1",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 448,
+        "symbolic": "ceil(32768/512) + ceil(8192/64) + ceil(8192/128) + ceil(8192/64) + ceil(16384/512) + ceil(16384/512) + tau_NV_Delta_fence_two_commits"
+      },
+      "substage": [
+        "NV T2R",
+        "NV fp32->io",
+        "Delta=NV*decay",
+        "Delta fp32->io",
+        "NV R2T slot0",
+        "Delta R2T slot1",
+        "tau_NV_Delta_fence_two_commits"
+      ],
+      "parallelwork": "NV and Delta stores are interleaved by subtile, but BOTH ready commits occur after the full store loop; Ointra cannot start from an early subtile. V ring is released at NV wait. Delta uses FP32 NV before narrowing.",
+      "dependency": [
+        "nv(i)",
+        "qs_scale(i)",
+        "cg1_gate(i)"
+      ],
+      "datavolume": {
+        "tmem_read_bytes": 32768,
+        "tmem_write_bytes": 32768,
+        "conversion_elements": 16384
+      },
+      "resource": [
+        "TMEM_copy",
+        "conversion",
+        "SIMT",
+        "sync"
+      ],
+      "throughput": [
+        {
+          "resource": "TMEM_copy",
+          "rate": 512
+        },
+        {
+          "resource": "conversion",
+          "rate": 64
+        },
+        {
+          "resource": "SIMT",
+          "rate": 128
+        },
+        {
+          "resource": "conversion",
+          "rate": 64
+        },
+        {
+          "resource": "TMEM_copy",
+          "rate": 512
+        },
+        {
+          "resource": "TMEM_copy",
+          "rate": 512
+        },
+        {
+          "resource": "sync",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(32768/512) + ceil(8192/64) + ceil(8192/128) + ceil(8192/64) + ceil(16384/512) + ceil(16384/512) + tau_NV_Delta_fence_two_commits",
+      "substepcycles": [
+        {
+          "name": "NV T2R",
+          "resource": "TMEM_copy",
+          "work": 32768,
+          "rate": 512,
+          "cycles": 64
+        },
+        {
+          "name": "NV fp32->io",
+          "resource": "conversion",
+          "work": 8192,
+          "rate": 64,
+          "cycles": 128
+        },
+        {
+          "name": "Delta=NV*decay",
+          "resource": "SIMT",
+          "work": 8192,
+          "rate": 128,
+          "cycles": 64
+        },
+        {
+          "name": "Delta fp32->io",
+          "resource": "conversion",
+          "work": 8192,
+          "rate": 64,
+          "cycles": 128
+        },
+        {
+          "name": "NV R2T slot0",
+          "resource": "TMEM_copy",
+          "work": 16384,
+          "rate": 512,
+          "cycles": 32
+        },
+        {
+          "name": "Delta R2T slot1",
+          "resource": "TMEM_copy",
+          "work": 16384,
+          "rate": 512,
+          "cycles": 32
+        },
+        {
+          "name": "tau_NV_Delta_fence_two_commits",
+          "resource": "sync",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "NV and Delta stores are interleaved by subtile, but BOTH ready commits occur after the full store loop; Ointra cannot start from an early subtile. V ring is released at NV wait. Delta uses FP32 NV before narrowing.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          3058,
+          3099
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "NV": [
+          128,
+          64
+        ],
+        "Delta": [
+          128,
+          64
+        ]
+      },
+      "ordinary_scalar_operations": 8192
+    },
+    {
+      "serial": 21,
+      "id": "o_intra",
+      "stage": "Ointra = NV_io QK^T; accumulate on scaled FP32 QS",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 136,
+        "symbolic": "ceil(1048576/7736.744377965752) + tau_Ointra_response_commit_release"
+      },
+      "substage": [
+        "Ointra tensor service",
+        "tau_Ointra_response_commit_release"
+      ],
+      "parallelwork": "The final O is already formed in this accumulator; there is no separate FP32 add GEMM or SIMT addition.",
+      "dependency": [
+        "nv_delta(i)",
+        "qk_epilogue(i)",
+        "qs_scale(i)",
+        "NV_issue(i)"
+      ],
+      "datavolume": {
+        "tmem_mma_operand_read_bytes": 16384,
+        "smem_mma_operand_read_bytes": 8192,
+        "tmem_mma_result_bytes": 32768
+      },
+      "resource": [
+        "tensor16",
+        "MMA_response/control"
+      ],
+      "throughput": [
+        {
+          "resource": "tensor16",
+          "rate": 7736.744377965752
+        },
+        {
+          "resource": "MMA_response/control",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(1048576/7736.744377965752) + tau_Ointra_response_commit_release",
+      "substepcycles": [
+        {
+          "name": "Ointra tensor service",
+          "resource": "tensor16",
+          "work": 1048576,
+          "rate": 7736.744377965752,
+          "cycles": 136
+        },
+        {
+          "name": "tau_Ointra_response_commit_release",
+          "resource": "MMA_response/control",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "The final O is already formed in this accumulator; there is no separate FP32 add GEMM or SIMT addition.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          2602,
+          2617
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "logical": [
+          128,
+          64,
+          64
+        ],
+        "declared_atom": [
+          128,
+          64,
+          16
+        ],
+        "atom_count": 4,
+        "operand_A": "TMEM",
+        "operand_B": "SMEM",
+        "accumulate": "scaled QS"
+      },
+      "ordinary_scalar_operations": 0,
+      "tensor_flops": 1048576
+    },
+    {
+      "serial": 22,
+      "id": "ds",
+      "stage": "dS = Delta_io K; accumulate on gamma_end*S_fp32",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 272,
+        "symbolic": "ceil(2097152/7736.744377965752) + tau_dS_response_commit_release"
+      },
+      "substage": [
+        "dS tensor service",
+        "tau_dS_response_commit_release"
+      ],
+      "parallelwork": "Source warp10 issues dS after Ointra; CG1 O staging may overlap dS completion, then joins before next state publication.",
+      "dependency": [
+        "nv_delta(i)",
+        "state_decay(i)",
+        "load_k(i)",
+        "Ointra_issue(i)",
+        "state_acc_empty(i)"
+      ],
+      "datavolume": {
+        "tmem_mma_operand_read_bytes": 16384,
+        "smem_mma_operand_read_bytes": 16384,
+        "tmem_mma_result_bytes": 65536
+      },
+      "resource": [
+        "tensor16",
+        "MMA_response/control"
+      ],
+      "throughput": [
+        {
+          "resource": "tensor16",
+          "rate": 7736.744377965752
+        },
+        {
+          "resource": "MMA_response/control",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(2097152/7736.744377965752) + tau_dS_response_commit_release",
+      "substepcycles": [
+        {
+          "name": "dS tensor service",
+          "resource": "tensor16",
+          "work": 2097152,
+          "rate": 7736.744377965752,
+          "cycles": 272
+        },
+        {
+          "name": "tau_dS_response_commit_release",
+          "resource": "MMA_response/control",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Source warp10 issues dS after Ointra; CG1 O staging may overlap dS completion, then joins before next state publication.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          2619,
+          2634
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "logical": [
+          128,
+          128,
+          64
+        ],
+        "declared_atom": [
+          128,
+          128,
+          16
+        ],
+        "atom_count": 4,
+        "operand_A": "TMEM",
+        "operand_B": "SMEM",
+        "accumulate": "decayed S"
+      },
+      "ordinary_scalar_operations": 0,
+      "tensor_flops": 2097152
+    },
+    {
+      "serial": 23,
+      "id": "o_stage",
+      "stage": "Read final O, cast and write O SMEM stage",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 320,
+        "symbolic": "ceil(32768/512) + ceil(8192/64) + ceil(16384/128) + tau_O_fence_release_commit"
+      },
+      "substage": [
+        "O T2R",
+        "O fp32->io",
+        "O R2S",
+        "tau_O_fence_release_commit"
+      ],
+      "parallelwork": "Every block drains its O before CG1 starts the next block. Two O slots isolate short gate preprocessing delays.",
+      "dependency": [
+        "o_intra(i)",
+        "nv_delta(i)",
+        "O_slot_free(i-2)"
+      ],
+      "datavolume": {
+        "tmem_read_bytes": 32768,
+        "smem_write_bytes": 16384,
+        "conversion_elements": 8192
+      },
+      "resource": [
+        "TMEM_copy",
+        "conversion",
+        "SMEM",
+        "sync"
+      ],
+      "throughput": [
+        {
+          "resource": "TMEM_copy",
+          "rate": 512
+        },
+        {
+          "resource": "conversion",
+          "rate": 64
+        },
+        {
+          "resource": "SMEM",
+          "rate": 128
+        },
+        {
+          "resource": "sync",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(32768/512) + ceil(8192/64) + ceil(16384/128) + tau_O_fence_release_commit",
+      "substepcycles": [
+        {
+          "name": "O T2R",
+          "resource": "TMEM_copy",
+          "work": 32768,
+          "rate": 512,
+          "cycles": 64
+        },
+        {
+          "name": "O fp32->io",
+          "resource": "conversion",
+          "work": 8192,
+          "rate": 64,
+          "cycles": 128
+        },
+        {
+          "name": "O R2S",
+          "resource": "SMEM",
+          "work": 16384,
+          "rate": 128,
+          "cycles": 128
+        },
+        {
+          "name": "tau_O_fence_release_commit",
+          "resource": "sync",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Every block drains its O before CG1 starts the next block. Two O slots isolate short gate preprocessing delays.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          3101,
+          3121
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "O": [
+          128,
+          64
+        ]
+      },
+      "ordinary_scalar_operations": 0
+    },
+    {
+      "serial": 24,
+      "id": "o_store",
+      "stage": "TMA O S2G, bulk commit and wait_group0",
+      "scope": "once per block i",
+      "cycles": {
+        "ideal_resource_scenario": 747,
+        "symbolic": "ceil(16384/B_SMEM)+ceil(16384/B_HCTA)+tau_response_commit_wait_release"
+      },
+      "substage": [
+        "packet SMEM read service",
+        "packet HBM write service",
+        "tau_O_store_response_commit_wait"
+      ],
+      "parallelwork": "Store waits for completion before the warp moves to the next gate/store iteration and before O slot reuse.",
+      "dependency": [
+        "o_stage(i)",
+        "gate_publish(i+4) if i+4<L",
+        "O_store_done(i-1)"
+      ],
+      "datavolume": {
+        "gmem_write_bytes": 16384,
+        "smem_read_bytes": 16384
+      },
+      "resource": [
+        "SMEM",
+        "HBM",
+        "TMA_response/control/sync"
+      ],
+      "throughput": [
+        {
+          "resource": "SMEM",
+          "rate": 128
+        },
+        {
+          "resource": "HBM",
+          "rate": 26.47685853792724
+        },
+        {
+          "resource": "TMA_response/control/sync",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(16384/B_SMEM)+ceil(16384/B_HCTA)+tau_response_commit_wait_release",
+      "substepcycles": [
+        {
+          "name": "packet SMEM read service",
+          "resource": "SMEM",
+          "work": 16384,
+          "rate": 128,
+          "cycles": 128
+        },
+        {
+          "name": "packet HBM write service",
+          "resource": "HBM",
+          "work": 16384,
+          "rate": 26.47685853792724,
+          "cycles": 619
+        },
+        {
+          "name": "tau_O_store_response_commit_wait",
+          "resource": "TMA_response/control/sync",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Store waits for completion before the warp moves to the next gate/store iteration and before O slot reuse.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          3163,
+          3200
+        ]
+      },
+      "hardwareassumption": "Lead-approved common scenario A. Peak rates are ideal capacities; SIMT128 denotes arithmetic scalar results/SMcycle and is a modeling assumption. Unknown response, barrier, SFU, shuffle, integer/control and issue costs remain symbolic; numeric0 is explicitly optimistic. Logical lane-request gate bytes may exceed actual transactions after broadcast/CSE. Bulk TMA packet service preserves direction: G2S HBMread→SMEMwrite, S2G SMEMread→HBMwrite and serial substeps use sums. Tensor operand-feed traffic is a separate sensitivity ledger, not silently charged twice to the peak-MMA service.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "O": [
+          128,
+          64
+        ]
+      },
+      "ordinary_scalar_operations": 0
+    },
+    {
+      "serial": 25,
+      "id": "terminal",
+      "stage": "Wait last state; source terminal read only in last CP chunk",
+      "scope": "once per CTA terminal; read only16 CTAs",
+      "cycles": {
+        "ideal_resource_scenario": 0,
+        "symbolic": "tau_tail_free +128*theta_terminal_read"
+      },
+      "substage": [
+        "terminal source S T2R",
+        "tau_tail_free"
+      ],
+      "parallelwork": "Clean untimed SASS removed the source's unused terminal reads. Target theta_terminal_read=0; last and nonlast CP branches both wait/release without GMEM store. Syntactic source read is preserved in source ledger and standalone-enabled store is separate.",
+      "dependency": [
+        "ds(L-1)",
+        "o_stage(L-1)"
+      ],
+      "datavolume": {
+        "target_gmem_write_bytes": 0,
+        "last_cp_source_tmem_read_bytes": 65536,
+        "standalone_store_enabled_gmem_write_bytes": 65536,
+        "compiled_target_tmem_read_bytes": 0
+      },
+      "resource": [
+        "TMEM_copy",
+        "sync/control"
+      ],
+      "throughput": [
+        {
+          "resource": "TMEM_copy",
+          "rate": 512
+        },
+        {
+          "resource": "sync/control",
+          "rate": null
+        }
+      ],
+      "cycleformula": "ceil(65536/512) + tau_tail_free",
+      "substepcycles": [
+        {
+          "name": "terminal source S T2R",
+          "resource": "TMEM_copy",
+          "work": 65536,
+          "rate": 512,
+          "cycles": 128
+        },
+        {
+          "name": "tau_tail_free",
+          "resource": "sync/control",
+          "work": null,
+          "rate": null,
+          "cycles": null
+        }
+      ],
+      "overlap": "Clean untimed SASS removed the source's unused terminal reads. Target theta_terminal_read=0; last and nonlast CP branches both wait/release without GMEM store. Syntactic source read is preserved in source ledger and standalone-enabled store is separate.",
+      "source": {
+        "file": "E:/Users/27194/Documents/Cutlass/op12_flashinfer_gdn_b200_analysis_20260825/ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+        "lines": [
+          1352,
+          1374,
+          2416,
+          2460
+        ]
+      },
+      "hardwareassumption": "No timing measured. Static target specialization PTX terminal reads removed in SASS PC9510–95e0.",
+      "confidence": "High for source shape, program order and logical demand; conditional for physical transaction counts and modeled cycles.",
+      "shape": {
+        "S": [
+          128,
+          128
+        ]
+      },
+      "ordinary_scalar_operations": 0
+    }
+  ],
+  "schedule": {
+    "symbolic_unknowns": [
+      "tau_setup",
+      "tau_TMA_issue_and_response",
+      "tau_MMA_issue_and_response",
+      "tau_fence",
+      "tau_barrier_commit_release_wait",
+      "tau_log2",
+      "tau_exp2",
+      "tau_shuffle",
+      "tau_predicate_integer_address",
+      "eta64",
+      "eta_gate",
+      "theta_terminal_read"
+    ],
+    "warp_program_order": {
+      "CG0": "for i: T_transform(i)→QK_epilogue(i); groups of2 but same per-block order",
+      "CG1": "initialS; for i: state_publish→state_decay→gate_expand→residual→QS_scale→NV_and_Delta_publish→O_stage; finalstatewait",
+      "warp8": "QK0→QK1;QK2→QK3;... (issue order)",
+      "warp9": "K_i→Q_i→V_i→T_i→K_(i+1) (issue order)",
+      "warp10": "KS_i→QS_i→NV_i→Ointra_i→dS_i→KS_(i+1) (issue order)",
+      "warp11": "G0→G1→G2→G3;then for i: G_(i+4) if present→Ostore_i including wait_group0"
+    },
+    "source_order_serial": {
+      "warmup_cycles_without_setup": 2672,
+      "formula": "tau_setup +2604+4*17+(L-4)*8201+4*8184+128*theta_terminal_read+sum(unknown tails)",
+      "first_pair_cycles_after_warmup": 16402,
+      "first_pair_from_entry_cycles": 19074,
+      "steady_pair_cycles": 16402,
+      "last_two_pair_cycles_each": 16368,
+      "stage_without_gate_cycles": 8184,
+      "gate_cycles": 17,
+      "eta64_half_extra_cycles_per_block": 136,
+      "theta_terminal_read_primary": 0
+    },
+    "conditional_relaxed_dag": {
+      "definition": "Use the stage-substep serial service demands but allow legally separate warp work to overlap; relax shared-resource arbitration, then max with summed resource capacity budgets. This is a floor under stated demand assumptions, never a completed hardware schedule.",
+      "state_publication_start": "max(CG1_O_stage_done(i-1),dS_done(i-1),G_i_ready)",
+      "one_block_offsets_from_state_publication_start": {
+        "S_io_ready": 448,
+        "S_decayed": 704,
+        "gate_expanded": 1288,
+        "KS_done": 720,
+        "QS_done": 992,
+        "residual_done": 1768,
+        "NV_done": 1904,
+        "QS_scaled": 2024,
+        "NV_Delta_ready": 2472,
+        "Ointra_done": 2608,
+        "dS_done": 2880,
+        "O_stage_done": 2928
+      },
+      "steady_recurrence_floor_cycles": 2928,
+      "formula": "max(globalHBMfloor,2604+L*2928+747,full summed resource budgets); response/sync/SFU unknowns enter max-plus predecessor equations",
+      "legal_overlap": "S publish→KS/QS while CG1 decays S and expands gates; QS can overlap residual; NV can overlap QS_scale; dS can overlap O_stage; warp8/CG0 can run ahead within rings; actual resource contention may serialize them.",
+      "required_resource_sums": "Per block common tensor source packet service1224cy(aggregate capacityfloor1220), TMEMcopy768cy, SMEM source requests1808cy(2576if MMAfeed charged), CVT960cy, scalar packet645cy(aggregate capacityfloor644), HBMpacket2796cy(aggregate capacityfloor2795). Same-resource consumers share one calendar.",
+      "full_legal_contended_makespan": "Conditional attained synthetic resource calendar is in k4_calendar_L16/L32/L64.json. It is legal for the source-DAG/coarse service assumptions, not an exact hardware prediction."
+    },
+    "primary_packet_resource_calendar": {
+      "kind": "conditional conservative source-service packet resource calendar",
+      "files": [
+        "k4_calendar_L16.json",
+        "k4_calendar_L32.json",
+        "k4_calendar_L64.json"
+      ],
+      "summary_file": "k4_calendar_summary.json",
+      "builder_file": "k4_calendar.mjs",
+      "scenarios": [
+        {
+          "L": 16,
+          "C": 1024,
+          "cycles": 57560,
+          "microseconds": 29.29262086513995,
+          "first_output_stored": 11663,
+          "first_pair_stored": 14721,
+          "last_pair_store_interval": 6112,
+          "nodes": 1339,
+          "resource_busy_cycles": {
+            "HBM": 47212,
+            "TMEM": 12416,
+            "SIMT": 10320,
+            "SMEM": 28928,
+            "TC": 19584,
+            "CVT": 15360
+          },
+          "validated": {
+            "all_predecessors_satisfied": true,
+            "no_same_resource_overlap": true,
+            "checked_dependency_edges": 2081
+          }
+        },
+        {
+          "L": 32,
+          "C": 2048,
+          "cycles": 107032,
+          "microseconds": 54.46921119592875,
+          "first_output_stored": 11663,
+          "first_pair_stored": 14721,
+          "last_pair_store_interval": 6112,
+          "nodes": 2667,
+          "resource_busy_cycles": {
+            "HBM": 91948,
+            "TMEM": 24704,
+            "SIMT": 20640,
+            "SMEM": 57856,
+            "TC": 39168,
+            "CVT": 30720
+          },
+          "validated": {
+            "all_predecessors_satisfied": true,
+            "no_same_resource_overlap": true,
+            "checked_dependency_edges": 4193
+          }
+        },
+        {
+          "L": 64,
+          "C": 4096,
+          "cycles": 205976,
+          "microseconds": 104.82239185750636,
+          "first_output_stored": 11663,
+          "first_pair_stored": 14721,
+          "last_pair_store_interval": 6112,
+          "nodes": 5323,
+          "resource_busy_cycles": {
+            "HBM": 181420,
+            "TMEM": 49280,
+            "SIMT": 41280,
+            "SMEM": 115712,
+            "TC": 78336,
+            "CVT": 61440
+          },
+          "validated": {
+            "all_predecessors_satisfied": true,
+            "no_same_resource_overlap": true,
+            "checked_dependency_edges": 8417
+          }
+        }
+      ],
+      "formula": "S_j=MAX(all predecessor F, previous same-resource F); F_j=S_j+CEILING(work/rate,1)",
+      "policy": "earliest eligible service start, zero-cost events before positive work, then earliest dependency-ready time, then stable declaration order",
+      "TMA_packet": "G2S loads:HBMread thenSMEMwrite. S2G outputstore:SMEMread thenHBMwrite. Completion/wait and slot release follow all packet service; source transfer direction preserved.",
+      "unknowns": "zero only ideal numeric service; symbolic fields retained at every task",
+      "tensor_operand_feed": "covered in peak tensor service, separately exposed as shared-copy-port sensitivity",
+      "gate_demand": "source lane-request conservative case; hypothetical per-warp broadcast/CSE reuse sensitivity",
+      "terminal_read": 0,
+      "terminal_evidence": "untimed clean SASS terminal region PC0x9510–0x95e0 has only barrier wait/release, no LDTM; unused reads present in PTX removed by ptxas",
+      "version": 2,
+      "refresh_builder_file": "k4_refresh_calendar.mjs",
+      "superseded_v1_archive": "superseded_k4_v1",
+      "correction_reason": "Correct output physical causal dependency independent of any timing; v1 outputHBM→SMEM ordering superseded.",
+      "finite_case_formula": "14721+6190+(L/2-4)*6184+5801+6112=8088+(L/2)*6184, forL16/32/64 underthis calendar arbitration only"
+    }
+  },
+  "cases": [
+    {
+      "cp_chunk_tokens": 1024,
+      "L": 16,
+      "pairs": 8,
+      "grid_ctas": 128,
+      "sequence_tokens": 8192,
+      "tensor_flops": 19327352832,
+      "tcgen05_atoms": 73728,
+      "bulk_gmem_bytes": 159907840,
+      "initial_state_gmem_bytes": 8388608,
+      "block_bulk_gmem_bytes": 151519232,
+      "global_hbm_capacity_floor_cycles": 40808,
+      "global_hbm_capacity_floor_us": 20.767430025445293,
+      "source_order_serial_cycles_nonlast_cp": 133820,
+      "source_order_serial_cycles_last_cp_source_read": 133948,
+      "source_order_serial_us_nonlast_cp": 68.10178117048346,
+      "source_order_serial_eta64_half_nonlast_cp": 135996,
+      "conditional_relaxed_dag_floor_cycles": 50199,
+      "conditional_relaxed_dag_floor_us": 25.546564885496185,
+      "warning": "Primary is a fully unrolled causal resource calendar under explicit conservative service assumptions; unknown physical costs0 only numeric. Source-order serial and relaxed floor are distinct bounds. Gate lane-request demand is not measured hardware traffic.",
+      "primary_causal_calendar_cycles": 57560,
+      "primary_causal_calendar_us": 29.29262086513995,
+      "primary_calendar_file": "k4_calendar_L16.json"
+    },
+    {
+      "cp_chunk_tokens": 2048,
+      "L": 32,
+      "pairs": 16,
+      "grid_ctas": 128,
+      "sequence_tokens": 16384,
+      "tensor_flops": 38654705664,
+      "tcgen05_atoms": 147456,
+      "bulk_gmem_bytes": 311427072,
+      "initial_state_gmem_bytes": 8388608,
+      "block_bulk_gmem_bytes": 303038464,
+      "global_hbm_capacity_floor_cycles": 79475,
+      "global_hbm_capacity_floor_us": 40.44529262086514,
+      "source_order_serial_cycles_nonlast_cp": 265036,
+      "source_order_serial_cycles_last_cp_source_read": 265164,
+      "source_order_serial_us_nonlast_cp": 134.87837150127226,
+      "source_order_serial_eta64_half_nonlast_cp": 269388,
+      "conditional_relaxed_dag_floor_cycles": 97047,
+      "conditional_relaxed_dag_floor_us": 49.38778625954198,
+      "warning": "Primary is a fully unrolled causal resource calendar under explicit conservative service assumptions; unknown physical costs0 only numeric. Source-order serial and relaxed floor are distinct bounds. Gate lane-request demand is not measured hardware traffic.",
+      "primary_causal_calendar_cycles": 107032,
+      "primary_causal_calendar_us": 54.46921119592875,
+      "primary_calendar_file": "k4_calendar_L32.json"
+    },
+    {
+      "cp_chunk_tokens": 4096,
+      "L": 64,
+      "pairs": 32,
+      "grid_ctas": 128,
+      "sequence_tokens": 32768,
+      "tensor_flops": 77309411328,
+      "tcgen05_atoms": 294912,
+      "bulk_gmem_bytes": 614465536,
+      "initial_state_gmem_bytes": 8388608,
+      "block_bulk_gmem_bytes": 606076928,
+      "global_hbm_capacity_floor_cycles": 156809,
+      "global_hbm_capacity_floor_us": 79.80101781170484,
+      "source_order_serial_cycles_nonlast_cp": 527468,
+      "source_order_serial_cycles_last_cp_source_read": 527596,
+      "source_order_serial_us_nonlast_cp": 268.43155216284987,
+      "source_order_serial_eta64_half_nonlast_cp": 536172,
+      "conditional_relaxed_dag_floor_cycles": 190743,
+      "conditional_relaxed_dag_floor_us": 97.07022900763359,
+      "warning": "Primary is a fully unrolled causal resource calendar under explicit conservative service assumptions; unknown physical costs0 only numeric. Source-order serial and relaxed floor are distinct bounds. Gate lane-request demand is not measured hardware traffic.",
+      "primary_causal_calendar_cycles": 205976,
+      "primary_causal_calendar_us": 104.82239185750636,
+      "primary_calendar_file": "k4_calendar_L64.json"
+    }
+  ],
+  "joins_and_backpressure": [
+    "Q/K TMA slots released by BOTH warp8 andwarp10; Q's two slots wait for QS, K's three slots wait for dS.",
+    "CG0 must commit Ainv then materialize QK before touching next block T; QK consumer wait can therefore backpressure T ring2 and the single TMA producer.",
+    "CG1 shared accumulator has1 slot: NV acquisition waits KS read release; next KS waits prior NV read release.",
+    "QS/O has1 slot: Ointra waits QS in-place scaling/release, next QS waits final O staging/release.",
+    "S accumulator has1 slot: dS waits decayed state release, next CG1 S read waits dS completion and previous O staging.",
+    "Gate producer ring5 preserves4-block lookahead. Reuse gate_i waits BOTH CG0 andCG1 consumers; warp11 gate_(i+4) is before blocking Ostore_i.",
+    "O ring2 reuse waits actual TMA store completion; warp11 cannot overlap different O stores because wait_group0 is inside each call.",
+    "Fixed input0 VKS→NV overwrite andinput1 Delta reuse rely on accumulator completion proofs, not explicit empty-stage acquire.",
+    "NV andDelta full-tile commits join after the entire interleaved store loop, so no source-level per-subtile O/dS pipeline."
+  ],
+  "limitations": [
+    "Source-only declared instruction shapes and copy atoms are not SASS inspection. No claim of exact hardware instruction issue latency.",
+    "SMEM lane-request bytes and source SFU invocations can shrink after compiler CSE and shared broadcast. Preserve this as sensitivity, not hard physical transfer count.",
+    "Last-CP syntactic state reads were removed in the clean untimed compiled SASS; primary theta_terminal_read=0. Source and standalone store-enabled path remain distinct.",
+    "Descriptor workspace512 used bytes/CTA reserved640 is not an exact descriptor write/read traffic ledger. Setup/fence/control remains symbolic.",
+    "Peak FP32 rate75e12 is distinct from the explicitly approved128scalarops/cycle scenario; the latter is used only as model assumption.",
+    "Do not multiply CTA cycles by128 when128CTAs run concurrently across148SMs. Whole-grid capacity constraints use GPU rates and aggregate volume."
+  ],
+  "primary_calendar": {
+    "kind": "conditional conservative source-service packet resource calendar",
+    "files": [
+      "k4_calendar_L16.json",
+      "k4_calendar_L32.json",
+      "k4_calendar_L64.json"
+    ],
+    "summary_file": "k4_calendar_summary.json",
+    "builder_file": "k4_calendar.mjs",
+    "scenarios": [
+      {
+        "L": 16,
+        "C": 1024,
+        "cycles": 57560,
+        "microseconds": 29.29262086513995,
+        "first_output_stored": 11663,
+        "first_pair_stored": 14721,
+        "last_pair_store_interval": 6112,
+        "nodes": 1339,
+        "resource_busy_cycles": {
+          "HBM": 47212,
+          "TMEM": 12416,
+          "SIMT": 10320,
+          "SMEM": 28928,
+          "TC": 19584,
+          "CVT": 15360
+        },
+        "validated": {
+          "all_predecessors_satisfied": true,
+          "no_same_resource_overlap": true,
+          "checked_dependency_edges": 2081
+        }
+      },
+      {
+        "L": 32,
+        "C": 2048,
+        "cycles": 107032,
+        "microseconds": 54.46921119592875,
+        "first_output_stored": 11663,
+        "first_pair_stored": 14721,
+        "last_pair_store_interval": 6112,
+        "nodes": 2667,
+        "resource_busy_cycles": {
+          "HBM": 91948,
+          "TMEM": 24704,
+          "SIMT": 20640,
+          "SMEM": 57856,
+          "TC": 39168,
+          "CVT": 30720
+        },
+        "validated": {
+          "all_predecessors_satisfied": true,
+          "no_same_resource_overlap": true,
+          "checked_dependency_edges": 4193
+        }
+      },
+      {
+        "L": 64,
+        "C": 4096,
+        "cycles": 205976,
+        "microseconds": 104.82239185750636,
+        "first_output_stored": 11663,
+        "first_pair_stored": 14721,
+        "last_pair_store_interval": 6112,
+        "nodes": 5323,
+        "resource_busy_cycles": {
+          "HBM": 181420,
+          "TMEM": 49280,
+          "SIMT": 41280,
+          "SMEM": 115712,
+          "TC": 78336,
+          "CVT": 61440
+        },
+        "validated": {
+          "all_predecessors_satisfied": true,
+          "no_same_resource_overlap": true,
+          "checked_dependency_edges": 8417
+        }
+      }
+    ],
+    "formula": "S_j=MAX(all predecessor F, previous same-resource F); F_j=S_j+CEILING(work/rate,1)",
+    "policy": "earliest eligible service start, zero-cost events before positive work, then earliest dependency-ready time, then stable declaration order",
+    "TMA_packet": "G2S loads:HBMread thenSMEMwrite. S2G outputstore:SMEMread thenHBMwrite. Completion/wait and slot release follow all packet service; source transfer direction preserved.",
+    "unknowns": "zero only ideal numeric service; symbolic fields retained at every task",
+    "tensor_operand_feed": "covered in peak tensor service, separately exposed as shared-copy-port sensitivity",
+    "gate_demand": "source lane-request conservative case; hypothetical per-warp broadcast/CSE reuse sensitivity",
+    "terminal_read": 0,
+    "terminal_evidence": "untimed clean SASS terminal region PC0x9510–0x95e0 has only barrier wait/release, no LDTM; unused reads present in PTX removed by ptxas",
+    "version": 2,
+    "refresh_builder_file": "k4_refresh_calendar.mjs",
+    "superseded_v1_archive": "superseded_k4_v1",
+    "correction_reason": "Correct output physical causal dependency independent of any timing; v1 outputHBM→SMEM ordering superseded.",
+    "finite_case_formula": "14721+6190+(L/2-4)*6184+5801+6112=8088+(L/2)*6184, forL16/32/64 underthis calendar arbitration only"
+  },
+  "static_corrobation": {
+    "untimed": true,
+    "compiled_resources": {
+      "REG": 168,
+      "STACK": 16,
+      "static_SHARED": 1024,
+      "LOCAL": 0
+    },
+    "source_register_budget": 64512,
+    "source_maxregister_split": "224/256/24 by warp role",
+    "caveat": "Static SHARED excludes dynamic SMEM. STACK16 is not a proof of spilling; no timed profile queried.",
+    "terminal_reads": "PTX four ld32×32.x32 survive source lowering but absent in terminal SASS",
+    "residual_io_math": "Clean FP16 PTX has sub.f16x2 and SASS HADD2 (e.g.PC8270–8300); source ordinary FP32 scalar ops74146, IO subtract ops8192."
+  },
+  "gate_scan_source_check": {
+    "uses_AlphaProcessor": false,
+    "uses_end_log": false,
+    "source_lines": [
+      1662,
+      1704,
+      1706,
+      1721
+    ],
+    "BT": 64,
+    "register_columns_per_lane": 2,
+    "intra_segment_shuffle_instructions": 10,
+    "cross_segment_shuffle_instructions": 1,
+    "total_shuffle_instructions": 11,
+    "reason": "5 offsets×2 columns ofshuffle_sync_up +1 crosscolumnshuffle_sync. K4 ownhelperonly."
+  }
+}

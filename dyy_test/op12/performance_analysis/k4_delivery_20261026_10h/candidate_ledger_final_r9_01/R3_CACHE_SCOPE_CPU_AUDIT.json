@@ -1,0 +1,341 @@
+{
+  "status": "CPU_ADDRESS_HISTORY_SCOPE_VERIFIED_CACHE_CAUSE_UNRESOLVED",
+  "kernel_address_formula": "((iteration&7)*grid+CTA)*65536 + thread*512 + column4",
+  "N512_grid128": {
+    "unique_input_B": 67108864,
+    "contiguous_no_alias_segments": 1024,
+    "logical_read_B": 4294967296,
+    "reuses_per_slot": 64,
+    "scalar_Source_request_B": 34359738368,
+    "vector_Source_request_B": 8589934592
+  },
+  "allocation_scope": "one src allocation per replay application process, shared by all CTAs; fresh allocation per application replay PID, not per CTA",
+  "profile_scope": "H2D/allocation before profilerStart; 20 target-shaped warm launches and stream synchronize; profilerStart->Event->one target kernel->Event synchronize->profilerStop; D2H checks/trace after profilerStop",
+  "guard_scope": "Guard/sidecar only nvidia-smi CPU subprocesses; no CUDA allocations or helper kernels",
+  "not_in_target_kernel": [
+    "input allocation and H2D",
+    "20 preceding warmup launches",
+    "post-target D2H correctness readback",
+    "guard nvidia-smi queries"
+  ],
+  "remaining_limits": [
+    "NCU hardware metrics span multiple distinct physical calls; hit+miss and DRAM bytes need not close exactly",
+    "Logical working set below total L2 capacity does not prove physical placement, effective residency or profiler collection cache state",
+    "No per-L2-slice address mapping, eviction or native hardware-pass cache residency proof exists in current evidence",
+    "Do not identify source instrumentation, cache partitioning or hardware policy as the cause without a controlled test"
+  ],
+  "minimal_future_control_candidates_not_authorized": [
+    "Same executable/profile target, only NCU cache-control none vs all (same 20 warmups); identifies profiler cache-preconditioning sensitivity, not full cause",
+    "Same executable and target, host warmup count0 vs20 with cache-control none; target SASS unchanged, H2D warm state means warm0 must not be called cold"
+  ],
+  "read_only_source_refs": {
+    "source": {
+      "path": "r3_ldg_service_v2\\ldg_service.cu",
+      "SHA256": "49bf11c98c6eb0d3812f57d90c70a36783f4d18cbbeeb645b24a6fcb900fec7f",
+      "lines": {
+        "allocation_H2D": 831,
+        "warmups": 849,
+        "profilerStart": 855,
+        "single_target": 857,
+        "profilerStop": 859,
+        "D2H_after_stop": 861
+      }
+    },
+    "launcher": {
+      "path": "r3_ldg_service_v2\\profile_one.py",
+      "SHA256": "93716a553a998e42c2c2183d80c59505ddcbb41e302de56475d29e2b3eab7179"
+    }
+  },
+  "counter_actions": [
+    {
+      "id": "R3_v2_S_G128_LOAD",
+      "metrics": {
+        "dram__bytes_read.sum": 382571264.0,
+        "dram__bytes_write.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read.sum": 1081379868.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum": 1065577393.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum": 14635828.0,
+        "device__attribute_l2_cache_size": 132644864.0
+      },
+      "raw_path": "r3_v2_ncu_S_G128_LOAD_01/S_G128_LOAD_raw.csv",
+      "raw_SHA256": "6f05bc1f6b1459e135d0f8f57525c81c1924b27c227dc2a5a7608c991816b92e",
+      "address_mapping_count": 17,
+      "completion_count": 17,
+      "source_addresses_observed": [
+        139678174937088,
+        139703005216768,
+        139706696204288,
+        139786555752448,
+        139881313468416,
+        139926343516160,
+        139997478912000,
+        140071298662400,
+        140072036859904,
+        140175585837056,
+        140195919822848,
+        140253700554752,
+        140614075154432,
+        140620584714240,
+        140620920258560,
+        140672661192704,
+        140685076332544
+      ],
+      "all_replays_same_allocation_size_and_warm_protocol": true,
+      "dram_read_over_64MiB": 5.700756072998047
+    },
+    {
+      "id": "R3_S_G1_LOAD",
+      "metrics": {
+        "dram__bytes_read.sum": 0.0,
+        "dram__bytes_write.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read.sum": 8385479.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum": 8385992.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum": 0.0,
+        "device__attribute_l2_cache_size": 132644864.0
+      },
+      "raw_path": "r3_v2_ncu_remaining01/S_G1_LOAD/S_G1_LOAD_raw.csv",
+      "raw_SHA256": "c4fc23ae36a5527a13f30f643dc871ba0aae9148be3ca808515c7f3660966a57",
+      "address_mapping_count": 17,
+      "completion_count": 17,
+      "source_addresses_observed": [
+        139614085971968,
+        139633480433664,
+        139687033307136,
+        139693677084672,
+        139717500731392,
+        139765684895744,
+        139843396960256,
+        139892789084160,
+        139894131261440,
+        139941644337152,
+        140097202683904,
+        140234641637376,
+        140366778990592,
+        140382952226816,
+        140562334220288,
+        140671319015424,
+        140701920657408
+      ],
+      "all_replays_same_allocation_size_and_warm_protocol": true,
+      "dram_read_over_64MiB": 0.0
+    },
+    {
+      "id": "R3_S_G1_CONTROL",
+      "metrics": {
+        "dram__bytes_read.sum": 0.0,
+        "dram__bytes_write.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum": 0.0,
+        "device__attribute_l2_cache_size": 132644864.0
+      },
+      "raw_path": "r3_v2_ncu_remaining01/S_G1_CONTROL/S_G1_CONTROL_raw.csv",
+      "raw_SHA256": "205b6473ecc33b814a723c102b1ee165c9ea471cda56529c138425d22f91ab5e",
+      "address_mapping_count": 17,
+      "completion_count": 17,
+      "source_addresses_observed": [
+        139618045394944,
+        139655223705600,
+        139897956466688,
+        139951643557888,
+        139995197210624,
+        140000096157696,
+        140030496473088,
+        140160352124928,
+        140160620560384,
+        140265645932544,
+        140302488698880,
+        140398253047808,
+        140506700972032,
+        140531598360576,
+        140580990484480,
+        140645414993920,
+        140682257760256
+      ],
+      "all_replays_same_allocation_size_and_warm_protocol": true,
+      "dram_read_over_64MiB": 0.0
+    },
+    {
+      "id": "R3_S_G128_CONTROL",
+      "metrics": {
+        "dram__bytes_read.sum": 0.0,
+        "dram__bytes_write.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum": 0.0,
+        "device__attribute_l2_cache_size": 132644864.0
+      },
+      "raw_path": "r3_v2_ncu_remaining01/S_G128_CONTROL/S_G128_CONTROL_raw.csv",
+      "raw_SHA256": "cad34ab4b6b5d3fa42eecf23ae9aab68eb302b5218d1e64887d5cd0e6d0aecdc",
+      "address_mapping_count": 17,
+      "completion_count": 17,
+      "source_addresses_observed": [
+        139638379380736,
+        139646566662144,
+        139687704395776,
+        139746961522688,
+        139807896371200,
+        139824807804928,
+        139894869458944,
+        139950636924928,
+        140093243260928,
+        140304367747072,
+        140338593267712,
+        140350471536640,
+        140518243696640,
+        140607834030080,
+        140635617099776,
+        140691317456896,
+        140691585892352
+      ],
+      "all_replays_same_allocation_size_and_warm_protocol": true,
+      "dram_read_over_64MiB": 0.0
+    },
+    {
+      "id": "R3_V_G1_LOAD",
+      "metrics": {
+        "dram__bytes_read.sum": 0.0,
+        "dram__bytes_write.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read.sum": 2094873.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum": 2095487.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum": 0.0,
+        "device__attribute_l2_cache_size": 132644864.0
+      },
+      "raw_path": "r3_v2_ncu_remaining01/V_G1_LOAD/V_G1_LOAD_raw.csv",
+      "raw_SHA256": "0372a050ba877652c967c5c0795a7c5d38af28e6462c60856c402847a3db0265",
+      "address_mapping_count": 17,
+      "completion_count": 17,
+      "source_addresses_observed": [
+        139621333729280,
+        139622206144512,
+        139660927959040,
+        139739847983104,
+        139740049309696,
+        139824472260608,
+        139833733283840,
+        139883528060928,
+        140026671267840,
+        140097068466176,
+        140145319739392,
+        140216455135232,
+        140264572190720,
+        140441471156224,
+        140475226914816,
+        140536497307648,
+        140699840282624
+      ],
+      "all_replays_same_allocation_size_and_warm_protocol": true,
+      "dram_read_over_64MiB": 0.0
+    },
+    {
+      "id": "R3_V_G1_CONTROL",
+      "metrics": {
+        "dram__bytes_read.sum": 0.0,
+        "dram__bytes_write.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum": 0.0,
+        "device__attribute_l2_cache_size": 132644864.0
+      },
+      "raw_path": "r3_v2_ncu_remaining01/V_G1_CONTROL/V_G1_CONTROL_raw.csv",
+      "raw_SHA256": "a12640ef1b75b15eac3cec4dd337a5120ff95ebea76ee2d89037746f90e1aa2c",
+      "address_mapping_count": 17,
+      "completion_count": 17,
+      "source_addresses_observed": [
+        139724681379840,
+        139748505026560,
+        139793736400896,
+        139807023955968,
+        139855879208960,
+        139982513635328,
+        140119214391296,
+        140146661916672,
+        140241218306048,
+        140336915546112,
+        140367450079232,
+        140393018556416,
+        140498647908352,
+        140515022471168,
+        140545355677696,
+        140637563256832,
+        140641321353216
+      ],
+      "all_replays_same_allocation_size_and_warm_protocol": true,
+      "dram_read_over_64MiB": 0.0
+    },
+    {
+      "id": "R3_V_G128_LOAD",
+      "metrics": {
+        "dram__bytes_read.sum": 330684416.0,
+        "dram__bytes_write.sum": 1536.0,
+        "lts__t_sectors_srcunit_tex_op_read.sum": 275807406.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum": 261242668.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum": 12827924.0,
+        "device__attribute_l2_cache_size": 132644864.0
+      },
+      "raw_path": "r3_v2_ncu_remaining01/V_G128_LOAD/V_G128_LOAD_raw.csv",
+      "raw_SHA256": "49e598afc522d9a1ba0639359ef83362eed0bcbba5d1a2f2fe5df96ff86cf4fd",
+      "address_mapping_count": 17,
+      "completion_count": 17,
+      "source_addresses_observed": [
+        139788501909504,
+        139920639262720,
+        140024255348736,
+        140042844504064,
+        140048011886592,
+        140160687669248,
+        140326916325376,
+        140347787182080,
+        140503681073152,
+        140538376355840,
+        140569581977600,
+        140582399770624,
+        140584345927680,
+        140625483661312,
+        140676083744768,
+        140683734155264,
+        140702860181504
+      ],
+      "all_replays_same_allocation_size_and_warm_protocol": true,
+      "dram_read_over_64MiB": 4.927581787109375
+    },
+    {
+      "id": "R3_V_G128_CONTROL",
+      "metrics": {
+        "dram__bytes_read.sum": 0.0,
+        "dram__bytes_write.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum": 0.0,
+        "lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum": 0.0,
+        "device__attribute_l2_cache_size": 132644864.0
+      },
+      "raw_path": "r3_v2_ncu_remaining01/V_G128_CONTROL/V_G128_CONTROL_raw.csv",
+      "raw_SHA256": "8701d8e49bd25bee0dcb4ade6922f6eb76ba0d8dfb1e49d8cd84d4e442668abf",
+      "address_mapping_count": 17,
+      "completion_count": 17,
+      "source_addresses_observed": [
+        139727432843264,
+        139845208899584,
+        139869972070400,
+        139888695443456,
+        139922518310912,
+        139997411803136,
+        140054253010944,
+        140054655664128,
+        140058480869376,
+        140102302957568,
+        140237325991936,
+        140359732559872,
+        140389394677760,
+        140390803963904,
+        140449390002176,
+        140484420829184,
+        140487843381248
+      ],
+      "all_replays_same_allocation_size_and_warm_protocol": true,
+      "dram_read_over_64MiB": 0.0
+    }
+  ],
+  "new_GPU_or_NCU_calls": 0,
+  "model_enabled": false
+}

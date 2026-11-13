@@ -1,0 +1,3944 @@
+[
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 163840
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FADD",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FFMA",
+    "instructions_executed": 172032
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FMUL",
+    "instructions_executed": 1015808
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 163840
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.16816.F32.BF16",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDG.E",
+    "instructions_executed": 40960
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDS",
+    "instructions_executed": 770048
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDS.128",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88.2",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 770048
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88.2",
+    "instructions_executed": 98304
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 20480
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STS",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STS.128",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88.2",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 114688
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FADD",
+    "instructions_executed": 69632
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FFMA",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FMUL",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FMUL2",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDG.E",
+    "instructions_executed": 11264
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDS",
+    "instructions_executed": 42496
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDS.64",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 24576
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STG.E.128",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STS",
+    "instructions_executed": 41088
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STS.U8",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCBAR",
+    "instructions_executed": 57216
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 113664
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E",
+    "instructions_executed": 8704
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS",
+    "instructions_executed": 224
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS.128",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.128",
+    "instructions_executed": 22528
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS.U8",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCBAR",
+    "instructions_executed": 768
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 19712
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD",
+    "instructions_executed": 1036288
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD2",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL",
+    "instructions_executed": 1540096
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL2",
+    "instructions_executed": 3145728
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E",
+    "instructions_executed": 13312
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.NA",
+    "instructions_executed": 57344
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.NA.128",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS",
+    "instructions_executed": 2000384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS.64",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 49664
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E",
+    "instructions_executed": 6656
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.64",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.ENL2.256",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS",
+    "instructions_executed": 16512
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS.U8",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 196608
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCBAR",
+    "instructions_executed": 53248
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 147456
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 640
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 4864
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.5D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMASTG.4D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 163840
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FADD",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FFMA",
+    "instructions_executed": 172032
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FMUL",
+    "instructions_executed": 1015808
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 1212416
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDG.E",
+    "instructions_executed": 40960
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDS",
+    "instructions_executed": 770048
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDS.128",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88.2",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 770048
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88.2",
+    "instructions_executed": 98304
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 20480
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STS",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STS.128",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88.2",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 114688
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FADD",
+    "instructions_executed": 69632
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FFMA",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FMUL",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FMUL2",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDG.E",
+    "instructions_executed": 11264
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDS",
+    "instructions_executed": 42496
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDS.64",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 24576
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STG.E.128",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STS",
+    "instructions_executed": 41088
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STS.U8",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCBAR",
+    "instructions_executed": 57216
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 113664
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E",
+    "instructions_executed": 8704
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS",
+    "instructions_executed": 224
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS.128",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.128",
+    "instructions_executed": 22528
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS.U8",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCBAR",
+    "instructions_executed": 768
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 19712
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD",
+    "instructions_executed": 1036288
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD2",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL",
+    "instructions_executed": 1540096
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL2",
+    "instructions_executed": 3145728
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E",
+    "instructions_executed": 13312
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.NA",
+    "instructions_executed": 57344
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.NA.128",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS",
+    "instructions_executed": 2000384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS.64",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 49664
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E",
+    "instructions_executed": 6656
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.64",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.ENL2.256",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS",
+    "instructions_executed": 16512
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS.U8",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 196608
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCBAR",
+    "instructions_executed": 53248
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 147456
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 640
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 4864
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.5D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMASTG.4D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 327680
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FADD",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FFMA",
+    "instructions_executed": 344064
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FMUL",
+    "instructions_executed": 2031616
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 327680
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.16816.F32.BF16",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDG.E",
+    "instructions_executed": 81920
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDS",
+    "instructions_executed": 1540096
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDS.128",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88.2",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 1540096
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88.2",
+    "instructions_executed": 196608
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 40960
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STS",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STS.128",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88.2",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 229376
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FADD",
+    "instructions_executed": 139264
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FFMA",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FMUL",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FMUL2",
+    "instructions_executed": 4194304
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDG.E",
+    "instructions_executed": 19456
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDS",
+    "instructions_executed": 83456
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDS.64",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STG.E.128",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STS",
+    "instructions_executed": 82048
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STS.U8",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCBAR",
+    "instructions_executed": 114560
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 228352
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E",
+    "instructions_executed": 8704
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS",
+    "instructions_executed": 224
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS.128",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.128",
+    "instructions_executed": 22528
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS.U8",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCBAR",
+    "instructions_executed": 768
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 36096
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD",
+    "instructions_executed": 2072576
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD2",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL",
+    "instructions_executed": 3080192
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL2",
+    "instructions_executed": 6291456
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E",
+    "instructions_executed": 21504
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.NA",
+    "instructions_executed": 57344
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.NA.128",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS",
+    "instructions_executed": 3999232
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS.64",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 98816
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E",
+    "instructions_executed": 6656
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.64",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.ENL2.256",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS",
+    "instructions_executed": 32896
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS.U8",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 393216
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCBAR",
+    "instructions_executed": 106496
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 294912
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 640
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 8960
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.5D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMASTG.4D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 327680
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FADD",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FFMA",
+    "instructions_executed": 344064
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FMUL",
+    "instructions_executed": 2031616
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 2424832
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDG.E",
+    "instructions_executed": 81920
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDS",
+    "instructions_executed": 1540096
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDS.128",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88.2",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 1540096
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88.2",
+    "instructions_executed": 196608
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 40960
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STS",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STS.128",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88.2",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 229376
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FADD",
+    "instructions_executed": 139264
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FFMA",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FMUL",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FMUL2",
+    "instructions_executed": 4194304
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDG.E",
+    "instructions_executed": 19456
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDS",
+    "instructions_executed": 83456
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDS.64",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STG.E.128",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STS",
+    "instructions_executed": 82048
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STS.U8",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCBAR",
+    "instructions_executed": 114560
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 228352
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E",
+    "instructions_executed": 8704
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS",
+    "instructions_executed": 224
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS.128",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.128",
+    "instructions_executed": 22528
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS.U8",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCBAR",
+    "instructions_executed": 768
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 36096
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD",
+    "instructions_executed": 2072576
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD2",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL",
+    "instructions_executed": 3080192
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL2",
+    "instructions_executed": 6291456
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E",
+    "instructions_executed": 21504
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.NA",
+    "instructions_executed": 57344
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.NA.128",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS",
+    "instructions_executed": 3999232
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS.64",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 98816
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E",
+    "instructions_executed": 6656
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.64",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.ENL2.256",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS",
+    "instructions_executed": 32896
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS.U8",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 393216
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCBAR",
+    "instructions_executed": 106496
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 294912
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 640
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 8960
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.5D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMASTG.4D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 81920
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FADD",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FFMA",
+    "instructions_executed": 86016
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FMUL",
+    "instructions_executed": 507904
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 81920
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.16816.F32.BF16",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDG.E",
+    "instructions_executed": 20480
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDS",
+    "instructions_executed": 385024
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDS.128",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88.2",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 385024
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88.2",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 10240
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STS",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STS.128",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88.2",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 57344
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FADD",
+    "instructions_executed": 34816
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FFMA",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FMUL",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FMUL2",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDG.E",
+    "instructions_executed": 7168
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDS",
+    "instructions_executed": 22016
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDS.64",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 12288
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STG.E.128",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STS",
+    "instructions_executed": 20608
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STS.U8",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCBAR",
+    "instructions_executed": 28544
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 56320
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 384
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E",
+    "instructions_executed": 8704
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS",
+    "instructions_executed": 224
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS.128",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.128",
+    "instructions_executed": 22528
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS.U8",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCBAR",
+    "instructions_executed": 768
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 11520
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD",
+    "instructions_executed": 518144
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD2",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL",
+    "instructions_executed": 770048
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL2",
+    "instructions_executed": 1572864
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E",
+    "instructions_executed": 9216
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.NA",
+    "instructions_executed": 57344
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.NA.128",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS",
+    "instructions_executed": 1000960
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS.64",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 25088
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E",
+    "instructions_executed": 6656
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.64",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.ENL2.256",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS",
+    "instructions_executed": 8320
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS.U8",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 98304
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCBAR",
+    "instructions_executed": 26624
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 73728
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 640
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.5D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMASTG.4D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 81920
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FADD",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FFMA",
+    "instructions_executed": 86016
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "FMUL",
+    "instructions_executed": 507904
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 606208
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDG.E",
+    "instructions_executed": 20480
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDS",
+    "instructions_executed": 385024
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDS.128",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88.2",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 385024
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88.2",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 10240
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STS",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STS.128",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88.2",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 57344
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_0_t_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FADD",
+    "instructions_executed": 34816
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FFMA",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FMUL",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "FMUL2",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDG.E",
+    "instructions_executed": 7168
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDS",
+    "instructions_executed": 22016
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDS.64",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 12288
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STG.E.128",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STS",
+    "instructions_executed": 20608
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STS.U8",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCBAR",
+    "instructions_executed": 28544
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 56320
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 384
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_1_mn_precompute",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E",
+    "instructions_executed": 8704
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS",
+    "instructions_executed": 224
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS.128",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.128",
+    "instructions_executed": 22528
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS.U8",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCBAR",
+    "instructions_executed": 768
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 11520
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD",
+    "instructions_executed": 518144
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD2",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL",
+    "instructions_executed": 770048
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL2",
+    "instructions_executed": 1572864
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E",
+    "instructions_executed": 9216
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.NA",
+    "instructions_executed": 57344
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.NA.128",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS",
+    "instructions_executed": 1000960
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS.64",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 25088
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E",
+    "instructions_executed": 6656
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.64",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.ENL2.256",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS",
+    "instructions_executed": 8320
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS.U8",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 98304
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCBAR",
+    "instructions_executed": 26624
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 73728
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 640
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMALDG.5D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "UTMASTG.4D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 101632
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "FADD",
+    "instructions_executed": 1155072
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "FADD2",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "FFMA",
+    "instructions_executed": 344064
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "FMUL2",
+    "instructions_executed": 8912896
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 327680
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDG.E",
+    "instructions_executed": 21504
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDG.E.NA.128",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDGSTS.E.LTC128B",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDS",
+    "instructions_executed": 1601024
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDS.128",
+    "instructions_executed": 409600
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDS.64",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDSM.16.M88",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDSM.16.MT88",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 425984
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 98816
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STG.E",
+    "instructions_executed": 6656
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STG.E.64",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STG.E.ENL2.256",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STG.E.NA.128",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STS",
+    "instructions_executed": 49280
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STS.128",
+    "instructions_executed": 409600
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STS.U8",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STSM.16.M88",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTCBAR",
+    "instructions_executed": 114688
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 360448
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 8960
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "tcgen05_noncp_nearfull_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMASTG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 98720
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "FADD",
+    "instructions_executed": 1155072
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "FADD2",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "FFMA",
+    "instructions_executed": 344064
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "FMUL2",
+    "instructions_executed": 8912896
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "HMMA.16816.F32.BF16",
+    "instructions_executed": 327680
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "HMMA.1688.F32.BF16",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDG.E",
+    "instructions_executed": 17024
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDG.E.NA.128",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDGSTS.E.LTC128B",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDS",
+    "instructions_executed": 1597888
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDS.128",
+    "instructions_executed": 409600
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDS.64",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDSM.16.M88",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDSM.16.MT88",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 425984
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 98368
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STG.E",
+    "instructions_executed": 832
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STG.E.64",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STG.E.ENL2.256",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STG.E.NA.128",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STS",
+    "instructions_executed": 49168
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STS.128",
+    "instructions_executed": 409600
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STS.U8",
+    "instructions_executed": 16
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STSM.16.M88",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 16
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 16
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTCBAR",
+    "instructions_executed": 114688
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 360448
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 8288
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_bf16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMASTG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 98720
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "FADD",
+    "instructions_executed": 1155072
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "FADD2",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "FFMA",
+    "instructions_executed": 344064
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "FMUL2",
+    "instructions_executed": 8912896
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 327680
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDG.E",
+    "instructions_executed": 17024
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDG.E.NA.128",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDGSTS.E.LTC128B",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDS",
+    "instructions_executed": 1597888
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDS.128",
+    "instructions_executed": 409600
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDS.64",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDSM.16.M88",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDSM.16.M88.4",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDSM.16.MT88",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "LDSM.16.MT88.4",
+    "instructions_executed": 425984
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 98368
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STG.E",
+    "instructions_executed": 832
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STG.E.64",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STG.E.ENL2.256",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STG.E.NA.128",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STS",
+    "instructions_executed": 49168
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STS.128",
+    "instructions_executed": 409600
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STS.U8",
+    "instructions_executed": 16
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STSM.16.M88",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STSM.16.M88.4",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "STSM.16.MT88.4",
+    "instructions_executed": 262144
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 16
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 16
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTCBAR",
+    "instructions_executed": 114688
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 360448
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 8288
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "tcgen05_noncp_underfilled_fp16",
+    "kernel_short": "recurrent_tcgen05",
+    "opcode": "UTMASTG.3D",
+    "instructions_executed": 16384
+  }
+]

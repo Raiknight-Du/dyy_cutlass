@@ -1,0 +1,2126 @@
+[
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 163840
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 163840
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.16816.F32.BF16",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 20480
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 24576
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCBAR",
+    "instructions_executed": 57216
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 113664
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 384
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCBAR",
+    "instructions_executed": 768
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 19712
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "CGAERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "DEPBAR",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 4480
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "ERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 49664
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCBAR",
+    "instructions_executed": 53248
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 147456
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 640
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 4864
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.5D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "cp_s16384_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMASTG.4D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 163840
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 1212416
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 20480
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 24576
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCBAR",
+    "instructions_executed": 57216
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 113664
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 384
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCBAR",
+    "instructions_executed": 768
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 19712
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "CGAERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "DEPBAR",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 4480
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "ERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 49664
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCBAR",
+    "instructions_executed": 53248
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 147456
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 640
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 4864
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.5D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "cp_s16384_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMASTG.4D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 327680
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 327680
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.16816.F32.BF16",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 40960
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCBAR",
+    "instructions_executed": 114560
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 228352
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 384
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCBAR",
+    "instructions_executed": 768
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 36096
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "CGAERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "DEPBAR",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 8576
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "ERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 98816
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCBAR",
+    "instructions_executed": 106496
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 294912
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 640
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 8960
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.5D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s32768_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMASTG.4D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 327680
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 2424832
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 40960
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCBAR",
+    "instructions_executed": 114560
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 228352
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 384
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCBAR",
+    "instructions_executed": 768
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 36096
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "CGAERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "DEPBAR",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 8576
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "ERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 98816
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCBAR",
+    "instructions_executed": 106496
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 294912
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 640
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 8960
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.5D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s32768_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMASTG.4D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 81920
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 81920
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.16816.F32.BF16",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 10240
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 12288
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCBAR",
+    "instructions_executed": 28544
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 56320
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 384
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCBAR",
+    "instructions_executed": 768
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 11520
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "CGAERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "DEPBAR",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 2432
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "ERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 25088
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCBAR",
+    "instructions_executed": 26624
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 73728
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 640
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.5D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "cp_s8192_bf16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMASTG.4D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 81920
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 606208
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 10240
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 12288
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCBAR",
+    "instructions_executed": 28544
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 56320
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 384
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCBAR",
+    "instructions_executed": 768
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 11520
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "CGAERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "DEPBAR",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 2432
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "ERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 25088
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCBAR",
+    "instructions_executed": 26624
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 73728
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 640
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.5D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "cp_s8192_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMASTG.4D",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 327680
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 2424832
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 40960
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_1_t_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 2816
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCBAR",
+    "instructions_executed": 114560
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 228352
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 384
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_2_mn_precompute",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCBAR",
+    "instructions_executed": 768
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_3_fixup",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 36096
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "CGAERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "DEPBAR",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 8576
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "ERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 98816
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCBAR",
+    "instructions_executed": 106496
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 294912
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 640
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 8960
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 32768
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.4D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMALDG.5D",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "cp_underfilled_fp16",
+    "kernel_short": "cp_4_prefill",
+    "opcode": "UTMASTG.4D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "ARRIVES.LDGSTSBAR.64.ARVCNT",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 101632
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "CGAERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "DEPBAR",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 8576
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "ERRBAR",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 327680
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 98816
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 128
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTCBAR",
+    "instructions_executed": 114688
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 360448
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 8960
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "noncp_nearfull_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMASTG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "ARRIVES.LDGSTSBAR.64.ARVCNT",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 98720
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "CGAERRBAR",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "DEPBAR",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 8240
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "ERRBAR",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "HMMA.16816.F32.BF16",
+    "instructions_executed": 327680
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "HMMA.1688.F32.BF16",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 98368
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 16
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 16
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTCBAR",
+    "instructions_executed": 114688
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 360448
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 8288
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "noncp_underfilled_bf16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMASTG.3D",
+    "instructions_executed": 16384
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "ARRIVES.LDGSTSBAR.64.ARVCNT",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 98720
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "CGAERRBAR",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "DEPBAR",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "DEPBAR.LE",
+    "instructions_executed": 8240
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "ERRBAR",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "HMMA.16816.F32",
+    "instructions_executed": 327680
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "HMMA.1688.F32",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "MEMBAR.ALL.CTA",
+    "instructions_executed": 98368
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "MEMBAR.ALL.GPU",
+    "instructions_executed": 32
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTCATOMSWS.AND",
+    "instructions_executed": 16
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTCATOMSWS.FIND_AND_SET.ALIGN",
+    "instructions_executed": 16
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTCBAR",
+    "instructions_executed": 114688
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTCHMMA",
+    "instructions_executed": 360448
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMACCTL.IV",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMACCTL.PF",
+    "instructions_executed": 64
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMACMDFLUSH",
+    "instructions_executed": 8288
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMALDG.3D",
+    "instructions_executed": 49152
+  },
+  {
+    "profile": "noncp_underfilled_fp16",
+    "kernel_short": "noncp_fused",
+    "opcode": "UTMASTG.3D",
+    "instructions_executed": 16384
+  }
+]

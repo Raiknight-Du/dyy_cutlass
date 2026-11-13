@@ -1,0 +1,1403 @@
+{
+  "capture": {
+    "evidence_type": "formal",
+    "ncu_version": "NVIDIA (R) Nsight Compute Command Line Profiler\nCopyright (c) 2018-2026 NVIDIA Corporation\nVersion 2026.2.1.0 (build 38283040) (public-release)",
+    "gpu_preflight": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 34, 243.27",
+    "replay_mode": "application",
+    "app_replay_mode": "strict",
+    "app_replay_match": "all",
+    "cache_control": "none",
+    "clock_control": "none",
+    "graph_profiling": "node",
+    "evict_factor": 4,
+    "l2_bytes": 132644864,
+    "sm_clock_mhz_meaning": "nvidia-smi snapshot before eviction, not per-kernel frequency",
+    "metric_units": {
+      "dram_read_bytes": "byte",
+      "dram_write_bytes": "byte",
+      "duration_ns": "ns"
+    },
+    "tail_writeback": "separate diagnostic; not allocated to Ki"
+  },
+  "samples": [
+    {
+      "S": 8192,
+      "C": 1024,
+      "run_id": 1,
+      "sample_tag": "S8192_01",
+      "output_hash": "4040e74f615f05cde672390a1c9ca5c53728354b63dbf923eec3eedf88b4d14a",
+      "final_state_hash": "eabbcf8cc0501c7fff5d307875db9a9114387589726d44ccf10b5f81b742beff",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 34104832,
+          "dram_write_bytes": 0,
+          "duration_ns": 23072,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample01_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample01_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 36500480,
+          "dram_write_bytes": 7260928,
+          "duration_ns": 38080,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample01_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample01_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1075200,
+          "dram_write_bytes": 2742528,
+          "duration_ns": 27520,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample01_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample01_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 109454848,
+          "dram_write_bytes": 46787584,
+          "duration_ns": 57344,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample01_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample01_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "1b743c454f06a1a15582d5310f00325df3823ac4abb2947e677683835ac2f780",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 243.15",
+      "gpu_telemetry_after": "1965, 3996, 35, 263.51",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample01_idle0ms/command.json"
+    },
+    {
+      "S": 8192,
+      "C": 1024,
+      "run_id": 2,
+      "sample_tag": "S8192_02",
+      "output_hash": "4040e74f615f05cde672390a1c9ca5c53728354b63dbf923eec3eedf88b4d14a",
+      "final_state_hash": "eabbcf8cc0501c7fff5d307875db9a9114387589726d44ccf10b5f81b742beff",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 34104832,
+          "dram_write_bytes": 0,
+          "duration_ns": 22976,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample02_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample02_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 36733184,
+          "dram_write_bytes": 7737088,
+          "duration_ns": 38368,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample02_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample02_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1075200,
+          "dram_write_bytes": 2718976,
+          "duration_ns": 28032,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample02_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample02_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 109641728,
+          "dram_write_bytes": 46803968,
+          "duration_ns": 56800,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample02_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample02_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "1b743c454f06a1a15582d5310f00325df3823ac4abb2947e677683835ac2f780",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 241.21",
+      "gpu_telemetry_after": "1965, 3996, 35, 261.64",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample02_idle0ms/command.json"
+    },
+    {
+      "S": 8192,
+      "C": 1024,
+      "run_id": 3,
+      "sample_tag": "S8192_03",
+      "output_hash": "4040e74f615f05cde672390a1c9ca5c53728354b63dbf923eec3eedf88b4d14a",
+      "final_state_hash": "eabbcf8cc0501c7fff5d307875db9a9114387589726d44ccf10b5f81b742beff",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 34104576,
+          "dram_write_bytes": 256,
+          "duration_ns": 23168,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample03_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample03_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 36723200,
+          "dram_write_bytes": 7706880,
+          "duration_ns": 38432,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample03_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample03_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1073920,
+          "dram_write_bytes": 2783232,
+          "duration_ns": 27936,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample03_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample03_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 109643008,
+          "dram_write_bytes": 47045888,
+          "duration_ns": 57760,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample03_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample03_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "1b743c454f06a1a15582d5310f00325df3823ac4abb2947e677683835ac2f780",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 243.15",
+      "gpu_telemetry_after": "1965, 3996, 35, 262.89",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample03_idle0ms/command.json"
+    },
+    {
+      "S": 8192,
+      "C": 1024,
+      "run_id": 4,
+      "sample_tag": "S8192_04",
+      "output_hash": "4040e74f615f05cde672390a1c9ca5c53728354b63dbf923eec3eedf88b4d14a",
+      "final_state_hash": "eabbcf8cc0501c7fff5d307875db9a9114387589726d44ccf10b5f81b742beff",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 34133248,
+          "dram_write_bytes": 256,
+          "duration_ns": 23584,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample04_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample04_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 36619264,
+          "dram_write_bytes": 7703552,
+          "duration_ns": 38208,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample04_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample04_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1074688,
+          "dram_write_bytes": 2743552,
+          "duration_ns": 28064,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample04_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample04_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 109657088,
+          "dram_write_bytes": 46857728,
+          "duration_ns": 57408,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample04_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample04_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "1b743c454f06a1a15582d5310f00325df3823ac4abb2947e677683835ac2f780",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 243.23",
+      "gpu_telemetry_after": "1965, 3996, 35, 263.83",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample04_idle0ms/command.json"
+    },
+    {
+      "S": 8192,
+      "C": 1024,
+      "run_id": 5,
+      "sample_tag": "S8192_05",
+      "output_hash": "4040e74f615f05cde672390a1c9ca5c53728354b63dbf923eec3eedf88b4d14a",
+      "final_state_hash": "eabbcf8cc0501c7fff5d307875db9a9114387589726d44ccf10b5f81b742beff",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 34104576,
+          "dram_write_bytes": 1536,
+          "duration_ns": 23776,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample05_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample05_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 36735488,
+          "dram_write_bytes": 7685120,
+          "duration_ns": 38272,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample05_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample05_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1092864,
+          "dram_write_bytes": 2695680,
+          "duration_ns": 27776,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample05_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample05_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 109520896,
+          "dram_write_bytes": 46836992,
+          "duration_ns": 58592,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample05_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample05_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "1b743c454f06a1a15582d5310f00325df3823ac4abb2947e677683835ac2f780",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 243.35",
+      "gpu_telemetry_after": "1965, 3996, 35, 263.37",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S8192/evict4/sample05_idle0ms/command.json"
+    },
+    {
+      "S": 16384,
+      "C": 2048,
+      "run_id": 1,
+      "sample_tag": "S16384_01",
+      "output_hash": "43f1914f10cdb58581c3bfbc7ee97c3804637e7f1f7a2a8a4fe44b5c446b36a1",
+      "final_state_hash": "8991e53372d1bf5731ec7eb802e0ad309de0328f31b535220eb8276a111cef5e",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 68188416,
+          "dram_write_bytes": 4030720,
+          "duration_ns": 40192,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample01_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample01_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 133240832,
+          "dram_write_bytes": 33362176,
+          "duration_ns": 64992,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample01_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample01_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1090048,
+          "dram_write_bytes": 92416,
+          "duration_ns": 27712,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample01_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample01_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 235708160,
+          "dram_write_bytes": 72110080,
+          "duration_ns": 89280,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample01_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample01_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "133b9d4479b72272f0d1d7f3a64cb7a9070a3522b92915231bb5e0d76ee2d9ee",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 243.32",
+      "gpu_telemetry_after": "1965, 3996, 35, 263.39",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample01_idle0ms/command.json"
+    },
+    {
+      "S": 16384,
+      "C": 2048,
+      "run_id": 2,
+      "sample_tag": "S16384_02",
+      "output_hash": "43f1914f10cdb58581c3bfbc7ee97c3804637e7f1f7a2a8a4fe44b5c446b36a1",
+      "final_state_hash": "8991e53372d1bf5731ec7eb802e0ad309de0328f31b535220eb8276a111cef5e",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 68186368,
+          "dram_write_bytes": 4186624,
+          "duration_ns": 40064,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample02_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample02_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 133741824,
+          "dram_write_bytes": 33374720,
+          "duration_ns": 65056,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample02_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample02_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1075456,
+          "dram_write_bytes": 90880,
+          "duration_ns": 28192,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample02_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample02_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 235684608,
+          "dram_write_bytes": 72190976,
+          "duration_ns": 87808,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample02_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample02_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "133b9d4479b72272f0d1d7f3a64cb7a9070a3522b92915231bb5e0d76ee2d9ee",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 243.33",
+      "gpu_telemetry_after": "1965, 3996, 35, 262.71",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample02_idle0ms/command.json"
+    },
+    {
+      "S": 16384,
+      "C": 2048,
+      "run_id": 3,
+      "sample_tag": "S16384_03",
+      "output_hash": "43f1914f10cdb58581c3bfbc7ee97c3804637e7f1f7a2a8a4fe44b5c446b36a1",
+      "final_state_hash": "8991e53372d1bf5731ec7eb802e0ad309de0328f31b535220eb8276a111cef5e",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 68188672,
+          "dram_write_bytes": 4002048,
+          "duration_ns": 40736,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample03_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample03_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 133815552,
+          "dram_write_bytes": 33631744,
+          "duration_ns": 65024,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample03_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample03_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1074176,
+          "dram_write_bytes": 90368,
+          "duration_ns": 28192,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample03_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample03_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 235695872,
+          "dram_write_bytes": 72180992,
+          "duration_ns": 88800,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample03_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample03_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "133b9d4479b72272f0d1d7f3a64cb7a9070a3522b92915231bb5e0d76ee2d9ee",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 243.74",
+      "gpu_telemetry_after": "1965, 3996, 35, 263.55",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample03_idle0ms/command.json"
+    },
+    {
+      "S": 16384,
+      "C": 2048,
+      "run_id": 4,
+      "sample_tag": "S16384_04",
+      "output_hash": "43f1914f10cdb58581c3bfbc7ee97c3804637e7f1f7a2a8a4fe44b5c446b36a1",
+      "final_state_hash": "8991e53372d1bf5731ec7eb802e0ad309de0328f31b535220eb8276a111cef5e",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 68188160,
+          "dram_write_bytes": 4052736,
+          "duration_ns": 40096,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample04_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample04_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 133701632,
+          "dram_write_bytes": 33601536,
+          "duration_ns": 65088,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample04_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample04_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1074176,
+          "dram_write_bytes": 99072,
+          "duration_ns": 27296,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample04_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample04_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 235720448,
+          "dram_write_bytes": 72233472,
+          "duration_ns": 88416,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample04_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample04_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "133b9d4479b72272f0d1d7f3a64cb7a9070a3522b92915231bb5e0d76ee2d9ee",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 243.32",
+      "gpu_telemetry_after": "1965, 3996, 35, 262.68",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample04_idle0ms/command.json"
+    },
+    {
+      "S": 16384,
+      "C": 2048,
+      "run_id": 5,
+      "sample_tag": "S16384_05",
+      "output_hash": "43f1914f10cdb58581c3bfbc7ee97c3804637e7f1f7a2a8a4fe44b5c446b36a1",
+      "final_state_hash": "8991e53372d1bf5731ec7eb802e0ad309de0328f31b535220eb8276a111cef5e",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 68188928,
+          "dram_write_bytes": 4093440,
+          "duration_ns": 40224,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample05_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample05_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 133370112,
+          "dram_write_bytes": 33254912,
+          "duration_ns": 65504,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample05_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample05_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1074944,
+          "dram_write_bytes": 93440,
+          "duration_ns": 27328,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample05_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample05_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 235689216,
+          "dram_write_bytes": 71814400,
+          "duration_ns": 88224,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample05_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample05_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "133b9d4479b72272f0d1d7f3a64cb7a9070a3522b92915231bb5e0d76ee2d9ee",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 243.19",
+      "gpu_telemetry_after": "1965, 3996, 35, 263.09",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample05_idle0ms/command.json"
+    },
+    {
+      "S": 32768,
+      "C": 4096,
+      "run_id": 1,
+      "sample_tag": "S32768_01",
+      "output_hash": "8b4b1c26d8e6b93c91085c560868142caae552cd87623dcdeaf5049d127bbd33",
+      "final_state_hash": "af1dc670b2651a3c2e184f55bb002c1dde51c9f6f4ee05b115a404861a992e9a",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 136354816,
+          "dram_write_bytes": 33604352,
+          "duration_ns": 73824,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample01_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample01_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 327029504,
+          "dram_write_bytes": 37524224,
+          "duration_ns": 120096,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample01_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample01_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1074176,
+          "dram_write_bytes": 2816,
+          "duration_ns": 27488,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample01_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample01_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 472294144,
+          "dram_write_bytes": 138917120,
+          "duration_ns": 152320,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample01_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample01_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "5953da3926a1ab008c08b995fe574688c40edbb91ad0db561a8204c796c97d98",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 243.44",
+      "gpu_telemetry_after": "1965, 3996, 35, 263.76",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample01_idle0ms/command.json"
+    },
+    {
+      "S": 32768,
+      "C": 4096,
+      "run_id": 2,
+      "sample_tag": "S32768_02",
+      "output_hash": "8b4b1c26d8e6b93c91085c560868142caae552cd87623dcdeaf5049d127bbd33",
+      "final_state_hash": "af1dc670b2651a3c2e184f55bb002c1dde51c9f6f4ee05b115a404861a992e9a",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 136354816,
+          "dram_write_bytes": 33574656,
+          "duration_ns": 73472,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample02_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample02_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 327104512,
+          "dram_write_bytes": 37649408,
+          "duration_ns": 120288,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample02_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample02_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1072896,
+          "dram_write_bytes": 6144,
+          "duration_ns": 27520,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample02_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample02_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 472300544,
+          "dram_write_bytes": 138407936,
+          "duration_ns": 149728,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample02_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample02_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "5953da3926a1ab008c08b995fe574688c40edbb91ad0db561a8204c796c97d98",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 244.04",
+      "gpu_telemetry_after": "1965, 3996, 35, 264.30",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample02_idle0ms/command.json"
+    },
+    {
+      "S": 32768,
+      "C": 4096,
+      "run_id": 3,
+      "sample_tag": "S32768_03",
+      "output_hash": "8b4b1c26d8e6b93c91085c560868142caae552cd87623dcdeaf5049d127bbd33",
+      "final_state_hash": "af1dc670b2651a3c2e184f55bb002c1dde51c9f6f4ee05b115a404861a992e9a",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 136355584,
+          "dram_write_bytes": 33477888,
+          "duration_ns": 73504,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample03_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample03_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 327152640,
+          "dram_write_bytes": 37806848,
+          "duration_ns": 120416,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample03_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample03_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1073920,
+          "dram_write_bytes": 2560,
+          "duration_ns": 27520,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample03_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample03_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 472292352,
+          "dram_write_bytes": 138728960,
+          "duration_ns": 150912,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample03_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample03_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "5953da3926a1ab008c08b995fe574688c40edbb91ad0db561a8204c796c97d98",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 244.18",
+      "gpu_telemetry_after": "1965, 3996, 35, 264.03",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample03_idle0ms/command.json"
+    },
+    {
+      "S": 32768,
+      "C": 4096,
+      "run_id": 4,
+      "sample_tag": "S32768_04",
+      "output_hash": "8b4b1c26d8e6b93c91085c560868142caae552cd87623dcdeaf5049d127bbd33",
+      "final_state_hash": "af1dc670b2651a3c2e184f55bb002c1dde51c9f6f4ee05b115a404861a992e9a",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 136355072,
+          "dram_write_bytes": 33304064,
+          "duration_ns": 73536,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample04_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample04_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 327001344,
+          "dram_write_bytes": 38176512,
+          "duration_ns": 120480,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample04_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample04_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1074432,
+          "dram_write_bytes": 4608,
+          "duration_ns": 27456,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample04_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample04_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 472292608,
+          "dram_write_bytes": 138607872,
+          "duration_ns": 152128,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample04_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample04_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "5953da3926a1ab008c08b995fe574688c40edbb91ad0db561a8204c796c97d98",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 243.93",
+      "gpu_telemetry_after": "1965, 3996, 35, 263.99",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample04_idle0ms/command.json"
+    },
+    {
+      "S": 32768,
+      "C": 4096,
+      "run_id": 5,
+      "sample_tag": "S32768_05",
+      "output_hash": "8b4b1c26d8e6b93c91085c560868142caae552cd87623dcdeaf5049d127bbd33",
+      "final_state_hash": "af1dc670b2651a3c2e184f55bb002c1dde51c9f6f4ee05b115a404861a992e9a",
+      "correct": true,
+      "kernels": [
+        {
+          "key": "K1",
+          "dram_read_bytes": 136354816,
+          "dram_write_bytes": 33287680,
+          "duration_ns": 73536,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample05_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample05_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K2",
+          "dram_read_bytes": 327188736,
+          "dram_write_bytes": 38178816,
+          "duration_ns": 119968,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample05_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample05_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K3",
+          "dram_read_bytes": 1073920,
+          "dram_write_bytes": 1792,
+          "duration_ns": 27840,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample05_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample05_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        },
+        {
+          "key": "K4",
+          "dram_read_bytes": 472307712,
+          "dram_write_bytes": 138322176,
+          "duration_ns": 151008,
+          "replayer_passes": 1,
+          "rep_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample05_idle0ms/cp4.ncu-rep",
+          "raw_csv_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample05_idle0ms/metrics_raw.csv",
+          "sm_clock_mhz": 1965,
+          "sm_clock_after_mhz": 1965
+        }
+      ],
+      "app_pass_count": 1,
+      "frozen_input_sha256": "5953da3926a1ab008c08b995fe574688c40edbb91ad0db561a8204c796c97d98",
+      "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+      "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "l2_bytes": 132644864,
+      "gpu_telemetry_before": "1965, 3996, 34, 244.31",
+      "gpu_telemetry_after": "1965, 3996, 35, 264.30",
+      "command_json_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S32768/evict4/sample05_idle0ms/command.json"
+    }
+  ],
+  "statistics": [
+    {
+      "S": 8192,
+      "key": "K1",
+      "read_bytes": {
+        "n": 5,
+        "mean": 34110412.8,
+        "median": 34104832,
+        "min": 34104576,
+        "max": 34133248,
+        "population_sd": 11418.17397660414
+      },
+      "write_bytes": {
+        "n": 5,
+        "mean": 409.6,
+        "median": 256,
+        "min": 0,
+        "max": 1536,
+        "population_sd": 574.7185746084774
+      },
+      "total_bytes": {
+        "n": 5,
+        "mean": 34110822.4,
+        "median": 34104832,
+        "min": 34104832,
+        "max": 34133504,
+        "population_sd": 11351.630043302152
+      },
+      "duration_ns": {
+        "n": 5,
+        "mean": 23315.2,
+        "median": 23168,
+        "min": 22976,
+        "max": 23776,
+        "population_sd": 309.9873545807958
+      }
+    },
+    {
+      "S": 8192,
+      "key": "K2",
+      "read_bytes": {
+        "n": 5,
+        "mean": 36662323.2,
+        "median": 36723200,
+        "min": 36500480,
+        "max": 36735488,
+        "population_sd": 91790.6768738525
+      },
+      "write_bytes": {
+        "n": 5,
+        "mean": 7618713.6,
+        "median": 7703552,
+        "min": 7260928,
+        "max": 7737088,
+        "population_sd": 179668.4236627015
+      },
+      "total_bytes": {
+        "n": 5,
+        "mean": 44281036.8,
+        "median": 44420608,
+        "min": 43761408,
+        "max": 44470272,
+        "population_sd": 264296.6316837201
+      },
+      "duration_ns": {
+        "n": 5,
+        "mean": 38272,
+        "median": 38272,
+        "min": 38080,
+        "max": 38432,
+        "population_sd": 123.10645799469661
+      }
+    },
+    {
+      "S": 8192,
+      "key": "K3",
+      "read_bytes": {
+        "n": 5,
+        "mean": 1078374.4,
+        "median": 1075200,
+        "min": 1073920,
+        "max": 1092864,
+        "population_sd": 7259.936131950473
+      },
+      "write_bytes": {
+        "n": 5,
+        "mean": 2736793.6,
+        "median": 2742528,
+        "min": 2695680,
+        "max": 2783232,
+        "population_sd": 29130.325378203383
+      },
+      "total_bytes": {
+        "n": 5,
+        "mean": 3815168,
+        "median": 3817728,
+        "min": 3788544,
+        "max": 3857152,
+        "population_sd": 24199.78710650158
+      },
+      "duration_ns": {
+        "n": 5,
+        "mean": 27865.6,
+        "median": 27936,
+        "min": 27520,
+        "max": 28064,
+        "population_sd": 199.7374276393886
+      }
+    },
+    {
+      "S": 8192,
+      "key": "K4",
+      "read_bytes": {
+        "n": 5,
+        "mean": 109583513.6,
+        "median": 109641728,
+        "min": 109454848,
+        "max": 109657088,
+        "population_sd": 81015.42172598992
+      },
+      "write_bytes": {
+        "n": 5,
+        "mean": 46866432,
+        "median": 46836992,
+        "min": 46787584,
+        "max": 47045888,
+        "population_sd": 93022.24201985243
+      },
+      "total_bytes": {
+        "n": 5,
+        "mean": 156449945.6,
+        "median": 156445696,
+        "min": 156242432,
+        "max": 156688896,
+        "population_sd": 150239.81992747463
+      },
+      "duration_ns": {
+        "n": 5,
+        "mean": 57580.8,
+        "median": 57408,
+        "min": 56800,
+        "max": 58592,
+        "population_sd": 591.6452991446818
+      }
+    },
+    {
+      "S": 16384,
+      "key": "K1",
+      "read_bytes": {
+        "n": 5,
+        "mean": 68188108.8,
+        "median": 68188416,
+        "min": 68186368,
+        "max": 68188928,
+        "population_sd": 907.2663115094707
+      },
+      "write_bytes": {
+        "n": 5,
+        "mean": 4073113.6,
+        "median": 4052736,
+        "min": 4002048,
+        "max": 4186624,
+        "population_sd": 64125.74654723327
+      },
+      "total_bytes": {
+        "n": 5,
+        "mean": 72261222.4,
+        "median": 72240896,
+        "min": 72190720,
+        "max": 72372992,
+        "population_sd": 63394.94599918829
+      },
+      "duration_ns": {
+        "n": 5,
+        "mean": 40262.4,
+        "median": 40192,
+        "min": 40064,
+        "max": 40736,
+        "population_sd": 244.04065235120152
+      }
+    },
+    {
+      "S": 16384,
+      "key": "K2",
+      "read_bytes": {
+        "n": 5,
+        "mean": 133573990.4,
+        "median": 133701632,
+        "min": 133240832,
+        "max": 133815552,
+        "population_sd": 225997.08998622085
+      },
+      "write_bytes": {
+        "n": 5,
+        "mean": 33445017.6,
+        "median": 33374720,
+        "min": 33254912,
+        "max": 33631744,
+        "population_sd": 146498.7238191514
+      },
+      "total_bytes": {
+        "n": 5,
+        "mean": 167019008,
+        "median": 167116544,
+        "min": 166603008,
+        "max": 167447296,
+        "population_sd": 346978.4373980608
+      },
+      "duration_ns": {
+        "n": 5,
+        "mean": 65132.8,
+        "median": 65056,
+        "min": 64992,
+        "max": 65504,
+        "population_sd": 188.33841881039567
+      }
+    },
+    {
+      "S": 16384,
+      "key": "K3",
+      "read_bytes": {
+        "n": 5,
+        "mean": 1077760,
+        "median": 1074944,
+        "min": 1074176,
+        "max": 1090048,
+        "population_sd": 6163.170093385384
+      },
+      "write_bytes": {
+        "n": 5,
+        "mean": 93235.2,
+        "median": 92416,
+        "min": 90368,
+        "max": 99072,
+        "population_sd": 3116.057406403162
+      },
+      "total_bytes": {
+        "n": 5,
+        "mean": 1170995.2,
+        "median": 1168384,
+        "min": 1164544,
+        "max": 1182464,
+        "population_sd": 6430.442796573188
+      },
+      "duration_ns": {
+        "n": 5,
+        "mean": 27744,
+        "median": 27712,
+        "min": 27296,
+        "max": 28192,
+        "population_sd": 394.0030456735075
+      }
+    },
+    {
+      "S": 16384,
+      "key": "K4",
+      "read_bytes": {
+        "n": 5,
+        "mean": 235699660.8,
+        "median": 235695872,
+        "min": 235684608,
+        "max": 235720448,
+        "population_sd": 13071.95260701323
+      },
+      "write_bytes": {
+        "n": 5,
+        "mean": 72105984,
+        "median": 72180992,
+        "min": 71814400,
+        "max": 72233472,
+        "population_sd": 151090.06356739678
+      },
+      "total_bytes": {
+        "n": 5,
+        "mean": 307805644.8,
+        "median": 307875584,
+        "min": 307503616,
+        "max": 307953920,
+        "population_sd": 157053.6444485132
+      },
+      "duration_ns": {
+        "n": 5,
+        "mean": 88505.6,
+        "median": 88416,
+        "min": 87808,
+        "max": 89280,
+        "population_sd": 502.0635816308528
+      }
+    },
+    {
+      "S": 32768,
+      "key": "K1",
+      "read_bytes": {
+        "n": 5,
+        "mean": 136355020.8,
+        "median": 136354816,
+        "min": 136354816,
+        "max": 136355584,
+        "population_sd": 298.5447370160794
+      },
+      "write_bytes": {
+        "n": 5,
+        "mean": 33449728,
+        "median": 33477888,
+        "min": 33287680,
+        "max": 33604352,
+        "population_sd": 132503.6809752846
+      },
+      "total_bytes": {
+        "n": 5,
+        "mean": 169804748.8,
+        "median": 169833472,
+        "min": 169642496,
+        "max": 169959168,
+        "population_sd": 132480.37348739625
+      },
+      "duration_ns": {
+        "n": 5,
+        "mean": 73574.4,
+        "median": 73536,
+        "min": 73472,
+        "max": 73824,
+        "population_sd": 127.03637274418693
+      }
+    },
+    {
+      "S": 32768,
+      "key": "K2",
+      "read_bytes": {
+        "n": 5,
+        "mean": 327095347.2,
+        "median": 327104512,
+        "min": 327001344,
+        "max": 327188736,
+        "population_sd": 71077.21864676474
+      },
+      "write_bytes": {
+        "n": 5,
+        "mean": 37867161.6,
+        "median": 37806848,
+        "min": 37524224,
+        "max": 38178816,
+        "population_sd": 268881.6442865522
+      },
+      "total_bytes": {
+        "n": 5,
+        "mean": 364962508.8,
+        "median": 364959488,
+        "min": 364553728,
+        "max": 365367552,
+        "population_sd": 290191.16650263494
+      },
+      "duration_ns": {
+        "n": 5,
+        "mean": 120249.6,
+        "median": 120288,
+        "min": 119968,
+        "max": 120480,
+        "population_sd": 192.4261936431732
+      }
+    },
+    {
+      "S": 32768,
+      "key": "K3",
+      "read_bytes": {
+        "n": 5,
+        "mean": 1073868.8,
+        "median": 1073920,
+        "min": 1072896,
+        "max": 1074432,
+        "population_sd": 522.1395981919012
+      },
+      "write_bytes": {
+        "n": 5,
+        "mean": 3584,
+        "median": 2816,
+        "min": 1792,
+        "max": 6144,
+        "population_sd": 1578.0899847600579
+      },
+      "total_bytes": {
+        "n": 5,
+        "mean": 1077452.8,
+        "median": 1076992,
+        "min": 1075712,
+        "max": 1079040,
+        "population_sd": 1358.4895141295717
+      },
+      "duration_ns": {
+        "n": 5,
+        "mean": 27564.8,
+        "median": 27520,
+        "min": 27456,
+        "max": 27840,
+        "population_sd": 139.63151506733715
+      }
+    },
+    {
+      "S": 32768,
+      "key": "K4",
+      "read_bytes": {
+        "n": 5,
+        "mean": 472297472,
+        "median": 472294144,
+        "min": 472292352,
+        "max": 472307712,
+        "population_sd": 5920.190267212702
+      },
+      "write_bytes": {
+        "n": 5,
+        "mean": 138596812.8,
+        "median": 138607872,
+        "min": 138322176,
+        "max": 138917120,
+        "population_sd": 215072.87520131402
+      },
+      "total_bytes": {
+        "n": 5,
+        "mean": 610894284.8,
+        "median": 610900480,
+        "min": 610629888,
+        "max": 611211264,
+        "population_sd": 210275.62618087718
+      },
+      "duration_ns": {
+        "n": 5,
+        "mean": 151219.2,
+        "median": 151008,
+        "min": 149728,
+        "max": 152320,
+        "population_sd": 938.1186278930826
+      }
+    }
+  ]
+}

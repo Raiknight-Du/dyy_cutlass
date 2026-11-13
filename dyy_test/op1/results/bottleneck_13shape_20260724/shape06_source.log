@@ -1,0 +1,7 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 3488718 (/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/bin/op1_best)
+==PROF== Profiling "device_kernel" - 0 (1/1): 0%....50%....100% - 13 passes
+RESULT,6,M256_N192_K256_E128x16_C4x1x1,ok,1,774.652
+==PROF== Disconnected from process 3488718
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/bottleneck_13shape_20260724/shape06_source.ncu-rep

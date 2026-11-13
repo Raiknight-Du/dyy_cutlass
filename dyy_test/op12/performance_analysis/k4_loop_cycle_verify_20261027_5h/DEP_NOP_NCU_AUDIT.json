@@ -1,0 +1,1298 @@
+[
+  {
+    "kind": 0,
+    "warps": 1,
+    "pass_gate": false,
+    "targets": [
+      {
+        "pc": "0x410",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x460",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x4b0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x500",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x550",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5a0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5f0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x640",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x690",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x6e0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x730",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x780",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x7d0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x820",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x870",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x8c0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      }
+    ],
+    "nonload_differences": [
+      {
+        "pc": "0x80",
+        "field": "Source",
+        "values": [
+          "@P0   BRA 0x7f95435acfa0",
+          "@P0   BRA 0x7f988d5ab2a0"
+        ]
+      },
+      {
+        "pc": "0xb0",
+        "field": "Source",
+        "values": [
+          "@!P1  BRA 0x7f95435acf90",
+          "@!P1  BRA 0x7f988d5ab290"
+        ]
+      },
+      {
+        "pc": "0x140",
+        "field": "Source",
+        "values": [
+          "      BRA.U UP0, 0x7f95435acf30",
+          "      BRA.U UP0, 0x7f988d5ab230"
+        ]
+      },
+      {
+        "pc": "0x1a0",
+        "field": "Source",
+        "values": [
+          "      BRA.U !UP0, 0x7f95435aced0",
+          "      BRA.U !UP0, 0x7f988d5ab1d0"
+        ]
+      },
+      {
+        "pc": "0x3a0",
+        "field": "Source",
+        "values": [
+          "@P2   BRA 0x7f95435ad6a0",
+          "@P2   BRA 0x7f988d5ab9a0"
+        ]
+      },
+      {
+        "pc": "0x900",
+        "field": "Source",
+        "values": [
+          "      BRA.U !UP0, 0x7f95435ad160",
+          "      BRA.U !UP0, 0x7f988d5ab460"
+        ]
+      },
+      {
+        "pc": "0xb60",
+        "field": "Source",
+        "values": [
+          "@P0   BRA 0x7f95435ada60",
+          "@P0   BRA 0x7f988d5abd60"
+        ]
+      },
+      {
+        "pc": "0xba0",
+        "field": "Source",
+        "values": [
+          "@P0   BRA 0x7f95435ada30",
+          "@P0   BRA 0x7f988d5abd30"
+        ]
+      },
+      {
+        "pc": "0xca0",
+        "field": "Source",
+        "values": [
+          "      BRA 0x7f95435ada80",
+          "      BRA 0x7f988d5abd80"
+        ]
+      },
+      {
+        "pc": "0xcc0",
+        "field": "Source",
+        "values": [
+          "      CALL.REL.NOINC 0x7f95435adaa0",
+          "      CALL.REL.NOINC 0x7f988d5abda0"
+        ]
+      },
+      {
+        "pc": "0xcd0",
+        "field": "Source",
+        "values": [
+          "      BRA 0x7f95435ada80",
+          "      BRA 0x7f988d5abd80"
+        ]
+      },
+      {
+        "pc": "0xcf0",
+        "field": "Source",
+        "values": [
+          "      CALL.REL.NOINC 0x7f95435adad0",
+          "      CALL.REL.NOINC 0x7f988d5abdd0"
+        ]
+      },
+      {
+        "pc": "0xd40",
+        "field": "Source",
+        "values": [
+          "      RET.REL.NODEC R2, 0x7f95435acd80",
+          "      RET.REL.NODEC R2, 0x7f988d5ab080"
+        ]
+      },
+      {
+        "pc": "0xd70",
+        "field": "Source",
+        "values": [
+          "      RET.REL.NODEC R2, 0x7f95435acd80",
+          "      RET.REL.NODEC R2, 0x7f988d5ab080"
+        ]
+      },
+      {
+        "pc": "0xd80",
+        "field": "Source",
+        "values": [
+          "      BRA `(.L_x_0) 0x7f95435adb00",
+          "      BRA `(.L_x_0) 0x7f988d5abe00"
+        ]
+      }
+    ],
+    "source_byte_identity": true,
+    "description": "Exact native LDTM-to-NOP substitution; only load WB/RB disabled. Same nonload bytes and dynamic counts.",
+    "model_enabled": false
+  },
+  {
+    "kind": 0,
+    "warps": 4,
+    "pass_gate": false,
+    "targets": [
+      {
+        "pc": "0x410",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x460",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x4b0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x500",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x550",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5a0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5f0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x640",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x690",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x6e0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x730",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x780",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x7d0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x820",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x870",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x8c0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      }
+    ],
+    "nonload_differences": [
+      {
+        "pc": "0x80",
+        "field": "Source",
+        "values": [
+          "@P0   BRA 0x7fc7735acfa0",
+          "@P0   BRA 0x7f9bab5ab2a0"
+        ]
+      },
+      {
+        "pc": "0xb0",
+        "field": "Source",
+        "values": [
+          "@!P1  BRA 0x7fc7735acf90",
+          "@!P1  BRA 0x7f9bab5ab290"
+        ]
+      },
+      {
+        "pc": "0x140",
+        "field": "Source",
+        "values": [
+          "      BRA.U UP0, 0x7fc7735acf30",
+          "      BRA.U UP0, 0x7f9bab5ab230"
+        ]
+      },
+      {
+        "pc": "0x1a0",
+        "field": "Source",
+        "values": [
+          "      BRA.U !UP0, 0x7fc7735aced0",
+          "      BRA.U !UP0, 0x7f9bab5ab1d0"
+        ]
+      },
+      {
+        "pc": "0x3a0",
+        "field": "Source",
+        "values": [
+          "@P2   BRA 0x7fc7735ad6a0",
+          "@P2   BRA 0x7f9bab5ab9a0"
+        ]
+      },
+      {
+        "pc": "0x900",
+        "field": "Source",
+        "values": [
+          "      BRA.U !UP0, 0x7fc7735ad160",
+          "      BRA.U !UP0, 0x7f9bab5ab460"
+        ]
+      },
+      {
+        "pc": "0xb60",
+        "field": "Source",
+        "values": [
+          "@P0   BRA 0x7fc7735ada60",
+          "@P0   BRA 0x7f9bab5abd60"
+        ]
+      },
+      {
+        "pc": "0xba0",
+        "field": "Source",
+        "values": [
+          "@P0   BRA 0x7fc7735ada30",
+          "@P0   BRA 0x7f9bab5abd30"
+        ]
+      },
+      {
+        "pc": "0xca0",
+        "field": "Source",
+        "values": [
+          "      BRA 0x7fc7735ada80",
+          "      BRA 0x7f9bab5abd80"
+        ]
+      },
+      {
+        "pc": "0xcc0",
+        "field": "Source",
+        "values": [
+          "      CALL.REL.NOINC 0x7fc7735adaa0",
+          "      CALL.REL.NOINC 0x7f9bab5abda0"
+        ]
+      },
+      {
+        "pc": "0xcd0",
+        "field": "Source",
+        "values": [
+          "      BRA 0x7fc7735ada80",
+          "      BRA 0x7f9bab5abd80"
+        ]
+      },
+      {
+        "pc": "0xcf0",
+        "field": "Source",
+        "values": [
+          "      CALL.REL.NOINC 0x7fc7735adad0",
+          "      CALL.REL.NOINC 0x7f9bab5abdd0"
+        ]
+      },
+      {
+        "pc": "0xd40",
+        "field": "Source",
+        "values": [
+          "      RET.REL.NODEC R2, 0x7fc7735acd80",
+          "      RET.REL.NODEC R2, 0x7f9bab5ab080"
+        ]
+      },
+      {
+        "pc": "0xd70",
+        "field": "Source",
+        "values": [
+          "      RET.REL.NODEC R2, 0x7fc7735acd80",
+          "      RET.REL.NODEC R2, 0x7f9bab5ab080"
+        ]
+      },
+      {
+        "pc": "0xd80",
+        "field": "Source",
+        "values": [
+          "      BRA `(.L_x_0) 0x7fc7735adb00",
+          "      BRA `(.L_x_0) 0x7f9bab5abe00"
+        ]
+      }
+    ],
+    "source_byte_identity": true,
+    "description": "Exact native LDTM-to-NOP substitution; only load WB/RB disabled. Same nonload bytes and dynamic counts.",
+    "model_enabled": false
+  },
+  {
+    "kind": 1,
+    "warps": 1,
+    "pass_gate": false,
+    "targets": [
+      {
+        "pc": "0x410",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x460",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x4b0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x500",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x550",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5a0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5f0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x640",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x690",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x6e0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x730",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x780",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x7d0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x820",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x870",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x8c0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      }
+    ],
+    "nonload_differences": [
+      {
+        "pc": "0x80",
+        "field": "Source",
+        "values": [
+          "@P0   BRA 0x7fe73f5acfa0",
+          "@P0   BRA 0x7f966d5ab2a0"
+        ]
+      },
+      {
+        "pc": "0xb0",
+        "field": "Source",
+        "values": [
+          "@!P1  BRA 0x7fe73f5acf90",
+          "@!P1  BRA 0x7f966d5ab290"
+        ]
+      },
+      {
+        "pc": "0x140",
+        "field": "Source",
+        "values": [
+          "      BRA.U UP0, 0x7fe73f5acf30",
+          "      BRA.U UP0, 0x7f966d5ab230"
+        ]
+      },
+      {
+        "pc": "0x1a0",
+        "field": "Source",
+        "values": [
+          "      BRA.U !UP0, 0x7fe73f5aced0",
+          "      BRA.U !UP0, 0x7f966d5ab1d0"
+        ]
+      },
+      {
+        "pc": "0x3a0",
+        "field": "Source",
+        "values": [
+          "@P2   BRA 0x7fe73f5ad6a0",
+          "@P2   BRA 0x7f966d5ab9a0"
+        ]
+      },
+      {
+        "pc": "0x900",
+        "field": "Source",
+        "values": [
+          "      BRA.U !UP0, 0x7fe73f5ad160",
+          "      BRA.U !UP0, 0x7f966d5ab460"
+        ]
+      },
+      {
+        "pc": "0xb60",
+        "field": "Source",
+        "values": [
+          "@P0   BRA 0x7fe73f5ada60",
+          "@P0   BRA 0x7f966d5abd60"
+        ]
+      },
+      {
+        "pc": "0xba0",
+        "field": "Source",
+        "values": [
+          "@P0   BRA 0x7fe73f5ada30",
+          "@P0   BRA 0x7f966d5abd30"
+        ]
+      },
+      {
+        "pc": "0xca0",
+        "field": "Source",
+        "values": [
+          "      BRA 0x7fe73f5ada80",
+          "      BRA 0x7f966d5abd80"
+        ]
+      },
+      {
+        "pc": "0xcc0",
+        "field": "Source",
+        "values": [
+          "      CALL.REL.NOINC 0x7fe73f5adaa0",
+          "      CALL.REL.NOINC 0x7f966d5abda0"
+        ]
+      },
+      {
+        "pc": "0xcd0",
+        "field": "Source",
+        "values": [
+          "      BRA 0x7fe73f5ada80",
+          "      BRA 0x7f966d5abd80"
+        ]
+      },
+      {
+        "pc": "0xcf0",
+        "field": "Source",
+        "values": [
+          "      CALL.REL.NOINC 0x7fe73f5adad0",
+          "      CALL.REL.NOINC 0x7f966d5abdd0"
+        ]
+      },
+      {
+        "pc": "0xd40",
+        "field": "Source",
+        "values": [
+          "      RET.REL.NODEC R2, 0x7fe73f5acd80",
+          "      RET.REL.NODEC R2, 0x7f966d5ab080"
+        ]
+      },
+      {
+        "pc": "0xd70",
+        "field": "Source",
+        "values": [
+          "      RET.REL.NODEC R2, 0x7fe73f5acd80",
+          "      RET.REL.NODEC R2, 0x7f966d5ab080"
+        ]
+      },
+      {
+        "pc": "0xd80",
+        "field": "Source",
+        "values": [
+          "      BRA `(.L_x_0) 0x7fe73f5adb00",
+          "      BRA `(.L_x_0) 0x7f966d5abe00"
+        ]
+      }
+    ],
+    "source_byte_identity": true,
+    "description": "Exact native LDTM-to-NOP substitution; only load WB/RB disabled. Same nonload bytes and dynamic counts.",
+    "model_enabled": false
+  },
+  {
+    "kind": 1,
+    "warps": 4,
+    "pass_gate": false,
+    "targets": [
+      {
+        "pc": "0x410",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x460",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x4b0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x500",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x550",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5a0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5f0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x640",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x690",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x6e0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x730",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x780",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x7d0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x820",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x870",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x8c0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      }
+    ],
+    "nonload_differences": [
+      {
+        "pc": "0x80",
+        "field": "Source",
+        "values": [
+          "@P0   BRA 0x7f14d75acfa0",
+          "@P0   BRA 0x7f71ab5ab2a0"
+        ]
+      },
+      {
+        "pc": "0xb0",
+        "field": "Source",
+        "values": [
+          "@!P1  BRA 0x7f14d75acf90",
+          "@!P1  BRA 0x7f71ab5ab290"
+        ]
+      },
+      {
+        "pc": "0x140",
+        "field": "Source",
+        "values": [
+          "      BRA.U UP0, 0x7f14d75acf30",
+          "      BRA.U UP0, 0x7f71ab5ab230"
+        ]
+      },
+      {
+        "pc": "0x1a0",
+        "field": "Source",
+        "values": [
+          "      BRA.U !UP0, 0x7f14d75aced0",
+          "      BRA.U !UP0, 0x7f71ab5ab1d0"
+        ]
+      },
+      {
+        "pc": "0x3a0",
+        "field": "Source",
+        "values": [
+          "@P2   BRA 0x7f14d75ad6a0",
+          "@P2   BRA 0x7f71ab5ab9a0"
+        ]
+      },
+      {
+        "pc": "0x900",
+        "field": "Source",
+        "values": [
+          "      BRA.U !UP0, 0x7f14d75ad160",
+          "      BRA.U !UP0, 0x7f71ab5ab460"
+        ]
+      },
+      {
+        "pc": "0xb60",
+        "field": "Source",
+        "values": [
+          "@P0   BRA 0x7f14d75ada60",
+          "@P0   BRA 0x7f71ab5abd60"
+        ]
+      },
+      {
+        "pc": "0xba0",
+        "field": "Source",
+        "values": [
+          "@P0   BRA 0x7f14d75ada30",
+          "@P0   BRA 0x7f71ab5abd30"
+        ]
+      },
+      {
+        "pc": "0xca0",
+        "field": "Source",
+        "values": [
+          "      BRA 0x7f14d75ada80",
+          "      BRA 0x7f71ab5abd80"
+        ]
+      },
+      {
+        "pc": "0xcc0",
+        "field": "Source",
+        "values": [
+          "      CALL.REL.NOINC 0x7f14d75adaa0",
+          "      CALL.REL.NOINC 0x7f71ab5abda0"
+        ]
+      },
+      {
+        "pc": "0xcd0",
+        "field": "Source",
+        "values": [
+          "      BRA 0x7f14d75ada80",
+          "      BRA 0x7f71ab5abd80"
+        ]
+      },
+      {
+        "pc": "0xcf0",
+        "field": "Source",
+        "values": [
+          "      CALL.REL.NOINC 0x7f14d75adad0",
+          "      CALL.REL.NOINC 0x7f71ab5abdd0"
+        ]
+      },
+      {
+        "pc": "0xd40",
+        "field": "Source",
+        "values": [
+          "      RET.REL.NODEC R2, 0x7f14d75acd80",
+          "      RET.REL.NODEC R2, 0x7f71ab5ab080"
+        ]
+      },
+      {
+        "pc": "0xd70",
+        "field": "Source",
+        "values": [
+          "      RET.REL.NODEC R2, 0x7f14d75acd80",
+          "      RET.REL.NODEC R2, 0x7f71ab5ab080"
+        ]
+      },
+      {
+        "pc": "0xd80",
+        "field": "Source",
+        "values": [
+          "      BRA `(.L_x_0) 0x7f14d75adb00",
+          "      BRA `(.L_x_0) 0x7f71ab5abe00"
+        ]
+      }
+    ],
+    "source_byte_identity": true,
+    "description": "Exact native LDTM-to-NOP substitution; only load WB/RB disabled. Same nonload bytes and dynamic counts.",
+    "model_enabled": false
+  }
+]

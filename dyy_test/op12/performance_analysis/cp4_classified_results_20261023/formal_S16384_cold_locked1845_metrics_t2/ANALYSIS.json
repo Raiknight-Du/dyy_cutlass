@@ -1,0 +1,250 @@
+{
+  "identity": {
+    "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+    "S": 16384,
+    "C": 2048,
+    "P": 8,
+    "B": 1,
+    "H": 16,
+    "D": 128,
+    "dtype": "FP16",
+    "state_dtype": "FP32",
+    "trial": 2,
+    "mode": "metrics",
+    "cache": "cold",
+    "clock_request": "locked1845",
+    "calls": 100,
+    "batches": 3,
+    "hot_K_before_evict": false,
+    "L2_bytes": 132644864,
+    "eviction_bytes": 530579456,
+    "eviction_method": "uint8 GPU fill_(90) in same stream, outside CP Event",
+    "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+    "input_sha256": "133b9d4479b72272f0d1d7f3a64cb7a9070a3522b92915231bb5e0d76ee2d9ee",
+    "input_content_signature": "3c9174ab9fc33a7662e104dcabf4e2e09539c27f4b0214a8daec7fd2a17f44d8",
+    "runner_sha256": "150c8a8c426d058aa49cbe361e2bac09b797bba6349269ec2d39e1ecf522a480",
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "gpu": "_CudaDeviceProperties(name='NVIDIA B200', major=10, minor=0, total_memory=182631MB, multi_processor_count=148, uuid=6abbea3c-b8d3-7f4b-ca76-85d612930fdf, pci_bus_id=5, pci_device_id=0, pci_domain_id=0, L2_cache_size=126MB)",
+    "nsys": "NVIDIA Nsight Systems version 2025.5.2.266-255236693005v0",
+    "kernel_modified": false,
+    "model_enabled": false
+  },
+  "freq_sample_interval_ns": 4992.0,
+  "frequency_metric": {
+    "typeId": 281479271677952,
+    "sourceId": 281479271677952,
+    "typeName": "",
+    "metricId": 0,
+    "metricName": "GPC Clock Frequency [MHz]"
+  },
+  "sample_count": 34325,
+  "kernel_count": 1200,
+  "audits": [
+    {
+      "range": "CP4C_S16384_cold_locked1845_metrics_t2_b0",
+      "kernel_count": 500,
+      "CP_calls": 100,
+      "eviction_kernels": 100,
+      "reported_overlap_count": 216,
+      "reported_overlap_max_ns": 544,
+      "note": "endpoints verbatim; graph order preserved, no clipping"
+    },
+    {
+      "range": "CP4C_S16384_cold_locked1845_metrics_t2_b1",
+      "kernel_count": 500,
+      "CP_calls": 100,
+      "eviction_kernels": 100,
+      "reported_overlap_count": 210,
+      "reported_overlap_max_ns": 512,
+      "note": "endpoints verbatim; graph order preserved, no clipping"
+    },
+    {
+      "range": "CP4C_S16384_cold_locked1845_metrics_t2_b2",
+      "kernel_count": 500,
+      "CP_calls": 100,
+      "eviction_kernels": 100,
+      "reported_overlap_count": 219,
+      "reported_overlap_max_ns": 512,
+      "note": "endpoints verbatim; graph order preserved, no clipping"
+    }
+  ],
+  "kernels": {
+    "K1": {
+      "HW_us": {
+        "n": 300,
+        "median": 39.04,
+        "mean": 39.05616,
+        "p5": 38.752,
+        "p95": 39.424,
+        "min": 38.432,
+        "max": 40.032,
+        "cv_percent": 0.5676993579031357
+      },
+      "GPC_clean_MHz": {
+        "n": 300,
+        "median": 1702.5400637634452,
+        "mean": 1703.0853408803803,
+        "p5": 1696.3240805965233,
+        "p95": 1713.9793304936015,
+        "min": 1653.975944562157,
+        "max": 1724.267894420491,
+        "cv_percent": 0.42729387519401485
+      },
+      "GPC_coverage": {
+        "n": 300,
+        "median": 0.8951678951678952,
+        "mean": 0.8743642875247516,
+        "p5": 0.7675941080196399,
+        "p95": 0.902559867877787,
+        "min": 0.7630293159609121,
+        "max": 0.9101497504159733,
+        "cv_percent": 5.444878488586882
+      },
+      "GPC_clean_intervals": {
+        "n": 300,
+        "median": 7.0,
+        "mean": 6.83,
+        "p5": 6,
+        "p95": 7,
+        "min": 6,
+        "max": 7,
+        "cv_percent": 5.499748161344933
+      },
+      "time_weighted_GPC_MHz": 1703.0921868775497,
+      "no_clean_samples": 0
+    },
+    "K2": {
+      "HW_us": {
+        "n": 300,
+        "median": 65.408,
+        "mean": 65.43844666666666,
+        "p5": 64.96,
+        "p95": 65.951,
+        "min": 64.095,
+        "max": 68.16,
+        "cv_percent": 0.596321682101107
+      },
+      "GPC_clean_MHz": {
+        "n": 300,
+        "median": 1676.6538642100215,
+        "mean": 1676.3058531728636,
+        "p5": 1665.3986877573334,
+        "p95": 1688.8558432106668,
+        "min": 1620.7375085274668,
+        "max": 1696.8315270474668,
+        "cv_percent": 0.5010832758364071
+      },
+      "GPC_coverage": {
+        "n": 300,
+        "median": 0.9179991045341,
+        "mean": 0.923761202570775,
+        "p5": 0.9106486962328871,
+        "p95": 0.9912195121951219,
+        "min": 0.8577112099227708,
+        "max": 0.997545409916544,
+        "cv_percent": 2.364780572196344
+      },
+      "GPC_clean_intervals": {
+        "n": 300,
+        "median": 12.0,
+        "mean": 12.09,
+        "p5": 12,
+        "p95": 13,
+        "min": 11,
+        "max": 13,
+        "cv_percent": 2.461551061154611
+      },
+      "time_weighted_GPC_MHz": 1676.317000559584,
+      "no_clean_samples": 0
+    },
+    "K3": {
+      "HW_us": {
+        "n": 300,
+        "median": 27.968,
+        "mean": 27.988773333333334,
+        "p5": 27.744,
+        "p95": 28.288,
+        "min": 27.615,
+        "max": 28.447,
+        "cv_percent": 0.5706823218277385
+      },
+      "GPC_clean_MHz": {
+        "n": 300,
+        "median": 1746.9224429912974,
+        "mean": 1746.3833032462765,
+        "p5": 1736.7527539776002,
+        "p95": 1755.5268863213828,
+        "min": 1735.6809699904002,
+        "max": 1758.7512175147247,
+        "cv_percent": 0.33955473224641225
+      },
+      "GPC_coverage": {
+        "n": 300,
+        "median": 0.888509670079636,
+        "mean": 0.8247141074733615,
+        "p5": 0.7102272727272727,
+        "p95": 0.8988505747126436,
+        "min": 0.7062146892655368,
+        "max": 0.9030023094688222,
+        "cv_percent": 10.507812071652655
+      },
+      "GPC_clean_intervals": {
+        "n": 300,
+        "median": 5.0,
+        "mean": 4.616666666666666,
+        "p5": 4,
+        "p95": 5,
+        "min": 4,
+        "max": 5,
+        "cv_percent": 10.531373390480017
+      },
+      "time_weighted_GPC_MHz": 1746.814885282365,
+      "no_clean_samples": 0
+    },
+    "K4": {
+      "HW_us": {
+        "n": 300,
+        "median": 89.535,
+        "mean": 89.72665666666667,
+        "p5": 88.608,
+        "p95": 91.264,
+        "min": 88.319,
+        "max": 92.831,
+        "cv_percent": 0.9079148705456338
+      },
+      "GPC_clean_MHz": {
+        "n": 300,
+        "median": 1670.5168601490323,
+        "mean": 1671.0700874894019,
+        "p5": 1660.7887595236,
+        "p95": 1681.6824938325,
+        "min": 1624.720791346009,
+        "max": 1686.3756519319575,
+        "cv_percent": 0.4094230088842395
+      },
+      "GPC_coverage": {
+        "n": 300,
+        "median": 0.9482327740092824,
+        "mean": 0.9447163886837274,
+        "p5": 0.8989572096368212,
+        "p95": 0.9616354690946106,
+        "min": 0.890946754129033,
+        "max": 0.9964576691462983,
+        "cv_percent": 1.9611081592445339
+      },
+      "GPC_clean_intervals": {
+        "n": 300,
+        "median": 17.0,
+        "mean": 16.953333333333333,
+        "p5": 16,
+        "p95": 17,
+        "min": 16,
+        "max": 18,
+        "cv_percent": 2.1361819670532554
+      },
+      "time_weighted_GPC_MHz": 1671.106987850213,
+      "no_clean_samples": 0
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "upstream_edits": false,
+  "intervention": "only K4 compiled argument 7 (fixed_state) layout metadata",
+  "original": "from_dlpack(fixed_state, assumed_align=16).mark_layout_dynamic()",
+  "variant": "t=from_dlpack(fixed_state, assumed_align=16); cp._mark_state_layout(t, False, 128)",
+  "marking_behavior": "mark_layout_dynamic().mark_compact_shape_dynamic(mode=3,stride_order=(0,1,2,3),divisibility=128)",
+  "assertions": ["contiguous", "last dimension 128", "last stride 1", "data pointer divisible by 16"],
+  "no_copy_or_repacking": true,
+  "preserved": ["runtime tensor data/address/stride per rotating buffer", "original K1/K2/K3 compiled functions and arguments", "original K4 arithmetic and pipeline", "launch and register budgets", "all original wait/barrier/commit/release"],
+  "B1_and_P0_source": "byte-identical copies of previous batch v_B1 and v_INIT_A_PAIR_W4_C16",
+  "V1_and_PV_source": "same respective copied class; only fixed_state compilation metadata differs",
+  "adapter": "capture all four original public call runtime arguments per buffer and hold allocations; build all roles on these same arguments",
+  "timing": "CUDA Event CP and K4 scopes on separate Graph calls; CLOCK graph has no intermediate Event",
+  "model_enabled": false
+}

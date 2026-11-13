@@ -1,0 +1,10 @@
+{
+  "commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "capture_kind": "untimed clean compilation; cuobjdump --dump-resource-usage",
+  "measured_kernel_timings": false,
+  "K1": {"threads":128,"REG":64,"STACK":0,"static_SHARED":1024,"LOCAL":0},
+  "K2": {"threads":384,"REG":168,"STACK":0,"static_SHARED":1024,"LOCAL":0},
+  "K3": {"threads":256,"REG":120,"STACK":16,"static_SHARED":1024,"LOCAL":0},
+  "K4": {"threads":384,"REG":168,"STACK":16,"static_SHARED":1024,"LOCAL":0},
+  "caveats": ["SHARED is static only; dynamic SMEM is additional.","STACK 16 is not proof of register spilling; LOCAL 0 alone does not establish zero stack traffic.","Register limits must be checked together with dynamic SMEM and TMEM residency."]
+}

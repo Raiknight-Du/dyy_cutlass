@@ -1,0 +1,14 @@
+{
+  "mode": "pilot",
+  "shape": 32768,
+  "sample": 2,
+  "evict_factor": 2,
+  "elapsed_s": 8.293796062469482,
+  "app_pass_count": 1,
+  "app_passes": [
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/pilot/S32768/evict2/sample02/app_passes/app_pass_495679_1790770921250618525/pass_manifest.json"
+  ],
+  "all_passes_checked": true,
+  "report_sha256": "4c4b3683171efe3438802553d07972bd8561923c70069d6cf0fc48d1e4763a74",
+  "csv_sha256": "1e5e35214920ffcb6e19d4b93ac89dab382d38c3795d494bccd9e61ead504428"
+}

@@ -1,0 +1,3 @@
+bytes=524288
+seed=2021
+generator=CUTLASS_TensorFillRandomUniform

@@ -1,0 +1,1396 @@
+{
+  "status": "DYNAMIC_MMA_AND_TC_COUNTS_PASS",
+  "configuration": "TS",
+  "N": 512,
+  "PC_checks": [
+    {
+      "PC": "0x2670",
+      "field": "Instructions Executed",
+      "actual": 65536.0,
+      "expected": 65536,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x2670",
+      "field": "Predicated-On Thread Instructions Executed",
+      "actual": 2097152.0,
+      "expected": 2097152,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x2670",
+      "field": "MMA_source_type",
+      "actual": "      UTCHMMA tmem[UR5], gdesc[UR16], tmem[UR15], tmem[UR18], idesc[UR19], !UPT",
+      "expected": "UTCHMMA tmem[UR5], gdesc[UR16], tmem[UR15], tmem[UR18], idesc[UR19], !UPT",
+      "pass_gate": true
+    },
+    {
+      "PC": "0x2680",
+      "field": "Instructions Executed",
+      "actual": 65536.0,
+      "expected": 65536,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x2680",
+      "field": "Predicated-On Thread Instructions Executed",
+      "actual": 2097152.0,
+      "expected": 2097152,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x2680",
+      "field": "MMA_source_type",
+      "actual": "      UTCHMMA tmem[UR14], gdesc[UR36], tmem[UR15], tmem[UR18], idesc[UR19], UPT",
+      "expected": "UTCHMMA tmem[UR14], gdesc[UR36], tmem[UR15], tmem[UR18], idesc[UR19], UPT",
+      "pass_gate": true
+    },
+    {
+      "PC": "0x2690",
+      "field": "Instructions Executed",
+      "actual": 65536.0,
+      "expected": 65536,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x2690",
+      "field": "Predicated-On Thread Instructions Executed",
+      "actual": 2097152.0,
+      "expected": 2097152,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x2690",
+      "field": "MMA_source_type",
+      "actual": "      UTCHMMA tmem[UR12], gdesc[UR34], tmem[UR15], tmem[UR18], idesc[UR19], UPT",
+      "expected": "UTCHMMA tmem[UR12], gdesc[UR34], tmem[UR15], tmem[UR18], idesc[UR19], UPT",
+      "pass_gate": true
+    },
+    {
+      "PC": "0x26a0",
+      "field": "Instructions Executed",
+      "actual": 65536.0,
+      "expected": 65536,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x26a0",
+      "field": "Predicated-On Thread Instructions Executed",
+      "actual": 2097152.0,
+      "expected": 2097152,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x26a0",
+      "field": "MMA_source_type",
+      "actual": "      UTCHMMA tmem[UR11], gdesc[UR32], tmem[UR15], tmem[UR18], idesc[UR19], UPT",
+      "expected": "UTCHMMA tmem[UR11], gdesc[UR32], tmem[UR15], tmem[UR18], idesc[UR19], UPT",
+      "pass_gate": true
+    },
+    {
+      "PC": "0x26c0",
+      "field": "Instructions Executed",
+      "actual": 65536.0,
+      "expected": 65536,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x26c0",
+      "field": "Predicated-On Thread Instructions Executed",
+      "actual": 2097152.0,
+      "expected": 2097152,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x26c0",
+      "field": "MMA_source_type",
+      "actual": "      UTCHMMA tmem[UR10], gdesc[UR30], tmem[UR15], tmem[UR18], idesc[UR19], UPT",
+      "expected": "UTCHMMA tmem[UR10], gdesc[UR30], tmem[UR15], tmem[UR18], idesc[UR19], UPT",
+      "pass_gate": true
+    },
+    {
+      "PC": "0x26d0",
+      "field": "Instructions Executed",
+      "actual": 65536.0,
+      "expected": 65536,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x26d0",
+      "field": "Predicated-On Thread Instructions Executed",
+      "actual": 2097152.0,
+      "expected": 2097152,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x26d0",
+      "field": "MMA_source_type",
+      "actual": "      UTCHMMA tmem[UR9], gdesc[UR28], tmem[UR15], tmem[UR18], idesc[UR19], UPT",
+      "expected": "UTCHMMA tmem[UR9], gdesc[UR28], tmem[UR15], tmem[UR18], idesc[UR19], UPT",
+      "pass_gate": true
+    },
+    {
+      "PC": "0x26e0",
+      "field": "Instructions Executed",
+      "actual": 65536.0,
+      "expected": 65536,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x26e0",
+      "field": "Predicated-On Thread Instructions Executed",
+      "actual": 2097152.0,
+      "expected": 2097152,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x26e0",
+      "field": "MMA_source_type",
+      "actual": "      UTCHMMA tmem[UR7], gdesc[UR26], tmem[UR15], tmem[UR18], idesc[UR19], UPT",
+      "expected": "UTCHMMA tmem[UR7], gdesc[UR26], tmem[UR15], tmem[UR18], idesc[UR19], UPT",
+      "pass_gate": true
+    },
+    {
+      "PC": "0x2700",
+      "field": "Instructions Executed",
+      "actual": 65536.0,
+      "expected": 65536,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x2700",
+      "field": "Predicated-On Thread Instructions Executed",
+      "actual": 2097152.0,
+      "expected": 2097152,
+      "pass_gate": true
+    },
+    {
+      "PC": "0x2700",
+      "field": "MMA_source_type",
+      "actual": "      UTCHMMA tmem[UR6], gdesc[UR24], tmem[UR15], tmem[UR18], idesc[UR19], UPT",
+      "expected": "UTCHMMA tmem[UR6], gdesc[UR24], tmem[UR15], tmem[UR18], idesc[UR19], UPT",
+      "pass_gate": true
+    }
+  ],
+  "hardware_checks": [
+    {
+      "metric": "l1tex__data_pipe_tc_wavefronts.sum",
+      "expected": 8388608,
+      "actual": 8388608.0,
+      "pass_gate": true
+    },
+    {
+      "metric": "l1tex__data_pipe_tc_wavefronts_mem_shared.sum",
+      "expected": 8388608,
+      "actual": 8388608.0,
+      "pass_gate": true
+    },
+    {
+      "metric": "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_a.sum",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true
+    },
+    {
+      "metric": "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_1cta.sum",
+      "expected": 8388608,
+      "actual": 8388608.0,
+      "pass_gate": true
+    }
+  ],
+  "Data_and_request_inventory": {
+    "derived__memory_l2_theoretical_sectors_global_excessive": {
+      "value": 1048576.0,
+      "unit": "byte"
+    },
+    "dram__bytes_read.avg": {
+      "value": 0.0,
+      "unit": "byte"
+    },
+    "dram__bytes_read.max": {
+      "value": 0.0,
+      "unit": "byte"
+    },
+    "dram__bytes_read.min": {
+      "value": 0.0,
+      "unit": "byte"
+    },
+    "dram__bytes_read.sum": {
+      "value": 0.0,
+      "unit": "byte"
+    },
+    "dram__bytes_write.avg": {
+      "value": 80.0,
+      "unit": "byte"
+    },
+    "dram__bytes_write.max": {
+      "value": 768.0,
+      "unit": "byte"
+    },
+    "dram__bytes_write.min": {
+      "value": 0.0,
+      "unit": "byte"
+    },
+    "dram__bytes_write.sum": {
+      "value": 5120.0,
+      "unit": "byte"
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu.avg": {
+      "value": 6566.57,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu.max": {
+      "value": 7715.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu.sum": {
+      "value": 971853.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_gds_op_ld.avg": {
+      "value": 5893.4,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_gds_op_ld.max": {
+      "value": 6932.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_gds_op_ld.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_gds_op_ld.sum": {
+      "value": 872223.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld.avg": {
+      "value": 0.06,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld.max": {
+      "value": 1.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld.sum": {
+      "value": 9.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_type_arbitration.avg": {
+      "value": 0.21,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_type_arbitration.max": {
+      "value": 2.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_type_arbitration.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_type_arbitration.sum": {
+      "value": 31.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_reads.avg": {
+      "value": 1824423.78,
+      "unit": ""
+    },
+    "l1tex__data_bank_reads.max": {
+      "value": 2109490.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_reads.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_reads.sum": {
+      "value": 270014720.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_writes.avg": {
+      "value": 14204.54,
+      "unit": ""
+    },
+    "l1tex__data_bank_writes.max": {
+      "value": 16424.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_writes.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_writes.sum": {
+      "value": 2102272.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts.avg": {
+      "value": 8022.73,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts.avg.pct_of_peak_sustained_active": {
+      "value": 6.43,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.avg.pct_of_peak_sustained_elapsed": {
+      "value": 5.36,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.avg.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.max": {
+      "value": 9284.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts.max.pct_of_peak_sustained_active": {
+      "value": 7.44,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.max.pct_of_peak_sustained_elapsed": {
+      "value": 6.2,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.max.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts.min.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.min.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.min.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.sum": {
+      "value": 1187364.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts.sum.pct_of_peak_sustained_active": {
+      "value": 6.43,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.sum.pct_of_peak_sustained_elapsed": {
+      "value": 5.36,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.sum.peak_sustained": {
+      "value": 148.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_read.avg": {
+      "value": 7109.7,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_read.max": {
+      "value": 8231.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_read.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_read.sum": {
+      "value": 1052236.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_write.avg": {
+      "value": 904.02,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_write.max": {
+      "value": 1047.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_write.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_write.sum": {
+      "value": 133795.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds.avg": {
+      "value": 7988.28,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds.max": {
+      "value": 9245.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds.sum": {
+      "value": 1182266.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.avg": {
+      "value": 7092.2,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.max": {
+      "value": 8209.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.sum": {
+      "value": 1049645.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_write.avg": {
+      "value": 896.09,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_write.max": {
+      "value": 1036.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_write.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_write.sum": {
+      "value": 132621.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared.avg": {
+      "value": 35.68,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared.max": {
+      "value": 43.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared.sum": {
+      "value": 5281.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_read.avg": {
+      "value": 17.51,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_read.max": {
+      "value": 22.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_read.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_read.sum": {
+      "value": 2591.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_write.avg": {
+      "value": 7.93,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_write.max": {
+      "value": 11.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_write.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_write.sum": {
+      "value": 1174.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_atom.avg": {
+      "value": 3.61,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_atom.max": {
+      "value": 6.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_atom.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_atom.sum": {
+      "value": 534.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ipa.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ipa.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ipa.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ipa.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ld.avg": {
+      "value": 13.86,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ld.max": {
+      "value": 17.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ld.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ld.sum": {
+      "value": 2052.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_misc.avg": {
+      "value": 13.84,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_misc.max": {
+      "value": 16.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_misc.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_misc.sum": {
+      "value": 2048.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_st.avg": {
+      "value": 4.32,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_st.max": {
+      "value": 5.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_st.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_st.sum": {
+      "value": 640.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_umemsets.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_umemsets.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_umemsets.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_umemsets.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_surface.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_surface.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_surface.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_surface.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts.avg": {
+      "value": 56679.78,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts.avg.pct_of_peak_sustained_active": {
+      "value": 45.44,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.avg.pct_of_peak_sustained_elapsed": {
+      "value": 37.83,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.avg.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tc_wavefronts.max": {
+      "value": 65536.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts.max.pct_of_peak_sustained_active": {
+      "value": 52.54,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.max.pct_of_peak_sustained_elapsed": {
+      "value": 43.74,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.max.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tc_wavefronts.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts.min.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.min.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.min.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tc_wavefronts.sum": {
+      "value": 8388608.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts.sum.pct_of_peak_sustained_active": {
+      "value": 45.44,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.sum.pct_of_peak_sustained_elapsed": {
+      "value": 37.83,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.sum.peak_sustained": {
+      "value": 148.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared.avg": {
+      "value": 56679.78,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared.max": {
+      "value": 65536.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared.sum": {
+      "value": 8388608.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utccp.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utccp.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utccp.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utccp.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_a.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_a.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_a.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_a.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_1cta.avg": {
+      "value": 56679.78,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_1cta.max": {
+      "value": 65536.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_1cta.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_1cta.sum": {
+      "value": 8388608.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_2cta.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_2cta.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_2cta.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_2cta.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts.avg.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.avg.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.avg.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tex_wavefronts.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts.max.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.max.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.max.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tex_wavefronts.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts.min.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.min.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.min.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tex_wavefronts.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts.sum.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.sum.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.sum.peak_sustained": {
+      "value": 148.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_surface.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_surface.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_surface.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_surface.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_texture.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_texture.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_texture.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_texture.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.avg": {
+      "value": 7084.97,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.max": {
+      "value": 8192.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.min": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.sum": {
+      "value": 1048576.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_hit.avg": {
+      "value": 6642.16,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_hit.max": {
+      "value": 7680.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_hit.min": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_hit.sum": {
+      "value": 983040.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_miss.avg": {
+      "value": 442.81,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_miss.max": {
+      "value": 512.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_miss.min": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_miss.sum": {
+      "value": 65536.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.avg": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.max": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.min": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.sum": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_st.avg": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_st.max": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_st.min": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_st.sum": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_op_read.avg": {
+      "value": 585.6,
+      "unit": "sector"
+    },
+    "lts__t_sectors_op_read.max": {
+      "value": 2858.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_op_read.min": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_op_read.sum": {
+      "value": 107750.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_op_write.avg": {
+      "value": 1081.04,
+      "unit": "sector"
+    },
+    "lts__t_sectors_op_write.max": {
+      "value": 1776.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_op_write.min": {
+      "value": 544.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_op_write.sum": {
+      "value": 198912.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_srcunit_tex_op_read.avg": {
+      "value": 557.18,
+      "unit": "sector"
+    },
+    "lts__t_sectors_srcunit_tex_op_read.max": {
+      "value": 2850.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_srcunit_tex_op_read.min": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_srcunit_tex_op_read.sum": {
+      "value": 102521.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_srcunit_tex_op_read_lookup_hit.avg": {
+      "value": 553.05,
+      "unit": "sector"
+    },
+    "lts__t_sectors_srcunit_tex_op_read_lookup_hit.max": {
+      "value": 2832.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_srcunit_tex_op_read_lookup_hit.min": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum": {
+      "value": 101761.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_srcunit_tex_op_read_lookup_miss.avg": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_srcunit_tex_op_read_lookup_miss.max": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_srcunit_tex_op_read_lookup_miss.min": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "memory_l2_theoretical_sectors_global": {
+      "value": 1180032.0,
+      "unit": "sectors"
+    },
+    "memory_l2_theoretical_sectors_global_ideal": {
+      "value": 131456.0,
+      "unit": "sectors"
+    },
+    "memory_l2_theoretical_sectors_local": {
+      "value": 0.0,
+      "unit": "sectors"
+    }
+  },
+  "synchronization_PC_inventory": [
+    {
+      "Address": "0x7fbe7f5ae480",
+      "Source": "      SYNCS.EXCH.64 URZ, [UR13], UR8",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5ae540",
+      "Source": "      SYNCS.EXCH.64 URZ, [UR13+0x8], UR8",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5ae550",
+      "Source": "      SYNCS.EXCH.64 URZ, [UR13+0x10], UR8",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5ae560",
+      "Source": "      SYNCS.EXCH.64 URZ, [UR13+0x18], UR10",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5ae5d0",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "768",
+      "Predicated-On Thread Instructions Executed": "24576",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5ae7a0",
+      "Source": "@!P0  BAR.SYNC.DEFER_BLOCKING 0x1, 0xa0",
+      "Instructions Executed": "768",
+      "Predicated-On Thread Instructions Executed": "20480",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0110",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "512",
+      "Predicated-On Thread Instructions Executed": "16384",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0130",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "512",
+      "Predicated-On Thread Instructions Executed": "16384",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0150",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR13+0x10], R5",
+      "Instructions Executed": "512",
+      "Predicated-On Thread Instructions Executed": "16384",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0170",
+      "Source": "      SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR13+0x18], RZ",
+      "Instructions Executed": "512",
+      "Predicated-On Thread Instructions Executed": "16384",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b01d0",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "512",
+      "Predicated-On Thread Instructions Executed": "16384",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0250",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "512",
+      "Predicated-On Thread Instructions Executed": "16384",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0710",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR13], R5",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0740",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR13+0x18], R4",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0760",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b07a0",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0aa0",
+      "Source": "      UTCBAR [UR20], URZ",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0ab0",
+      "Source": "      UTCBAR [UR22], URZ",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0ac0",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0ad0",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0b10",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR13+0x8], R5",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0c00",
+      "Source": "@P0   SYNCS.ARRIVE.TRANS64 RZ, [UR13], R0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "128",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0cd0",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0ce0",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0cf0",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0d00",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b0d30",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "768",
+      "Predicated-On Thread Instructions Executed": "24576",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b1040",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [R4+URZ+0x10], R5",
+      "Instructions Executed": "256072",
+      "Predicated-On Thread Instructions Executed": "8194304",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b1050",
+      "Source": "@!P0  NANOSLEEP.SYNCS 0x989680",
+      "Instructions Executed": "256072",
+      "Predicated-On Thread Instructions Executed": "8179584",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b1060",
+      "Source": "@!P0  SYNCS.PHASECHK.TRANS64 P0, [R4+URZ+0x10], R5",
+      "Instructions Executed": "256072",
+      "Predicated-On Thread Instructions Executed": "8179584",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b10a0",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [R2+URZ], R5",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b10b0",
+      "Source": "@!P0  NANOSLEEP.SYNCS 0x989680",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b10c0",
+      "Source": "@!P0  SYNCS.PHASECHK.TRANS64 P0, [R2+URZ], R5",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b1100",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [R5+URZ+0x18], R4",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b1110",
+      "Source": "@!P0  NANOSLEEP.SYNCS 0x989680",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b1120",
+      "Source": "@!P0  SYNCS.PHASECHK.TRANS64 P0, [R5+URZ+0x18], R4",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b1160",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [R0+URZ+0x8], R5",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b1170",
+      "Source": "@!P0  NANOSLEEP.SYNCS 0x989680",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7fbe7f5b1180",
+      "Source": "@!P0  SYNCS.PHASECHK.TRANS64 P0, [R0+URZ+0x8], R5",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    }
+  ],
+  "unexpected_dynamic_spill_PCs": [],
+  "Source_base_hex": "0x7fbe7f5ae380",
+  "input_SHA256": {
+    "TS_LOAD_source.csv": "5d9a11b4bc87a787fd6578e10201e87d54e5f2e7f9acf0a2796a9b9e2526ee04",
+    "TS_LOAD_raw.csv": "26b97f2743611a7a8f121450c2a5d83ec9c779f00698da1be410af310bc3904e",
+    "EXPECTED_N512_MMA_PC_COUNTS.csv": "c0a6d65375fc68f1cb42df1c2ae1e2301e16b9b3ec47dd48e8636387e3dc1bf0"
+  },
+  "limits": [
+    "Only shared-operand DataTCWF is counted here; no independent TMEM port width or cycle conversion is inferred.",
+    "A TMEM preload, C initialization, TMA input and output fixed work are outside the internal clock but present in whole-action counters.",
+    "Wait/poll dynamics must be retained by source PC; no completed-helper duration is inserted as a pure instruction latency.",
+    "Rates require formal raw SS_LOAD/TS_LOAD Event/native dual-domain convergence and independent Lead admission. CONTROL expects zero N slope; CONTROL and paired subtraction are diagnostic only."
+  ],
+  "model_enabled": false,
+  "full_prediction": null
+}

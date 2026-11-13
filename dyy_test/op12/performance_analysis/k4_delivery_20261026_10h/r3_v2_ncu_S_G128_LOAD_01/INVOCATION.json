@@ -1,0 +1,9 @@
+{
+  "start_epoch": 1792963817.0677774,
+  "configuration": "S_G128_LOAD",
+  "N": 512,
+  "authorized_invocations": 1,
+  "binary_sha256": "706756dda3c7bd8951361930b1bac35524dbddc2a582aac528851452e04f34f7",
+  "clock_management": false,
+  "model_enabled": false
+}

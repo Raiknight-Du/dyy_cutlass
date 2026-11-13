@@ -1,0 +1,1154 @@
+{
+  "scope": {
+    "upstream": "https://github.com/flashinfer-ai/flashinfer",
+    "upstream_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+    "algorithm_reference": "tests/gdn/reference_delta_rule.py::blockwise_delta_rule",
+    "input_generator": "tests/gdn/conftest.py::gen_qkv",
+    "changed_dimension": "seven logical GEMM operands use E4M3",
+    "quantization_scale": "none; direct saturating E4M3 cast",
+    "mma_operand_scales": "literal one required by torch._scaled_mm ABI",
+    "algorithmic_qk_scale": "1/sqrt(128), retained from upstream",
+    "accumulator": "FP32",
+    "output_state": "FP16",
+    "backend": "unfused torch._scaled_mm correctness vehicle"
+  },
+  "environment": {
+    "hostname": "metallic-matrix-fin-03",
+    "python": "3.10.12",
+    "torch": "2.11.0+cu130",
+    "cuda_runtime": "13.0",
+    "gpu": "NVIDIA B200",
+    "compute_capability": "10.0"
+  },
+  "thresholds": {
+    "op12": {
+      "o_relative_l2_max": 0.2,
+      "o_cosine_min": 0.98,
+      "state_relative_l2_max": 0.25
+    },
+    "upstream_fp16_strict": {
+      "o_atol": 0.002,
+      "o_rtol": 0.001,
+      "state_atol": 0.001,
+      "state_rtol": 0.0001
+    }
+  },
+  "results": [
+    {
+      "name": "BNSD_S1",
+      "layout": "BNSD",
+      "seq_lens": [
+        1
+      ],
+      "heads": [
+        1,
+        1,
+        1
+      ],
+      "qv_multiplier": 1.0,
+      "initial_state": false,
+      "finite": true,
+      "op12_pass": false,
+      "upstream_strict_allclose": true,
+      "no_scale": {
+        "o_relative_l2": 0.4564094543457031,
+        "o_cosine": 0.9968286156654358,
+        "o_max_abs": 8.067407179623842e-06,
+        "state_relative_l2": 0.0868733748793602,
+        "state_cosine": 0.9968287944793701,
+        "state_max_abs": 0.00022673490457236767
+      },
+      "tile_scaled": {
+        "o_relative_l2": 0.0289622750133276,
+        "o_cosine": 0.9995923042297363,
+        "o_max_abs": 6.33661329629831e-07,
+        "state_relative_l2": 0.028855985030531883,
+        "state_cosine": 0.9995958805084229,
+        "state_max_abs": 8.040573447942734e-05
+      },
+      "max_saturation_rate": 0.0,
+      "max_zeroed_nonzero_rate": 0.0048828125,
+      "quantization": {
+        "state": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.0
+        },
+        "a_inverse": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.05215173959732056
+        },
+        "delta": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.28125
+        },
+        "wqkv": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.0012991344556212425
+        },
+        "nv": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.00390625,
+          "max_zeroed_nonzero_rate": 0.0048828125,
+          "max_input_amax": 0.0142822265625
+        },
+        "delta_state": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.00390625,
+          "max_zeroed_nonzero_rate": 0.0048828125,
+          "max_input_amax": 0.0142822265625
+        }
+      }
+    },
+    {
+      "name": "BNSD_S63",
+      "layout": "BNSD",
+      "seq_lens": [
+        63
+      ],
+      "heads": [
+        1,
+        1,
+        1
+      ],
+      "qv_multiplier": 1.0,
+      "initial_state": false,
+      "finite": true,
+      "op12_pass": true,
+      "upstream_strict_allclose": false,
+      "no_scale": {
+        "o_relative_l2": 0.06669878214597702,
+        "o_cosine": 0.9978086948394775,
+        "o_max_abs": 0.0007707895711064339,
+        "state_relative_l2": 0.036320168524980545,
+        "state_cosine": 0.9996775984764099,
+        "state_max_abs": 0.002124704420566559
+      },
+      "tile_scaled": {
+        "o_relative_l2": 0.05036013200879097,
+        "o_cosine": 0.998731255531311,
+        "o_max_abs": 0.00113230524584651,
+        "state_relative_l2": 0.0461851991713047,
+        "state_cosine": 0.9994335174560547,
+        "state_max_abs": 0.002649269998073578
+      },
+      "max_saturation_rate": 0.0,
+      "max_zeroed_nonzero_rate": 0.931884765625,
+      "quantization": {
+        "state": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.0
+        },
+        "a_inverse": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.436767578125,
+          "max_zeroed_nonzero_rate": 0.436767578125,
+          "max_input_amax": 0.9994585514068604
+        },
+        "delta": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.375
+        },
+        "wqkv": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.44140625,
+          "max_zeroed_nonzero_rate": 0.44140625,
+          "max_input_amax": 0.07001131027936935
+        },
+        "nv": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.015380859375,
+          "max_zeroed_nonzero_rate": 0.015869140625,
+          "max_input_amax": 0.32122802734375
+        },
+        "delta_state": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.9312744140625,
+          "max_zeroed_nonzero_rate": 0.931884765625,
+          "max_input_amax": 0.2046661376953125
+        }
+      }
+    },
+    {
+      "name": "BNSD_S64",
+      "layout": "BNSD",
+      "seq_lens": [
+        64
+      ],
+      "heads": [
+        1,
+        1,
+        1
+      ],
+      "qv_multiplier": 1.0,
+      "initial_state": false,
+      "finite": true,
+      "op12_pass": true,
+      "upstream_strict_allclose": false,
+      "no_scale": {
+        "o_relative_l2": 0.06010589003562927,
+        "o_cosine": 0.9982037544250488,
+        "o_max_abs": 0.0010408898815512657,
+        "state_relative_l2": 0.03700706735253334,
+        "state_cosine": 0.9995274543762207,
+        "state_max_abs": 0.001976180821657181
+      },
+      "tile_scaled": {
+        "o_relative_l2": 0.05263916403055191,
+        "o_cosine": 0.9986162185668945,
+        "o_max_abs": 0.0009645959362387657,
+        "state_relative_l2": 0.03965005651116371,
+        "state_cosine": 0.9992756843566895,
+        "state_max_abs": 0.002075701951980591
+      },
+      "max_saturation_rate": 0.0,
+      "max_zeroed_nonzero_rate": 0.911376953125,
+      "quantization": {
+        "state": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.0
+        },
+        "a_inverse": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.450927734375,
+          "max_zeroed_nonzero_rate": 0.450927734375,
+          "max_input_amax": 0.9914235472679138
+        },
+        "delta": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.34375
+        },
+        "wqkv": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.4501953125,
+          "max_zeroed_nonzero_rate": 0.4501953125,
+          "max_input_amax": 0.05482697859406471
+        },
+        "nv": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0230712890625,
+          "max_zeroed_nonzero_rate": 0.023681640625,
+          "max_input_amax": 0.30576324462890625
+        },
+        "delta_state": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.9112548828125,
+          "max_zeroed_nonzero_rate": 0.911376953125,
+          "max_input_amax": 0.17290496826171875
+        }
+      }
+    },
+    {
+      "name": "BNSD_S65",
+      "layout": "BNSD",
+      "seq_lens": [
+        65
+      ],
+      "heads": [
+        1,
+        1,
+        1
+      ],
+      "qv_multiplier": 1.0,
+      "initial_state": false,
+      "finite": true,
+      "op12_pass": true,
+      "upstream_strict_allclose": false,
+      "no_scale": {
+        "o_relative_l2": 0.06808784604072571,
+        "o_cosine": 0.9977222681045532,
+        "o_max_abs": 0.0009276140481233597,
+        "state_relative_l2": 0.03724604845046997,
+        "state_cosine": 0.9994701147079468,
+        "state_max_abs": 0.0035639293491840363
+      },
+      "tile_scaled": {
+        "o_relative_l2": 0.05907341092824936,
+        "o_cosine": 0.998268723487854,
+        "o_max_abs": 0.0013802479952573776,
+        "state_relative_l2": 0.028549419716000557,
+        "state_cosine": 0.9996280670166016,
+        "state_max_abs": 0.0019493214786052704
+      },
+      "max_saturation_rate": 0.0,
+      "max_zeroed_nonzero_rate": 0.89697265625,
+      "quantization": {
+        "state": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.044708251953125,
+          "max_zeroed_nonzero_rate": 0.09326171875,
+          "max_input_amax": 0.0425567626953125
+        },
+        "a_inverse": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.2301025390625,
+          "max_zeroed_nonzero_rate": 0.460205078125,
+          "max_input_amax": 0.9533394575119019
+        },
+        "delta": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.375
+        },
+        "wqkv": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.2296142578125,
+          "max_zeroed_nonzero_rate": 0.459228515625,
+          "max_input_amax": 0.07071128487586975
+        },
+        "nv": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.009765625,
+          "max_zeroed_nonzero_rate": 0.01953125,
+          "max_input_amax": 0.30487823486328125
+        },
+        "delta_state": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.4481201171875,
+          "max_zeroed_nonzero_rate": 0.89697265625,
+          "max_input_amax": 0.3046875
+        }
+      }
+    },
+    {
+      "name": "BNSD_S127",
+      "layout": "BNSD",
+      "seq_lens": [
+        127
+      ],
+      "heads": [
+        1,
+        1,
+        1
+      ],
+      "qv_multiplier": 1.0,
+      "initial_state": false,
+      "finite": true,
+      "op12_pass": true,
+      "upstream_strict_allclose": true,
+      "no_scale": {
+        "o_relative_l2": 0.06751883774995804,
+        "o_cosine": 0.9977222084999084,
+        "o_max_abs": 0.000994986854493618,
+        "state_relative_l2": 0.03952391818165779,
+        "state_cosine": 0.9992316365242004,
+        "state_max_abs": 0.0007454017177224159
+      },
+      "tile_scaled": {
+        "o_relative_l2": 0.05149637535214424,
+        "o_cosine": 0.9986763000488281,
+        "o_max_abs": 0.0014522038400173187,
+        "state_relative_l2": 0.04347509518265724,
+        "state_cosine": 0.9990558624267578,
+        "state_max_abs": 0.0010208617895841599
+      },
+      "max_saturation_rate": 0.0,
+      "max_zeroed_nonzero_rate": 0.876708984375,
+      "quantization": {
+        "state": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.032318115234375,
+          "max_zeroed_nonzero_rate": 0.06494140625,
+          "max_input_amax": 0.05971527099609375
+        },
+        "a_inverse": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.4498291015625,
+          "max_zeroed_nonzero_rate": 0.451171875,
+          "max_input_amax": 0.9980613589286804
+        },
+        "delta": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.00250244140625,
+          "max_zeroed_nonzero_rate": 0.005859375,
+          "max_input_amax": 0.40625
+        },
+        "wqkv": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.447509765625,
+          "max_zeroed_nonzero_rate": 0.450927734375,
+          "max_input_amax": 0.06846839934587479
+        },
+        "nv": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.02349853515625,
+          "max_zeroed_nonzero_rate": 0.03564453125,
+          "max_input_amax": 0.357391357421875
+        },
+        "delta_state": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.8397216796875,
+          "max_zeroed_nonzero_rate": 0.876708984375,
+          "max_input_amax": 0.28217315673828125
+        }
+      }
+    },
+    {
+      "name": "BNSD_S257",
+      "layout": "BNSD",
+      "seq_lens": [
+        257
+      ],
+      "heads": [
+        1,
+        1,
+        1
+      ],
+      "qv_multiplier": 1.0,
+      "initial_state": false,
+      "finite": true,
+      "op12_pass": true,
+      "upstream_strict_allclose": false,
+      "no_scale": {
+        "o_relative_l2": 0.06144876405596733,
+        "o_cosine": 0.9981120824813843,
+        "o_max_abs": 0.00112873874604702,
+        "state_relative_l2": 0.03901687636971474,
+        "state_cosine": 0.9997503757476807,
+        "state_max_abs": 0.002254670485854149
+      },
+      "tile_scaled": {
+        "o_relative_l2": 0.05655960366129875,
+        "o_cosine": 0.9984002113342285,
+        "o_max_abs": 0.001835768111050129,
+        "state_relative_l2": 0.02623668499290943,
+        "state_cosine": 0.9996558427810669,
+        "state_max_abs": 0.0015308447182178497
+      },
+      "max_saturation_rate": 0.0,
+      "max_zeroed_nonzero_rate": 0.94140625,
+      "quantization": {
+        "state": {
+          "tiles": 10,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0929443359375,
+          "max_zeroed_nonzero_rate": 0.2327880859375,
+          "max_input_amax": 0.089508056640625
+        },
+        "a_inverse": {
+          "tiles": 10,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.3626953125,
+          "max_zeroed_nonzero_rate": 0.468505859375,
+          "max_input_amax": 0.9999178647994995
+        },
+        "delta": {
+          "tiles": 10,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.00244140625,
+          "max_zeroed_nonzero_rate": 0.005615234375,
+          "max_input_amax": 0.375
+        },
+        "wqkv": {
+          "tiles": 10,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.36484375,
+          "max_zeroed_nonzero_rate": 0.46875,
+          "max_input_amax": 0.06496481597423553
+        },
+        "nv": {
+          "tiles": 10,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.017041015625,
+          "max_zeroed_nonzero_rate": 0.03271484375,
+          "max_input_amax": 0.3890380859375
+        },
+        "delta_state": {
+          "tiles": 10,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.724853515625,
+          "max_zeroed_nonzero_rate": 0.94140625,
+          "max_input_amax": 0.3890380859375
+        }
+      }
+    },
+    {
+      "name": "TND_varlen",
+      "layout": "TND",
+      "seq_lens": [
+        1,
+        63,
+        64,
+        65,
+        127,
+        257
+      ],
+      "heads": [
+        1,
+        1,
+        1
+      ],
+      "qv_multiplier": 1.0,
+      "initial_state": false,
+      "finite": true,
+      "op12_pass": true,
+      "upstream_strict_allclose": false,
+      "no_scale": {
+        "o_relative_l2": 0.0653287023305893,
+        "o_cosine": 0.9978797435760498,
+        "o_max_abs": 0.0015610987320542336,
+        "state_relative_l2": 0.03363556042313576,
+        "state_cosine": 0.9995015859603882,
+        "state_max_abs": 0.003568679094314575
+      },
+      "tile_scaled": {
+        "o_relative_l2": 0.052038777619600296,
+        "o_cosine": 0.9986665844917297,
+        "o_max_abs": 0.0018046973273158073,
+        "state_relative_l2": 0.04178879037499428,
+        "state_cosine": 0.9991629719734192,
+        "state_max_abs": 0.0036479756236076355
+      },
+      "max_saturation_rate": 0.0,
+      "max_zeroed_nonzero_rate": 0.984130859375,
+      "quantization": {
+        "state": {
+          "tiles": 24,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0792083740234375,
+          "max_zeroed_nonzero_rate": 0.5086669921875,
+          "max_input_amax": 0.064056396484375
+        },
+        "a_inverse": {
+          "tiles": 24,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.3420613606770833,
+          "max_zeroed_nonzero_rate": 0.464599609375,
+          "max_input_amax": 0.9987764954566956
+        },
+        "delta": {
+          "tiles": 24,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.00146484375,
+          "max_zeroed_nonzero_rate": 0.00634765625,
+          "max_input_amax": 0.4375000298023224
+        },
+        "wqkv": {
+          "tiles": 24,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.34136962890625,
+          "max_zeroed_nonzero_rate": 0.46728515625,
+          "max_input_amax": 0.07752592116594315
+        },
+        "nv": {
+          "tiles": 24,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.015838623046875,
+          "max_zeroed_nonzero_rate": 0.033447265625,
+          "max_input_amax": 0.34375
+        },
+        "delta_state": {
+          "tiles": 24,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.6925048828125,
+          "max_zeroed_nonzero_rate": 0.984130859375,
+          "max_input_amax": 0.2672119140625
+        }
+      }
+    },
+    {
+      "name": "GQA_8_2",
+      "layout": "TND",
+      "seq_lens": [
+        64
+      ],
+      "heads": [
+        8,
+        2,
+        2
+      ],
+      "qv_multiplier": 1.0,
+      "initial_state": false,
+      "finite": true,
+      "op12_pass": true,
+      "upstream_strict_allclose": false,
+      "no_scale": {
+        "o_relative_l2": 0.06195653975009918,
+        "o_cosine": 0.9981104135513306,
+        "o_max_abs": 0.001479361206293106,
+        "state_relative_l2": 0.031188752502202988,
+        "state_cosine": 0.9995136857032776,
+        "state_max_abs": 0.002940855920314789
+      },
+      "tile_scaled": {
+        "o_relative_l2": 0.052189890295267105,
+        "o_cosine": 0.9986676573753357,
+        "o_max_abs": 0.002080140635371208,
+        "state_relative_l2": 0.0482308529317379,
+        "state_cosine": 0.9989275932312012,
+        "state_max_abs": 0.004560478031635284
+      },
+      "max_saturation_rate": 0.0,
+      "max_zeroed_nonzero_rate": 0.949462890625,
+      "quantization": {
+        "state": {
+          "tiles": 16,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.0
+        },
+        "a_inverse": {
+          "tiles": 16,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.4576416015625,
+          "max_zeroed_nonzero_rate": 0.463134765625,
+          "max_input_amax": 0.9990023970603943
+        },
+        "delta": {
+          "tiles": 16,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.375
+        },
+        "wqkv": {
+          "tiles": 16,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.456390380859375,
+          "max_zeroed_nonzero_rate": 0.459228515625,
+          "max_input_amax": 0.09777934104204178
+        },
+        "nv": {
+          "tiles": 16,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0229644775390625,
+          "max_zeroed_nonzero_rate": 0.038818359375,
+          "max_input_amax": 0.36328125
+        },
+        "delta_state": {
+          "tiles": 16,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.90863037109375,
+          "max_zeroed_nonzero_rate": 0.949462890625,
+          "max_input_amax": 0.2912139892578125
+        }
+      }
+    },
+    {
+      "name": "GVA_2_8",
+      "layout": "TND",
+      "seq_lens": [
+        64
+      ],
+      "heads": [
+        2,
+        2,
+        8
+      ],
+      "qv_multiplier": 1.0,
+      "initial_state": false,
+      "finite": true,
+      "op12_pass": true,
+      "upstream_strict_allclose": false,
+      "no_scale": {
+        "o_relative_l2": 0.060036975890398026,
+        "o_cosine": 0.9981966018676758,
+        "o_max_abs": 0.0013944413512945175,
+        "state_relative_l2": 0.03550223633646965,
+        "state_cosine": 0.9993780851364136,
+        "state_max_abs": 0.0030439719557762146
+      },
+      "tile_scaled": {
+        "o_relative_l2": 0.05366864055395126,
+        "o_cosine": 0.9985842108726501,
+        "o_max_abs": 0.0016698874533176422,
+        "state_relative_l2": 0.045269228518009186,
+        "state_cosine": 0.998977780342102,
+        "state_max_abs": 0.004380866885185242
+      },
+      "max_saturation_rate": 0.0,
+      "max_zeroed_nonzero_rate": 0.957275390625,
+      "quantization": {
+        "state": {
+          "tiles": 16,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.0
+        },
+        "a_inverse": {
+          "tiles": 16,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.459991455078125,
+          "max_zeroed_nonzero_rate": 0.4697265625,
+          "max_input_amax": 0.9992905259132385
+        },
+        "delta": {
+          "tiles": 16,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.40625
+        },
+        "wqkv": {
+          "tiles": 16,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.46026611328125,
+          "max_zeroed_nonzero_rate": 0.466064453125,
+          "max_input_amax": 0.09601591527462006
+        },
+        "nv": {
+          "tiles": 16,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0231781005859375,
+          "max_zeroed_nonzero_rate": 0.055419921875,
+          "max_input_amax": 0.3778533935546875
+        },
+        "delta_state": {
+          "tiles": 16,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.9373931884765625,
+          "max_zeroed_nonzero_rate": 0.957275390625,
+          "max_input_amax": 0.253570556640625
+        }
+      }
+    },
+    {
+      "name": "TND_initial_state",
+      "layout": "TND",
+      "seq_lens": [
+        65
+      ],
+      "heads": [
+        1,
+        1,
+        1
+      ],
+      "qv_multiplier": 1.0,
+      "initial_state": true,
+      "finite": true,
+      "op12_pass": true,
+      "upstream_strict_allclose": true,
+      "no_scale": {
+        "o_relative_l2": 0.059978336095809937,
+        "o_cosine": 0.9982430934906006,
+        "o_max_abs": 0.0011427728459239006,
+        "state_relative_l2": 0.06049518287181854,
+        "state_cosine": 0.9982077479362488,
+        "state_max_abs": 0.00021258695051074028
+      },
+      "tile_scaled": {
+        "o_relative_l2": 0.05788172408938408,
+        "o_cosine": 0.998418390750885,
+        "o_max_abs": 0.0018474161624908447,
+        "state_relative_l2": 0.04040456563234329,
+        "state_cosine": 0.9992119073867798,
+        "state_max_abs": 0.000185021897777915
+      },
+      "max_saturation_rate": 0.0,
+      "max_zeroed_nonzero_rate": 0.934326171875,
+      "quantization": {
+        "state": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.1104736328125,
+          "max_zeroed_nonzero_rate": 0.1448974609375,
+          "max_input_amax": 0.051177978515625
+        },
+        "a_inverse": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.225341796875,
+          "max_zeroed_nonzero_rate": 0.45068359375,
+          "max_input_amax": 0.9959006905555725
+        },
+        "delta": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0013427734375,
+          "max_zeroed_nonzero_rate": 0.00390625,
+          "max_input_amax": 0.37708449363708496
+        },
+        "wqkv": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.2266845703125,
+          "max_zeroed_nonzero_rate": 0.453369140625,
+          "max_input_amax": 0.06557982414960861
+        },
+        "nv": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.00732421875,
+          "max_zeroed_nonzero_rate": 0.010498046875,
+          "max_input_amax": 0.31304931640625
+        },
+        "delta_state": {
+          "tiles": 4,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.46905517578125,
+          "max_zeroed_nonzero_rate": 0.934326171875,
+          "max_input_amax": 0.11972808837890625
+        }
+      }
+    },
+    {
+      "name": "QKV_low_0p25",
+      "layout": "TND",
+      "seq_lens": [
+        64
+      ],
+      "heads": [
+        1,
+        1,
+        1
+      ],
+      "qv_multiplier": 0.25,
+      "initial_state": false,
+      "finite": true,
+      "op12_pass": true,
+      "upstream_strict_allclose": true,
+      "no_scale": {
+        "o_relative_l2": 0.19495217502117157,
+        "o_cosine": 0.9810361862182617,
+        "o_max_abs": 0.00011036048817913979,
+        "state_relative_l2": 0.060993824154138565,
+        "state_cosine": 0.9982634782791138,
+        "state_max_abs": 0.0007006325758993626
+      },
+      "tile_scaled": {
+        "o_relative_l2": 0.05882633104920387,
+        "o_cosine": 0.9982750415802002,
+        "o_max_abs": 5.5076758144423366e-05,
+        "state_relative_l2": 0.04027174040675163,
+        "state_cosine": 0.9991888999938965,
+        "state_max_abs": 0.0005796770565211773
+      },
+      "max_saturation_rate": 0.0,
+      "max_zeroed_nonzero_rate": 0.966064453125,
+      "quantization": {
+        "state": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.0
+        },
+        "a_inverse": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.455322265625,
+          "max_zeroed_nonzero_rate": 0.455322265625,
+          "max_input_amax": 0.9961525797843933
+        },
+        "delta": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.0859375
+        },
+        "wqkv": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.4755859375,
+          "max_zeroed_nonzero_rate": 0.4755859375,
+          "max_input_amax": 0.01561759877949953
+        },
+        "nv": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.1407470703125,
+          "max_zeroed_nonzero_rate": 0.142333984375,
+          "max_input_amax": 0.07944107055664062
+        },
+        "delta_state": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.9659423828125,
+          "max_zeroed_nonzero_rate": 0.966064453125,
+          "max_input_amax": 0.04021219536662102
+        }
+      }
+    },
+    {
+      "name": "QKV_high_4p0",
+      "layout": "TND",
+      "seq_lens": [
+        64
+      ],
+      "heads": [
+        1,
+        1,
+        1
+      ],
+      "qv_multiplier": 4.0,
+      "initial_state": false,
+      "finite": true,
+      "op12_pass": true,
+      "upstream_strict_allclose": false,
+      "no_scale": {
+        "o_relative_l2": 0.04249953851103783,
+        "o_cosine": 0.9990968704223633,
+        "o_max_abs": 0.012693643569946289,
+        "state_relative_l2": 0.05410198122262955,
+        "state_cosine": 0.9993751049041748,
+        "state_max_abs": 0.010497711598873138
+      },
+      "tile_scaled": {
+        "o_relative_l2": 0.05154048651456833,
+        "o_cosine": 0.998677134513855,
+        "o_max_abs": 0.016941532492637634,
+        "state_relative_l2": 0.04785649850964546,
+        "state_cosine": 0.9991981983184814,
+        "state_max_abs": 0.010145775973796844
+      },
+      "max_saturation_rate": 0.0,
+      "max_zeroed_nonzero_rate": 0.90087890625,
+      "quantization": {
+        "state": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 0.0
+        },
+        "a_inverse": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.454833984375,
+          "max_zeroed_nonzero_rate": 0.454833984375,
+          "max_input_amax": 0.9962930083274841
+        },
+        "delta": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.0,
+          "max_zeroed_nonzero_rate": 0.0,
+          "max_input_amax": 1.375
+        },
+        "wqkv": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.430419921875,
+          "max_zeroed_nonzero_rate": 0.430419921875,
+          "max_input_amax": 0.2456333190202713
+        },
+        "nv": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.006591796875,
+          "max_zeroed_nonzero_rate": 0.007080078125,
+          "max_input_amax": 1.3835296630859375
+        },
+        "delta_state": {
+          "tiles": 2,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.900634765625,
+          "max_zeroed_nonzero_rate": 0.90087890625,
+          "max_input_amax": 0.8073558807373047
+        }
+      }
+    },
+    {
+      "name": "TND_long_4096",
+      "layout": "TND",
+      "seq_lens": [
+        4096
+      ],
+      "heads": [
+        1,
+        1,
+        1
+      ],
+      "qv_multiplier": 1.0,
+      "initial_state": false,
+      "finite": true,
+      "op12_pass": true,
+      "upstream_strict_allclose": false,
+      "no_scale": {
+        "o_relative_l2": 0.06393817067146301,
+        "o_cosine": 0.9979539513587952,
+        "o_max_abs": 0.0022240581456571817,
+        "state_relative_l2": 0.037706710398197174,
+        "state_cosine": 0.9993094205856323,
+        "state_max_abs": 0.0015737712383270264
+      },
+      "tile_scaled": {
+        "o_relative_l2": 0.052208833396434784,
+        "o_cosine": 0.9986385107040405,
+        "o_max_abs": 0.003018522635102272,
+        "state_relative_l2": 0.03942503035068512,
+        "state_cosine": 0.9993196129798889,
+        "state_max_abs": 0.0018188618123531342
+      },
+      "max_saturation_rate": 0.0,
+      "max_zeroed_nonzero_rate": 0.983642578125,
+      "quantization": {
+        "state": {
+          "tiles": 128,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.14484310150146484,
+          "max_zeroed_nonzero_rate": 0.513671875,
+          "max_input_amax": 0.0792236328125
+        },
+        "a_inverse": {
+          "tiles": 128,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.4584007263183594,
+          "max_zeroed_nonzero_rate": 0.466552734375,
+          "max_input_amax": 0.9998077750205994
+        },
+        "delta": {
+          "tiles": 128,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.003826141357421875,
+          "max_zeroed_nonzero_rate": 0.007080078125,
+          "max_input_amax": 0.43750008940696716
+        },
+        "wqkv": {
+          "tiles": 128,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.4583015441894531,
+          "max_zeroed_nonzero_rate": 0.468017578125,
+          "max_input_amax": 0.11223806440830231
+        },
+        "nv": {
+          "tiles": 128,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.024618148803710938,
+          "max_zeroed_nonzero_rate": 0.0556640625,
+          "max_input_amax": 0.41033935546875
+        },
+        "delta_state": {
+          "tiles": 128,
+          "mean_saturation_rate": 0.0,
+          "max_saturation_rate": 0.0,
+          "mean_zeroed_nonzero_rate": 0.9318408966064453,
+          "max_zeroed_nonzero_rate": 0.983642578125,
+          "max_input_amax": 0.378570556640625
+        }
+      }
+    }
+  ],
+  "summary": {
+    "op12_passed": 12,
+    "total": 13,
+    "all_op12_passed": false,
+    "upstream_strict_passed": 4
+  }
+}

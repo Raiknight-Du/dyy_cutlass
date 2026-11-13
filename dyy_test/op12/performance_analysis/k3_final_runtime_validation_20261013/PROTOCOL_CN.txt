@@ -1,0 +1,13 @@
+K3 FINAL 第二轮：同一 CUBIN、Store 布局、独立 FINAL 斜率
+
+范围：固定原版提交 e77a4a0d276367895c3b50a642fd8f326c03fb72；B1/H16/S32768/D128/C4096，K3 FP32 state，grid32/block256。独立副本，不修改上游/旧证据/硬件假设。
+
+实验 A：一个运行时 Int32 参数选择 fixed-only=1、final-only=2、both=3，三者调用同一个已编译对象与 CUBIN。TMEM 读取不放在 Store 的条件分支内。循环 UPDATE、MMA、TMA、同步保持源码逻辑。运行时分支自身增加的开销不等同于原版。
+实验 B：在 FINAL 增加 32KiB SMEM 重排暂存和 compute-group barrier，把 TMEM 原分布重新排列成连续 warp vector Store。新增 SMEM 搬运/同步/寄存器与驻留必须记录；不能命名为零成本 Store 优化。
+实验 C：独立 FINAL helper 微基准，初始化只做一次；固定 rotating8 目标，R={16,32,64,128,256,512,1024,2048}，不含 MMA/TMA/partition 递推。首先用与 K3 相同 grid32；本结果是 helper 持续服务率，不是完整 K3 的阶段延迟。
+
+Event：20 warmup、100样本、3独立进程；完整 K3 同时保留 direct 和 graph_one_kernel 的交错配对结果。微基准 graph Event 测斜率，至少4个点，尾部相邻三点窗口斜率及跨轮斜率严格<1%，R²>=0.99；未通过则不发布稳定吞吐。工作量未收敛时扩至4096/8192；达到8192仍未通过则标记 RETEST_REQUIRED。
+GPU：三次空闲检查间隔30秒；临时1845MHz并监控频率，外部竞争作废，不终止其他任务，退出恢复默认频率。
+NCU：application replay、cache-control none、clock-control none；同 action 的动态指令/理论 sector footprint/局部访问/PC stall 为证据。不用 NCU replay 时延计算收益，不把采样比例换算成周期。
+正确性：与原版 fixed/final 对比；fixed-only final 留 sentinel；final-only fixed 的最后块来自原循环 UPDATE，仍比较全部 fixed。单独 helper 每个 rotating slot 与输入一致。
+端点：Event 包含 kernel 完成及输出设备可见，不声称包含物理 HBM 写回。HOT 前史和固定 working set，不声称自然完整 CP 缓存环境。

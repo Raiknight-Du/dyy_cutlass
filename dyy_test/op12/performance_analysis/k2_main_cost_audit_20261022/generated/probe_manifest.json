@@ -1,0 +1,56 @@
+{
+  "source": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py",
+  "source_sha256": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+  "generated_sha256": "7729d76a7439a5c1ea2f5c74e084d7c1c2b6f9159d03980b4a3cf5d2cd624c67",
+  "mapping": [
+    {
+      "mode": "B1",
+      "role": "run_compute_group_0",
+      "source_begin": 806,
+      "source_end": 844,
+      "endpoints": "before first loop wait / after final loop release, before workspace store",
+      "period": 0
+    },
+    {
+      "mode": "B1",
+      "role": "run_compute_group_1",
+      "source_begin": 878,
+      "source_end": 913,
+      "endpoints": "before first loop wait / after final loop release, before workspace store",
+      "period": 0
+    },
+    {
+      "mode": "P1",
+      "role": "run_compute_group_0",
+      "source_begin": 806,
+      "source_end": 844,
+      "endpoints": "before first loop wait / after final loop release, before workspace store",
+      "period": 128
+    },
+    {
+      "mode": "P1",
+      "role": "run_compute_group_1",
+      "source_begin": 878,
+      "source_end": 913,
+      "endpoints": "before first loop wait / after final loop release, before workspace store",
+      "period": 128
+    },
+    {
+      "mode": "P8",
+      "role": "run_compute_group_0",
+      "source_begin": 806,
+      "source_end": 844,
+      "endpoints": "before first loop wait / after final loop release, before workspace store",
+      "period": 16
+    },
+    {
+      "mode": "P8",
+      "role": "run_compute_group_1",
+      "source_begin": 878,
+      "source_end": 913,
+      "endpoints": "before first loop wait / after final loop release, before workspace store",
+      "period": 16
+    }
+  ],
+  "local_bias_bound": "UNKNOWN"
+}

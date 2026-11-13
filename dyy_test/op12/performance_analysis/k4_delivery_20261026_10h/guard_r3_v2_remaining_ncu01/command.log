@@ -1,0 +1,14 @@
+{"status": "SUPERVISED_COMMAND_COMPLETE", "returncode": 0, "model_enabled": false}
+R3 S_G1_LOAD NCU_COMPLETE
+{"status": "SUPERVISED_COMMAND_COMPLETE", "returncode": 0, "model_enabled": false}
+R3 S_G1_CONTROL NCU_COMPLETE
+{"status": "SUPERVISED_COMMAND_COMPLETE", "returncode": 0, "model_enabled": false}
+R3 S_G128_CONTROL NCU_COMPLETE
+{"status": "SUPERVISED_COMMAND_COMPLETE", "returncode": 0, "model_enabled": false}
+R3 V_G1_LOAD NCU_COMPLETE
+{"status": "SUPERVISED_COMMAND_COMPLETE", "returncode": 0, "model_enabled": false}
+R3 V_G1_CONTROL NCU_COMPLETE
+{"status": "SUPERVISED_COMMAND_COMPLETE", "returncode": 0, "model_enabled": false}
+R3 V_G128_LOAD NCU_COMPLETE
+{"status": "SUPERVISED_COMMAND_COMPLETE", "returncode": 0, "model_enabled": false}
+R3 V_G128_CONTROL NCU_COMPLETE

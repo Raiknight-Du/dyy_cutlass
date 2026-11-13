@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "archive_sha256": "4ca4dec6361a5d88d36f0a78e08524f065c89092acdc052d6add7a255d5aa4ee",
+  "remote_archive_sha256": "4ca4dec6361a5d88d36f0a78e08524f065c89092acdc052d6add7a255d5aa4ee",
+  "verified_evidence_files": 4681,
+  "verified_bytes": 317667367,
+  "mirrored_short_files": 233,
+  "binary_artifacts": "All PTX/SASS/CUBIN retained in archive; long names not extracted to Windows",
+  "mirror_root": "E:\\Users\\27194\\Documents\\Cutlass\\op12_flashinfer_gdn_b200_analysis_20260825\\k3_final_runtime_validation_20261013\\b200_evidence",
+  "formal_analysis": [
+    "analysis_primary_batch_v1",
+    "analysis_padded_final_v1"
+  ]
+}

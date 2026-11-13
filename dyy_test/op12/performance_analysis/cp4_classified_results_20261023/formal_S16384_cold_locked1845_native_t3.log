@@ -1,0 +1,5 @@
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_classified_results_20261023/runs/S16384_cold_locked1845_native_t3/chain.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+{"S": 16384, "cache": "cold", "clock": "locked1845", "mode": "native", "trial": 3, "CP_Event_us": {"n": 300, "median": 229.37600314617157, "mean": 229.02400071422258, "p5": 227.29599475860596, "p95": 231.4240038394928, "cv_percent": 0.5758276786537139}, "event_scope": "complete K1-K4 only, each eviction excluded; no internal kernel Events", "model_enabled": false}

@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETED_PENDING_REVIEW",
+  "command": [
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_l2_competition_20261024_3_run01/clock_lease.py",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_round01.py",
+    "--phase",
+    "screen",
+    "--out",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/screen_S02",
+    "--layout",
+    "S",
+    "--compile-approved",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/compile_S03/COMPILE_AUDIT.json",
+    "--trial",
+    "0"
+  ],
+  "returncode": 0,
+  "invalid_observations": [],
+  "automatic_clock_change": false,
+  "model_enabled": false
+}

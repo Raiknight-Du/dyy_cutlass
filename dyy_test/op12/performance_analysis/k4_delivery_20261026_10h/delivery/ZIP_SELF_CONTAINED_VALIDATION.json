@@ -1,0 +1,12 @@
+{
+  "status": "DELIVERED_ZIP_SELF_CONTAINED_53_TASKS_PASS",
+  "created_UTC": "2026-10-26T01:05:10.305409+00:00",
+  "ZIP": "OP12_K4_ANALYSIS_DELIVERY_20261026.zip",
+  "ZIP_SHA256": "bf5e08bcf04c3326a2ecc7ddd52e26a3b59e142591c941c7d714879bfda2fb91",
+  "payload_hashes_checked": 8912,
+  "CPU_tasks": 53,
+  "result_SHA256": "2b7d02921c186a7eac40893d1253ff574631994847189b76cfa384248dd45340",
+  "GPU_started": false,
+  "scope": "Extracted actual delivered ZIP, validated all payload hashes, then ran all53 CPU tasks using only packaged inputs.",
+  "model_enabled": false
+}

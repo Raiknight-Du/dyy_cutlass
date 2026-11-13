@@ -1,0 +1,30 @@
+{
+  "review_type": "lead_static_review_of_actual_screen_artifacts_not_model_approval",
+  "hashes": {
+    "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+    "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4",
+    "B1": "ecce1de3a3168fa6ae7ef1f39e3f074438219c25bbbdcee92072fbc11360909f",
+    "V1": "1707307b8ad3244e18d3a2b31095182baae0ab370fe9c2be615426a66c2fe433",
+    "P0": "1c2b07215d15d3f2b3f3208e9d44e03af31c866fd21e5ae06d629d4c7dfe1523",
+    "PV": "b499a8b8af4c35ed08fd99e408e592757652cd8dbf66585a228be283a4710078"
+  },
+  "allowed": {"B0": true, "V0": true, "B1": true, "V1": true, "P0": true, "PV": true},
+  "review": {
+    "B0_P0_B1_reproduce_historical_hashes": true,
+    "registers_all": 168,
+    "stack_all": 24,
+    "V0_vs_B0_native_opcode_changes": "only fixed-state 128 LDG.E.NA -> 32 LDG.E.NA.128, associated address calculation changes; no math/transfer/synchronization work removed",
+    "B1_vs_B0_and_V1_vs_V0": "normalized full SASS identical and resources identical; empty-interface Event series waived per contract",
+    "P0_vs_B0_PV_vs_V0": "ordered native opcode sequence unchanged, no added local/stack; same caller-side INIT markers and original fence/BAR/arrive remain",
+    "P0_clock_PC": ["0x59e0", "0x6e20"],
+    "PV_clock_PC": ["0x59e0", "0x6820"],
+    "clock_begin": "after TMEM wait/retrieve before initial-state method branch",
+    "clock_end": "after state STTM, original FENCE.VIEW.ASYNC.T, BAR.SYNC.DEFER_BLOCKING and leader arrive/reconvergence",
+    "probe_scope": "CTA16 W4 lane0 only, immediate GMEM fixed-slot record; no new synchronization",
+    "correctness": "all 6 roles x 4 input buffers output and final state bitwise equal",
+    "candidates": 6,
+    "new_hashes": 3
+  },
+  "local_bias_bound_cycles": null,
+  "model_enabled": false
+}

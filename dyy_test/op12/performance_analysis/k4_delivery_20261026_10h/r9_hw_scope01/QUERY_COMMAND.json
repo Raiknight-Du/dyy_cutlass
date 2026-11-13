@@ -1,0 +1,11 @@
+[
+  "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+  "--query-metrics",
+  "--chips",
+  "gb100",
+  "--query-metrics-mode",
+  "suffix",
+  "--metrics",
+  "l1tex__cycles_elapsed",
+  "--csv"
+]

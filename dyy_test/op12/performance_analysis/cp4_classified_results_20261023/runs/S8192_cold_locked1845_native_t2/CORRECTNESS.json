@@ -1,0 +1,26 @@
+[
+  {
+    "buffer": 0,
+    "O_exact": true,
+    "state_exact": true,
+    "finite": true
+  },
+  {
+    "buffer": 1,
+    "O_exact": true,
+    "state_exact": true,
+    "finite": true
+  },
+  {
+    "buffer": 2,
+    "O_exact": true,
+    "state_exact": true,
+    "finite": true
+  },
+  {
+    "buffer": 3,
+    "O_exact": true,
+    "state_exact": true,
+    "finite": true
+  }
+]

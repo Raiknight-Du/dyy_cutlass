@@ -1,0 +1,114 @@
+[
+  {
+    "group_id": 0,
+    "group_name": "group_0000",
+    "source": "group_0000.cu",
+    "config_count": 90,
+    "first_variant": "S1_M128_N128_K256_E128x128_C1x1x1",
+    "last_variant": "S1_M128_N128_K256_E64x8_C4x4x1"
+  },
+  {
+    "group_id": 1,
+    "group_name": "group_0001",
+    "source": "group_0001.cu",
+    "config_count": 90,
+    "first_variant": "S1_M128_N128_K512_E128x128_C1x1x1",
+    "last_variant": "S1_M128_N128_K512_E64x8_C4x4x1"
+  },
+  {
+    "group_id": 2,
+    "group_name": "group_0002",
+    "source": "group_0002.cu",
+    "config_count": 90,
+    "first_variant": "S1_M128_N192_K256_E128x16_C1x1x1",
+    "last_variant": "S1_M128_N192_K256_E64x192_C4x4x1"
+  },
+  {
+    "group_id": 3,
+    "group_name": "group_0003",
+    "source": "group_0003.cu",
+    "config_count": 90,
+    "first_variant": "S1_M128_N192_K256_E64x24_C1x1x1",
+    "last_variant": "S1_M128_N192_K512_E128x32_C4x4x1"
+  },
+  {
+    "group_id": 4,
+    "group_name": "group_0004",
+    "source": "group_0004.cu",
+    "config_count": 90,
+    "first_variant": "S1_M128_N192_K512_E128x48_C1x1x1",
+    "last_variant": "S1_M128_N192_K512_E64x64_C4x4x1"
+  },
+  {
+    "group_id": 5,
+    "group_name": "group_0005",
+    "source": "group_0005.cu",
+    "config_count": 72,
+    "first_variant": "S1_M128_N192_K512_E64x8_C1x1x1",
+    "last_variant": "S1_M128_N256_K256_E64x128_C4x4x1"
+  },
+  {
+    "group_id": 6,
+    "group_name": "group_0006",
+    "source": "group_0006.cu",
+    "config_count": 54,
+    "first_variant": "S1_M128_N256_K256_E64x256_C1x1x1",
+    "last_variant": "S1_M128_N256_K512_E128x64_C4x4x1"
+  },
+  {
+    "group_id": 7,
+    "group_name": "group_0007",
+    "source": "group_0007.cu",
+    "config_count": 54,
+    "first_variant": "S1_M128_N256_K512_E64x128_C1x1x1",
+    "last_variant": "S2_M256_N128_K256_E128x32_C4x4x1"
+  },
+  {
+    "group_id": 8,
+    "group_name": "group_0008",
+    "source": "group_0008.cu",
+    "config_count": 90,
+    "first_variant": "S2_M256_N128_K256_E128x64_C2x1x1",
+    "last_variant": "S2_M256_N128_K512_E64x32_C4x4x1"
+  },
+  {
+    "group_id": 9,
+    "group_name": "group_0009",
+    "source": "group_0009.cu",
+    "config_count": 90,
+    "first_variant": "S2_M256_N128_K512_E64x64_C2x1x1",
+    "last_variant": "S2_M256_N192_K256_E64x48_C4x4x1"
+  },
+  {
+    "group_id": 10,
+    "group_name": "group_0010",
+    "source": "group_0010.cu",
+    "config_count": 90,
+    "first_variant": "S2_M256_N192_K256_E64x64_C2x1x1",
+    "last_variant": "S2_M256_N192_K512_E64x32_C4x4x1"
+  },
+  {
+    "group_id": 11,
+    "group_name": "group_0011",
+    "source": "group_0011.cu",
+    "config_count": 72,
+    "first_variant": "S2_M256_N192_K512_E64x48_C2x1x1",
+    "last_variant": "S2_M256_N256_K256_E64x32_C4x4x1"
+  },
+  {
+    "group_id": 12,
+    "group_name": "group_0012",
+    "source": "group_0012.cu",
+    "config_count": 48,
+    "first_variant": "S2_M256_N256_K256_E64x64_C2x1x1",
+    "last_variant": "S2_M256_N256_K512_Eauto_C4x4x1"
+  },
+  {
+    "group_id": 13,
+    "group_name": "group_0013",
+    "source": "group_0013.cu",
+    "config_count": 60,
+    "first_variant": "S1_M128_N128_K256_Eauto_C1x1x1",
+    "last_variant": "S2_M256_N256_K256_Eauto_C4x4x1"
+  }
+]

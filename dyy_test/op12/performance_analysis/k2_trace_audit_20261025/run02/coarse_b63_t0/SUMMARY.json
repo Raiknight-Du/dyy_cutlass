@@ -1,0 +1,9 @@
+{
+  "records": 12800,
+  "event_rows": 1600,
+  "sample_block": 63,
+  "correctness_exact": true,
+  "MN_workspace_correctness_exact": true,
+  "model_enabled": false,
+  "local_bias_bound": null
+}

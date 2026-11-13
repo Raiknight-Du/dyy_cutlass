@@ -1,0 +1,16 @@
+{
+  "status": "STOPPED_EDGE_TYPE_BINDING_ASSERT_BEFORE_GRAPH_INSTANTIATE_REPLAY",
+  "samples": 0,
+  "graph_replays": 0,
+  "captured_DOTs": 1,
+  "node_audit_JSONs": 0,
+  "direct_lazy_invocations": 1,
+  "reported_edge_types": [
+    36,
+    0
+  ],
+  "full_original_tuple_preserved": false,
+  "kernel_params_gate_reached": false,
+  "kernel_changed": false,
+  "model_enabled": false
+}

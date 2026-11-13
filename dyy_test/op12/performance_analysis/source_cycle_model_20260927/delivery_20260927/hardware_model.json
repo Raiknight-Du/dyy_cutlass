@@ -1,0 +1,585 @@
+{
+  "schema_version": 1,
+  "model_id": "B200_148SM_SOURCE_A_20260927",
+  "status": "SCENARIO_A_CONSTANTS_APPROVED_BY_LEAD; LEAD_OWNS_FINAL_SOURCE_AND_GRAPH_FREEZE",
+  "timing_evidence_inspected": false,
+  "prediction_type": "source_ordered_ideal_resource_scenario_with_symbolic_tails",
+  "strict_hardware_cycle_prediction": false,
+  "cycle_rounding": "ceil(demand/rate) per source node or homogeneous batch; zero demand gives zero",
+  "source_identity": {
+    "classification": "SOURCE FACT",
+    "commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+    "tree": "../ablation_20260908/source_original",
+    "verification": "Lead verified pinned clean tree; main source SHA matches clean B200 clone"
+  },
+  "device_configuration": {
+    "enabled_sms": {
+      "value": 148,
+      "unit": "SM/GPU",
+      "classification": "SOURCE FACT / DEVICE METADATA",
+      "evidence": "Supplied by lead from target device metadata; exact evidence path to be cited by lead"
+    },
+    "reference_sm_clock": {
+      "value": 1965000000,
+      "unit": "Hz",
+      "classification": "SOURCE FACT / DEVICE METADATA",
+      "evidence": "1965 MHz supplied by lead from device metadata; not derived from target timing"
+    },
+    "workload_isolation": {
+      "value": true,
+      "classification": "MODELING ASSUMPTION",
+      "detail": "Full GPU, no co-running work, no MIG partition"
+    }
+  },
+  "official_peaks": {
+    "dense_fp16_bf16": {
+      "value": 2250000000000000,
+      "unit": "FLOP/s/GPU",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "nvidia_blackwell_datasheet",
+      "derivation": "4.5e15 sparse divided by 2"
+    },
+    "dense_tf32": {
+      "value": 1100000000000000,
+      "unit": "FLOP/s/GPU",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "nvidia_blackwell_datasheet",
+      "derivation": "2.2e15 sparse divided by 2; published rounded"
+    },
+    "fp32": {
+      "value": 75000000000000,
+      "unit": "FLOP/s/GPU",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "nvidia_blackwell_datasheet"
+    },
+    "hbm_bandwidth": {
+      "value": 7700000000000,
+      "unit": "byte/s/GPU",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "nvidia_blackwell_datasheet"
+    },
+    "hbm_capacity": {
+      "value": 180000000000,
+      "unit": "byte/GPU",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "nvidia_blackwell_datasheet"
+    }
+  },
+  "official_capacity_and_architecture": {
+    "warps_per_sm": {
+      "value": 64,
+      "unit": "warp/SM",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "blackwell_tuning_guide_12_9_1"
+    },
+    "ctas_per_sm": {
+      "value": 32,
+      "unit": "CTA/SM",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "blackwell_tuning_guide_12_9_1"
+    },
+    "registers_per_sm": {
+      "value": 65536,
+      "unit": "32-bit register/SM",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "blackwell_tuning_guide_12_9_1"
+    },
+    "max_registers_per_thread": {
+      "value": 255,
+      "unit": "32-bit register/thread",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "blackwell_tuning_guide_12_9_1"
+    },
+    "shared_memory_max": {
+      "value": 233472,
+      "unit": "byte/SM",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "blackwell_tuning_guide_12_9_1"
+    },
+    "addressable_shared_memory_per_cta": {
+      "value": 232448,
+      "unit": "byte/CTA",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "blackwell_tuning_guide_12_9_1"
+    },
+    "cuda_shared_reservation_per_cta": {
+      "value": 1024,
+      "unit": "byte/CTA",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "blackwell_tuning_guide_12_9_1"
+    },
+    "unified_l1_shared_capacity": {
+      "value": 262144,
+      "unit": "byte/SM",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "cuda_programming_guide_12_9_1"
+    },
+    "fp32_cores_per_sm": {
+      "value": 128,
+      "unit": "core/SM",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "cuda_programming_guide_12_9_1"
+    },
+    "tensor_cores_per_sm": {
+      "value": 4,
+      "unit": "core/SM",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "cuda_programming_guide_12_9_1"
+    },
+    "special_function_units_per_sm": {
+      "value": 16,
+      "unit": "unit/SM",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "cuda_programming_guide_12_9_1"
+    },
+    "warp_schedulers_per_sm": {
+      "value": 4,
+      "unit": "scheduler/SM",
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "cuda_programming_guide_12_9_1"
+    },
+    "tmem_cta_address_view": {
+      "rows": 128,
+      "columns": 512,
+      "bits_per_cell": 32,
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "ptx_isa_8_8",
+      "caution": "CTA address view is not by itself proof of a 512-column physical SM residency cap"
+    },
+    "tmem_allocation": {
+      "unit_columns": 32,
+      "valid_columns": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "classification": "OFFICIAL HARDWARE FACT",
+      "source": "ptx_isa_8_8"
+    }
+  },
+  "scenario_a_rates": {
+    "tcgen05_fp16_bf16": {
+      "value": 7736.744377965752,
+      "unit": "FLOP/(SM reference cycle)",
+      "classification": "MODELING ASSUMPTION",
+      "derived_from": "official_peaks.dense_fp16_bf16/(enabled_sms*reference_sm_clock)",
+      "eta_shape": 1
+    },
+    "tcgen05_tf32": {
+      "value": 3782.408362561034,
+      "unit": "FLOP/(SM reference cycle)",
+      "classification": "MODELING ASSUMPTION",
+      "derived_from": "official_peaks.dense_tf32/(enabled_sms*reference_sm_clock)",
+      "eta_shape": 1
+    },
+    "fp32_peak_equivalent": {
+      "value": 257.89147926552505,
+      "unit": "FLOP/(SM reference cycle)",
+      "classification": "MODELING ASSUMPTION"
+    },
+    "fp32_fma_result_peak_equivalent": {
+      "value": 128.94573963276252,
+      "unit": "FMA result/(SM reference cycle)",
+      "classification": "MODELING ASSUMPTION"
+    },
+    "scalar_fp32": {
+      "value": 128,
+      "unit": "scalar result/(SM reference cycle)",
+      "classification": "MODELING ASSUMPTION",
+      "caution": "FMA is one result and two FLOPs; generic expression is not proven one hardware operation"
+    },
+    "convert": {
+      "value": 64,
+      "unit": "scalar converted element/(SM reference cycle)",
+      "classification": "MODELING ASSUMPTION",
+      "caution": "Not official universal conversion rate; distinguish scalar/packed/source expressions"
+    },
+    "smem": {
+      "value": 128,
+      "unit": "byte/(SM reference cycle)",
+      "classification": "MODELING ASSUMPTION",
+      "scope": "aggregated across resident CTAs"
+    },
+    "tmem": {
+      "value": 512,
+      "unit": "byte/(SM reference cycle)",
+      "classification": "MODELING ASSUMPTION",
+      "scope": "explicit load/store/copy traffic aggregated across resident CTAs"
+    },
+    "hbm_gpu": {
+      "value": 3918.5750636132316,
+      "unit": "byte/(GPU reference cycle)",
+      "classification": "MODELING ASSUMPTION",
+      "scope": "single globally shared GPU resource"
+    },
+    "hbm_equal_share_sm": {
+      "value": 26.47685853792724,
+      "unit": "byte/(SM reference cycle)",
+      "classification": "MODELING ASSUMPTION",
+      "scope": "optional conservative allocation policy, resident CTAs share it"
+    },
+    "warp_issue": {
+      "value": 4,
+      "unit": "warp instruction/(SM reference cycle)",
+      "classification": "MODELING ASSUMPTION",
+      "derived_from": "four official warp schedulers; assumes ideal issue opportunity every reference cycle"
+    },
+    "warp_hmma_fp16_bf16": {
+      "value": 7736.744377965752,
+      "unit": "FLOP/(SM reference cycle)",
+      "classification": "MODELING ASSUMPTION",
+      "rho_hmma": 1,
+      "caution": "optimistic equality to dense tensor scenario, no official instruction-path equality proven"
+    },
+    "tma_engine": {
+      "value": null,
+      "unit": "byte/(SM reference cycle)",
+      "classification": "UNKNOWN",
+      "numeric_extra_service_cost": 0,
+      "scope": "HBM/SMEM demands already charged; independent TMA engine and response terms symbolic"
+    },
+    "sfu_shuffle_barrier_extra": {
+      "value": null,
+      "classification": "UNKNOWN",
+      "numeric_extra_service_cost": 0,
+      "caution": "Zero is ideal omission, not a claim of free hardware operations"
+    }
+  },
+  "unknown_parameters": [
+    {
+      "name": "L_TMA_issue",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_TMA_engine",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_TMA_response",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "Q_TMA_outstanding",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_MMA_issue",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_MMA_response",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "Q_MMA_outstanding",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_SMEM_response",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_TMEM_response",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_HBM_response",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_FMA_dep",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_CVT_dep",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_SFU_dep",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "R_SFU",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "R_shuffle",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "R_reduce",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_barrier",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_mbarrier",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_fence",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_commit",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_alloc",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_dealloc",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_CTA_dispatch",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_launch",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    },
+    {
+      "name": "L_final_store_visibility",
+      "classification": "UNKNOWN / MODELING PARAMETER",
+      "empirical_range": null,
+      "domain": "nonnegative; capacities positive integer if applicable",
+      "numeric_ideal_extra_cost": 0,
+      "caution": "No fabricated finite latency range; zero tails preserve dependency edges"
+    }
+  ],
+  "efficiencies": {
+    "rho_hmma": {
+      "main": 1,
+      "domain": "0<rho<=1 chosen modeling domain",
+      "classification": "MODELING ASSUMPTION",
+      "empirical_range": null
+    },
+    "eta_shape": {
+      "main": 1,
+      "optional_half_datapath_sensitivity": 0.5,
+      "classification": "MODELING ASSUMPTION",
+      "official_basis": "PTX M64,group1,non-ws uses half datapath; exact 0.5 throughput is inference"
+    },
+    "gamma_smem": {
+      "main": 1,
+      "domain": "gamma>=1",
+      "classification": "MODELING ASSUMPTION",
+      "requirement": "Source layout analysis or explicitly labeled sensitivity"
+    }
+  },
+  "formulas": {
+    "dense_mma_flops": "2*M*N*K per issued full CTA/CTA-pair/warp tile; include executed padding",
+    "mma_service": "ceil(F/(eta_shape*R_dtype))",
+    "cvt_service": "ceil(converted_scalar_elements/R_convert)",
+    "scalar_service": "ceil(scalar_results/R_scalar); FMA counts as one result",
+    "source_node_service": "ceil(demand/resource_rate), zero work -> zero",
+    "source_node_consumer_ready": "finish_service(node)+symbolic_response_tail(node)",
+    "hbm_global_floor": "ceil(D_HBM_total/(BHBM/f))",
+    "hbm_equal_share_sm_floor": "ceil(D_HBM_SM/(BHBM/(S*f)))",
+    "resource_residency_upper": "min(32,floor(64/ceil(T/32)),floor(H_carveout/H_alloc),floor(65536/G_alloc),other_launch_constraints)",
+    "recurrence_interval": "max_recurrence(cycle_latency/distance)",
+    "periodic_interval": "I >= max(max_resource(d_iteration/resource_rate),max_recurrence(cycle_latency/distance))",
+    "pipeline_cycles": "W+(n-1)*I+D; use source graph for short pipelines",
+    "simple_inflight_latency_bound": "I>=L/k for a stated simple periodic stream with k usable slots",
+    "k1_per_sm_relaxed_floor": "max(ceil(q_i/b)*L_CTA_isolated,max_r ceil(q_i*d_r/R_r))",
+    "k1_gpu_relaxed_floor": "max(max_i C_i,ceil(N*d_HBM/Bgpu))",
+    "k1_cohort_phase_if_overlap_permitted": "max_r ceil(k*d_phase_r/R_r); source-sequential resource nodes must instead be summed in graph order",
+    "k1_cohort_cycles": "a*C_batch(b)+(u>0 ? C_batch(u):0), q_i=a*b+u",
+    "k1_event_schedule": "Admit <=b CTAs per SM; schedule replicated ready nodes against shared SM resources and the one global HBM resource; release residency only at source exit"
+  },
+  "accounting_policy": {
+    "no_mandatory_hbm_sm_coverage_scaling": true,
+    "hbm_traffic_requires_cache_scenario": true,
+    "distinct_demands": [
+      "global_logical",
+      "hbm_physical_under_stated_cache_scenario",
+      "smem_explicit",
+      "tmem_explicit",
+      "tensor_internal_operand_accumulator_unknown"
+    ],
+    "do_not_charge_tensor_internal_traffic_against_generic_ports_without_model": true,
+    "cta_pair_work": "attribute each SM its work; full instruction counted once globally",
+    "warp_mma_work": "one logical warp-collective instruction represents full tile; no x32",
+    "rounding": "source nodes/batches, not each scalar operation",
+    "overlap": "only where source dependencies and reuse ordering permit",
+    "balanced_cta_assignment": "assumption, not hardware guarantee",
+    "unknown_barrier_numeric_zero": "Preserve all source synchronization edges"
+  },
+  "residency_policy": {
+    "allowed_evidence": [
+      "source launch threads/shared-memory request/carveout",
+      "ptxas or static cubin register/shared-memory allocation",
+      "untimed exact-kernel occupancy query",
+      "documented cluster/permit restrictions"
+    ],
+    "forbidden_before_freeze": [
+      "target elapsed-cycle/time fitting",
+      "target achieved occupancy/throughput/stall profiling"
+    ],
+    "missing_compiler_metadata": "report b_resource_upper and bracket b, not actual residency",
+    "tmem_cap": "do not assert physical SM column cap from per-CTA address view"
+  },
+  "alternatives_not_main": {
+    "old_fp16_rate": {
+      "value": 8192,
+      "unit": "FLOP/(SM-cycle)",
+      "classification": "MODELING ASSUMPTION",
+      "implied_gpu_flop_s": 2382397440000000,
+      "ratio_to_main_peak": 1.0588433066666667
+    },
+    "old_tf32_rate": {
+      "value": 4096,
+      "unit": "FLOP/(SM-cycle)",
+      "classification": "MODELING ASSUMPTION",
+      "implied_gpu_flop_s": 1191198720000000,
+      "ratio_to_main_peak": 1.0829079272727273
+    },
+    "old_gmem_per_sm": {
+      "value": 32,
+      "unit": "byte/(SM-cycle)",
+      "classification": "MODELING ASSUMPTION",
+      "implied_gpu_byte_s": 9306240000000
+    },
+    "old_hbm_gpu": {
+      "value": 8000000000000,
+      "unit": "byte/s/GPU",
+      "classification": "MODELING ASSUMPTION / ALTERNATE OLD SPECIFICATION",
+      "ratio_to_main": 1.0389610389610389
+    }
+  },
+  "freeze_policy": "Lead records model ID/constants, source counts/dependency graph, traffic scenario, residency bracket and scheduling policy before timing evidence. Later revisions preserve old model and disclose independent reason.",
+  "sources": {
+    "nvidia_blackwell_datasheet": {
+      "title": "NVIDIA Blackwell datasheet (October 2025)",
+      "url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/y441155802qub41q118b2852i557jem5.pdf",
+      "locator": "Printed page 8, HGX B200 column and sparsity footnote",
+      "type": "OFFICIAL HARDWARE FACT"
+    },
+    "cuda_programming_guide_12_9_1": {
+      "title": "CUDA C++ Programming Guide 12.9.1",
+      "url": "https://docs.nvidia.com/cuda/archive/12.9.1/cuda-c-programming-guide/index.html",
+      "locator": "20.9.1 Architecture; 8.4.1 Arithmetic Instructions; Table 7",
+      "type": "OFFICIAL HARDWARE FACT"
+    },
+    "blackwell_tuning_guide_12_9_1": {
+      "title": "NVIDIA Blackwell Tuning Guide 12.9.1",
+      "url": "https://docs.nvidia.com/cuda/archive/12.9.1/blackwell-tuning-guide/index.html",
+      "locator": "Occupancy; Unified Shared Memory/L1/Texture Cache",
+      "type": "OFFICIAL HARDWARE FACT"
+    },
+    "ptx_isa_8_8": {
+      "title": "PTX ISA 8.8, CUDA 12.9.1 archive",
+      "url": "https://docs.nvidia.com/cuda/archive/12.9.1/parallel-thread-execution/index.html",
+      "locator": "9.7.16 Fifth-generation TensorCore instructions; Issue Granularity; Data Path Layout Organization; Allocation; Memory Consistency",
+      "type": "OFFICIAL HARDWARE FACT"
+    },
+    "cutlass_tmem_primitives": {
+      "title": "NVIDIA CUTLASS primitives",
+      "url": "https://docs.nvidia.com/cutlass/latest/media/docs/pythonDSL/primitives.html",
+      "locator": "tcgen05_relinquish_alloc_permit: SM-level TMEM allocation permit",
+      "type": "OFFICIAL HARDWARE FACT"
+    }
+  }
+}

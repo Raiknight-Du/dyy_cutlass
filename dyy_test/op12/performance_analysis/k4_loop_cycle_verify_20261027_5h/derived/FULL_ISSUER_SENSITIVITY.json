@@ -1,0 +1,94 @@
+[
+  {
+    "hybrid": true,
+    "bank_TC": true,
+    "QK_math_rate": 8192,
+    "asynchronous": true,
+    "full_issuer": true,
+    "smem_lag": 0,
+    "tmem_lag": {
+      "LDTM": 0
+    },
+    "mean_cycle": 2501.0,
+    "min_cycle": 2501.0,
+    "max_cycle": 2501.0,
+    "per_block_known_service_sum_CG0": 1753,
+    "per_block_known_service_sum_CG1": 2589,
+    "terminal": 320567.0,
+    "resource_work": {
+      "ISSUE": 188.0,
+      "SMEM_Read": 1384.0,
+      "TC": 1152.0,
+      "LSU_Data": 872.0,
+      "ALU_PACK": 1016.0,
+      "TMEM": 1120.0,
+      "FP": 614.0,
+      "SFU": 400.0,
+      "HALF": 132.0,
+      "SMEM_Write": 256.0
+    },
+    "model_enabled": false
+  },
+  {
+    "hybrid": true,
+    "bank_TC": true,
+    "QK_math_rate": 8192,
+    "asynchronous": true,
+    "full_issuer": true,
+    "smem_lag": 0,
+    "tmem_lag": {
+      "32dp": 29,
+      "16dp": 69
+    },
+    "mean_cycle": 2963.0,
+    "min_cycle": 2963.0,
+    "max_cycle": 2963.0,
+    "per_block_known_service_sum_CG0": 1753,
+    "per_block_known_service_sum_CG1": 2589,
+    "terminal": 379643.0,
+    "resource_work": {
+      "ISSUE": 188.0,
+      "SMEM_Read": 1384.0,
+      "TC": 1152.0,
+      "LSU_Data": 872.0,
+      "ALU_PACK": 1016.0,
+      "TMEM": 1120.0,
+      "FP": 614.0,
+      "SFU": 400.0,
+      "HALF": 132.0,
+      "SMEM_Write": 256.0
+    },
+    "model_enabled": false
+  },
+  {
+    "hybrid": true,
+    "bank_TC": true,
+    "QK_math_rate": 8192,
+    "asynchronous": true,
+    "full_issuer": true,
+    "smem_lag": 0,
+    "tmem_lag": {
+      "32dp": 45,
+      "16dp": 85
+    },
+    "mean_cycle": 3059.0,
+    "min_cycle": 3059.0,
+    "max_cycle": 3059.0,
+    "per_block_known_service_sum_CG0": 1753,
+    "per_block_known_service_sum_CG1": 2589,
+    "terminal": 391947.0,
+    "resource_work": {
+      "ISSUE": 188.0,
+      "SMEM_Read": 1384.0,
+      "TC": 1152.0,
+      "LSU_Data": 872.0,
+      "ALU_PACK": 1016.0,
+      "TMEM": 1120.0,
+      "FP": 614.0,
+      "SFU": 400.0,
+      "HALF": 132.0,
+      "SMEM_Write": 256.0
+    },
+    "model_enabled": false
+  }
+]

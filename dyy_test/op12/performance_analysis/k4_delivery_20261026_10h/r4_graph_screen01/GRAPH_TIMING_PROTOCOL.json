@@ -1,0 +1,9 @@
+{
+  "direct_lazy_invocations": 1,
+  "direct_lazy_mode": "CONTROL",
+  "direct_lazy_N": 128,
+  "graph_replays_warmup_per_mode_per_N": 20,
+  "external_events": true,
+  "kernel_changed": false,
+  "model_enabled": false
+}

@@ -1,0 +1,171 @@
+{
+  "input": "E:\\Users\\27194\\Documents\\Cutlass\\op12_native_cuda\\OP12_NATIVE_CUDA_GDN_B200_IMPLEMENTATION_PERFORMANCE_ANALYSIS_CN.docx",
+  "fonts_by_char_count": {
+    "Calibri": 8573,
+    "Consolas": 429
+  },
+  "direct_run_formatting_runs": 360,
+  "direct_paragraph_formatting_paragraphs": 363,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 1,
+      "text": "TECHNICAL FINDINGS",
+      "style": "Normal"
+    },
+    {
+      "para_index": 2,
+      "text": "op12 \u539f\u751f CUDA Gated DeltaNet Prefill",
+      "style": "Normal"
+    },
+    {
+      "para_index": 4,
+      "text": "\u76ee\u6807\uff1a\u7528\u72ec\u7acb CUDA C \u5b9e\u73b0\u56fa\u5b9a FlashInfer GDN Prefill \u7684\u76f8\u540c\u516c\u5f00\u529f\u80fd\uff0c\u5e76\u6309\u76f8\u540c\u65b9\u6cd5\u6d4b\u8bd5\u6027\u80fd",
+      "style": "Normal"
+    },
+    {
+      "para_index": 5,
+      "text": "\u5bf9\u7167\uff1aFlashInfer commit e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "style": "Normal"
+    },
+    {
+      "para_index": 6,
+      "text": "\u786c\u4ef6\uff1aNVIDIA B200 / 148 SM / CUDA 13.0",
+      "style": "Normal"
+    },
+    {
+      "para_index": 7,
+      "text": "\u65e5\u671f\uff1a2026-08-29",
+      "style": "Normal"
+    },
+    {
+      "para_index": 8,
+      "text": "\u72b6\u6001\uff1a\u529f\u80fd\u57fa\u7ebf\u5b8c\u6210\uff1bCUTLASS/tcgen05 \u6027\u80fd\u540e\u7aef\u672a\u5b9e\u73b0",
+      "style": "Normal"
+    },
+    {
+      "para_index": 22,
+      "text": "\u9694\u79bb\u6027  \u539f\u751f\u6269\u5c55\u4e0d\u94fe\u63a5\u6216\u4fee\u6539 FlashInfer kernel\u3002FlashInfer \u4ec5\u4f5c\u4e3a\u5dee\u5206 oracle \u548c\u540c\u65b9\u6cd5\u6027\u80fd\u5bf9\u7167\u3002",
+      "style": "Normal"
+    },
+    {
+      "para_index": 88,
+      "text": "\u529f\u80fd\u7ed3\u8bba  \u539f\u751f CUDA C \u5df2\u8986\u76d6\u56fa\u5b9a FlashInfer GDN Prefill \u7684\u4e3b\u8981\u516c\u5f00\u529f\u80fd\uff0c\u5e76\u901a\u8fc7 39 \u4e2a\u5dee\u5206\u6d4b\u8bd5\u4e0e sanitizer\u3002",
+      "style": "Normal"
+    },
+    {
+      "para_index": 98,
+      "text": "\u7ae0\u8282",
+      "style": "Normal"
+    },
+    {
+      "para_index": 99,
+      "text": "\u5185\u5bb9",
+      "style": "Normal"
+    },
+    {
+      "para_index": 112,
+      "text": "\u9879\u76ee",
+      "style": "Normal"
+    },
+    {
+      "para_index": 113,
+      "text": "\u56fa\u5b9a\u503c",
+      "style": "Normal"
+    },
+    {
+      "para_index": 128,
+      "text": "\u7ef4\u5ea6",
+      "style": "Normal"
+    },
+    {
+      "para_index": 129,
+      "text": "\u539f\u751f\u5b9e\u73b0",
+      "style": "Normal"
+    },
+    {
+      "para_index": 130,
+      "text": "\u4e0e\u56fa\u5b9a\u4e0a\u6e38\u5173\u7cfb",
+      "style": "Normal"
+    },
+    {
+      "para_index": 131,
+      "text": "\u5907\u6ce8",
+      "style": "Normal"
+    },
+    {
+      "para_index": 164,
+      "text": "\u9879\u76ee",
+      "style": "Normal"
+    },
+    {
+      "para_index": 165,
+      "text": "\u914d\u7f6e",
+      "style": "Normal"
+    },
+    {
+      "para_index": 166,
+      "text": "\u804c\u8d23 / \u5f71\u54cd",
+      "style": "Normal"
+    }
+  ],
+  "examples": {
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 1,
+        "text": "TECHNICAL FINDINGS",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "text": "op12 \u539f\u751f CUDA Gated DeltaNet Prefill",
+        "style": "Normal"
+      },
+      {
+        "para_index": 3,
+        "text": "B200 \u529f\u80fd\u7b49\u4ef7\u5b9e\u73b0\u3001\u7aef\u5230\u7aef\u6027\u80fd\u4e0e NCU/SASS \u74f6\u9888\u5206\u6790",
+        "style": "Normal"
+      },
+      {
+        "para_index": 4,
+        "text": "\u76ee\u6807\uff1a\u7528\u72ec\u7acb CUDA C \u5b9e\u73b0\u56fa\u5b9a FlashInfer GDN Prefill \u7684\u76f8\u540c\u516c\u5f00\u529f\u80fd\uff0c\u5e76\u6309\u76f8\u540c\u65b9\u6cd5\u6d4b\u8bd5\u6027\u80fd",
+        "style": "Normal"
+      },
+      {
+        "para_index": 5,
+        "text": "\u5bf9\u7167\uff1aFlashInfer commit e77a4a0d276367895c3b50a642fd8f326c03fb72",
+        "style": "Normal"
+      }
+    ],
+    "direct_run_formatting": [
+      {
+        "para_index": 1,
+        "run_text": "TECHNICAL FINDINGS",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "run_text": "op12 \u539f\u751f CUDA Gated DeltaNet Prefill",
+        "style": "Normal"
+      },
+      {
+        "para_index": 3,
+        "run_text": "B200 \u529f\u80fd\u7b49\u4ef7\u5b9e\u73b0\u3001\u7aef\u5230\u7aef\u6027\u80fd\u4e0e NCU/SASS \u74f6\u9888\u5206\u6790",
+        "style": "Normal"
+      },
+      {
+        "para_index": 4,
+        "run_text": "\u76ee\u6807\uff1a",
+        "style": "Normal"
+      },
+      {
+        "para_index": 4,
+        "run_text": "\u7528\u72ec\u7acb CUDA C \u5b9e\u73b0\u56fa\u5b9a FlashInfer GDN Prefill \u7684\u76f8\u540c\u516c\u5f00\u529f\u80fd\uff0c\u5e76\u6309\u76f8\u540c\u65b9\u6cd5\u6d4b\u8bd5\u6027\u80fd",
+        "style": "Normal"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}

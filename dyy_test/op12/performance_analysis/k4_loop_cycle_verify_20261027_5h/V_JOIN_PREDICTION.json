@@ -1,0 +1,40 @@
+[
+  {
+    "variant": "KSJOIN",
+    "source_sha256": "0cfb65abb5531bc8fa0b7e29dc0ee35c19f91da9fd3d20548035fce025677784",
+    "moved_waits": [
+      "ks_handle = cg1_shared_acc_consumer.wait_and_advance()"
+    ],
+    "all_math_and_TMA_and_shared_operations_preserved": true,
+    "causal_question": "Does removing V LDSM overlap with KS or both KS/QS reduce shared read arbitration?",
+    "prediction": "SourceWF unchanged. QSJOIN must place V LDSM after KS/QS done; if V is main origin of read excess, hardware shared read conflict falls. Time may increase from lost overlap.",
+    "falsifier": "No meaningful excess decrease with confirmed native placement, or other work/resources change enough to invalidate attribution.",
+    "model_enabled": false
+  },
+  {
+    "variant": "QSJOIN",
+    "source_sha256": "190b97eb9bd9c930695eeea460bfe1ebfd466c3ce8c79109b4a2f1fad984fa2e",
+    "moved_waits": [
+      "ks_handle = cg1_shared_acc_consumer.wait_and_advance()",
+      "qs_handle = q_state_acc_consumer.wait_and_advance()"
+    ],
+    "all_math_and_TMA_and_shared_operations_preserved": true,
+    "causal_question": "Does removing V LDSM overlap with KS or both KS/QS reduce shared read arbitration?",
+    "prediction": "SourceWF unchanged. QSJOIN must place V LDSM after KS/QS done; if V is main origin of read excess, hardware shared read conflict falls. Time may increase from lost overlap.",
+    "falsifier": "No meaningful excess decrease with confirmed native placement, or other work/resources change enough to invalidate attribution.",
+    "model_enabled": false
+  },
+  {
+    "variant": "GATEJOIN",
+    "source_sha256": "0c88b1bbc46d818eacedcc8e6a82fe30b6d41044042c224f697ae8b5ccad1248",
+    "moved_waits": [
+      "ks_handle = cg1_shared_acc_consumer.wait_and_advance()",
+      "qs_handle = q_state_acc_consumer.wait_and_advance()"
+    ],
+    "all_math_and_TMA_and_shared_operations_preserved": true,
+    "causal_question": "Does removing V LDSM overlap with KS or both KS/QS reduce shared read arbitration?",
+    "prediction": "SourceWF unchanged. QSJOIN must place V LDSM after KS/QS done; if V is main origin of read excess, hardware shared read conflict falls. Time may increase from lost overlap.",
+    "falsifier": "No meaningful excess decrease with confirmed native placement, or other work/resources change enough to invalidate attribution.",
+    "model_enabled": false
+  }
+]

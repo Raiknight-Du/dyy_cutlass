@@ -1,0 +1,7 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 2198696 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_tmem_de..." - 0: 0%....50%....100% - 6 passes
+COMPLETE 1 1 0
+==PROF== Disconnected from process 2198696
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/dep_nop_ncu/k1_w1_t0_m1.ncu-rep

@@ -1,0 +1,5228 @@
+[
+  {
+    "mode": 1,
+    "N": 256,
+    "pack_static": 256,
+    "pack_warp_inst": 32768.0,
+    "pack_gate": true,
+    "integer_candidate_static": 0,
+    "integer_candidate_warp_inst": 0,
+    "integer_native_rows": [],
+    "pipes": {
+      "smsp__inst_executed_pipe_alu.sum": 33080.0,
+      "smsp__inst_executed_pipe_fmaheavy.sum": 572.0,
+      "smsp__inst_executed_pipe_fmalite.sum": 0.0,
+      "smsp__inst_executed_pipe_xu.sum": 0.0
+    },
+    "model_enabled": false
+  },
+  {
+    "mode": 1,
+    "N": 512,
+    "pack_static": 256,
+    "pack_warp_inst": 65536.0,
+    "pack_gate": true,
+    "integer_candidate_static": 0,
+    "integer_candidate_warp_inst": 0,
+    "integer_native_rows": [],
+    "pipes": {
+      "smsp__inst_executed_pipe_alu.sum": 65976.0,
+      "smsp__inst_executed_pipe_fmaheavy.sum": 700.0,
+      "smsp__inst_executed_pipe_fmalite.sum": 0.0,
+      "smsp__inst_executed_pipe_xu.sum": 0.0
+    },
+    "model_enabled": false
+  },
+  {
+    "mode": 2,
+    "N": 256,
+    "pack_static": 256,
+    "pack_warp_inst": 0.0,
+    "pack_gate": true,
+    "integer_candidate_static": 256,
+    "integer_candidate_warp_inst": 32768.0,
+    "integer_native_rows": [
+      {
+        "PC": "0x7fb36b5ac540",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R37",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac550",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac560",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R35",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac570",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac580",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R33",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac590",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac5a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R31",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac5b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac5c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R29",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac5d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac5e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R27",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac5f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac600",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R25",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac610",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac620",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R23",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac630",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac640",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R21",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac650",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac660",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R39",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac670",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R19",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac680",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac690",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R11",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac6a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac6b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R13",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac6c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac6d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R15",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac6e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac6f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R17",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac700",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac710",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac720",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R7",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac730",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac740",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac750",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac760",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac770",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac780",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac790",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac7a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac7b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac7c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac7d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac7e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac7f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac800",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac810",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac820",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac830",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac840",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac850",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac860",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac870",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac880",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac890",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac8a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac8b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac8c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac8d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac8e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac8f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac900",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac910",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac920",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac930",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac940",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac950",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac960",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac970",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac980",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac990",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac9a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac9b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac9c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac9d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac9e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ac9f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5aca00",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5aca10",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5aca20",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5aca30",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5aca40",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5aca50",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5aca60",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5aca70",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5aca80",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5aca90",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acaa0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acab0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acac0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acad0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acae0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acaf0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acb00",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acb10",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acb20",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acb30",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acb40",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acb50",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acb60",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acb70",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acb80",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acb90",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acba0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acbb0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acbc0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acbd0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acbe0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acbf0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acc00",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acc10",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acc20",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acc30",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acc40",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acc50",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acc60",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acc70",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acc80",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acc90",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acca0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5accb0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5accc0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5accd0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acce0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5accf0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acd00",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acd10",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acd20",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acd30",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acd40",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acd50",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acd60",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acd70",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acd80",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acd90",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acda0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acdb0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acdc0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acdd0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acde0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acdf0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ace00",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ace10",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ace20",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ace30",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ace40",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ace50",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ace60",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ace70",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ace80",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ace90",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acea0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5aceb0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acec0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5aced0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acee0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acef0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acf00",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acf10",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acf20",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acf30",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acf40",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acf50",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acf60",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acf70",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acf80",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acf90",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acfa0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acfb0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acfc0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acfd0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acfe0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5acff0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad000",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad010",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad020",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad030",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad040",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad050",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad060",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad070",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad080",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad090",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad0a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad0b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad0c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad0d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad0e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad0f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad100",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad110",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad120",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad130",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad140",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad150",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad160",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad170",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad180",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad190",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad1a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad1b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad1c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad1d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad1e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad1f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad200",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad210",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad220",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad230",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad240",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad250",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad260",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad270",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad280",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad290",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad2a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad2b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad2c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad2d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad2e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad2f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad300",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad310",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad320",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad330",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad340",
+        "SASS": "      IADD3 R37, PT, PT, R9, UR8, R8",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad350",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad360",
+        "SASS": "      IADD3 R35, PT, PT, R9, UR8, R42",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad370",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad380",
+        "SASS": "      IADD3 R33, PT, PT, R9, UR8, R44",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad390",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad3a0",
+        "SASS": "      IADD3 R31, PT, PT, R9, UR8, R46",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad3b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad3c0",
+        "SASS": "      IADD3 R29, PT, PT, R9, UR8, R48",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad3d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad3e0",
+        "SASS": "      IADD3 R27, PT, PT, R9, UR8, R50",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad3f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad400",
+        "SASS": "      IADD3 R25, PT, PT, R9, UR8, R52",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad410",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad420",
+        "SASS": "      IADD3 R23, PT, PT, R9, UR8, R54",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad430",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad440",
+        "SASS": "      IADD3 R21, PT, PT, R9, UR8, R56",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad450",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad460",
+        "SASS": "      IADD3 R39, PT, PT, R9, UR8, R58",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad470",
+        "SASS": "      IADD3 R19, PT, PT, R9, UR8, R60",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad480",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad490",
+        "SASS": "      IADD3 R11, PT, PT, R9, UR8, R62",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad4a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad4b0",
+        "SASS": "      IADD3 R13, PT, PT, R9, UR8, R64",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad4c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad4d0",
+        "SASS": "      IADD3 R15, PT, PT, R9, UR8, R66",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad4e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad4f0",
+        "SASS": "      IADD3 R17, PT, PT, R9, UR8, R68",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad500",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad510",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad520",
+        "SASS": "      IADD3 R7, PT, PT, R9, UR8, R70",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fb36b5ad530",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      }
+    ],
+    "pipes": {
+      "smsp__inst_executed_pipe_alu.sum": 33080.0,
+      "smsp__inst_executed_pipe_fmaheavy.sum": 424.0,
+      "smsp__inst_executed_pipe_fmalite.sum": 0.0,
+      "smsp__inst_executed_pipe_xu.sum": 0.0
+    },
+    "model_enabled": false
+  },
+  {
+    "mode": 2,
+    "N": 512,
+    "pack_static": 256,
+    "pack_warp_inst": 0.0,
+    "pack_gate": true,
+    "integer_candidate_static": 256,
+    "integer_candidate_warp_inst": 65536.0,
+    "integer_native_rows": [
+      {
+        "PC": "0x7f43275ac540",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R37",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac550",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac560",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R35",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac570",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac580",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R33",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac590",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac5a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R31",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac5b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac5c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R29",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac5d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac5e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R27",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac5f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac600",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R25",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac610",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac620",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R23",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac630",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac640",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R21",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac650",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac660",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R39",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac670",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R19",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac680",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac690",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R11",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac6a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac6b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R13",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac6c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac6d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R15",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac6e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac6f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R17",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac700",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac710",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac720",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R7",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac730",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac740",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac750",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac760",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac770",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac780",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac790",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac7a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac7b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac7c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac7d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac7e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac7f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac800",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac810",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac820",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac830",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac840",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac850",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac860",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac870",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac880",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac890",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac8a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac8b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac8c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac8d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac8e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac8f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac900",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac910",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac920",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac930",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac940",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac950",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac960",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac970",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac980",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac990",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac9a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac9b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac9c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac9d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac9e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ac9f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275aca00",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275aca10",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275aca20",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275aca30",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275aca40",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275aca50",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275aca60",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275aca70",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275aca80",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275aca90",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acaa0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acab0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acac0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acad0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acae0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acaf0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acb00",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acb10",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acb20",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acb30",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acb40",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acb50",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acb60",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acb70",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acb80",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acb90",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acba0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acbb0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acbc0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acbd0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acbe0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acbf0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acc00",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acc10",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acc20",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acc30",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acc40",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acc50",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acc60",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acc70",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acc80",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acc90",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acca0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275accb0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275accc0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275accd0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acce0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275accf0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acd00",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acd10",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acd20",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acd30",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acd40",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acd50",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acd60",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acd70",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acd80",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acd90",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acda0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acdb0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acdc0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acdd0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acde0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acdf0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ace00",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ace10",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ace20",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ace30",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ace40",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ace50",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ace60",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ace70",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ace80",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ace90",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acea0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275aceb0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acec0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275aced0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acee0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acef0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acf00",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acf10",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acf20",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acf30",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acf40",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acf50",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acf60",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acf70",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acf80",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acf90",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acfa0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acfb0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acfc0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acfd0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acfe0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275acff0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad000",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad010",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad020",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad030",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad040",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad050",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad060",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad070",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad080",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad090",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad0a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad0b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad0c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad0d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad0e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad0f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad100",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad110",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad120",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad130",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad140",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad150",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad160",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad170",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad180",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad190",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad1a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad1b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad1c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad1d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad1e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad1f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad200",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad210",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad220",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad230",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad240",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad250",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad260",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad270",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad280",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad290",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad2a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad2b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad2c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad2d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad2e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad2f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad300",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad310",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad320",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad330",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad340",
+        "SASS": "      IADD3 R37, PT, PT, R9, UR8, R8",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad350",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad360",
+        "SASS": "      IADD3 R35, PT, PT, R9, UR8, R42",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad370",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad380",
+        "SASS": "      IADD3 R33, PT, PT, R9, UR8, R44",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad390",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad3a0",
+        "SASS": "      IADD3 R31, PT, PT, R9, UR8, R46",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad3b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad3c0",
+        "SASS": "      IADD3 R29, PT, PT, R9, UR8, R48",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad3d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad3e0",
+        "SASS": "      IADD3 R27, PT, PT, R9, UR8, R50",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad3f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad400",
+        "SASS": "      IADD3 R25, PT, PT, R9, UR8, R52",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad410",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad420",
+        "SASS": "      IADD3 R23, PT, PT, R9, UR8, R54",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad430",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad440",
+        "SASS": "      IADD3 R21, PT, PT, R9, UR8, R56",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad450",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad460",
+        "SASS": "      IADD3 R39, PT, PT, R9, UR8, R58",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad470",
+        "SASS": "      IADD3 R19, PT, PT, R9, UR8, R60",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad480",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad490",
+        "SASS": "      IADD3 R11, PT, PT, R9, UR8, R62",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad4a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad4b0",
+        "SASS": "      IADD3 R13, PT, PT, R9, UR8, R64",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad4c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad4d0",
+        "SASS": "      IADD3 R15, PT, PT, R9, UR8, R66",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad4e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad4f0",
+        "SASS": "      IADD3 R17, PT, PT, R9, UR8, R68",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad500",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad510",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad520",
+        "SASS": "      IADD3 R7, PT, PT, R9, UR8, R70",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f43275ad530",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      }
+    ],
+    "pipes": {
+      "smsp__inst_executed_pipe_alu.sum": 65976.0,
+      "smsp__inst_executed_pipe_fmaheavy.sum": 552.0,
+      "smsp__inst_executed_pipe_fmalite.sum": 0.0,
+      "smsp__inst_executed_pipe_xu.sum": 0.0
+    },
+    "model_enabled": false
+  },
+  {
+    "mode": 3,
+    "N": 256,
+    "pack_static": 256,
+    "pack_warp_inst": 32768.0,
+    "pack_gate": true,
+    "integer_candidate_static": 256,
+    "integer_candidate_warp_inst": 32768.0,
+    "integer_native_rows": [
+      {
+        "PC": "0x7fd90f5ac540",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R37",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac550",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac560",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R35",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac570",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac580",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R33",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac590",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac5a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R31",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac5b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac5c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R29",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac5d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac5e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R27",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac5f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac600",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R25",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac610",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac620",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R23",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac630",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac640",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R21",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac650",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac660",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R39",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac670",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R19",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac680",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac690",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R11",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac6a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac6b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R13",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac6c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac6d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R15",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac6e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac6f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R17",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac700",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac710",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac720",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R7",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac730",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac740",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac750",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac760",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac770",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac780",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac790",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac7a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac7b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac7c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac7d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac7e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac7f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac800",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac810",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac820",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac830",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac840",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac850",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac860",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac870",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac880",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac890",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac8a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac8b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac8c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac8d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac8e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac8f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac900",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac910",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac920",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac930",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac940",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac950",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac960",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac970",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac980",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac990",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac9a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac9b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac9c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac9d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac9e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ac9f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5aca00",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5aca10",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5aca20",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5aca30",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5aca40",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5aca50",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5aca60",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5aca70",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5aca80",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5aca90",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acaa0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acab0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acac0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acad0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acae0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acaf0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acb00",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acb10",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acb20",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acb30",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acb40",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acb50",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acb60",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acb70",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acb80",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acb90",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acba0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acbb0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acbc0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acbd0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acbe0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acbf0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acc00",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acc10",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acc20",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acc30",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acc40",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acc50",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acc60",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acc70",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acc80",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acc90",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acca0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5accb0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5accc0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5accd0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acce0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5accf0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acd00",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acd10",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acd20",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acd30",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acd40",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acd50",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acd60",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acd70",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acd80",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acd90",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acda0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acdb0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acdc0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acdd0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acde0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acdf0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ace00",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ace10",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ace20",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ace30",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ace40",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ace50",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ace60",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ace70",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ace80",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ace90",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acea0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5aceb0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acec0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5aced0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acee0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acef0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acf00",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acf10",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acf20",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acf30",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acf40",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acf50",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acf60",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acf70",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acf80",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acf90",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acfa0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acfb0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acfc0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acfd0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acfe0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5acff0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad000",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad010",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad020",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad030",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad040",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad050",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad060",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad070",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad080",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad090",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad0a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad0b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad0c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad0d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad0e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad0f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad100",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad110",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad120",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad130",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad140",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad150",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad160",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad170",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad180",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad190",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad1a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad1b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad1c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad1d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad1e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad1f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad200",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad210",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad220",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad230",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad240",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad250",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad260",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad270",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad280",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad290",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad2a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad2b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad2c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad2d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad2e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad2f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad300",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad310",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad320",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad330",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad340",
+        "SASS": "      IADD3 R37, PT, PT, R9, UR8, R8",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad350",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad360",
+        "SASS": "      IADD3 R35, PT, PT, R9, UR8, R42",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad370",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad380",
+        "SASS": "      IADD3 R33, PT, PT, R9, UR8, R44",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad390",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad3a0",
+        "SASS": "      IADD3 R31, PT, PT, R9, UR8, R46",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad3b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad3c0",
+        "SASS": "      IADD3 R29, PT, PT, R9, UR8, R48",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad3d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad3e0",
+        "SASS": "      IADD3 R27, PT, PT, R9, UR8, R50",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad3f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad400",
+        "SASS": "      IADD3 R25, PT, PT, R9, UR8, R52",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad410",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad420",
+        "SASS": "      IADD3 R23, PT, PT, R9, UR8, R54",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad430",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad440",
+        "SASS": "      IADD3 R21, PT, PT, R9, UR8, R56",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad450",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad460",
+        "SASS": "      IADD3 R39, PT, PT, R9, UR8, R58",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad470",
+        "SASS": "      IADD3 R19, PT, PT, R9, UR8, R60",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad480",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad490",
+        "SASS": "      IADD3 R11, PT, PT, R9, UR8, R62",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad4a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad4b0",
+        "SASS": "      IADD3 R13, PT, PT, R9, UR8, R64",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad4c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad4d0",
+        "SASS": "      IADD3 R15, PT, PT, R9, UR8, R66",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad4e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad4f0",
+        "SASS": "      IADD3 R17, PT, PT, R9, UR8, R68",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad500",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad510",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad520",
+        "SASS": "      IADD3 R7, PT, PT, R9, UR8, R70",
+        "executed": 128.0
+      },
+      {
+        "PC": "0x7fd90f5ad530",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 128.0
+      }
+    ],
+    "pipes": {
+      "smsp__inst_executed_pipe_alu.sum": 65976.0,
+      "smsp__inst_executed_pipe_fmaheavy.sum": 700.0,
+      "smsp__inst_executed_pipe_fmalite.sum": 0.0,
+      "smsp__inst_executed_pipe_xu.sum": 0.0
+    },
+    "model_enabled": false
+  },
+  {
+    "mode": 3,
+    "N": 512,
+    "pack_static": 256,
+    "pack_warp_inst": 65536.0,
+    "pack_gate": true,
+    "integer_candidate_static": 256,
+    "integer_candidate_warp_inst": 65536.0,
+    "integer_native_rows": [
+      {
+        "PC": "0x7f4a4b5ac540",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R37",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac550",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac560",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R35",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac570",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac580",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R33",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac590",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac5a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R31",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac5b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac5c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R29",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac5d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac5e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R27",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac5f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac600",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R25",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac610",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac620",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R23",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac630",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac640",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R21",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac650",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac660",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R39",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac670",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R19",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac680",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac690",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R11",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac6a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac6b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R13",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac6c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac6d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R15",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac6e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac6f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R17",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac700",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac710",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac720",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R7",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac730",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac740",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac750",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac760",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac770",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac780",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac790",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac7a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac7b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac7c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac7d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac7e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac7f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac800",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac810",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac820",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac830",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac840",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac850",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac860",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac870",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac880",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac890",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac8a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac8b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac8c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac8d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac8e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac8f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac900",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac910",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac920",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac930",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac940",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac950",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac960",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac970",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac980",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac990",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac9a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac9b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac9c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac9d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac9e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ac9f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5aca00",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5aca10",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5aca20",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5aca30",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5aca40",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5aca50",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5aca60",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5aca70",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5aca80",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5aca90",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acaa0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acab0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acac0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acad0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acae0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acaf0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acb00",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acb10",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acb20",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acb30",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acb40",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acb50",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acb60",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acb70",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acb80",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acb90",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acba0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acbb0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acbc0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acbd0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acbe0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acbf0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acc00",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acc10",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acc20",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acc30",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acc40",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acc50",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acc60",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acc70",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acc80",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acc90",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acca0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5accb0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5accc0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5accd0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acce0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5accf0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acd00",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acd10",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acd20",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acd30",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acd40",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acd50",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acd60",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acd70",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acd80",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acd90",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acda0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acdb0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acdc0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acdd0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acde0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acdf0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ace00",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ace10",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ace20",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ace30",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ace40",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ace50",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ace60",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ace70",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ace80",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ace90",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acea0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5aceb0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acec0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5aced0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acee0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acef0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acf00",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acf10",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acf20",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acf30",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acf40",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acf50",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acf60",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acf70",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acf80",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acf90",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acfa0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acfb0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acfc0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acfd0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acfe0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5acff0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad000",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad010",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad020",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad030",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad040",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad050",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad060",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad070",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad080",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad090",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad0a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad0b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad0c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad0d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad0e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad0f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad100",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad110",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad120",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad130",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad140",
+        "SASS": "      IADD3 R8, PT, PT, R9, UR8, R8",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad150",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad160",
+        "SASS": "      IADD3 R42, PT, PT, R9, UR8, R42",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad170",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad180",
+        "SASS": "      IADD3 R44, PT, PT, R9, UR8, R44",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad190",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad1a0",
+        "SASS": "      IADD3 R46, PT, PT, R9, UR8, R46",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad1b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad1c0",
+        "SASS": "      IADD3 R48, PT, PT, R9, UR8, R48",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad1d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad1e0",
+        "SASS": "      IADD3 R50, PT, PT, R9, UR8, R50",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad1f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad200",
+        "SASS": "      IADD3 R52, PT, PT, R9, UR8, R52",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad210",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad220",
+        "SASS": "      IADD3 R54, PT, PT, R9, UR8, R54",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad230",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad240",
+        "SASS": "      IADD3 R56, PT, PT, R9, UR8, R56",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad250",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad260",
+        "SASS": "      IADD3 R58, PT, PT, R9, UR8, R58",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad270",
+        "SASS": "      IADD3 R60, PT, PT, R9, UR8, R60",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad280",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad290",
+        "SASS": "      IADD3 R62, PT, PT, R9, UR8, R62",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad2a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad2b0",
+        "SASS": "      IADD3 R64, PT, PT, R9, UR8, R64",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad2c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad2d0",
+        "SASS": "      IADD3 R66, PT, PT, R9, UR8, R66",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad2e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad2f0",
+        "SASS": "      IADD3 R68, PT, PT, R9, UR8, R68",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad300",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad310",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad320",
+        "SASS": "      IADD3 R70, PT, PT, R9, UR8, R70",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad330",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad340",
+        "SASS": "      IADD3 R37, PT, PT, R9, UR8, R8",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad350",
+        "SASS": "      IADD3 R36, PT, PT, R9, UR8, R36",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad360",
+        "SASS": "      IADD3 R35, PT, PT, R9, UR8, R42",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad370",
+        "SASS": "      IADD3 R34, PT, PT, R9, UR8, R34",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad380",
+        "SASS": "      IADD3 R33, PT, PT, R9, UR8, R44",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad390",
+        "SASS": "      IADD3 R32, PT, PT, R9, UR8, R32",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad3a0",
+        "SASS": "      IADD3 R31, PT, PT, R9, UR8, R46",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad3b0",
+        "SASS": "      IADD3 R30, PT, PT, R9, UR8, R30",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad3c0",
+        "SASS": "      IADD3 R29, PT, PT, R9, UR8, R48",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad3d0",
+        "SASS": "      IADD3 R28, PT, PT, R9, UR8, R28",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad3e0",
+        "SASS": "      IADD3 R27, PT, PT, R9, UR8, R50",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad3f0",
+        "SASS": "      IADD3 R26, PT, PT, R9, UR8, R26",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad400",
+        "SASS": "      IADD3 R25, PT, PT, R9, UR8, R52",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad410",
+        "SASS": "      IADD3 R24, PT, PT, R9, UR8, R24",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad420",
+        "SASS": "      IADD3 R23, PT, PT, R9, UR8, R54",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad430",
+        "SASS": "      IADD3 R22, PT, PT, R9, UR8, R22",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad440",
+        "SASS": "      IADD3 R21, PT, PT, R9, UR8, R56",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad450",
+        "SASS": "      IADD3 R20, PT, PT, R9, UR8, R20",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad460",
+        "SASS": "      IADD3 R39, PT, PT, R9, UR8, R58",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad470",
+        "SASS": "      IADD3 R19, PT, PT, R9, UR8, R60",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad480",
+        "SASS": "      IADD3 R18, PT, PT, R9, UR8, R18",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad490",
+        "SASS": "      IADD3 R11, PT, PT, R9, UR8, R62",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad4a0",
+        "SASS": "      IADD3 R40, PT, PT, R9, UR8, R40",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad4b0",
+        "SASS": "      IADD3 R13, PT, PT, R9, UR8, R64",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad4c0",
+        "SASS": "      IADD3 R14, PT, PT, R9, UR8, R14",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad4d0",
+        "SASS": "      IADD3 R15, PT, PT, R9, UR8, R66",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad4e0",
+        "SASS": "      IADD3 R16, PT, PT, R9, UR8, R16",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad4f0",
+        "SASS": "      IADD3 R17, PT, PT, R9, UR8, R68",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad500",
+        "SASS": "      IADD3 R12, PT, PT, R9, UR8, R12",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad510",
+        "SASS": "      IADD3 R10, PT, PT, R9, UR8, R10",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad520",
+        "SASS": "      IADD3 R7, PT, PT, R9, UR8, R70",
+        "executed": 256.0
+      },
+      {
+        "PC": "0x7f4a4b5ad530",
+        "SASS": "      IADD3 R0, PT, PT, R9, UR8, R0",
+        "executed": 256.0
+      }
+    ],
+    "pipes": {
+      "smsp__inst_executed_pipe_alu.sum": 131768.0,
+      "smsp__inst_executed_pipe_fmaheavy.sum": 956.0,
+      "smsp__inst_executed_pipe_fmalite.sum": 0.0,
+      "smsp__inst_executed_pipe_xu.sum": 0.0
+    },
+    "model_enabled": false
+  }
+]

@@ -1,0 +1,16 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 495223 (/usr/bin/python3.10)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/pilot/S16384/evict2/sample02/app_passes/app_pass_495223_1790770884066949679/cp4_graph.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+{"event": "measured_graph_start", "shape": 16384, "sample": 2, "evict_factor": 2, "l2_bytes": 132644864, "evict_bytes": 265289728}
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 0: Application replay pass 1
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 1: Application replay pass 1
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 2: Application replay pass 1
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 3: Application replay pass 1
+{"event": "app_pass_complete", "manifest": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/pilot/S16384/evict2/sample02/app_passes/app_pass_495223_1790770884066949679/pass_manifest.json", "checks": {"output_exact": true, "state_exact": true, "output_finite": true, "state_finite": true, "initial_unchanged": true, "eviction_checksum_finite": true}}
+==PROF== Disconnected from process 495223
+==PROF== Creating report from application replay data: 0%......100%
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/pilot/S16384/evict2/sample02/cp4.ncu-rep

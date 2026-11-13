@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "op12-native-gdn"
+version = "0.1.0"
+description = "Independent CUDA C implementation of FlashInfer-compatible Gated DeltaNet prefill"
+requires-python = ">=3.10"
+dependencies = ["torch"]
+
+[tool.setuptools.packages.find]
+include = ["op12_native_gdn*"]
+

@@ -1,0 +1,7 @@
+{
+  "stdout": "NVIDIA (R) Nsight Compute Command Line Profiler\nCopyright (c) 2018-2026 NVIDIA Corporation\nVersion 2026.2.1.0 (build 38283040) (public-release)\n",
+  "returncode": 0,
+  "path": "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+  "SHA256": "a44ff2c735c4dcf66c78f3f430155805d6a0b1f74f26331f98ecec03bfbf3f1a",
+  "scope": "postrun read-only observation, not original per-call capture"
+}

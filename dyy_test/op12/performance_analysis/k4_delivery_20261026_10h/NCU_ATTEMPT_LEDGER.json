@@ -1,0 +1,17 @@
+{
+  "last_updated_stage": "R3_v2_CPU_static_pass_no_GPU",
+  "valid_formal_reports": 3,
+  "attempts": [
+    {"round":"R1","configuration":"REF","status":"VALID","path":"NCU_S01/REF"},
+    {"round":"R1","configuration":"FRAME0","status":"VALID","path":"NCU_S01/FRAME0"},
+    {"round":"R1","configuration":"FRAME7","status":"VALID","path":"NCU_S01/FRAME7"},
+    {"round":"R3_v1","configuration":"S_G128_LOAD_N512","status":"PREPARE_FAILED_NO_REPORT","path":"r3_ncu_S_G128_LOAD_01","exit_code":9,"SourceCounters":true},
+    {"round":"R3_v1","configuration":"S_G128_LOAD_N512_hardware_only_tool_diagnostic","status":"PREPARE_FAILED_NO_REPORT","path":"r3_v1_hardware_diagnostic01","exit_code":9,"SourceCounters":false}
+  ],
+  "attempt_count": 5,
+  "failed_attempts_are_effective_evidence": false,
+  "R2_NCU": 0,
+  "R3_v2_GPU_admitted": false,
+  "R4_GPU_admitted": false,
+  "model_enabled": false
+}

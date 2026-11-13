@@ -1,0 +1,1830 @@
+========= COMPUTE-SANITIZER
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xcca2] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xccc8] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xd00c] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xd032] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xd53c] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xd620] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xe32e] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xed1f] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xed6a] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xf1de] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xfa54] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xfa7a] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xfaa0] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xfac6] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xfaec] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0x10044] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0x10a10] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0x10a36] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0x10a5c] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0x10a82] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuGetProcAddress_v2.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0x10bd8] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x2dfe4] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0xde49] in cydriver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame:  [0x27c741] in driver.cpython-310-x86_64-linux-gnu.so
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x17abda] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175d16] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x1986f0] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame:  [0x19883d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyObject_FastCallDictTstate [0x180a63] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x1958b0] in python
+=========         Host Frame:  [0x29cde3] in python
+=========         Host Frame: PyObject_Call [0x19932a] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: PyObject_Call [0x199391] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x177d7a] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x176ea1] in python
+=========         Host Frame: _PyFunction_Vectorcall [0x18b68b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x175bcf] in python
+=========         Host Frame:  [0x259d35] in python
+=========         Host Frame: PyEval_EvalCode [0x259c05] in python
+=========         Host Frame:  [0x280677] in python
+=========         Host Frame:  [0x27acce] in python
+=========         Host Frame:  [0x280414] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x27f957] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x27f636] in python
+=========         Host Frame: Py_RunMain [0x273bfd] in python
+=========         Host Frame: Py_BytesMain [0x24dc4c] in python
+=========         Host Frame: __libc_start_call_main in libc_start_call_main.h:58 [0x29d8f] in libc.so.6
+=========         Host Frame: __libc_start_main in libc-start.c:392 [0x29e3f] in libc.so.6
+=========         Host Frame: _start [0x24db44] in python
+=========         Host Frame: get_device_attribute in cuda.py:957
+=========         Host Frame: _generate_kernel_attrs in cutlass.py:601
+=========         Host Frame: launch in cutlass.py:2288
+=========         Host Frame: __call__ in delta_rule_cp_sm120.py:290
+=========         Host Frame: build_ir_module in dsl.py:2072
+=========         Host Frame: generate_original_ir in dsl.py:2111
+=========         Host Frame: generate_mlir in dsl.py:2466
+=========         Host Frame: _func_impl in dsl.py:2952
+=========         Host Frame: _func in dsl.py:2932
+=========         Host Frame: _compile in compiler.py:1549
+=========         Host Frame: __call__ in compiler.py:1386
+=========         Host Frame: cached_compile in custom_compile_cache.py:174
+=========         Host Frame: cp_delta_rule_t_precompute_dsl_sm100 in gdn_cp_prefill.py:167
+=========         Host Frame: cp_delta_rule_dsl_sm100 in gdn_cp_prefill.py:1065
+=========         Host Frame: chunk_gated_delta_rule in gdn_prefill.py:443
+=========         Host Frame: _auto_dump_wrapper in api_logging.py:2333
+=========         Host Frame: chunk_gated_delta_rule in api.py:181
+=========         Host Frame: decorate_context in _contextlib.py:124
+=========         Host Frame: main in run_smoke.py:33
+========= 
+{"status": "PASS", "torch": "2.11.0+cu130", "device": "NVIDIA B200", "output_shape": [128, 8, 128], "state_shape": [2, 8, 128, 128], "output_finite": true, "state_finite": true, "use_cp": true}
+========= ERROR SUMMARY: 21 errors

@@ -1,0 +1,10 @@
+validation/ncu/native_cp_s16384_bf16.ncu-rep,204685088
+validation/ncu/native_cp_s16384_fp16.ncu-rep,204585142
+validation/ncu/native_cp_s32768_bf16.ncu-rep,374914284
+validation/ncu/native_cp_s32768_fp16.ncu-rep,374807461
+validation/ncu/native_cp_s8192_bf16.ncu-rep,204862639
+validation/ncu/native_cp_s8192_fp16.ncu-rep,204809541
+validation/ncu/native_noncp_nearfull_fp16.ncu-rep,187719054
+validation/ncu/native_noncp_s8192_fp16.ncu-rep,490083
+validation/ncu/native_noncp_underfilled_bf16.ncu-rep,30399394
+validation/ncu/native_noncp_underfilled_fp16.ncu-rep,29745149

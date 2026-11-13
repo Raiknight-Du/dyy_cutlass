@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "UTC": "2026-10-26T22:22:46.703277+00:00",
+  "files_verified": 2736,
+  "NCU_reports": 74,
+  "archive_bytes": 45318243,
+  "archive_sha256": "df0d0fb577b5f37e416f3493e21713cebea86e8867a24ff9e4d6b68a0d118502",
+  "local_remote_common_files": 184,
+  "common_file_hashes_match": true,
+  "model_enabled": false,
+  "effective_model_value": null
+}

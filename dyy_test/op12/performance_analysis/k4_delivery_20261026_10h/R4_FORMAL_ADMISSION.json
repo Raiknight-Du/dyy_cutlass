@@ -1,0 +1,15 @@
+{
+  "round":"R4",
+  "approved_modes":["formal"],
+  "source_SHA256":"690d1432059d27dc1e6b0de3c45738e6d7b11a3ba7092adb413064335fab9d9b",
+  "max_N":8192,
+  "processes":3,
+  "warmup":20,
+  "samples":30,
+  "modes":["CONTROL","SHADER_ONLY","TC_ONLY","BOTH"],
+  "points":[128,256,512,1024,2048,4096,8192],
+  "frequency_policy":"temporary1845SM_request_actualsampled_finallyauto",
+  "condition":"BOTH and remaining3 mode PC/resource PASS; raw/control-corrected active strict1% dual-domain; control separately disclosed",
+  "extra_16384_allowed_once_if_needed":true,
+  "model_enabled":false
+}

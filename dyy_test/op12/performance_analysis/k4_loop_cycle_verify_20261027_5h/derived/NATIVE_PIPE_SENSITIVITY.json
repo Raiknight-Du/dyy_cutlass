@@ -1,0 +1,138 @@
+[
+  {
+    "case": "map_IMAD_FMA_HEAVY",
+    "scenarios": [
+      {
+        "hybrid": true,
+        "bank_TC": true,
+        "QK_math_rate": 8192,
+        "asynchronous": true,
+        "full_issuer": true,
+        "smem_lag": 0,
+        "tmem_lag": {
+          "32dp": 17,
+          "16dp": 57
+        },
+        "mean_cycle": 2900.0,
+        "min_cycle": 2900.0,
+        "max_cycle": 2900.0,
+        "per_block_known_service_sum_CG0": 1753,
+        "per_block_known_service_sum_CG1": 2589,
+        "terminal": 371541.0,
+        "resource_work": {
+          "ISSUE": 188.0,
+          "SMEM_Read": 1384.0,
+          "TC": 1152.0,
+          "LSU_Data": 872.0,
+          "ALU_PACK": 930.0,
+          "FMA_HEAVY": 86.0,
+          "TMEM": 1120.0,
+          "FP": 614.0,
+          "SFU": 400.0,
+          "HALF": 132.0,
+          "SMEM_Write": 256.0
+        },
+        "model_enabled": false
+      },
+      {
+        "hybrid": true,
+        "bank_TC": true,
+        "QK_math_rate": 8192,
+        "asynchronous": true,
+        "full_issuer": true,
+        "smem_lag": 0,
+        "tmem_lag": {
+          "32dp": 41.375,
+          "16dp": 81.375
+        },
+        "mean_cycle": 3046.25,
+        "min_cycle": 3046.25,
+        "max_cycle": 3046.25,
+        "per_block_known_service_sum_CG0": 1753,
+        "per_block_known_service_sum_CG1": 2589,
+        "terminal": 390274.0,
+        "resource_work": {
+          "ISSUE": 188.0,
+          "SMEM_Read": 1384.0,
+          "TC": 1152.0,
+          "LSU_Data": 872.0,
+          "ALU_PACK": 930.0,
+          "FMA_HEAVY": 86.0,
+          "TMEM": 1120.0,
+          "FP": 614.0,
+          "SFU": 400.0,
+          "HALF": 132.0,
+          "SMEM_Write": 256.0
+        },
+        "model_enabled": false
+      }
+    ]
+  },
+  {
+    "case": "share_FP_HALF",
+    "scenarios": [
+      {
+        "hybrid": true,
+        "bank_TC": true,
+        "QK_math_rate": 8192,
+        "asynchronous": true,
+        "full_issuer": true,
+        "smem_lag": 0,
+        "tmem_lag": {
+          "32dp": 17,
+          "16dp": 57
+        },
+        "mean_cycle": 2912.0,
+        "min_cycle": 2912.0,
+        "max_cycle": 2912.0,
+        "per_block_known_service_sum_CG0": 1753,
+        "per_block_known_service_sum_CG1": 2589,
+        "terminal": 373070.0,
+        "resource_work": {
+          "ISSUE": 188.0,
+          "SMEM_Read": 1384.0,
+          "TC": 1152.0,
+          "LSU_Data": 872.0,
+          "ALU_PACK": 930.0,
+          "FMA_HEAVY": 86.0,
+          "TMEM": 1120.0,
+          "FP": 746.0,
+          "SFU": 400.0,
+          "SMEM_Write": 256.0
+        },
+        "model_enabled": false
+      },
+      {
+        "hybrid": true,
+        "bank_TC": true,
+        "QK_math_rate": 8192,
+        "asynchronous": true,
+        "full_issuer": true,
+        "smem_lag": 0,
+        "tmem_lag": {
+          "32dp": 41.375,
+          "16dp": 81.375
+        },
+        "mean_cycle": 3072.25,
+        "min_cycle": 3072.25,
+        "max_cycle": 3072.25,
+        "per_block_known_service_sum_CG0": 1753,
+        "per_block_known_service_sum_CG1": 2589,
+        "terminal": 393586.375,
+        "resource_work": {
+          "ISSUE": 188.0,
+          "SMEM_Read": 1384.0,
+          "TC": 1152.0,
+          "LSU_Data": 872.0,
+          "ALU_PACK": 930.0,
+          "FMA_HEAVY": 86.0,
+          "TMEM": 1120.0,
+          "FP": 746.0,
+          "SFU": 400.0,
+          "SMEM_Write": 256.0
+        },
+        "model_enabled": false
+      }
+    ]
+  }
+]

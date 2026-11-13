@@ -1,0 +1,15 @@
+{
+  "shape": 16384,
+  "mode": "control",
+  "kernels": [
+    {
+      "id": 0,
+      "name": "void reduce_kernel<512, 1, ReduceOp<float, func_wrapper_t<float, sum_functor<float, float, float>::operator ()(TensorIterator &)::[lambda(float, float) (instance 1)]>, unsigned int, float, 4, 4>>(T3)",
+      "read_bytes": 530756352,
+      "write_bytes": 4421632,
+      "duration_ns": 93984,
+      "passes": 1
+    }
+  ],
+  "app_passes": 1
+}

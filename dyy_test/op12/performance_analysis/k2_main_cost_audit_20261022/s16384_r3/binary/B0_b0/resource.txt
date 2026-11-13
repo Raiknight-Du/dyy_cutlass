@@ -1,0 +1,5 @@
+Resource usage:
+ Common:
+  GLOBAL:0
+ Function kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleMNPrecomputeUtcmma1Sm100_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID__0:
+  REG:168 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1704 TEXTURE:0 SURFACE:0 SAMPLER:0

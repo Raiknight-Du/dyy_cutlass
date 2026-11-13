@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+const root=path.dirname(fileURLToPath(import.meta.url));
+const local=['approved_model.json','hardware_model.json','k1_model.json','k2_model.json','k3_model.json','k4_model.json','k4_calendar_L16.json','k4_calendar_L32.json','k4_calendar_L64.json','normalize_model.mjs','calendar.mjs','k2_calendar.mjs','k4_calendar.mjs','numerical_sweep.json','reviewer_findings.json'];
+const sources=['gdn_cp_prefill.py','gated_delta_net_cp.py','gated_delta_net_cp_prefill.py','delta_rule_cp_sm120.py','collective_inverse_hmma.py'];
+const sha=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const files=local.map(n=>({path:n,sha256:sha(path.join(root,n))}));
+const source_files=sources.map(n=>({path:'../ablation_20260908/source_original/'+n,sha256:sha(path.join(root,'../ablation_20260908/source_original',n))}));
+const sweep=JSON.parse(fs.readFileSync(path.join(root,'numerical_sweep.json'),'utf8'));
+if(/preliminary|superseded|await/i.test(sweep.status??''))throw Error('Final independent sweep has not been certified');
+const review=JSON.parse(fs.readFileSync(path.join(root,'reviewer_findings.json'),'utf8'));
+if(review.additional_primary_numeric_change_required || !review.final_verdict?.startsWith('Accepted'))throw Error('Final review not accepted');
+const manifest={model_id:'B200_148SM_SOURCE_A_20260927',frozen_at_utc:new Date().toISOString(),commit:'e77a4a0d276367895c3b50a642fd8f326c03fb72',target_measurement_files_read_before_freeze:false,fit_target_kernel_latency:false,numeric_scope:'Conditional ideal service and fixed source/resource calendar; physical response tails unpriced.',files,source_files};
+fs.writeFileSync(path.join(root,'SOURCE_MODEL_FREEZE.json'),JSON.stringify(manifest,null,2));console.log(JSON.stringify({frozen_at_utc:manifest.frozen_at_utc,file_count:files.length,source_file_count:source_files.length}));

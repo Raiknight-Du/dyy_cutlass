@@ -1,0 +1,22 @@
+{
+  "capture_type": "read-only environment/source snapshot; no target-kernel timing",
+  "remote_timestamp": "2026/09/26 19:04:41.406",
+  "device": "NVIDIA B200",
+  "enabled_sms": 148,
+  "compute_capability": "10.0",
+  "driver_version": "580.159.03",
+  "memory_reported": "183359 MiB (nvidia-smi); 182631MB (torch display)",
+  "SM_clock_MHz_snapshot": 1965,
+  "memory_clock_MHz_snapshot": 3996,
+  "temperature_C_snapshot": 34,
+  "pstate": "P0",
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "nvidia_cutlass_dsl": "4.7.0",
+  "cuda_python": "13.2.0",
+  "L2_reported": "126MB (torch display)",
+  "git_head": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "git_status_porcelain": "",
+  "clock_caveat": "Snapshot is not proof of locked frequency or frequency in historical timing evidence.",
+  "identity": "uuid 6abbea3c-b8d3-7f4b-ca76-85d612930fdf; pci bus 5"
+}

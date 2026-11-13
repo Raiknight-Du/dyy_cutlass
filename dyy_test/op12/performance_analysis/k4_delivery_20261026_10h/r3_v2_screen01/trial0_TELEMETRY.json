@@ -1,0 +1,10 @@
+[
+  {
+    "time_ns": 1792963723890053338,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 0, 120, 3996, 32, 188.81",
+    "utilization_pct": [
+      0.0
+    ],
+    "compute_apps": []
+  }
+]

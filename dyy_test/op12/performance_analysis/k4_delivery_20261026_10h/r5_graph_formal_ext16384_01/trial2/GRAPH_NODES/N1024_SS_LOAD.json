@@ -1,0 +1,156 @@
+{
+  "Python_edge_data_diagnostic": {
+    "tuple_type": "<class 'tuple'>",
+    "tuple_length": 5,
+    "element_types": [
+      "<enum 'CUresult'>",
+      "<class 'list'>",
+      "<class 'list'>",
+      "<class 'list'>",
+      "<class 'int'>"
+    ],
+    "returncode": 0,
+    "from_type": "<class 'list'>",
+    "to_type": "<class 'list'>",
+    "edge_data_type": "<class 'list'>",
+    "count_type": "<class 'int'>",
+    "count": 2,
+    "edges": [
+      [
+        94898760041984,
+        94898760040088
+      ],
+      [
+        94898760040088,
+        94898760038192
+      ]
+    ],
+    "edge_data": [
+      {
+        "python_type": "<class 'cuda.bindings.driver.CUgraphEdgeData'>",
+        "repr": "from_port : 248\nto_port : 227\ntype : 18\nreserved : b'2JV\\x00\\x00'",
+        "from_port": 248,
+        "to_port": 227,
+        "type": 18,
+        "reserved": [
+          50,
+          74,
+          86,
+          0,
+          0
+        ],
+        "getPtr": 94898760420784,
+        "raw8": "f8e312324a560000"
+      },
+      {
+        "python_type": "<class 'cuda.bindings.driver.CUgraphEdgeData'>",
+        "repr": "from_port : 0\nto_port : 0\ntype : 0\nreserved : b'\\x00\\x00\\x00\\x00\\x00'",
+        "from_port": 0,
+        "to_port": 0,
+        "type": 0,
+        "reserved": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "getPtr": 94898760420792,
+        "raw8": "0000000000000000"
+      }
+    ]
+  },
+  "native_owned_v2_edges": {
+    "count_query_returncode": 0,
+    "edge_count": 2,
+    "native_v2_address": 140280255785360,
+    "zero_initialized_bytes_before": "00000000000000000000000000000000",
+    "data_query_returncode": 0,
+    "returned_count": 2,
+    "edges": [
+      {
+        "from": 94898760041984,
+        "to": 94898760040088,
+        "from_port": 0,
+        "to_port": 0,
+        "type": 0,
+        "reserved": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw8": "0000000000000000"
+      },
+      {
+        "from": 94898760040088,
+        "to": 94898760038192,
+        "from_port": 0,
+        "to_port": 0,
+        "type": 0,
+        "reserved": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw8": "0000000000000000"
+      }
+    ],
+    "NULL_edgeData_returncode": 0,
+    "NULL_edgeData_count": 2,
+    "NULL_edgeData_edges": [
+      [
+        94898760041984,
+        94898760040088
+      ],
+      [
+        94898760040088,
+        94898760038192
+      ]
+    ]
+  },
+  "status": "THREE_NODE_TWO_EDGE_EVENT_KERNEL_EVENT_PASS",
+  "graph_handle": 94898752426176,
+  "nodes": {
+    "94898760041984": 7,
+    "94898760040088": 0,
+    "94898760038192": 7
+  },
+  "edges": [
+    [
+      94898760040088,
+      94898760038192
+    ],
+    [
+      94898760041984,
+      94898760040088
+    ]
+  ],
+  "edge_types": [
+    0,
+    0
+  ],
+  "begin_event_handle": 94898760404800,
+  "end_event_handle": 94898760407792,
+  "kernel_name": "kernel_cutlass_kernel_operand_sourceOperandSourceProbe_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_Layou_0",
+  "grid": [
+    128,
+    1,
+    1
+  ],
+  "block": [
+    192,
+    1,
+    1
+  ],
+  "dynamic_SMEM_B": 225280,
+  "REG": 52,
+  "lazy_event_records_before_capture": 2,
+  "capture_executes_kernel": false,
+  "measurement": "one graph.replay containing two external timing EventRecord nodes and the original kernel only",
+  "audit_host_time_ns": 1792971513146925001,
+  "model_enabled": false
+}

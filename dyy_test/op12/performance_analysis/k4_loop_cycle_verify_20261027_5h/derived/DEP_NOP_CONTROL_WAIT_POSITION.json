@@ -1,0 +1,1868 @@
+[
+  {
+    "kind": 0,
+    "loads": [
+      {
+        "load_PC": "0x410",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1040,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1056,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1072,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1088,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1104,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1120,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x430",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x460",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1120,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1136,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1152,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1168,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1184,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1200,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x480",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x4b0",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1200,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1216,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1232,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1248,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1264,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1280,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x4d0",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x500",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1280,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1296,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1312,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1328,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1344,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1360,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x520",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x550",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1360,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1376,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1392,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1408,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1424,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1440,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x570",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x5a0",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1440,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1456,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1472,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1488,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1504,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1520,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x5c0",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x5f0",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1520,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1536,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1552,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1568,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1584,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1600,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x610",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x640",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1600,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1616,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1632,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1648,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1664,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1680,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x660",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x690",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1680,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1696,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1712,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1728,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1744,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1760,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x6b0",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x6e0",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1760,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1776,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1792,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1808,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1824,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1840,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x700",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x730",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1840,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1856,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1872,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1888,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1904,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1920,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x750",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x780",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1920,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1936,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1952,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1968,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1984,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2000,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x7a0",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x7d0",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 2000,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2016,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2032,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 2048,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2064,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2080,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x7f0",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x820",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 2080,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2096,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2112,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 2128,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2144,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2160,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x840",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x870",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 2160,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2176,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2192,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 2208,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2224,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2240,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x890",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x8c0",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 2240,
+            "SASS": "LDTM.x32 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2256,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2272,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 2288,
+            "SASS": "IMAD.IADD R4, R2, 0x1, R3",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2304,
+            "SASS": "BRA.U !UP0, `(.L_x_5)",
+            "stall": 6,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2320,
+            "SASS": "LOP3.LUT R35, R35, R4, R4, 0x96, !PT",
+            "stall": 7,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x8e0",
+          "q_before_wait": 2
+        }
+      }
+    ]
+  },
+  {
+    "kind": 1,
+    "loads": [
+      {
+        "load_PC": "0x410",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1040,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1056,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1072,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1088,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1104,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1120,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x430",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x460",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1120,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1136,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1152,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1168,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1184,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1200,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x480",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x4b0",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1200,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1216,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1232,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1248,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1264,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1280,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x4d0",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x500",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1280,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1296,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1312,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1328,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1344,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1360,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x520",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x550",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1360,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1376,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1392,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1408,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1424,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1440,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x570",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x5a0",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1440,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1456,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1472,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1488,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1504,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1520,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x5c0",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x5f0",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1520,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1536,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1552,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1568,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1584,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1600,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x610",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x640",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1600,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1616,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1632,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1648,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1664,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1680,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x660",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x690",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1680,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1696,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1712,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1728,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1744,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1760,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x6b0",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x6e0",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1760,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1776,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1792,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1808,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1824,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1840,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x700",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x730",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1840,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1856,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1872,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1888,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1904,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1920,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x750",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x780",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 1920,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1936,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1952,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 1968,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 1984,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2000,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x7a0",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x7d0",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 2000,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2016,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2032,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 2048,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2064,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2080,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x7f0",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x820",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 2080,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2096,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2112,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 2128,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2144,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2160,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x840",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x870",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 2160,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2176,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2192,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 2208,
+            "SASS": "IMAD.IADD R3, R2, 0x1, R3",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2224,
+            "SASS": "R2UR UR6, R3",
+            "stall": 13,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2240,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x890",
+          "q_before_wait": 2
+        }
+      },
+      {
+        "load_PC": "0x8c0",
+        "WB": 0,
+        "following": [
+          {
+            "pc": 2240,
+            "SASS": "LDTM.16dp256bit.x8 R4, tmem[UR6]",
+            "stall": 1,
+            "WB": 0,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2256,
+            "SASS": "NOP",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2272,
+            "SASS": "LOP3.LUT R3, R4, 0x20, RZ, 0xc0, !PT",
+            "stall": 5,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 1
+          },
+          {
+            "pc": 2288,
+            "SASS": "IMAD.IADD R4, R2, 0x1, R3",
+            "stall": 1,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2304,
+            "SASS": "BRA.U !UP0, `(.L_x_5)",
+            "stall": 6,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          },
+          {
+            "pc": 2320,
+            "SASS": "LOP3.LUT R35, R35, R4, R4, 0x96, !PT",
+            "stall": 7,
+            "WB": 7,
+            "RB": 7,
+            "waitmask": 0
+          }
+        ],
+        "first_wait": {
+          "first_wait_PC": "0x8e0",
+          "q_before_wait": 2
+        }
+      }
+    ]
+  }
+]

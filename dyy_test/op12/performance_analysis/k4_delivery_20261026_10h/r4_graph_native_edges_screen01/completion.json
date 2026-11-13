@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "invocations": 40,
+  "correctness": true,
+  "warmup": 20,
+  "samples": 5,
+  "empty_commit_modes_returned": true,
+  "model_enabled": false
+}

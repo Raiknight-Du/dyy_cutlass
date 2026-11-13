@@ -1,0 +1,6 @@
+==PROF== Connected to process 2388320 (/usr/bin/python3.10)
+==PROF== Profiling "unrolled_elementwise_kernel" - 0: 0%....50%....100% - 31 passes
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 1: 0%....50%....100% - 31 passes
+PROFILE_OK case=noncp_underfilled_fp16 flashinfer=/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py shape=(1,16,32768,128) dtype=torch.float16 use_cp=False
+==PROF== Disconnected from process 2388320
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/flashinfer_e77a4a0_b200_20260825/raw/ncu/noncp_underfilled_fp16.ncu-rep

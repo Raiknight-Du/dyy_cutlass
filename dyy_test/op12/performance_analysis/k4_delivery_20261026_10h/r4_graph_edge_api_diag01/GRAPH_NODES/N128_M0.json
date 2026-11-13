@@ -1,0 +1,291 @@
+{
+  "phase": "COMPLETE_QUERY_ONLY_NO_REPLAY",
+  "tuple_type": "<class 'tuple'>",
+  "tuple_length": 5,
+  "element_types": [
+    "<enum 'CUresult'>",
+    "<class 'list'>",
+    "<class 'list'>",
+    "<class 'list'>",
+    "<class 'int'>"
+  ],
+  "metadata": {
+    "node_types": {
+      "94491322538288": 7,
+      "94491322540184": 0,
+      "94491322542080": 7
+    },
+    "event_node_handles": {
+      "94491309863136": 94491322538288,
+      "94491311550336": 94491322542080
+    },
+    "begin_event": 94491309863136,
+    "end_event": 94491311550336,
+    "kernel_name": "kernel_cutlass_kernel_shared_couplingSharedCoupling_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_Layout_B_0",
+    "grid": [
+      128,
+      1,
+      1
+    ],
+    "block": [
+      192,
+      1,
+      1
+    ],
+    "dynamic_SMEM_B": 225280,
+    "REG": 79,
+    "direct_lazy_invocations_in_enclosing_entry": 1,
+    "graph_instantiates": 0,
+    "graph_replays": 0,
+    "graph_warmups": 0,
+    "timing_samples": 0,
+    "model_enabled": false
+  },
+  "expected_edges": [
+    [
+      94491322538288,
+      94491322540184
+    ],
+    [
+      94491322540184,
+      94491322542080
+    ]
+  ],
+  "replay_performed": false,
+  "model_enabled": false,
+  "Python_immediate": {
+    "tuple_type": "<class 'tuple'>",
+    "tuple_length": 5,
+    "element_types": [
+      "<enum 'CUresult'>",
+      "<class 'list'>",
+      "<class 'list'>",
+      "<class 'list'>",
+      "<class 'int'>"
+    ],
+    "returncode": 0,
+    "from_type": "<class 'list'>",
+    "to_type": "<class 'list'>",
+    "edge_data_type": "<class 'list'>",
+    "count_type": "<class 'int'>",
+    "count": 2,
+    "edges": [
+      [
+        94491322538288,
+        94491322540184
+      ],
+      [
+        94491322540184,
+        94491322542080
+      ]
+    ],
+    "edge_data": [
+      {
+        "python_type": "<class 'cuda.bindings.driver.CUgraphEdgeData'>",
+        "repr": "from_port : 0\nto_port : 90\ntype : 237\nreserved : b'x\\xf0U\\x00\\x00'",
+        "from_port": 0,
+        "to_port": 90,
+        "type": 237,
+        "reserved": [
+          120,
+          240,
+          85,
+          0,
+          0
+        ],
+        "getPtr": 94491309924976,
+        "raw8": "005aed78f0550000"
+      },
+      {
+        "python_type": "<class 'cuda.bindings.driver.CUgraphEdgeData'>",
+        "repr": "from_port : 224\nto_port : 140\ntype : 53\nreserved : b'\\xf0\\xb3\\x7f\\x00\\x00'",
+        "from_port": 224,
+        "to_port": 140,
+        "type": 53,
+        "reserved": [
+          240,
+          179,
+          127,
+          0,
+          0
+        ],
+        "getPtr": 94491309924984,
+        "raw8": "e08c35f0b37f0000"
+      }
+    ]
+  },
+  "native_v2": {
+    "count_query_returncode": 0,
+    "edge_count": 2,
+    "native_v2_address": 140410048522640,
+    "zero_initialized_bytes_before": "00000000000000000000000000000000",
+    "data_query_returncode": 0,
+    "returned_count": 2,
+    "edges": [
+      {
+        "from": 94491322538288,
+        "to": 94491322540184,
+        "from_port": 0,
+        "to_port": 0,
+        "type": 0,
+        "reserved": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw8": "0000000000000000"
+      },
+      {
+        "from": 94491322540184,
+        "to": 94491322542080,
+        "from_port": 0,
+        "to_port": 0,
+        "type": 0,
+        "reserved": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw8": "0000000000000000"
+      }
+    ],
+    "NULL_edgeData_returncode": 0,
+    "NULL_edgeData_count": 2,
+    "NULL_edgeData_edges": [
+      [
+        94491322538288,
+        94491322540184
+      ],
+      [
+        94491322540184,
+        94491322542080
+      ]
+    ]
+  },
+  "Python_retained_after_CPU_allocation": {
+    "tuple_type": "<class 'tuple'>",
+    "tuple_length": 5,
+    "element_types": [
+      "<enum 'CUresult'>",
+      "<class 'list'>",
+      "<class 'list'>",
+      "<class 'list'>",
+      "<class 'int'>"
+    ],
+    "returncode": 0,
+    "from_type": "<class 'list'>",
+    "to_type": "<class 'list'>",
+    "edge_data_type": "<class 'list'>",
+    "count_type": "<class 'int'>",
+    "count": 2,
+    "edges": [
+      [
+        94491322538288,
+        94491322540184
+      ],
+      [
+        94491322540184,
+        94491322542080
+      ]
+    ],
+    "edge_data": [
+      {
+        "python_type": "<class 'cuda.bindings.driver.CUgraphEdgeData'>",
+        "repr": "from_port : 0\nto_port : 90\ntype : 237\nreserved : b'x\\xf0U\\x00\\x00'",
+        "from_port": 0,
+        "to_port": 90,
+        "type": 237,
+        "reserved": [
+          120,
+          240,
+          85,
+          0,
+          0
+        ],
+        "getPtr": 94491309924976,
+        "raw8": "005aed78f0550000"
+      },
+      {
+        "python_type": "<class 'cuda.bindings.driver.CUgraphEdgeData'>",
+        "repr": "from_port : 224\nto_port : 140\ntype : 53\nreserved : b'\\xf0\\xb3\\x7f\\x00\\x00'",
+        "from_port": 224,
+        "to_port": 140,
+        "type": 53,
+        "reserved": [
+          240,
+          179,
+          127,
+          0,
+          0
+        ],
+        "getPtr": 94491309924984,
+        "raw8": "e08c35f0b37f0000"
+      }
+    ]
+  },
+  "Python_repeat": {
+    "tuple_type": "<class 'tuple'>",
+    "tuple_length": 5,
+    "element_types": [
+      "<enum 'CUresult'>",
+      "<class 'list'>",
+      "<class 'list'>",
+      "<class 'list'>",
+      "<class 'int'>"
+    ],
+    "returncode": 0,
+    "from_type": "<class 'list'>",
+    "to_type": "<class 'list'>",
+    "edge_data_type": "<class 'list'>",
+    "count_type": "<class 'int'>",
+    "count": 2,
+    "edges": [
+      [
+        94491322538288,
+        94491322540184
+      ],
+      [
+        94491322540184,
+        94491322542080
+      ]
+    ],
+    "edge_data": [
+      {
+        "python_type": "<class 'cuda.bindings.driver.CUgraphEdgeData'>",
+        "repr": "from_port : 38\nto_port : 237\ntype : 241\nreserved : b\"'\\xf5U\\x00\\x00\"",
+        "from_port": 38,
+        "to_port": 237,
+        "type": 241,
+        "reserved": [
+          39,
+          245,
+          85,
+          0,
+          0
+        ],
+        "getPtr": 94491309924976,
+        "raw8": "26edf127f5550000"
+      },
+      {
+        "python_type": "<class 'cuda.bindings.driver.CUgraphEdgeData'>",
+        "repr": "from_port : 0\nto_port : 0\ntype : 0\nreserved : b'\\x00\\x00\\x00\\x00\\x00'",
+        "from_port": 0,
+        "to_port": 0,
+        "type": 0,
+        "reserved": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "getPtr": 94491309924984,
+        "raw8": "0000000000000000"
+      }
+    ]
+  }
+}

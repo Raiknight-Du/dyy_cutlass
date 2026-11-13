@@ -1,0 +1,8 @@
+{
+  "round":"R5",
+  "approved_modes":["prepare"],
+  "source_SHA256":"5311b72c38a7c7efcbba7a15fb569bd1a28c924b04aa444e48df42f799eb3e0a",
+  "max_N":128,
+  "helper_or_gold_admitted":false,
+  "model_enabled":false
+}

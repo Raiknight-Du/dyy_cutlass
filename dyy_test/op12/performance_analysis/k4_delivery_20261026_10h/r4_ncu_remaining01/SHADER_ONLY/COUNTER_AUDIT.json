@@ -1,0 +1,6832 @@
+{
+  "status": "TARGET_PC_COUNTS_PASS",
+  "mode": 1,
+  "N": 512,
+  "grid": 128,
+  "source_base_hex": "0x7f5dc35ae380",
+  "input_SHA256": {
+    "SHADER_ONLY_source.csv": "7ea4d0eef54997bc89b2807b9f6bcccf73cc0d517317109b563caa7d72f1d9ea",
+    "SHADER_ONLY_raw.csv": "ad5f212653c478804fa9fa6c4523eee1f9aa2e5e9ec5f6621973ab9a53c1a5d2",
+    "EXPECTED_N512_PC_COUNTS.csv": "afc42b1ac84e68a7554e38f2baf180799eb87f8edf4047a682f6cc4754a12760"
+  },
+  "checks": [
+    {
+      "pc": "0x2030",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2030",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2030",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2030",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2030",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R64, [R74]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2040",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2040",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2040",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2040",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2040",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R60, [R74+0x800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2050",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2050",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2050",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2050",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2050",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R56, [R74+0x1000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2060",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2060",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2060",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2060",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2060",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R52, [R74+0x1800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2070",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2070",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2070",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2070",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2070",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R48, [R74+0x2000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2080",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2080",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2080",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2080",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2080",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R44, [R74+0x2800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2090",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2090",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2090",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2090",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2090",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R40, [R74+0x3000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x20a0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20a0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20a0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R36, [R74+0x3800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x20b0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20b0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20b0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R32, [R74+0x4000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x20c0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20c0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20c0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R28, [R74+0x4800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x20d0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20d0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20d0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R24, [R74+0x5000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x20e0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20e0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20e0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R20, [R74+0x5800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x20f0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20f0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x20f0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R16, [R74+0x6000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2100",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2100",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2100",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2100",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2100",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R12, [R74+0x6800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2110",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2110",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2110",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2110",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2110",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R8, [R74+0x7000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2120",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2120",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2120",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2120",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2120",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R4, [R74+0x7800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x21a0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21a0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21a0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R64, [R74]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x21b0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21b0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21b0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R60, [R74+0x800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x21c0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21c0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21c0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R56, [R74+0x1000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x21d0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21d0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21d0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R52, [R74+0x1800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x21e0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21e0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21e0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R48, [R74+0x2000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x21f0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21f0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x21f0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R44, [R74+0x2800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2200",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2200",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2200",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2200",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2200",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R40, [R74+0x3000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2210",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2210",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2210",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2210",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2210",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R36, [R74+0x3800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2220",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2220",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2220",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2220",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2220",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R32, [R74+0x4000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2230",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2230",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2230",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2230",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2230",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R28, [R74+0x4800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2240",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2240",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2240",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2240",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2240",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R24, [R74+0x5000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2250",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2250",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2250",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2250",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2250",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R20, [R74+0x5800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2260",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2260",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2260",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2260",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2260",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R16, [R74+0x6000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2270",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2270",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2270",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2270",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2270",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R12, [R74+0x6800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2280",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2280",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2280",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2280",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2280",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R8, [R74+0x7000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2290",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2290",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2290",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2290",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2290",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R4, [R74+0x7800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x22b0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22b0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22b0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R64, [R74]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x22c0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22c0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22c0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R60, [R74+0x800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x22d0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22d0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22d0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R56, [R74+0x1000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x22e0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22e0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22e0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R52, [R74+0x1800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x22f0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22f0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x22f0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R48, [R74+0x2000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2300",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2300",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2300",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2300",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2300",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R44, [R74+0x2800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2310",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2310",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2310",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2310",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2310",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R40, [R74+0x3000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2320",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2320",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2320",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2320",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2320",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R36, [R74+0x3800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2330",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2330",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2330",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2330",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2330",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R32, [R74+0x4000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2340",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2340",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2340",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2340",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2340",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R28, [R74+0x4800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2350",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2350",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2350",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2350",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2350",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R24, [R74+0x5000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2360",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2360",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2360",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2360",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2360",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R20, [R74+0x5800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2370",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2370",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2370",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2370",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2370",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R16, [R74+0x6000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2380",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2380",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2380",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2380",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2380",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R12, [R74+0x6800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2390",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2390",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2390",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2390",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2390",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R8, [R74+0x7000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x23a0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23a0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23a0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R4, [R74+0x7800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x23c0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23c0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23c0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R64, [R74]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x23d0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23d0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23d0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R60, [R74+0x800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x23e0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23e0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23e0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R56, [R74+0x1000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x23f0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23f0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x23f0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R52, [R74+0x1800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2400",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2400",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2400",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2400",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2400",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R48, [R74+0x2000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2410",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2410",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2410",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2410",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2410",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R44, [R74+0x2800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2420",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2420",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2420",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2420",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2420",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R40, [R74+0x3000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2430",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2430",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2430",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2430",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2430",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R36, [R74+0x3800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2440",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2440",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2440",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2440",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2440",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R32, [R74+0x4000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2450",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2450",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2450",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2450",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2450",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R28, [R74+0x4800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2460",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2460",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2460",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2460",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2460",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R24, [R74+0x5000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2470",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2470",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2470",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2470",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2470",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R20, [R74+0x5800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2480",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2480",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2480",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2480",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2480",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R16, [R74+0x6000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2490",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2490",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2490",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2490",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2490",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R12, [R74+0x6800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x24a0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24a0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24a0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R8, [R74+0x7000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x24b0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24b0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24b0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R4, [R74+0x7800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x24d0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24d0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24d0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R64, [R74]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x24e0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24e0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24e0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R60, [R74+0x800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x24f0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24f0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x24f0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R56, [R74+0x1000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2500",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2500",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2500",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2500",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2500",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R52, [R74+0x1800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2510",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2510",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2510",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2510",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2510",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R48, [R74+0x2000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2520",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2520",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2520",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2520",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2520",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R44, [R74+0x2800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2530",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2530",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2530",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2530",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2530",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R40, [R74+0x3000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2540",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2540",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2540",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2540",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2540",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R36, [R74+0x3800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2550",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2550",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2550",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2550",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2550",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R32, [R74+0x4000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2560",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2560",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2560",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2560",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2560",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R28, [R74+0x4800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2570",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2570",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2570",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2570",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2570",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R24, [R74+0x5000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2580",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2580",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2580",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2580",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2580",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R20, [R74+0x5800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2590",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2590",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2590",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2590",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2590",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R16, [R74+0x6000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x25a0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x25a0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x25a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x25a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x25a0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R12, [R74+0x6800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x25b0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x25b0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x25b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x25b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x25b0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R8, [R74+0x7000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x25c0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 65536,
+      "actual": 65536.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x25c0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 2097152,
+      "actual": 2097152.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x25c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x25c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 262144,
+      "actual": 262144.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x25c0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R4, [R74+0x7800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2690",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2690",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2690",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2690",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2690",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R64, [R74]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x26a0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26a0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26a0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R60, [R74+0x800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x26b0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26b0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26b0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R56, [R74+0x1000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x26c0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26c0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26c0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R52, [R74+0x1800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x26d0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26d0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26d0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R48, [R74+0x2000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x26e0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26e0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26e0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R44, [R74+0x2800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x26f0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26f0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x26f0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R40, [R74+0x3000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2700",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2700",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2700",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2700",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2700",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R36, [R74+0x3800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2710",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2710",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2710",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2710",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2710",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R32, [R74+0x4000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2720",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2720",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2720",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2720",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2720",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R28, [R74+0x4800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2730",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2730",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2730",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2730",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2730",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R24, [R74+0x5000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2740",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2740",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2740",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2740",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2740",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R20, [R74+0x5800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2750",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2750",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2750",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2750",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2750",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R16, [R74+0x6000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2760",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2760",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2760",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2760",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2760",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R12, [R74+0x6800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2770",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2770",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2770",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2770",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2770",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R8, [R74+0x7000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2780",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2780",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2780",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2780",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2780",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R4, [R74+0x7800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x27a0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27a0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27a0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R64, [R74]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x27b0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27b0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27b0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R60, [R74+0x800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x27c0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27c0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27c0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R56, [R74+0x1000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x27d0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27d0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27d0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R52, [R74+0x1800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x27e0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27e0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27e0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R48, [R74+0x2000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x27f0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27f0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x27f0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R44, [R74+0x2800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2800",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2800",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2800",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2800",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2800",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R40, [R74+0x3000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2810",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2810",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2810",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2810",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2810",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R36, [R74+0x3800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2820",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2820",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2820",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2820",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2820",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R32, [R74+0x4000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2830",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2830",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2830",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2830",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2830",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R28, [R74+0x4800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2840",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2840",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2840",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2840",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2840",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R24, [R74+0x5000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2850",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2850",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2850",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2850",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2850",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R20, [R74+0x5800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2860",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2860",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2860",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2860",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2860",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R16, [R74+0x6000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2870",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2870",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2870",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2870",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2870",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R12, [R74+0x6800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2880",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2880",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2880",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2880",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2880",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R8, [R74+0x7000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2890",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2890",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2890",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2890",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2890",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R4, [R74+0x7800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x28d0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x28d0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x28d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x28d0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x28d0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R64, [R74]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x28e0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x28e0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x28e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x28e0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x28e0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R60, [R74+0x800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x28f0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x28f0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x28f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x28f0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x28f0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R56, [R74+0x1000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2900",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2900",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2900",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2900",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2900",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R52, [R74+0x1800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2910",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2910",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2910",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2910",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2910",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R48, [R74+0x2000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2920",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2920",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2920",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2920",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2920",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R44, [R74+0x2800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2930",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2930",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2930",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2930",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2930",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R40, [R74+0x3000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2940",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2940",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2940",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2940",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2940",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R36, [R74+0x3800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2950",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2950",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2950",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2950",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2950",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R32, [R74+0x4000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2960",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2960",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2960",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2960",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2960",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R28, [R74+0x4800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2970",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2970",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2970",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2970",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2970",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R24, [R74+0x5000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2980",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2980",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2980",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2980",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2980",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R20, [R74+0x5800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x2990",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2990",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2990",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2990",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x2990",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R16, [R74+0x6000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x29a0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x29a0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x29a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x29a0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x29a0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R12, [R74+0x6800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x29b0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x29b0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x29b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x29b0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x29b0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R8, [R74+0x7000]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x29c0",
+      "client": "shader",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x29c0",
+      "client": "shader",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x29c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x29c0",
+      "client": "shader",
+      "field": "L1 Wavefronts Shared Ideal",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x29c0",
+      "field": "opcode",
+      "expected": "LDS.128",
+      "actual": "      LDS.128 R4, [R74+0x7800]",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x35b0",
+      "client": "TC",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x35b0",
+      "client": "TC",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x35b0",
+      "field": "opcode",
+      "expected": "UTCHMMA",
+      "actual": "      UTCHMMA gdesc[UR10], gdesc[UR6], tmem[UR5], tmem[UR14], idesc[UR15], !UPT",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x35c0",
+      "client": "TC",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x35c0",
+      "client": "TC",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x35c0",
+      "field": "opcode",
+      "expected": "UTCHMMA",
+      "actual": "      UTCHMMA gdesc[UR44], gdesc[UR42], tmem[UR5], tmem[UR14], idesc[UR15], UPT",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x35d0",
+      "client": "TC",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x35d0",
+      "client": "TC",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x35d0",
+      "field": "opcode",
+      "expected": "UTCHMMA",
+      "actual": "      UTCHMMA gdesc[UR40], gdesc[UR38], tmem[UR5], tmem[UR14], idesc[UR15], UPT",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x35e0",
+      "client": "TC",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x35e0",
+      "client": "TC",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x35e0",
+      "field": "opcode",
+      "expected": "UTCHMMA",
+      "actual": "      UTCHMMA gdesc[UR36], gdesc[UR34], tmem[UR5], tmem[UR14], idesc[UR15], UPT",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x3600",
+      "client": "TC",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x3600",
+      "client": "TC",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x3600",
+      "field": "opcode",
+      "expected": "UTCHMMA",
+      "actual": "      UTCHMMA gdesc[UR32], gdesc[UR30], tmem[UR5], tmem[UR14], idesc[UR15], UPT",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x3610",
+      "client": "TC",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x3610",
+      "client": "TC",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x3610",
+      "field": "opcode",
+      "expected": "UTCHMMA",
+      "actual": "      UTCHMMA gdesc[UR28], gdesc[UR26], tmem[UR5], tmem[UR14], idesc[UR15], UPT",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x3620",
+      "client": "TC",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x3620",
+      "client": "TC",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x3620",
+      "field": "opcode",
+      "expected": "UTCHMMA",
+      "actual": "      UTCHMMA gdesc[UR24], gdesc[UR22], tmem[UR5], tmem[UR14], idesc[UR15], UPT",
+      "pass_gate": true
+    },
+    {
+      "pc": "0x3640",
+      "client": "TC",
+      "field": "Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x3640",
+      "client": "TC",
+      "field": "Predicated-On Thread Instructions Executed",
+      "expected": 0,
+      "actual": 0.0,
+      "pass_gate": true,
+      "source_missing": false
+    },
+    {
+      "pc": "0x3640",
+      "field": "opcode",
+      "expected": "UTCHMMA",
+      "actual": "      UTCHMMA gdesc[UR18], gdesc[UR16], tmem[UR5], tmem[UR14], idesc[UR15], UPT",
+      "pass_gate": true
+    }
+  ],
+  "TC_hardware_checks": [
+    {
+      "metric": "l1tex__data_pipe_tc_wavefronts.sum",
+      "actual": 0.0,
+      "expected": 0,
+      "pass_gate": true
+    },
+    {
+      "metric": "l1tex__data_pipe_tc_wavefronts_mem_shared.sum",
+      "actual": 0.0,
+      "expected": 0,
+      "pass_gate": true
+    },
+    {
+      "metric": "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_a.sum",
+      "actual": 0.0,
+      "expected": 0,
+      "pass_gate": true
+    },
+    {
+      "metric": "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_1cta.sum",
+      "actual": 0.0,
+      "expected": 0,
+      "pass_gate": true
+    }
+  ],
+  "TC_hardware_gate_status": "CHECKED",
+  "hardware_inventory": {
+    "derived__memory_l1_wavefronts_shared_excessive": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "derived__memory_l2_theoretical_sectors_global_excessive": {
+      "value": 65536.0,
+      "unit": "byte"
+    },
+    "derived__smsp__inst_executed_op_branch_pct": {
+      "value": 0.07,
+      "unit": "%"
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu.avg": {
+      "value": 845.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu.max": {
+      "value": 1091.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu.sum": {
+      "value": 125060.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_gds_op_ld.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_gds_op_ld.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_gds_op_ld.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_gds_op_ld.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld.avg": {
+      "value": 0.07,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld.max": {
+      "value": 1.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld.sum": {
+      "value": 11.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st.avg": {
+      "value": 187.18,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st.max": {
+      "value": 303.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st.sum": {
+      "value": 27702.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_type_arbitration.avg": {
+      "value": 187.26,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_type_arbitration.max": {
+      "value": 303.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_type_arbitration.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_conflicts_type_arbitration.sum": {
+      "value": 27715.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_reads.avg": {
+      "value": 3631202.59,
+      "unit": ""
+    },
+    "l1tex__data_bank_reads.max": {
+      "value": 4198578.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_reads.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_reads.sum": {
+      "value": 537417984.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_writes.avg": {
+      "value": 17857.73,
+      "unit": ""
+    },
+    "l1tex__data_bank_writes.max": {
+      "value": 20648.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_writes.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_bank_writes.sum": {
+      "value": 2642944.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts.avg": {
+      "value": 114697.2,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts.avg.pct_of_peak_sustained_active": {
+      "value": 97.28,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.avg.pct_of_peak_sustained_elapsed": {
+      "value": 81.07,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.avg.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.max": {
+      "value": 132731.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts.max.pct_of_peak_sustained_active": {
+      "value": 112.57,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.max.pct_of_peak_sustained_elapsed": {
+      "value": 93.82,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.max.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts.min.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.min.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.min.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.sum": {
+      "value": 16975186.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts.sum.pct_of_peak_sustained_active": {
+      "value": 97.28,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.sum.pct_of_peak_sustained_elapsed": {
+      "value": 81.07,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.sum.peak_sustained": {
+      "value": 148.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_read.avg": {
+      "value": 113376.95,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_read.max": {
+      "value": 131094.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_read.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_read.sum": {
+      "value": 16779789.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_write.avg": {
+      "value": 1305.2,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_write.max": {
+      "value": 1607.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_write.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_write.sum": {
+      "value": 193170.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds.avg": {
+      "value": 900.77,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds.max": {
+      "value": 1042.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds.sum": {
+      "value": 133314.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_write.avg": {
+      "value": 900.77,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_write.max": {
+      "value": 1042.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_write.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_write.sum": {
+      "value": 133314.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared.avg": {
+      "value": 113791.32,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared.max": {
+      "value": 131676.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared.sum": {
+      "value": 16841115.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_read.avg": {
+      "value": 113376.95,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_read.max": {
+      "value": 131094.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_read.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_read.sum": {
+      "value": 16779789.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_write.avg": {
+      "value": 404.43,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_write.max": {
+      "value": 565.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_write.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_write.sum": {
+      "value": 59856.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_atom.avg": {
+      "value": 3.49,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_atom.max": {
+      "value": 5.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_atom.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_atom.sum": {
+      "value": 517.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ipa.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ipa.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ipa.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ipa.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ld.avg": {
+      "value": 113373.48,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ld.max": {
+      "value": 131089.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ld.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ld.sum": {
+      "value": 16779275.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_misc.avg": {
+      "value": 16.11,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_misc.max": {
+      "value": 19.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_misc.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_misc.sum": {
+      "value": 2385.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_st.avg": {
+      "value": 400.94,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_st.max": {
+      "value": 560.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_st.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_st.sum": {
+      "value": 59339.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_umemsets.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_umemsets.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_umemsets.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_umemsets.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_surface.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_surface.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_surface.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_surface.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts.avg.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.avg.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.avg.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tc_wavefronts.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts.max.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.max.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.max.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tc_wavefronts.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts.min.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.min.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.min.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tc_wavefronts.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts.sum.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.sum.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tc_wavefronts.sum.peak_sustained": {
+      "value": 148.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utccp.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utccp.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utccp.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utccp.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_a.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_a.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_a.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_a.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_1cta.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_1cta.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_1cta.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_1cta.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_2cta.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_2cta.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_2cta.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_2cta.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts.avg.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.avg.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.avg.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tex_wavefronts.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts.max.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.max.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.max.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tex_wavefronts.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts.min.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.min.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.min.peak_sustained": {
+      "value": 1.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tex_wavefronts.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts.sum.pct_of_peak_sustained_active": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.sum.pct_of_peak_sustained_elapsed": {
+      "value": 0.0,
+      "unit": "%"
+    },
+    "l1tex__data_pipe_tex_wavefronts.sum.peak_sustained": {
+      "value": 148.0,
+      "unit": "1/cycle"
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_surface.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_surface.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_surface.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_surface.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_texture.avg": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_texture.max": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_texture.min": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_texture.sum": {
+      "value": 0.0,
+      "unit": ""
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.avg": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.max": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.min": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.sum": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_hit.avg": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_hit.max": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_hit.min": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_hit.sum": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_miss.avg": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_miss.max": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_miss.min": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld_lookup_miss.sum": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.avg": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.max": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.min": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.sum": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_st.avg": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_st.max": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_st.min": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_st.sum": {
+      "value": 0.0,
+      "unit": "sector"
+    },
+    "smsp__inst_executed_op_branch.avg": {
+      "value": 581.41,
+      "unit": "inst"
+    },
+    "smsp__inst_executed_op_branch.max": {
+      "value": 695.0,
+      "unit": "inst"
+    },
+    "smsp__inst_executed_op_branch.min": {
+      "value": 0.0,
+      "unit": "inst"
+    },
+    "smsp__inst_executed_op_branch.sum": {
+      "value": 344192.0,
+      "unit": "inst"
+    }
+  },
+  "synchronization_source_inventory": [
+    {
+      "Address": "0x7f5dc35ae480",
+      "Source": "      SYNCS.EXCH.64 URZ, [UR13], UR10",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35ae540",
+      "Source": "      SYNCS.EXCH.64 URZ, [UR13+0x8], UR10",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35ae550",
+      "Source": "      SYNCS.EXCH.64 URZ, [UR13+0x10], UR10",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35ae560",
+      "Source": "      SYNCS.EXCH.64 URZ, [UR13+0x18], UR14",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35ae5d0",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "768",
+      "Predicated-On Thread Instructions Executed": "24576",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35ae7a0",
+      "Source": "@!P0  BAR.SYNC.DEFER_BLOCKING 0x1, 0xa0",
+      "Instructions Executed": "768",
+      "Predicated-On Thread Instructions Executed": "20480",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b00a0",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "512",
+      "Predicated-On Thread Instructions Executed": "16384",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b0360",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "512",
+      "Predicated-On Thread Instructions Executed": "16384",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b0f90",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR13+0x10], R5",
+      "Instructions Executed": "512",
+      "Predicated-On Thread Instructions Executed": "16384",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b0fb0",
+      "Source": "      SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR13+0x18], RZ",
+      "Instructions Executed": "512",
+      "Predicated-On Thread Instructions Executed": "16384",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b0fd0",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "512",
+      "Predicated-On Thread Instructions Executed": "16384",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1060",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "512",
+      "Predicated-On Thread Instructions Executed": "16384",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b15b0",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR13], R4",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b15e0",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR13+0x18], R5",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1600",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1640",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b19e0",
+      "Source": "      UTCBAR [UR21], URZ",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b19f0",
+      "Source": "      UTCBAR [UR20], URZ",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1a00",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1a10",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1a50",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR13+0x8], R3",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1b50",
+      "Source": "@P0   SYNCS.ARRIVE.TRANS64 RZ, [UR13], R0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "128",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1c00",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1c10",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1c20",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1c30",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "128",
+      "Predicated-On Thread Instructions Executed": "4096",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1c60",
+      "Source": "      BAR.SYNC.DEFER_BLOCKING 0x0",
+      "Instructions Executed": "768",
+      "Predicated-On Thread Instructions Executed": "24576",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1f80",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [R4+URZ+0x10], R5",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1f90",
+      "Source": "@!P0  NANOSLEEP.SYNCS 0x989680",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1fa0",
+      "Source": "@!P0  SYNCS.PHASECHK.TRANS64 P0, [R4+URZ+0x10], R5",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1fe0",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [R3+URZ], R4",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b1ff0",
+      "Source": "@!P0  NANOSLEEP.SYNCS 0x989680",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b2000",
+      "Source": "@!P0  SYNCS.PHASECHK.TRANS64 P0, [R3+URZ], R4",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b2040",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [R4+URZ+0x18], R5",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b2050",
+      "Source": "@!P0  NANOSLEEP.SYNCS 0x989680",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b2060",
+      "Source": "@!P0  SYNCS.PHASECHK.TRANS64 P0, [R4+URZ+0x18], R5",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b20a0",
+      "Source": "      SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [R0+URZ+0x8], R3",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b20b0",
+      "Source": "@!P0  NANOSLEEP.SYNCS 0x989680",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    },
+    {
+      "Address": "0x7f5dc35b20c0",
+      "Source": "@!P0  SYNCS.PHASECHK.TRANS64 P0, [R0+URZ+0x8], R3",
+      "Instructions Executed": "0",
+      "Predicated-On Thread Instructions Executed": "0",
+      "L1 Wavefronts Shared": "0",
+      "L1 Wavefronts Shared Ideal": "0"
+    }
+  ],
+  "limits": [
+    "Target PC weights use positive-N branch proof: main 64 LDS PCs repeat N/4; prologue/tail LDS PCs execute zero for N512.",
+    "Hardware parent/child/misc values are inventories, not exclusive elapsed cycles. No conversion of conflict count to latency.",
+    "Per-mode wait/poll growth requires comparison across four reports; one NCU invocation cannot establish N scaling.",
+    "Counts PASS does not admit a conditional service rate without formal dual-domain convergence and Lead review."
+  ],
+  "model_enabled": false
+}

@@ -1,0 +1,5 @@
+environment,mma_on_variant,mma_off_variant,mma_on_mean_us,mma_off_mean_us,mma_exposed_mean_us,mma_exposed_ci95_half_us
+utccp_full_epi,notma,shell_utccp,25.612288,21.347328,4.264959999999999,0.07535715124410335
+no_utccp_full_epi,notma_noutccp,shell_noutccp,25.510784,19.766656,5.744128000000001,0.14678958213561252
+no_utccp_no_dstore,notma_noutccp_nodstore,shell_nodstore,25.420672,17.314816,8.105856000000001,0.09055742878272091
+no_utccp_no_epi,notma_noutccp_noepi,shell_noepi,21.268352,5.894016,15.374336,0.06386271830810426

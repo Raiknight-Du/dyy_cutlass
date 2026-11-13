@@ -1,0 +1,14 @@
+{
+  "UTC": "2026-10-26T22:20:28.541893+00:00",
+  "file": "LOCAL_ANALYSIS_PAYLOAD.tar.gz",
+  "bytes": 9714639,
+  "sha256": "866fe43e94a8633d9b49415872d6e8fe6956471c86f17979bf352b4f1ae3ecde",
+  "files": 183,
+  "excluded": [
+    ".plot_env",
+    "node_modules",
+    "__pycache__",
+    "raw_evidence"
+  ],
+  "model_enabled": false
+}

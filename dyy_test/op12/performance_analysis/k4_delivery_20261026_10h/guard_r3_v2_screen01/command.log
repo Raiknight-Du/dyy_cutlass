@@ -1,0 +1,388 @@
+{"status": "SUPERVISED_COMMAND_COMPLETE", "returncode": 0, "model_enabled": false}
+{
+  "status": "SCREEN_RAW_VALIDATED_PENDING_LEAD_REVIEW",
+  "metadata": {
+    "device": "NVIDIA B200",
+    "SM_count": 148,
+    "l2_size_B": 132644864,
+    "registers_per_SM": 65536,
+    "dynamic_SMEM_B": 225280,
+    "scalar_REG": 139,
+    "vector_REG": 140,
+    "scalar_local_B": 0,
+    "vector_local_B": 0,
+    "scalar_max_dynamic_SMEM": 225280,
+    "vector_max_dynamic_SMEM": 225280,
+    "max_CTA_per_SM_scalar": 1,
+    "max_CTA_per_SM_vector": 1,
+    "model_enabled": false
+  },
+  "completion": {
+    "completed": true,
+    "invocations": 80,
+    "correctness": true,
+    "mode": "screen",
+    "warmups_per_config_per_point": 20,
+    "samples_per_point": 5,
+    "model_enabled": false
+  },
+  "invocations": 80,
+  "CTA_records": 5160,
+  "cases": [
+    {
+      "config": "S_G128_CONTROL",
+      "N": 128,
+      "Event_us": {
+        "n": 5,
+        "median": 8.25599953532219,
+        "min": 6.752000190317631,
+        "max": 8.608000352978706,
+        "CV_pct": 8.197392374960529,
+        "P95_P5_over_median_pct": 19.069769330697596
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 5433.0,
+        "min": 5433.0,
+        "max": 5448.5,
+        "CV_pct": 0.13314359146321258,
+        "P95_P5_over_median_pct": 0.27977176513896224
+      },
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "S_G128_CONTROL",
+      "N": 256,
+      "Event_us": {
+        "n": 5,
+        "median": 10.111999697983265,
+        "min": 9.503999724984169,
+        "max": 14.527999795973301,
+        "CV_pct": 16.63596792533587,
+        "P95_P5_over_median_pct": 41.51898974338618
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 10553.0,
+        "min": 10553.0,
+        "max": 10569.0,
+        "CV_pct": 0.0688434660632689,
+        "P95_P5_over_median_pct": 0.14687766511892353
+      },
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "S_G128_LOAD",
+      "N": 128,
+      "Event_us": {
+        "n": 5,
+        "median": 1906.5920114517212,
+        "min": 1904.7679901123047,
+        "max": 1910.4000329971313,
+        "CV_pct": 0.09681731263064612,
+        "P95_P5_over_median_pct": 0.2410181088710628
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 3394668.5,
+        "min": 3392912.5,
+        "max": 3396537.5,
+        "CV_pct": 0.03605381060983578,
+        "P95_P5_over_median_pct": 0.09332870057857451
+      },
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "S_G128_LOAD",
+      "N": 256,
+      "Event_us": {
+        "n": 5,
+        "median": 3810.3039264678955,
+        "min": 3803.839921951294,
+        "max": 3824.863910675049,
+        "CV_pct": 0.18189536326496245,
+        "P95_P5_over_median_pct": 0.4425884736127038
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 6796447.5,
+        "min": 6783647.0,
+        "max": 6805465.0,
+        "CV_pct": 0.12904140454433535,
+        "P95_P5_over_median_pct": 0.30661312398866925
+      },
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "S_G1_CONTROL",
+      "N": 128,
+      "Event_us": {
+        "n": 5,
+        "median": 6.591999903321266,
+        "min": 6.0800001956522465,
+        "max": 7.648000027984381,
+        "CV_pct": 8.738832007478358,
+        "P95_P5_over_median_pct": 21.359220955436385
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 5436.0,
+        "min": 5436.0,
+        "max": 5436.0,
+        "CV_pct": 0.0,
+        "P95_P5_over_median_pct": 0.0
+      },
+      "unique_SM_min": 1,
+      "unique_SM_max": 1
+    },
+    {
+      "config": "S_G1_CONTROL",
+      "N": 256,
+      "Event_us": {
+        "n": 5,
+        "median": 10.208000428974628,
+        "min": 9.312000125646591,
+        "max": 10.591999627649784,
+        "CV_pct": 4.60071502227545,
+        "P95_P5_over_median_pct": 11.285262505135366
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 10556.0,
+        "min": 10556.0,
+        "max": 10556.0,
+        "CV_pct": 0.0,
+        "P95_P5_over_median_pct": 0.0
+      },
+      "unique_SM_min": 1,
+      "unique_SM_max": 1
+    },
+    {
+      "config": "S_G1_LOAD",
+      "N": 128,
+      "Event_us": {
+        "n": 5,
+        "median": 1566.4960145950317,
+        "min": 1564.736008644104,
+        "max": 1566.7519569396973,
+        "CV_pct": 0.04754223451057921,
+        "P95_P5_over_median_pct": 0.11030597179561151
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 3060452.0,
+        "min": 3058382.0,
+        "max": 3061122.0,
+        "CV_pct": 0.03559275518583146,
+        "P95_P5_over_median_pct": 0.08399412897178676
+      },
+      "unique_SM_min": 1,
+      "unique_SM_max": 1
+    },
+    {
+      "config": "S_G1_LOAD",
+      "N": 256,
+      "Event_us": {
+        "n": 5,
+        "median": 3122.623920440674,
+        "min": 3121.8879222869873,
+        "max": 3124.44806098938,
+        "CV_pct": 0.032002007592606484,
+        "P95_P5_over_median_pct": 0.07665740720521601
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 6119788.0,
+        "min": 6115164.0,
+        "max": 6124639.0,
+        "CV_pct": 0.06139732308618218,
+        "P95_P5_over_median_pct": 0.147273075472546
+      },
+      "unique_SM_min": 1,
+      "unique_SM_max": 1
+    },
+    {
+      "config": "V_G128_CONTROL",
+      "N": 128,
+      "Event_us": {
+        "n": 5,
+        "median": 8.063999935984612,
+        "min": 7.935999892652035,
+        "max": 8.608000352978706,
+        "CV_pct": 2.888286294258272,
+        "P95_P5_over_median_pct": 6.904768339282295
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 5433.0,
+        "min": 5433.0,
+        "max": 5433.0,
+        "CV_pct": 0.0,
+        "P95_P5_over_median_pct": 0.0
+      },
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "V_G128_CONTROL",
+      "N": 256,
+      "Event_us": {
+        "n": 5,
+        "median": 10.591999627649784,
+        "min": 10.400000028312206,
+        "max": 10.912000201642513,
+        "CV_pct": 1.8217118710022997,
+        "P95_P5_over_median_pct": 4.471299885264079
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 10553.0,
+        "min": 10553.0,
+        "max": 10553.0,
+        "CV_pct": 0.0,
+        "P95_P5_over_median_pct": 0.0
+      },
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "V_G128_LOAD",
+      "N": 128,
+      "Event_us": {
+        "n": 5,
+        "median": 585.312008857727,
+        "min": 583.6160182952881,
+        "max": 591.3919806480408,
+        "CV_pct": 0.4820006241567035,
+        "P95_P5_over_median_pct": 1.1415384220582152
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 962352.5,
+        "min": 961200.0,
+        "max": 963793.5,
+        "CV_pct": 0.09904022100067517,
+        "P95_P5_over_median_pct": 0.2472274972008649
+      },
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "V_G128_LOAD",
+      "N": 256,
+      "Event_us": {
+        "n": 5,
+        "median": 1163.2319688796997,
+        "min": 1152.7680158615112,
+        "max": 1165.7919883728027,
+        "CV_pct": 0.40587980115226757,
+        "P95_P5_over_median_pct": 0.9248693647821861
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 1926343.0,
+        "min": 1922251.5,
+        "max": 1931008.0,
+        "CV_pct": 0.17198569759905527,
+        "P95_P5_over_median_pct": 0.416171990138823
+      },
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "V_G1_CONTROL",
+      "N": 128,
+      "Event_us": {
+        "n": 5,
+        "median": 7.807999849319458,
+        "min": 7.584000006318092,
+        "max": 8.576000109314919,
+        "CV_pct": 4.975083007446109,
+        "P95_P5_over_median_pct": 11.967213818689812
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 5433.0,
+        "min": 5433.0,
+        "max": 5433.0,
+        "CV_pct": 0.0,
+        "P95_P5_over_median_pct": 0.0
+      },
+      "unique_SM_min": 1,
+      "unique_SM_max": 1
+    },
+    {
+      "config": "V_G1_CONTROL",
+      "N": 256,
+      "Event_us": {
+        "n": 5,
+        "median": 10.367999784648418,
+        "min": 9.535999968647957,
+        "max": 10.432000271975994,
+        "CV_pct": 3.3028500824626876,
+        "P95_P5_over_median_pct": 7.530866005153354
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 10553.0,
+        "min": 10553.0,
+        "max": 10553.0,
+        "CV_pct": 0.0,
+        "P95_P5_over_median_pct": 0.0
+      },
+      "unique_SM_min": 1,
+      "unique_SM_max": 1
+    },
+    {
+      "config": "V_G1_LOAD",
+      "N": 128,
+      "Event_us": {
+        "n": 5,
+        "median": 395.2000141143799,
+        "min": 395.00799775123596,
+        "max": 396.64000272750854,
+        "CV_pct": 0.14929635014279352,
+        "P95_P5_over_median_pct": 0.35465667303535436
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 765863.0,
+        "min": 765370.0,
+        "max": 767343.0,
+        "CV_pct": 0.09265163088733355,
+        "P95_P5_over_median_pct": 0.22249410142545076
+      },
+      "unique_SM_min": 1,
+      "unique_SM_max": 1
+    },
+    {
+      "config": "V_G1_LOAD",
+      "N": 256,
+      "Event_us": {
+        "n": 5,
+        "median": 784.5119833946228,
+        "min": 782.368004322052,
+        "max": 786.0159873962402,
+        "CV_pct": 0.14997091788380132,
+        "P95_P5_over_median_pct": 0.3874994900062886
+      },
+      "per_launch_CTA_cycle_median": {
+        "n": 5,
+        "median": 1530441.0,
+        "min": 1527449.0,
+        "max": 1533068.0,
+        "CV_pct": 0.11993266501382042,
+        "P95_P5_over_median_pct": 0.31210611843253633
+      },
+      "unique_SM_min": 1,
+      "unique_SM_max": 1
+    }
+  ],
+  "frequency_policy": "Automatic; R3 did not lock GPU clocks",
+  "model_enabled": false,
+  "interpretation": "Two work points and one process are diagnostic only; no fitted conditional service or hardware capacity admitted. Per-CTA durations never subtract different-SM clocks. Shared residency cap does not guarantee simultaneous execution."
+}

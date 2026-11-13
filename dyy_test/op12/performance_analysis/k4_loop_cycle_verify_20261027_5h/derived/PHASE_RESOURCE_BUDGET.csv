@@ -1,0 +1,10 @@
+﻿phase,PC_begin,PC_end,native_PCs,TMEM,shared_read,shared_write,ALU_PACK,FP32,FP16,SFU,IMAD,issue_only_floor,interpretation
+CG0 T门控变换,0x2330,0x3e40,434,0,208.0,64.0,322.0,120.0,4.0,136.0,30.0,69.0,"Resource service sums per native PC; not observed phase time, not serial additions to loop period. Unknown operation latency is not replaced by issue floor."
+CG0 QK后处理,0x3e50,0x5470,355,64.0,144.0,64.0,224.0,94.0,0,136.0,40.0,34.0,"Resource service sums per native PC; not observed phase time, not serial additions to loop period. Unknown operation latency is not replaced by issue floor."
+CG1 state读回与A发布,0x6fb0,0x79e0,164,192.0,4.0,0,128.0,128.0,0,0,2.0,26.0,"Resource service sums per native PC; not observed phase time, not serial additions to loop period. Unknown operation latency is not replaced by issue floor."
+CG1 state decay发布,0x79f0,0x7a50,7,128.0,0,0,0,0,0,0,0,3.0,"Resource service sums per native PC; not observed phase time, not serial additions to loop period. Unknown operation latency is not replaced by issue floor."
+CG1 gate与V gather,0x7a60,0x7c50,32,0,260.0,0,0,0,0,0,6.0,4.0,"Resource service sums per native PC; not observed phase time, not serial additions to loop period. Unknown operation latency is not replaced by issue floor."
+CG1 KS residual/VKS发布,0x7c60,0x8300,107,160.0,0,0,64.0,64.0,128.0,0,0,7.0,"Resource service sums per native PC; not observed phase time, not serial additions to loop period. Unknown operation latency is not replaced by issue floor."
+CG1 QS处理与发布,0x8310,0x8820,82,256.0,0,0,0,132.0,0,32.0,0,8.0,"Resource service sums per native PC; not observed phase time, not serial additions to loop period. Unknown operation latency is not replaced by issue floor."
+CG1 NV/Delta处理与发布,0x8830,0x9080,134,192.0,0,0,128.0,76.0,0,96.0,2.0,13.0,"Resource service sums per native PC; not observed phase time, not serial additions to loop period. Unknown operation latency is not replaced by issue floor."
+CG1 O暂存与返回,0x9090,0x94d0,69,128.0,0,128.0,64.0,0,0,0,6.0,24.0,"Resource service sums per native PC; not observed phase time, not serial additions to loop period. Unknown operation latency is not replaced by issue floor."

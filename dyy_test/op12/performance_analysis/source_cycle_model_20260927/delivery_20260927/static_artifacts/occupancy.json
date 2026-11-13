@@ -1,0 +1,30 @@
+[
+  {
+    "kernel": "K1",
+    "threads": 128,
+    "dynamic_smem_query": 24960,
+    "max_active_CTA_per_SM": 8,
+    "note": "K1 exact source dynamic size; K2/K4 zero dynamic query is upper bound; K3 minimum payload query is upper bound; no kernel launched."
+  },
+  {
+    "kernel": "K2",
+    "threads": 384,
+    "dynamic_smem_query": 0,
+    "max_active_CTA_per_SM": 1,
+    "note": "K1 exact source dynamic size; K2/K4 zero dynamic query is upper bound; K3 minimum payload query is upper bound; no kernel launched."
+  },
+  {
+    "kernel": "K3",
+    "threads": 256,
+    "dynamic_smem_query": 163840,
+    "max_active_CTA_per_SM": 1,
+    "note": "K1 exact source dynamic size; K2/K4 zero dynamic query is upper bound; K3 minimum payload query is upper bound; no kernel launched."
+  },
+  {
+    "kernel": "K4",
+    "threads": 384,
+    "dynamic_smem_query": 0,
+    "max_active_CTA_per_SM": 1,
+    "note": "K1 exact source dynamic size; K2/K4 zero dynamic query is upper bound; K3 minimum payload query is upper bound; no kernel launched."
+  }
+]

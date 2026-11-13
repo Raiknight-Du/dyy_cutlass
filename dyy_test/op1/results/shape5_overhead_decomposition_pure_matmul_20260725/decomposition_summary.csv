@@ -1,0 +1,8 @@
+variant,description,mean_us,ci95_half_us,exposed_reduction_vs_previous_us
+full,完整 pure matmul,14.517620,0.017387,
+notc,移除 UMMA,11.801220,0.109026,2.716400
+notma,移除 A/B/SFA/SFB TMA,14.357240,0.044126,0.160380
+shell_utccp,移除 TMA+UMMA，保留 UTCCP/epilogue,8.371456,0.022042,
+shell_noutccp,再移除 UTCCP,7.333632,0.019507,1.037824
+shell_nodstore,再移除 D TMA store,6.214528,0.072996,1.119104
+shell_noepi,再移除 TMEM 读出、转换和 SMEM staging,5.053184,0.041718,1.161344

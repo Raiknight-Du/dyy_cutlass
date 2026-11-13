@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service",
+    "--mode",
+    "profile",
+    "--out",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_v2_ncu_remaining01/V_G128_CONTROL/replays/application_1434279",
+    "--config",
+    "V_G128_CONTROL",
+    "--points",
+    "512",
+    "--warmup",
+    "20",
+    "--samples",
+    "1"
+  ],
+  "returncode": 0,
+  "binary_sha256": "706756dda3c7bd8951361930b1bac35524dbddc2a582aac528851452e04f34f7",
+  "model_enabled": false
+}

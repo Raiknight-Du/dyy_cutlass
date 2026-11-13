@@ -1,0 +1,9 @@
+{
+  "round":"R4",
+  "approved_modes":["screen"],
+  "source_SHA256":"690d1432059d27dc1e6b0de3c45738e6d7b11a3ba7092adb413064335fab9d9b",
+  "max_N":256,
+  "watchdog_seconds":120,
+  "conditions":"Four runtime modes, 20warm/5sample/N128,256; CONTROL and SHADER_ONLY warm first; automatic clocks; no formal or NCU",
+  "model_enabled":false
+}

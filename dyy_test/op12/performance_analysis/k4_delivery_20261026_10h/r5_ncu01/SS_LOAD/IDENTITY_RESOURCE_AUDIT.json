@@ -1,0 +1,7 @@
+{
+  "status": "ACTUAL_WHOLE_CUBIN_RESOURCE_PASS",
+  "CUBIN_SHA256": "60b132f31202059cf0d7a29a49b2097f0c4109909de97a4645cf73706cd08038",
+  "metadata_replays": 17,
+  "clock_policy": "automatic; counter evidence only; no replay timing adoption",
+  "model_enabled": false
+}

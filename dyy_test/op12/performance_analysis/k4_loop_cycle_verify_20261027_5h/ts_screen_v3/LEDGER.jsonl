@@ -1,0 +1,5 @@
+{"event": "admission", "quiet": 1, "state": {"time": "2026-10-26T19:59:20.754754+00:00", "gpu": "0, 120, 32, 188.85", "apps": ""}}
+{"event": "admission", "quiet": 2, "state": {"time": "2026-10-26T19:59:50.818113+00:00", "gpu": "0, 120, 32, 188.81", "apps": ""}}
+{"event": "admission", "quiet": 3, "state": {"time": "2026-10-26T20:00:20.883395+00:00", "gpu": "0, 120, 32, 188.93", "apps": ""}}
+{"event": "start", "command": ["/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python", "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_matched_ts.py", "--kind", "3", "--out", "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/ts_screen_v3/kind3_t0", "--trial", "0", "--points", "128", "--samples", "1", "--modes", "1,2,3", "--warmup", "2"], "state": {"time": "2026-10-26T20:00:20.918261+00:00", "gpu": "0, 120, 32, 188.97", "apps": ""}}
+{"event": "end", "tag": "kind3_t0", "returncode": 1, "state": {"time": "2026-10-26T20:00:23.167969+00:00", "gpu": "0, 1965, 33, 243.97", "apps": ""}}

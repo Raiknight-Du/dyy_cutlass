@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "points": [
+    512
+  ],
+  "modes": [
+    1
+  ],
+  "samples": 1,
+  "correctness": true,
+  "model_enabled": false
+}

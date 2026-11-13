@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_matched_ts.py", line 87, in <module>
+    if __name__=='__main__':main()
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_matched_ts.py", line 77, in main
+    assert bool(torch.all(go==(128.0 if m&2 else 0.0))),('MMA_output',fam['name'],n,m)
+AssertionError: ('MMA_output', 'CG1_LDSM', 128, 2)

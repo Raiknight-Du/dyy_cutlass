@@ -1,0 +1,972 @@
+{
+  "status": "PARTIAL_OR_SOURCE_GATE_FAILED",
+  "captures": 24,
+  "all_Source_gates": false,
+  "records": [
+    {
+      "family": "CG0_LDS",
+      "kind": 0,
+      "N": 128,
+      "mode": 1,
+      "target_PCs": 0,
+      "expected_PCs": 60,
+      "Source_WF": 0,
+      "Source_ideal": 0,
+      "expected_Source_WF": 2359296,
+      "Source_gate": false,
+      "pred_on": 0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 20480.0,
+      "write": 33408.0,
+      "misc": 14612.0,
+      "TC": 0.0,
+      "read_conflict": 0.0,
+      "write_conflict": 0.0,
+      "arbitration": 4.0,
+      "total": 580915.0
+    },
+    {
+      "family": "CG0_LDS",
+      "kind": 0,
+      "N": 128,
+      "mode": 3,
+      "target_PCs": 0,
+      "expected_PCs": 60,
+      "Source_WF": 0,
+      "Source_ideal": 0,
+      "expected_Source_WF": 2359296,
+      "Source_gate": false,
+      "pred_on": 0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 465684.0,
+      "write": 33408.0,
+      "misc": 14464.0,
+      "TC": 4194304.0,
+      "read_conflict": 444781.0,
+      "write_conflict": 0.0,
+      "arbitration": 444781.0,
+      "total": 1025353.0
+    },
+    {
+      "family": "CG0_LDS",
+      "kind": 0,
+      "N": 512,
+      "mode": 1,
+      "target_PCs": 0,
+      "expected_PCs": 60,
+      "Source_WF": 0,
+      "Source_ideal": 0,
+      "expected_Source_WF": 9437184,
+      "Source_gate": false,
+      "pred_on": 0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 20481.0,
+      "write": 33408.0,
+      "misc": 14612.0,
+      "TC": 0.0,
+      "read_conflict": 1.0,
+      "write_conflict": 0.0,
+      "arbitration": 4.0,
+      "total": 580183.0
+    },
+    {
+      "family": "CG0_LDS",
+      "kind": 0,
+      "N": 512,
+      "mode": 3,
+      "target_PCs": 0,
+      "expected_PCs": 60,
+      "Source_WF": 0,
+      "Source_ideal": 0,
+      "expected_Source_WF": 9437184,
+      "Source_gate": false,
+      "pred_on": 0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 466097.0,
+      "write": 33408.0,
+      "misc": 14464.0,
+      "TC": 16777216.0,
+      "read_conflict": 440516.0,
+      "write_conflict": 0.0,
+      "arbitration": 440517.0,
+      "total": 1025147.0
+    },
+    {
+      "family": "CG1_GATE",
+      "kind": 1,
+      "N": 128,
+      "mode": 1,
+      "target_PCs": 0,
+      "expected_PCs": 18,
+      "Source_WF": 0,
+      "Source_ideal": 0,
+      "expected_Source_WF": 2228224,
+      "Source_gate": false,
+      "pred_on": 0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 51715.0,
+      "write": 48696.0,
+      "misc": 2172.0,
+      "TC": 0.0,
+      "read_conflict": 0.0,
+      "write_conflict": 32113.0,
+      "arbitration": 32113.0,
+      "total": 287534.0
+    },
+    {
+      "family": "CG1_GATE",
+      "kind": 1,
+      "N": 128,
+      "mode": 3,
+      "target_PCs": 0,
+      "expected_PCs": 18,
+      "Source_WF": 0,
+      "Source_ideal": 0,
+      "expected_Source_WF": 2228224,
+      "Source_gate": false,
+      "pred_on": 0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 1227260.0,
+      "write": 48853.0,
+      "misc": 2167.0,
+      "TC": 4194304.0,
+      "read_conflict": 1058893.0,
+      "write_conflict": 32029.0,
+      "arbitration": 1090923.0,
+      "total": 1463260.0
+    },
+    {
+      "family": "CG1_GATE",
+      "kind": 1,
+      "N": 512,
+      "mode": 1,
+      "target_PCs": 0,
+      "expected_PCs": 18,
+      "Source_WF": 0,
+      "Source_ideal": 0,
+      "expected_Source_WF": 8912896,
+      "Source_gate": false,
+      "pred_on": 0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 150023.0,
+      "write": 48775.0,
+      "misc": 2170.0,
+      "TC": 0.0,
+      "read_conflict": 0.0,
+      "write_conflict": 31860.0,
+      "arbitration": 31860.0,
+      "total": 385963.0
+    },
+    {
+      "family": "CG1_GATE",
+      "kind": 1,
+      "N": 512,
+      "mode": 3,
+      "target_PCs": 0,
+      "expected_PCs": 18,
+      "Source_WF": 0,
+      "Source_ideal": 0,
+      "expected_Source_WF": 8912896,
+      "Source_gate": false,
+      "pred_on": 0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 3783563.0,
+      "write": 48702.0,
+      "misc": 2175.0,
+      "TC": 16777216.0,
+      "read_conflict": 3181656.0,
+      "write_conflict": 32365.0,
+      "arbitration": 3214034.0,
+      "total": 4019500.0
+    },
+    {
+      "family": "CG0_LDSM",
+      "kind": 2,
+      "N": 128,
+      "mode": 1,
+      "target_PCs": 4,
+      "expected_PCs": 4,
+      "Source_WF": 1048576.0,
+      "Source_ideal": 1048576.0,
+      "expected_Source_WF": 1048576,
+      "Source_gate": true,
+      "pred_on": 8388608.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 1050629.0,
+      "write": 59739.0,
+      "misc": 2222.0,
+      "TC": 0.0,
+      "read_conflict": 3.0,
+      "write_conflict": 3453.0,
+      "arbitration": 3458.0,
+      "total": 1254330.0
+    },
+    {
+      "family": "CG0_LDSM",
+      "kind": 2,
+      "N": 128,
+      "mode": 3,
+      "target_PCs": 4,
+      "expected_PCs": 4,
+      "Source_WF": 1048576.0,
+      "Source_ideal": 1048576.0,
+      "expected_Source_WF": 1048576,
+      "Source_gate": true,
+      "pred_on": 8388608.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 5244931.0,
+      "write": 59421.0,
+      "misc": 2221.0,
+      "TC": 4194304.0,
+      "read_conflict": 4194304.0,
+      "write_conflict": 3091.0,
+      "arbitration": 4197397.0,
+      "total": 5448308.0
+    },
+    {
+      "family": "CG0_LDSM",
+      "kind": 2,
+      "N": 512,
+      "mode": 1,
+      "target_PCs": 4,
+      "expected_PCs": 4,
+      "Source_WF": 4194304.0,
+      "Source_ideal": 4194304.0,
+      "expected_Source_WF": 4194304,
+      "Source_gate": true,
+      "pred_on": 33554432.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 4196358.0,
+      "write": 59370.0,
+      "misc": 2217.0,
+      "TC": 0.0,
+      "read_conflict": 0.0,
+      "write_conflict": 3095.0,
+      "arbitration": 3095.0,
+      "total": 4399687.0
+    },
+    {
+      "family": "CG0_LDSM",
+      "kind": 2,
+      "N": 512,
+      "mode": 3,
+      "target_PCs": 4,
+      "expected_PCs": 4,
+      "Source_WF": 4194304.0,
+      "Source_ideal": 4194304.0,
+      "expected_Source_WF": 4194304,
+      "Source_gate": true,
+      "pred_on": 33554432.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 20973577.0,
+      "write": 59499.0,
+      "misc": 2222.0,
+      "TC": 16777216.0,
+      "read_conflict": 16777217.0,
+      "write_conflict": 3154.0,
+      "arbitration": 16780371.0,
+      "total": 21177033.0
+    },
+    {
+      "family": "CG1_LDSM",
+      "kind": 3,
+      "N": 128,
+      "mode": 1,
+      "target_PCs": 8,
+      "expected_PCs": 8,
+      "Source_WF": 2097152.0,
+      "Source_ideal": 2097152.0,
+      "expected_Source_WF": 2097152,
+      "Source_gate": true,
+      "pred_on": 16777216.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 2099226.0,
+      "write": 63274.0,
+      "misc": 2367.0,
+      "TC": 0.0,
+      "read_conflict": 25.0,
+      "write_conflict": 9525.0,
+      "arbitration": 9578.0,
+      "total": 2331347.0
+    },
+    {
+      "family": "CG1_LDSM",
+      "kind": 3,
+      "N": 128,
+      "mode": 3,
+      "target_PCs": 8,
+      "expected_PCs": 8,
+      "Source_WF": 2097152.0,
+      "Source_ideal": 2097152.0,
+      "expected_Source_WF": 2097152,
+      "Source_gate": true,
+      "pred_on": 16777216.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 6255359.0,
+      "write": 63595.0,
+      "misc": 2240.0,
+      "TC": 4194304.0,
+      "read_conflict": 4161092.0,
+      "write_conflict": 9977.0,
+      "arbitration": 4171101.0,
+      "total": 6487549.0
+    },
+    {
+      "family": "CG1_LDSM",
+      "kind": 3,
+      "N": 512,
+      "mode": 1,
+      "target_PCs": 8,
+      "expected_PCs": 8,
+      "Source_WF": 8388608.0,
+      "Source_ideal": 8388608.0,
+      "expected_Source_WF": 8388608,
+      "Source_gate": true,
+      "pred_on": 67108864.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 8390686.0,
+      "write": 63491.0,
+      "misc": 2365.0,
+      "TC": 0.0,
+      "read_conflict": 28.0,
+      "write_conflict": 9803.0,
+      "arbitration": 9853.0,
+      "total": 8623023.0
+    },
+    {
+      "family": "CG1_LDSM",
+      "kind": 3,
+      "N": 512,
+      "mode": 3,
+      "target_PCs": 8,
+      "expected_PCs": 8,
+      "Source_WF": 8388608.0,
+      "Source_ideal": 8388608.0,
+      "expected_Source_WF": 8388608,
+      "Source_gate": true,
+      "pred_on": 67108864.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 25129171.0,
+      "write": 63698.0,
+      "misc": 2240.0,
+      "TC": 16777216.0,
+      "read_conflict": 16743410.0,
+      "write_conflict": 9749.0,
+      "arbitration": 16753193.0,
+      "total": 25361470.0
+    },
+    {
+      "family": "CG0_STSM",
+      "kind": 4,
+      "N": 128,
+      "mode": 1,
+      "target_PCs": 4,
+      "expected_PCs": 4,
+      "Source_WF": 1048576.0,
+      "Source_ideal": 1048576.0,
+      "expected_Source_WF": 1048576,
+      "Source_gate": true,
+      "pred_on": 8388608.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 2057.0,
+      "write": 1107645.0,
+      "misc": 2197.0,
+      "TC": 0.0,
+      "read_conflict": 1.0,
+      "write_conflict": 3863.0,
+      "arbitration": 3864.0,
+      "total": 1253626.0
+    },
+    {
+      "family": "CG0_STSM",
+      "kind": 4,
+      "N": 128,
+      "mode": 3,
+      "target_PCs": 4,
+      "expected_PCs": 4,
+      "Source_WF": 1048576.0,
+      "Source_ideal": 1048576.0,
+      "expected_Source_WF": 1048576,
+      "Source_gate": true,
+      "pred_on": 8388608.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 2055.0,
+      "write": 1107577.0,
+      "misc": 2083.0,
+      "TC": 4194304.0,
+      "read_conflict": 5.0,
+      "write_conflict": 4076.0,
+      "arbitration": 4116.0,
+      "total": 1253300.0
+    },
+    {
+      "family": "CG0_STSM",
+      "kind": 4,
+      "N": 512,
+      "mode": 1,
+      "target_PCs": 4,
+      "expected_PCs": 4,
+      "Source_WF": 4194304.0,
+      "Source_ideal": 4194304.0,
+      "expected_Source_WF": 4194304,
+      "Source_gate": true,
+      "pred_on": 33554432.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 2052.0,
+      "write": 4253382.0,
+      "misc": 2204.0,
+      "TC": 0.0,
+      "read_conflict": 0.0,
+      "write_conflict": 4230.0,
+      "arbitration": 4231.0,
+      "total": 4399362.0
+    },
+    {
+      "family": "CG0_STSM",
+      "kind": 4,
+      "N": 512,
+      "mode": 3,
+      "target_PCs": 4,
+      "expected_PCs": 4,
+      "Source_WF": 4194304.0,
+      "Source_ideal": 4194304.0,
+      "expected_Source_WF": 4194304,
+      "Source_gate": true,
+      "pred_on": 33554432.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 2054.0,
+      "write": 4253426.0,
+      "misc": 2077.0,
+      "TC": 16777216.0,
+      "read_conflict": 5.0,
+      "write_conflict": 3840.0,
+      "arbitration": 3877.0,
+      "total": 4399151.0
+    },
+    {
+      "family": "CG1_STSM",
+      "kind": 5,
+      "N": 128,
+      "mode": 1,
+      "target_PCs": 8,
+      "expected_PCs": 8,
+      "Source_WF": 2097152.0,
+      "Source_ideal": 2097152.0,
+      "expected_Source_WF": 2097152,
+      "Source_gate": true,
+      "pred_on": 16777216.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 2074.0,
+      "write": 2160334.0,
+      "misc": 2334.0,
+      "TC": 0.0,
+      "read_conflict": 32.0,
+      "write_conflict": 9949.0,
+      "arbitration": 10011.0,
+      "total": 2331198.0
+    },
+    {
+      "family": "CG1_STSM",
+      "kind": 5,
+      "N": 128,
+      "mode": 3,
+      "target_PCs": 8,
+      "expected_PCs": 8,
+      "Source_WF": 2097152.0,
+      "Source_ideal": 2097152.0,
+      "expected_Source_WF": 2097152,
+      "Source_gate": true,
+      "pred_on": 16777216.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 2083.0,
+      "write": 2160338.0,
+      "misc": 2112.0,
+      "TC": 4194304.0,
+      "read_conflict": 27.0,
+      "write_conflict": 10484.0,
+      "arbitration": 10554.0,
+      "total": 2330767.0
+    },
+    {
+      "family": "CG1_STSM",
+      "kind": 5,
+      "N": 512,
+      "mode": 1,
+      "target_PCs": 8,
+      "expected_PCs": 8,
+      "Source_WF": 8388608.0,
+      "Source_ideal": 8388608.0,
+      "expected_Source_WF": 8388608,
+      "Source_gate": true,
+      "pred_on": 67108864.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 2078.0,
+      "write": 8451401.0,
+      "misc": 2332.0,
+      "TC": 0.0,
+      "read_conflict": 23.0,
+      "write_conflict": 10412.0,
+      "arbitration": 10476.0,
+      "total": 8622254.0
+    },
+    {
+      "family": "CG1_STSM",
+      "kind": 5,
+      "N": 512,
+      "mode": 3,
+      "target_PCs": 8,
+      "expected_PCs": 8,
+      "Source_WF": 8388608.0,
+      "Source_ideal": 8388608.0,
+      "expected_Source_WF": 8388608,
+      "Source_gate": true,
+      "pred_on": 67108864.0,
+      "native_LSU_HW_clock_ratio": 1.0,
+      "read": 2079.0,
+      "write": 8451768.0,
+      "misc": 2112.0,
+      "TC": 16777216.0,
+      "read_conflict": 32.0,
+      "write_conflict": 10668.0,
+      "arbitration": 10703.0,
+      "total": 8622186.0
+    }
+  ],
+  "slopes": [
+    {
+      "family": "CG0_LDS",
+      "mode": 1,
+      "expected_Source_WF_per_round": 144,
+      "hardware_target_direction_WF_per_round": 2.0345052083333332e-05,
+      "hardware_conflict_per_round": 2.0345052083333332e-05,
+      "hardware_over_Source_ratio": 1.4128508391203703e-07,
+      "Source_gate": false,
+      "raw_slopes": {
+        "read": 2.0345052083333332e-05,
+        "write": 0.0,
+        "misc": 0.0,
+        "TC": 0.0,
+        "read_conflict": 2.0345052083333332e-05,
+        "write_conflict": 0.0,
+        "arbitration": 0.0,
+        "total": -0.014892578125
+      },
+      "interpretation": "Counter-demand slope, not timingservice; no per-stage absoluteattribution or purehardwarecapacity claim"
+    },
+    {
+      "family": "CG0_LDS",
+      "mode": 3,
+      "expected_Source_WF_per_round": 144,
+      "hardware_target_direction_WF_per_round": 0.008402506510416666,
+      "hardware_conflict_per_round": -0.08677164713541667,
+      "hardware_over_Source_ratio": 5.8350739655671295e-05,
+      "Source_gate": false,
+      "raw_slopes": {
+        "read": 0.008402506510416666,
+        "write": 0.0,
+        "misc": 0.0,
+        "TC": 256.0,
+        "read_conflict": -0.08677164713541667,
+        "write_conflict": 0.0,
+        "arbitration": -0.08675130208333333,
+        "total": -0.004191080729166667
+      },
+      "interpretation": "Counter-demand slope, not timingservice; no per-stage absoluteattribution or purehardwarecapacity claim"
+    },
+    {
+      "family": "CG1_GATE",
+      "mode": 1,
+      "expected_Source_WF_per_round": 136,
+      "hardware_target_direction_WF_per_round": 2.0000813802083335,
+      "hardware_conflict_per_round": 0.0,
+      "hardware_over_Source_ratio": 0.014706480736825981,
+      "Source_gate": false,
+      "raw_slopes": {
+        "read": 2.0000813802083335,
+        "write": 0.0016072591145833333,
+        "misc": -4.0690104166666664e-05,
+        "TC": 0.0,
+        "read_conflict": 0.0,
+        "write_conflict": -0.005147298177083333,
+        "arbitration": -0.005147298177083333,
+        "total": 2.0025431315104165
+      },
+      "interpretation": "Counter-demand slope, not timingservice; no per-stage absoluteattribution or purehardwarecapacity claim"
+    },
+    {
+      "family": "CG1_GATE",
+      "mode": 3,
+      "expected_Source_WF_per_round": 136,
+      "hardware_target_direction_WF_per_round": 52.00811767578125,
+      "hardware_conflict_per_round": 43.187723795572914,
+      "hardware_over_Source_ratio": 0.3824126299689798,
+      "Source_gate": false,
+      "raw_slopes": {
+        "read": 52.00811767578125,
+        "write": -0.0030721028645833335,
+        "misc": 0.00016276041666666666,
+        "TC": 256.0,
+        "read_conflict": 43.187723795572914,
+        "write_conflict": 0.0068359375,
+        "arbitration": 43.194803873697914,
+        "total": 52.0068359375
+      },
+      "interpretation": "Counter-demand slope, not timingservice; no per-stage absoluteattribution or purehardwarecapacity claim"
+    },
+    {
+      "family": "CG0_LDSM",
+      "mode": 1,
+      "expected_Source_WF_per_round": 64,
+      "hardware_target_direction_WF_per_round": 64.00002034505208,
+      "hardware_conflict_per_round": -6.103515625e-05,
+      "hardware_over_Source_ratio": 1.0000003178914387,
+      "Source_gate": true,
+      "raw_slopes": {
+        "read": 64.00002034505208,
+        "write": -0.00750732421875,
+        "misc": -0.00010172526041666667,
+        "TC": 0.0,
+        "read_conflict": -6.103515625e-05,
+        "write_conflict": -0.007283528645833333,
+        "arbitration": -0.00738525390625,
+        "total": 63.992451985677086
+      },
+      "interpretation": "Counter-demand slope, not timingservice; no per-stage absoluteattribution or purehardwarecapacity claim"
+    },
+    {
+      "family": "CG0_LDSM",
+      "mode": 3,
+      "expected_Source_WF_per_round": 64,
+      "hardware_target_direction_WF_per_round": 320.0001220703125,
+      "hardware_conflict_per_round": 256.00002034505206,
+      "hardware_over_Source_ratio": 5.000001907348633,
+      "Source_gate": true,
+      "raw_slopes": {
+        "read": 320.0001220703125,
+        "write": 0.0015869140625,
+        "misc": 2.0345052083333332e-05,
+        "TC": 256.0,
+        "read_conflict": 256.00002034505206,
+        "write_conflict": 0.00128173828125,
+        "arbitration": 256.0012613932292,
+        "total": 320.00172932942706
+      },
+      "interpretation": "Counter-demand slope, not timingservice; no per-stage absoluteattribution or purehardwarecapacity claim"
+    },
+    {
+      "family": "CG1_LDSM",
+      "mode": 1,
+      "expected_Source_WF_per_round": 128,
+      "hardware_target_direction_WF_per_round": 128.00008138020834,
+      "hardware_conflict_per_round": 6.103515625e-05,
+      "hardware_over_Source_ratio": 1.0000006357828777,
+      "Source_gate": true,
+      "raw_slopes": {
+        "read": 128.00008138020834,
+        "write": 0.004414876302083333,
+        "misc": -4.0690104166666664e-05,
+        "TC": 0.0,
+        "read_conflict": 6.103515625e-05,
+        "write_conflict": 0.005655924479166667,
+        "arbitration": 0.005594889322916667,
+        "total": 128.00447591145834
+      },
+      "interpretation": "Counter-demand slope, not timingservice; no per-stage absoluteattribution or purehardwarecapacity claim"
+    },
+    {
+      "family": "CG1_LDSM",
+      "mode": 3,
+      "expected_Source_WF_per_round": 128,
+      "hardware_target_direction_WF_per_round": 383.9886881510417,
+      "hardware_conflict_per_round": 255.9879150390625,
+      "hardware_over_Source_ratio": 2.999911626180013,
+      "Source_gate": true,
+      "raw_slopes": {
+        "read": 383.9886881510417,
+        "write": 0.0020955403645833335,
+        "misc": 0.0,
+        "TC": 256.0,
+        "read_conflict": 255.9879150390625,
+        "write_conflict": -0.004638671875,
+        "arbitration": 255.98331705729166,
+        "total": 383.99090576171875
+      },
+      "interpretation": "Counter-demand slope, not timingservice; no per-stage absoluteattribution or purehardwarecapacity claim"
+    },
+    {
+      "family": "CG0_STSM",
+      "mode": 1,
+      "expected_Source_WF_per_round": 64,
+      "hardware_target_direction_WF_per_round": 64.00018310546875,
+      "hardware_conflict_per_round": 0.007466634114583333,
+      "hardware_over_Source_ratio": 1.0000028610229492,
+      "Source_gate": true,
+      "raw_slopes": {
+        "read": -0.00010172526041666667,
+        "write": 64.00018310546875,
+        "misc": 0.00014241536458333334,
+        "TC": 0.0,
+        "read_conflict": -2.0345052083333332e-05,
+        "write_conflict": 0.007466634114583333,
+        "arbitration": 0.007466634114583333,
+        "total": 64.00016276041667
+      },
+      "interpretation": "Counter-demand slope, not timingservice; no per-stage absoluteattribution or purehardwarecapacity claim"
+    },
+    {
+      "family": "CG0_STSM",
+      "mode": 3,
+      "expected_Source_WF_per_round": 64,
+      "hardware_target_direction_WF_per_round": 64.00246175130208,
+      "hardware_conflict_per_round": -0.004801432291666667,
+      "hardware_over_Source_ratio": 1.000038464864095,
+      "Source_gate": true,
+      "raw_slopes": {
+        "read": -2.0345052083333332e-05,
+        "write": 64.00246175130208,
+        "misc": -0.0001220703125,
+        "TC": 256.0,
+        "read_conflict": 0.0,
+        "write_conflict": -0.004801432291666667,
+        "arbitration": -0.004862467447916667,
+        "total": 64.00250244140625
+      },
+      "interpretation": "Counter-demand slope, not timingservice; no per-stage absoluteattribution or purehardwarecapacity claim"
+    },
+    {
+      "family": "CG1_STSM",
+      "mode": 1,
+      "expected_Source_WF_per_round": 128,
+      "hardware_target_direction_WF_per_round": 127.99208577473958,
+      "hardware_conflict_per_round": 0.009419759114583334,
+      "hardware_over_Source_ratio": 0.999938170115153,
+      "Source_gate": true,
+      "raw_slopes": {
+        "read": 8.138020833333333e-05,
+        "write": 127.99208577473958,
+        "misc": -4.0690104166666664e-05,
+        "TC": 0.0,
+        "read_conflict": -0.00018310546875,
+        "write_conflict": 0.009419759114583334,
+        "arbitration": 0.00946044921875,
+        "total": 127.99186197916667
+      },
+      "interpretation": "Counter-demand slope, not timingservice; no per-stage absoluteattribution or purehardwarecapacity claim"
+    },
+    {
+      "family": "CG1_STSM",
+      "mode": 3,
+      "expected_Source_WF_per_round": 128,
+      "hardware_target_direction_WF_per_round": 127.99947102864583,
+      "hardware_conflict_per_round": 0.0037434895833333335,
+      "hardware_over_Source_ratio": 0.9999958674112955,
+      "Source_gate": true,
+      "raw_slopes": {
+        "read": -8.138020833333333e-05,
+        "write": 127.99947102864583,
+        "misc": 0.0,
+        "TC": 256.0,
+        "read_conflict": 0.00010172526041666667,
+        "write_conflict": 0.0037434895833333335,
+        "arbitration": 0.0030314127604166665,
+        "total": 127.99924723307292
+      },
+      "interpretation": "Counter-demand slope, not timingservice; no per-stage absoluteattribution or purehardwarecapacity claim"
+    }
+  ],
+  "gates": [
+    {
+      "tag": "kind0_N128_mode1",
+      "pass_gate": false,
+      "sha256": {
+        "kind0_N128_mode1_raw.csv": "c7f7ef7fc29b8cd6f888a718abf61939de6539b7230dd091c7c46e80be20abdf",
+        "kind0_N128_mode1_source.csv": "d65eea4269d318f8b02b41f52c0828031cf9a3b7695c3a5f64478a67d7d3c31d"
+      }
+    },
+    {
+      "tag": "kind0_N128_mode3",
+      "pass_gate": false,
+      "sha256": {
+        "kind0_N128_mode3_raw.csv": "fb4303e28934e93ee7e5f6e6d9454feb318c50da5ef3bf63a9c4beb68fb9245f",
+        "kind0_N128_mode3_source.csv": "30719229d05409888a5614a41a0cc8b3f746a486010fa875f9eaa87de3d8d0cc"
+      }
+    },
+    {
+      "tag": "kind0_N512_mode1",
+      "pass_gate": false,
+      "sha256": {
+        "kind0_N512_mode1_raw.csv": "98caab3c229c5c822e4fbab4d4d36f2de9d6740e06bb5f41759dc383e332601e",
+        "kind0_N512_mode1_source.csv": "390fdc3e72d4316e729c478b8961060d9b0dd4f4f514627bbe84957c26281a09"
+      }
+    },
+    {
+      "tag": "kind0_N512_mode3",
+      "pass_gate": false,
+      "sha256": {
+        "kind0_N512_mode3_raw.csv": "3d6828562910396a0e9d89d1706aa81739291f7dee63b7314033eaf6ec8f1c50",
+        "kind0_N512_mode3_source.csv": "39d87bddafc0f40527d307e7ea7253ba05bd6cfcdb80d69460faac8de8d5f191"
+      }
+    },
+    {
+      "tag": "kind1_N128_mode1",
+      "pass_gate": false,
+      "sha256": {
+        "kind1_N128_mode1_raw.csv": "0b01327bd2b04062f30070e75064cd0a715aa7409b58287b1770ddc138078a46",
+        "kind1_N128_mode1_source.csv": "6e03b3436c66d57ee97f477e55f46826396eea575ddd6a32407286a8d806e0c6"
+      }
+    },
+    {
+      "tag": "kind1_N128_mode3",
+      "pass_gate": false,
+      "sha256": {
+        "kind1_N128_mode3_raw.csv": "35511a0c4070f62d6be0f56d2cae992f70514baea97948a6ef9531fcfa3227ad",
+        "kind1_N128_mode3_source.csv": "9fab25c8142b7d5c2d1c97c7772c3076a6a90faa1443951a406f6b464f9805c9"
+      }
+    },
+    {
+      "tag": "kind1_N512_mode1",
+      "pass_gate": false,
+      "sha256": {
+        "kind1_N512_mode1_raw.csv": "23a2d878b2abf1d24e7564efaba7f68a57de6cbb9aa9330498adf588bdbf3d02",
+        "kind1_N512_mode1_source.csv": "1155dc93a7052472e28a1b628cfde27e81ab760bb78d8d6e57a5b9cf331b97c9"
+      }
+    },
+    {
+      "tag": "kind1_N512_mode3",
+      "pass_gate": false,
+      "sha256": {
+        "kind1_N512_mode3_raw.csv": "dbe09550250c91625987f2564b3af479e43b30b74160a912c072f0213e52f013",
+        "kind1_N512_mode3_source.csv": "b3a436573e581e1654cb731d5f6063162ff16ed7df4765b5e4040b22f28d0418"
+      }
+    },
+    {
+      "tag": "kind2_N128_mode1",
+      "pass_gate": true,
+      "sha256": {
+        "kind2_N128_mode1_raw.csv": "2fa905471a5d98f8525d5df06ae6a482d570cb13cdee33c133624b9b9c5c1ad5",
+        "kind2_N128_mode1_source.csv": "59f7babba2d89a1a97fd4912aea2c4f4e447d5e16fda063278e3cb2b9da95ef7"
+      }
+    },
+    {
+      "tag": "kind2_N128_mode3",
+      "pass_gate": true,
+      "sha256": {
+        "kind2_N128_mode3_raw.csv": "80d9b4d42d2147a18880136cd4b2f2a66ec639a40dca0fdbdc67c4859f76ff1d",
+        "kind2_N128_mode3_source.csv": "c8fe152945cda901a61bcfd15f48828dc996fb282673f798f3067a09cd6832d0"
+      }
+    },
+    {
+      "tag": "kind2_N512_mode1",
+      "pass_gate": true,
+      "sha256": {
+        "kind2_N512_mode1_raw.csv": "46b99f64b96919bb996641b8fe5e2b517b4bb3852547be157d27962ac94c9836",
+        "kind2_N512_mode1_source.csv": "b37e8589ed6d87d13352ed5ca772408ebf968ad3f2ffb89041c72c0be32c637b"
+      }
+    },
+    {
+      "tag": "kind2_N512_mode3",
+      "pass_gate": true,
+      "sha256": {
+        "kind2_N512_mode3_raw.csv": "adac0889fa18ad82f1cbe19b8fc7b9c8ef512d267e2391707483cc1c9f0233f2",
+        "kind2_N512_mode3_source.csv": "9907a1c56ece613282d9d22c2332835e9bfc88bf642049e3c9cacc602d49ca9a"
+      }
+    },
+    {
+      "tag": "kind3_N128_mode1",
+      "pass_gate": true,
+      "sha256": {
+        "kind3_N128_mode1_raw.csv": "c985761b2f598fac4f128ab5bd261e1d5852e9fa6d310fb8bdb7d5ae21bd18f2",
+        "kind3_N128_mode1_source.csv": "c195b0d9f40f5ff3a38efea34a826af85eeaaaa6c2488d10cdb3f73c3dd3ad50"
+      }
+    },
+    {
+      "tag": "kind3_N128_mode3",
+      "pass_gate": true,
+      "sha256": {
+        "kind3_N128_mode3_raw.csv": "a2bb60b2f10415c16d3059af53c77c4d1cf4aed44af4e318f214ec06b1515cc1",
+        "kind3_N128_mode3_source.csv": "25cf0767f7c479d07b47d0c004aaca832c58bcdd0193dade69012f90444c3d2b"
+      }
+    },
+    {
+      "tag": "kind3_N512_mode1",
+      "pass_gate": true,
+      "sha256": {
+        "kind3_N512_mode1_raw.csv": "a883e4b6e4653ca58031e5fd22c403962129be93405f316a3863fc79ecd172c7",
+        "kind3_N512_mode1_source.csv": "ebcd2abe5a3251232fd6ca37c4a328a2b7292434a935edd55fdfdafc95e2a477"
+      }
+    },
+    {
+      "tag": "kind3_N512_mode3",
+      "pass_gate": true,
+      "sha256": {
+        "kind3_N512_mode3_raw.csv": "0a92722e74fcde16b6945cab693f33b818c2bef71b70f3962647a955e6802dac",
+        "kind3_N512_mode3_source.csv": "0753285d37fd66942441a37b4cf2627b487f82b2a8154e87dd7921ab879417cb"
+      }
+    },
+    {
+      "tag": "kind4_N128_mode1",
+      "pass_gate": true,
+      "sha256": {
+        "kind4_N128_mode1_raw.csv": "1b5684fed5574878106885c0dc1e4e17194df1bce68d08b21b943dace8933c40",
+        "kind4_N128_mode1_source.csv": "e8e6b8a42dc8dea069544c99699662c273d121c2532b45c770fb29e4ed92e67e"
+      }
+    },
+    {
+      "tag": "kind4_N128_mode3",
+      "pass_gate": true,
+      "sha256": {
+        "kind4_N128_mode3_raw.csv": "47940320c731c99f521eed393f6d60b049078a4151a23326cd1c10ae6dee9c66",
+        "kind4_N128_mode3_source.csv": "6f4b7e8a0d09a3fa8d0686875ad6a8d6a44cce86730d6e61d7e0fbee9d9f4d50"
+      }
+    },
+    {
+      "tag": "kind4_N512_mode1",
+      "pass_gate": true,
+      "sha256": {
+        "kind4_N512_mode1_raw.csv": "ce23cbfe89678713b050758062f1f25183501cf68cee7023c7f0472e529aba07",
+        "kind4_N512_mode1_source.csv": "5106045562f8b16e92525df6f2b36e715df9819b128a26a4c9dae8fcb526e242"
+      }
+    },
+    {
+      "tag": "kind4_N512_mode3",
+      "pass_gate": true,
+      "sha256": {
+        "kind4_N512_mode3_raw.csv": "f17160ed2bc82d19fc9f0bca22dbe9de05f3fce3f7cea277147dcf620c11fc96",
+        "kind4_N512_mode3_source.csv": "2a146ec584f0147850a57189556d7b72b48cf64b26e4af9f74763a23ff85b2c1"
+      }
+    },
+    {
+      "tag": "kind5_N128_mode1",
+      "pass_gate": true,
+      "sha256": {
+        "kind5_N128_mode1_raw.csv": "bcdb052a3d564fc7331b8bbf9d9a929898a38551d1b5e9fa7cacd3d1945e8d4e",
+        "kind5_N128_mode1_source.csv": "e05a25bd83fd6ad17bc67913e127afc292ebc0f0e37cd51c1f31dbf10dd8baab"
+      }
+    },
+    {
+      "tag": "kind5_N128_mode3",
+      "pass_gate": true,
+      "sha256": {
+        "kind5_N128_mode3_raw.csv": "f96c755e678123230b4cc9c1054a1c7a4ceb3cfb16fd31d1faa2d55330e2f84a",
+        "kind5_N128_mode3_source.csv": "c109b54c2ffb0f235f20caea822b9e1f37e3be1e632254893c8acd7d05aae1e0"
+      }
+    },
+    {
+      "tag": "kind5_N512_mode1",
+      "pass_gate": true,
+      "sha256": {
+        "kind5_N512_mode1_raw.csv": "3d7fce78cefad8ae8ec441fab752bdc63c3c2385247b13e067f333cd13d2039c",
+        "kind5_N512_mode1_source.csv": "c02fb533a1862442f7cb593cfa9542ffe16ee4c530852a9b419ad5993d628875"
+      }
+    },
+    {
+      "tag": "kind5_N512_mode3",
+      "pass_gate": true,
+      "sha256": {
+        "kind5_N512_mode3_raw.csv": "dc758269e3caa8b9a65cd4910bd02e0c06d5fb0131d99a4f13f2d110f29eebd1",
+        "kind5_N512_mode3_source.csv": "26666d0157e10d70b9c058a7658a6a63c205482648261e3744bd8ac3f2f17430"
+      }
+    }
+  ],
+  "model_enabled": false
+}

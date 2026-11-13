@@ -1,0 +1,302 @@
+[
+  {
+    "time_ns": 1792964710592506034,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 0, 1845, 3996, 36, 318.88",
+    "utilization_pct": [
+      0.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964711620142000,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 36, 314.25",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964712648229370,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 36, 333.92",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964713677947178,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 99, 1845, 3996, 37, 369.74",
+    "utilization_pct": [
+      99.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964714705376466,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 36, 305.72",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964715731771248,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 37, 376.59",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964716758117401,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 99, 1845, 3996, 36, 350.93",
+    "utilization_pct": [
+      99.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964717784961957,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 99, 1845, 3996, 37, 348.92",
+    "utilization_pct": [
+      99.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964718810994244,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 35, 273.39",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964719843283969,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 38, 366.81",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964720869977437,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 37, 377.47",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964721896289390,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 37, 364.27",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964722923296734,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 37, 344.37",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964723952056496,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 36, 348.69",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964724980741908,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 37, 349.48",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964726007878571,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 36, 304.00",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964727035018193,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 35, 242.47",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964728062043318,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 37, 299.92",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964729091520981,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 38, 429.92",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964730118567765,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 38, 430.63",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964731146575826,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 37, 329.91",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964732173541861,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 37, 395.45",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964733202159265,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 99, 1845, 3996, 37, 343.14",
+    "utilization_pct": [
+      99.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964734229451326,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 36, 340.06",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964735263902303,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 37, 346.50",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964736291215155,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 37, 352.99",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964737321753763,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 37, 338.16",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964738348839467,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 37, 342.98",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964739379126669,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 38, 364.83",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  },
+  {
+    "time_ns": 1792964740405950508,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 100, 1845, 3996, 37, 337.29",
+    "utilization_pct": [
+      100.0
+    ],
+    "compute_apps": [
+      "1427726, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service"
+    ]
+  }
+]

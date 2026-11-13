@@ -1,0 +1,17 @@
+{
+  "status": "OWNED_NATIVE_V2_EDGE_AUDIT_PENDING_LIMITED_SCREEN",
+  "original_host_SHA256": "fd5e01d3f5baab05924df289d20361f24d295ddac479db5609c4eb492b4477ec",
+  "new_host_SHA256": "82b11ce02d9be1a843a0e0d24c38b81e4b81df3e4cef7e228e8e54a2f2c438cf",
+  "graph_helper_SHA256": "f1c93643ebddd4338300e6b01dcdd13905c0a0273876632c4bbe07f9de787de4",
+  "kernel_source_changed": false,
+  "whole_CUBIN_expected": "5ebdc94be5cda307ee64cb975209e11ed68ef25a420cfc3598b00c15368cc066",
+  "GPU_executed": false,
+  "model_enabled": false,
+  "prior_reviewed_host_SHA256": "2ae77fbc9d2e7369da24b87341255a55f8b894b41915821d91c5fa9fd2942890",
+  "bookkeeping_only_update": "Immediately mark successful direct lazy invocation in metadata before graph API audit, so a later API failure cannot falsely say helper_invoked=false",
+  "prior_binding_edge_helper_SHA256": "3bf5c3cade83fb08ba1b109b4674fe65905cf933f9e5cd47a97a88615bfc627d",
+  "native_query_helper_SHA256": "2ab3981b328815531ad5cd73d445acecd266710a6935d5363f9e1e54619057e6",
+  "timing_protocol_revision": 1,
+  "edge_audit_implementation_revision": 2,
+  "root_authorization": "Lead approved native_v2 owned ctypes + NULL default edge validation after audit-only proof; no kernel/boundary/binding installation changes"
+}

@@ -1,0 +1,3 @@
+kind,warps,mode,trial,N,sample,reads,clock_cycles,global_ns,event_us,SMID
+1,4,0,0,128,0,2048,34970,17792,26.655999943614006,142
+1,4,1,0,128,0,2048,207001,105344,137.1839940547943,142

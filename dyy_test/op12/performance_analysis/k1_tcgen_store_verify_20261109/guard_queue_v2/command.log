@@ -1,0 +1,8 @@
+JOB_START 02_layout_compile.json ['/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python', '/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/run_compare.py', '--mode', 'compile', '--variants', 'baseline,layout', '--tag', 'layout_v2']
+JOB_END 02_layout_compile.json 0
+JOB_START 03_all_screen.json ['/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python', '/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/run_compare.py', '--mode', 'screen', '--tag', 'all_v1']
+JOB_END 03_all_screen.json 0
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/job_queue.py", line 9, in <module>
+    raise RuntimeError('GPU competition or failed telemetry: stop further jobs')
+RuntimeError: GPU competition or failed telemetry: stop further jobs

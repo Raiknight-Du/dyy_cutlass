@@ -1,0 +1,261 @@
+[
+  {
+    "case": {
+      "name": "fp16_ragged",
+      "dtype": "fp16",
+      "lens": [
+        1,
+        63,
+        64,
+        65,
+        127,
+        257
+      ],
+      "kh": 16,
+      "ho": 16
+    },
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/run_compare.py",
+      "--mode",
+      "validate",
+      "--tag",
+      "validation_v1_fp16_ragged",
+      "--s",
+      "577",
+      "--dtype",
+      "fp16",
+      "--lens",
+      "1,63,64,65,127,257",
+      "--kh",
+      "16",
+      "--ho",
+      "16",
+      "--variants",
+      "baseline,tcgen05,layout,both"
+    ],
+    "used_tiles": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        63,
+        1
+      ],
+      [
+        2,
+        64,
+        64
+      ],
+      [
+        4,
+        64,
+        128
+      ],
+      [
+        5,
+        1,
+        192
+      ],
+      [
+        6,
+        64,
+        193
+      ],
+      [
+        7,
+        63,
+        257
+      ],
+      [
+        9,
+        64,
+        320
+      ],
+      [
+        10,
+        64,
+        384
+      ],
+      [
+        11,
+        64,
+        448
+      ],
+      [
+        12,
+        64,
+        512
+      ],
+      [
+        13,
+        1,
+        576
+      ]
+    ],
+    "workspace_slots": 14,
+    "tag": "validation_v1_fp16_ragged",
+    "returncode": 0,
+    "elapsed_seconds": 5.287189153954387
+  },
+  {
+    "case": {
+      "name": "fp16_empty_gqa",
+      "dtype": "fp16",
+      "lens": [
+        0,
+        1,
+        0,
+        65
+      ],
+      "kh": 4,
+      "ho": 16
+    },
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/run_compare.py",
+      "--mode",
+      "validate",
+      "--tag",
+      "validation_v1_fp16_empty_gqa",
+      "--s",
+      "66",
+      "--dtype",
+      "fp16",
+      "--lens",
+      "0,1,0,65",
+      "--kh",
+      "4",
+      "--ho",
+      "16",
+      "--variants",
+      "baseline,tcgen05,layout,both"
+    ],
+    "used_tiles": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        64,
+        1
+      ],
+      [
+        2,
+        1,
+        65
+      ]
+    ],
+    "workspace_slots": 4,
+    "tag": "validation_v1_fp16_empty_gqa",
+    "returncode": 0,
+    "elapsed_seconds": 5.278790220618248
+  },
+  {
+    "case": {
+      "name": "bf16_ragged",
+      "dtype": "bf16",
+      "lens": [
+        1,
+        63,
+        64,
+        65,
+        127,
+        257
+      ],
+      "kh": 16,
+      "ho": 16
+    },
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/run_compare.py",
+      "--mode",
+      "validate",
+      "--tag",
+      "validation_v1_bf16_ragged",
+      "--s",
+      "577",
+      "--dtype",
+      "bf16",
+      "--lens",
+      "1,63,64,65,127,257",
+      "--kh",
+      "16",
+      "--ho",
+      "16",
+      "--variants",
+      "baseline,tcgen05,layout,both"
+    ],
+    "used_tiles": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        63,
+        1
+      ],
+      [
+        2,
+        64,
+        64
+      ],
+      [
+        4,
+        64,
+        128
+      ],
+      [
+        5,
+        1,
+        192
+      ],
+      [
+        6,
+        64,
+        193
+      ],
+      [
+        7,
+        63,
+        257
+      ],
+      [
+        9,
+        64,
+        320
+      ],
+      [
+        10,
+        64,
+        384
+      ],
+      [
+        11,
+        64,
+        448
+      ],
+      [
+        12,
+        64,
+        512
+      ],
+      [
+        13,
+        1,
+        576
+      ]
+    ],
+    "workspace_slots": 14,
+    "tag": "validation_v1_bf16_ragged",
+    "returncode": 1,
+    "elapsed_seconds": 4.5281224036589265
+  }
+]

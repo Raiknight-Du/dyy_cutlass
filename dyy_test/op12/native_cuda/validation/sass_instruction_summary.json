@@ -1,0 +1,1670 @@
+[
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 6292480
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 671088640
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 538968064
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 4196352
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDS",
+    "instructions_executed": 1073872896
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDS.128",
+    "instructions_executed": 33554432
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "STG.E",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "STS",
+    "instructions_executed": 272760832
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 3200
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 8388608
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FMUL",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 8462592
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.U8.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS",
+    "instructions_executed": 8527872
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E",
+    "instructions_executed": 73728
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.U8",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS",
+    "instructions_executed": 139264
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 8389632
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD.FTZ",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 402653184
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 136314880
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 2164736
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 3145728
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS",
+    "instructions_executed": 806354944
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS.128",
+    "instructions_executed": 33554432
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "native_cp_s16384_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS",
+    "instructions_executed": 273743872
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 6292480
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 671088640
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 538968064
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 4196352
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDS",
+    "instructions_executed": 1073872896
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDS.128",
+    "instructions_executed": 33554432
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "STG.E",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "STS",
+    "instructions_executed": 272760832
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 3200
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 8388608
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FMUL",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 8462592
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.U8.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS",
+    "instructions_executed": 8527872
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E",
+    "instructions_executed": 73728
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.U8",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS",
+    "instructions_executed": 139264
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 8389632
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD.FTZ",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 402653184
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 136314880
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 2164736
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 3145728
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS",
+    "instructions_executed": 806354944
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS.128",
+    "instructions_executed": 33554432
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "native_cp_s16384_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS",
+    "instructions_executed": 273743872
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 12583936
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 1342177280
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 1077936128
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 8390656
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 4194304
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDS",
+    "instructions_executed": 2147614720
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDS.128",
+    "instructions_executed": 67108864
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "STG.E",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "STS",
+    "instructions_executed": 545390592
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 3200
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 8388608
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FMUL",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 8462592
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.U8.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS",
+    "instructions_executed": 8527872
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E",
+    "instructions_executed": 73728
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.U8",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS",
+    "instructions_executed": 139264
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 16778240
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD.FTZ",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 805306368
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 272629760
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 4261888
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 6291456
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS",
+    "instructions_executed": 1612709888
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS.128",
+    "instructions_executed": 67108864
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "native_cp_s32768_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS",
+    "instructions_executed": 547422208
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 12583936
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 1342177280
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 1077936128
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 8390656
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 4194304
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDS",
+    "instructions_executed": 2147614720
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDS.128",
+    "instructions_executed": 67108864
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "STG.E",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "STS",
+    "instructions_executed": 545390592
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 3200
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 8388608
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FMUL",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 8462592
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.U8.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS",
+    "instructions_executed": 8527872
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E",
+    "instructions_executed": 73728
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.U8",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS",
+    "instructions_executed": 139264
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 16778240
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD.FTZ",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 805306368
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 272629760
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 4261888
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 6291456
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS",
+    "instructions_executed": 1612709888
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS.128",
+    "instructions_executed": 67108864
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "native_cp_s32768_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS",
+    "instructions_executed": 547422208
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 3146752
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 335544320
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 269484032
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 2099200
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDS",
+    "instructions_executed": 537001984
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDS.128",
+    "instructions_executed": 16777216
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "STG.E",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "STS",
+    "instructions_executed": 136445952
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 3200
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 8388608
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FMUL",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 8462592
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.U8.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS",
+    "instructions_executed": 8527872
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E",
+    "instructions_executed": 73728
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.U8",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS",
+    "instructions_executed": 139264
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 4195328
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD.FTZ",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 201326592
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 68157440
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 1116160
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 1572864
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS",
+    "instructions_executed": 403177472
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS.128",
+    "instructions_executed": 16777216
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "native_cp_s8192_bf16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS",
+    "instructions_executed": 136904704
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 3146752
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 335544320
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 269484032
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 2099200
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 1048576
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDS",
+    "instructions_executed": 537001984
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "LDS.128",
+    "instructions_executed": 16777216
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "STG.E",
+    "instructions_executed": 131072
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_1_affine_mn",
+    "opcode": "STS",
+    "instructions_executed": 136445952
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 3200
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 8388608
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FMUL",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 8462592
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDG.E.U8.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "LDS",
+    "instructions_executed": 8527872
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E",
+    "instructions_executed": 73728
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STG.E.U8",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_2_fixup",
+    "opcode": "STS",
+    "instructions_executed": 139264
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 4195328
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FADD.FTZ",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 201326592
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 68157440
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 1024
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 1116160
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 1572864
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS",
+    "instructions_executed": 403177472
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "LDS.128",
+    "instructions_executed": 16777216
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "native_cp_s8192_fp16",
+    "kernel_short": "cp_3_final",
+    "opcode": "STS",
+    "instructions_executed": 136904704
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 20972544
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FADD.FTZ",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 805306368
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FMUL",
+    "instructions_executed": 4096
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 272629760
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 2048
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 4262912
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 6291456
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDG.E.U8.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDS",
+    "instructions_executed": 1612775424
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDS.128",
+    "instructions_executed": 67108864
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDS.64",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STG.E",
+    "instructions_executed": 65536
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STG.E.U8",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STS",
+    "instructions_executed": 547422208
+  },
+  {
+    "profile": "native_noncp_nearfull_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STS.64",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 5243008
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FADD.FTZ",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 201326592
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FMUL",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 68157440
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 1057152
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 1572864
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDG.E.U8.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDS",
+    "instructions_executed": 403185664
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDS.128",
+    "instructions_executed": 16777216
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDS.64",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STG.E",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 524288
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STG.E.U8",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STS",
+    "instructions_executed": 136847360
+  },
+  {
+    "profile": "native_noncp_s8192_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STS.64",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 20971648
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "FADD.FTZ",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 805306368
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "FMUL",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 272629760
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 4202880
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 6291456
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "LDG.E.U8.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "LDS",
+    "instructions_executed": 1612718080
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "LDS.128",
+    "instructions_executed": 67108864
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "LDS.64",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "STG.E",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "STG.E.U8",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "STS",
+    "instructions_executed": 547364864
+  },
+  {
+    "profile": "native_noncp_underfilled_bf16",
+    "kernel_short": "recurrent",
+    "opcode": "STS.64",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "BAR.SYNC.DEFER_BLOCKING",
+    "instructions_executed": 20971648
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FADD.FTZ",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FFMA.FTZ",
+    "instructions_executed": 805306368
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FMUL",
+    "instructions_executed": 512
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FMUL.FTZ",
+    "instructions_executed": 272629760
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "FMUL.RZ",
+    "instructions_executed": 256
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDG.E.CONSTANT",
+    "instructions_executed": 4202880
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDG.E.U16.CONSTANT",
+    "instructions_executed": 6291456
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDG.E.U8.CONSTANT",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDS",
+    "instructions_executed": 1612718080
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDS.128",
+    "instructions_executed": 67108864
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "LDS.64",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STG.E",
+    "instructions_executed": 8192
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STG.E.U16",
+    "instructions_executed": 2097152
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STG.E.U8",
+    "instructions_executed": 0
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STS",
+    "instructions_executed": 547364864
+  },
+  {
+    "profile": "native_noncp_underfilled_fp16",
+    "kernel_short": "recurrent",
+    "opcode": "STS.64",
+    "instructions_executed": 0
+  }
+]

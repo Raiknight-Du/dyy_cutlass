@@ -1,0 +1,56 @@
+{
+  "CP_EVENT_REF__FRAME0": {
+    "paired_change_pct": -0.022217845981131745,
+    "CI95_pct": [
+      -0.2996268319308548,
+      0.22290437702744414
+    ],
+    "paired_saving_us": 0.07999688386917114,
+    "equivalent": true
+  },
+  "CP_EVENT_PBASE__FRAME0": {
+    "paired_change_pct": 0.14754155629818078,
+    "CI95_pct": [
+      -0.01536126314546915,
+      0.28921727869540836
+    ],
+    "paired_saving_us": -0.5360022187232971,
+    "equivalent": true
+  },
+  "CP_EVENT_FRAME0__FRAME7": {
+    "paired_change_pct": 0.015373637602555945,
+    "CI95_pct": [
+      -0.044148391225551364,
+      0.24867993631917384
+    ],
+    "paired_saving_us": -0.056006014347076416,
+    "equivalent": true
+  },
+  "K4_EVENT_REF__FRAME0": {
+    "paired_change_pct": 0.2630345666539302,
+    "CI95_pct": [
+      -0.015967299921404443,
+      0.6750940778484704
+    ],
+    "paired_saving_us": -0.39199739694595337,
+    "equivalent": true
+  },
+  "K4_EVENT_PBASE__FRAME0": {
+    "paired_change_pct": 0.6752013434425885,
+    "CI95_pct": [
+      0.159590922704822,
+      0.6863484512185325
+    ],
+    "paired_saving_us": -1.0159946978092194,
+    "equivalent": true
+  },
+  "K4_EVENT_FRAME0__FRAME7": {
+    "paired_change_pct": 0.06338880353262688,
+    "CI95_pct": [
+      -0.005276970147094495,
+      0.6091008204136106
+    ],
+    "paired_saving_us": -0.09600445628166199,
+    "equivalent": true
+  }
+}

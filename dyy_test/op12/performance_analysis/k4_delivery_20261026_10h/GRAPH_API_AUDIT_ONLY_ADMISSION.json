@@ -1,0 +1,14 @@
+{
+  "round":"R4",
+  "approved_modes":["screen"],
+  "audit_only":true,
+  "source_SHA256":"690d1432059d27dc1e6b0de3c45738e6d7b11a3ba7092adb413064335fab9d9b",
+  "max_N":128,
+  "max_direct_CONTROL128_lazy":1,
+  "graph_instantiates":0,
+  "graph_replays":0,
+  "graph_warmups":0,
+  "timing_samples":0,
+  "frequency_policy":"automatic_no_lock",
+  "model_enabled":false
+}

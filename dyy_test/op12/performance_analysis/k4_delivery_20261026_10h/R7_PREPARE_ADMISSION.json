@@ -1,0 +1,8 @@
+{
+  "round":"R7",
+  "approved_modes":["prepare"],
+  "source_SHA256":"c9d64d025a749d810b3b6d35a7b7506295190a7e3449c1b11da79620ef018e5a",
+  "max_N":256,
+  "helper_or_gold_admitted":false,
+  "model_enabled":false
+}

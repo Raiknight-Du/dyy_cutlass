@@ -1,0 +1,9 @@
+{
+  "round":"R4",
+  "approved_modes":["prepare"],
+  "source_SHA256":"690d1432059d27dc1e6b0de3c45738e6d7b11a3ba7092adb413064335fab9d9b",
+  "max_N":128,
+  "helper_or_gold_admitted":false,
+  "authorization_source":"Lead independent R4 static review, prepare-only explicit approval",
+  "model_enabled":false
+}

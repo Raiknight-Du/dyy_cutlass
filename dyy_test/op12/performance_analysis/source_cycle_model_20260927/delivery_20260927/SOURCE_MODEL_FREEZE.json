@@ -1,0 +1,92 @@
+{
+  "model_id": "B200_148SM_SOURCE_A_20260927",
+  "frozen_at_utc": "2026-09-26T20:03:19.512Z",
+  "commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "target_measurement_files_read_before_freeze": false,
+  "fit_target_kernel_latency": false,
+  "numeric_scope": "Conditional ideal service and fixed source/resource calendar; physical response tails unpriced.",
+  "files": [
+    {
+      "path": "approved_model.json",
+      "sha256": "ff6b0d380980c0a7e581aad582e4095436b8d244d3d6ccbd33b59513d54ea332"
+    },
+    {
+      "path": "hardware_model.json",
+      "sha256": "425662d6003689a8838619c33296bf2c6bb7f8f8fb05919ab25f2bf4b948e316"
+    },
+    {
+      "path": "k1_model.json",
+      "sha256": "32784772e73f8429b80eedda48613a1861b307b9364d1f78e1085c3f852f271a"
+    },
+    {
+      "path": "k2_model.json",
+      "sha256": "a9c5edd753f49d653d61de455a40d28bc2023fe790d991a6bc899b92837bbfdb"
+    },
+    {
+      "path": "k3_model.json",
+      "sha256": "faa7566951245a70e277d969599894415c9b24ed90bd69f8ee9c78a5134ef58d"
+    },
+    {
+      "path": "k4_model.json",
+      "sha256": "471b8e224ccfa5a9d9d0c89ec6006ac25b76bf6dc9fb166f8c16f672468c53d7"
+    },
+    {
+      "path": "k4_calendar_L16.json",
+      "sha256": "80d7c04899f2a3140c490020ba9dca4238e1e16850cd29e2c73755877af7b13a"
+    },
+    {
+      "path": "k4_calendar_L32.json",
+      "sha256": "6846dc70011563f9c1ceb2b296d75acecd42163d900e83f4eb86f8d271b2e86d"
+    },
+    {
+      "path": "k4_calendar_L64.json",
+      "sha256": "5f3f77658f9f13bb47db26fd968f24486aad800bbb198a65b13bfe808a11ad62"
+    },
+    {
+      "path": "normalize_model.mjs",
+      "sha256": "1998139d4cab9cac0f094360410bd9672e7e3774b8f8fa5006149b5409176d77"
+    },
+    {
+      "path": "calendar.mjs",
+      "sha256": "e7463e60f896185ccf1e5430ef3cc26659d0ddf5539249a398ca9cce4c263c55"
+    },
+    {
+      "path": "k2_calendar.mjs",
+      "sha256": "4f13744a9e9ce7cff2ca17748b97188a817bf38aca03ac531f2495e65c3a32f3"
+    },
+    {
+      "path": "k4_calendar.mjs",
+      "sha256": "2bf8aa57e8e59a86634c851f380c8409153c1494699d5d32d1da0cfa574a8cca"
+    },
+    {
+      "path": "numerical_sweep.json",
+      "sha256": "71428c1ef991fa01e64ffea77a0e20a5124adb577636b9303773c51a4299e8b9"
+    },
+    {
+      "path": "reviewer_findings.json",
+      "sha256": "d94e6cf17c0ce1a5f52e15720c42cf3e5a5f73af9edfae865f9aa3ae5d9363e4"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "../ablation_20260908/source_original/gdn_cp_prefill.py",
+      "sha256": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5"
+    },
+    {
+      "path": "../ablation_20260908/source_original/gated_delta_net_cp.py",
+      "sha256": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b"
+    },
+    {
+      "path": "../ablation_20260908/source_original/gated_delta_net_cp_prefill.py",
+      "sha256": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc"
+    },
+    {
+      "path": "../ablation_20260908/source_original/delta_rule_cp_sm120.py",
+      "sha256": "5572cba70eab72426b2567322807be7fd27f3d84af6ac7410f13f715ca6a077b"
+    },
+    {
+      "path": "../ablation_20260908/source_original/collective_inverse_hmma.py",
+      "sha256": "fa91470f65679a189ef1525b4980451ec75724e1c98b4ff23085a2f5456df790"
+    }
+  ]
+}

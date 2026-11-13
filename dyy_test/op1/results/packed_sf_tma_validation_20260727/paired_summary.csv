@@ -1,0 +1,2 @@
+pairs,mean_delta_ms_packed_minus_separate,stdev_delta_ms,ci95_half_ms,ci95_low_ms,ci95_high_ms,mean_delta_percent
+10,-1.883366,0.000358614618280333,0.00025653742530691874,-1.883622537425307,-1.8831094625746931,-38.95034434264679

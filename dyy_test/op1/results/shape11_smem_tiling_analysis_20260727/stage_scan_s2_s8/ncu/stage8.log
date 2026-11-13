@@ -1,0 +1,7 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 207547 (/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/shape11_smem_tiling_analysis_20260727/stage_scan_s2_s8/op1_shape11_stage_scan_pure_matmul)
+==PROF== Profiling "device_kernel" - 0 (1/1): 0%....50%....100% - 9 passes
+RESULT,11,M128_N192_K128_E128x64_C1x1x1_S8,ok,1,614.457
+==PROF== Disconnected from process 207547
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/shape11_smem_tiling_analysis_20260727/stage_scan_s2_s8/ncu/stage8.ncu-rep

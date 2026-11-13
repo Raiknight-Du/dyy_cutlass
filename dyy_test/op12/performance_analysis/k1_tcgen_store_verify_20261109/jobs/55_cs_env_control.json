@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/usr/local/cuda/bin/compute-sanitizer",
+    "--tool",
+    "memcheck",
+    "--error-exitcode",
+    "99",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/sanitizer_env_control.py"
+  ],
+  "timeout": 1800
+}

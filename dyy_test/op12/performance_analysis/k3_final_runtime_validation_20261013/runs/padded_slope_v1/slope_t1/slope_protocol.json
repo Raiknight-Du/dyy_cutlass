@@ -1,0 +1,26 @@
+{
+  "grid": 32,
+  "block": 256,
+  "rotating_slots": 8,
+  "logical_bytes_each_CTA_repeat": 32768,
+  "GMEM_bytes_each_CTA_repeat": {
+    "mode1": 32768,
+    "mode2": 32768,
+    "mode3": 65536
+  },
+  "working_set_output_bytes": 16777216,
+  "R": [
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048
+  ],
+  "input_before_loop": "GMEM->TMEM once",
+  "no_MMA": true,
+  "no_TMA": true,
+  "Event_endpoint": "kernel complete, not physical HBM flush"
+}

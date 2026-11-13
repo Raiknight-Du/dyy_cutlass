@@ -1,0 +1,15 @@
+{
+  "round": "R6",
+  "approved_NCU_invocations": 2,
+  "original_script": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_layout_matched_20261024_2_run01/run_matched.py",
+  "source_SHA256": "82889a50c9cb6edddf8d23efa491a215afc9470f59c8836b5fabd3c700d0b2d4",
+  "expected_CUBIN": {
+    "B0": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+    "V0": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4"
+  },
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "full_CP_history": true,
+  "new_performance_or_kernel": false,
+  "prediction_only_Data_read_difference": 1376256,
+  "model_enabled": false
+}

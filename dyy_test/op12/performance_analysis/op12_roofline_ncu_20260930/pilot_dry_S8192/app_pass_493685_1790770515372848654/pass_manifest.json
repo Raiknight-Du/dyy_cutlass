@@ -1,0 +1,65 @@
+{
+  "shape": 8192,
+  "chunk": 1024,
+  "sample": 0,
+  "evict_factor": 2,
+  "l2_bytes": 132644864,
+  "evict_bytes": 265289728,
+  "graph": {
+    "kernel_count": 4,
+    "stages": [
+      "CPDeltaRuleTPrecomputeSm100",
+      "CPDeltaRuleMNPrecomputeUtcmma1Sm100",
+      "CPDeltaRuleFixupUtcmmaSm100",
+      "CPDeltaRulePrefillTcgen05Sm100"
+    ],
+    "nodes": [
+      "graph_1_node_0",
+      "graph_1_node_1",
+      "graph_1_node_2",
+      "graph_1_node_3"
+    ],
+    "edges": [
+      [
+        "graph_1_node_0",
+        "graph_1_node_1"
+      ],
+      [
+        "graph_1_node_1",
+        "graph_1_node_2"
+      ],
+      [
+        "graph_1_node_2",
+        "graph_1_node_3"
+      ]
+    ],
+    "sha256": "8618aba66557b1ffc287fba8ad775159703c9e8d37b99afc45ae719b1ce40e9e"
+  },
+  "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+  "frozen_input_file": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/frozen_inputs/S8192/inputs.pt",
+  "frozen_input_sha256": "1b743c454f06a1a15582d5310f00325df3823ac4abb2947e677683835ac2f780",
+  "harness_sha256": "e9171a1b9228bf2ed3216ff099b4109e42073f85b6932dc01211270fd1cff909",
+  "torch": "2.11.0+cu130",
+  "cuda_runtime": "13.0",
+  "gpu_name": "NVIDIA B200",
+  "gpu_sm_count": 148,
+  "input_dtypes": {
+    "qkv_output": "float16",
+    "gate_beta_state": "float32",
+    "cu_seqlens": "int64"
+  },
+  "public_entry": "flashinfer.gdn_prefill.chunk_gated_delta_rule",
+  "use_cp": true,
+  "output_final_state": true,
+  "use_qk_l2norm_in_kernel": false,
+  "scale": 0.08838834764831843,
+  "checks": {
+    "output_exact": true,
+    "state_exact": true,
+    "output_finite": true,
+    "state_finite": true,
+    "initial_unchanged": true,
+    "eviction_checksum_finite": true
+  }
+}

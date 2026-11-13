@@ -1,0 +1,28 @@
+[
+  {
+    "name": "GB100_BASE_METRICS",
+    "command": [
+      "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+      "--query-metrics",
+      "--chips",
+      "gb100",
+      "--query-metrics-mode",
+      "base"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "GB100_RELEVANT_SUFFIXES",
+    "command": [
+      "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+      "--query-metrics",
+      "--chips",
+      "gb100",
+      "--query-metrics-mode",
+      "all",
+      "--metrics",
+      "l1tex__cycles_active,l1tex__cycles_elapsed,l1tex__data_bank_conflicts_pipe_lsu,l1tex__data_bank_conflicts_pipe_lsu_cmd_read,l1tex__data_bank_conflicts_pipe_lsu_cmd_write,l1tex__data_bank_conflicts_pipe_lsu_mem_gds,l1tex__data_bank_conflicts_pipe_lsu_mem_gds_op_atom,l1tex__data_bank_conflicts_pipe_lsu_mem_gds_op_ld,l1tex__data_bank_conflicts_pipe_lsu_mem_gds_op_red,l1tex__data_bank_conflicts_pipe_lsu_mem_gds_op_st,l1tex__data_bank_conflicts_pipe_lsu_mem_shared,l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_atom,l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld,l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ldgsts,l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_misc,l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st,l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_umemsets,l1tex__data_bank_conflicts_type_arbitration,l1tex__data_pipe_lsu_wavefronts,l1tex__data_pipe_lsu_wavefronts_cmd_read,l1tex__data_pipe_lsu_wavefronts_cmd_write,l1tex__data_pipe_lsu_wavefronts_mem_lgds,l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read,l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_write,l1tex__data_pipe_lsu_wavefronts_mem_shared,l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_read,l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_write,l1tex__data_pipe_lsu_wavefronts_mem_shared_op_atom,l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ipa,l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ld,l1tex__data_pipe_lsu_wavefronts_mem_shared_op_misc,l1tex__data_pipe_lsu_wavefronts_mem_shared_op_st,l1tex__data_pipe_lsu_wavefronts_mem_shared_op_umemsets,l1tex__data_pipe_lsu_wavefronts_mem_surface,l1tex__data_pipe_tc_wavefronts,l1tex__data_pipe_tc_wavefronts_mem_shared,l1tex__data_pipe_tc_wavefronts_mem_shared_op_utccp,l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_a,l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_1cta,l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_2cta,l1tex__data_pipe_tex_wavefronts,l1tex__data_pipe_tex_wavefronts_mem_surface,l1tex__data_pipe_tex_wavefronts_mem_texture,l1tex__data_pipe_tex_wavefronts_realtime,l1tex__f_cycles_active,l1tex__f_tex2sm_cycles_active,l1tex__m_l1tex2xbar_req_cycles_active,l1tex__m_l1tex2xbar_req_cycles_active_mem_dshared,l1tex__m_l1tex2xbar_req_cycles_active_mem_dshared_loopback,l1tex__m_l1tex2xbar_req_cycles_active_op_tma,l1tex__m_l1tex2xbar_req_cycles_active_realtime,l1tex__texin_sm2tex_req_cycles_active"
+    ],
+    "returncode": 0
+  }
+]

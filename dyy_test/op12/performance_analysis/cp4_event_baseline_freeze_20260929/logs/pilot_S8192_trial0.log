@@ -1,0 +1,15 @@
+{"phase": "JIT_and_correctness", "S": 8192, "trial": 0}
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/pilot/S8192_trial0/staged_graph.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/pilot/S8192_trial0/native_graph.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/runner/measure_cp4_event.py", line 338, in <module>
+    try: main()
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/runner/measure_cp4_event.py", line 269, in main
+    graph_validation={'staged':inspect_dot(out/'staged_graph.dot',args.samples,True),
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/runner/measure_cp4_event.py", line 77, in inspect_dot
+    raise RuntimeError(f'DOT kernel count {len(kernels)} != {expected}: {path}')
+RuntimeError: DOT kernel count 0 != 80: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/pilot/S8192_trial0/staged_graph.dot

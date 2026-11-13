@@ -1,0 +1,42 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/lib/python3.10/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/compiler.py", line 144, in compile
+    pm.run(module.operation)
+cutlass._mlir._mlir_libs._site_initialize.<locals>.MLIRError: Failure while executing pass pipeline:
+error: unknown: NVVM_ERROR_COMPILATION, libNVVM extra log: NVVM backend compilation failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/implementation/validation/compile_fused_probe.py", line 47, in <module>
+    main()
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/implementation/validation/compile_fused_probe.py", line 30, in main
+    chunk_gated_delta_rule_sm100_fp8_experimental(
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/implementation/op12_gdn/cute_fused/gdn_prefill_fp8.py", line 288, in chunk_gated_delta_rule_sm100_fp8_experimental
+    compiled = cute.compile(
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/lib/python3.10/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/compiler.py", line 1386, in __call__
+    return self._compile(*args, **kwargs)
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/lib/python3.10/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/compiler.py", line 1549, in _compile
+    return func._dsl_object._func(func, *args, **kwargs)
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/lib/python3.10/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py", line 2932, in _func
+    return self._func_impl(funcBody, *args, **kwargs)
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/lib/python3.10/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py", line 2952, in _func_impl
+    result = self.generate_mlir(
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/lib/python3.10/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py", line 2545, in generate_mlir
+    jit_function = self.compile_and_cache(
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/lib/python3.10/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/cutlass_dsl/cutlass.py", line 955, in compile_and_cache
+    return super().compile_and_cache(  # type: ignore[return-value]
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/lib/python3.10/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py", line 2262, in compile_and_cache
+    compile_result = self.compile_and_jit(
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/lib/python3.10/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py", line 1755, in compile_and_jit
+    compile_result = self.compiler_provider.compile_and_jit(
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/lib/python3.10/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/compiler.py", line 213, in compile_and_jit
+    compiled_module = self.compile(
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/lib/python3.10/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/compiler.py", line 165, in compile
+    raise CompilerDiagnosticError(
+cutlass.base_dsl.compiler.CompilerDiagnosticError: [91merror:[0m NVVM backend compilation failed
+  [91merror:[0m libNVVM failed while compiling generated device IR.
+  [94mnote:[0m target architecture: sm_100a
+  [94mnote:[0m backend log:
+        NVVM backend compilation failed
+  [92msuggestion:[0m check that CUDA_TOOLKIT_PATH is set correctly and that the CUDA toolkit supports
+              target architecture sm_100a; rerun with IR dump flags if backend context is needed

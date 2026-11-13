@@ -1,0 +1,76 @@
+[
+  {
+    "S": 8192,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_round02.py",
+      "--phase",
+      "screen",
+      "--shape",
+      "8192",
+      "--out",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_screen01/S8192",
+      "--compile-approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_compile01/S8192/COMPILE_AUDIT.json"
+    ],
+    "returncode": 0,
+    "event": {
+      "CP_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": 0.010868634638394603,
+        "CI95_pct": [
+          -0.678114474650493,
+          0.6228117749006001
+        ],
+        "paired_saving_us": -0.016003847122192383,
+        "equivalent": true
+      },
+      "K4_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": 1.6461953757535008,
+        "CI95_pct": [
+          0.182909245329399,
+          1.883784584523629
+        ],
+        "paired_saving_us": -1.0079983621835709,
+        "equivalent": true
+      }
+    },
+    "screen_gate_pass": true
+  },
+  {
+    "S": 16384,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_round02.py",
+      "--phase",
+      "screen",
+      "--shape",
+      "16384",
+      "--out",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_screen01/S16384",
+      "--compile-approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_compile01/S16384/COMPILE_AUDIT.json"
+    ],
+    "returncode": 0,
+    "event": {
+      "CP_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": 0.10232159475747071,
+        "CI95_pct": [
+          0.0,
+          0.8964971624401574
+        ],
+        "paired_saving_us": -0.22399425506591797,
+        "equivalent": true
+      },
+      "K4_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": 1.1387904307101904,
+        "CI95_pct": [
+          -1.0193317359541765,
+          1.319727359944256
+        ],
+        "paired_saving_us": -1.024000346660614,
+        "equivalent": true
+      }
+    },
+    "screen_gate_pass": true
+  }
+]

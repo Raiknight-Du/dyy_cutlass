@@ -1,0 +1,56 @@
+{
+  "actual_CUBIN_SHA256": "5ebdc94be5cda307ee64cb975209e11ed68ef25a420cfc3598b00c15368cc066",
+  "native_text_hashes": {
+    ".text.kernel_cutlass_kernel_shared_couplingSharedCoupling_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_Layout_B_0": "fd716896514947492e51f1815171fd9e5d05bbe9d51fdae9e0f28621b287b7ce"
+  },
+  "CPU_text_exact_match": true,
+  "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_shared_couplingSharedCoupling_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_Layout_B_0:\n  REG:79 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1248 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+  "python": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+  "torch": "2.11.0+cu130",
+  "cutlass": "4.7.0",
+  "torch_cuda": "13.0",
+  "device": "_CudaDeviceProperties(name='NVIDIA B200', major=10, minor=0, total_memory=182631MB, multi_processor_count=148, uuid=6abbea3c-b8d3-7f4b-ca76-85d612930fdf, pci_bus_id=5, pci_device_id=0, pci_domain_id=0, L2_cache_size=126MB)",
+  "reserved_dynamic_SMEM_B": 225280,
+  "used_struct_SMEM_B": 66560,
+  "grid": 128,
+  "threads": 192,
+  "mode_flags_runtime": true,
+  "admission": {
+    "round": "R4",
+    "approved_modes": [
+      "formal"
+    ],
+    "source_SHA256": "690d1432059d27dc1e6b0de3c45738e6d7b11a3ba7092adb413064335fab9d9b",
+    "max_N": 8192,
+    "processes": 3,
+    "warmup": 20,
+    "samples": 30,
+    "modes": [
+      "CONTROL",
+      "SHADER_ONLY",
+      "TC_ONLY",
+      "BOTH"
+    ],
+    "points": [
+      128,
+      256,
+      512,
+      1024,
+      2048,
+      4096,
+      8192
+    ],
+    "frequency_policy": "temporary1845SM_request_actualsampled_finallyauto",
+    "condition": "BOTH and remaining3 mode PC/resource PASS; raw/control-corrected active strict1% dual-domain; control separately disclosed",
+    "extra_16384_allowed_once_if_needed": true,
+    "model_enabled": false,
+    "protocol": "Graph external timing Event->same original kernel->Event; owned native_v2+NULL edges;20actualgraphwarm;direct lazy1 separate per process",
+    "authorization": "Lead independent raw screen40calls/5120CTA+8native graphs PASS, explicit full graph batch approval",
+    "old_direct_failed_cohort_preserved": true
+  },
+  "helper_invoked": true,
+  "model_enabled": false,
+  "max_CTA_per_SM": 1,
+  "direct_lazy_invocations": 1,
+  "actual_invocations": 840
+}

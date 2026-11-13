@@ -1,0 +1,14 @@
+{
+  "returncode": 9,
+  "binary_sha256": "bdeabbb53a7a4313d734aa8db7db4f04f567fae39a1fc6880bdf6caf59a30531",
+  "sections": [
+    "LaunchStats"
+  ],
+  "SourceCounters": false,
+  "InstructionStats": false,
+  "CUDA_DISABLE_PTX_JIT": "1, unchanged in v1 profile_one",
+  "clock_management": false,
+  "tool_diagnostic_only": true,
+  "effective_model_value": null,
+  "model_enabled": false
+}

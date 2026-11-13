@@ -1,0 +1,59 @@
+{
+  "source_SHA256": {
+    "matched_shared.py": "4005a25005f1cc471a0f0e0bf3df36104a63d26dfa90b908f3393927e6866f92",
+    "FAMILIES.json": "a6ce1835a2301a5dcefdd2a7e49c95038ac63b18d901ccd592b88083ae32f3ac",
+    "old_qk_resident.py": "8104391107dd2ba916438c0643d92c69d3eb49ec698c4325db9f96de28311599"
+  },
+  "CUBIN_SHA256": "395bff6d96db1ce60be12f5b58b245ad190ee88b582112a459a6fa1fdd7fdd0e",
+  "SASS_SHA256": "a271c2758aa37965d313bc6b8de0e48b50c04d85053592cde8359e5350028a3e",
+  "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_matched_sharedMatchedShared_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_Layout_B_1_0:\n  REG:58 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1256 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+  "target_static_op_counts": {
+    "LDSM.16.M88.4": 4
+  },
+  "native_LDL_STL": 0,
+  "grid": 128,
+  "threads": 192,
+  "SMEM_reserved_B": 225280,
+  "family": {
+    "id": 2,
+    "name": "CG0_LDSM",
+    "original_PCs": [
+      "0x35e0",
+      "0x36a0",
+      "0x3700",
+      "0x3880"
+    ],
+    "opcodes": [
+      "LDSM.16.M88.4",
+      "LDSM.16.M88.4",
+      "LDSM.16.M88.4",
+      "LDSM.16.M88.4"
+    ],
+    "ptx": "ldmatrix.sync.aligned.m8n8.x4.shared.b16",
+    "widths": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "value_starts": [
+      0,
+      4,
+      8,
+      12
+    ],
+    "value_count": 16,
+    "expected_Source_WF_per_round_CTA": 64,
+    "participating_warps": 4,
+    "offset_units": "B from alignedscratchbase",
+    "original_stage_slot": 0,
+    "scope": "Nativeinstruction family, same laneaddress/predicate/width and4warps; independentperaccessregisters toavoid syntheticWAW; count mechanism only, notmatchednativeintervalrate; syntheticresident input andQK SS competitor",
+    "all_instructions_have_active_lanes": true
+  },
+  "python": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+  "torch": "2.11.0+cu130",
+  "cutlass": "4.7.0",
+  "device": "_CudaDeviceProperties(name='NVIDIA B200', major=10, minor=0, total_memory=182631MB, multi_processor_count=148, uuid=6abbea3c-b8d3-7f4b-ca76-85d612930fdf, pci_bus_id=5, pci_device_id=0, pci_domain_id=0, L2_cache_size=126MB)",
+  "profile": false,
+  "model_enabled": false
+}

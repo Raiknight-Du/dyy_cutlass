@@ -1,0 +1,10 @@
+{
+  "completed": true,
+  "invocations": 1,
+  "correctness": true,
+  "input_pattern": "varying exact FP16 quarter integers; TMEM holes=-7.5",
+  "full_output_elements_per_CTA": 4096,
+  "warmup": 20,
+  "samples": 1,
+  "model_enabled": false
+}

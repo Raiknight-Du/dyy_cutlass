@@ -1,0 +1,49 @@
+{
+  "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "generated_sha256": "0b8795b8e7c9c091d8c0c2f69a74f08e62f5ee23c30d8093c33ed89b1a9a7267",
+  "runner_sha256": "cc5723c86c5d05f3509a09c048374b9c61e06e7cb8a1dd653a6365ac1626a0e8",
+  "helper_micro_sha256": "11d82edb22d81991652f8a58524abf2d0adcea1569b39f4cb67e17877fe8092e",
+  "case": [
+    32768,
+    4096,
+    16
+  ],
+  "trial": 1,
+  "gpu_before": {
+    "gpu": "name, uuid, driver_version, memory.total [MiB], clocks.current.sm [MHz], clocks.current.memory [MHz], power.draw [W], temperature.gpu\nNVIDIA B200, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 580.159.03, 183359 MiB, 1845 MHz, 3996 MHz, 238.77 W, 33\n",
+    "processes": "pid, process_name, used_gpu_memory [MiB]\n"
+  },
+  "gpu_after": {
+    "gpu": "name, uuid, driver_version, memory.total [MiB], clocks.current.sm [MHz], clocks.current.memory [MHz], power.draw [W], temperature.gpu\nNVIDIA B200, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 580.159.03, 183359 MiB, 1845 MHz, 3996 MHz, 244.51 W, 34\n",
+    "processes": "pid, process_name, used_gpu_memory [MiB]\n446825, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python, 1504 MiB\n"
+  },
+  "argv": [
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/run_experiment.py",
+    "--phase",
+    "micro_profile",
+    "--style",
+    "COALESCED",
+    "--mode",
+    "3",
+    "--out",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/ncu_v1/micro_profile_COALESCED_M3/host"
+  ],
+  "shared_runtime_mode_binary": true,
+  "binary": {
+    "UPSTREAM_event": {
+      "cutlass___call___flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleFixupUtcmmaSm100_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div.sass": "19bada43c7210a2dca66a1a55471ddbe929597502800b4e7f4d92702e7e8eaa5",
+      "cutlass___call___flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleFixupUtcmmaSm100_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div.sm_100a.cubin": "4e1e8742827bde20ded79ef52609af44994436e382ed48e680aedec4c070695e",
+      "cutlass___call___flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleFixupUtcmmaSm100_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div.sm_100a.ptx": "da06db75fae6907f8df17d478fee59ef83fe2496a927d9305753c4b6603fc2b3"
+    },
+    "RUNTIME": {
+      "cutlass___call___causal_k3_privateK3FinalRUNTIME_M2_N1_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div128i64div1281_Tensorgmemo1_Tensorgmemo.sass": "1db94d9566674c55c542e8c5bca6020c6b7ba9930f5a428249e243929e09b22e",
+      "cutlass___call___causal_k3_privateK3FinalRUNTIME_M2_N1_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div128i64div1281_Tensorgmemo1_Tensorgmemo.sm_100a.cubin": "0c1a5dd64097703833ca88e73c3afe4626890b559cedf5f7e2f4a7d04a55210e",
+      "cutlass___call___causal_k3_privateK3FinalRUNTIME_M2_N1_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div128i64div1281_Tensorgmemo1_Tensorgmemo.sm_100a.ptx": "74679ba75ed895da8c720a3f461114814e0bd81f3c90b9c2e5a3e50a2a8c7495"
+    },
+    "COALESCED": {
+      "cutlass___call___causal_k3_privateK3FinalCOALESCED_M2_N1_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div128i64div1281_Tensorgmemo1_Tensorgme.sass": "83fe266c8239595e2a7ba1f36d52238efbab94dde8fa37c6e3c70f6148ed466a",
+      "cutlass___call___causal_k3_privateK3FinalCOALESCED_M2_N1_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div128i64div1281_Tensorgmemo1_Tensorgme.sm_100a.cubin": "16c0736337061f5e8a4485e5719cbf3261d81ba9cd95b423368bcc30e4293050",
+      "cutlass___call___causal_k3_privateK3FinalCOALESCED_M2_N1_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div128i64div1281_Tensorgmemo1_Tensorgme.sm_100a.ptx": "405d437204f28a745f9f573edcf5ff2b919b2a695737aa0434979476a1edb9d9"
+    }
+  }
+}

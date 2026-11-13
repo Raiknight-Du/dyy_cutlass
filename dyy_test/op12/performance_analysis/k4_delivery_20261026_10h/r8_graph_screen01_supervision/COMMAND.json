@@ -1,0 +1,12 @@
+[
+  "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+  "/home/ubuntu/workspace/op12/k4_10h_native_r8_20261026/run_probe_graph.py",
+  "--mode",
+  "screen",
+  "--points",
+  "128,256",
+  "--authorization",
+  "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/R8_GRAPH_SCREEN_ADMISSION.json",
+  "--out",
+  "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r8_graph_screen01"
+]

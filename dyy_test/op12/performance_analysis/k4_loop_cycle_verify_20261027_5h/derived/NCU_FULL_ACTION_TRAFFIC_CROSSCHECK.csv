@@ -1,0 +1,5 @@
+﻿metric,total,unit,bytes_per_block,rate,conditional_cycles
+DRAM read,472293973.3333333,B/full action,57653.072916666664,,
+DRAM write,142104405.33333334,B/full action,17346.729166666668,,
+DRAM read+write,614398378.6666666,B/full action,74999.80208333333,32,2343.7438151041665
+L2 total sectors,31285207.333333332,32B sector/full action,122207.84114583333,64,1909.4975179036458

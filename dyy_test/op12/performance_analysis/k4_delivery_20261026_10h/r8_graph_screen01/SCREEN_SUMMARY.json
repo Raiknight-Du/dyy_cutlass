@@ -1,0 +1,71 @@
+{
+  "status": "NEGATIVE_FINITE_CONTROL_STOP_FURTHER_GPU",
+  "effects": [
+    {
+      "N": 128,
+      "BLOCKED_native_cycles": 33122.0,
+      "INTERLEAVED_native_cycles": 33139.0,
+      "ratio_of_medians_change_pct": 0.05132540305536892,
+      "paired_change_pct_median": 0.04981583237726461,
+      "paired_change_pct_samples": [
+        0.046794571829678056,
+        0.04981583237726461,
+        0.05132540305536892,
+        0.05132540305536892,
+        0.04981583237726461
+      ]
+    },
+    {
+      "N": 256,
+      "BLOCKED_native_cycles": 65890.0,
+      "INTERLEAVED_native_cycles": 65907.0,
+      "ratio_of_medians_change_pct": 0.025800576718770785,
+      "paired_change_pct_median": 0.025800576718770785,
+      "paired_change_pct_samples": [
+        0.024282527204011473,
+        0.025800576718770785,
+        0.025800576718770785,
+        0.025800576718770785,
+        0.025800576718770785
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "configuration": "BLOCKED",
+      "N": 128,
+      "Event_us_median": 30.62400035560131,
+      "native_cycles_median": 33122.0,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "configuration": "INTERLEAVED",
+      "N": 128,
+      "Event_us_median": 32.03200176358223,
+      "native_cycles_median": 33139.0,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "configuration": "BLOCKED",
+      "N": 256,
+      "Event_us_median": 48.99200052022934,
+      "native_cycles_median": 65890.0,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "configuration": "INTERLEAVED",
+      "N": 256,
+      "Event_us_median": 50.335999578237534,
+      "native_cycles_median": 65907.0,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    }
+  ],
+  "raw_gate": "20calls/2560CTA/128lazy/4graphs and32768gold_elements_per_CTA passed",
+  "stop_further_GPU": true,
+  "limits": "Native internal cycles are primary. Whole Event has the same common16MiB output values; finite description only, no converged rate. Screen is not a formal stable rate.",
+  "model_enabled": false
+}

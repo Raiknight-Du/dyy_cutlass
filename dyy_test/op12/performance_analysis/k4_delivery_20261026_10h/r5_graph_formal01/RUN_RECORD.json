@@ -1,0 +1,71 @@
+[
+  {
+    "trial": 0,
+    "pid": 1469488,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/op12/k4_10h_native_r5_20261026/run_probe_graph.py",
+      "--mode",
+      "formal",
+      "--trial",
+      "0",
+      "--points",
+      "128,256,512,1024,2048,4096,8192",
+      "--authorization",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/R5_GRAPH_FORMAL_ADMISSION.json",
+      "--out",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r5_graph_formal01/trial0"
+    ],
+    "start_time_ns": 1792970405119962760,
+    "end_time_ns": 1792970408287974986,
+    "returncode": 0,
+    "timed_out": false,
+    "model_enabled": false
+  },
+  {
+    "trial": 1,
+    "pid": 1469624,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/op12/k4_10h_native_r5_20261026/run_probe_graph.py",
+      "--mode",
+      "formal",
+      "--trial",
+      "1",
+      "--points",
+      "128,256,512,1024,2048,4096,8192",
+      "--authorization",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/R5_GRAPH_FORMAL_ADMISSION.json",
+      "--out",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r5_graph_formal01/trial1"
+    ],
+    "start_time_ns": 1792970408288902344,
+    "end_time_ns": 1792970411506655211,
+    "returncode": 0,
+    "timed_out": false,
+    "model_enabled": false
+  },
+  {
+    "trial": 2,
+    "pid": 1469730,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/op12/k4_10h_native_r5_20261026/run_probe_graph.py",
+      "--mode",
+      "formal",
+      "--trial",
+      "2",
+      "--points",
+      "128,256,512,1024,2048,4096,8192",
+      "--authorization",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/R5_GRAPH_FORMAL_ADMISSION.json",
+      "--out",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r5_graph_formal01/trial2"
+    ],
+    "start_time_ns": 1792970411507479020,
+    "end_time_ns": 1792970414574790381,
+    "returncode": 0,
+    "timed_out": false,
+    "model_enabled": false
+  }
+]

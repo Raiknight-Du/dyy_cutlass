@@ -1,0 +1,4 @@
+﻿S,C,L,calls,observed_cycle_slope,conditional_model_min,conditional_model_max,signed_error_min,signed_error_max,model_window,sensitivity_min,sensitivity_max,all_cases_within10,comparison_scope,model_enabled
+8192,1024,16,180,3175.3252645502644,3430.25,3435.25,0.08028303062232643,0.08185767245691913,return4..11,3436.625,3441.625,True,Instrumented same-invocation CG1 return regression; local bias not fully bounded; not original-kernel phase ground truth.,False
+16384,2048,32,180,3163.680890522876,3430.25,3435.25,0.0842591647835465,0.08583960230965035,return8..23,3436.625,3441.625,True,Instrumented same-invocation CG1 return regression; local bias not fully bounded; not original-kernel phase ground truth.,False
+32768,4096,64,180,3141.200245151252,3430.25,3435.25,0.09201888841531966,0.09361063666751021,return8..55,3436.625,3441.625,True,Instrumented same-invocation CG1 return regression; local bias not fully bounded; not original-kernel phase ground truth.,False

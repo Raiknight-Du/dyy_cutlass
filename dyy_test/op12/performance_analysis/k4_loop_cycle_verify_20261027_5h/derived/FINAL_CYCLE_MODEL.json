@@ -1,0 +1,2754 @@
+{
+  "scope": "One full64-token steady block/CTA, originalFP16 K4, completeCP original trace context, CG1 return cadence comparison; no INIT/tail or whole-kernel90% claim.",
+  "completion_bounds": {
+    "32dp": [
+      26.0,
+      26.0
+    ],
+    "16dp": [
+      74.0,
+      74.0
+    ]
+  },
+  "previous_loose_completion_bounds": {
+    "32dp": [
+      25,
+      50
+    ],
+    "16dp": [
+      73,
+      98
+    ]
+  },
+  "single_instruction_endpoint": {
+    "method": "Exact native one-load/NOP difference plus independently decoded wait position; no K4 observation input.",
+    "records": [
+      {
+        "subtype": "32x32b.x32",
+        "kind": 0,
+        "Pload": 49.37500000000001,
+        "Pnop": 25.375000000000004,
+        "exposed_wait": 24.000000000000004,
+        "issue_to_first_consumer_wait": 2,
+        "conditional_completion": 26.0,
+        "ordinary_feedback_suffix_cycles": 23,
+        "net_loop_boundary_overhead_per_chain": 0.375,
+        "formula": "L_conditional = q + (Pload-Pnop); NOP slope matches q+23+6/16; final unrolled suffix differs but is byte-identical between pair.",
+        "scope": "Single LDTM; 4KiB register payload/warp, initialized TMEM, native RAW address feedback. One/four active warps crosschecked. Not a universal load latency or full K4 phase cost.",
+        "assumptions": [
+          "Identical nonload bytes and executed counts, verified by NCU/native patch audit.",
+          "Load-specific WB0 is first waited by LOP3 at native q=2; no intervening producer or outstanding older WB0 in the serialized chain.",
+          "This is ready-endpoint conditional calibration, distinct from throughput. K4 grouping/queue and address-phase applicability remain explicit."
+        ],
+        "strict_gate": true,
+        "model_enabled": false,
+        "effective_model_value": null
+      },
+      {
+        "subtype": "16x256b.x8",
+        "kind": 1,
+        "Pload": 97.37500000000001,
+        "Pnop": 25.375000000000004,
+        "exposed_wait": 72.00000000000001,
+        "issue_to_first_consumer_wait": 2,
+        "conditional_completion": 74.0,
+        "ordinary_feedback_suffix_cycles": 23,
+        "net_loop_boundary_overhead_per_chain": 0.375,
+        "formula": "L_conditional = q + (Pload-Pnop); NOP slope matches q+23+6/16; final unrolled suffix differs but is byte-identical between pair.",
+        "scope": "Single LDTM; 4KiB register payload/warp, initialized TMEM, native RAW address feedback. One/four active warps crosschecked. Not a universal load latency or full K4 phase cost.",
+        "assumptions": [
+          "Identical nonload bytes and executed counts, verified by NCU/native patch audit.",
+          "Load-specific WB0 is first waited by LOP3 at native q=2; no intervening producer or outstanding older WB0 in the serialized chain.",
+          "This is ready-endpoint conditional calibration, distinct from throughput. K4 grouping/queue and address-phase applicability remain explicit."
+        ],
+        "strict_gate": true,
+        "model_enabled": false,
+        "effective_model_value": null
+      }
+    ],
+    "previous_loose_bounds": "Preserved in original review files; [25,50]/[73,98] were protocol bounds before decoding q, not four independent physical parameters."
+  },
+  "scenarios": [
+    {
+      "hybrid": false,
+      "bank_TC": false,
+      "QK_math_rate": 8192,
+      "asynchronous": true,
+      "full_issuer": true,
+      "smem_lag": 0,
+      "tmem_lag": {
+        "32dp": 0,
+        "16dp": 0
+      },
+      "mean_cycle": 2755.25,
+      "min_cycle": 2755.25,
+      "max_cycle": 2755.25,
+      "per_block_known_service_sum_CG0": 1753,
+      "per_block_known_service_sum_CG1": 2525,
+      "terminal": 220550.75,
+      "ret": [
+        [
+          0,
+          2930.5
+        ],
+        [
+          1,
+          5686.75
+        ],
+        [
+          2,
+          8442.0
+        ],
+        [
+          3,
+          11197.25
+        ],
+        [
+          4,
+          13952.5
+        ],
+        [
+          5,
+          16707.75
+        ],
+        [
+          6,
+          19463.0
+        ],
+        [
+          7,
+          22218.25
+        ],
+        [
+          8,
+          24973.5
+        ],
+        [
+          9,
+          27728.75
+        ],
+        [
+          10,
+          30484.0
+        ],
+        [
+          11,
+          33239.25
+        ],
+        [
+          12,
+          35994.5
+        ],
+        [
+          13,
+          38749.75
+        ],
+        [
+          14,
+          41505.0
+        ],
+        [
+          15,
+          44260.25
+        ],
+        [
+          16,
+          47015.5
+        ],
+        [
+          17,
+          49770.75
+        ],
+        [
+          18,
+          52526.0
+        ],
+        [
+          19,
+          55281.25
+        ],
+        [
+          20,
+          58036.5
+        ],
+        [
+          21,
+          60791.75
+        ],
+        [
+          22,
+          63547.0
+        ],
+        [
+          23,
+          66302.25
+        ],
+        [
+          24,
+          69057.5
+        ],
+        [
+          25,
+          71812.75
+        ],
+        [
+          26,
+          74568.0
+        ],
+        [
+          27,
+          77323.25
+        ],
+        [
+          28,
+          80078.5
+        ],
+        [
+          29,
+          82833.75
+        ],
+        [
+          30,
+          85589.0
+        ],
+        [
+          31,
+          88344.25
+        ],
+        [
+          32,
+          91099.5
+        ],
+        [
+          33,
+          93854.75
+        ],
+        [
+          34,
+          96610.0
+        ],
+        [
+          35,
+          99365.25
+        ],
+        [
+          36,
+          102120.5
+        ],
+        [
+          37,
+          104875.75
+        ],
+        [
+          38,
+          107631.0
+        ],
+        [
+          39,
+          110386.25
+        ],
+        [
+          40,
+          113141.5
+        ],
+        [
+          41,
+          115896.75
+        ],
+        [
+          42,
+          118652.0
+        ],
+        [
+          43,
+          121407.25
+        ],
+        [
+          44,
+          124162.5
+        ],
+        [
+          45,
+          126917.75
+        ],
+        [
+          46,
+          129673.0
+        ],
+        [
+          47,
+          132428.25
+        ],
+        [
+          48,
+          135183.5
+        ],
+        [
+          49,
+          137938.75
+        ],
+        [
+          50,
+          140694.0
+        ],
+        [
+          51,
+          143449.25
+        ],
+        [
+          52,
+          146204.5
+        ],
+        [
+          53,
+          148959.75
+        ],
+        [
+          54,
+          151715.0
+        ],
+        [
+          55,
+          154470.25
+        ],
+        [
+          56,
+          157225.5
+        ],
+        [
+          57,
+          159980.75
+        ],
+        [
+          58,
+          162736.0
+        ],
+        [
+          59,
+          165491.25
+        ],
+        [
+          60,
+          168246.5
+        ],
+        [
+          61,
+          171001.75
+        ],
+        [
+          62,
+          173757.0
+        ],
+        [
+          63,
+          176512.25
+        ],
+        [
+          64,
+          179267.5
+        ],
+        [
+          65,
+          182022.75
+        ],
+        [
+          66,
+          184778.0
+        ],
+        [
+          67,
+          187533.25
+        ],
+        [
+          68,
+          190288.5
+        ],
+        [
+          69,
+          193043.75
+        ],
+        [
+          70,
+          195799.0
+        ],
+        [
+          71,
+          198554.25
+        ],
+        [
+          72,
+          201309.5
+        ],
+        [
+          73,
+          204064.75
+        ],
+        [
+          74,
+          206820.0
+        ],
+        [
+          75,
+          209575.25
+        ],
+        [
+          76,
+          212330.5
+        ],
+        [
+          77,
+          215085.75
+        ],
+        [
+          78,
+          217840.75
+        ],
+        [
+          79,
+          220545.75
+        ]
+      ],
+      "resource_work": {
+        "ISSUE": 188.0,
+        "TC": 1152.0,
+        "LSU_Data": 872.0,
+        "SMEM_Read": 616.0,
+        "ALU_PACK": 930.0,
+        "TMEM": 1056.0,
+        "FP": 614.0,
+        "FMA_HEAVY": 86.0,
+        "SFU": 400.0,
+        "HALF": 132.0,
+        "SMEM_Write": 256.0,
+        "ISSUE_SLOTS": 1430.5
+      },
+      "assumptions": [
+        "Fourwarp group instructions processed in native PC order, blocking at modeled resource service, unknown extra completion lags excluded.",
+        "All external Q/K/V/T/gate inputs assumed ready. No TMA pipeline constraint in this scenario.",
+        "MMA atoms share one FIFO service server. Actual queue arbitration not asserted. Native resource scenario, not a hardware absolute floor."
+      ],
+      "model_enabled": false,
+      "label": "User512_native_service_no_TC_operand_arbitration",
+      "pipe_case": "separate_FMA_logical",
+      "TMEM16_read_rate": 256.0,
+      "conditional_single_warp_completion": [
+        0,
+        0
+      ],
+      "no_target_time_as_input": true
+    },
+    {
+      "hybrid": true,
+      "bank_TC": false,
+      "QK_math_rate": 8192,
+      "asynchronous": true,
+      "full_issuer": true,
+      "smem_lag": 0,
+      "tmem_lag": {
+        "32dp": 0,
+        "16dp": 0
+      },
+      "mean_cycle": 2802.75,
+      "min_cycle": 2802.75,
+      "max_cycle": 2802.75,
+      "per_block_known_service_sum_CG0": 1753,
+      "per_block_known_service_sum_CG1": 2589,
+      "terminal": 224335.25,
+      "ret": [
+        [
+          0,
+          2962.5
+        ],
+        [
+          1,
+          5766.25
+        ],
+        [
+          2,
+          8569.0
+        ],
+        [
+          3,
+          11371.75
+        ],
+        [
+          4,
+          14174.5
+        ],
+        [
+          5,
+          16977.25
+        ],
+        [
+          6,
+          19780.0
+        ],
+        [
+          7,
+          22582.75
+        ],
+        [
+          8,
+          25385.5
+        ],
+        [
+          9,
+          28188.25
+        ],
+        [
+          10,
+          30991.0
+        ],
+        [
+          11,
+          33793.75
+        ],
+        [
+          12,
+          36596.5
+        ],
+        [
+          13,
+          39399.25
+        ],
+        [
+          14,
+          42202.0
+        ],
+        [
+          15,
+          45004.75
+        ],
+        [
+          16,
+          47807.5
+        ],
+        [
+          17,
+          50610.25
+        ],
+        [
+          18,
+          53413.0
+        ],
+        [
+          19,
+          56215.75
+        ],
+        [
+          20,
+          59018.5
+        ],
+        [
+          21,
+          61821.25
+        ],
+        [
+          22,
+          64624.0
+        ],
+        [
+          23,
+          67426.75
+        ],
+        [
+          24,
+          70229.5
+        ],
+        [
+          25,
+          73032.25
+        ],
+        [
+          26,
+          75835.0
+        ],
+        [
+          27,
+          78637.75
+        ],
+        [
+          28,
+          81440.5
+        ],
+        [
+          29,
+          84243.25
+        ],
+        [
+          30,
+          87046.0
+        ],
+        [
+          31,
+          89848.75
+        ],
+        [
+          32,
+          92651.5
+        ],
+        [
+          33,
+          95454.25
+        ],
+        [
+          34,
+          98257.0
+        ],
+        [
+          35,
+          101059.75
+        ],
+        [
+          36,
+          103862.5
+        ],
+        [
+          37,
+          106665.25
+        ],
+        [
+          38,
+          109468.0
+        ],
+        [
+          39,
+          112270.75
+        ],
+        [
+          40,
+          115073.5
+        ],
+        [
+          41,
+          117876.25
+        ],
+        [
+          42,
+          120679.0
+        ],
+        [
+          43,
+          123481.75
+        ],
+        [
+          44,
+          126284.5
+        ],
+        [
+          45,
+          129087.25
+        ],
+        [
+          46,
+          131890.0
+        ],
+        [
+          47,
+          134692.75
+        ],
+        [
+          48,
+          137495.5
+        ],
+        [
+          49,
+          140298.25
+        ],
+        [
+          50,
+          143101.0
+        ],
+        [
+          51,
+          145903.75
+        ],
+        [
+          52,
+          148706.5
+        ],
+        [
+          53,
+          151509.25
+        ],
+        [
+          54,
+          154312.0
+        ],
+        [
+          55,
+          157114.75
+        ],
+        [
+          56,
+          159917.5
+        ],
+        [
+          57,
+          162720.25
+        ],
+        [
+          58,
+          165523.0
+        ],
+        [
+          59,
+          168325.75
+        ],
+        [
+          60,
+          171128.5
+        ],
+        [
+          61,
+          173931.25
+        ],
+        [
+          62,
+          176734.0
+        ],
+        [
+          63,
+          179536.75
+        ],
+        [
+          64,
+          182339.5
+        ],
+        [
+          65,
+          185142.25
+        ],
+        [
+          66,
+          187945.0
+        ],
+        [
+          67,
+          190747.75
+        ],
+        [
+          68,
+          193550.5
+        ],
+        [
+          69,
+          196353.25
+        ],
+        [
+          70,
+          199156.0
+        ],
+        [
+          71,
+          201958.75
+        ],
+        [
+          72,
+          204761.5
+        ],
+        [
+          73,
+          207564.25
+        ],
+        [
+          74,
+          210367.0
+        ],
+        [
+          75,
+          213169.75
+        ],
+        [
+          76,
+          215972.5
+        ],
+        [
+          77,
+          218775.25
+        ],
+        [
+          78,
+          221577.75
+        ],
+        [
+          79,
+          224330.25
+        ]
+      ],
+      "resource_work": {
+        "ISSUE": 188.0,
+        "TC": 1152.0,
+        "LSU_Data": 872.0,
+        "SMEM_Read": 616.0,
+        "ALU_PACK": 930.0,
+        "TMEM": 1120.0,
+        "FP": 614.0,
+        "FMA_HEAVY": 86.0,
+        "SFU": 400.0,
+        "HALF": 132.0,
+        "SMEM_Write": 256.0,
+        "ISSUE_SLOTS": 1430.5
+      },
+      "assumptions": [
+        "Fourwarp group instructions processed in native PC order, blocking at modeled resource service, unknown extra completion lags excluded.",
+        "All external Q/K/V/T/gate inputs assumed ready. No TMA pipeline constraint in this scenario.",
+        "MMA atoms share one FIFO service server. Actual queue arbitration not asserted. Native resource scenario, not a hardware absolute floor."
+      ],
+      "model_enabled": false,
+      "label": "Subtype256_native_service_no_TC_operand_arbitration",
+      "pipe_case": "separate_FMA_logical",
+      "TMEM16_read_rate": 256.0,
+      "conditional_single_warp_completion": [
+        0,
+        0
+      ],
+      "no_target_time_as_input": true
+    },
+    {
+      "hybrid": true,
+      "bank_TC": true,
+      "QK_math_rate": 8192,
+      "asynchronous": true,
+      "full_issuer": true,
+      "smem_lag": 0,
+      "tmem_lag": {
+        "32dp": 0,
+        "16dp": 0
+      },
+      "mean_cycle": 3096.25,
+      "min_cycle": 3054.0,
+      "max_cycle": 3138.5,
+      "per_block_known_service_sum_CG0": 1753,
+      "per_block_known_service_sum_CG1": 2589,
+      "terminal": 248224.0,
+      "ret": [
+        [
+          0,
+          3830.5
+        ],
+        [
+          1,
+          6884.25
+        ],
+        [
+          2,
+          10022.75
+        ],
+        [
+          3,
+          13076.75
+        ],
+        [
+          4,
+          16215.25
+        ],
+        [
+          5,
+          19269.25
+        ],
+        [
+          6,
+          22407.75
+        ],
+        [
+          7,
+          25461.75
+        ],
+        [
+          8,
+          28600.25
+        ],
+        [
+          9,
+          31654.25
+        ],
+        [
+          10,
+          34792.75
+        ],
+        [
+          11,
+          37846.75
+        ],
+        [
+          12,
+          40985.25
+        ],
+        [
+          13,
+          44039.25
+        ],
+        [
+          14,
+          47177.75
+        ],
+        [
+          15,
+          50231.75
+        ],
+        [
+          16,
+          53370.25
+        ],
+        [
+          17,
+          56424.25
+        ],
+        [
+          18,
+          59562.75
+        ],
+        [
+          19,
+          62616.75
+        ],
+        [
+          20,
+          65755.25
+        ],
+        [
+          21,
+          68809.25
+        ],
+        [
+          22,
+          71947.75
+        ],
+        [
+          23,
+          75001.75
+        ],
+        [
+          24,
+          78140.25
+        ],
+        [
+          25,
+          81194.25
+        ],
+        [
+          26,
+          84332.75
+        ],
+        [
+          27,
+          87386.75
+        ],
+        [
+          28,
+          90525.25
+        ],
+        [
+          29,
+          93579.25
+        ],
+        [
+          30,
+          96717.75
+        ],
+        [
+          31,
+          99771.75
+        ],
+        [
+          32,
+          102910.25
+        ],
+        [
+          33,
+          105964.25
+        ],
+        [
+          34,
+          109102.75
+        ],
+        [
+          35,
+          112156.75
+        ],
+        [
+          36,
+          115295.25
+        ],
+        [
+          37,
+          118349.25
+        ],
+        [
+          38,
+          121487.75
+        ],
+        [
+          39,
+          124541.75
+        ],
+        [
+          40,
+          127680.25
+        ],
+        [
+          41,
+          130734.25
+        ],
+        [
+          42,
+          133872.75
+        ],
+        [
+          43,
+          136926.75
+        ],
+        [
+          44,
+          140065.25
+        ],
+        [
+          45,
+          143119.25
+        ],
+        [
+          46,
+          146257.75
+        ],
+        [
+          47,
+          149311.75
+        ],
+        [
+          48,
+          152450.25
+        ],
+        [
+          49,
+          155504.25
+        ],
+        [
+          50,
+          158642.75
+        ],
+        [
+          51,
+          161696.75
+        ],
+        [
+          52,
+          164835.25
+        ],
+        [
+          53,
+          167889.25
+        ],
+        [
+          54,
+          171027.75
+        ],
+        [
+          55,
+          174081.75
+        ],
+        [
+          56,
+          177220.25
+        ],
+        [
+          57,
+          180274.25
+        ],
+        [
+          58,
+          183412.75
+        ],
+        [
+          59,
+          186466.75
+        ],
+        [
+          60,
+          189605.25
+        ],
+        [
+          61,
+          192659.25
+        ],
+        [
+          62,
+          195797.75
+        ],
+        [
+          63,
+          198851.75
+        ],
+        [
+          64,
+          201990.25
+        ],
+        [
+          65,
+          205044.25
+        ],
+        [
+          66,
+          208182.75
+        ],
+        [
+          67,
+          211236.75
+        ],
+        [
+          68,
+          214375.25
+        ],
+        [
+          69,
+          217429.25
+        ],
+        [
+          70,
+          220567.75
+        ],
+        [
+          71,
+          223621.75
+        ],
+        [
+          72,
+          226760.25
+        ],
+        [
+          73,
+          229814.25
+        ],
+        [
+          74,
+          232952.75
+        ],
+        [
+          75,
+          236006.75
+        ],
+        [
+          76,
+          239145.25
+        ],
+        [
+          77,
+          242199.25
+        ],
+        [
+          78,
+          245208.75
+        ],
+        [
+          79,
+          248219.0
+        ]
+      ],
+      "resource_work": {
+        "ISSUE": 188.0,
+        "SMEM_Read": 1384.0,
+        "TC": 1152.0,
+        "LSU_Data": 872.0,
+        "ALU_PACK": 930.0,
+        "TMEM": 1120.0,
+        "FMA_HEAVY": 86.0,
+        "FP": 614.0,
+        "SFU": 400.0,
+        "HALF": 132.0,
+        "SMEM_Write": 256.0,
+        "ISSUE_SLOTS": 1430.5
+      },
+      "assumptions": [
+        "Fourwarp group instructions processed in native PC order, blocking at modeled resource service, unknown extra completion lags excluded.",
+        "All external Q/K/V/T/gate inputs assumed ready. No TMA pipeline constraint in this scenario.",
+        "MMA atoms share one FIFO service server. Actual queue arbitration not asserted. Native resource scenario, not a hardware absolute floor."
+      ],
+      "model_enabled": false,
+      "label": "Subtype256_plus_TC_shared_read_no_extra_read_completion",
+      "pipe_case": "separate_FMA_logical",
+      "TMEM16_read_rate": 256.0,
+      "conditional_single_warp_completion": [
+        0,
+        0
+      ],
+      "no_target_time_as_input": true
+    },
+    {
+      "hybrid": true,
+      "bank_TC": true,
+      "QK_math_rate": 8192,
+      "asynchronous": true,
+      "full_issuer": true,
+      "smem_lag": 0,
+      "tmem_lag": {
+        "32dp": 18.0,
+        "16dp": 58.0
+      },
+      "mean_cycle": 3430.25,
+      "min_cycle": 3430.25,
+      "max_cycle": 3430.25,
+      "per_block_known_service_sum_CG0": 1753,
+      "per_block_known_service_sum_CG1": 2589,
+      "terminal": 275047.0,
+      "ret": [
+        [
+          0,
+          4186.5
+        ],
+        [
+          1,
+          7596.25
+        ],
+        [
+          2,
+          11026.5
+        ],
+        [
+          3,
+          14456.75
+        ],
+        [
+          4,
+          17887.0
+        ],
+        [
+          5,
+          21317.25
+        ],
+        [
+          6,
+          24747.5
+        ],
+        [
+          7,
+          28177.75
+        ],
+        [
+          8,
+          31608.0
+        ],
+        [
+          9,
+          35038.25
+        ],
+        [
+          10,
+          38468.5
+        ],
+        [
+          11,
+          41898.75
+        ],
+        [
+          12,
+          45329.0
+        ],
+        [
+          13,
+          48759.25
+        ],
+        [
+          14,
+          52189.5
+        ],
+        [
+          15,
+          55619.75
+        ],
+        [
+          16,
+          59050.0
+        ],
+        [
+          17,
+          62480.25
+        ],
+        [
+          18,
+          65910.5
+        ],
+        [
+          19,
+          69340.75
+        ],
+        [
+          20,
+          72771.0
+        ],
+        [
+          21,
+          76201.25
+        ],
+        [
+          22,
+          79631.5
+        ],
+        [
+          23,
+          83061.75
+        ],
+        [
+          24,
+          86492.0
+        ],
+        [
+          25,
+          89922.25
+        ],
+        [
+          26,
+          93352.5
+        ],
+        [
+          27,
+          96782.75
+        ],
+        [
+          28,
+          100213.0
+        ],
+        [
+          29,
+          103643.25
+        ],
+        [
+          30,
+          107073.5
+        ],
+        [
+          31,
+          110503.75
+        ],
+        [
+          32,
+          113934.0
+        ],
+        [
+          33,
+          117364.25
+        ],
+        [
+          34,
+          120794.5
+        ],
+        [
+          35,
+          124224.75
+        ],
+        [
+          36,
+          127655.0
+        ],
+        [
+          37,
+          131085.25
+        ],
+        [
+          38,
+          134515.5
+        ],
+        [
+          39,
+          137945.75
+        ],
+        [
+          40,
+          141376.0
+        ],
+        [
+          41,
+          144806.25
+        ],
+        [
+          42,
+          148236.5
+        ],
+        [
+          43,
+          151666.75
+        ],
+        [
+          44,
+          155097.0
+        ],
+        [
+          45,
+          158527.25
+        ],
+        [
+          46,
+          161957.5
+        ],
+        [
+          47,
+          165387.75
+        ],
+        [
+          48,
+          168818.0
+        ],
+        [
+          49,
+          172248.25
+        ],
+        [
+          50,
+          175678.5
+        ],
+        [
+          51,
+          179108.75
+        ],
+        [
+          52,
+          182539.0
+        ],
+        [
+          53,
+          185969.25
+        ],
+        [
+          54,
+          189399.5
+        ],
+        [
+          55,
+          192829.75
+        ],
+        [
+          56,
+          196260.0
+        ],
+        [
+          57,
+          199690.25
+        ],
+        [
+          58,
+          203120.5
+        ],
+        [
+          59,
+          206550.75
+        ],
+        [
+          60,
+          209981.0
+        ],
+        [
+          61,
+          213411.25
+        ],
+        [
+          62,
+          216841.5
+        ],
+        [
+          63,
+          220271.75
+        ],
+        [
+          64,
+          223702.0
+        ],
+        [
+          65,
+          227132.25
+        ],
+        [
+          66,
+          230562.5
+        ],
+        [
+          67,
+          233992.75
+        ],
+        [
+          68,
+          237423.0
+        ],
+        [
+          69,
+          240853.25
+        ],
+        [
+          70,
+          244283.5
+        ],
+        [
+          71,
+          247713.75
+        ],
+        [
+          72,
+          251144.0
+        ],
+        [
+          73,
+          254574.25
+        ],
+        [
+          74,
+          258004.5
+        ],
+        [
+          75,
+          261434.75
+        ],
+        [
+          76,
+          264865.0
+        ],
+        [
+          77,
+          268295.25
+        ],
+        [
+          78,
+          271667.75
+        ],
+        [
+          79,
+          275042.0
+        ]
+      ],
+      "resource_work": {
+        "ISSUE": 188.0,
+        "SMEM_Read": 1384.0,
+        "TC": 1152.0,
+        "LSU_Data": 872.0,
+        "ALU_PACK": 930.0,
+        "TMEM": 1120.0,
+        "FMA_HEAVY": 86.0,
+        "FP": 614.0,
+        "SFU": 400.0,
+        "HALF": 132.0,
+        "SMEM_Write": 256.0,
+        "ISSUE_SLOTS": 1430.5
+      },
+      "assumptions": [
+        "Fourwarp group instructions processed in native PC order, blocking at modeled resource service, unknown extra completion lags excluded.",
+        "All external Q/K/V/T/gate inputs assumed ready. No TMA pipeline constraint in this scenario.",
+        "MMA atoms share one FIFO service server. Actual queue arbitration not asserted. Native resource scenario, not a hardware absolute floor."
+      ],
+      "model_enabled": false,
+      "label": "Conditional_native_DAG",
+      "pipe_case": "separate_FMA_logical",
+      "TMEM16_read_rate": 256.0,
+      "conditional_single_warp_completion": [
+        26.0,
+        74.0
+      ],
+      "no_target_time_as_input": true
+    },
+    {
+      "hybrid": true,
+      "bank_TC": true,
+      "QK_math_rate": 8192,
+      "asynchronous": true,
+      "full_issuer": true,
+      "smem_lag": 0,
+      "tmem_lag": {
+        "32dp": 18.0,
+        "16dp": 58.0
+      },
+      "mean_cycle": 3435.25,
+      "min_cycle": 3435.25,
+      "max_cycle": 3435.25,
+      "per_block_known_service_sum_CG0": 1753,
+      "per_block_known_service_sum_CG1": 2589,
+      "terminal": 275469.75,
+      "ret": [
+        [
+          0,
+          4213.25
+        ],
+        [
+          1,
+          7627.0
+        ],
+        [
+          2,
+          11062.25
+        ],
+        [
+          3,
+          14497.5
+        ],
+        [
+          4,
+          17932.75
+        ],
+        [
+          5,
+          21368.0
+        ],
+        [
+          6,
+          24803.25
+        ],
+        [
+          7,
+          28238.5
+        ],
+        [
+          8,
+          31673.75
+        ],
+        [
+          9,
+          35109.0
+        ],
+        [
+          10,
+          38544.25
+        ],
+        [
+          11,
+          41979.5
+        ],
+        [
+          12,
+          45414.75
+        ],
+        [
+          13,
+          48850.0
+        ],
+        [
+          14,
+          52285.25
+        ],
+        [
+          15,
+          55720.5
+        ],
+        [
+          16,
+          59155.75
+        ],
+        [
+          17,
+          62591.0
+        ],
+        [
+          18,
+          66026.25
+        ],
+        [
+          19,
+          69461.5
+        ],
+        [
+          20,
+          72896.75
+        ],
+        [
+          21,
+          76332.0
+        ],
+        [
+          22,
+          79767.25
+        ],
+        [
+          23,
+          83202.5
+        ],
+        [
+          24,
+          86637.75
+        ],
+        [
+          25,
+          90073.0
+        ],
+        [
+          26,
+          93508.25
+        ],
+        [
+          27,
+          96943.5
+        ],
+        [
+          28,
+          100378.75
+        ],
+        [
+          29,
+          103814.0
+        ],
+        [
+          30,
+          107249.25
+        ],
+        [
+          31,
+          110684.5
+        ],
+        [
+          32,
+          114119.75
+        ],
+        [
+          33,
+          117555.0
+        ],
+        [
+          34,
+          120990.25
+        ],
+        [
+          35,
+          124425.5
+        ],
+        [
+          36,
+          127860.75
+        ],
+        [
+          37,
+          131296.0
+        ],
+        [
+          38,
+          134731.25
+        ],
+        [
+          39,
+          138166.5
+        ],
+        [
+          40,
+          141601.75
+        ],
+        [
+          41,
+          145037.0
+        ],
+        [
+          42,
+          148472.25
+        ],
+        [
+          43,
+          151907.5
+        ],
+        [
+          44,
+          155342.75
+        ],
+        [
+          45,
+          158778.0
+        ],
+        [
+          46,
+          162213.25
+        ],
+        [
+          47,
+          165648.5
+        ],
+        [
+          48,
+          169083.75
+        ],
+        [
+          49,
+          172519.0
+        ],
+        [
+          50,
+          175954.25
+        ],
+        [
+          51,
+          179389.5
+        ],
+        [
+          52,
+          182824.75
+        ],
+        [
+          53,
+          186260.0
+        ],
+        [
+          54,
+          189695.25
+        ],
+        [
+          55,
+          193130.5
+        ],
+        [
+          56,
+          196565.75
+        ],
+        [
+          57,
+          200001.0
+        ],
+        [
+          58,
+          203436.25
+        ],
+        [
+          59,
+          206871.5
+        ],
+        [
+          60,
+          210306.75
+        ],
+        [
+          61,
+          213742.0
+        ],
+        [
+          62,
+          217177.25
+        ],
+        [
+          63,
+          220612.5
+        ],
+        [
+          64,
+          224047.75
+        ],
+        [
+          65,
+          227483.0
+        ],
+        [
+          66,
+          230918.25
+        ],
+        [
+          67,
+          234353.5
+        ],
+        [
+          68,
+          237788.75
+        ],
+        [
+          69,
+          241224.0
+        ],
+        [
+          70,
+          244659.25
+        ],
+        [
+          71,
+          248094.5
+        ],
+        [
+          72,
+          251529.75
+        ],
+        [
+          73,
+          254965.0
+        ],
+        [
+          74,
+          258400.25
+        ],
+        [
+          75,
+          261835.5
+        ],
+        [
+          76,
+          265270.75
+        ],
+        [
+          77,
+          268706.0
+        ],
+        [
+          78,
+          272083.5
+        ],
+        [
+          79,
+          275464.75
+        ]
+      ],
+      "resource_work": {
+        "ISSUE": 188.0,
+        "SMEM_Read": 1384.0,
+        "TC": 1152.0,
+        "LSU_Data": 872.0,
+        "ALU_PACK": 930.0,
+        "TMEM": 1120.0,
+        "FMA_HEAVY": 86.0,
+        "FP": 746.0,
+        "SFU": 400.0,
+        "SMEM_Write": 256.0,
+        "ISSUE_SLOTS": 1430.5
+      },
+      "assumptions": [
+        "Fourwarp group instructions processed in native PC order, blocking at modeled resource service, unknown extra completion lags excluded.",
+        "All external Q/K/V/T/gate inputs assumed ready. No TMA pipeline constraint in this scenario.",
+        "MMA atoms share one FIFO service server. Actual queue arbitration not asserted. Native resource scenario, not a hardware absolute floor."
+      ],
+      "model_enabled": false,
+      "label": "Conditional_native_DAG",
+      "pipe_case": "shared_FP16_FP32",
+      "TMEM16_read_rate": 256.0,
+      "conditional_single_warp_completion": [
+        26.0,
+        74.0
+      ],
+      "no_target_time_as_input": true
+    },
+    {
+      "hybrid": true,
+      "bank_TC": true,
+      "QK_math_rate": 8192,
+      "asynchronous": true,
+      "full_issuer": true,
+      "smem_lag": 0,
+      "tmem_lag": {
+        "32dp": 18.0,
+        "16dp": 57.375
+      },
+      "mean_cycle": 3436.625,
+      "min_cycle": 3436.625,
+      "max_cycle": 3436.625,
+      "per_block_known_service_sum_CG0": 1756,
+      "per_block_known_service_sum_CG1": 2613,
+      "terminal": 275612.25,
+      "ret": [
+        [
+          0,
+          4209.125
+        ],
+        [
+          1,
+          7637.75
+        ],
+        [
+          2,
+          11074.375
+        ],
+        [
+          3,
+          14511.0
+        ],
+        [
+          4,
+          17947.625
+        ],
+        [
+          5,
+          21384.25
+        ],
+        [
+          6,
+          24820.875
+        ],
+        [
+          7,
+          28257.5
+        ],
+        [
+          8,
+          31694.125
+        ],
+        [
+          9,
+          35130.75
+        ],
+        [
+          10,
+          38567.375
+        ],
+        [
+          11,
+          42004.0
+        ],
+        [
+          12,
+          45440.625
+        ],
+        [
+          13,
+          48877.25
+        ],
+        [
+          14,
+          52313.875
+        ],
+        [
+          15,
+          55750.5
+        ],
+        [
+          16,
+          59187.125
+        ],
+        [
+          17,
+          62623.75
+        ],
+        [
+          18,
+          66060.375
+        ],
+        [
+          19,
+          69497.0
+        ],
+        [
+          20,
+          72933.625
+        ],
+        [
+          21,
+          76370.25
+        ],
+        [
+          22,
+          79806.875
+        ],
+        [
+          23,
+          83243.5
+        ],
+        [
+          24,
+          86680.125
+        ],
+        [
+          25,
+          90116.75
+        ],
+        [
+          26,
+          93553.375
+        ],
+        [
+          27,
+          96990.0
+        ],
+        [
+          28,
+          100426.625
+        ],
+        [
+          29,
+          103863.25
+        ],
+        [
+          30,
+          107299.875
+        ],
+        [
+          31,
+          110736.5
+        ],
+        [
+          32,
+          114173.125
+        ],
+        [
+          33,
+          117609.75
+        ],
+        [
+          34,
+          121046.375
+        ],
+        [
+          35,
+          124483.0
+        ],
+        [
+          36,
+          127919.625
+        ],
+        [
+          37,
+          131356.25
+        ],
+        [
+          38,
+          134792.875
+        ],
+        [
+          39,
+          138229.5
+        ],
+        [
+          40,
+          141666.125
+        ],
+        [
+          41,
+          145102.75
+        ],
+        [
+          42,
+          148539.375
+        ],
+        [
+          43,
+          151976.0
+        ],
+        [
+          44,
+          155412.625
+        ],
+        [
+          45,
+          158849.25
+        ],
+        [
+          46,
+          162285.875
+        ],
+        [
+          47,
+          165722.5
+        ],
+        [
+          48,
+          169159.125
+        ],
+        [
+          49,
+          172595.75
+        ],
+        [
+          50,
+          176032.375
+        ],
+        [
+          51,
+          179469.0
+        ],
+        [
+          52,
+          182905.625
+        ],
+        [
+          53,
+          186342.25
+        ],
+        [
+          54,
+          189778.875
+        ],
+        [
+          55,
+          193215.5
+        ],
+        [
+          56,
+          196652.125
+        ],
+        [
+          57,
+          200088.75
+        ],
+        [
+          58,
+          203525.375
+        ],
+        [
+          59,
+          206962.0
+        ],
+        [
+          60,
+          210398.625
+        ],
+        [
+          61,
+          213835.25
+        ],
+        [
+          62,
+          217271.875
+        ],
+        [
+          63,
+          220708.5
+        ],
+        [
+          64,
+          224145.125
+        ],
+        [
+          65,
+          227581.75
+        ],
+        [
+          66,
+          231018.375
+        ],
+        [
+          67,
+          234455.0
+        ],
+        [
+          68,
+          237891.625
+        ],
+        [
+          69,
+          241328.25
+        ],
+        [
+          70,
+          244764.875
+        ],
+        [
+          71,
+          248201.5
+        ],
+        [
+          72,
+          251638.125
+        ],
+        [
+          73,
+          255074.75
+        ],
+        [
+          74,
+          258511.375
+        ],
+        [
+          75,
+          261948.0
+        ],
+        [
+          76,
+          265384.625
+        ],
+        [
+          77,
+          268821.25
+        ],
+        [
+          78,
+          272210.375
+        ],
+        [
+          79,
+          275607.25
+        ]
+      ],
+      "resource_work": {
+        "ISSUE": 188.0,
+        "SMEM_Read": 1384.0,
+        "TC": 1152.0,
+        "LSU_Data": 872.0,
+        "ALU_PACK": 930.0,
+        "TMEM": 1147.0,
+        "FMA_HEAVY": 86.0,
+        "FP": 614.0,
+        "SFU": 400.0,
+        "HALF": 132.0,
+        "SMEM_Write": 256.0,
+        "ISSUE_SLOTS": 1430.5
+      },
+      "assumptions": [
+        "Fourwarp group instructions processed in native PC order, blocking at modeled resource service, unknown extra completion lags excluded.",
+        "All external Q/K/V/T/gate inputs assumed ready. No TMA pipeline constraint in this scenario.",
+        "MMA atoms share one FIFO service server. Actual queue arbitration not asserted. Native resource scenario, not a hardware absolute floor."
+      ],
+      "model_enabled": false,
+      "label": "Historical_four_reader_service_sensitivity",
+      "pipe_case": "separate_FMA_logical",
+      "TMEM16_read_rate": 246.37593984962405,
+      "conditional_single_warp_completion": [
+        26.0,
+        74.0
+      ],
+      "no_target_time_as_input": true
+    },
+    {
+      "hybrid": true,
+      "bank_TC": true,
+      "QK_math_rate": 8192,
+      "asynchronous": true,
+      "full_issuer": true,
+      "smem_lag": 0,
+      "tmem_lag": {
+        "32dp": 18.0,
+        "16dp": 57.375
+      },
+      "mean_cycle": 3441.625,
+      "min_cycle": 3441.625,
+      "max_cycle": 3441.625,
+      "per_block_known_service_sum_CG0": 1756,
+      "per_block_known_service_sum_CG1": 2613,
+      "terminal": 276035.0,
+      "ret": [
+        [
+          0,
+          4235.875
+        ],
+        [
+          1,
+          7668.5
+        ],
+        [
+          2,
+          11110.125
+        ],
+        [
+          3,
+          14551.75
+        ],
+        [
+          4,
+          17993.375
+        ],
+        [
+          5,
+          21435.0
+        ],
+        [
+          6,
+          24876.625
+        ],
+        [
+          7,
+          28318.25
+        ],
+        [
+          8,
+          31759.875
+        ],
+        [
+          9,
+          35201.5
+        ],
+        [
+          10,
+          38643.125
+        ],
+        [
+          11,
+          42084.75
+        ],
+        [
+          12,
+          45526.375
+        ],
+        [
+          13,
+          48968.0
+        ],
+        [
+          14,
+          52409.625
+        ],
+        [
+          15,
+          55851.25
+        ],
+        [
+          16,
+          59292.875
+        ],
+        [
+          17,
+          62734.5
+        ],
+        [
+          18,
+          66176.125
+        ],
+        [
+          19,
+          69617.75
+        ],
+        [
+          20,
+          73059.375
+        ],
+        [
+          21,
+          76501.0
+        ],
+        [
+          22,
+          79942.625
+        ],
+        [
+          23,
+          83384.25
+        ],
+        [
+          24,
+          86825.875
+        ],
+        [
+          25,
+          90267.5
+        ],
+        [
+          26,
+          93709.125
+        ],
+        [
+          27,
+          97150.75
+        ],
+        [
+          28,
+          100592.375
+        ],
+        [
+          29,
+          104034.0
+        ],
+        [
+          30,
+          107475.625
+        ],
+        [
+          31,
+          110917.25
+        ],
+        [
+          32,
+          114358.875
+        ],
+        [
+          33,
+          117800.5
+        ],
+        [
+          34,
+          121242.125
+        ],
+        [
+          35,
+          124683.75
+        ],
+        [
+          36,
+          128125.375
+        ],
+        [
+          37,
+          131567.0
+        ],
+        [
+          38,
+          135008.625
+        ],
+        [
+          39,
+          138450.25
+        ],
+        [
+          40,
+          141891.875
+        ],
+        [
+          41,
+          145333.5
+        ],
+        [
+          42,
+          148775.125
+        ],
+        [
+          43,
+          152216.75
+        ],
+        [
+          44,
+          155658.375
+        ],
+        [
+          45,
+          159100.0
+        ],
+        [
+          46,
+          162541.625
+        ],
+        [
+          47,
+          165983.25
+        ],
+        [
+          48,
+          169424.875
+        ],
+        [
+          49,
+          172866.5
+        ],
+        [
+          50,
+          176308.125
+        ],
+        [
+          51,
+          179749.75
+        ],
+        [
+          52,
+          183191.375
+        ],
+        [
+          53,
+          186633.0
+        ],
+        [
+          54,
+          190074.625
+        ],
+        [
+          55,
+          193516.25
+        ],
+        [
+          56,
+          196957.875
+        ],
+        [
+          57,
+          200399.5
+        ],
+        [
+          58,
+          203841.125
+        ],
+        [
+          59,
+          207282.75
+        ],
+        [
+          60,
+          210724.375
+        ],
+        [
+          61,
+          214166.0
+        ],
+        [
+          62,
+          217607.625
+        ],
+        [
+          63,
+          221049.25
+        ],
+        [
+          64,
+          224490.875
+        ],
+        [
+          65,
+          227932.5
+        ],
+        [
+          66,
+          231374.125
+        ],
+        [
+          67,
+          234815.75
+        ],
+        [
+          68,
+          238257.375
+        ],
+        [
+          69,
+          241699.0
+        ],
+        [
+          70,
+          245140.625
+        ],
+        [
+          71,
+          248582.25
+        ],
+        [
+          72,
+          252023.875
+        ],
+        [
+          73,
+          255465.5
+        ],
+        [
+          74,
+          258907.125
+        ],
+        [
+          75,
+          262348.75
+        ],
+        [
+          76,
+          265790.375
+        ],
+        [
+          77,
+          269232.0
+        ],
+        [
+          78,
+          272626.125
+        ],
+        [
+          79,
+          276030.0
+        ]
+      ],
+      "resource_work": {
+        "ISSUE": 188.0,
+        "SMEM_Read": 1384.0,
+        "TC": 1152.0,
+        "LSU_Data": 872.0,
+        "ALU_PACK": 930.0,
+        "TMEM": 1147.0,
+        "FMA_HEAVY": 86.0,
+        "FP": 746.0,
+        "SFU": 400.0,
+        "SMEM_Write": 256.0,
+        "ISSUE_SLOTS": 1430.5
+      },
+      "assumptions": [
+        "Fourwarp group instructions processed in native PC order, blocking at modeled resource service, unknown extra completion lags excluded.",
+        "All external Q/K/V/T/gate inputs assumed ready. No TMA pipeline constraint in this scenario.",
+        "MMA atoms share one FIFO service server. Actual queue arbitration not asserted. Native resource scenario, not a hardware absolute floor."
+      ],
+      "model_enabled": false,
+      "label": "Historical_four_reader_service_sensitivity",
+      "pipe_case": "shared_FP16_FP32",
+      "TMEM16_read_rate": 246.37593984962405,
+      "conditional_single_warp_completion": [
+        26.0,
+        74.0
+      ],
+      "no_target_time_as_input": true
+    }
+  ],
+  "comparison": [
+    {
+      "S": 8192,
+      "C": 1024,
+      "L": 16,
+      "calls": 180,
+      "observed_cycle_slope": 3175.3252645502644,
+      "conditional_model_min": 3430.25,
+      "conditional_model_max": 3435.25,
+      "signed_error_min": 0.08028303062232643,
+      "signed_error_max": 0.08185767245691913,
+      "model_window": "return4..11",
+      "sensitivity_min": 3436.625,
+      "sensitivity_max": 3441.625,
+      "all_cases_within10": true,
+      "comparison_scope": "Instrumented same-invocation CG1 return regression; local bias not fully bounded; not original-kernel phase ground truth.",
+      "model_enabled": false
+    },
+    {
+      "S": 16384,
+      "C": 2048,
+      "L": 32,
+      "calls": 180,
+      "observed_cycle_slope": 3163.680890522876,
+      "conditional_model_min": 3430.25,
+      "conditional_model_max": 3435.25,
+      "signed_error_min": 0.0842591647835465,
+      "signed_error_max": 0.08583960230965035,
+      "model_window": "return8..23",
+      "sensitivity_min": 3436.625,
+      "sensitivity_max": 3441.625,
+      "all_cases_within10": true,
+      "comparison_scope": "Instrumented same-invocation CG1 return regression; local bias not fully bounded; not original-kernel phase ground truth.",
+      "model_enabled": false
+    },
+    {
+      "S": 32768,
+      "C": 4096,
+      "L": 64,
+      "calls": 180,
+      "observed_cycle_slope": 3141.200245151252,
+      "conditional_model_min": 3430.25,
+      "conditional_model_max": 3435.25,
+      "signed_error_min": 0.09201888841531966,
+      "signed_error_max": 0.09361063666751021,
+      "model_window": "return8..55",
+      "sensitivity_min": 3436.625,
+      "sensitivity_max": 3441.625,
+      "all_cases_within10": true,
+      "comparison_scope": "Instrumented same-invocation CG1 return regression; local bias not fully bounded; not original-kernel phase ground truth.",
+      "model_enabled": false
+    }
+  ],
+  "known_service_ledger": {
+    "hybrid": true,
+    "bank_TC": true,
+    "QK_math_rate": 8192,
+    "asynchronous": true,
+    "full_issuer": true,
+    "smem_lag": 0,
+    "tmem_lag": {
+      "32dp": 0,
+      "16dp": 0
+    },
+    "mean_cycle": 3096.25,
+    "min_cycle": 3054.0,
+    "max_cycle": 3138.5,
+    "per_block_known_service_sum_CG0": 1753,
+    "per_block_known_service_sum_CG1": 2589,
+    "terminal": 248224.0,
+    "resource_work": {
+      "ISSUE": 188.0,
+      "SMEM_Read": 1384.0,
+      "TC": 1152.0,
+      "LSU_Data": 872.0,
+      "ALU_PACK": 930.0,
+      "TMEM": 1120.0,
+      "FMA_HEAVY": 86.0,
+      "FP": 614.0,
+      "SFU": 400.0,
+      "HALF": 132.0,
+      "SMEM_Write": 256.0,
+      "ISSUE_SLOTS": 1430.5
+    },
+    "model_enabled": false,
+    "label": "Subtype256_plus_TC_shared_read_no_extra_read_completion",
+    "pipe_case": "separate_FMA_logical",
+    "TMEM16_read_rate": 256.0,
+    "conditional_single_warp_completion": [
+      0,
+      0
+    ],
+    "no_target_time_as_input": true
+  },
+  "main_range": [
+    3430.25,
+    3435.25
+  ],
+  "model_enabled": false,
+  "effective_model_value": null,
+  "unresolved": [
+    "Sparse EX2 exact lane-service granularity; some predicate/select/uniform native capacity and completion endpoints.",
+    "Actual hardware queue priority, per-warp issue skew and short-MMA notification latency; FIFO/group model is conditional.",
+    "TMA/gate/O inputs modeled as steady-ready; their full service constraints are reported separately, not charged zero. Late arrival contribution remains unknown.",
+    "Original local/spill traffic is retained in work inventory but not assigned a fabricated latency.",
+    "Return-marker trace local bias is not fully bounded; these slopes are instrumented observations, not original phase truth."
+  ]
+}

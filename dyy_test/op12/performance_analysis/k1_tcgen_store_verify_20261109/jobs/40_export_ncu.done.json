@@ -1,0 +1,9 @@
+{
+  "command": [
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/export_reports.py"
+  ],
+  "returncode": 0,
+  "epoch_start": 1794195929.9505737,
+  "epoch_end": 1794195930.8652127
+}

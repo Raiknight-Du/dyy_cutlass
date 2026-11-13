@@ -1,0 +1,30 @@
+{
+  "cuda_bindings_version": "13.2.0",
+  "driver_extension": "/usr/local/lib/python3.10/dist-packages/cuda/bindings/driver.cpython-310-x86_64-linux-gnu.so",
+  "driver_extension_SHA256": "25d06a1d312bb285ba79644110830c271f0eaef1c37e5d444c99e211ee289f74",
+  "libcuda_exports": {
+    "cuGraphGetEdges": true,
+    "cuGraphGetEdges_v2": true,
+    "cuGetProcAddress": true
+  },
+  "ctypes_sizeof_EdgeData": 8,
+  "ctypes_field_offsets": {
+    "from_port": 0,
+    "to_port": 1,
+    "type": 2,
+    "reserved": 3
+  },
+  "prototype": "CUresult cuGraphGetEdges_v2(CUgraph,CUgraphNode*,CUgraphNode*,CUgraphEdgeData*,size_t*)",
+  "dlsym_only_no_driver_function_called": true,
+  "header_path": "/usr/local/cuda-13.0/include/cuda.h",
+  "header_SHA256": "64025f81a9d6d2b10e9e11654f3523e5b046d01b883f0b9ca474e463274b80d4",
+  "binding_source_files": [
+    "/usr/local/lib/python3.10/dist-packages/cuda/bindings/driver.pxd",
+    "/usr/local/lib/python3.10/dist-packages/cuda/bindings/cydriver.pxd",
+    "/usr/local/lib/python3.10/dist-packages/cuda/bindings/_bindings/cydriver.pxd"
+  ],
+  "matching_binding_source_excerpts": 2,
+  "API_doc": "cuGraphGetEdges(hGraph, size_t numEdges=0)\n\nReturns a graph's dependency edges.\n\nReturns a list of `hGraph's` dependency edges. Edges are returned via\ncorresponding indices in `from`, `to` and `edgeData`; that is, the node\nin `to`[i] has a dependency on the node in `from`[i] with data\n`edgeData`[i]. `from` and `to` may both be NULL, in which case this\nfunction only returns the number of edges in `numEdges`. Otherwise,\n`numEdges` entries will be filled in. If `numEdges` is higher than the\nactual number of edges, the remaining entries in `from` and `to` will\nbe set to NULL, and the number of edges actually returned will be\nwritten to `numEdges`. `edgeData` may alone be NULL, in which case the\nedges must all have default (zeroed) edge data. Attempting a lossy\nquery via NULL `edgeData` will result in\n:py:obj:`~.CUDA_ERROR_LOSSY_QUERY`. If `edgeData` is non-NULL then\n`from` and `to` must be as well.\n\nParameters\n----------\nhGraph : :py:obj:`~.CUgraph` or :py:obj:`~.cudaGraph_t`\n    Graph to get the edges from\nnumEdges : int\n    See description\n\nReturns\n-------\nCUresult\n    :py:obj:`~.CUDA_SUCCESS`, :py:obj:`~.CUDA_ERROR_LOSSY_QUERY`, :py:obj:`~.CUDA_ERROR_DEINITIALIZED`, :py:obj:`~.CUDA_ERROR_NOT_INITIALIZED`, :py:obj:`~.CUDA_ERROR_INVALID_VALUE`\nfrom : list[:py:obj:`~.CUgraphNode`]\n    Location to return edge endpoints\nto : list[:py:obj:`~.CUgraphNode`]\n    Location to return edge endpoints\nedgeData : list[:py:obj:`~.CUgraphEdgeData`]\n    Optional location to return edge data\nnumEdges : int\n    See description\n\nSee Also\n--------\n:py:obj:`~.cuGraphGetNodes`, :py:obj:`~.cuGraphGetRootNodes`, :py:obj:`~.cuGraphAddDependencies`, :py:obj:`~.cuGraphRemoveDependencies`, :py:obj:`~.cuGraphNodeGetDependencies`, :py:obj:`~.cuGraphNodeGetDependentNodes`",
+  "context_initialized_after": false,
+  "model_enabled": false
+}

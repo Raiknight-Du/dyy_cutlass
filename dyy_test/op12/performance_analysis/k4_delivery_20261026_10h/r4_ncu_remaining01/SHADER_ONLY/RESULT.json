@@ -1,0 +1,11 @@
+{
+  "round": "R4",
+  "configuration": "SHADER_ONLY",
+  "N": 512,
+  "start_time_ns": 1792965593020934520,
+  "status": "REPORT_CREATED",
+  "clock_policy": "temporary1845request_actual_sampled",
+  "model_enabled": false,
+  "returncode": 0,
+  "end_time_ns": 1792965643246878319
+}

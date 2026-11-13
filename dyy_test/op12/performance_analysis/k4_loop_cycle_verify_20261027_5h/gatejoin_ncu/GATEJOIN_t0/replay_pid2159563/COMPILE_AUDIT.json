@@ -1,0 +1,48 @@
+{
+  "B0": {
+    "cubin_sha256": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+    "SASS_sha256": "2117decc475f9f1cb5cf1845b3b6bc69fc78c7d26761f52320d0766d44982358",
+    "source_sha256": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+    "resource": "Resource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_Sh_0:\n  REG:168 STACK:24 SHARED:1024 LOCAL:0 CONSTANT[2]:16 CONSTANT[0]:2480 TEXTURE:0 SURFACE:0 SAMPLER:0",
+    "ops": {
+      "LDL": 41,
+      "STL": 5,
+      "LDSM": 12,
+      "LDS": 144,
+      "STSM": 16,
+      "STS": 22,
+      "LDTM": 13,
+      "STTM": 24,
+      "UTCHMMA": 44,
+      "UTMALDG": 7,
+      "UTMASTG": 2,
+      "F2FP": 223,
+      "FMUL2": 192,
+      "MUFU": 108,
+      "SYNCS": 314
+    }
+  },
+  "GATEJOIN": {
+    "cubin_sha256": "a9f2a5a32a1298227acc0d4ab57992e0db2a67e44e416a924ebf705047d5fbb2",
+    "SASS_sha256": "f16bfda08b416656371758dc45f1f2d6d19f7aa33eda7c8d2f2389eb6c38ec57",
+    "source_sha256": "9280999389bf2ad84f868a2e29f3f571da9f55b1a26471a06d8c5f47af7e86b5",
+    "resource": "Resource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_vjoin_GATEJOINK4VJoin_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_ShapeMNK646416_TVLayoutA1641664164_TVLayoutB1641664164_TVLayoutC164_0:\n  REG:168 STACK:24 SHARED:1024 LOCAL:0 CONSTANT[2]:16 CONSTANT[0]:2480 TEXTURE:0 SURFACE:0 SAMPLER:0",
+    "ops": {
+      "LDL": 41,
+      "STL": 5,
+      "LDSM": 12,
+      "LDS": 144,
+      "STSM": 16,
+      "STS": 22,
+      "LDTM": 13,
+      "STTM": 24,
+      "UTCHMMA": 44,
+      "UTMALDG": 7,
+      "UTMASTG": 2,
+      "F2FP": 223,
+      "FMUL2": 192,
+      "MUFU": 108,
+      "SYNCS": 314
+    }
+  }
+}

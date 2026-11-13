@@ -1,0 +1,2 @@
+invocation,trial,config,N,sample,event_us,cta_cycle_median,cta_cycle_p5,cta_cycle_p95,cta_cycle_max,unique_SMs,valid,model_enabled
+0,0,TS_LOAD,512,0,301163.4521484375,132024.0,131836.3,132231.95,132313,128,1,False

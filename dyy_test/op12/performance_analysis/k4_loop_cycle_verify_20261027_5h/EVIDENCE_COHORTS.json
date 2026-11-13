@@ -1,0 +1,37 @@
+{
+  "final_model": "derived/FINAL_CYCLE_MODEL.json",
+  "final_comparison": "derived/FINAL_SHAPE_COMPARISON.csv",
+  "reference": "Same-invocation CG1 return OLS,180calls/shape; original local marker bias not fully bounded.",
+  "accepted": {
+    "CG0_addresses": "derived/CG0_FIRST_PASS.json;132PCs; all native pred-on and address-WF checks passed",
+    "shared_scalar_count_only": ["ncu_scalar_v3/kind0_*", "ncu_gate_v4/kind1_*"],
+    "shared_matrix_count_only": "ncu_v2/kind2..5_*",
+    "shared_matrix_timing": "formal_matrix_extension; all8 fixed configurations passed strict1% dual-domain gate",
+    "native_wait_position_control": ["vjoin_retry2_ncu/B0_*,KSJOIN_*,QSJOIN_*", "gatejoin_ncu/GATEJOIN_*"],
+    "TMEM_exact_NOP_control_counts": "dep_nop_ncu;8captures; relative-PC normalized comparison,16target words only",
+    "TMEM_completion32": "dep_nop_formal kind0_w1; both modes strict1% passed",
+    "TMEM_completion16": "dep_nop_extension_formal kind1_w1; both modes strict1% passed",
+    "TMEM_native_ready_endpoint": "derived/SINGLE_LDTM_COMPLETION_DERIVATION.json; first WB wait distance q=2 for all16 native sites; L=q+Pload-Pnop =26/74. No target K4 timing input.",
+    "ALU_native_work_counts": "alu_mix_v2_ncu;6captures; sameCUBIN used by host-correctedv3",
+    "ALU_timing": "alu_mix_v3_extension_formal; all3modes strict1% passed; activewarp endpoints retained"
+  },
+  "excluded_or_diagnostic_only": {
+    "history/pre_issue_capacity": "Provisional2869..3131 model omitted aggregate issue capacity; numerical-match claim withdrawn. All original documents and payload preserved.",
+    "previous_loose_completion_bounds": "Protocol bounds before decoding q, preserved in slope reviews. Final uses explicit one-instruction wait-endpoint derivation, not a favorable corner of the interval.",
+    "superseded_ilp_v1": "Artificial register WAW chains; not a native-family throughput parameter",
+    "ncu_v2 kind0/kind1": "Scalar compiler hoisting/width changes; replaced by count-matched v3/v4",
+    "formal_v2": "Initial strict slope failures; not rate inputs",
+    "scalar_family_timing": "Volatile replacement changes scheduling; only counter mechanism retained",
+    "dep_pair_*": "Runtime predicate removed R2UR/NOP as well as LDTM; nonload gate failed; not a bare latency input",
+    "DEP_NOP_NCU_AUDIT.json": "First analyzer compared absolute relocated branch text; V2 normalizes relative targets; hardware/raw capture unchanged",
+    "ts_*": "M128 comparator validates execution but strict Event gate not uniformly passed; no rate adopted",
+    "alu_mix_screen": "One-live-source/other-source form and incomplete operand match; superseded",
+    "alu_mix_v2_formal": "Inactive warp clock results were wrongly included in the median; preserved, not used as conversion rate",
+    "alu_mix_v3_formal": "Correct active-warp endpoints; one Event gate failure; replaced by fresh extension without pooling oldpoints",
+    "V_JOIN_COUNTERS.json": "Legacy expected Source total missed512fixedWF; V2 uses actual same-cohort7178496 and keeps loop876WF unchanged",
+    "derived/*SENSITIVITY.json and NATIVE_PC_SERVICE_MODELS.json": "Exploratory service/queue scenarios; do not treat provisional lag values or blocking model match as final hardware parameters"
+  },
+  "timing_semantics": "NCUreplay duration is never used as Event gain or a theoretical node. Whole-family packet times are validation only. New completion bounds come from a single-instruction RAW primitive with exact native no-load control.",
+  "model_enabled": false,
+  "effective_model_value": null
+}

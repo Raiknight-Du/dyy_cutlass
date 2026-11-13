@@ -1,0 +1,814 @@
+[
+  {
+    "kind": 0,
+    "warps": 1,
+    "pass_gate": true,
+    "targets": [
+      {
+        "pc": "0x410",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x460",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x4b0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x500",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x550",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5a0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5f0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x640",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x690",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x6e0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x730",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x780",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x7d0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x820",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x870",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x8c0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      }
+    ],
+    "nonload_differences": [],
+    "source_byte_identity": true,
+    "description": "Exact native LDTM-to-NOP substitution; only load WB/RB disabled. Same nonload bytes and dynamic counts.",
+    "model_enabled": false
+  },
+  {
+    "kind": 0,
+    "warps": 4,
+    "pass_gate": true,
+    "targets": [
+      {
+        "pc": "0x410",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x460",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x4b0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x500",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x550",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5a0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5f0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x640",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x690",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x6e0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x730",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x780",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x7d0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x820",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x870",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x8c0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.x32 R4, tmem[UR6]"
+        ],
+        "gate": true
+      }
+    ],
+    "nonload_differences": [],
+    "source_byte_identity": true,
+    "description": "Exact native LDTM-to-NOP substitution; only load WB/RB disabled. Same nonload bytes and dynamic counts.",
+    "model_enabled": false
+  },
+  {
+    "kind": 1,
+    "warps": 1,
+    "pass_gate": true,
+    "targets": [
+      {
+        "pc": "0x410",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x460",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x4b0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x500",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x550",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5a0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5f0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x640",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x690",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x6e0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x730",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x780",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x7d0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x820",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x870",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x8c0",
+        "counts": [
+          128,
+          128
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      }
+    ],
+    "nonload_differences": [],
+    "source_byte_identity": true,
+    "description": "Exact native LDTM-to-NOP substitution; only load WB/RB disabled. Same nonload bytes and dynamic counts.",
+    "model_enabled": false
+  },
+  {
+    "kind": 1,
+    "warps": 4,
+    "pass_gate": true,
+    "targets": [
+      {
+        "pc": "0x410",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x460",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x4b0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x500",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x550",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5a0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x5f0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x640",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x690",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x6e0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x730",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x780",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x7d0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x820",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x870",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      },
+      {
+        "pc": "0x8c0",
+        "counts": [
+          512,
+          512
+        ],
+        "instructions": [
+          "NOP",
+          "LDTM.16dp256bit.x8 R4, tmem[UR6]"
+        ],
+        "gate": true
+      }
+    ],
+    "nonload_differences": [],
+    "source_byte_identity": true,
+    "description": "Exact native LDTM-to-NOP substitution; only load WB/RB disabled. Same nonload bytes and dynamic counts.",
+    "model_enabled": false
+  }
+]

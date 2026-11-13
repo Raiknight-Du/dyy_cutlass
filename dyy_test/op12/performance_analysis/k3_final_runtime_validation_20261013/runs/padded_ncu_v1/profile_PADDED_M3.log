@@ -1,0 +1,104 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 460426 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 1
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_460426"}
+==PROF== Disconnected from process 460426
+==PROF== Connected to process 460596 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 2
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_460596"}
+==PROF== Disconnected from process 460596
+==PROF== Connected to process 460732 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 3
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_460732"}
+==PROF== Disconnected from process 460732
+==PROF== Connected to process 460906 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 4
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_460906"}
+==PROF== Disconnected from process 460906
+==PROF== Connected to process 461047 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 5
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_461047"}
+==PROF== Disconnected from process 461047
+==PROF== Connected to process 461182 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 6
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_461182"}
+==PROF== Disconnected from process 461182
+==PROF== Connected to process 461356 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 7
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_461356"}
+==PROF== Disconnected from process 461356
+==PROF== Connected to process 461492 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 8
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_461492"}
+==PROF== Disconnected from process 461492
+==PROF== Connected to process 461665 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 9
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_461665"}
+==PROF== Disconnected from process 461665
+==PROF== Connected to process 461802 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 10
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_461802"}
+==PROF== Disconnected from process 461802
+==PROF== Connected to process 461973 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 11
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_461973"}
+==PROF== Disconnected from process 461973
+==PROF== Connected to process 462117 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 12
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_462117"}
+==PROF== Disconnected from process 462117
+==PROF== Connected to process 462249 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 13
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_462249"}
+==PROF== Disconnected from process 462249
+==PROF== Connected to process 462439 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 14
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_462439"}
+==PROF== Disconnected from process 462439
+==PROF== Connected to process 462568 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 15
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_462568"}
+==PROF== Disconnected from process 462568
+==PROF== Connected to process 462748 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 16
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_462748"}
+==PROF== Disconnected from process 462748
+==PROF== Connected to process 462882 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 17
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_462882"}
+==PROF== Disconnected from process 462882
+==PROF== Connected to process 463026 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 18
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_463026"}
+==PROF== Disconnected from process 463026
+==PROF== Connected to process 463155 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 19
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_463155"}
+==PROF== Disconnected from process 463155
+==PROF== Connected to process 463425 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 20
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_463425"}
+==PROF== Disconnected from process 463425
+==PROF== Connected to process 463561 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 21
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_463561"}
+==PROF== Disconnected from process 463561
+==PROF== Connected to process 463705 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 22
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_463705"}
+==PROF== Disconnected from process 463705
+==PROF== Connected to process 463867 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 23
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_463867"}
+==PROF== Disconnected from process 463867
+==PROF== Connected to process 464014 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 24
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_464014"}
+==PROF== Disconnected from process 464014
+==PROF== Connected to process 464148 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_causal_..." - 0: Application replay pass 25
+{"phase": "profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host/pid_464148"}
+==PROF== Disconnected from process 464148
+==PROF== Creating report from application replay data: 0%..............100%
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3.ncu-rep

@@ -1,0 +1,11 @@
+{
+  "round": "R4",
+  "configuration": "BOTH",
+  "N": 512,
+  "start_time_ns": 1792965179925243980,
+  "status": "REPORT_CREATED",
+  "clock_policy": "temporary1845request_actual_sampled",
+  "model_enabled": false,
+  "returncode": 0,
+  "end_time_ns": 1792965227350025537
+}

@@ -1,0 +1,19 @@
+{
+  "status": "UNCHANGED_APPLICATION_HISTORY_AND_DATA_WF_PASS",
+  "replay_applications": 4,
+  "counters": {
+    "dram__bytes_read.sum": "32778752",
+    "lts__t_sectors_srcunit_tex_op_read.sum": "1074241495",
+    "lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum": "1072368158",
+    "lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum": "1948152",
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.sum": "1073741824",
+    "sm__cycles_elapsed.avg": "14143116.72",
+    "l1tex__cycles_elapsed.avg": "14143116.72",
+    "lts__cycles_elapsed.avg": "14122328",
+    "dram__cycles_elapsed.avg": "30639232",
+    "gpu__time_duration.sum": "7667520",
+    "profiler__replayer_passes": "4"
+  },
+  "actual_passes": "4",
+  "model_enabled": false
+}

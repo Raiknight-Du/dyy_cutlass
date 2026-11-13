@@ -1,0 +1,19 @@
+{
+  "round": "R8",
+  "approved_modes": [
+    "screen"
+  ],
+  "source_SHA256": "9e7b8f5aba3a86dfd7ac70903550b3715fb9ef36456b94b565bfbc663426a89a",
+  "max_N": 256,
+  "warmup_actual_graph_replays": 20,
+  "samples": 5,
+  "configurations": [
+    "BLOCKED",
+    "INTERLEAVED"
+  ],
+  "frequency_policy": "temporary1845SMrequest_actualtelemetry_finallyauto",
+  "negative_stop_rule": "If internal cycle differences at bothN <3% and no anomalies, finish negative finite control; no further GPU",
+  "no_NCU_or_formal_rate": true,
+  "model_enabled": false,
+  "direct_lazy_BLOCKED": 1
+}

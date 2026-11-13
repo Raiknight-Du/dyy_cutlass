@@ -1,0 +1,8 @@
+{
+  "status": "REJECTED_CONTROL_BUG_NO_GPU_EXECUTION",
+  "frame_cubin": "8f9d0584fc23897f51560643ac65e51d2bb66fb314b65aee45c8720c6853b11a",
+  "source_sha256": "05f56f6d351c7446beaf60944c23c3a61d34510006637eb1b397c9fe8d29c976",
+  "reason": "mask0 early prefetch lost W8 outer predicate; other warps could prefetch",
+  "corrected_source_sha256": "904ed8a20339bc624cb263d37237fa72405eaeb9029274c72811b929d2259d9b",
+  "model_enabled": false
+}

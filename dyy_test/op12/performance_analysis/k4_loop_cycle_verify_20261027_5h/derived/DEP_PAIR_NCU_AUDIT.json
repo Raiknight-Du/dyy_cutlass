@@ -1,0 +1,186 @@
+[
+  {
+    "kind": 0,
+    "warps": 1,
+    "records": [
+      {
+        "mode": 0,
+        "target_PC_count": 16,
+        "target_warp_inst": 0,
+        "target_pred_on": 0,
+        "target_gate": false,
+        "nonload_dynamic_loop_ops": {
+          "BRA.U": 2176,
+          "LOP3.LUT": 2048,
+          "NOP": 2048,
+          "IMAD.IADD": 2048,
+          "UIADD3": 128,
+          "UISETP.GE.U32.AND": 128,
+          "IMAD.MOV.U32": 128
+        },
+        "cubin_sha256": "5cc78a17f244b10d49a14d8a64daed3b385fe63b815bb020202d426a1b97ca06"
+      },
+      {
+        "mode": 1,
+        "target_PC_count": 16,
+        "target_warp_inst": 2048,
+        "target_pred_on": 65536,
+        "target_gate": true,
+        "nonload_dynamic_loop_ops": {
+          "BRA.U": 2176,
+          "R2UR": 2048,
+          "NOP": 4096,
+          "LOP3.LUT": 2048,
+          "IMAD.IADD": 2048,
+          "UIADD3": 128,
+          "UISETP.GE.U32.AND": 128,
+          "IMAD.MOV.U32": 128
+        },
+        "cubin_sha256": "5cc78a17f244b10d49a14d8a64daed3b385fe63b815bb020202d426a1b97ca06"
+      }
+    ],
+    "same_nonload_work": false,
+    "same_cubin": true,
+    "pass_gate": false,
+    "interpretation": "Single read/address feedback primitive and no-load protocol, same CUBIN and same nonload operation counts. Conditional completion bounds only; not a GDN stage cost.",
+    "model_enabled": false
+  },
+  {
+    "kind": 0,
+    "warps": 4,
+    "records": [
+      {
+        "mode": 0,
+        "target_PC_count": 16,
+        "target_warp_inst": 0,
+        "target_pred_on": 0,
+        "target_gate": false,
+        "nonload_dynamic_loop_ops": {
+          "BRA.U": 8704,
+          "LOP3.LUT": 8192,
+          "NOP": 8192,
+          "IMAD.IADD": 8192,
+          "UIADD3": 512,
+          "UISETP.GE.U32.AND": 512,
+          "IMAD.MOV.U32": 512
+        },
+        "cubin_sha256": "345e89ab86ea5eee11801e919c83fcaeedd88a76578c1f7e1831350c4456f038"
+      },
+      {
+        "mode": 1,
+        "target_PC_count": 16,
+        "target_warp_inst": 8192,
+        "target_pred_on": 262144,
+        "target_gate": true,
+        "nonload_dynamic_loop_ops": {
+          "BRA.U": 8704,
+          "R2UR": 8192,
+          "NOP": 16384,
+          "LOP3.LUT": 8192,
+          "IMAD.IADD": 8192,
+          "UIADD3": 512,
+          "UISETP.GE.U32.AND": 512,
+          "IMAD.MOV.U32": 512
+        },
+        "cubin_sha256": "345e89ab86ea5eee11801e919c83fcaeedd88a76578c1f7e1831350c4456f038"
+      }
+    ],
+    "same_nonload_work": false,
+    "same_cubin": true,
+    "pass_gate": false,
+    "interpretation": "Single read/address feedback primitive and no-load protocol, same CUBIN and same nonload operation counts. Conditional completion bounds only; not a GDN stage cost.",
+    "model_enabled": false
+  },
+  {
+    "kind": 1,
+    "warps": 1,
+    "records": [
+      {
+        "mode": 0,
+        "target_PC_count": 16,
+        "target_warp_inst": 0,
+        "target_pred_on": 0,
+        "target_gate": false,
+        "nonload_dynamic_loop_ops": {
+          "BRA.U": 2176,
+          "LOP3.LUT": 2048,
+          "NOP": 2048,
+          "IMAD.IADD": 2048,
+          "UIADD3": 128,
+          "UISETP.GE.U32.AND": 128,
+          "IMAD.MOV.U32": 128
+        },
+        "cubin_sha256": "352729b505bbd3816ebd2c4c5d97bcf62c2357dc0ea6c95759138e1f717d25cb"
+      },
+      {
+        "mode": 1,
+        "target_PC_count": 16,
+        "target_warp_inst": 2048,
+        "target_pred_on": 65536,
+        "target_gate": true,
+        "nonload_dynamic_loop_ops": {
+          "BRA.U": 2176,
+          "R2UR": 2048,
+          "NOP": 4096,
+          "LOP3.LUT": 2048,
+          "IMAD.IADD": 2048,
+          "UIADD3": 128,
+          "UISETP.GE.U32.AND": 128,
+          "IMAD.MOV.U32": 128
+        },
+        "cubin_sha256": "352729b505bbd3816ebd2c4c5d97bcf62c2357dc0ea6c95759138e1f717d25cb"
+      }
+    ],
+    "same_nonload_work": false,
+    "same_cubin": true,
+    "pass_gate": false,
+    "interpretation": "Single read/address feedback primitive and no-load protocol, same CUBIN and same nonload operation counts. Conditional completion bounds only; not a GDN stage cost.",
+    "model_enabled": false
+  },
+  {
+    "kind": 1,
+    "warps": 4,
+    "records": [
+      {
+        "mode": 0,
+        "target_PC_count": 16,
+        "target_warp_inst": 0,
+        "target_pred_on": 0,
+        "target_gate": false,
+        "nonload_dynamic_loop_ops": {
+          "BRA.U": 8704,
+          "LOP3.LUT": 8192,
+          "NOP": 8192,
+          "IMAD.IADD": 8192,
+          "UIADD3": 512,
+          "UISETP.GE.U32.AND": 512,
+          "IMAD.MOV.U32": 512
+        },
+        "cubin_sha256": "ebfb2150f1b1ff2ffeb47be622d5d47587e6050a21df2ecb7912e924d6262795"
+      },
+      {
+        "mode": 1,
+        "target_PC_count": 16,
+        "target_warp_inst": 8192,
+        "target_pred_on": 262144,
+        "target_gate": true,
+        "nonload_dynamic_loop_ops": {
+          "BRA.U": 8704,
+          "R2UR": 8192,
+          "NOP": 16384,
+          "LOP3.LUT": 8192,
+          "IMAD.IADD": 8192,
+          "UIADD3": 512,
+          "UISETP.GE.U32.AND": 512,
+          "IMAD.MOV.U32": 512
+        },
+        "cubin_sha256": "ebfb2150f1b1ff2ffeb47be622d5d47587e6050a21df2ecb7912e924d6262795"
+      }
+    ],
+    "same_nonload_work": false,
+    "same_cubin": true,
+    "pass_gate": false,
+    "interpretation": "Single read/address feedback primitive and no-load protocol, same CUBIN and same nonload operation counts. Conditional completion bounds only; not a GDN stage cost.",
+    "model_enabled": false
+  }
+]

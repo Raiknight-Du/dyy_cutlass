@@ -1,0 +1,5 @@
+==PROF== Connected to process 444625 (/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/sf_mainloop_fusion_validation_20260727/bin/op1_fused)
+==PROF== Profiling "device_kernel" - 0 (1/1): 0%....50%....100% - 14 passes
+RESULT,1,M256_N256_K256_E64x64_C2x1x1,ok,1,1331.94
+==PROF== Disconnected from process 444625
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/sf_mainloop_fusion_validation_20260727/ncu/fused.ncu-rep

@@ -1,0 +1,106 @@
+report,rank,address,source,long_sb,total_long_sb,share_pct
+e64_full_source_r1_source,1,0x7f7e275aefa0,@!P0  BRA 0x7f7e275b1810,16,132,12.121212121212121
+e64_full_source_r1_source,2,0x7f7e275adc80,@!P0  BRA 0x7f7e275b1640,14,132,10.606060606060606
+e64_full_source_r1_source,3,0x7f7e275ad900,@!P0  BRA 0x7f7e275b1540,11,132,8.333333333333334
+e64_full_source_r1_source,4,0x7f7e275acd40,@!P0  BRA 0x7f7e275b1250,9,132,6.818181818181818
+e64_full_source_r1_source,5,0x7f7e275add60,@!P0  NANOSLEEP.SYNCS 0x989680,9,132,6.818181818181818
+e64_full_source_r1_source,6,0x7f7e275aef00,@!P0  BRA 0x7f7e275b17b0,8,132,6.0606060606060606
+e64_full_source_r1_source,7,0x7f7e275b0ef0,FENCE.VIEW.ASYNC.S,8,132,6.0606060606060606
+e64_full_source_r1_source,8,0x7f7e275adac0,@!P1  BRA 0x7f7e275b15f0,7,132,5.303030303030303
+e64_full_source_r1_source,9,0x7f7e275ae9d0,"UMOV UR38, URZ",7,132,5.303030303030303
+e64_full_source_r1_source,10,0x7f7e275ad9b0,@!P0  BRA 0x7f7e275b1590,6,132,4.545454545454546
+e64_full_source_r1_source,11,0x7f7e275afc90,@P1   BRA 0x7f7e275afcc0,6,132,4.545454545454546
+e64_full_source_r1_source,12,0x7f7e275af4e0,@!P0  BRA 0x7f7e275b1870,5,132,3.787878787878788
+e64_full_source_r2_source,1,0x7f6db75ad900,@!P0  BRA 0x7f6db75b1540,16,115,13.91304347826087
+e64_full_source_r2_source,2,0x7f6db75add60,@!P0  NANOSLEEP.SYNCS 0x989680,13,115,11.304347826086957
+e64_full_source_r2_source,3,0x7f6db75adc80,@!P0  BRA 0x7f6db75b1640,11,115,9.565217391304348
+e64_full_source_r2_source,4,0x7f6db75aefa0,@!P0  BRA 0x7f6db75b1810,10,115,8.695652173913043
+e64_full_source_r2_source,5,0x7f6db75aef00,@!P0  BRA 0x7f6db75b17b0,8,115,6.956521739130435
+e64_full_source_r2_source,6,0x7f6db75ae2c0,@!P0  BRA 0x7f6db75b16a0,7,115,6.086956521739131
+e64_full_source_r2_source,7,0x7f6db75b0ef0,FENCE.VIEW.ASYNC.S,7,115,6.086956521739131
+e64_full_source_r2_source,8,0x7f6db75adac0,@!P1  BRA 0x7f6db75b15f0,6,115,5.217391304347826
+e64_full_source_r2_source,9,0x7f6db75ad9b0,@!P0  BRA 0x7f6db75b1590,5,115,4.3478260869565215
+e64_full_source_r2_source,10,0x7f6db75afc90,@P1   BRA 0x7f6db75afcc0,5,115,4.3478260869565215
+e64_full_source_r2_source,11,0x7f6db75ad7f0,@!P0  NANOSLEEP.SYNCS 0x989680,4,115,3.4782608695652173
+e64_full_source_r2_source,12,0x7f6db75ae9d0,"UMOV UR38, URZ",4,115,3.4782608695652173
+e64_full_source_r3_source,1,0x7f67f35aef00,@!P0  BRA 0x7f67f35b17b0,16,131,12.213740458015268
+e64_full_source_r3_source,2,0x7f67f35aefa0,@!P0  BRA 0x7f67f35b1810,14,131,10.687022900763358
+e64_full_source_r3_source,3,0x7f67f35acd40,@!P0  BRA 0x7f67f35b1250,9,131,6.870229007633588
+e64_full_source_r3_source,4,0x7f67f35adc80,@!P0  BRA 0x7f67f35b1640,9,131,6.870229007633588
+e64_full_source_r3_source,5,0x7f67f35ad900,@!P0  BRA 0x7f67f35b1540,8,131,6.106870229007634
+e64_full_source_r3_source,6,0x7f67f35adac0,@!P1  BRA 0x7f67f35b15f0,8,131,6.106870229007634
+e64_full_source_r3_source,7,0x7f67f35add60,@!P0  NANOSLEEP.SYNCS 0x989680,8,131,6.106870229007634
+e64_full_source_r3_source,8,0x7f67f35afc90,@P1   BRA 0x7f67f35afcc0,8,131,6.106870229007634
+e64_full_source_r3_source,9,0x7f67f35ae9d0,"UMOV UR38, URZ",7,131,5.343511450381679
+e64_full_source_r3_source,10,0x7f67f35ae2c0,@!P0  BRA 0x7f67f35b16a0,6,131,4.580152671755725
+e64_full_source_r3_source,11,0x7f67f35ad9b0,@!P0  BRA 0x7f67f35b1590,4,131,3.053435114503817
+e64_full_source_r3_source,12,0x7f67f35b0ef0,FENCE.VIEW.ASYNC.S,4,131,3.053435114503817
+e64_shell_noepi_source_r1_source,1,0x7f1c875abc80,@!P0  BRA 0x7f1c875acdd0,14,64,21.875
+e64_shell_noepi_source_r1_source,2,0x7f1c875ac060,@!P2  BRA 0x7f1c875aced0,11,64,17.1875
+e64_shell_noepi_source_r1_source,3,0x7f1c875ac5a0,@!P0  BRA 0x7f1c875acf80,10,64,15.625
+e64_shell_noepi_source_r1_source,4,0x7f1c875acbd0,@!P0  BRA 0x7f1c875ad0f0,8,64,12.5
+e64_shell_noepi_source_r1_source,5,0x7f1c875accd0,@!P0  BRA 0x7f1c875ad140,6,64,9.375
+e64_shell_noepi_source_r1_source,6,0x7f1c875abe70,@!P1  BRA 0x7f1c875ace20,4,64,6.25
+e64_shell_noepi_source_r1_source,7,0x7f1c875abbf0,@!P0  BRA 0x7f1c875acd80,2,64,3.125
+e64_shell_noepi_source_r1_source,8,0x7f1c875abee0,@!P1  BRA 0x7f1c875ace70,2,64,3.125
+e64_shell_noepi_source_r1_source,9,0x7f1c875ac660,@!P0  BRA 0x7f1c875acfd0,2,64,3.125
+e64_shell_noepi_source_r1_source,10,0x7f1c875acc80,"SYNCS.ARRIVE.TRANS64.RED.A1T0 RZ, [R3+URZ], RZ",2,64,3.125
+e64_shell_noepi_source_r1_source,11,0x7f1c875ab640,"ISETP.NE.U32.AND P0, PT, R3, 0x3, PT",1,64,1.5625
+e64_shell_noepi_source_r1_source,12,0x7f1c875abb00,BAR.SYNC.DEFER_BLOCKING 0x0,1,64,1.5625
+e64_shell_noepi_source_r2_source,1,0x7ff7835abc80,@!P0  BRA 0x7ff7835acdd0,17,57,29.82456140350877
+e64_shell_noepi_source_r2_source,2,0x7ff7835ac060,@!P2  BRA 0x7ff7835aced0,15,57,26.31578947368421
+e64_shell_noepi_source_r2_source,3,0x7ff7835ac5a0,@!P0  BRA 0x7ff7835acf80,14,57,24.56140350877193
+e64_shell_noepi_source_r2_source,4,0x7ff7835acbd0,@!P0  BRA 0x7ff7835ad0f0,6,57,10.526315789473685
+e64_shell_noepi_source_r2_source,5,0x7ff7835aba80,"SYNCS.EXCH.64 URZ, [UR6+0x100], UR4",1,57,1.7543859649122806
+e64_shell_noepi_source_r2_source,6,0x7ff7835abe70,@!P1  BRA 0x7ff7835ace20,1,57,1.7543859649122806
+e64_shell_noepi_source_r2_source,7,0x7ff7835ac100,"SYNCS.ARRIVE.TRANS64.RED.A1T0 RZ, [R9+URZ], RZ",1,57,1.7543859649122806
+e64_shell_noepi_source_r2_source,8,0x7ff7835ac620,"SYNCS.ARRIVE.TRANS64.RED.A1T0 RZ, [R9+URZ], RZ",1,57,1.7543859649122806
+e64_shell_noepi_source_r2_source,9,0x7ff7835accd0,@!P0  BRA 0x7ff7835ad140,1,57,1.7543859649122806
+e64_shell_noepi_source_r3_source,1,0x7fa08f5ac5a0,@!P0  BRA 0x7fa08f5acf80,21,59,35.59322033898305
+e64_shell_noepi_source_r3_source,2,0x7fa08f5ac060,@!P2  BRA 0x7fa08f5aced0,11,59,18.64406779661017
+e64_shell_noepi_source_r3_source,3,0x7fa08f5abc80,@!P0  BRA 0x7fa08f5acdd0,9,59,15.254237288135593
+e64_shell_noepi_source_r3_source,4,0x7fa08f5acbd0,@!P0  BRA 0x7fa08f5ad0f0,6,59,10.169491525423728
+e64_shell_noepi_source_r3_source,5,0x7fa08f5abbf0,@!P0  BRA 0x7fa08f5acd80,2,59,3.389830508474576
+e64_shell_noepi_source_r3_source,6,0x7fa08f5abee0,@!P1  BRA 0x7fa08f5ace70,2,59,3.389830508474576
+e64_shell_noepi_source_r3_source,7,0x7fa08f5ac620,"SYNCS.ARRIVE.TRANS64.RED.A1T0 RZ, [R9+URZ], RZ",2,59,3.389830508474576
+e64_shell_noepi_source_r3_source,8,0x7fa08f5aba80,"SYNCS.EXCH.64 URZ, [UR6+0x100], UR4",1,59,1.694915254237288
+e64_shell_noepi_source_r3_source,9,0x7fa08f5abe70,@!P1  BRA 0x7fa08f5ace20,1,59,1.694915254237288
+e64_shell_noepi_source_r3_source,10,0x7fa08f5ac100,"SYNCS.ARRIVE.TRANS64.RED.A1T0 RZ, [R9+URZ], RZ",1,59,1.694915254237288
+e64_shell_noepi_source_r3_source,11,0x7fa08f5ac1c0,@P0   BRA 0x7fa08f5ac1f0,1,59,1.694915254237288
+e64_shell_noepi_source_r3_source,12,0x7fa08f5ac660,@!P0  BRA 0x7fa08f5acfd0,1,59,1.694915254237288
+e96_full_source_r1_source,1,0x7f9f9f5aeec0,@!P0  BRA 0x7f9f9f5b17b0,18,132,13.636363636363637
+e96_full_source_r1_source,2,0x7f9f9f5ad820,@!P0  BRA 0x7f9f9f5b14e0,17,132,12.878787878787879
+e96_full_source_r1_source,3,0x7f9f9f5adc80,@!P0  NANOSLEEP.SYNCS 0x989680,16,132,12.121212121212121
+e96_full_source_r1_source,4,0x7f9f9f5adba0,@!P0  BRA 0x7f9f9f5b15e0,10,132,7.575757575757576
+e96_full_source_r1_source,5,0x7f9f9f5ad9e0,@!P1  BRA 0x7f9f9f5b1590,9,132,6.818181818181818
+e96_full_source_r1_source,6,0x7f9f9f5aee20,@!P0  BRA 0x7f9f9f5b1750,9,132,6.818181818181818
+e96_full_source_r1_source,7,0x7f9f9f5b0ec0,FENCE.VIEW.ASYNC.S,9,132,6.818181818181818
+e96_full_source_r1_source,8,0x7f9f9f5ae1e0,@!P0  BRA 0x7f9f9f5b1640,8,132,6.0606060606060606
+e96_full_source_r1_source,9,0x7f9f9f5afbe0,@P1   BRA 0x7f9f9f5afc10,8,132,6.0606060606060606
+e96_full_source_r1_source,10,0x7f9f9f5acd00,@!P0  BRA 0x7f9f9f5b1250,5,132,3.787878787878788
+e96_full_source_r1_source,11,0x7f9f9f5ae8f0,"UMOV UR38, URZ",4,132,3.0303030303030303
+e96_full_source_r1_source,12,0x7f9f9f5ae7f0,@!P1  BRA 0x7f9f9f5b1690,3,132,2.272727272727273
+e96_full_source_r2_source,1,0x7f8c2f5ad820,@!P0  BRA 0x7f8c2f5b14e0,16,110,14.545454545454545
+e96_full_source_r2_source,2,0x7f8c2f5adc80,@!P0  NANOSLEEP.SYNCS 0x989680,12,110,10.909090909090908
+e96_full_source_r2_source,3,0x7f8c2f5aeec0,@!P0  BRA 0x7f8c2f5b17b0,11,110,10.0
+e96_full_source_r2_source,4,0x7f8c2f5b0ec0,FENCE.VIEW.ASYNC.S,10,110,9.090909090909092
+e96_full_source_r2_source,5,0x7f8c2f5afbe0,@P1   BRA 0x7f8c2f5afc10,8,110,7.2727272727272725
+e96_full_source_r2_source,6,0x7f8c2f5aee20,@!P0  BRA 0x7f8c2f5b1750,7,110,6.363636363636363
+e96_full_source_r2_source,7,0x7f8c2f5ad9e0,@!P1  BRA 0x7f8c2f5b1590,6,110,5.454545454545454
+e96_full_source_r2_source,8,0x7f8c2f5acd00,@!P0  BRA 0x7f8c2f5b1250,5,110,4.545454545454546
+e96_full_source_r2_source,9,0x7f8c2f5ae1e0,@!P0  BRA 0x7f8c2f5b1640,5,110,4.545454545454546
+e96_full_source_r2_source,10,0x7f8c2f5adba0,@!P0  BRA 0x7f8c2f5b15e0,4,110,3.6363636363636362
+e96_full_source_r2_source,11,0x7f8c2f5ae7f0,@!P1  BRA 0x7f8c2f5b1690,4,110,3.6363636363636362
+e96_full_source_r2_source,12,0x7f8c2f5ad8d0,@!P0  BRA 0x7f8c2f5b1530,3,110,2.727272727272727
+e96_full_source_r3_source,1,0x7ff53f5aeec0,@!P0  BRA 0x7ff53f5b17b0,22,113,19.469026548672566
+e96_full_source_r3_source,2,0x7ff53f5ad820,@!P0  BRA 0x7ff53f5b14e0,15,113,13.274336283185841
+e96_full_source_r3_source,3,0x7ff53f5aee20,@!P0  BRA 0x7ff53f5b1750,10,113,8.849557522123893
+e96_full_source_r3_source,4,0x7ff53f5adc80,@!P0  NANOSLEEP.SYNCS 0x989680,9,113,7.964601769911504
+e96_full_source_r3_source,5,0x7ff53f5b0ec0,FENCE.VIEW.ASYNC.S,8,113,7.079646017699115
+e96_full_source_r3_source,6,0x7ff53f5adba0,@!P0  BRA 0x7ff53f5b15e0,6,113,5.3097345132743365
+e96_full_source_r3_source,7,0x7ff53f5afbe0,@P1   BRA 0x7ff53f5afc10,6,113,5.3097345132743365
+e96_full_source_r3_source,8,0x7ff53f5ad9e0,@!P1  BRA 0x7ff53f5b1590,5,113,4.424778761061947
+e96_full_source_r3_source,9,0x7ff53f5ae1e0,@!P0  BRA 0x7ff53f5b1640,5,113,4.424778761061947
+e96_full_source_r3_source,10,0x7ff53f5ad710,@!P0  NANOSLEEP.SYNCS 0x989680,4,113,3.5398230088495577
+e96_full_source_r3_source,11,0x7ff53f5ad8d0,@!P0  BRA 0x7ff53f5b1530,3,113,2.6548672566371683
+e96_full_source_r3_source,12,0x7ff53f5ae7f0,@!P1  BRA 0x7ff53f5b1690,3,113,2.6548672566371683

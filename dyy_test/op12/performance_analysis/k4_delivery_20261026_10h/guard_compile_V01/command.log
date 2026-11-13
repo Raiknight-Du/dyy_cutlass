@@ -1,0 +1,21 @@
+B0 
+Resource usage:
+ Common:
+  GLOBAL:0
+ Function kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_Sh_0:
+  REG:168 STACK:24 SHARED:1024 LOCAL:0 CONSTANT[2]:16 CONSTANT[0]:2480 TEXTURE:0 SURFACE:0 SAMPLER:0
+ {'LDL': 41, 'STL': 5, 'LDG': 102, 'STG': 64, 'LDTM': 13, 'STTM': 24, 'UTCHMMA': 44, 'UTMALDG': 7, 'UTMASTG': 2, 'BAR': 8, 'SYNCS': 314, 'FENCE': 27, 'MEMBAR': 9, 'UTCBAR': 16}
+CLOCK 
+Resource usage:
+ Common:
+  GLOBAL:0
+ Function kernel_cutlass_kernel_K4CLOCK_RETURNSK4CLOCK_RETURNS_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_ShapeMNK646416_TVLayoutA1641664164_TVLayoutB1641664164_TVL_0:
+  REG:168 STACK:32 SHARED:1024 LOCAL:0 CONSTANT[2]:16 CONSTANT[0]:2488 TEXTURE:0 SURFACE:0 SAMPLER:0
+ {'LDL': 49, 'STL': 6, 'LDG': 102, 'STG': 73, 'LDTM': 13, 'STTM': 24, 'UTCHMMA': 44, 'UTMALDG': 7, 'UTMASTG': 2, 'BAR': 8, 'SYNCS': 314, 'FENCE': 27, 'MEMBAR': 9, 'UTCBAR': 16}
+FRAME 
+Resource usage:
+ Common:
+  GLOBAL:0
+ Function kernel_cutlass_kernel_K4READY_GATEK4READY_GATE_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_ShapeMNK646416_TVLayoutA1641664164_TVLayoutB1641664164_TVLayoutC_0:
+  REG:168 STACK:32 SHARED:1024 LOCAL:0 CONSTANT[2]:16 CONSTANT[0]:2492 TEXTURE:0 SURFACE:0 SAMPLER:0
+ {'LDL': 49, 'STL': 6, 'LDG': 102, 'STG': 73, 'LDTM': 13, 'STTM': 24, 'UTCHMMA': 44, 'UTMALDG': 7, 'UTMASTG': 2, 'BAR': 8, 'SYNCS': 323, 'FENCE': 27, 'MEMBAR': 9, 'UTCBAR': 16}

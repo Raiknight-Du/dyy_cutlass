@@ -1,0 +1,120 @@
+{
+  "status": "CPU_METADATA_COMPILE_STARTED",
+  "layout": "S",
+  "shape": 32768,
+  "gpu_kernel_invoked": false,
+  "tensors": {
+    "q": {
+      "shape": [
+        32768,
+        16,
+        128
+      ],
+      "stride": [
+        2048,
+        128,
+        1
+      ],
+      "dtype": "torch.float16",
+      "device": "cpu"
+    },
+    "k": {
+      "shape": [
+        32768,
+        16,
+        128
+      ],
+      "stride": [
+        2048,
+        128,
+        1
+      ],
+      "dtype": "torch.float16",
+      "device": "cpu"
+    },
+    "v": {
+      "shape": [
+        32768,
+        16,
+        128
+      ],
+      "stride": [
+        2048,
+        128,
+        1
+      ],
+      "dtype": "torch.float16",
+      "device": "cpu"
+    },
+    "gate": {
+      "shape": [
+        32768,
+        16
+      ],
+      "stride": [
+        16,
+        1
+      ],
+      "dtype": "torch.float32",
+      "device": "cpu"
+    },
+    "t": {
+      "shape": [
+        64,
+        64,
+        16,
+        512
+      ],
+      "stride": [
+        64,
+        1,
+        4096,
+        65536
+      ],
+      "dtype": "torch.float16",
+      "device": "cpu"
+    },
+    "fixed": {
+      "shape": [
+        8,
+        16,
+        128,
+        128
+      ],
+      "stride": [
+        262144,
+        16384,
+        128,
+        1
+      ],
+      "dtype": "torch.float32",
+      "device": "cpu"
+    },
+    "initial": {
+      "shape": [
+        1,
+        16,
+        128,
+        128
+      ],
+      "stride": [
+        262144,
+        16384,
+        128,
+        1
+      ],
+      "dtype": "torch.float32",
+      "device": "cpu"
+    },
+    "cu": {
+      "shape": [
+        2
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.int64",
+      "device": "cpu"
+    }
+  }
+}

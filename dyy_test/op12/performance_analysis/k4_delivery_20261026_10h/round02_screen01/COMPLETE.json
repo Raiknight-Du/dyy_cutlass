@@ -1,0 +1,10 @@
+{
+  "screen_only": true,
+  "shapes": [
+    8192,
+    16384
+  ],
+  "warmup": 3,
+  "paired_blocks": 3,
+  "model_enabled": false
+}

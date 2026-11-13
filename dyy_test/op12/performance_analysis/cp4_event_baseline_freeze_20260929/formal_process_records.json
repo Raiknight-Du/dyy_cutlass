@@ -1,0 +1,173 @@
+[
+  {
+    "S": 8192,
+    "trial": 1,
+    "exit_code": 0,
+    "elapsed_s": 11.117527723312378,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/runner/measure_cp4_event.py",
+      "--repo",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+      "--output-root",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929",
+      "--s",
+      "8192",
+      "--trial",
+      "1"
+    ],
+    "log": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/logs/formal_S8192_trial1.log"
+  },
+  {
+    "S": 16384,
+    "trial": 1,
+    "exit_code": 0,
+    "elapsed_s": 14.228937864303589,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/runner/measure_cp4_event.py",
+      "--repo",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+      "--output-root",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929",
+      "--s",
+      "16384",
+      "--trial",
+      "1"
+    ],
+    "log": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/logs/formal_S16384_trial1.log"
+  },
+  {
+    "S": 32768,
+    "trial": 1,
+    "exit_code": 0,
+    "elapsed_s": 20.358238697052002,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/runner/measure_cp4_event.py",
+      "--repo",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+      "--output-root",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929",
+      "--s",
+      "32768",
+      "--trial",
+      "1"
+    ],
+    "log": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/logs/formal_S32768_trial1.log"
+  },
+  {
+    "S": 8192,
+    "trial": 2,
+    "exit_code": 0,
+    "elapsed_s": 11.179074048995972,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/runner/measure_cp4_event.py",
+      "--repo",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+      "--output-root",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929",
+      "--s",
+      "8192",
+      "--trial",
+      "2"
+    ],
+    "log": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/logs/formal_S8192_trial2.log"
+  },
+  {
+    "S": 16384,
+    "trial": 2,
+    "exit_code": 0,
+    "elapsed_s": 13.40016222000122,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/runner/measure_cp4_event.py",
+      "--repo",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+      "--output-root",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929",
+      "--s",
+      "16384",
+      "--trial",
+      "2"
+    ],
+    "log": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/logs/formal_S16384_trial2.log"
+  },
+  {
+    "S": 32768,
+    "trial": 2,
+    "exit_code": 0,
+    "elapsed_s": 18.858843088150024,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/runner/measure_cp4_event.py",
+      "--repo",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+      "--output-root",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929",
+      "--s",
+      "32768",
+      "--trial",
+      "2"
+    ],
+    "log": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/logs/formal_S32768_trial2.log"
+  },
+  {
+    "S": 8192,
+    "trial": 3,
+    "exit_code": 0,
+    "elapsed_s": 10.7604079246521,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/runner/measure_cp4_event.py",
+      "--repo",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+      "--output-root",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929",
+      "--s",
+      "8192",
+      "--trial",
+      "3"
+    ],
+    "log": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/logs/formal_S8192_trial3.log"
+  },
+  {
+    "S": 16384,
+    "trial": 3,
+    "exit_code": 0,
+    "elapsed_s": 13.411409378051758,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/runner/measure_cp4_event.py",
+      "--repo",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+      "--output-root",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929",
+      "--s",
+      "16384",
+      "--trial",
+      "3"
+    ],
+    "log": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/logs/formal_S16384_trial3.log"
+  },
+  {
+    "S": 32768,
+    "trial": 3,
+    "exit_code": 0,
+    "elapsed_s": 18.73815655708313,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/runner/measure_cp4_event.py",
+      "--repo",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+      "--output-root",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929",
+      "--s",
+      "32768",
+      "--trial",
+      "3"
+    ],
+    "log": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/logs/formal_S32768_trial3.log"
+  }
+]

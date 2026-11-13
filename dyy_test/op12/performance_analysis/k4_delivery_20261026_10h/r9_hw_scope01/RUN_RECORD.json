@@ -1,0 +1,30 @@
+[
+  {
+    "round": "R9",
+    "configuration": "S_G128_LOAD",
+    "N": 512,
+    "invocation": 1,
+    "kind": "COUNTER_SCOPE_DIAGNOSTIC",
+    "start_time_ns": 1792975468158340338,
+    "end_time_ns": 1792975475259745862,
+    "returncode": 0,
+    "supervisor_PID": 1476559,
+    "timed_out": false,
+    "clock_policy": "temporary1845request_actual_sampled",
+    "model_enabled": false
+  },
+  {
+    "round": "R9",
+    "configuration": "S_G128_LOAD",
+    "N": 512,
+    "invocation": 2,
+    "kind": "COUNTER_SCOPE_DIAGNOSTIC",
+    "start_time_ns": 1792975475524431811,
+    "end_time_ns": 1792975482296148072,
+    "returncode": 0,
+    "supervisor_PID": 1476788,
+    "timed_out": false,
+    "clock_policy": "temporary1845request_actual_sampled",
+    "model_enabled": false
+  }
+]

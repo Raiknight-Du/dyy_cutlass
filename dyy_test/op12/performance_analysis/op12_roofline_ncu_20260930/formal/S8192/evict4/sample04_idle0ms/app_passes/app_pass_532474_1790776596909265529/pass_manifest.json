@@ -1,0 +1,80 @@
+{
+  "shape": 8192,
+  "chunk": 1024,
+  "sample": 4,
+  "evict_factor": 4,
+  "l2_bytes": 132644864,
+  "evict_bytes": 530579456,
+  "graph": {
+    "kernel_count": 4,
+    "stages": [
+      "CPDeltaRuleTPrecomputeSm100",
+      "CPDeltaRuleMNPrecomputeUtcmma1Sm100",
+      "CPDeltaRuleFixupUtcmmaSm100",
+      "CPDeltaRulePrefillTcgen05Sm100"
+    ],
+    "nodes": [
+      "graph_1_node_0",
+      "graph_1_node_1",
+      "graph_1_node_2",
+      "graph_1_node_3"
+    ],
+    "edges": [
+      [
+        "graph_1_node_0",
+        "graph_1_node_1"
+      ],
+      [
+        "graph_1_node_1",
+        "graph_1_node_2"
+      ],
+      [
+        "graph_1_node_2",
+        "graph_1_node_3"
+      ]
+    ],
+    "sha256": "01995049fe81b7c9fbd09088810160521c9d4b447fdf955e5279ee5ec0057cc8"
+  },
+  "post_evict_idle_ms": 0,
+  "tail_mode": "none",
+  "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+  "source_sha256": {
+    "flashinfer/gdn_prefill.py": "e4475a2edc830b97d6bc27f13980e2f5951d7d97eb13547f539acf94e2a2132d",
+    "flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+    "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+    "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc"
+  },
+  "frozen_input_file": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/frozen_inputs/S8192/inputs.pt",
+  "frozen_input_sha256": "1b743c454f06a1a15582d5310f00325df3823ac4abb2947e677683835ac2f780",
+  "harness_sha256": "5874fb51e086c3acaa5c7e5586f3dd577ae5c39712ed036ab9c81488859322a0",
+  "torch": "2.11.0+cu130",
+  "cuda_runtime": "13.0",
+  "gpu_name": "NVIDIA B200",
+  "gpu_sm_count": 148,
+  "telemetry_before": "1965, 3996, 34, 243.23",
+  "telemetry_after": "1965, 3996, 35, 263.83",
+  "input_dtypes": {
+    "qkv_output": "float16",
+    "gate_beta_state": "float32",
+    "cu_seqlens": "int64"
+  },
+  "public_entry": "flashinfer.gdn_prefill.chunk_gated_delta_rule",
+  "use_cp": true,
+  "output_final_state": true,
+  "use_qk_l2norm_in_kernel": false,
+  "scale": 0.08838834764831843,
+  "checks": {
+    "output_exact": true,
+    "state_exact": true,
+    "output_finite": true,
+    "state_finite": true,
+    "initial_unchanged": true,
+    "eviction_checksum_finite": true,
+    "tail_checksum_finite": true
+  },
+  "output_hashes": {
+    "output_sha256": "4040e74f615f05cde672390a1c9ca5c53728354b63dbf923eec3eedf88b4d14a",
+    "final_state_sha256": "eabbcf8cc0501c7fff5d307875db9a9114387589726d44ccf10b5f81b742beff"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "NCU_invocations": 2,
+  "sections": [],
+  "SourceCounters": false,
+  "InstructionStats": false,
+  "no_more_GPU": true,
+  "model_enabled": false
+}

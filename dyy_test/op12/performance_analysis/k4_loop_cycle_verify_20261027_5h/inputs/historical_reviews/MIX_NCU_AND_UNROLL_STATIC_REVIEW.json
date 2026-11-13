@@ -1,0 +1,716 @@
+{
+  "status": "PASS_EXISTING_NCU_COUNTS_AND_STATIC_DELTA_AUDIT",
+  "reports": [
+    {
+      "report": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix3_ncu/mix3_pack_prmt_interleave_u32_w4.ncu-rep",
+      "report_sha256": "2acbf9653cd3740d28cfec490128f07a37dc49f2f7ec19b4af81355814c6fa8d",
+      "source_sha256": "cf2888623a4a905ba36418493c9578c88a9d9bedf4ac34abbaca83a67f5f3b8b",
+      "kind": "mix3_pack_prmt_interleave",
+      "unroll": 32,
+      "warps": 4,
+      "target_count_checks": [
+        {
+          "opcode": "F2FP.F16.F32.PACK_AB",
+          "static_pcs": 1024,
+          "observed_warp_instructions": 524288.0,
+          "expected_warp_instructions": 524288,
+          "observed_pred_on_threads": 16777216.0,
+          "expected_pred_on_threads": 16777216,
+          "exact_match": true
+        },
+        {
+          "opcode": "PRMT",
+          "static_pcs": 1024,
+          "observed_warp_instructions": 524288.0,
+          "expected_warp_instructions": 524288,
+          "observed_pred_on_threads": 16777216.0,
+          "expected_pred_on_threads": 16777216,
+          "exact_match": true
+        }
+      ],
+      "hardware_pipe_instruction_sums": {
+        "smsp__inst_executed_pipe_alu.sum": 1048596.0,
+        "smsp__inst_executed_pipe_fmaheavy.sum": 1536.0,
+        "smsp__inst_executed_pipe_fmalite.sum": 0.0,
+        "smsp__inst_executed_pipe_lsu.sum": 20.0,
+        "smsp__inst_executed_pipe_xu.sum": 0.0
+      },
+      "estimated_opcode_pipeline_instances": {
+        "ALU": 1048596,
+        "FMAHEAVY": 1536,
+        "UNIFORM": 1024,
+        "CBU": 516,
+        "OTHER": 512,
+        "ADU": 28,
+        "LSU": 24,
+        "DCC": 8
+      },
+      "estimated_pipeline_metric_raw": "1052244 (ALU: 1048596; FMAHEAVY: 1536; UNIFORM: 1024; CBU: 516; OTHER: 512; ADU: 28; LSU: 24; DCC: 8)",
+      "estimated_instances_are_not_exclusive_dynamic_assignment": true,
+      "read_only_import_command": [
+        "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+        "--import",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix3_ncu/mix3_pack_prmt_interleave_u32_w4.ncu-rep",
+        "--page",
+        "raw",
+        "--csv",
+        "--metrics",
+        "sass__inst_executed_per_opcode_pipeline",
+        "--print-metric-instances",
+        "details"
+      ]
+    },
+    {
+      "report": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix3_ncu/mix3_pack_prmt_splitwarp_u32_w4.ncu-rep",
+      "report_sha256": "4389c61b91a6998b718481f38c9f37d462cf181e2b30ac8d3bd5ce73ec2cfd97",
+      "source_sha256": "2ba2468efb946b248a780d1d9f3ffb0d68f377b7622e29cf50a2e1d9d9ff3431",
+      "kind": "mix3_pack_prmt_splitwarp",
+      "unroll": 32,
+      "warps": 4,
+      "target_count_checks": [
+        {
+          "opcode": "F2FP.F16.F32.PACK_AB",
+          "static_pcs": 2048,
+          "observed_warp_instructions": 524288.0,
+          "expected_warp_instructions": 524288,
+          "observed_pred_on_threads": 16777216.0,
+          "expected_pred_on_threads": 16777216,
+          "exact_match": true
+        },
+        {
+          "opcode": "PRMT",
+          "static_pcs": 2048,
+          "observed_warp_instructions": 524288.0,
+          "expected_warp_instructions": 524288,
+          "observed_pred_on_threads": 16777216.0,
+          "expected_pred_on_threads": 16777216,
+          "exact_match": true
+        }
+      ],
+      "hardware_pipe_instruction_sums": {
+        "smsp__inst_executed_pipe_alu.sum": 1048604.0,
+        "smsp__inst_executed_pipe_fmaheavy.sum": 1024.0,
+        "smsp__inst_executed_pipe_fmalite.sum": 0.0,
+        "smsp__inst_executed_pipe_lsu.sum": 20.0,
+        "smsp__inst_executed_pipe_xu.sum": 0.0
+      },
+      "estimated_opcode_pipeline_instances": {
+        "ALU": 1048604,
+        "UNIFORM": 1024,
+        "FMAHEAVY": 1024,
+        "CBU": 522,
+        "OTHER": 256,
+        "ADU": 28,
+        "LSU": 24,
+        "DCC": 8
+      },
+      "estimated_pipeline_metric_raw": "1051490 (ALU: 1048604; UNIFORM: 1024; FMAHEAVY: 1024; CBU: 522; OTHER: 256; ADU: 28; LSU: 24; DCC: 8)",
+      "estimated_instances_are_not_exclusive_dynamic_assignment": true,
+      "read_only_import_command": [
+        "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+        "--import",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix3_ncu/mix3_pack_prmt_splitwarp_u32_w4.ncu-rep",
+        "--page",
+        "raw",
+        "--csv",
+        "--metrics",
+        "sass__inst_executed_per_opcode_pipeline",
+        "--print-metric-instances",
+        "details"
+      ]
+    },
+    {
+      "report": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix3_ncu/pure3_pack64_u32_w4.ncu-rep",
+      "report_sha256": "20d8e02f2ff533abb6d0661be9c4658e6bef3f1784699e7a4eedf68738e596b9",
+      "source_sha256": "6242435549c987e1a64f84ed20f45c24354126342fb871fcaa2d29ef8dab31b8",
+      "kind": "pure3_pack64",
+      "unroll": 32,
+      "warps": 4,
+      "target_count_checks": [
+        {
+          "opcode": "F2FP.F16.F32.PACK_AB",
+          "static_pcs": 2048,
+          "observed_warp_instructions": 1048576.0,
+          "expected_warp_instructions": 1048576,
+          "observed_pred_on_threads": 33554432.0,
+          "expected_pred_on_threads": 33554432,
+          "exact_match": true
+        }
+      ],
+      "hardware_pipe_instruction_sums": {
+        "smsp__inst_executed_pipe_alu.sum": 1048596.0,
+        "smsp__inst_executed_pipe_fmaheavy.sum": 512.0,
+        "smsp__inst_executed_pipe_fmalite.sum": 0.0,
+        "smsp__inst_executed_pipe_lsu.sum": 20.0,
+        "smsp__inst_executed_pipe_xu.sum": 0.0
+      },
+      "estimated_opcode_pipeline_instances": {
+        "ALU": 1048596,
+        "UNIFORM": 1024,
+        "CBU": 516,
+        "FMAHEAVY": 512,
+        "ADU": 28,
+        "LSU": 24,
+        "DCC": 8
+      },
+      "estimated_pipeline_metric_raw": "1050708 (ALU: 1048596; UNIFORM: 1024; CBU: 516; FMAHEAVY: 512; ADU: 28; LSU: 24; DCC: 8)",
+      "estimated_instances_are_not_exclusive_dynamic_assignment": true,
+      "read_only_import_command": [
+        "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+        "--import",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix3_ncu/pure3_pack64_u32_w4.ncu-rep",
+        "--page",
+        "raw",
+        "--csv",
+        "--metrics",
+        "sass__inst_executed_per_opcode_pipeline",
+        "--print-metric-instances",
+        "details"
+      ]
+    },
+    {
+      "report": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix3_ncu/pure3_prmt64_u32_w4.ncu-rep",
+      "report_sha256": "27665486a2a415cb3afe42662c3cf549b86c378a168f5e0908eb77362ea4ae0e",
+      "source_sha256": "edee9a1ba7f9bee916882a99692eb19744bf3052f31d4f327d50000574daf57a",
+      "kind": "pure3_prmt64",
+      "unroll": 32,
+      "warps": 4,
+      "target_count_checks": [
+        {
+          "opcode": "PRMT",
+          "static_pcs": 2048,
+          "observed_warp_instructions": 1048576.0,
+          "expected_warp_instructions": 1048576,
+          "observed_pred_on_threads": 33554432.0,
+          "expected_pred_on_threads": 33554432,
+          "exact_match": true
+        }
+      ],
+      "hardware_pipe_instruction_sums": {
+        "smsp__inst_executed_pipe_alu.sum": 1048596.0,
+        "smsp__inst_executed_pipe_fmaheavy.sum": 1536.0,
+        "smsp__inst_executed_pipe_fmalite.sum": 0.0,
+        "smsp__inst_executed_pipe_lsu.sum": 20.0,
+        "smsp__inst_executed_pipe_xu.sum": 0.0
+      },
+      "estimated_opcode_pipeline_instances": {
+        "ALU": 1048596,
+        "FMAHEAVY": 1536,
+        "UNIFORM": 1024,
+        "CBU": 516,
+        "OTHER": 512,
+        "ADU": 28,
+        "LSU": 24,
+        "DCC": 8
+      },
+      "estimated_pipeline_metric_raw": "1052244 (ALU: 1048596; FMAHEAVY: 1536; UNIFORM: 1024; CBU: 516; OTHER: 512; ADU: 28; LSU: 24; DCC: 8)",
+      "estimated_instances_are_not_exclusive_dynamic_assignment": true,
+      "read_only_import_command": [
+        "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+        "--import",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix3_ncu/pure3_prmt64_u32_w4.ncu-rep",
+        "--page",
+        "raw",
+        "--csv",
+        "--metrics",
+        "sass__inst_executed_per_opcode_pipeline",
+        "--print-metric-instances",
+        "details"
+      ]
+    },
+    {
+      "report": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix2_ncu/mix_pack_ffma_interleave_u32_w4.ncu-rep",
+      "report_sha256": "4fe21759a4ebeaac005695fd967af50cb67263155505d37aa88e4bd5cda6b879",
+      "source_sha256": "22bbd0f33633c8beeaf9e5bb4d6de67516d1bc7f7cc766761ad42164f409ac37",
+      "kind": "mix_pack_ffma_interleave",
+      "unroll": 32,
+      "warps": 4,
+      "target_count_checks": [
+        {
+          "opcode": "F2FP.F16.F32.PACK_AB",
+          "static_pcs": 1024,
+          "observed_warp_instructions": 524288.0,
+          "expected_warp_instructions": 524288,
+          "observed_pred_on_threads": 16777216.0,
+          "expected_pred_on_threads": 16777216,
+          "exact_match": true
+        },
+        {
+          "opcode": "FFMA",
+          "static_pcs": 1024,
+          "observed_warp_instructions": 524288.0,
+          "expected_warp_instructions": 524288,
+          "observed_pred_on_threads": 16777216.0,
+          "expected_pred_on_threads": 16777216,
+          "exact_match": true
+        }
+      ],
+      "hardware_pipe_instruction_sums": {
+        "smsp__inst_executed_pipe_alu.sum": 524556.0,
+        "smsp__inst_executed_pipe_fmaheavy.sum": 268.0,
+        "smsp__inst_executed_pipe_fmalite.sum": 524288.0,
+        "smsp__inst_executed_pipe_lsu.sum": 20.0,
+        "smsp__inst_executed_pipe_xu.sum": 0.0
+      },
+      "estimated_opcode_pipeline_instances": {
+        "FMAHEAVY": 524556,
+        "ALU": 524556,
+        "FMALITE": 524288,
+        "UNIFORM": 1024,
+        "CBU": 516,
+        "ADU": 28,
+        "LSU": 24,
+        "DCC": 8
+      },
+      "estimated_pipeline_metric_raw": "1575000 (FMAHEAVY: 524556; ALU: 524556; FMALITE: 524288; UNIFORM: 1024; CBU: 516; ADU: 28; LSU: 24; DCC: 8)",
+      "estimated_instances_are_not_exclusive_dynamic_assignment": true,
+      "read_only_import_command": [
+        "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+        "--import",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix2_ncu/mix_pack_ffma_interleave_u32_w4.ncu-rep",
+        "--page",
+        "raw",
+        "--csv",
+        "--metrics",
+        "sass__inst_executed_per_opcode_pipeline",
+        "--print-metric-instances",
+        "details"
+      ]
+    },
+    {
+      "report": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix2_ncu/mix_pack_fmul_interleave_u16_w4.ncu-rep",
+      "report_sha256": "914236360682242abab9784a364e9eddb8bde5e823e176b755b1ee93b2133be5",
+      "source_sha256": "ec821747e50d6b90cc461fc65de55d9f6a6e4f03b89330fe57ed9a92b95c6a61",
+      "kind": "mix_pack_fmul_interleave",
+      "unroll": 16,
+      "warps": 4,
+      "target_count_checks": [
+        {
+          "opcode": "F2FP.F16.F32.PACK_AB",
+          "static_pcs": 512,
+          "observed_warp_instructions": 524288.0,
+          "expected_warp_instructions": 524288,
+          "observed_pred_on_threads": 16777216.0,
+          "expected_pred_on_threads": 16777216,
+          "exact_match": true
+        },
+        {
+          "opcode": "FMUL",
+          "static_pcs": 512,
+          "observed_warp_instructions": 524288.0,
+          "expected_warp_instructions": 524288,
+          "observed_pred_on_threads": 16777216.0,
+          "expected_pred_on_threads": 16777216,
+          "exact_match": true
+        }
+      ],
+      "hardware_pipe_instruction_sums": {
+        "smsp__inst_executed_pipe_alu.sum": 524556.0,
+        "smsp__inst_executed_pipe_fmaheavy.sum": 268.0,
+        "smsp__inst_executed_pipe_fmalite.sum": 524288.0,
+        "smsp__inst_executed_pipe_lsu.sum": 20.0,
+        "smsp__inst_executed_pipe_xu.sum": 0.0
+      },
+      "estimated_opcode_pipeline_instances": {
+        "FMAHEAVY": 524556,
+        "ALU": 524556,
+        "FMALITE": 524288,
+        "UNIFORM": 2048,
+        "CBU": 1028,
+        "ADU": 28,
+        "LSU": 24,
+        "DCC": 8
+      },
+      "estimated_pipeline_metric_raw": "1576536 (FMAHEAVY: 524556; ALU: 524556; FMALITE: 524288; UNIFORM: 2048; CBU: 1028; ADU: 28; LSU: 24; DCC: 8)",
+      "estimated_instances_are_not_exclusive_dynamic_assignment": true,
+      "read_only_import_command": [
+        "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+        "--import",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix2_ncu/mix_pack_fmul_interleave_u16_w4.ncu-rep",
+        "--page",
+        "raw",
+        "--csv",
+        "--metrics",
+        "sass__inst_executed_per_opcode_pipeline",
+        "--print-metric-instances",
+        "details"
+      ]
+    },
+    {
+      "report": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix2_ncu/mix_pack_h2f_interleave_u16_w4.ncu-rep",
+      "report_sha256": "805a011df70a767678bd011d3bb0cebe87455a753fce53b4072b43b199047fe3",
+      "source_sha256": "afb6076e8ab07d2ac53bb8fffd8f94c8e421140bc6b471242ab1743b0d52fce1",
+      "kind": "mix_pack_h2f_interleave",
+      "unroll": 16,
+      "warps": 4,
+      "target_count_checks": [
+        {
+          "opcode": "F2FP.F16.F32.PACK_AB",
+          "static_pcs": 512,
+          "observed_warp_instructions": 524288.0,
+          "expected_warp_instructions": 524288,
+          "observed_pred_on_threads": 16777216.0,
+          "expected_pred_on_threads": 16777216,
+          "exact_match": true
+        },
+        {
+          "opcode": "HADD2.F32",
+          "static_pcs": 512,
+          "observed_warp_instructions": 524288.0,
+          "expected_warp_instructions": 524288,
+          "observed_pred_on_threads": 16777216.0,
+          "expected_pred_on_threads": 16777216,
+          "exact_match": true
+        }
+      ],
+      "hardware_pipe_instruction_sums": {
+        "smsp__inst_executed_pipe_alu.sum": 556304.0,
+        "smsp__inst_executed_pipe_fmaheavy.sum": 524672.0,
+        "smsp__inst_executed_pipe_fmalite.sum": 0.0,
+        "smsp__inst_executed_pipe_lsu.sum": 16.0,
+        "smsp__inst_executed_pipe_xu.sum": 0.0
+      },
+      "estimated_opcode_pipeline_instances": {
+        "ALU": 556304,
+        "FMAHEAVY": 524672,
+        "UNIFORM": 2048,
+        "CBU": 1028,
+        "ADU": 24,
+        "LSU": 20,
+        "DCC": 8
+      },
+      "estimated_pipeline_metric_raw": "1084104 (ALU: 556304; FMAHEAVY: 524672; UNIFORM: 2048; CBU: 1028; ADU: 24; LSU: 20; DCC: 8)",
+      "estimated_instances_are_not_exclusive_dynamic_assignment": true,
+      "read_only_import_command": [
+        "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+        "--import",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix2_ncu/mix_pack_h2f_interleave_u16_w4.ncu-rep",
+        "--page",
+        "raw",
+        "--csv",
+        "--metrics",
+        "sass__inst_executed_per_opcode_pipeline",
+        "--print-metric-instances",
+        "details"
+      ]
+    },
+    {
+      "report": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix2_ncu/mix_pack_h2f_splitwarp_u32_w4.ncu-rep",
+      "report_sha256": "8f112cb7020f1c385bcf0c24ff69c0c86bf82c3bac237741ade43fc1b33e7b13",
+      "source_sha256": "46a124d8a85935e54f4d2ad24f305610cfa3024a8f482c637dda976ac37e81c6",
+      "kind": "mix_pack_h2f_splitwarp",
+      "unroll": 32,
+      "warps": 4,
+      "target_count_checks": [
+        {
+          "opcode": "F2FP.F16.F32.PACK_AB",
+          "static_pcs": 2048,
+          "observed_warp_instructions": 524288.0,
+          "expected_warp_instructions": 524288,
+          "observed_pred_on_threads": 16777216.0,
+          "expected_pred_on_threads": 16777216,
+          "exact_match": true
+        },
+        {
+          "opcode": "HADD2.F32",
+          "static_pcs": 2048,
+          "observed_warp_instructions": 524288.0,
+          "expected_warp_instructions": 524288,
+          "observed_pred_on_threads": 16777216.0,
+          "expected_pred_on_threads": 16777216,
+          "exact_match": true
+        }
+      ],
+      "hardware_pipe_instruction_sums": {
+        "smsp__inst_executed_pipe_alu.sum": 532756.0,
+        "smsp__inst_executed_pipe_fmaheavy.sum": 524688.0,
+        "smsp__inst_executed_pipe_fmalite.sum": 0.0,
+        "smsp__inst_executed_pipe_lsu.sum": 16.0,
+        "smsp__inst_executed_pipe_xu.sum": 0.0
+      },
+      "estimated_opcode_pipeline_instances": {
+        "ALU": 532756,
+        "FMAHEAVY": 524688,
+        "UNIFORM": 1024,
+        "CBU": 522,
+        "ADU": 24,
+        "LSU": 20,
+        "DCC": 8
+      },
+      "estimated_pipeline_metric_raw": "1059042 (ALU: 532756; FMAHEAVY: 524688; UNIFORM: 1024; CBU: 522; ADU: 24; LSU: 20; DCC: 8)",
+      "estimated_instances_are_not_exclusive_dynamic_assignment": true,
+      "read_only_import_command": [
+        "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+        "--import",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_six_hour_verify_20261018/mix2_ncu/mix_pack_h2f_splitwarp_u32_w4.ncu-rep",
+        "--page",
+        "raw",
+        "--csv",
+        "--metrics",
+        "sass__inst_executed_per_opcode_pipeline",
+        "--print-metric-instances",
+        "details"
+      ]
+    }
+  ],
+  "interleave_static_deltas": [
+    {
+      "kind": "mix_pack_fmul_interleave",
+      "unroll": 16,
+      "sass_sha256": "6b234e978bb226142d2b3818de104719681678927fd788b632ba7c15a95e3308",
+      "loop_start": "0x4a0",
+      "loop_finish": "0x44c0",
+      "loop_instruction_slots": 1027,
+      "loop_instruction_bytes": 16432,
+      "loop_opcode_counts": {
+        "F2FP.F16.F32.PACK_AB": 512,
+        "FMUL": 512,
+        "UIADD3": 1,
+        "UISETP.GT.U32.AND": 1,
+        "BRA.U": 1
+      },
+      "normalized_loop_counts_per_n": {
+        "F2FP.F16.F32.PACK_AB": 32.0,
+        "FMUL": 32.0,
+        "UIADD3": 0.0625,
+        "UISETP.GT.U32.AND": 0.0625,
+        "BRA.U": 0.0625
+      },
+      "target_transition_count": 1023,
+      "max_consecutive_target_same_family": 1,
+      "raw_upper23_control_histograms": {
+        "F2FP.F16.F32.PACK_AB": {
+          "0x7f1": 512
+        },
+        "FMUL": {
+          "0x7f1": 496,
+          "0x207f1": 16
+        }
+      },
+      "control_pattern_interpretation": "Encoded fields recorded only. No stall/latency/issue cycle inferred.",
+      "resources": {
+        "REG": 73,
+        "STACK": 0,
+        "SHARED": 0,
+        "LOCAL": 0
+      }
+    },
+    {
+      "kind": "mix_pack_fmul_interleave",
+      "unroll": 32,
+      "sass_sha256": "3f64da20f0596055e75291f02e56b2f6ba6d6c1e8d4ac371f5a4b5d940b4e1af",
+      "loop_start": "0x4a0",
+      "loop_finish": "0x84c0",
+      "loop_instruction_slots": 2051,
+      "loop_instruction_bytes": 32816,
+      "loop_opcode_counts": {
+        "F2FP.F16.F32.PACK_AB": 1024,
+        "FMUL": 1024,
+        "UIADD3": 1,
+        "UISETP.GT.U32.AND": 1,
+        "BRA.U": 1
+      },
+      "normalized_loop_counts_per_n": {
+        "F2FP.F16.F32.PACK_AB": 32.0,
+        "FMUL": 32.0,
+        "UIADD3": 0.03125,
+        "UISETP.GT.U32.AND": 0.03125,
+        "BRA.U": 0.03125
+      },
+      "target_transition_count": 2047,
+      "max_consecutive_target_same_family": 1,
+      "raw_upper23_control_histograms": {
+        "F2FP.F16.F32.PACK_AB": {
+          "0x7f1": 1024
+        },
+        "FMUL": {
+          "0x7f1": 992,
+          "0x207f1": 32
+        }
+      },
+      "control_pattern_interpretation": "Encoded fields recorded only. No stall/latency/issue cycle inferred.",
+      "resources": {
+        "REG": 73,
+        "STACK": 0,
+        "SHARED": 0,
+        "LOCAL": 0
+      }
+    },
+    {
+      "kind": "mix_pack_ffma_interleave",
+      "unroll": 16,
+      "sass_sha256": "6b234e978bb226142d2b3818de104719681678927fd788b632ba7c15a95e3308",
+      "loop_start": "0x4a0",
+      "loop_finish": "0x44c0",
+      "loop_instruction_slots": 1027,
+      "loop_instruction_bytes": 16432,
+      "loop_opcode_counts": {
+        "F2FP.F16.F32.PACK_AB": 512,
+        "FFMA": 512,
+        "UIADD3": 1,
+        "UISETP.GT.U32.AND": 1,
+        "BRA.U": 1
+      },
+      "normalized_loop_counts_per_n": {
+        "F2FP.F16.F32.PACK_AB": 32.0,
+        "FFMA": 32.0,
+        "UIADD3": 0.0625,
+        "UISETP.GT.U32.AND": 0.0625,
+        "BRA.U": 0.0625
+      },
+      "target_transition_count": 1023,
+      "max_consecutive_target_same_family": 1,
+      "raw_upper23_control_histograms": {
+        "F2FP.F16.F32.PACK_AB": {
+          "0x7f1": 512
+        },
+        "FFMA": {
+          "0xa07f1": 511,
+          "0x7f1": 1
+        }
+      },
+      "control_pattern_interpretation": "Encoded fields recorded only. No stall/latency/issue cycle inferred.",
+      "resources": {
+        "REG": 72,
+        "STACK": 0,
+        "SHARED": 0,
+        "LOCAL": 0
+      }
+    },
+    {
+      "kind": "mix_pack_ffma_interleave",
+      "unroll": 32,
+      "sass_sha256": "3f64da20f0596055e75291f02e56b2f6ba6d6c1e8d4ac371f5a4b5d940b4e1af",
+      "loop_start": "0x4a0",
+      "loop_finish": "0x84c0",
+      "loop_instruction_slots": 2051,
+      "loop_instruction_bytes": 32816,
+      "loop_opcode_counts": {
+        "F2FP.F16.F32.PACK_AB": 1024,
+        "FFMA": 1024,
+        "UIADD3": 1,
+        "UISETP.GT.U32.AND": 1,
+        "BRA.U": 1
+      },
+      "normalized_loop_counts_per_n": {
+        "F2FP.F16.F32.PACK_AB": 32.0,
+        "FFMA": 32.0,
+        "UIADD3": 0.03125,
+        "UISETP.GT.U32.AND": 0.03125,
+        "BRA.U": 0.03125
+      },
+      "target_transition_count": 2047,
+      "max_consecutive_target_same_family": 1,
+      "raw_upper23_control_histograms": {
+        "F2FP.F16.F32.PACK_AB": {
+          "0x7f1": 1024
+        },
+        "FFMA": {
+          "0xa07f1": 1023,
+          "0x7f1": 1
+        }
+      },
+      "control_pattern_interpretation": "Encoded fields recorded only. No stall/latency/issue cycle inferred.",
+      "resources": {
+        "REG": 72,
+        "STACK": 0,
+        "SHARED": 0,
+        "LOCAL": 0
+      }
+    },
+    {
+      "kind": "mix_pack_h2f_interleave",
+      "unroll": 16,
+      "sass_sha256": "6b234e978bb226142d2b3818de104719681678927fd788b632ba7c15a95e3308",
+      "loop_start": "0x670",
+      "loop_finish": "0x4880",
+      "loop_instruction_slots": 1058,
+      "loop_instruction_bytes": 16928,
+      "loop_opcode_counts": {
+        "HADD2.F32": 512,
+        "F2FP.F16.F32.PACK_AB": 512,
+        "UIADD3": 1,
+        "UISETP.GT.U32.AND": 1,
+        "PRMT": 31,
+        "BRA.U": 1
+      },
+      "normalized_loop_counts_per_n": {
+        "HADD2.F32": 32.0,
+        "F2FP.F16.F32.PACK_AB": 32.0,
+        "UIADD3": 0.0625,
+        "UISETP.GT.U32.AND": 0.0625,
+        "PRMT": 1.9375,
+        "BRA.U": 0.0625
+      },
+      "target_transition_count": 1019,
+      "max_consecutive_target_same_family": 3,
+      "raw_upper23_control_histograms": {
+        "F2FP.F16.F32.PACK_AB": {
+          "0x7f1": 509,
+          "0x7e2": 1,
+          "0x7f2": 2
+        },
+        "HADD2.F32": {
+          "0x7f1": 512
+        }
+      },
+      "control_pattern_interpretation": "Encoded fields recorded only. No stall/latency/issue cycle inferred.",
+      "resources": {
+        "REG": 102,
+        "STACK": 0,
+        "SHARED": 0,
+        "LOCAL": 0
+      }
+    },
+    {
+      "kind": "mix_pack_h2f_interleave",
+      "unroll": 32,
+      "sass_sha256": "3f64da20f0596055e75291f02e56b2f6ba6d6c1e8d4ac371f5a4b5d940b4e1af",
+      "loop_start": "0x670",
+      "loop_finish": "0x8880",
+      "loop_instruction_slots": 2082,
+      "loop_instruction_bytes": 33312,
+      "loop_opcode_counts": {
+        "HADD2.F32": 1024,
+        "F2FP.F16.F32.PACK_AB": 1024,
+        "UIADD3": 1,
+        "UISETP.GT.U32.AND": 1,
+        "PRMT": 31,
+        "BRA.U": 1
+      },
+      "normalized_loop_counts_per_n": {
+        "HADD2.F32": 32.0,
+        "F2FP.F16.F32.PACK_AB": 32.0,
+        "UIADD3": 0.03125,
+        "UISETP.GT.U32.AND": 0.03125,
+        "PRMT": 0.96875,
+        "BRA.U": 0.03125
+      },
+      "target_transition_count": 2043,
+      "max_consecutive_target_same_family": 3,
+      "raw_upper23_control_histograms": {
+        "F2FP.F16.F32.PACK_AB": {
+          "0x7f1": 1021,
+          "0x7e2": 1,
+          "0x7f2": 2
+        },
+        "HADD2.F32": {
+          "0x807f1": 1,
+          "0x7f1": 1023
+        }
+      },
+      "control_pattern_interpretation": "Encoded fields recorded only. No stall/latency/issue cycle inferred.",
+      "resources": {
+        "REG": 102,
+        "STACK": 0,
+        "SHARED": 0,
+        "LOCAL": 0
+      }
+    }
+  ],
+  "official_metric_definition": "Estimated opcode pipeline executions; multiple possible pipelines are not dynamically assigned by this metric.",
+  "official_url": "https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html",
+  "icache_cause_proven": false,
+  "model_enabled": false,
+  "effective_model_value": null
+}

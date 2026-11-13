@@ -1,0 +1,35 @@
+{
+  "status": "STOP_STABLE_RATE_BRANCH_JOINT_GATE_FAILURE",
+  "all_original_points_retained": true,
+  "N16384_extension_used": false,
+  "failed": [
+    {
+      "configuration": "CONTROL",
+      "domain": "event_us",
+      "control_corrected": false,
+      "role": "DIAGNOSTIC_PENDING_LEAD_DECISION"
+    },
+    {
+      "configuration": "SHADER_ONLY",
+      "domain": "event_us",
+      "control_corrected": true,
+      "role": "HARD"
+    },
+    {
+      "configuration": "TC_ONLY",
+      "domain": "event_us",
+      "control_corrected": false,
+      "role": "HARD"
+    },
+    {
+      "configuration": "TC_ONLY",
+      "domain": "event_us",
+      "control_corrected": true,
+      "role": "HARD"
+    }
+  ],
+  "native_only_pass_does_not_override_joint_gate": true,
+  "old_direct_cohort_merged": false,
+  "stable_rate_admitted": false,
+  "model_enabled": false
+}

@@ -1,0 +1,48 @@
+{
+  "method": "Exact native one-load/NOP difference plus independently decoded wait position; no K4 observation input.",
+  "records": [
+    {
+      "subtype": "32x32b.x32",
+      "kind": 0,
+      "Pload": 49.37500000000001,
+      "Pnop": 25.375000000000004,
+      "exposed_wait": 24.000000000000004,
+      "issue_to_first_consumer_wait": 2,
+      "conditional_completion": 26.0,
+      "ordinary_feedback_suffix_cycles": 23,
+      "net_loop_boundary_overhead_per_chain": 0.375,
+      "formula": "L_conditional = q + (Pload-Pnop); NOP slope matches q+23+6/16; final unrolled suffix differs but is byte-identical between pair.",
+      "scope": "Single LDTM; 4KiB register payload/warp, initialized TMEM, native RAW address feedback. One/four active warps crosschecked. Not a universal load latency or full K4 phase cost.",
+      "assumptions": [
+        "Identical nonload bytes and executed counts, verified by NCU/native patch audit.",
+        "Load-specific WB0 is first waited by LOP3 at native q=2; no intervening producer or outstanding older WB0 in the serialized chain.",
+        "This is ready-endpoint conditional calibration, distinct from throughput. K4 grouping/queue and address-phase applicability remain explicit."
+      ],
+      "strict_gate": true,
+      "model_enabled": false,
+      "effective_model_value": null
+    },
+    {
+      "subtype": "16x256b.x8",
+      "kind": 1,
+      "Pload": 97.37500000000001,
+      "Pnop": 25.375000000000004,
+      "exposed_wait": 72.00000000000001,
+      "issue_to_first_consumer_wait": 2,
+      "conditional_completion": 74.0,
+      "ordinary_feedback_suffix_cycles": 23,
+      "net_loop_boundary_overhead_per_chain": 0.375,
+      "formula": "L_conditional = q + (Pload-Pnop); NOP slope matches q+23+6/16; final unrolled suffix differs but is byte-identical between pair.",
+      "scope": "Single LDTM; 4KiB register payload/warp, initialized TMEM, native RAW address feedback. One/four active warps crosschecked. Not a universal load latency or full K4 phase cost.",
+      "assumptions": [
+        "Identical nonload bytes and executed counts, verified by NCU/native patch audit.",
+        "Load-specific WB0 is first waited by LOP3 at native q=2; no intervening producer or outstanding older WB0 in the serialized chain.",
+        "This is ready-endpoint conditional calibration, distinct from throughput. K4 grouping/queue and address-phase applicability remain explicit."
+      ],
+      "strict_gate": true,
+      "model_enabled": false,
+      "effective_model_value": null
+    }
+  ],
+  "previous_loose_bounds": "Preserved in original review files; [25,50]/[73,98] were protocol bounds before decoding q, not four independent physical parameters."
+}

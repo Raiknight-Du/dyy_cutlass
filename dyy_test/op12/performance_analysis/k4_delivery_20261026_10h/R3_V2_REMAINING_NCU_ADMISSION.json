@@ -1,0 +1,11 @@
+{
+  "round":"R3",
+  "binary_sha256":"706756dda3c7bd8951361930b1bac35524dbddc2a582aac528851452e04f34f7",
+  "approved_modes":["NCU"],
+  "max_N":512,
+  "allowed_configurations":["S_G1_LOAD","S_G1_CONTROL","S_G128_CONTROL","V_G1_LOAD","V_G1_CONTROL","V_G128_LOAD","V_G128_CONTROL"],
+  "authorized_NCU_invocations":7,
+  "frequency_policy":"temporary1845SM_request_only_actual_sampled_finally_reset_auto",
+  "authorization_source":"Lead explicit remaining7 after R3 formal",
+  "model_enabled":false
+}

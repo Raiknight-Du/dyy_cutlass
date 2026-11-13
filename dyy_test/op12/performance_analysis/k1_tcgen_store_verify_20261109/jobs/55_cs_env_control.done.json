@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/usr/local/cuda/bin/compute-sanitizer",
+    "--tool",
+    "memcheck",
+    "--error-exitcode",
+    "99",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/sanitizer_env_control.py"
+  ],
+  "returncode": 0,
+  "epoch_start": 1794197302.89301,
+  "epoch_end": 1794197305.0592582
+}

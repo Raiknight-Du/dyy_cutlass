@@ -1,0 +1,75 @@
+{
+  "B0": {
+    "cubin_sha256": "2ab6fe6197ecd6e8f7ac33d41191e6b6ec45f448f1abe84544122a619a9eb5bc",
+    "resources": "Resource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleMNPrecomputeUtcmma1Sm100_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID__0:\n  REG:168 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1704 TEXTURE:0 SURFACE:0 SAMPLER:0",
+    "stack": [
+      0
+    ],
+    "local_ops": 0,
+    "clock_sites": [],
+    "smid_sites": [],
+    "mma_static": 32,
+    "tma_static": 5,
+    "tmem_load_static": 30,
+    "tmem_store_static": 28,
+    "hmma_static": 0
+  },
+  "B1": {
+    "cubin_sha256": "27d059d42e9e7ac2dae1732a786455ce8faf80f81ecfe988b1265ae1943c038e",
+    "resources": "Resource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_variantsK2TraceB1_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_1286416_TV_Layout_A_1128161281128_TV_Layout_B_1641664_0:\n  REG:168 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1716 TEXTURE:0 SURFACE:0 SAMPLER:0",
+    "stack": [
+      0
+    ],
+    "local_ops": 0,
+    "clock_sites": [],
+    "smid_sites": [],
+    "mma_static": 32,
+    "tma_static": 5,
+    "tmem_load_static": 30,
+    "tmem_store_static": 28,
+    "hmma_static": 0
+  },
+  "COARSE": {
+    "cubin_sha256": "c6b0327780d34e6c6ac1acae2cdcf9f52b2a30117a564915f5479a7a4db885f4",
+    "resources": "Resource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_variantsK2TraceCOARSE_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_1286416_TV_Layout_A_1128161281128_TV_Layout_B_164_0:\n  REG:168 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1716 TEXTURE:0 SURFACE:0 SAMPLER:0",
+    "stack": [
+      0
+    ],
+    "local_ops": 0,
+    "clock_sites": [
+      "2060",
+      "3200",
+      "3290",
+      "3530",
+      "4610",
+      "4780",
+      "4810",
+      "4ba0",
+      "4cd0",
+      "4e90",
+      "4f20",
+      "5150",
+      "6cb0",
+      "6e00",
+      "6e90",
+      "7250"
+    ],
+    "smid_sites": [
+      "2080",
+      "3210",
+      "3300",
+      "4790",
+      "4bb0",
+      "4ce0",
+      "4ea0",
+      "4f80",
+      "6e10",
+      "7260"
+    ],
+    "mma_static": 32,
+    "tma_static": 5,
+    "tmem_load_static": 30,
+    "tmem_store_static": 28,
+    "hmma_static": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "round": "R3",
+  "diagnostic_round": "R9",
+  "binary_sha256": "706756dda3c7bd8951361930b1bac35524dbddc2a582aac528851452e04f34f7",
+  "approved_modes": [
+    "NCU"
+  ],
+  "max_N": 512,
+  "allowed_configurations": [
+    "S_G128_LOAD"
+  ],
+  "authorized_invocations": 2,
+  "purpose": "counter scope sensitivity only, not formal rate or hardware miss explanation",
+  "model_enabled": false
+}

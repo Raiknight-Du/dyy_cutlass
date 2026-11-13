@@ -1,0 +1,15 @@
+{
+  "chain": [
+    "K1",
+    "K2",
+    "K3",
+    "K4"
+  ],
+  "G0": "CP begin/end only",
+  "G1": "CP begin,K1,K2 begin,K2,K2 end,K3,K4,CP end",
+  "graph_dot_count": 24,
+  "same_variant_MN_consumed_by_suffix": true,
+  "eviction": "before CP",
+  "copyback": "after CP",
+  "local_bias_bound": "UNKNOWN"
+}

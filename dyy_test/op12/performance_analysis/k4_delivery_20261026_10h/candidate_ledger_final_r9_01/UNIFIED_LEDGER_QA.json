@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "counts": {
+    "valid_formal_NCU_reports": 21,
+    "formal_NCU_attempts": 22,
+    "failed_formal_attempts": 1,
+    "hardware_only_tool_diagnostic_attempts": 1,
+    "all_NCU_invocations": 23,
+    "local_report_bytes": 15972542,
+    "host_cohorts": 25,
+    "valid_counter_scope_diagnostic_reports_included_in_formal_count": 2
+  },
+  "checks": [
+    {
+      "id": "R1_REF",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R1_FRAME0",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R1_FRAME7",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R3_v1_FULL_FAILED",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R3_v1_HW_DIAGNOSTIC_FAILED",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R3_v2_S_G128_LOAD",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R3_S_G1_LOAD",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R3_S_G1_CONTROL",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R3_S_G128_CONTROL",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R3_V_G1_LOAD",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R3_V_G1_CONTROL",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R3_V_G128_LOAD",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R3_V_G128_CONTROL",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R4_BOTH",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R4_CONTROL",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R4_SHADER_ONLY",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R4_TC_ONLY",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R5_SS_LOAD",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R5_TS_LOAD",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R6_B0",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R6_V0",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R9_INVOCATION1",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    },
+    {
+      "id": "R9_INVOCATION2",
+      "report_csv_hashes_PASS": true,
+      "returncode_PASS": true,
+      "restore_rc0_or_no_lease": true
+    }
+  ],
+  "ledger_SHA256": "7578dec149bf9c0275d48b95202c3bc0709b4f338dc076d21b2ba42b269fb03e",
+  "unknown_PID_policy": "explicit; no inferred legacy PID",
+  "GPU_launched_by_this_QA": false,
+  "model_enabled": false
+}

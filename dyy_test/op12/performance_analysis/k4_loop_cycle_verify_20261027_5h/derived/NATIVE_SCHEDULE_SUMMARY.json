@@ -1,0 +1,128 @@
+{
+  "scope": "OriginalCG1 nonpolling/control instructionstream; controlfield lowerbound, nothardwareRAWlatency; dynamicweights limitedto provenonce/block families",
+  "stall_field": "bits108:105, sameB200 priorSHFL controlpatch experiment",
+  "sum_nonpolling_compiled_stall_CG1": 913.640625,
+  "by_opcode": {
+    "ULEA": {
+      "per_warp_inst": 4.0,
+      "stall_sum": 4.0
+    },
+    "MOV": {
+      "per_warp_inst": 3.015625,
+      "stall_sum": 6.0625
+    },
+    "SHF.L.U32": {
+      "per_warp_inst": 6.015625,
+      "stall_sum": 15.0625
+    },
+    "UIADD3": {
+      "per_warp_inst": 4.015625,
+      "stall_sum": 10.015625
+    },
+    "UISETP.NE.U32.AND": {
+      "per_warp_inst": 4.03125,
+      "stall_sum": 8.28125
+    },
+    "LDS": {
+      "per_warp_inst": 2.0,
+      "stall_sum": 5.0
+    },
+    "USEL": {
+      "per_warp_inst": 6.0,
+      "stall_sum": 20.0
+    },
+    "ULOP3.LUT": {
+      "per_warp_inst": 5.0,
+      "stall_sum": 8.0
+    },
+    "R2UR": {
+      "per_warp_inst": 14.015625,
+      "stall_sum": 33.203125
+    },
+    "LDTM.x32": {
+      "per_warp_inst": 4.0,
+      "stall_sum": 6.0
+    },
+    "F2FP.F16.F32.PACK_AB": {
+      "per_warp_inst": 192.0,
+      "stall_sum": 256.0
+    },
+    "FMUL2": {
+      "per_warp_inst": 192.0,
+      "stall_sum": 264.0
+    },
+    "STTM.x16": {
+      "per_warp_inst": 4.0,
+      "stall_sum": 5.0
+    },
+    "IMAD.U32": {
+      "per_warp_inst": 4.0,
+      "stall_sum": 6.0
+    },
+    "LEA": {
+      "per_warp_inst": 1.0,
+      "stall_sum": 2.0
+    },
+    "STTM.x32": {
+      "per_warp_inst": 4.0,
+      "stall_sum": 4.0
+    },
+    "LDS.64": {
+      "per_warp_inst": 16.0,
+      "stall_sum": 52.0
+    },
+    "IMAD": {
+      "per_warp_inst": 4.0,
+      "stall_sum": 8.0
+    },
+    "LDSM.16.MT88.4": {
+      "per_warp_inst": 8.0,
+      "stall_sum": 26.0
+    },
+    "LDTM.16dp256bit.x8": {
+      "per_warp_inst": 8.0,
+      "stall_sum": 9.0
+    },
+    "HFMA2": {
+      "per_warp_inst": 16.0,
+      "stall_sum": 28.0
+    },
+    "HADD2": {
+      "per_warp_inst": 16.0,
+      "stall_sum": 32.0
+    },
+    "STTM.16dp128bit.x8": {
+      "per_warp_inst": 6.0,
+      "stall_sum": 8.0
+    },
+    "FADD2": {
+      "per_warp_inst": 8.0,
+      "stall_sum": 12.0
+    },
+    "MUFU.EX2": {
+      "per_warp_inst": 16.0,
+      "stall_sum": 67.0
+    },
+    "STTM.16dp256bit.x8": {
+      "per_warp_inst": 2.0,
+      "stall_sum": 2.0
+    },
+    "WARPSYNC.ALL": {
+      "per_warp_inst": 1.0,
+      "stall_sum": 5.0
+    },
+    "UMOV": {
+      "per_warp_inst": 1.0,
+      "stall_sum": 1.0
+    },
+    "STSM.16.MT88.4": {
+      "per_warp_inst": 8.0,
+      "stall_sum": 11.0
+    },
+    "LDL": {
+      "per_warp_inst": 0.015625,
+      "stall_sum": 0.015625
+    }
+  },
+  "model_enabled": false
+}

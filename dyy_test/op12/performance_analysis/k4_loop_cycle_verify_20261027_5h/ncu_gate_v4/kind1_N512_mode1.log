@@ -1,0 +1,7 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 2138659 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_matched..." - 0: 0%....50%....100% - 7 passes
+{"status": "COMPLETE", "family": "CG1_GATE", "profile": true, "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/ncu_gate_v4/kind1_N512_mode1"}
+==PROF== Disconnected from process 2138659
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/ncu_gate_v4/kind1_N512_mode1.ncu-rep

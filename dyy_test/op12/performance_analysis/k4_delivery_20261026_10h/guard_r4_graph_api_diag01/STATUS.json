@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETED_PENDING_REVIEW",
+  "command": [
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_graph_api_audit_only.py"
+  ],
+  "returncode": 0,
+  "invalid_observations": [],
+  "automatic_clock_change": false,
+  "model_enabled": false
+}

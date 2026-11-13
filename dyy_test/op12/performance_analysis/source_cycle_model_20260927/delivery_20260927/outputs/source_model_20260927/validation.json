@@ -1,0 +1,103 @@
+{
+  "formula_errors": [],
+  "calendar_formula_checks": [
+    {
+      "key": "K1_batch_1",
+      "expected": 2242,
+      "actual": 2242
+    },
+    {
+      "key": "K1_batch_2",
+      "expected": 4426,
+      "actual": 4426
+    },
+    {
+      "key": "K1_batch_3",
+      "expected": 6643,
+      "actual": 6643
+    },
+    {
+      "key": "K1_batch_4",
+      "expected": 8830,
+      "actual": 8830
+    },
+    {
+      "key": "K1_batch_5",
+      "expected": 11049,
+      "actual": 11049
+    },
+    {
+      "key": "K1_batch_6",
+      "expected": 13238,
+      "actual": 13238
+    },
+    {
+      "key": "K1_batch_7",
+      "expected": 15456,
+      "actual": 15456
+    },
+    {
+      "key": "K1_batch_8",
+      "expected": 17641,
+      "actual": 17641
+    },
+    {
+      "key": "K3_8",
+      "expected": 50203,
+      "actual": 50203
+    },
+    {
+      "key": "K3_8_div32",
+      "expected": 15371,
+      "actual": 15371
+    },
+    {
+      "key": "K3_8_etaHalf",
+      "expected": 50757,
+      "actual": 50757
+    },
+    {
+      "key": "K4_16",
+      "expected": 57560,
+      "actual": 57560
+    },
+    {
+      "key": "K4_32",
+      "expected": 107032,
+      "actual": 107032
+    },
+    {
+      "key": "K4_64",
+      "expected": 205976,
+      "actual": 205976
+    },
+    {
+      "key": "K4_16_div128",
+      "expected": 56032,
+      "actual": 56032
+    },
+    {
+      "key": "K4_16_etaHalf",
+      "expected": 58453,
+      "actual": 58453
+    },
+    {
+      "key": "K2_16",
+      "expected": 46619,
+      "actual": 46619
+    },
+    {
+      "key": "K2_32",
+      "expected": 83643,
+      "actual": 83643
+    },
+    {
+      "key": "K2_64",
+      "expected": 157691,
+      "actual": 157691
+    }
+  ],
+  "derived_rate_input_change_passed": true,
+  "primary_model": "B200_148SM_SOURCE_A_20260927",
+  "timing_fit": false
+}

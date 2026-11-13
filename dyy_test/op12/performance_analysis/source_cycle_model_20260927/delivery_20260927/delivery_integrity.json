@@ -1,0 +1,164 @@
+{
+  "created_at_utc": "2026-09-26T20:19:35.930Z",
+  "frozen_models_hashes_unchanged": true,
+  "original_source_hashes_unchanged": true,
+  "auxiliary_source_hashes_match_pre_event_model": true,
+  "workbook_formula_errors": [],
+  "calendar_formula_checks": [
+    {
+      "key": "K1_batch_1",
+      "expected": 2242,
+      "actual": 2242
+    },
+    {
+      "key": "K1_batch_2",
+      "expected": 4426,
+      "actual": 4426
+    },
+    {
+      "key": "K1_batch_3",
+      "expected": 6643,
+      "actual": 6643
+    },
+    {
+      "key": "K1_batch_4",
+      "expected": 8830,
+      "actual": 8830
+    },
+    {
+      "key": "K1_batch_5",
+      "expected": 11049,
+      "actual": 11049
+    },
+    {
+      "key": "K1_batch_6",
+      "expected": 13238,
+      "actual": 13238
+    },
+    {
+      "key": "K1_batch_7",
+      "expected": 15456,
+      "actual": 15456
+    },
+    {
+      "key": "K1_batch_8",
+      "expected": 17641,
+      "actual": 17641
+    },
+    {
+      "key": "K3_8",
+      "expected": 50203,
+      "actual": 50203
+    },
+    {
+      "key": "K3_8_div32",
+      "expected": 15371,
+      "actual": 15371
+    },
+    {
+      "key": "K3_8_etaHalf",
+      "expected": 50757,
+      "actual": 50757
+    },
+    {
+      "key": "K4_16",
+      "expected": 57560,
+      "actual": 57560
+    },
+    {
+      "key": "K4_32",
+      "expected": 107032,
+      "actual": 107032
+    },
+    {
+      "key": "K4_64",
+      "expected": 205976,
+      "actual": 205976
+    },
+    {
+      "key": "K4_16_div128",
+      "expected": 56032,
+      "actual": 56032
+    },
+    {
+      "key": "K4_16_etaHalf",
+      "expected": 58453,
+      "actual": 58453
+    },
+    {
+      "key": "K2_16",
+      "expected": 46619,
+      "actual": 46619
+    },
+    {
+      "key": "K2_32",
+      "expected": 83643,
+      "actual": 83643
+    },
+    {
+      "key": "K2_64",
+      "expected": 157691,
+      "actual": 157691
+    }
+  ],
+  "source_archive": [
+    {
+      "name": "gdn_cp_prefill.py",
+      "sha256": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5"
+    },
+    {
+      "name": "gated_delta_net_cp.py",
+      "sha256": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b"
+    },
+    {
+      "name": "gated_delta_net_cp_prefill.py",
+      "sha256": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc"
+    },
+    {
+      "name": "delta_rule_cp_sm120.py",
+      "sha256": "5572cba70eab72426b2567322807be7fd27f3d84af6ac7410f13f715ca6a077b"
+    },
+    {
+      "name": "collective_inverse_hmma.py",
+      "sha256": "fa91470f65679a189ef1525b4980451ec75724e1c98b4ff23085a2f5456df790"
+    }
+  ],
+  "upstream_end_check": {
+    "head": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+    "origin": "https://github.com/flashinfer-ai/flashinfer.git",
+    "git_status_porcelain": "",
+    "check": "Read-only SSH after source model and Event comparison; no upstream edits."
+  },
+  "outputs": [
+    {
+      "path": "OP12_SOURCE_DRIVEN_CYCLE_MODEL_CN.md",
+      "bytes": 36207,
+      "sha256": "48fbc5f22802b9891dd7e4ac833a9ab8b80a7b941c79cc17726d5db818907b54"
+    },
+    {
+      "path": "outputs/source_model_20260927/OP12_FOUR_KERNEL_SOURCE_CYCLE_MODEL_20260927.xlsx",
+      "bytes": 2973395,
+      "sha256": "9ea26d35df76215aed4c0fdbe4e13e8f65c5fbc2abf1ee7a70d0f1292b1d1327"
+    },
+    {
+      "path": "OP12_SOURCE_CYCLE_DAGS_20260927.drawio",
+      "bytes": 30740,
+      "sha256": "b50459664f40dbdc24ad1234d04ebf6de2e2b392d295a2a6441372343dd5db6f"
+    },
+    {
+      "path": "OP12_SOURCE_PIPELINES_20260927.drawio",
+      "bytes": 20963,
+      "sha256": "c58a5331078cc5fcad4a5fff2e5e4aee6a48ae8f0ecb2873f399d14ff4ca0791"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4055,
+      "sha256": "1630540cf71c81d120110e92bb224e0d000be6b36a5d12697ad87b5833f0c666"
+    },
+    {
+      "path": "event_sanity_check.json",
+      "bytes": 11734,
+      "sha256": "4c0ffaa88cc4eab88701b880c6d4b5c66beced701b665b1ff994b4c48ddc4ef2"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+RESULT,7,M256_N192_K256_E128x16_C2x1x1,ok,10,0.0426496
+Collecting data...
+Generating '/tmp/nsys-report-531a.qdstrm'
+[1/1] [0%                          ] shape07_nsys.nsys-rep[1/1] [0%                          ] shape07_nsys.nsys-rep[1/1] [==========49%               ] shape07_nsys.nsys-rep[1/1] [========================98% ] shape07_nsys.nsys-rep[1/1] [========================100%] shape07_nsys.nsys-rep[1/1] [========================100%] shape07_nsys.nsys-rep
+Generated:
+	/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/bottleneck_13shape_20260724/shape07_nsys.nsys-rep

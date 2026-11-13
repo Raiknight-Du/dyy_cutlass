@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_batch.py", line 45, in <module>
+    if __name__=='__main__':main()
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_batch.py", line 17, in main
+    before=gpu();assert not before['compute_apps'],('BUSY_PAUSE',before)
+AssertionError: ('BUSY_PAUSE', {'UTC': '2026-10-26T18:55:26.531979+00:00', 'gpu': '0, 1845, 3996, 33, 233.56', 'compute_apps': '2116465, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python'})

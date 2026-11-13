@@ -1,0 +1,11 @@
+{
+  "status": "COLLECTED",
+  "usable": [
+    "CLOCK_RETURNS"
+  ],
+  "event_samples": 24,
+  "clock_rows": 582,
+  "gpu_executed": true,
+  "local_bias_bound_cycles": null,
+  "model_enabled": false
+}

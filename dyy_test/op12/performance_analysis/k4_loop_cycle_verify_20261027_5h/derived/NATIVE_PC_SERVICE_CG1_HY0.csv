@@ -1,0 +1,596 @@
+﻿pc,pc_hex,opcode,SASS,resource,work,rate,cycles,reason
+28592,0x6fb0,ULEA,"ULEA UR13, UR10, UR22, 0x3",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28608,0x6fc0,MOV,"MOV R5, UR9",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28624,0x6fd0,SHF.L.U32,"SHF.L.U32 R5, R5, 0x1f, RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28640,0x6fe0,SYNCS.PHASECHK.TRANS64.TRYWAIT,"SYNCS.PHASECHK.TRANS64.TRYWAIT P1, [UR13+0x80], R5",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28656,0x6ff0,BRA,@!P1  BRA 0x7f082f5d5350,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28672,0x7000,ULEA,"ULEA UR11, UR10, UR22, 0x8",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28688,0x7010,MOV,"MOV R6, UR16",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28704,0x7020,UIADD3,"UIADD3 UR10, UPT, UPT, UR10, 0x1, URZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28720,0x7030,SHF.L.U32,"SHF.L.U32 R6, R6, 0x1f, RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28736,0x7040,UISETP.NE.U32.AND,"UISETP.NE.U32.AND UP0, UPT, UR10, 0x5, UPT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28752,0x7050,LDS,"LDS R4, [UR11+0x369fc]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+28768,0x7060,SYNCS.PHASECHK.TRANS64.TRYWAIT,"SYNCS.PHASECHK.TRANS64.TRYWAIT P1, [UR22+0x100], R6",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28784,0x7070,USEL,"USEL UR4, URZ, 0x1, UP0",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28800,0x7080,USEL,"USEL UR10, UR10, URZ, UP0",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28816,0x7090,ULOP3.LUT,"ULOP3.LUT UR9, UR9, UR4, URZ, 0x3c, !UPT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28832,0x70a0,BRA,@!P1  BRA 0x7f082f5d53b0,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28848,0x70b0,R2UR,"R2UR UR4, R172",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28864,0x70c0,R2UR,"R2UR UR8, R172",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28880,0x70d0,R2UR,"R2UR UR7, R172",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28896,0x70e0,R2UR,"R2UR UR6, R172",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28912,0x70f0,R2UR,"R2UR UR5, R172",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28928,0x7100,LDTM.x32,"LDTM.x32 R100, tmem[UR4]",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+28944,0x7110,R2UR,"R2UR UR4, R4",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+28960,0x7120,LDTM.x32,"LDTM.x32 R68, tmem[UR8+0x20]",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+28976,0x7130,LDTM.x32,"LDTM.x32 R36, tmem[UR7+0x40]",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+28992,0x7140,LDTM.x32,"LDTM.x32 R4, tmem[UR6+0x60]",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+29008,0x7150,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R147, R131, R130",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29024,0x7160,FMUL2,"FMUL2 R130, R130.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29040,0x7170,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R146, R129, R128",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29056,0x7180,FMUL2,"FMUL2 R128, R128.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29072,0x7190,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R145, R127, R126",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29088,0x71a0,FMUL2,"FMUL2 R126, R126.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29104,0x71b0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R144, R125, R124",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29120,0x71c0,FMUL2,"FMUL2 R124, R124.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29136,0x71d0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R143, R123, R122",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29152,0x71e0,FMUL2,"FMUL2 R122, R122.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29168,0x71f0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R142, R121, R120",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29184,0x7200,FMUL2,"FMUL2 R120, R120.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29200,0x7210,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R141, R119, R118",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29216,0x7220,FMUL2,"FMUL2 R118, R118.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29232,0x7230,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R140, R117, R116",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29248,0x7240,FMUL2,"FMUL2 R116, R116.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29264,0x7250,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R139, R115, R114",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29280,0x7260,FMUL2,"FMUL2 R114, R114.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29296,0x7270,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R138, R113, R112",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29312,0x7280,FMUL2,"FMUL2 R112, R112.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29328,0x7290,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R137, R111, R110",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29344,0x72a0,FMUL2,"FMUL2 R110, R110.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29360,0x72b0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R136, R109, R108",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29376,0x72c0,FMUL2,"FMUL2 R108, R108.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29392,0x72d0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R135, R107, R106",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29408,0x72e0,FMUL2,"FMUL2 R106, R106.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29424,0x72f0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R134, R105, R104",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29440,0x7300,FMUL2,"FMUL2 R104, R104.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29456,0x7310,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R133, R103, R102",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29472,0x7320,FMUL2,"FMUL2 R102, R102.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29488,0x7330,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R132, R101, R100",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29504,0x7340,FMUL2,"FMUL2 R100, R100.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29520,0x7350,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R151, R99, R98",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29536,0x7360,FMUL2,"FMUL2 R98, R98.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29552,0x7370,STTM.x16,"STTM.x16 tmem[UR5+0xc0], R132",TMEM,8192,512,16,Explicit native register bytes / subtype-conditioned service; no raw latency included
+29568,0x7380,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R150, R97, R96",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29584,0x7390,FMUL2,"FMUL2 R96, R96.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29600,0x73a0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R149, R95, R94",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29616,0x73b0,FMUL2,"FMUL2 R94, R94.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29632,0x73c0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R148, R93, R92",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29648,0x73d0,FMUL2,"FMUL2 R92, R92.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29664,0x73e0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R152, R37, R36",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29680,0x73f0,FMUL2,"FMUL2 R36, R36.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29696,0x7400,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R153, R39, R38",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29712,0x7410,FMUL2,"FMUL2 R38, R38.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29728,0x7420,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R154, R41, R40",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29744,0x7430,FMUL2,"FMUL2 R40, R40.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29760,0x7440,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R155, R43, R42",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29776,0x7450,FMUL2,"FMUL2 R42, R42.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29792,0x7460,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R156, R45, R44",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29808,0x7470,FMUL2,"FMUL2 R44, R44.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29824,0x7480,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R157, R47, R46",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29840,0x7490,FMUL2,"FMUL2 R46, R46.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29856,0x74a0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R158, R49, R48",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29872,0x74b0,FMUL2,"FMUL2 R48, R48.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29888,0x74c0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R159, R51, R50",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29904,0x74d0,FMUL2,"FMUL2 R50, R50.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29920,0x74e0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R160, R53, R52",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29936,0x74f0,FMUL2,"FMUL2 R52, R52.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29952,0x7500,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R161, R55, R54",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29968,0x7510,FMUL2,"FMUL2 R54, R54.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+29984,0x7520,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R167, R67, R66",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30000,0x7530,FMUL2,"FMUL2 R66, R66.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30016,0x7540,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R166, R65, R64",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30032,0x7550,FMUL2,"FMUL2 R64, R64.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30048,0x7560,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R165, R63, R62",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30064,0x7570,FMUL2,"FMUL2 R62, R62.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30080,0x7580,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R164, R61, R60",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30096,0x7590,FMUL2,"FMUL2 R60, R60.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30112,0x75a0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R163, R59, R58",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30128,0x75b0,FMUL2,"FMUL2 R58, R58.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30144,0x75c0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R162, R57, R56",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30160,0x75d0,FMUL2,"FMUL2 R56, R56.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30176,0x75e0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R170, R33, R32",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30192,0x75f0,FMUL2,"FMUL2 R32, R32.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30208,0x7600,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R169, R31, R30",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30224,0x7610,FMUL2,"FMUL2 R30, R30.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30240,0x7620,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R168, R29, R28",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30256,0x7630,FMUL2,"FMUL2 R28, R28.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30272,0x7640,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R171, R35, R34",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30288,0x7650,FMUL2,"FMUL2 R34, R34.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30304,0x7660,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R147, R91, R90",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30320,0x7670,FMUL2,"FMUL2 R90, R90.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30336,0x7680,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R146, R89, R88",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30352,0x7690,FMUL2,"FMUL2 R88, R88.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30368,0x76a0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R145, R87, R86",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30384,0x76b0,FMUL2,"FMUL2 R86, R86.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30400,0x76c0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R144, R85, R84",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30416,0x76d0,FMUL2,"FMUL2 R84, R84.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30432,0x76e0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R143, R83, R82",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30448,0x76f0,FMUL2,"FMUL2 R82, R82.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30464,0x7700,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R142, R81, R80",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30480,0x7710,FMUL2,"FMUL2 R80, R80.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30496,0x7720,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R141, R79, R78",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30512,0x7730,FMUL2,"FMUL2 R78, R78.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30528,0x7740,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R140, R77, R76",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30544,0x7750,FMUL2,"FMUL2 R76, R76.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30560,0x7760,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R139, R75, R74",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30576,0x7770,FMUL2,"FMUL2 R74, R74.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30592,0x7780,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R138, R73, R72",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30608,0x7790,FMUL2,"FMUL2 R72, R72.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30624,0x77a0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R137, R71, R70",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30640,0x77b0,FMUL2,"FMUL2 R70, R70.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30656,0x77c0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R136, R69, R68",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30672,0x77d0,FMUL2,"FMUL2 R68, R68.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30688,0x77e0,IMAD.U32,"IMAD.U32 R132, RZ, RZ, UR18",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+30704,0x77f0,SHF.L.U32,"SHF.L.U32 R134, RZ, 0x1f, RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+30720,0x7800,STTM.x16,"STTM.x16 tmem[UR6+0xd0], R136",TMEM,8192,512,16,Explicit native register bytes / subtype-conditioned service; no raw latency included
+30736,0x7810,STTM.x16,"STTM.x16 tmem[UR5+0xe0], R152",TMEM,8192,512,16,Explicit native register bytes / subtype-conditioned service; no raw latency included
+30752,0x7820,SHF.L.U32,"SHF.L.U32 R135, R132, 0x1f, RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+30768,0x7830,LEA,"LEA R136, R173, UR11, 0x2",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+30784,0x7840,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R167, R27, R26",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30800,0x7850,FMUL2,"FMUL2 R26, R26.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30816,0x7860,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R166, R25, R24",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30832,0x7870,FMUL2,"FMUL2 R24, R24.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30848,0x7880,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R165, R23, R22",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30864,0x7890,FMUL2,"FMUL2 R22, R22.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30880,0x78a0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R164, R21, R20",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30896,0x78b0,FMUL2,"FMUL2 R20, R20.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30912,0x78c0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R163, R19, R18",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30928,0x78d0,FMUL2,"FMUL2 R18, R18.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30944,0x78e0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R162, R17, R16",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30960,0x78f0,FMUL2,"FMUL2 R16, R16.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30976,0x7900,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R161, R15, R14",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+30992,0x7910,FMUL2,"FMUL2 R14, R14.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31008,0x7920,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R160, R13, R12",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31024,0x7930,FMUL2,"FMUL2 R12, R12.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31040,0x7940,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R159, R11, R10",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31056,0x7950,FMUL2,"FMUL2 R10, R10.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31072,0x7960,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R158, R9, R8",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31088,0x7970,FMUL2,"FMUL2 R8, R8.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31104,0x7980,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R157, R7, R6",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31120,0x7990,FMUL2,"FMUL2 R6, R6.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31136,0x79a0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R156, R5, R4",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31152,0x79b0,FMUL2,"FMUL2 R4, R4.F32x2.HI_LO, UR4.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31168,0x79c0,STTM.x16,"STTM.x16 tmem[UR5+0xf0], R156",TMEM,8192,512,16,Explicit native register bytes / subtype-conditioned service; no raw latency included
+31184,0x79d0,FENCE.VIEW.ASYNC.T,FENCE.VIEW.ASYNC.T,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+31200,0x79e0,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR22+0x190], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+31216,0x79f0,STTM.x32,"STTM.x32 tmem[UR8], R100",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+31232,0x7a00,STTM.x32,"STTM.x32 tmem[UR7+0x20], R68",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+31248,0x7a10,STTM.x32,"STTM.x32 tmem[UR6+0x40], R36",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+31264,0x7a20,ULEA,"ULEA UR6, UR12, UR22, 0x3",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+31280,0x7a30,STTM.x32,"STTM.x32 tmem[UR5+0x60], R4",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+31296,0x7a40,FENCE.VIEW.ASYNC.T,FENCE.VIEW.ASYNC.T,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+31312,0x7a50,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR22+0x108], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+31328,0x7a60,LDS.64,"LDS.64 R132, [R136+0x36900]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31344,0x7a70,LDS,"LDS R100, [UR11+0x364fc]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31360,0x7a80,LDS.64,"LDS.64 R130, [R136+0x36920]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31376,0x7a90,IMAD.U32,"IMAD.U32 R4, RZ, RZ, UR12",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+31392,0x7aa0,LDS.64,"LDS.64 R128, [R136+0x36940]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31408,0x7ab0,IMAD,"IMAD R5, R4, 0x4000, R175",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+31424,0x7ac0,LDS.64,"LDS.64 R126, [R136+0x36960]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31440,0x7ad0,IMAD,"IMAD R4, R174, 0x2, R5",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+31456,0x7ae0,LDS.64,"LDS.64 R124, [R136+0x36980]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31472,0x7af0,LDS.64,"LDS.64 R122, [R136+0x369a0]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31488,0x7b00,LDS.64,"LDS.64 R120, [R136+0x369c0]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31504,0x7b10,LDS.64,"LDS.64 R118, [R136+0x369e0]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31520,0x7b20,LDS.64,"LDS.64 R82, [R136+0x36400]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31536,0x7b30,LDS.64,"LDS.64 R80, [R136+0x36420]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31552,0x7b40,LDS.64,"LDS.64 R78, [R136+0x36440]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31568,0x7b50,LDS.64,"LDS.64 R76, [R136+0x36460]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31584,0x7b60,LDS.64,"LDS.64 R74, [R136+0x36480]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31600,0x7b70,LDS.64,"LDS.64 R72, [R136+0x364a0]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31616,0x7b80,LDS.64,"LDS.64 R70, [R136+0x364c0]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31632,0x7b90,LDS.64,"LDS.64 R68, [R136+0x364e0]",LSU_Data|SMEM_Read,8.0,1,8,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31648,0x7ba0,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR13+0xa8], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+31664,0x7bb0,SYNCS.PHASECHK.TRANS64.TRYWAIT,"SYNCS.PHASECHK.TRANS64.TRYWAIT P1, [UR6+0x50], R135",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+31680,0x7bc0,BRA,@!P1  BRA 0x7f082f5d5410,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+31696,0x7bd0,LDSM.16.MT88.4,"LDSM.16.MT88.4 R92, [R5+0x14400]",LSU_Data|SMEM_Read,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31712,0x7be0,UIADD3,"UIADD3 UR12, UPT, UPT, UR12, 0x1, URZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+31728,0x7bf0,LDSM.16.MT88.4,"LDSM.16.MT88.4 R88, [R5+0x14c00]",LSU_Data|SMEM_Read,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31744,0x7c00,LDSM.16.MT88.4,"LDSM.16.MT88.4 R84, [R5+0x15400]",LSU_Data|SMEM_Read,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31760,0x7c10,LDSM.16.MT88.4,"LDSM.16.MT88.4 R48, [R5+0x15c00]",LSU_Data|SMEM_Read,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31776,0x7c20,LDSM.16.MT88.4,"LDSM.16.MT88.4 R64, [R4+0x14400]",LSU_Data|SMEM_Read,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31792,0x7c30,LDSM.16.MT88.4,"LDSM.16.MT88.4 R60, [R4+0x14c00]",LSU_Data|SMEM_Read,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31808,0x7c40,LDSM.16.MT88.4,"LDSM.16.MT88.4 R56, [R4+0x15400]",LSU_Data|SMEM_Read,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31824,0x7c50,LDSM.16.MT88.4,"LDSM.16.MT88.4 R52, [R4+0x15c00]",LSU_Data|SMEM_Read,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+31840,0x7c60,SYNCS.PHASECHK.TRANS64.TRYWAIT,"SYNCS.PHASECHK.TRANS64.TRYWAIT P1, [UR22+0x130], R134",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+31856,0x7c70,BRA,@!P1  BRA 0x7f082f5d5470,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+31872,0x7c80,R2UR,"R2UR UR4, R172",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+31888,0x7c90,R2UR,"R2UR UR5, R172",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+31904,0x7ca0,LDTM.16dp256bit.x8,"LDTM.16dp256bit.x8 R16, tmem[UR4+0x180]",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+31920,0x7cb0,FMUL2,"FMUL2 R96, R16.F32x2.HI_LO, R132.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31936,0x7cc0,FMUL2,"FMUL2 R98, R18.F32x2.HI_LO, R132.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31952,0x7cd0,FMUL2,"FMUL2 R102, R20.F32x2.HI_LO, R130.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31968,0x7ce0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R96, R97, R96",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+31984,0x7cf0,FMUL2,"FMUL2 R104, R22.F32x2.HI_LO, R130.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32000,0x7d00,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R98, R99, R98",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32016,0x7d10,FMUL2,"FMUL2 R106, R24.F32x2.HI_LO, R128.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32032,0x7d20,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R102, R103, R102",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32048,0x7d30,FMUL2,"FMUL2 R108, R26.F32x2.HI_LO, R128.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32064,0x7d40,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R104, R105, R104",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32080,0x7d50,FMUL2,"FMUL2 R110, R28.F32x2.HI_LO, R126.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32096,0x7d60,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R106, R107, R106",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32112,0x7d70,FMUL2,"FMUL2 R112, R30.F32x2.HI_LO, R126.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32128,0x7d80,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R108, R109, R108",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32144,0x7d90,FMUL2,"FMUL2 R114, R32.F32x2.HI_LO, R124.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32160,0x7da0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R110, R111, R110",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32176,0x7db0,FMUL2,"FMUL2 R116, R34.F32x2.HI_LO, R124.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32192,0x7dc0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R112, R113, R112",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32208,0x7dd0,LDTM.16dp256bit.x8,"LDTM.16dp256bit.x8 R4, tmem[UR4+0x100180]",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+32224,0x7de0,FMUL2,"FMUL2 R36, R36.F32x2.HI_LO, R122.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32240,0x7df0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R114, R115, R114",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32256,0x7e00,FMUL2,"FMUL2 R40, R40.F32x2.HI_LO, R120.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32272,0x7e10,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R116, R117, R116",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32288,0x7e20,FMUL2,"FMUL2 R44, R44.F32x2.HI_LO, R118.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32304,0x7e30,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R97, R37, R36",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32320,0x7e40,FMUL2,"FMUL2 R38, R38.F32x2.HI_LO, R122.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32336,0x7e50,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R101, R41, R40",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32352,0x7e60,FMUL2,"FMUL2 R42, R42.F32x2.HI_LO, R120.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32368,0x7e70,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R105, R45, R44",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32384,0x7e80,FMUL2,"FMUL2 R46, R46.F32x2.HI_LO, R118.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32400,0x7e90,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R99, R39, R38",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32416,0x7ea0,HFMA2,"HFMA2 R36, R92, 1, 1, -R96",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32432,0x7eb0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R103, R43, R42",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32448,0x7ec0,HFMA2,"HFMA2 R38, R94, 1, 1, -R102",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32464,0x7ed0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R107, R47, R46",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32480,0x7ee0,HFMA2,"HFMA2 R40, R88, 1, 1, -R106",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32496,0x7ef0,HADD2,"HADD2 R37, R93, -R98",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32512,0x7f00,HFMA2,"HFMA2 R42, R90, 1, 1, -R110",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32528,0x7f10,HADD2,"HADD2 R39, R95, -R104",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32544,0x7f20,HFMA2,"HFMA2 R44, R84, 1, 1, -R114",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32560,0x7f30,HADD2,"HADD2 R41, R89, -R108",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32576,0x7f40,HFMA2,"HFMA2 R46, R86, 1, 1, -R97",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32592,0x7f50,FMUL2,"FMUL2 R4, R4.F32x2.HI_LO, R132.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32608,0x7f60,HFMA2,"HFMA2 R48, R48, 1, 1, -R101",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32624,0x7f70,FMUL2,"FMUL2 R6, R6.F32x2.HI_LO, R132.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32640,0x7f80,HFMA2,"HFMA2 R50, R50, 1, 1, -R105",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32656,0x7f90,FMUL2,"FMUL2 R8, R8.F32x2.HI_LO, R130.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32672,0x7fa0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R4, R5, R4",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32688,0x7fb0,FMUL2,"FMUL2 R14, R14.F32x2.HI_LO, R128.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32704,0x7fc0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R5, R7, R6",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32720,0x7fd0,FMUL2,"FMUL2 R10, R10.F32x2.HI_LO, R130.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32736,0x7fe0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R6, R9, R8",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32752,0x7ff0,FMUL2,"FMUL2 R12, R12.F32x2.HI_LO, R128.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32768,0x8000,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R9, R15, R14",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32784,0x8010,FMUL2,"FMUL2 R26, R26.F32x2.HI_LO, R122.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32800,0x8020,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R7, R11, R10",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32816,0x8030,FMUL2,"FMUL2 R16, R16.F32x2.HI_LO, R126.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32832,0x8040,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R8, R13, R12",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32848,0x8050,FMUL2,"FMUL2 R20, R20.F32x2.HI_LO, R124.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32864,0x8060,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R15, R27, R26",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32880,0x8070,FMUL2,"FMUL2 R24, R24.F32x2.HI_LO, R122.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32896,0x8080,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R10, R17, R16",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32912,0x8090,FMUL2,"FMUL2 R28, R28.F32x2.HI_LO, R120.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32928,0x80a0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R12, R21, R20",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32944,0x80b0,FMUL2,"FMUL2 R32, R32.F32x2.HI_LO, R118.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32960,0x80c0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R14, R25, R24",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32976,0x80d0,FMUL2,"FMUL2 R18, R18.F32x2.HI_LO, R126.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+32992,0x80e0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R26, R29, R28",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33008,0x80f0,FMUL2,"FMUL2 R22, R22.F32x2.HI_LO, R124.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33024,0x8100,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R27, R33, R32",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33040,0x8110,FMUL2,"FMUL2 R30, R30.F32x2.HI_LO, R120.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33056,0x8120,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R11, R19, R18",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33072,0x8130,FMUL2,"FMUL2 R34, R34.F32x2.HI_LO, R118.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33088,0x8140,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R13, R23, R22",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33104,0x8150,HFMA2,"HFMA2 R4, R64, 1, 1, -R4",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33120,0x8160,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R17, R31, R30",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33136,0x8170,HFMA2,"HFMA2 R6, R66, 1, 1, -R6",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33152,0x8180,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R19, R35, R34",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33168,0x8190,HFMA2,"HFMA2 R8, R60, 1, 1, -R8",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33184,0x81a0,HADD2,"HADD2 R43, R91, -R112",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33200,0x81b0,HFMA2,"HFMA2 R10, R62, 1, 1, -R10",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33216,0x81c0,HADD2,"HADD2 R45, R85, -R116",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33232,0x81d0,HFMA2,"HFMA2 R12, R56, 1, 1, -R12",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33248,0x81e0,HADD2,"HADD2 R47, R87, -R99",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33264,0x81f0,HFMA2,"HFMA2 R14, R58, 1, 1, -R14",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33280,0x8200,HADD2,"HADD2 R49, R49, -R103",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33296,0x8210,HFMA2,"HFMA2 R16, R52, 1, 1, -R26",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33312,0x8220,HADD2,"HADD2 R51, R51, -R107",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33328,0x8230,HFMA2,"HFMA2 R18, R54, 1, 1, -R27",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33344,0x8240,HADD2,"HADD2 R5, R65, -R5",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33360,0x8250,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR22+0x138], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+33376,0x8260,HADD2,"HADD2 R7, R67, -R7",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33392,0x8270,STTM.16dp128bit.x8,"STTM.16dp128bit.x8 tmem[UR5+0x1c0], R36",TMEM,8192,512,16,Explicit native register bytes / subtype-conditioned service; no raw latency included
+33408,0x8280,HADD2,"HADD2 R9, R61, -R9",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33424,0x8290,HADD2,"HADD2 R11, R63, -R11",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33440,0x82a0,HADD2,"HADD2 R13, R57, -R13",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33456,0x82b0,HADD2,"HADD2 R15, R59, -R15",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33472,0x82c0,HADD2,"HADD2 R17, R53, -R17",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33488,0x82d0,HADD2,"HADD2 R19, R55, -R19",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33504,0x82e0,STTM.16dp128bit.x8,"STTM.16dp128bit.x8 tmem[UR4+0x1001c0], R4",TMEM,8192,512,16,Explicit native register bytes / subtype-conditioned service; no raw latency included
+33520,0x82f0,FENCE.VIEW.ASYNC.T,FENCE.VIEW.ASYNC.T,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+33536,0x8300,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR22+0x1a0], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+33552,0x8310,SYNCS.PHASECHK.TRANS64.TRYWAIT,"SYNCS.PHASECHK.TRANS64.TRYWAIT P1, [UR22+0xf0], R134",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+33568,0x8320,BRA,@!P1  BRA 0x7f082f5d54d0,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+33584,0x8330,R2UR,"R2UR UR4, R172",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+33600,0x8340,FADD2,"FADD2 R82, R100.F32, -R82.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33616,0x8350,R2UR,"R2UR UR5, R172",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+33632,0x8360,FADD2,"FADD2 R80, R100.F32, -R80.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33648,0x8370,MOV,"MOV R108, 0x1",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+33664,0x8380,MUFU.EX2,"MUFU.EX2 R86, R82",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33680,0x8390,SHF.L.U32,"SHF.L.U32 R108, R108, 0x1f, RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+33696,0x83a0,LDTM.16dp256bit.x8,"LDTM.16dp256bit.x8 R36, tmem[UR4+0x80]",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+33712,0x83b0,LDTM.16dp256bit.x8,"LDTM.16dp256bit.x8 R4, tmem[UR4+0x100080]",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+33728,0x83c0,MUFU.EX2,"MUFU.EX2 R87, R83",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33744,0x83d0,MUFU.EX2,"MUFU.EX2 R84, R80",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33760,0x83e0,MUFU.EX2,"MUFU.EX2 R85, R81",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33776,0x83f0,FMUL2,"FMUL2 R36, R36.F32x2.HI_LO, R132.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33792,0x8400,FMUL2,"FMUL2 R38, R38.F32x2.HI_LO, R132.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33808,0x8410,FMUL2,"FMUL2 R40, R40.F32x2.HI_LO, R130.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33824,0x8420,FMUL2,"FMUL2 R42, R42.F32x2.HI_LO, R130.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33840,0x8430,FMUL2,"FMUL2 R44, R44.F32x2.HI_LO, R128.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33856,0x8440,FMUL2,"FMUL2 R46, R46.F32x2.HI_LO, R128.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33872,0x8450,FMUL2,"FMUL2 R48, R48.F32x2.HI_LO, R126.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33888,0x8460,FMUL2,"FMUL2 R50, R50.F32x2.HI_LO, R126.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33904,0x8470,FMUL2,"FMUL2 R52, R52.F32x2.HI_LO, R124.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33920,0x8480,FMUL2,"FMUL2 R54, R54.F32x2.HI_LO, R124.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33936,0x8490,FMUL2,"FMUL2 R56, R56.F32x2.HI_LO, R122.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33952,0x84a0,FMUL2,"FMUL2 R58, R58.F32x2.HI_LO, R122.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33968,0x84b0,FMUL2,"FMUL2 R60, R60.F32x2.HI_LO, R120.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+33984,0x84c0,FMUL2,"FMUL2 R62, R62.F32x2.HI_LO, R120.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34000,0x84d0,FMUL2,"FMUL2 R64, R64.F32x2.HI_LO, R118.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34016,0x84e0,FMUL2,"FMUL2 R66, R66.F32x2.HI_LO, R118.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34032,0x84f0,FMUL2,"FMUL2 R4, R4.F32x2.HI_LO, R132.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34048,0x8500,FMUL2,"FMUL2 R6, R6.F32x2.HI_LO, R132.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34064,0x8510,FMUL2,"FMUL2 R8, R8.F32x2.HI_LO, R130.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34080,0x8520,FMUL2,"FMUL2 R10, R10.F32x2.HI_LO, R130.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34096,0x8530,FMUL2,"FMUL2 R12, R12.F32x2.HI_LO, R128.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34112,0x8540,FMUL2,"FMUL2 R14, R14.F32x2.HI_LO, R128.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34128,0x8550,FMUL2,"FMUL2 R16, R16.F32x2.HI_LO, R126.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34144,0x8560,FMUL2,"FMUL2 R18, R18.F32x2.HI_LO, R126.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34160,0x8570,FMUL2,"FMUL2 R20, R20.F32x2.HI_LO, R124.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34176,0x8580,FMUL2,"FMUL2 R22, R22.F32x2.HI_LO, R124.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34192,0x8590,FMUL2,"FMUL2 R24, R24.F32x2.HI_LO, R122.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34208,0x85a0,FMUL2,"FMUL2 R26, R26.F32x2.HI_LO, R122.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34224,0x85b0,FMUL2,"FMUL2 R28, R28.F32x2.HI_LO, R120.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34240,0x85c0,FMUL2,"FMUL2 R30, R30.F32x2.HI_LO, R120.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34256,0x85d0,FMUL2,"FMUL2 R32, R32.F32x2.HI_LO, R118.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34272,0x85e0,FMUL2,"FMUL2 R34, R34.F32x2.HI_LO, R118.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34288,0x85f0,FMUL2,"FMUL2 R36, R36.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34304,0x8600,FMUL2,"FMUL2 R38, R38.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34320,0x8610,FMUL2,"FMUL2 R40, R40.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34336,0x8620,FMUL2,"FMUL2 R42, R42.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34352,0x8630,FMUL2,"FMUL2 R44, R44.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34368,0x8640,FMUL2,"FMUL2 R46, R46.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34384,0x8650,FMUL2,"FMUL2 R48, R48.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34400,0x8660,FMUL2,"FMUL2 R50, R50.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34416,0x8670,FMUL2,"FMUL2 R52, R52.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34432,0x8680,FMUL2,"FMUL2 R54, R54.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34448,0x8690,FMUL2,"FMUL2 R56, R56.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34464,0x86a0,FMUL2,"FMUL2 R58, R58.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34480,0x86b0,FMUL2,"FMUL2 R60, R60.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34496,0x86c0,FMUL2,"FMUL2 R62, R62.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34512,0x86d0,FMUL2,"FMUL2 R64, R64.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34528,0x86e0,FMUL2,"FMUL2 R66, R66.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34544,0x86f0,FMUL2,"FMUL2 R4, R4.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34560,0x8700,FMUL2,"FMUL2 R6, R6.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34576,0x8710,STTM.16dp256bit.x8,"STTM.16dp256bit.x8 tmem[UR5+0x80], R36",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+34592,0x8720,FMUL2,"FMUL2 R8, R8.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34608,0x8730,FMUL2,"FMUL2 R10, R10.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34624,0x8740,FMUL2,"FMUL2 R12, R12.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34640,0x8750,FMUL2,"FMUL2 R14, R14.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34656,0x8760,FMUL2,"FMUL2 R16, R16.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34672,0x8770,FMUL2,"FMUL2 R18, R18.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34688,0x8780,FMUL2,"FMUL2 R20, R20.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34704,0x8790,FMUL2,"FMUL2 R22, R22.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34720,0x87a0,FMUL2,"FMUL2 R24, R24.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34736,0x87b0,FMUL2,"FMUL2 R26, R26.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34752,0x87c0,FMUL2,"FMUL2 R28, R28.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34768,0x87d0,FMUL2,"FMUL2 R30, R30.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34784,0x87e0,FMUL2,"FMUL2 R32, R32.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34800,0x87f0,FMUL2,"FMUL2 R34, R34.F32x2.HI_LO, UR14.F32",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34816,0x8800,STTM.16dp256bit.x8,"STTM.16dp256bit.x8 tmem[UR4+0x100080], R4",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+34832,0x8810,FENCE.VIEW.ASYNC.T,FENCE.VIEW.ASYNC.T,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+34848,0x8820,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR22+0xf8], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+34864,0x8830,SYNCS.PHASECHK.TRANS64.TRYWAIT,"SYNCS.PHASECHK.TRANS64.TRYWAIT P1, [UR22+0x130], R108",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+34880,0x8840,FADD2,"FADD2 R58, R100.F32, -R78.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34896,0x8850,FADD2,"FADD2 R60, R100.F32, -R76.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34912,0x8860,MUFU.EX2,"MUFU.EX2 R58, R58",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34928,0x8870,MUFU.EX2,"MUFU.EX2 R59, R59",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34944,0x8880,MUFU.EX2,"MUFU.EX2 R60, R60",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+34960,0x8890,BRA,@!P1  BRA 0x7f082f5d5530,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+34976,0x88a0,R2UR,"R2UR UR4, R172",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+34992,0x88b0,SYNCS.ARRIVE.TRANS64.A1T0,"@!P0  SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR6+0x68], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+35008,0x88c0,FADD2,"FADD2 R62, R100.F32, -R74.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35024,0x88d0,MUFU.EX2,"MUFU.EX2 R61, R61",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35040,0x88e0,FADD2,"FADD2 R64, R100.F32, -R72.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35056,0x88f0,R2UR,"R2UR UR7, R172",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+35072,0x8900,FADD2,"FADD2 R66, R100.F32, -R70.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35088,0x8910,R2UR,"R2UR UR6, R172",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+35104,0x8920,FADD2,"FADD2 R88, R100.F32, -R68.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35120,0x8930,ULEA,"ULEA UR5, UR15, UR22, 0x3",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+35136,0x8940,WARPSYNC.ALL,WARPSYNC.ALL,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+35152,0x8950,LDTM.16dp256bit.x8,"LDTM.16dp256bit.x8 R12, tmem[UR4+0x180]",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+35168,0x8960,MUFU.EX2,"MUFU.EX2 R62, R62",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35184,0x8970,MUFU.EX2,"MUFU.EX2 R63, R63",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35200,0x8980,MUFU.EX2,"MUFU.EX2 R64, R64",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35216,0x8990,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R69, R15, R14",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35232,0x89a0,MUFU.EX2,"MUFU.EX2 R65, R65",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35248,0x89b0,FMUL2,"FMUL2 R44, R14.F32x2.HI_LO, R86.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35264,0x89c0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R68, R13, R12",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35280,0x89d0,FMUL2,"FMUL2 R46, R12.F32x2.HI_LO, R86.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35296,0x89e0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R71, R19, R18",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35312,0x89f0,FMUL2,"FMUL2 R48, R18.F32x2.HI_LO, R84.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35328,0x8a00,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R70, R17, R16",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35344,0x8a10,FMUL2,"FMUL2 R50, R16.F32x2.HI_LO, R84.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35360,0x8a20,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R73, R23, R22",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35376,0x8a30,FMUL2,"FMUL2 R52, R22.F32x2.HI_LO, R58.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35392,0x8a40,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R72, R21, R20",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35408,0x8a50,FMUL2,"FMUL2 R54, R20.F32x2.HI_LO, R58.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35424,0x8a60,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R75, R27, R26",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35440,0x8a70,FMUL2,"FMUL2 R56, R26.F32x2.HI_LO, R60.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35456,0x8a80,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R74, R25, R24",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35472,0x8a90,FMUL2,"FMUL2 R90, R24.F32x2.HI_LO, R60.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35488,0x8aa0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R77, R31, R30",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35504,0x8ab0,FMUL2,"FMUL2 R92, R30.F32x2.HI_LO, R62.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35520,0x8ac0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R76, R29, R28",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35536,0x8ad0,FMUL2,"FMUL2 R94, R28.F32x2.HI_LO, R62.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35552,0x8ae0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R79, R35, R34",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35568,0x8af0,FMUL2,"FMUL2 R96, R34.F32x2.HI_LO, R64.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35584,0x8b00,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R78, R33, R32",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35600,0x8b10,FMUL2,"FMUL2 R98, R32.F32x2.HI_LO, R64.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35616,0x8b20,MUFU.EX2,"MUFU.EX2 R88, R88",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35632,0x8b30,LDTM.16dp256bit.x8,"LDTM.16dp256bit.x8 R4, tmem[UR4+0x100180]",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+35648,0x8b40,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R83, R43, R42",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35664,0x8b50,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR22+0x138], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+35680,0x8b60,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R82, R41, R40",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35696,0x8b70,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R81, R39, R38",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35712,0x8b80,MUFU.EX2,"MUFU.EX2 R89, R89",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35728,0x8b90,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R80, R37, R36",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35744,0x8ba0,STTM.16dp128bit.x8,"STTM.16dp128bit.x8 tmem[UR4+0x1c0], R68",TMEM,8192,512,16,Explicit native register bytes / subtype-conditioned service; no raw latency included
+35760,0x8bb0,MUFU.EX2,"MUFU.EX2 R66, R66",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35776,0x8bc0,MUFU.EX2,"MUFU.EX2 R67, R67",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35792,0x8bd0,FMUL2,"FMUL2 R104, R42.F32x2.HI_LO, R88.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35808,0x8be0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R42, R91, R90",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35824,0x8bf0,FMUL2,"FMUL2 R106, R40.F32x2.HI_LO, R88.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35840,0x8c00,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R41, R53, R52",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35856,0x8c10,FMUL2,"FMUL2 R90, R4.F32x2.HI_LO, R86.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35872,0x8c20,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R53, R7, R6",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35888,0x8c30,FMUL2,"FMUL2 R86, R6.F32x2.HI_LO, R86.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35904,0x8c40,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R40, R55, R54",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35920,0x8c50,FMUL2,"FMUL2 R6, R8.F32x2.HI_LO, R84.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35936,0x8c60,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R43, R57, R56",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35952,0x8c70,FMUL2,"FMUL2 R84, R10.F32x2.HI_LO, R84.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35968,0x8c80,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R54, R9, R8",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+35984,0x8c90,FMUL2,"FMUL2 R8, R12.F32x2.HI_LO, R58.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36000,0x8ca0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R55, R11, R10",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36016,0x8cb0,FMUL2,"FMUL2 R10, R14.F32x2.HI_LO, R58.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36032,0x8cc0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R56, R13, R12",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36048,0x8cd0,FMUL2,"FMUL2 R12, R16.F32x2.HI_LO, R60.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36064,0x8ce0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R57, R15, R14",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36080,0x8cf0,FMUL2,"FMUL2 R14, R18.F32x2.HI_LO, R60.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36096,0x8d00,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R58, R17, R16",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36112,0x8d10,FMUL2,"FMUL2 R16, R20.F32x2.HI_LO, R62.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36128,0x8d20,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R59, R19, R18",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36144,0x8d30,FMUL2,"FMUL2 R18, R22.F32x2.HI_LO, R62.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36160,0x8d40,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R60, R21, R20",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36176,0x8d50,FMUL2,"FMUL2 R20, R24.F32x2.HI_LO, R64.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36192,0x8d60,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R61, R23, R22",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36208,0x8d70,FMUL2,"FMUL2 R22, R26.F32x2.HI_LO, R64.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36224,0x8d80,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R62, R25, R24",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36240,0x8d90,FMUL2,"FMUL2 R100, R38.F32x2.HI_LO, R66.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36256,0x8da0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R64, R29, R28",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36272,0x8db0,FMUL2,"FMUL2 R102, R36.F32x2.HI_LO, R66.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36288,0x8dc0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R63, R27, R26",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36304,0x8dd0,FMUL2,"FMUL2 R24, R28.F32x2.HI_LO, R66.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36320,0x8de0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R8, R9, R8",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36336,0x8df0,FMUL2,"FMUL2 R28, R32.F32x2.HI_LO, R88.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36352,0x8e00,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R9, R11, R10",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36368,0x8e10,FMUL2,"FMUL2 R26, R30.F32x2.HI_LO, R66.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36384,0x8e20,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R37, R45, R44",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36400,0x8e30,FMUL2,"FMUL2 R88, R34.F32x2.HI_LO, R88.F32x2.HI_LO",FP,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36416,0x8e40,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R36, R47, R46",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36432,0x8e50,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R39, R49, R48",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36448,0x8e60,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R38, R51, R50",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36464,0x8e70,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R11, R15, R14",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36480,0x8e80,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R45, R93, R92",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36496,0x8e90,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R44, R95, R94",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36512,0x8ea0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R47, R97, R96",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36528,0x8eb0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R46, R99, R98",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36544,0x8ec0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R49, R101, R100",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36560,0x8ed0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R48, R103, R102",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36576,0x8ee0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R51, R105, R104",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36592,0x8ef0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R50, R107, R106",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36608,0x8f00,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R10, R13, R12",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36624,0x8f10,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R14, R21, R20",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36640,0x8f20,IMAD.U32,"IMAD.U32 R20, RZ, RZ, UR17",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+36656,0x8f30,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R52, R5, R4",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36672,0x8f40,STTM.16dp128bit.x8,"STTM.16dp128bit.x8 tmem[UR7+0x1e0], R36",TMEM,8192,512,16,Explicit native register bytes / subtype-conditioned service; no raw latency included
+36688,0x8f50,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R65, R31, R30",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36704,0x8f60,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R66, R33, R32",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36720,0x8f70,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R67, R35, R34",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36736,0x8f80,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R6, R7, R6",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36752,0x8f90,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R12, R17, R16",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36768,0x8fa0,STTM.16dp128bit.x8,"STTM.16dp128bit.x8 tmem[UR6+0x1001c0], R52",TMEM,8192,512,16,Explicit native register bytes / subtype-conditioned service; no raw latency included
+36784,0x8fb0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R13, R19, R18",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36800,0x8fc0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R4, R91, R90",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36816,0x8fd0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R5, R87, R86",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36832,0x8fe0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R7, R85, R84",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36848,0x8ff0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R15, R23, R22",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36864,0x9000,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R16, R25, R24",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36880,0x9010,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R17, R27, R26",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36896,0x9020,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R18, R29, R28",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36912,0x9030,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R19, R89, R88",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+36928,0x9040,SHF.L.U32,"SHF.L.U32 R20, R20, 0x1f, RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+36944,0x9050,STTM.16dp128bit.x8,"STTM.16dp128bit.x8 tmem[UR4+0x1001e0], R4",TMEM,8192,512,16,Explicit native register bytes / subtype-conditioned service; no raw latency included
+36960,0x9060,FENCE.VIEW.ASYNC.T,FENCE.VIEW.ASYNC.T,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+36976,0x9070,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR22+0x1b0], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+36992,0x9080,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR22+0x1c0], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37008,0x9090,SYNCS.PHASECHK.TRANS64.TRYWAIT,"SYNCS.PHASECHK.TRANS64.TRYWAIT P1, [UR5+0x1e0], R20",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37024,0x90a0,BRA,@!P1  BRA 0x7f082f5d5590,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37040,0x90b0,SYNCS.PHASECHK.TRANS64.TRYWAIT,"SYNCS.PHASECHK.TRANS64.TRYWAIT P1, [UR22+0xf0], R108",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37056,0x90c0,UIADD3,"UIADD3 UR4, UPT, UPT, UR15, 0x1, URZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37072,0x90d0,ULOP3.LUT,"ULOP3.LUT UR20, UR20, 0x1, URZ, 0x3c, !UPT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37088,0x90e0,UISETP.NE.U32.AND,"UISETP.NE.U32.AND UP0, UPT, UR4, 0x2, UPT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37104,0x90f0,ULOP3.LUT,"ULOP3.LUT UR16, UR16, 0x1, URZ, 0x3c, !UPT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37120,0x9100,USEL,"USEL UR6, URZ, 0x1, UP0",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37136,0x9110,USEL,"USEL UR7, UR4, URZ, UP0",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37152,0x9120,ULOP3.LUT,"ULOP3.LUT UR17, UR17, UR6, URZ, 0x3c, !UPT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37168,0x9130,UISETP.NE.U32.AND,"UISETP.NE.U32.AND UP0, UPT, UR12, 0x3, UPT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37184,0x9140,BRA,@!P1  BRA 0x7f082f5d55f0,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37200,0x9150,R2UR,"R2UR UR4, R172",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37216,0x9160,UIADD3,"UIADD3 UR19, UPT, UPT, UR19, 0x1, URZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37232,0x9170,USEL,"USEL UR12, UR12, URZ, UP0",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37248,0x9180,LDTM.16dp256bit.x8,"LDTM.16dp256bit.x8 R36, tmem[UR4+0x80]",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+37264,0x9190,LDTM.16dp256bit.x8,"LDTM.16dp256bit.x8 R4, tmem[UR4+0x100080]",TMEM,16384,512,32,Explicit native register bytes / subtype-conditioned service; no raw latency included
+37280,0x91a0,USEL,"USEL UR4, URZ, 0x1, UP0",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37296,0x91b0,UISETP.NE.U32.AND,"UISETP.NE.U32.AND UP0, UPT, UR19, URZ, UPT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37312,0x91c0,ULOP3.LUT,"ULOP3.LUT UR18, UR18, UR4, URZ, 0x3c, !UPT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37328,0x91d0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R68, R61, R60",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37344,0x91e0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R60, R53, R52",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37360,0x91f0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R53, R39, R38",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37376,0x9200,IMAD.U32,"IMAD.U32 R38, RZ, RZ, UR15",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+37392,0x9210,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R69, R63, R62",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37408,0x9220,UMOV,"UMOV UR15, UR7",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+37424,0x9230,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R61, R55, R54",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37440,0x9240,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R62, R57, R56",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37456,0x9250,IMAD,"IMAD R57, R38, 0x4000, R175",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+37472,0x9260,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R54, R41, R40",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37488,0x9270,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R52, R37, R36",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37504,0x9280,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R55, R43, R42",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37520,0x9290,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R40, R29, R28",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37536,0x92a0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R37, R47, R46",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37552,0x92b0,STSM.16.MT88.4,"STSM.16.MT88.4 [R57+0x2e400], R52",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+37568,0x92c0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R36, R45, R44",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37584,0x92d0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R39, R51, R50",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37600,0x92e0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R38, R49, R48",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37616,0x92f0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R28, R21, R20",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37632,0x9300,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R63, R59, R58",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37648,0x9310,STSM.16.MT88.4,"STSM.16.MT88.4 [R57+0x2ec00], R36",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+37664,0x9320,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R20, R13, R12",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37680,0x9330,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R71, R67, R66",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37696,0x9340,STSM.16.MT88.4,"STSM.16.MT88.4 [R57+0x2f400], R60",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+37712,0x9350,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R70, R65, R64",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37728,0x9360,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R21, R15, R14",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37744,0x9370,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R12, R5, R4",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37760,0x9380,IMAD,"IMAD R4, R174, 0x2, R57",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+37776,0x9390,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R29, R23, R22",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37792,0x93a0,STSM.16.MT88.4,"STSM.16.MT88.4 [R57+0x2fc00], R68",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+37808,0x93b0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R13, R7, R6",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37824,0x93c0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R15, R11, R10",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37840,0x93d0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R14, R9, R8",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37856,0x93e0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R41, R31, R30",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37872,0x93f0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R23, R19, R18",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37888,0x9400,STSM.16.MT88.4,"STSM.16.MT88.4 [R4+0x2e400], R12",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+37904,0x9410,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R22, R17, R16",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37920,0x9420,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R31, R27, R26",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37936,0x9430,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R30, R25, R24",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37952,0x9440,STSM.16.MT88.4,"STSM.16.MT88.4 [R4+0x2ec00], R20",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+37968,0x9450,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R43, R35, R34",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+37984,0x9460,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R42, R33, R32",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+38000,0x9470,STSM.16.MT88.4,"STSM.16.MT88.4 [R4+0x2f400], R28",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+38016,0x9480,STSM.16.MT88.4,"STSM.16.MT88.4 [R4+0x2fc00], R40",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+38032,0x9490,MEMBAR.ALL.CTA,MEMBAR.ALL.CTA,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+38048,0x94a0,FENCE.VIEW.ASYNC.S,FENCE.VIEW.ASYNC.S,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+38064,0x94b0,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR22+0xf8], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+38080,0x94c0,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR5+0x1d0], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+38096,0x94d0,BRA.U,"BRA.U UP0, 0x7f082f5caa30",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN

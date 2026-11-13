@@ -1,0 +1,21 @@
+{
+  "status": "ALL84_GRAPH_TOPOLOGY_NATIVE_DEFAULT_EDGE_GATES_PASS",
+  "records": [
+    {
+      "trial": 0,
+      "certificates": 28,
+      "all_native_default_edges_and_NULL_lossless": true
+    },
+    {
+      "trial": 1,
+      "certificates": 28,
+      "all_native_default_edges_and_NULL_lossless": true
+    },
+    {
+      "trial": 2,
+      "certificates": 28,
+      "all_native_default_edges_and_NULL_lossless": true
+    }
+  ],
+  "model_enabled": false
+}

@@ -1,0 +1,173 @@
+{
+  "seed": 20277313,
+  "buffers": [
+    {
+      "q": {
+        "sha256": "d85636d3725a0e00398846778ca9ea18d9be6ed9851fda2c661bec4773249e2e",
+        "shape": [
+          16384,
+          16,
+          128
+        ],
+        "dtype": "torch.float16",
+        "bytes": 67108864
+      },
+      "k": {
+        "sha256": "f1bc367fe20ab1027c9967c13674d193f8a17e124ea43016f428864ba5a5e328",
+        "shape": [
+          16384,
+          16,
+          128
+        ],
+        "dtype": "torch.float16",
+        "bytes": 67108864
+      },
+      "v": {
+        "sha256": "510fb62a878eca9b17693d163d2f723e90344ad8e7aacd3489a15622e072eb2d",
+        "shape": [
+          16384,
+          16,
+          128
+        ],
+        "dtype": "torch.float16",
+        "bytes": 67108864
+      }
+    },
+    {
+      "q": {
+        "sha256": "5f806ed0edd60823521ea2719857bcd094c34f8fd6de83e98b6fec3b93f02621",
+        "shape": [
+          16384,
+          16,
+          128
+        ],
+        "dtype": "torch.float16",
+        "bytes": 67108864
+      },
+      "k": {
+        "sha256": "ed797dcae4bed924e4b9f2479c338b543662845123fe7da96f6b53b3b29394dc",
+        "shape": [
+          16384,
+          16,
+          128
+        ],
+        "dtype": "torch.float16",
+        "bytes": 67108864
+      },
+      "v": {
+        "sha256": "57511ea1fef6a16ecab3cb047bb41f50c42e6dc3b3b27d561f1236336d5e80ca",
+        "shape": [
+          16384,
+          16,
+          128
+        ],
+        "dtype": "torch.float16",
+        "bytes": 67108864
+      }
+    },
+    {
+      "q": {
+        "sha256": "2ef11b1edc37f67584c6029a57eabc5795b3a1202f61cf1e24e774aa2c96f821",
+        "shape": [
+          16384,
+          16,
+          128
+        ],
+        "dtype": "torch.float16",
+        "bytes": 67108864
+      },
+      "k": {
+        "sha256": "bde39809c59d07dd26ad7d926e05a647f8864eec9c2bb58cdf63f49f8745ef12",
+        "shape": [
+          16384,
+          16,
+          128
+        ],
+        "dtype": "torch.float16",
+        "bytes": 67108864
+      },
+      "v": {
+        "sha256": "4d54416a3beb0da318ea30e8808cdcd29482ec1e871c6bd8315a798fe09d3b30",
+        "shape": [
+          16384,
+          16,
+          128
+        ],
+        "dtype": "torch.float16",
+        "bytes": 67108864
+      }
+    },
+    {
+      "q": {
+        "sha256": "2a915f4edf4cc1018bf0e31c1b5a5b8591de4d62c1492bdd69a1f5733e1853a2",
+        "shape": [
+          16384,
+          16,
+          128
+        ],
+        "dtype": "torch.float16",
+        "bytes": 67108864
+      },
+      "k": {
+        "sha256": "48629687ae3c6857d0a375c31ce43de00304de0d2fa75717d4f4befa9fc93d1a",
+        "shape": [
+          16384,
+          16,
+          128
+        ],
+        "dtype": "torch.float16",
+        "bytes": 67108864
+      },
+      "v": {
+        "sha256": "72c27be36c605f3c2f4164fa3ebf5a708299dcf5a433deb034cd09939ed45473",
+        "shape": [
+          16384,
+          16,
+          128
+        ],
+        "dtype": "torch.float16",
+        "bytes": 67108864
+      }
+    }
+  ],
+  "shared": {
+    "gate": {
+      "sha256": "a8978265c928901cdf8afc78a2f8f71b8818bcdd02fe4b12d3dfce29fd9d0edb",
+      "shape": [
+        16384,
+        16
+      ],
+      "dtype": "torch.float32",
+      "bytes": 1048576
+    },
+    "beta": {
+      "sha256": "28b04fdc9e19bb079dd363e1e78462d67d2ece3d5fe65c72816445cbb2361399",
+      "shape": [
+        16384,
+        16
+      ],
+      "dtype": "torch.float32",
+      "bytes": 1048576
+    },
+    "initial": {
+      "sha256": "72de2414c17f62416b1cc05a1c212401bc9885f79bbc41d1ed2dfcfba79bf4be",
+      "shape": [
+        1,
+        16,
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "bytes": 1048576
+    },
+    "cu_seqlens": {
+      "sha256": "983395b00d6bcfabc42f97b04a86bdee96b99a9e9845bd7f293cb4715f1370b7",
+      "shape": [
+        2
+      ],
+      "dtype": "torch.int64",
+      "bytes": 16
+    }
+  },
+  "content_signature_sha256": "3c9174ab9fc33a7662e104dcabf4e2e09539c27f4b0214a8daec7fd2a17f44d8"
+}

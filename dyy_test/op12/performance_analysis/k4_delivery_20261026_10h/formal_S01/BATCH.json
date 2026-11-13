@@ -1,0 +1,71 @@
+[
+  {
+    "trial": 0,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_round01.py",
+      "--phase",
+      "formal",
+      "--layout",
+      "S",
+      "--trial",
+      "0",
+      "--out",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/formal_S01/trial0",
+      "--compile-approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/compile_S03/COMPILE_AUDIT.json",
+      "--approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/compile_S03/COMPILE_AUDIT.json"
+    ],
+    "start_epoch": 1792958980.979783,
+    "returncode": 0,
+    "end_epoch": 1792958993.8600457,
+    "dynamic_gate_reasons": []
+  },
+  {
+    "trial": 1,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_round01.py",
+      "--phase",
+      "formal",
+      "--layout",
+      "S",
+      "--trial",
+      "1",
+      "--out",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/formal_S01/trial1",
+      "--compile-approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/compile_S03/COMPILE_AUDIT.json",
+      "--approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/compile_S03/COMPILE_AUDIT.json"
+    ],
+    "start_epoch": 1792958994.1756222,
+    "returncode": 0,
+    "end_epoch": 1792959007.1588647,
+    "dynamic_gate_reasons": []
+  },
+  {
+    "trial": 2,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_round01.py",
+      "--phase",
+      "formal",
+      "--layout",
+      "S",
+      "--trial",
+      "2",
+      "--out",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/formal_S01/trial2",
+      "--compile-approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/compile_S03/COMPILE_AUDIT.json",
+      "--approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/compile_S03/COMPILE_AUDIT.json"
+    ],
+    "start_epoch": 1792959007.52473,
+    "returncode": 0,
+    "end_epoch": 1792959020.455436,
+    "dynamic_gate_reasons": []
+  }
+]

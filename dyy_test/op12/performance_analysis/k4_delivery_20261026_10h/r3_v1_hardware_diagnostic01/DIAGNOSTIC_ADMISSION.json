@@ -1,0 +1,15 @@
+{
+  "round": "R3",
+  "binary_sha256": "bdeabbb53a7a4313d734aa8db7db4f04f567fae39a1fc6880bdf6caf59a30531",
+  "approved_modes": [
+    "NCU"
+  ],
+  "max_N": 512,
+  "allowed_configurations": [
+    "S_G128_LOAD"
+  ],
+  "authorized_attempts": 1,
+  "tool_diagnostic_only": true,
+  "effective_model_value": null,
+  "model_enabled": false
+}

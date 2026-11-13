@@ -1,0 +1,38 @@
+{
+  "kernel": "K2",
+  "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "shape": [
+    1,
+    16,
+    32768,
+    128
+  ],
+  "C": 4096,
+  "P": 8,
+  "grid": [
+    8192,
+    128,
+    32,
+    128
+  ],
+  "input_sha256": "5953da3926a1ab008c08b995fe574688c40edbb91ad0db561a8204c796c97d98",
+  "content_signature": "eb62764b4f2bc92c04c1accddf62db3211f657a1206bdc2279e6fe006bb94d1e",
+  "backend": "native clock64",
+  "sample_CTA": 0,
+  "evict_bytes": 530579456,
+  "clock_request_MHz": 1845,
+  "trial": 0,
+  "vars": {
+    "kernel": "K2",
+    "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run02/trial_b32_t0",
+    "s": 32768,
+    "trial": 0,
+    "warmup": 20,
+    "samples": 100,
+    "variants": "B0,B1,COARSE,FINE",
+    "sample_block": 32,
+    "layouts": "G0,G1"
+  },
+  "model_enabled": false,
+  "chain_verified": true
+}

@@ -1,0 +1,18 @@
+{
+  "import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+  "source_files": {
+    "gdn_cp_prefill.py": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+    "gated_delta_net_cp.py": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+    "gated_delta_net_cp_prefill.py": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc"
+  },
+  "device": "NVIDIA B200",
+  "sm_count": 148,
+  "shape": {
+    "S": 8192,
+    "H": 16,
+    "D": 128,
+    "C": 1024
+  },
+  "dtype": "FP16 with FP32 initial/final state",
+  "target_kernel_timings_collected": false
+}

@@ -1,0 +1,177 @@
+{
+  "schema": 1,
+  "CPU_only": true,
+  "GPU_used": false,
+  "status": "PASS_NATIVE_COUNT_AND_SCOPE",
+  "results": [
+    {
+      "kind": "iadd3_3src",
+      "N": 256,
+      "static_target_PCs": 128,
+      "total_target_warp_instructions": 131072.0,
+      "total_target_pred_on_lane_instructions": 4194304.0,
+      "checks": {
+        "all_per_PC_checks": true,
+        "total_target_warp_matches": true,
+        "total_target_lane_matches": true,
+        "launch_grid1_block128": true,
+        "report_manifest_hash": true,
+        "profile_is_EVENT_only": true,
+        "application_replay": true,
+        "no_NCU_duration_used_for_slope": true
+      },
+      "passed": true,
+      "pipeline_counters_full_kernel": {
+        "smsp__inst_executed_pipe_alu.sum": {
+          "value": "131072.000000",
+          "unit": "inst"
+        },
+        "smsp__inst_executed_pipe_fmaheavy.sum": {
+          "value": "8.000000",
+          "unit": "inst"
+        },
+        "smsp__inst_executed_pipe_fmalite.sum": {
+          "value": "0",
+          "unit": "inst"
+        },
+        "smsp__inst_executed_pipe_xu.sum": {
+          "value": "0",
+          "unit": "inst"
+        },
+        "smsp__inst_executed_pipe_lsu.sum": {
+          "value": "188.000000",
+          "unit": "inst"
+        }
+      },
+      "pipeline_caveat": "Full-kernel counters include init/output/control; not isolated target latency or an inner-clock numerator.",
+      "source_sha256": "ed4cca3b51873d6e76e235d6adfa24463e4e266a3d5c0b62f3d4d9b9703d95a4",
+      "raw_sha256": "117ee2f405d5b0324f9cbc14e1a6baf6844eb0749141bbf54a3c81600aa101ba",
+      "report_sha256": "420278485b112db9127fd23c131dc7406de3dfbe3aba7b4aae0e1169f5eb269a",
+      "command": [
+        "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+        "--target-processes",
+        "all",
+        "--replay-mode",
+        "application",
+        "--app-replay-match",
+        "grid",
+        "--cache-control",
+        "none",
+        "--clock-control",
+        "none",
+        "--launch-count",
+        "1",
+        "--section",
+        "LaunchStats",
+        "--section",
+        "InstructionStats",
+        "--section",
+        "SourceCounters",
+        "--metrics",
+        "smsp__inst_executed_pipe_alu.sum,smsp__inst_executed_pipe_fmaheavy.sum,smsp__inst_executed_pipe_fmalite.sum,smsp__inst_executed_pipe_xu.sum,smsp__inst_executed_pipe_lsu.sum",
+        "-o",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_resource_cycle_audit_20261019_round2/native_audit/ncu_integer_sfu_v1/iadd3_3src_W4",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_resource_cycle_audit_20261019_round2/native_audit/integer_probe_compile/native_r1/integer_native_harness",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_resource_cycle_audit_20261019_round2/native_audit/integer_probe_compile/native_r1/integer_native_probes.cubin",
+        "iadd3_3src",
+        "0",
+        "1",
+        "256",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_resource_cycle_audit_20261019_round2/native_audit/iadd3_3src_profile.csv",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_resource_cycle_audit_20261019_round2/native_audit/iadd3_3src_profile.trace",
+        "profile"
+      ],
+      "GPU_math_status": "profile C++ harness returned zero after every launched target output check",
+      "observed_zero_predoff_is_not_zero_boolean_result": "Predicate instruction executes on every lane even where comparison result is false.",
+      "model_enabled": false,
+      "effective_model_value": null
+    },
+    {
+      "kind": "isetp_ge_and",
+      "N": 256,
+      "static_target_PCs": 120,
+      "total_target_warp_instructions": 122880.0,
+      "total_target_pred_on_lane_instructions": 3932160.0,
+      "checks": {
+        "all_per_PC_checks": true,
+        "total_target_warp_matches": true,
+        "total_target_lane_matches": true,
+        "launch_grid1_block128": true,
+        "report_manifest_hash": true,
+        "profile_is_EVENT_only": true,
+        "application_replay": true,
+        "no_NCU_duration_used_for_slope": true
+      },
+      "passed": true,
+      "pipeline_counters_full_kernel": {
+        "smsp__inst_executed_pipe_alu.sum": {
+          "value": "122928.000000",
+          "unit": "inst"
+        },
+        "smsp__inst_executed_pipe_fmaheavy.sum": {
+          "value": "8.000000",
+          "unit": "inst"
+        },
+        "smsp__inst_executed_pipe_fmalite.sum": {
+          "value": "0",
+          "unit": "inst"
+        },
+        "smsp__inst_executed_pipe_xu.sum": {
+          "value": "0",
+          "unit": "inst"
+        },
+        "smsp__inst_executed_pipe_lsu.sum": {
+          "value": "176.000000",
+          "unit": "inst"
+        }
+      },
+      "pipeline_caveat": "Full-kernel counters include init/output/control; not isolated target latency or an inner-clock numerator.",
+      "source_sha256": "b7817578dee52f05c3bd0d064c0ca4f5afeeb5ce3f880b688f57ddf24947be9e",
+      "raw_sha256": "30403a2a08c050b0eadbd427245876aeb237bd7547ec29bb3b5f1c9851040958",
+      "report_sha256": "7713d56936f2fe8e36c2015e9a0e7fa58a12b2f770e492c459d55722a3894c3c",
+      "command": [
+        "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+        "--target-processes",
+        "all",
+        "--replay-mode",
+        "application",
+        "--app-replay-match",
+        "grid",
+        "--cache-control",
+        "none",
+        "--clock-control",
+        "none",
+        "--launch-count",
+        "1",
+        "--section",
+        "LaunchStats",
+        "--section",
+        "InstructionStats",
+        "--section",
+        "SourceCounters",
+        "--metrics",
+        "smsp__inst_executed_pipe_alu.sum,smsp__inst_executed_pipe_fmaheavy.sum,smsp__inst_executed_pipe_fmalite.sum,smsp__inst_executed_pipe_xu.sum,smsp__inst_executed_pipe_lsu.sum",
+        "-o",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_resource_cycle_audit_20261019_round2/native_audit/ncu_integer_sfu_v1/isetp_ge_and_W4",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_resource_cycle_audit_20261019_round2/native_audit/integer_probe_compile/native_r1/integer_native_harness",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_resource_cycle_audit_20261019_round2/native_audit/integer_probe_compile/native_r1/integer_native_probes.cubin",
+        "isetp_ge_and",
+        "0",
+        "1",
+        "256",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_resource_cycle_audit_20261019_round2/native_audit/isetp_ge_and_profile.csv",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_resource_cycle_audit_20261019_round2/native_audit/isetp_ge_and_profile.trace",
+        "profile"
+      ],
+      "GPU_math_status": "profile C++ harness returned zero after every launched target output check",
+      "observed_zero_predoff_is_not_zero_boolean_result": "Predicate instruction executes on every lane even where comparison result is false.",
+      "model_enabled": false,
+      "effective_model_value": null
+    }
+  ],
+  "gate_source_sha256": "6eb3e0231bc0d0d0bd12c2b58d0721b9ad03107bd801d74dc5721ab2d03f069b",
+  "manifest_sha256": "e3d70c8cc895a4716a46f999b3c9b6752661de3ab9b2abe6770dfe84ea3a90d3",
+  "scope": "Four-warp native integer feedback request paths, not universal all-integer bare capacity, original mask RAW latency or all native operand forms.",
+  "model_enabled": false,
+  "effective_model_value": null
+}

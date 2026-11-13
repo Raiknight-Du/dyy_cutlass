@@ -1,0 +1,8 @@
+==PROF== Connected to process 2311258 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 0: 0%....50%....100% - 31 passes
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 1: 0%....50%....100% - 31 passes
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 2: 0%....50%....100% - 31 passes
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 3: 0%....50%....100% - 31 passes
+PROFILE_OK case=cp_s16384_fp16 flashinfer=/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py shape=(1,16,16384,128) dtype=torch.float16 use_cp=True
+==PROF== Disconnected from process 2311258
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/flashinfer_e77a4a0_b200_20260825/raw/ncu/cp_s16384_fp16.ncu-rep

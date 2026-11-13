@@ -1,0 +1,12 @@
+
+[91m[1merror:[0m NameError in `__call__`: name 'ks_handle' is not defined
+   [94m-->[0m /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/variant_QSJOIN.py:414
+    |
+412 |             cute.copy(
+413 |                 tiled_ks_t2r,
+414 |                 tTR_tCtKS[None, None, None, ks_handle.index],
+    |                 [91m^[0m
+  [94m= note:[0m Caused exception: name 'ks_handle' is not defined
+  [92msuggestion:[0m Variables used inside staged control flow (for/if/while) must be defined before the
+              control flow region. Give the variable an initial value before the loop or branch.
+

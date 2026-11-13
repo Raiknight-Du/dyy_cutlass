@@ -1,0 +1,13 @@
+﻿trial,variant,REG,dynamic_smem_bytes,local_bytes,occupancy_API,spill_instructions,static_UTCHMMA,static_HMMA16816,static_STG_U16,source
+0,baseline,64,24960,0,8,0,0,76,32,evidence\results\primary_v1_formal_fp16_s32768_r0\RUN_RECORD.json
+0,tcgen05,52,24960,0,1,0,8,12,32,evidence\results\primary_v1_formal_fp16_s32768_r0\RUN_RECORD.json
+0,layout,64,24960,0,8,0,0,76,2,evidence\results\primary_v1_formal_fp16_s32768_r0\RUN_RECORD.json
+0,both,52,24960,0,1,0,8,12,2,evidence\results\primary_v1_formal_fp16_s32768_r0\RUN_RECORD.json
+1,baseline,64,24960,0,8,0,0,76,32,evidence\results\primary_v1_formal_fp16_s32768_r1\RUN_RECORD.json
+1,tcgen05,52,24960,0,1,0,8,12,32,evidence\results\primary_v1_formal_fp16_s32768_r1\RUN_RECORD.json
+1,layout,64,24960,0,8,0,0,76,2,evidence\results\primary_v1_formal_fp16_s32768_r1\RUN_RECORD.json
+1,both,52,24960,0,1,0,8,12,2,evidence\results\primary_v1_formal_fp16_s32768_r1\RUN_RECORD.json
+2,baseline,64,24960,0,8,0,0,76,32,evidence\results\primary_v1_formal_fp16_s32768_r2\RUN_RECORD.json
+2,tcgen05,52,24960,0,1,0,8,12,32,evidence\results\primary_v1_formal_fp16_s32768_r2\RUN_RECORD.json
+2,layout,64,24960,0,8,0,0,76,2,evidence\results\primary_v1_formal_fp16_s32768_r2\RUN_RECORD.json
+2,both,52,24960,0,1,0,8,12,2,evidence\results\primary_v1_formal_fp16_s32768_r2\RUN_RECORD.json

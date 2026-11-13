@@ -1,0 +1,13 @@
+{
+  "status": "CHILD_FAILED",
+  "command": [
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/clock_lease.py",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k2_trace_audit_20261025/run01/batch.py"
+  ],
+  "returncode": 1,
+  "invalid_observations": [],
+  "automatic_clock_change": false,
+  "model_enabled": false
+}

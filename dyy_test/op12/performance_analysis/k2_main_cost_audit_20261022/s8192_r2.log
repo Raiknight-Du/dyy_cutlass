@@ -1,0 +1,2 @@
+COMPILE GATE PASS
+{"trial": 2, "S": 8192, "event": {"B0": {"median_us": 38.63999992609024}, "B1": {"median_us": 38.656000047922134}, "P1": {"median_us": 38.656000047922134}, "P8": {"median_us": 38.656000047922134}}, "competition": false}

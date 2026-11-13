@@ -1,0 +1,15 @@
+{
+  "command": [
+    "sudo",
+    "-n",
+    "nvidia-smi",
+    "-i",
+    "0",
+    "-lgc",
+    "1845,1845"
+  ],
+  "epoch": 1792965851.7964957,
+  "returncode": 0,
+  "stdout": "GPU clocks set to \"(gpuClkMin 1845, gpuClkMax 1845)\" for GPU 00000000:05:00.0\nAll done.\n",
+  "stderr": ""
+}

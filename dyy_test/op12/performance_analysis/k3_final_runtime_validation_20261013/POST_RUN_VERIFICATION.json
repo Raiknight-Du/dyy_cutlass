@@ -1,0 +1,17 @@
+{
+  "date_local": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "gpu_uuid": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf",
+  "sm_mhz_after": 1965,
+  "memory_mhz_after": 3996,
+  "gpu_utilization_percent_after": 0,
+  "gpu_compute_processes_after": [],
+  "upstream_HEAD": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "upstream_git_status_porcelain": "",
+  "owned_experiment_runner_active": false,
+  "archive_sha256": "4ca4dec6361a5d88d36f0a78e08524f065c89092acdc052d6add7a255d5aa4ee",
+  "archive_file_verification": "4681 file hashes matched; see LOCAL_ARCHIVE_VERIFICATION.json",
+  "snapshot_gpu_query_note": "The snapshot's gpu_after query used unsupported clocks.memory; its nonzero status is preserved. This supplemental read-only check used clocks.current.sm and clocks.current.memory. Timing frequency evidence comes from each valid RUN_LEDGER and frequency.jsonl, not that failed snapshot query.",
+  "sanitizer_status": "NOT_PASSED: host crash; no valid memcheck conclusion",
+  "model_updated": false
+}

@@ -1,0 +1,110 @@
+{
+  "count": 21,
+  "reports": [
+    {
+      "path": "NCU_S01/REF.ncu-rep",
+      "bytes": 1868671,
+      "SHA256": "4e9186049f7c83def5bb062ac2dfbc27170448ee8237e368ae89d8873bf98a6d"
+    },
+    {
+      "path": "NCU_S01/FRAME0.ncu-rep",
+      "bytes": 1877835,
+      "SHA256": "ff7aa088b29000a51ad91d9326b72e4bd5703e7aa7e1c7c2293c0678fbec8e77"
+    },
+    {
+      "path": "NCU_S01/FRAME7.ncu-rep",
+      "bytes": 1888610,
+      "SHA256": "a6df1368e81d210f15e9842e69e5bbb5b8cc306590dcc482cbb35a877a17a437"
+    },
+    {
+      "path": "r3_v2_ncu_S_G128_LOAD_01/S_G128_LOAD.ncu-rep",
+      "bytes": 503165,
+      "SHA256": "c022a6dfd2cde4ffaaa825c8c7e3fee2eb494d0564df52b562262f90f7cfcdf5"
+    },
+    {
+      "path": "r3_v2_ncu_remaining01/S_G1_LOAD/S_G1_LOAD.ncu-rep",
+      "bytes": 481175,
+      "SHA256": "6e1c9b4edc9213db6c532ed27f5184466f8513fbbd2e09579f1a1f9e3f9accd8"
+    },
+    {
+      "path": "r3_v2_ncu_remaining01/S_G1_CONTROL/S_G1_CONTROL.ncu-rep",
+      "bytes": 401312,
+      "SHA256": "2cb737d11498f72b21b2a91befd3dc9e562d57a11b7e245f2bc0b9c51f44c27e"
+    },
+    {
+      "path": "r3_v2_ncu_remaining01/S_G128_CONTROL/S_G128_CONTROL.ncu-rep",
+      "bytes": 417050,
+      "SHA256": "025ee1e8cf46753b3604de24e0924227f00f07b27f0027eb3c298645163c3b8c"
+    },
+    {
+      "path": "r3_v2_ncu_remaining01/V_G1_LOAD/V_G1_LOAD.ncu-rep",
+      "bytes": 386236,
+      "SHA256": "bd516e7b02d5eb57ef56bd39cd3336386df8ddc4280d014f0f19e7cac6aa9fac"
+    },
+    {
+      "path": "r3_v2_ncu_remaining01/V_G1_CONTROL/V_G1_CONTROL.ncu-rep",
+      "bytes": 368494,
+      "SHA256": "ca16e4102894399ac2f3bd265d35056b10fb8e231ff44eb7a186e51eb12085de"
+    },
+    {
+      "path": "r3_v2_ncu_remaining01/V_G128_LOAD/V_G128_LOAD.ncu-rep",
+      "bytes": 406163,
+      "SHA256": "c3a14af0cc90fff374978483a4fdb0e2d7c3588d39650f2dbf334a43de10888b"
+    },
+    {
+      "path": "r3_v2_ncu_remaining01/V_G128_CONTROL/V_G128_CONTROL.ncu-rep",
+      "bytes": 388150,
+      "SHA256": "56c83d648517ef4fb5efa5ad1ab381d0c763db220e69068f4c07df14fad4e073"
+    },
+    {
+      "path": "r4_ncu_BOTH01/BOTH/BOTH.ncu-rep",
+      "bytes": 558612,
+      "SHA256": "9f9f39fbc92f79ed20b3656cf7d2da577eaccc8f0257274188efb06c1a119cba"
+    },
+    {
+      "path": "r4_ncu_remaining01/CONTROL/CONTROL.ncu-rep",
+      "bytes": 517130,
+      "SHA256": "41d0eee7b7de483c37c70132c9eb382372f3de43184f467f5c323e0222ac158d"
+    },
+    {
+      "path": "r4_ncu_remaining01/SHADER_ONLY/SHADER_ONLY.ncu-rep",
+      "bytes": 550541,
+      "SHA256": "8bccbba66403214850641dcece6e18a550f442783b1630417107751611292989"
+    },
+    {
+      "path": "r4_ncu_remaining01/TC_ONLY/TC_ONLY.ncu-rep",
+      "bytes": 527795,
+      "SHA256": "0d64cff499318e9c9e5887f8095b5648d7d1b907083de212087fa0862323a209"
+    },
+    {
+      "path": "r5_ncu01/SS_LOAD/SS_LOAD.ncu-rep",
+      "bytes": 403733,
+      "SHA256": "1447e43a76875f35591bdccadf5c927b3b66d9192a5f8299d6c0c433b54a3f4b"
+    },
+    {
+      "path": "r5_ncu01/TS_LOAD/TS_LOAD.ncu-rep",
+      "bytes": 536819,
+      "SHA256": "f983e34b061f718a016f96e628103e2e84f96ec51b43ee553cfca24d1a9ca261"
+    },
+    {
+      "path": "r6_ncu01/B0/B0.ncu-rep",
+      "bytes": 1881104,
+      "SHA256": "b0f5a39bb4c3a92784d10b3092ad92735423b8bcf6a74f7ba8001f8ad189a3ab"
+    },
+    {
+      "path": "r6_ncu01/V0/V0.ncu-rep",
+      "bytes": 1762975,
+      "SHA256": "3373c313da326d8ddbf00efcd3b64a17eca5bccfd949665b734c95ef622af250"
+    },
+    {
+      "path": "r9_hw_scope01/invocation1/S_G128_LOAD.ncu-rep",
+      "bytes": 123486,
+      "SHA256": "a0f0c8a972ce4ff608d83bc9414afc83f6b187c207ecd874837bf2686f069552"
+    },
+    {
+      "path": "r9_hw_scope01/invocation2/S_G128_LOAD.ncu-rep",
+      "bytes": 123486,
+      "SHA256": "689f7887690ef79e8e6622a02eec6639581498fe3650e1834de088ae70801928"
+    }
+  ]
+}

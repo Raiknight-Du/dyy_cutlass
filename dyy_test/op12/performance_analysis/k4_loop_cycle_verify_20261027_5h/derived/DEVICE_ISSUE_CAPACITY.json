@@ -1,0 +1,41 @@
+{
+  "source": "NCU2026.2.1, actual originalK4 B200 captures, existing device metadata",
+  "records": [
+    {
+      "file": "derived\\B0_t0_raw.csv",
+      "sha256": "6532945b629599413462983e128ffa1a1551230935a3b6b8b51a40458f7f9b2c",
+      "values": {
+        "device__attribute_max_ipc_per_multiprocessor": 4,
+        "device__attribute_max_ipc_per_scheduler": 1,
+        "device__attribute_max_warps_per_scheduler": 16,
+        "device__attribute_max_warps_per_multiprocessor": 64
+      }
+    },
+    {
+      "file": "derived\\B0_t1_raw.csv",
+      "sha256": "83066f7b85443860af4de601e04d4d978fa49c940daa0aba43fb1a6b09ab83a6",
+      "values": {
+        "device__attribute_max_ipc_per_multiprocessor": 4,
+        "device__attribute_max_ipc_per_scheduler": 1,
+        "device__attribute_max_warps_per_scheduler": 16,
+        "device__attribute_max_warps_per_multiprocessor": 64
+      }
+    },
+    {
+      "file": "derived\\B0_t2_raw.csv",
+      "sha256": "c46f8c6b9a0c4832050dfb6f6191cc0a92594c174597fff2167b52fe948b0e58",
+      "values": {
+        "device__attribute_max_ipc_per_multiprocessor": 4,
+        "device__attribute_max_ipc_per_scheduler": 1,
+        "device__attribute_max_warps_per_scheduler": 16,
+        "device__attribute_max_warps_per_multiprocessor": 64
+      }
+    }
+  ],
+  "aggregate_warp_issue_slots_per_SM_cycle": 4,
+  "warp_issue_slots_per_scheduler_cycle": 1,
+  "schedulers_per_SM": 4,
+  "interpretation": "Counter/device capacity; not observed sustained throughput. Group/FIFO model uses aggregate four slots; per-SMSP warp skew remains unknown.",
+  "model_enabled": false,
+  "effective_model_value": null
+}

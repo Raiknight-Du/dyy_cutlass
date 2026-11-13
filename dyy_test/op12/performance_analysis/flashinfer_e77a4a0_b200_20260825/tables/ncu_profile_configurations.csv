@@ -1,0 +1,10 @@
+﻿id,profile,path,batch,heads,seq,d,dtype,use_cp,total_tokens,cp_chunk_len,partitions_per_head,expected_core_grid
+N1,noncp_underfilled_fp16,non-CP,1,16/16/16,32768,128,FP16,False,32768,,,16
+N2,noncp_nearfull_fp16,non-CP,8,16/16/16,4096,128,FP16,False,32768,,,128
+N3,noncp_underfilled_bf16,non-CP,1,16/16/16,32768,128,BF16,False,32768,,,16
+C1,cp_s8192_fp16,CP,1,16/16/16,8192,128,FP16,True,8192,1024,8,128
+C2,cp_s16384_fp16,CP,1,16/16/16,16384,128,FP16,True,16384,2048,8,128
+C3,cp_s32768_fp16,CP,1,16/16/16,32768,128,FP16,True,32768,4096,8,128
+C4,cp_s8192_bf16,CP,1,16/16/16,8192,128,BF16,True,8192,1024,8,128
+C5,cp_s16384_bf16,CP,1,16/16/16,16384,128,BF16,True,16384,2048,8,128
+C6,cp_s32768_bf16,CP,1,16/16/16,32768,128,BF16,True,32768,4096,8,128

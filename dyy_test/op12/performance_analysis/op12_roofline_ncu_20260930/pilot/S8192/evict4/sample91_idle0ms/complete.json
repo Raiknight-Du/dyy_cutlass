@@ -1,0 +1,56 @@
+{
+  "mode": "pilot",
+  "shape": 8192,
+  "sample": 91,
+  "evict_factor": 4,
+  "elapsed_s": 8.291923999786377,
+  "app_pass_count": 1,
+  "app_passes": [
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/pilot/S8192/evict4/sample91_idle0ms/app_passes/app_pass_498608_1790771547362074475/pass_manifest.json"
+  ],
+  "all_passes_checked": true,
+  "report_sha256": "4a5a25a97b085fefd418d1bfcad99a7a32985ce0491ef5e04f3d96baf0df4f2e",
+  "csv_sha256": "216624cbcea8ab6eb6d6f4241e9def85e7f79231dcac0c74bfd26a980918f4cc",
+  "kernels": [
+    {
+      "kernel": "K1",
+      "name": "kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgdn_cp_prefillCPDeltaRuleTPrecomputeSm100_object_at__CopyAtom_ThrID10_TVLayoutSrc1409601_TVLayoutDst1409601_Valuetypef16_tensor000o1011_0",
+      "context": "1",
+      "stream": "13",
+      "passes": 1,
+      "read_bytes": 34104320,
+      "write_bytes": 0,
+      "duration_ns": 23520
+    },
+    {
+      "kernel": "K2",
+      "name": "kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleMNPrecomputeUtcmma1Sm100_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID__0",
+      "context": "1",
+      "stream": "13",
+      "passes": 1,
+      "read_bytes": 36510720,
+      "write_bytes": 7515392,
+      "duration_ns": 37504
+    },
+    {
+      "kernel": "K3",
+      "name": "kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleFixupUtcmmaSm100_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_0",
+      "context": "1",
+      "stream": "13",
+      "passes": 1,
+      "read_bytes": 1075456,
+      "write_bytes": 2664960,
+      "duration_ns": 27488
+    },
+    {
+      "kernel": "K4",
+      "name": "kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_Sh_0",
+      "context": "1",
+      "stream": "13",
+      "passes": 1,
+      "read_bytes": 109402368,
+      "write_bytes": 46841600,
+      "duration_ns": 56736
+    }
+  ]
+}

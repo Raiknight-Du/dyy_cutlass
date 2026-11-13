@@ -1,0 +1,34 @@
++ /usr/bin/python3 /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op2_eq_corrected/scripts/generate_best.py
+generated /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op2_eq_corrected/op2_eq_corrected_best.cu
+generated /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op2_eq_corrected/results/op2_eq_corrected_best_configs.csv
++ /usr/local/cuda-13.0/bin/nvcc -std=c++17 -O3 -arch=sm_100a --expt-relaxed-constexpr -lineinfo -Iinclude -Itools/util/include -Iexamples/common -I/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op2_eq_corrected /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op2_eq_corrected/op2_eq_corrected_best.cu -o /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op2_eq_corrected/bin/op2_eq_corrected_best
+include/cutlass/gemm/kernel/sm100_static_tile_scheduler.hpp(53): warning #20012-D: __device__ annotation is ignored on a non-virtual function("StaticPersistentTileScheduler100") that is explicitly defaulted on its first declaration
+    __inline__ __attribute__((always_inline)) __attribute__((device)) __attribute__((host))
+                                                             ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+include/cutlass/gemm/kernel/sm100_static_tile_scheduler.hpp(53): warning #20012-D: __host__ annotation is ignored on a non-virtual function("StaticPersistentTileScheduler100") that is explicitly defaulted on its first declaration
+    __inline__ __attribute__((always_inline)) __attribute__((device)) __attribute__((host))
+                                                                                     ^
+
+include/cutlass/gemm/kernel/sm100_static_tile_scheduler.hpp(53): warning #20012-D: __device__ annotation is ignored on a non-virtual function("StaticPersistentTileScheduler100") that is explicitly defaulted on its first declaration
+    __inline__ __attribute__((always_inline)) __attribute__((device)) __attribute__((host))
+                                                             ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+include/cutlass/gemm/kernel/sm100_static_tile_scheduler.hpp(53): warning #20012-D: __host__ annotation is ignored on a non-virtual function("StaticPersistentTileScheduler100") that is explicitly defaulted on its first declaration
+    __inline__ __attribute__((always_inline)) __attribute__((device)) __attribute__((host))
+                                                                                     ^
+
+include/cutlass/gemm/kernel/sm100_static_tile_scheduler.hpp(53): warning #20012-D: __device__ annotation is ignored on a non-virtual function("StaticPersistentTileScheduler100") that is explicitly defaulted on its first declaration
+    __inline__ __attribute__((always_inline)) __attribute__((device)) __attribute__((host))
+                                                             ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+include/cutlass/gemm/kernel/sm100_static_tile_scheduler.hpp(53): warning #20012-D: __host__ annotation is ignored on a non-virtual function("StaticPersistentTileScheduler100") that is explicitly defaulted on its first declaration
+    __inline__ __attribute__((always_inline)) __attribute__((device)) __attribute__((host))
+                                                                                     ^
+

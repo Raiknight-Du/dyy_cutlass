@@ -1,0 +1,16 @@
+{
+  "recorded_after_completion": true,
+  "purpose": "Record corrective branch identities and bounded extensions transparently; this is not retroactive evidence that a failed gate passed.",
+  "scope_unchanged": "OriginalFP16K4, B1H16D128, S8192/16384/32768; steady64-token loop; no original upstream changes, no performance optimization project.",
+  "new_branches": [
+    "Exact native LDTM-to-NOP control after runtime-predicate control failed nonload identity;8NCUcaptures,1/4activewarps,32dp/16dp subtypes.",
+    "One declared extension toN16384 for16dpNOP Event gate; fresh3processes, no pooling of failed oldpoints.",
+    "Register-only PACK/IADD3 sameCUBIN aggregate-ALU sharing control;6NCUcaptures; native operands and dynamic counts checked.",
+    "Host-only activewarp timestamp aggregation correction; same final CUBIN; raw perwarp cycles added.",
+    "One declared ALU workload extension toN16384 after an Event gate failure; all3modes passed strict dual-domain1%."
+  ],
+  "GPU_protocol": "Serial runner;3quietchecks30seconds apart before batches; no externalprocess terminated; no SM/HBM frequency or power policy changed.",
+  "model_inputs": "Only nativework, declared/official/counter/independently reviewed conditional rates and bounded one-instruction completion data. No whole K4 phase or whole-MMA-package measured time enters a theoretical node.",
+  "model_enabled": false,
+  "effective_model_value": null
+}

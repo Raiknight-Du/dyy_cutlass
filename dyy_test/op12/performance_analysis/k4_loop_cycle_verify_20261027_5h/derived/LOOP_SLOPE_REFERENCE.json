@@ -1,0 +1,35 @@
+[
+  {
+    "S": 8192,
+    "C": 1024,
+    "L": 16,
+    "calls": 180,
+    "mean_cycle_slope": 3175.3252645502644,
+    "median_cycle_slope": 3175.642857142857,
+    "min_R2": 0.9994376069637888,
+    "mean_return_interval": 3177.0,
+    "comparison": "Instrumented same-invocation CG1 return regression; local bias not fully bounded; not original-kernel phase ground truth."
+  },
+  {
+    "S": 16384,
+    "C": 2048,
+    "L": 32,
+    "calls": 180,
+    "mean_cycle_slope": 3163.680890522876,
+    "median_cycle_slope": 3158.7867647058824,
+    "min_R2": 0.9992082149748196,
+    "mean_return_interval": 3163.0128472222223,
+    "comparison": "Instrumented same-invocation CG1 return regression; local bias not fully bounded; not original-kernel phase ground truth."
+  },
+  {
+    "S": 32768,
+    "C": 4096,
+    "L": 64,
+    "calls": 180,
+    "mean_cycle_slope": 3141.200245151252,
+    "median_cycle_slope": 3137.733608336952,
+    "min_R2": 0.9998931320702598,
+    "mean_return_interval": 3142.941087962963,
+    "comparison": "Instrumented same-invocation CG1 return regression; local bias not fully bounded; not original-kernel phase ground truth."
+  }
+]

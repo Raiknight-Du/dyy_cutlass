@@ -1,0 +1,16 @@
+
+Error: shared memory usage in '@kernels::@kernel_cutlass_kernel_causal_k3_privateK3FinalCOALESCED_M2_N1_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_64648_TV_Layout_A_164864164_TV__0' may exceed available memory set in kernel launch. Allocated: 164864 bytes. Used: 197632 bytes.
+
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/run_experiment.py", line 234, in <module>
+    if __name__=='__main__': main()
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/run_experiment.py", line 108, in main
+    fn(*rt,**kw); torch.cuda.synchronize()
+  File "/usr/local/lib/python3.10/dist-packages/torch/cuda/__init__.py", line 1162, in synchronize
+    return torch._C._cuda_synchronize()
+torch.AcceleratorError: CUDA error: an illegal memory access was encountered
+Search for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

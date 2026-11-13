@@ -1,0 +1,82 @@
+{
+  "B0": {
+    "cubin": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r6_ncu01/B0/replays/replay_pid1447936/binary/B0/cutlass___call___flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgm.sm_100a.cubin",
+    "cubin_sha256": "06ebd78963371a30adac142c06b86950ec300b6cb762a209c5afc67628941814",
+    "resources": "Resource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_Sh_0:\n  REG:168 STACK:24 SHARED:1024 LOCAL:0 CONSTANT[2]:16 CONSTANT[0]:2480 TEXTURE:0 SURFACE:0 SAMPLER:0",
+    "registers": [
+      "168"
+    ],
+    "stack": [
+      "24"
+    ],
+    "counts": {
+      "LDL": 41,
+      "STL": 5,
+      "UTCHMMA": 44,
+      "UTMALDG": 7,
+      "UTMASTG": 2,
+      "LDTM": 13,
+      "STTM": 24,
+      "HMMA": 0,
+      "LDG": 198,
+      "STG": 64,
+      "F2FP": 223,
+      "BAR": 8,
+      "UTCBAR": 16,
+      "SYNCS": 314,
+      "FENCE": 27,
+      "MEMBAR": 9,
+      "FFMA": 0,
+      "FMUL": 94,
+      "FADD": 125,
+      "LDSM": 12,
+      "STSM": 16,
+      "LDS": 144,
+      "STS": 22,
+      "PRMT": 0
+    },
+    "normalized_sha256": "ffdd0bfd34810db217be4b5eb1e7404c06fffb21a064bb0345a6c380f2136976",
+    "clock_pc": [],
+    "smid_pc": []
+  },
+  "V0": {
+    "cubin": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r6_ncu01/B0/replays/replay_pid1447936/binary/V0/cutlass___call___flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgm.sm_100a.cubin",
+    "cubin_sha256": "6ca13a1d315d7a36ca221e0ec1752dfb1d6c2c4ed2acb6a574db925ed0fce6f4",
+    "resources": "Resource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_Sh_0:\n  REG:168 STACK:24 SHARED:1024 LOCAL:0 CONSTANT[2]:16 CONSTANT[0]:2480 TEXTURE:0 SURFACE:0 SAMPLER:0",
+    "registers": [
+      "168"
+    ],
+    "stack": [
+      "24"
+    ],
+    "counts": {
+      "LDL": 41,
+      "STL": 5,
+      "UTCHMMA": 44,
+      "UTMALDG": 7,
+      "UTMASTG": 2,
+      "LDTM": 13,
+      "STTM": 24,
+      "HMMA": 0,
+      "LDG": 102,
+      "STG": 64,
+      "F2FP": 223,
+      "BAR": 8,
+      "UTCBAR": 16,
+      "SYNCS": 314,
+      "FENCE": 27,
+      "MEMBAR": 9,
+      "FFMA": 0,
+      "FMUL": 94,
+      "FADD": 125,
+      "LDSM": 12,
+      "STSM": 16,
+      "LDS": 144,
+      "STS": 22,
+      "PRMT": 0
+    },
+    "normalized_sha256": "0eb98faddf0c0ba776cd5c47c0a47b61495bdc96b659da193ba46bfde8e61d69",
+    "clock_pc": [],
+    "smid_pc": []
+  }
+}

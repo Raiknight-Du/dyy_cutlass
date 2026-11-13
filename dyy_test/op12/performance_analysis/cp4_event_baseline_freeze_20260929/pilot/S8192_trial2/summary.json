@@ -1,0 +1,101 @@
+{
+  "probes": {
+    "P0": {
+      "n": 20,
+      "median_us": 1.2159999459981918,
+      "mean_us": 1.2655999511480331,
+      "p5_us": 1.2159999459981918,
+      "p95_us": 1.580799953080714,
+      "cv_pct": 11.791206574471573,
+      "min_us": 1.2159999459981918,
+      "max_us": 1.8240000354126096,
+      "batch_per_call_mean_us": 143.73120069503784
+    },
+    "P1": {
+      "n": 20,
+      "median_us": 24.57600086927414,
+      "mean_us": 24.566400796175003,
+      "p5_us": 24.529600609093904,
+      "p95_us": 24.58400083705783,
+      "cv_pct": 0.3246044724359936,
+      "min_us": 24.25600029528141,
+      "max_us": 24.73600022494793,
+      "batch_per_call_mean_us": 145.8847999572754
+    },
+    "P2": {
+      "n": 20,
+      "median_us": 61.43999844789505,
+      "mean_us": 60.6751998886466,
+      "p5_us": 59.39040146768093,
+      "p95_us": 61.664000153541565,
+      "cv_pct": 1.6092025870770934,
+      "min_us": 59.36000123620033,
+      "max_us": 61.664000153541565,
+      "batch_per_call_mean_us": 146.97599411010742
+    },
+    "P3": {
+      "n": 20,
+      "median_us": 86.01599931716919,
+      "mean_us": 86.19679920375347,
+      "p5_us": 85.9839990735054,
+      "p95_us": 87.75999769568443,
+      "cv_pct": 0.6629865948603052,
+      "min_us": 85.9839990735054,
+      "max_us": 88.06400001049042,
+      "batch_per_call_mean_us": 145.97920179367065
+    },
+    "P4": {
+      "n": 20,
+      "median_us": 142.14399456977844,
+      "mean_us": 142.43039563298225,
+      "p5_us": 140.09599387645721,
+      "p95_us": 144.3055957555771,
+      "cv_pct": 1.1391631148281856,
+      "min_us": 140.09599387645721,
+      "max_us": 146.464005112648,
+      "batch_per_call_mean_us": 143.77280473709106
+    }
+  },
+  "stage_estimates": {
+    "K1": {
+      "estimate_us": 23.30080084502697,
+      "method": "mean(P1)-mean(P0)",
+      "independent_probe_standard_error_us": 0.037834172709190046,
+      "is_direct_single_kernel_event_interval": false
+    },
+    "K2": {
+      "estimate_us": 36.1087990924716,
+      "method": "mean(P2)-mean(P1)",
+      "independent_probe_standard_error_us": 0.219053691958953,
+      "is_direct_single_kernel_event_interval": false
+    },
+    "K3": {
+      "estimate_us": 25.52159931510687,
+      "method": "mean(P3)-mean(P2)",
+      "independent_probe_standard_error_us": 0.2529736149719123,
+      "is_direct_single_kernel_event_interval": false
+    },
+    "K4": {
+      "estimate_us": 56.23359642922878,
+      "method": "mean(P4)-mean(P3)",
+      "independent_probe_standard_error_us": 0.38465146887243534,
+      "is_direct_single_kernel_event_interval": false
+    }
+  },
+  "chain_estimate_us": 141.16479568183422,
+  "native_batch_per_call": {
+    "n": 3,
+    "median_us": 136.63519620895386,
+    "mean_us": 136.66826486587524,
+    "p5_us": 136.6265594959259,
+    "p95_us": 136.73311829566956,
+    "cv_pct": 0.03928849029435402,
+    "min_us": 136.62559986114502,
+    "max_us": 136.74399852752686
+  },
+  "marker_check_pct_max": 7.568180225935017,
+  "chain_vs_native_pct": 3.3151044522623074,
+  "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+  "input_signature": "4e828c9372df15ebbf71ca0bd50027c6d086a70127e4d2f98aed2c3ae5d1b6b6",
+  "status": "PASS"
+}

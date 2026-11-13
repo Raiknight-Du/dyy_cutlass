@@ -1,0 +1,12 @@
+{
+  "UTC": "2026-10-26T22:21:11.622531+00:00",
+  "upstream_HEAD": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "upstream_clean": true,
+  "GPU": "name, uuid, driver_version, compute_cap, memory.total [MiB], clocks.current.sm [MHz], clocks.current.memory [MHz], power.draw [W], temperature.gpu\nNVIDIA B200, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 580.159.03, 10.0, 183359 MiB, 120 MHz, 3996 MHz, 188.71 W, 32",
+  "SM_count": 148,
+  "active_apps": "",
+  "NCU": "NVIDIA (R) Nsight Compute Command Line Profiler\nCopyright (c) 2018-2026 NVIDIA Corporation\nVersion 2026.2.1.0 (build 38283040) (public-release)",
+  "CUDA": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Tue_Jun_09_02:43:40_PM_PDT_2026\nCuda compilation tools, release 13.3, V13.3.73\nBuild cuda_13.3.r13.3/compiler.38244171_0",
+  "frequency_policy_modified": false,
+  "model_enabled": false
+}

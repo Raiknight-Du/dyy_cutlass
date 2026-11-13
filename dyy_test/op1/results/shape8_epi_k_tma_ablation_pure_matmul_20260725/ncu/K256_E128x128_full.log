@@ -1,0 +1,8 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 4090998 (/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/shape8_epi_k_tma_ablation_pure_matmul_20260725/bin/full)
+RESOURCE,M256_N256_K256_E128x128_C2x1x1,stages=4,mainloop_tensor_B=155648,mainloop_pipeline_B=64,epilogue_tensor_B=66560,epilogue_pipeline_B=32,total_shared_B=223232,ab_tma_transaction_B=65536,sf_tma_transaction_B=12288
+==PROF== Profiling "device_kernel" - 0 (1/1): 0%....50%....100% - 16 passes
+RESULT,8,M256_N256_K256_E128x128_C2x1x1,ok,1,1051.38
+==PROF== Disconnected from process 4090998
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/shape8_epi_k_tma_ablation_pure_matmul_20260725/ncu/K256_E128x128_full.ncu-rep

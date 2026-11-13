@@ -1,0 +1,6 @@
+{"event": "admission", "quiet": 1, "state": {"UTC": "2026-10-26T19:49:17.914257+00:00", "gpu": "0, 120, 3996, 31, 188.59", "apps": ""}}
+{"event": "admission", "quiet": 2, "state": {"UTC": "2026-10-26T19:49:47.979050+00:00", "gpu": "0, 120, 3996, 31, 188.67", "apps": ""}}
+{"event": "admission", "quiet": 3, "state": {"UTC": "2026-10-26T19:50:18.042401+00:00", "gpu": "0, 120, 3996, 31, 188.71", "apps": ""}}
+{"event": "start", "tag": "GATEJOIN_t0", "before": {"UTC": "2026-10-26T19:50:18.075725+00:00", "gpu": "0, 120, 3996, 31, 188.70", "apps": ""}, "command": ["/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python", "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_v_join.py", "--variant", "GATEJOIN", "--out", "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/gatejoin_screen/GATEJOIN_t0", "--samples", "3"]}
+{"event": "finish", "tag": "GATEJOIN_t0", "returncode": 0, "after": {"UTC": "2026-10-26T19:50:26.884121+00:00", "gpu": "0, 1965, 3996, 33, 254.74", "apps": ""}}
+{"event": "COMPLETE", "phase": "screen"}

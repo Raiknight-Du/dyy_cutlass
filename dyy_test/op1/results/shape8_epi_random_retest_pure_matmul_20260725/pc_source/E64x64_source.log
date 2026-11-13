@@ -1,0 +1,6 @@
+==PROF== Connected to process 4145580 (/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/shape8_epi_random_retest_pure_matmul_20260725/bin/op1_shape8_epi_random_retest)
+RESOURCE,M256_N256_K256_E64x64_C2x1x1,stages=5,mainloop_tensor_B=194560,mainloop_pipeline_B=80,epilogue_tensor_B=17408,epilogue_pipeline_B=64,total_shared_B=212992,ab_tma_transaction_B=65536,sf_tma_transaction_B=12288
+==PROF== Profiling "device_kernel": 0%....50%....100% - 5 passes
+RESULT,8,M256_N256_K256_E64x64_C2x1x1,ok,1,0.07808
+==PROF== Disconnected from process 4145580
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/shape8_epi_random_retest_pure_matmul_20260725/pc_source/E64x64_source.ncu-rep

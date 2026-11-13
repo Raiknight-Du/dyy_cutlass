@@ -1,0 +1,190 @@
+{
+  "phase": "slope",
+  "idle_checks": [
+    {
+      "apps": {
+        "argv": [
+          "nvidia-smi",
+          "--query-compute-apps=pid",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "unix_ns": 1791844910609503463
+      },
+      "status": {
+        "argv": [
+          "nvidia-smi",
+          "--query-gpu=uuid,utilization.gpu,clocks.sm",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 0 %, 1965 MHz\n",
+        "stderr": "",
+        "unix_ns": 1791844910622815359
+      }
+    },
+    {
+      "apps": {
+        "argv": [
+          "nvidia-smi",
+          "--query-compute-apps=pid",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "unix_ns": 1791844940663939628
+      },
+      "status": {
+        "argv": [
+          "nvidia-smi",
+          "--query-gpu=uuid,utilization.gpu,clocks.sm",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 0 %, 1965 MHz\n",
+        "stderr": "",
+        "unix_ns": 1791844940677614812
+      }
+    },
+    {
+      "apps": {
+        "argv": [
+          "nvidia-smi",
+          "--query-compute-apps=pid",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "unix_ns": 1791844970696863831
+      },
+      "status": {
+        "argv": [
+          "nvidia-smi",
+          "--query-gpu=uuid,utilization.gpu,clocks.sm",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 0 %, 1965 MHz\n",
+        "stderr": "",
+        "unix_ns": 1791844970711081788
+      }
+    }
+  ],
+  "commands": [
+    {
+      "name": "slope_t1",
+      "argv": [
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/run_experiment.py",
+        "--phase",
+        "slope",
+        "--trial",
+        "1",
+        "--out",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/slope_v1/slope_t1",
+        "--repeats",
+        "16",
+        "32",
+        "64",
+        "128",
+        "256",
+        "512",
+        "1024",
+        "2048"
+      ],
+      "start_ns": 1791844971007515958,
+      "end_ns": 1791844981819701111,
+      "returncode": 0
+    },
+    {
+      "name": "slope_t2",
+      "argv": [
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/run_experiment.py",
+        "--phase",
+        "slope",
+        "--trial",
+        "2",
+        "--out",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/slope_v1/slope_t2",
+        "--repeats",
+        "16",
+        "32",
+        "64",
+        "128",
+        "256",
+        "512",
+        "1024",
+        "2048"
+      ],
+      "start_ns": 1791844981819759650,
+      "end_ns": 1791844992831788294,
+      "returncode": 0
+    },
+    {
+      "name": "slope_t3",
+      "argv": [
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/run_experiment.py",
+        "--phase",
+        "slope",
+        "--trial",
+        "3",
+        "--out",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/slope_v1/slope_t3",
+        "--repeats",
+        "16",
+        "32",
+        "64",
+        "128",
+        "256",
+        "512",
+        "1024",
+        "2048"
+      ],
+      "start_ns": 1791844992831843245,
+      "end_ns": 1791845003843570934,
+      "returncode": 0
+    }
+  ],
+  "prior_lock_range": "UNKNOWN; reset to driver defaults",
+  "lock": {
+    "argv": [
+      "sudo",
+      "-n",
+      "nvidia-smi",
+      "-i",
+      "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf",
+      "--lock-gpu-clocks=1845,1845",
+      "--mode=0"
+    ],
+    "returncode": 0,
+    "stdout": "GPU clocks set to \"(gpuClkMin 1845, gpuClkMax 1845)\" for GPU 00000000:05:00.0\nAll done.\n",
+    "stderr": "",
+    "unix_ns": 1791844970755229953
+  },
+  "status": "COMPLETED",
+  "reset": {
+    "argv": [
+      "sudo",
+      "-n",
+      "nvidia-smi",
+      "-i",
+      "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf",
+      "--reset-gpu-clocks"
+    ],
+    "returncode": 0,
+    "stdout": "All done.\n",
+    "stderr": "",
+    "unix_ns": 1791845003878207492
+  },
+  "sm_mhz_histogram": {
+    "1845": 3260
+  },
+  "competition": [],
+  "frequency_valid": true
+}

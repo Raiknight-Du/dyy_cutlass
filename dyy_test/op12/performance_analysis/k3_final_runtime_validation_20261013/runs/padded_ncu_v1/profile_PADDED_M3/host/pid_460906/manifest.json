@@ -1,0 +1,49 @@
+{
+  "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "generated_sha256": "cd865a5982f81afcfaab4743be6f9439d2fe728fe6f5944ac4f21fb52b040690",
+  "runner_sha256": "071f5191c684eab575f3fea6862c9e85dc57f71d15c8c4c506acd2d1aefc5b0b",
+  "helper_micro_sha256": "534de2399d0e93abe71d669464ce7258b0bac687703ef8d4fe0e221f49146386",
+  "case": [
+    32768,
+    4096,
+    16
+  ],
+  "trial": 1,
+  "gpu_before": {
+    "gpu": "name, uuid, driver_version, memory.total [MiB], clocks.current.sm [MHz], clocks.current.memory [MHz], power.draw [W], temperature.gpu\nNVIDIA B200, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 580.159.03, 183359 MiB, 1845 MHz, 3996 MHz, 241.72 W, 33\n",
+    "processes": "pid, process_name, used_gpu_memory [MiB]\n"
+  },
+  "gpu_after": {
+    "gpu": "name, uuid, driver_version, memory.total [MiB], clocks.current.sm [MHz], clocks.current.memory [MHz], power.draw [W], temperature.gpu\nNVIDIA B200, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 580.159.03, 183359 MiB, 1845 MHz, 3996 MHz, 249.93 W, 34\n",
+    "processes": "pid, process_name, used_gpu_memory [MiB]\n460906, /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python, 1490 MiB\n"
+  },
+  "argv": [
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/run_padded.py",
+    "--phase",
+    "profile",
+    "--style",
+    "PADDED",
+    "--mode",
+    "3",
+    "--out",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/profile_PADDED_M3/host"
+  ],
+  "shared_runtime_mode_binary": true,
+  "binary": {
+    "UPSTREAM_event": {
+      "cutlass___call___flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleFixupUtcmmaSm100_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div.sass": "19bada43c7210a2dca66a1a55471ddbe929597502800b4e7f4d92702e7e8eaa5",
+      "cutlass___call___flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleFixupUtcmmaSm100_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div.sm_100a.cubin": "4e1e8742827bde20ded79ef52609af44994436e382ed48e680aedec4c070695e",
+      "cutlass___call___flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleFixupUtcmmaSm100_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div.sm_100a.ptx": "da06db75fae6907f8df17d478fee59ef83fe2496a927d9305753c4b6603fc2b3"
+    },
+    "RUNTIME": {
+      "cutlass___call___causal_k3_privateK3FinalRUNTIME_M2_N1_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div128i64div1281_Tensorgmemo1_Tensorgmemo.sass": "1db94d9566674c55c542e8c5bca6020c6b7ba9930f5a428249e243929e09b22e",
+      "cutlass___call___causal_k3_privateK3FinalRUNTIME_M2_N1_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div128i64div1281_Tensorgmemo1_Tensorgmemo.sm_100a.cubin": "0c1a5dd64097703833ca88e73c3afe4626890b559cedf5f7e2f4a7d04a55210e",
+      "cutlass___call___causal_k3_privateK3FinalRUNTIME_M2_N1_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div128i64div1281_Tensorgmemo1_Tensorgmemo.sm_100a.ptx": "74679ba75ed895da8c720a3f461114814e0bd81f3c90b9c2e5a3e50a2a8c7495"
+    },
+    "PADDED": {
+      "cutlass___call___causal_k3_privateK3FinalPADDED_M2_N1_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div128i64div1281_Tensorgmemo1_Tensorgmemo1.sass": "2462833c6986d7e8b75762915a5d72956bc590463d58bf1c1cd293caea165f2e",
+      "cutlass___call___causal_k3_privateK3FinalPADDED_M2_N1_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div128i64div1281_Tensorgmemo1_Tensorgmemo1.sm_100a.cubin": "c75f92214a62c3068e853994cca8a0bd5a191be2f07ef71e8c7aff547941dfca",
+      "cutlass___call___causal_k3_privateK3FinalPADDED_M2_N1_object_at__Tensorgmemo1i64i64i64_Tensorgmemoi641i64i64_Tensorgmemodiv128i64div128i64div128i64div1281_Tensorgmemo1_Tensorgmemo1.sm_100a.ptx": "7aca8ea90ccc1b3c996d48cd39a4056f8a702b07e0bf55ec59eb949e09967f6a"
+    }
+  }
+}

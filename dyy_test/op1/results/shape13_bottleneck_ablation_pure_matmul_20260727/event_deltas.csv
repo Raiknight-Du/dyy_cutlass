@@ -1,0 +1,10 @@
+epilogue,comparison,delta_us
+e128,Full - Shell,2.038057499999999
+e128,TMA exposed without MMA,2.0277224999999994
+e128,MMA exposed without input TMA,1.3788549999999997
+e128,TMA exposed with MMA,0.6592024999999992
+e128,MMA exposed with input TMA,0.010334999999999539
+e128,TMA x MMA interaction,-1.3685200000000002
+e128,UTCCP exposed,0.0018050000000009447
+e128,D store exposed,4.102024499999999
+e128,TMEM load/convert/SMEM staging exposed,2.0780640000000012

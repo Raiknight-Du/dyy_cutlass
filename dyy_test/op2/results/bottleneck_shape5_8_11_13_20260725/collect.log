@@ -1,0 +1,21 @@
+[NCU] shape 5
+[EXPORT] shape 5 raw
+[EXPORT] shape 5 details
+[NCU] shape 8
+[EXPORT] shape 8 raw
+[EXPORT] shape 8 details
+[NCU] shape 11
+[EXPORT] shape 11 raw
+[EXPORT] shape 11 details
+[NCU] shape 13
+[EXPORT] shape 13 raw
+[EXPORT] shape 13 details
+[NSYS] shape 5
+[NSYS STATS] shape 5
+[NSYS] shape 8
+[NSYS STATS] shape 8
+[NSYS] shape 11
+[NSYS STATS] shape 11
+[NSYS] shape 13
+[NSYS STATS] shape 13
+Collection complete.

@@ -1,0 +1,60 @@
+--- original/run_probe.py
++++ graph_cohort/run_probe_graph.py
+@@ -6,7 +6,8 @@
+ """
+ from pathlib import Path
+ import argparse,collections,csv,hashlib,json,os,re,struct,subprocess,sys
+-O=Path(__file__).resolve().parent
++O=Path('/home/ubuntu/workspace/op12/k4_10h_native_r4_20261026')
++sys.path.insert(0,str(O))
+ def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+ def native_text(p):
+     raw=Path(p).read_bytes();off=struct.unpack_from('<Q',raw,40)[0];sz,num,si=struct.unpack_from('<HHH',raw,58)
+@@ -26,7 +27,7 @@
+     p.add_argument('--out',type=Path,required=True);p.add_argument('--authorization',type=Path,required=True)
+     p.add_argument('--gate',type=Path,default=O/'STATIC_GATE.json');p.add_argument('--trial',type=int,default=0)
+     p.add_argument('--config',choices=['all','CONTROL','SHADER_ONLY','TC_ONLY','BOTH'],default='all')
+-    p.add_argument('--points',default='');a=p.parse_args()
++    p.add_argument('--points',default='');a=p.parse_args();assert a.mode in ['screen','formal'],'Graph cohort only; no new NCU/prepare'
+     gate=json.loads(a.gate.read_text());auth=json.loads(a.authorization.read_text())
+     assert auth['round']=='R4' and ('NCU' if a.mode=='profile' else a.mode) in auth['approved_modes']
+     assert auth['source_SHA256']==gate['source_SHA256']['shared_coupling.py']==sha(O/'shared_coupling.py')
+@@ -68,6 +69,7 @@
+        'admission':auth,'helper_invoked':False,'model_enabled':False}
+     (out/'ACTUAL_METADATA_GATE.json').write_text(json.dumps(actual,indent=2))
+     assert static_ok,'Actual CUDA metadata text/resource changed: stop before any helper invocation'
++    assert actual['actual_CUBIN_SHA256']==gate['CPU_CUBIN_SHA256'],'Graph cohort must preserve whole actual CUBIN hash'
+     # Query occupancy from the same frozen CUBIN, never launch the extra module.
+     mod=check_cuda(cuda.cuModuleLoadData(cubin.read_bytes()))[0]
+     symbol=next(iter(actual_text)).removeprefix('.text.')
+@@ -95,19 +97,23 @@
+     ew.writeheader();tw.writeheader();invocation=0
+     def launch(n,m):
+         with torch.cuda.stream(stream):fn(*args,n,m,cs)
++    from audited_event_graph import AuditedEventGraph
++    # One explicitly disclosed lazy-module call, outside the 20 graph warmups.
++    launch(128,0);stream.synchronize()
++    actual['helper_invoked']=True;actual['direct_lazy_invocations']=1
++    (out/'ACTUAL_METADATA_GATE.json').write_text(json.dumps(actual,indent=2))
++    (out/'GRAPH_TIMING_PROTOCOL.json').write_text(json.dumps(dict(direct_lazy_invocations=1,direct_lazy_mode='CONTROL',direct_lazy_N=128,graph_replays_warmup_per_mode_per_N=20,external_events=True,kernel_changed=False,model_enabled=False),indent=2))
+     for n in nn:
++        timers={}
+         for m in modes:
+-            for _ in range(20):launch(n,m)
++            timers[m]=AuditedEventGraph(lambda n=n,m=m:launch(n,m),stream,out/'GRAPH_NODES'/f'N{n}_M{m}',
++                'kernel_cutlass_kernel_shared_couplingSharedCoupling',[128,1,1],[192,1,1],225280,79)
++            for _ in range(20):timers[m].replay()
+             stream.synchronize()
+         for sample in range(samples):
+             order=modes if sample%2==0 else list(reversed(modes))
+             for m in order:
+-                begin,end=torch.cuda.Event(enable_timing=True),torch.cuda.Event(enable_timing=True)
+-                if a.mode=='profile':torch.cuda.profiler.start();torch.cuda.nvtx.range_push('R4_TARGET')
+-                with torch.cuda.stream(stream):begin.record();fn(*args,n,m,cs);end.record()
+-                end.synchronize()
+-                if a.mode=='profile':torch.cuda.nvtx.range_pop();torch.cuda.profiler.stop()
+-                event=begin.elapsed_time(end)*1000
++                event=timers[m].measure_us()
+                 hh=trace.cpu().tolist();ss=checks.cpu().tolist();oo=go.cpu()
+                 assert bool(torch.all(oo==(128.0 if m&2 else 0.0))),('QK output',n,m)
+                 durations=[];sms=[]

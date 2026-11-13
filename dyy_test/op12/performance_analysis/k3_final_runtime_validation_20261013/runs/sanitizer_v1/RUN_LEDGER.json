@@ -1,0 +1,139 @@
+{
+  "phase": "sanitizer",
+  "idle_checks": [
+    {
+      "apps": {
+        "argv": [
+          "nvidia-smi",
+          "--query-compute-apps=pid",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "unix_ns": 1791845090850820387
+      },
+      "status": {
+        "argv": [
+          "nvidia-smi",
+          "--query-gpu=uuid,utilization.gpu,clocks.sm",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 0 %, 1965 MHz\n",
+        "stderr": "",
+        "unix_ns": 1791845090864862548
+      }
+    },
+    {
+      "apps": {
+        "argv": [
+          "nvidia-smi",
+          "--query-compute-apps=pid",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "unix_ns": 1791845120930025325
+      },
+      "status": {
+        "argv": [
+          "nvidia-smi",
+          "--query-gpu=uuid,utilization.gpu,clocks.sm",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 0 %, 1965 MHz\n",
+        "stderr": "",
+        "unix_ns": 1791845120943864368
+      }
+    },
+    {
+      "apps": {
+        "argv": [
+          "nvidia-smi",
+          "--query-compute-apps=pid",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "unix_ns": 1791845150986079716
+      },
+      "status": {
+        "argv": [
+          "nvidia-smi",
+          "--query-gpu=uuid,utilization.gpu,clocks.sm",
+          "--format=csv,noheader"
+        ],
+        "returncode": 0,
+        "stdout": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 0 %, 1965 MHz\n",
+        "stderr": "",
+        "unix_ns": 1791845151000101817
+      }
+    }
+  ],
+  "commands": [
+    {
+      "name": "profile",
+      "argv": [
+        "/usr/local/cuda/bin/compute-sanitizer",
+        "--tool",
+        "memcheck",
+        "--error-exitcode",
+        "7",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/run_experiment.py",
+        "--phase",
+        "profile",
+        "--style",
+        "COALESCED",
+        "--mode",
+        "3",
+        "--out",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/sanitizer_v1/profile/host"
+      ],
+      "start_ns": 1791845151298285948,
+      "end_ns": 1791845153702265689,
+      "returncode": 6
+    }
+  ],
+  "prior_lock_range": "UNKNOWN; reset to driver defaults",
+  "lock": {
+    "argv": [
+      "sudo",
+      "-n",
+      "nvidia-smi",
+      "-i",
+      "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf",
+      "--lock-gpu-clocks=1845,1845",
+      "--mode=0"
+    ],
+    "returncode": 0,
+    "stdout": "GPU clocks set to \"(gpuClkMin 1845, gpuClkMax 1845)\" for GPU 00000000:05:00.0\nAll done.\n",
+    "stderr": "",
+    "unix_ns": 1791845151046065968
+  },
+  "status": "FAILED_OR_PAUSED",
+  "error": "AssertionError('profile failed; inspect log')",
+  "reset": {
+    "argv": [
+      "sudo",
+      "-n",
+      "nvidia-smi",
+      "-i",
+      "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf",
+      "--reset-gpu-clocks"
+    ],
+    "returncode": 0,
+    "stdout": "All done.\n",
+    "stderr": "",
+    "unix_ns": 1791845153736227748
+  },
+  "sm_mhz_histogram": {
+    "1845": 239
+  },
+  "competition": [],
+  "frequency_valid": true
+}

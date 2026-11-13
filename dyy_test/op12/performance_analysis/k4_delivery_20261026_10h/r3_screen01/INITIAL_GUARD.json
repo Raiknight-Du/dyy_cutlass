@@ -1,0 +1,26 @@
+[
+  {
+    "time_ns": 1792961425171389846,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 0, 120, 3996, 32, 188.93",
+    "utilization_pct": [
+      0.0
+    ],
+    "compute_apps": []
+  },
+  {
+    "time_ns": 1792961455236106420,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 0, 120, 3996, 32, 188.97",
+    "utilization_pct": [
+      0.0
+    ],
+    "compute_apps": []
+  },
+  {
+    "time_ns": 1792961485300978043,
+    "gpu": "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, 0, 120, 3996, 32, 188.96",
+    "utilization_pct": [
+      0.0
+    ],
+    "compute_apps": []
+  }
+]

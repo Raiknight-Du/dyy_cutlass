@@ -1,0 +1,25 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+const root=path.dirname(fileURLToPath(import.meta.url));
+const read=n=>JSON.parse(fs.readFileSync(path.join(root,n),'utf8'));
+const sha=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const frozen=read('SOURCE_MODEL_FREEZE.json');
+for(const f of frozen.files)if(sha(path.join(root,f.path))!==f.sha256)throw Error('Frozen model changed '+f.path);
+for(const f of frozen.source_files)if(sha(path.join(root,f.path))!==f.sha256)throw Error('Original source changed '+f.path);
+const k2=read('k2_model.json');
+for(const [name,hash]of [['alpha.py',k2.source_identity.alpha_sha256],['varlen_helper.py',k2.source_identity.varlen_sha256]])if(sha(path.join(root,name)).toUpperCase()!==hash.toUpperCase())throw Error('Auxiliary source changed '+name);
+const archive=path.join(root,'source_archive');fs.mkdirSync(archive,{recursive:true});
+for(const f of frozen.source_files)fs.copyFileSync(path.join(root,f.path),path.join(archive,path.basename(f.path)));
+for(const n of ['alpha.py','varlen_helper.py'])fs.copyFileSync(path.join(root,n),path.join(archive,n));
+const eventArchive=path.join(root,'event_raw');fs.mkdirSync(eventArchive,{recursive:true});
+for(const entry of read('event_sanity_check.json').sources){const p=path.join(root,entry.path);if(sha(p)!==entry.sha256)throw Error('Event archive hash mismatch');fs.copyFileSync(p,path.join(eventArchive,path.basename(entry.path)));}
+const validation=read('outputs/source_model_20260927/validation.json');
+if(validation.formula_errors.length||validation.calendar_formula_checks.some(x=>x.actual!==x.expected))throw Error('Workbook failed');
+const report=fs.readFileSync(path.join(root,'OP12_SOURCE_DRIVEN_CYCLE_MODEL_CN.md'),'utf8');
+if(/此占位|源模型审查中|待填充/.test(report))throw Error('Unfinished report');
+const outputPaths=['OP12_SOURCE_DRIVEN_CYCLE_MODEL_CN.md','outputs/source_model_20260927/OP12_FOUR_KERNEL_SOURCE_CYCLE_MODEL_20260927.xlsx','OP12_SOURCE_CYCLE_DAGS_20260927.drawio','OP12_SOURCE_PIPELINES_20260927.drawio','README.md','event_sanity_check.json'];
+const result={created_at_utc:new Date().toISOString(),frozen_models_hashes_unchanged:true,original_source_hashes_unchanged:true,auxiliary_source_hashes_match_pre_event_model:true,workbook_formula_errors:validation.formula_errors,calendar_formula_checks:validation.calendar_formula_checks,source_archive:frozen.source_files.map(f=>({name:path.basename(f.path),sha256:f.sha256})),upstream_end_check:{head:'e77a4a0d276367895c3b50a642fd8f326c03fb72',origin:'https://github.com/flashinfer-ai/flashinfer.git',git_status_porcelain:'',check:'Read-only SSH after source model and Event comparison; no upstream edits.'},outputs:outputPaths.map(p=>({path:p,bytes:fs.statSync(path.join(root,p)).size,sha256:sha(path.join(root,p))}))};
+fs.writeFileSync(path.join(root,'delivery_integrity.json'),JSON.stringify(result,null,2));
+console.log(JSON.stringify({hashes_pass:true,formula_checks:result.calendar_formula_checks.length,outputs:result.outputs.map(x=>({path:x.path,bytes:x.bytes}))},null,2));

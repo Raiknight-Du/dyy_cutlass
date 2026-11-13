@@ -1,0 +1,11 @@
+{
+  "kind": 1,
+  "warps": 1,
+  "grid": 1,
+  "threads": 128,
+  "elementary_reads_per_N": 16,
+  "raw_endpoint": "4warp dependentTMEMread + AND + ADD address feedback; control amortized 1/16. Not bare load latency.",
+  "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_tmem_dep_pairTmemReadDepPair_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_1286416_TV_Layout_A_1128161281128_TV_Layou_0:\n  REG:50 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:952 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+  "cubin_sha256": "352729b505bbd3816ebd2c4c5d97bcf62c2357dc0ea6c95759138e1f717d25cb",
+  "model_enabled": false
+}

@@ -1,0 +1,10 @@
+{
+  "shapes": [
+    8192,
+    16384
+  ],
+  "processes_per_shape": 3,
+  "warmup": 20,
+  "paired_blocks": 30,
+  "model_enabled": false
+}

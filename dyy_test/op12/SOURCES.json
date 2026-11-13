@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "operator": "op12",
+  "captured_at_utc": "2026-08-17T09:03:39Z",
+  "target_host": {
+    "hostname": "metallic-matrix-fin-03",
+    "gpu": "NVIDIA B200",
+    "compute_capability": "10.0"
+  },
+  "upstreams": [
+    {
+      "name": "FlashInfer",
+      "repository": "https://github.com/flashinfer-ai/flashinfer.git",
+      "requested_source_path": "flashinfer/gdn_kernels",
+      "source_branch": "main",
+      "commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+      "tree": "16c39dd04f20fec3b0a398ce74a0bccb7bab0a5f",
+      "describe": "v0.2.11.post3-1453-ge77a4a0d",
+      "local_path": "upstreams/flashinfer",
+      "recursive_submodules_initialized": true,
+      "repository_size_at_capture": "661M",
+      "submodules": {
+        "3rdparty/cccl": "876867684f7fac130e0f5911236e0a92a970d4fd",
+        "3rdparty/cutlass": "b46b16d003484063bca4ed365e44095c4c6ed633",
+        "3rdparty/nixl": "05e4243f5ed305a245912361ace20ba354ec0808",
+        "3rdparty/spdlog": "c3aed4b68373955e1cc94307683d44dca1515d2b"
+      },
+      "licenses": {
+        "project_metadata": "Apache-2.0",
+        "root_license_file": "LICENSE",
+        "root_license_sha256": "f3514f24f2b94d09c409abbf4020cf600e4059098c697110eb91a4a2b235fbb7",
+        "kernel_note": "flashinfer/gdn_kernels/blackwell/gated_delta_net_chunked.py carries a BSD-3-Clause source header"
+      },
+      "relevant_file_sha256": {
+        "flashinfer/gdn_prefill.py": "e4475a2edc830b97d6bc27f13980e2f5951d7d97eb13547f539acf94e2a2132d",
+        "flashinfer/gdn_kernels/blackwell/gated_delta_net_chunked.py": "faaf28508f419a255cc030678ef86e73f47153631cc9403176d058b6a0bd715b"
+      }
+    }
+  ],
+  "validation_environment": {
+    "python": "3.10.12",
+    "pytorch": "2.11.0+cu130",
+    "torch_cuda": "13.0",
+    "system_nvcc": "13.3",
+    "nvidia_cutlass_dsl_isolated": "4.7.0",
+    "apache_tvm_ffi_isolated": "0.1.13.post3",
+    "system_flashinfer_preserved": "0.6.12",
+    "system_nvidia_cutlass_dsl_preserved": "4.5.2"
+  },
+  "op12_implementation": {
+    "captured_at_utc": "2026-08-21",
+    "local_path": "implementation",
+    "public_api": "op12_gdn.gdn_prefill_fp8",
+    "input_dtype": "torch.float8_e4m3fn",
+    "accumulator_dtype": "torch.float32",
+    "output_and_state_dtype": "torch.float16",
+    "layouts": [
+      "BNSD",
+      "TND packed-varlen"
+    ],
+    "executable_backend": "unfused torch._scaled_mm SM100 bring-up backend",
+    "hardware_evidence": {
+      "ncu_reports": [
+        "implementation/validation/raw/fp8_mm_probe.ncu-rep",
+        "implementation/validation/raw/op12_seven_gemm_probe.ncu-rep"
+      ],
+      "full_probe_fp8_gemm_launches": 12,
+      "full_probe_tensor_pipe_nonzero_launches": 12,
+      "full_probe_utcqmma_sass_count": 96
+    },
+    "validation": {
+      "pytest": "19 passed",
+      "accuracy_cases": "11/11 passed",
+      "compute_sanitizer_memcheck": "0 errors for BNSD and TND"
+    },
+    "not_yet_implemented": [
+      "single-CTA fused CuTe kernel",
+      "physical 2-CTA/2-SM cluster with DSM and TMA multicast",
+      "CP parallel-prefix multi-kernel path"
+    ],
+    "experimental_fused_port": {
+      "path": "implementation/op12_gdn/cute_fused",
+      "selected_by_public_api": false,
+      "source_provenance": "adapted independently from the pinned FlashInfer SM100 GDN kernel; original file headers preserved",
+      "mma_contract": "seven MmaF8F6F4Op atoms, E4M3 x E4M3, Float32 accumulator, MMA-K 32",
+      "compile_status": "CuTe IR verifies; SM100a libNVVM backend compilation fails; no cubin",
+      "log": "implementation/validation/raw/fused_compile_attempt.log"
+    }
+  }
+}

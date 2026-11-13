@@ -1,0 +1,12 @@
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_classified_results_20261023/runs/S8192_cold_locked1845_metrics_t2/chain.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-3970.qdstrm'
+[1/1] [0%                          ] formal_S8192_cold_locked1845_metrics_t2.nsys-repProcessing events...
+[1/1] [0%                          ] formal_S8192_cold_locked1845_metrics_t2.nsys-rep[1/1] [13%                         ] formal_S8192_cold_locked1845_metrics_t2.nsys-rep[1/1] [===24%                      ] formal_S8192_cold_locked1845_metrics_t2.nsys-rep[1/1] [====26%                     ] formal_S8192_cold_locked1845_metrics_t2.nsys-rep[1/1] [=====29%                    ] formal_S8192_cold_locked1845_metrics_t2.nsys-rep[1/1] [========42%                 ] formal_S8192_cold_locked1845_metrics_t2.nsys-rep[1/1] [============55%             ] formal_S8192_cold_locked1845_metrics_t2.nsys-rep[1/1] [============56%             ] formal_S8192_cold_locked1845_metrics_t2.nsys-rep[1/1] [========================100%] formal_S8192_cold_locked1845_metrics_t2.nsys-rep[1/1] [========================100%] formal_S8192_cold_locked1845_metrics_t2.nsys-rep
+{"S": 8192, "cache": "cold", "clock": "locked1845", "mode": "metrics", "trial": 2, "CP_Event_us": {"n": 300, "median": 151.48800611495972, "mean": 151.59904251495996, "p5": 149.4400054216385, "p95": 153.56799960136414, "cv_percent": 0.7151187450912911}, "event_scope": "complete K1-K4 only, each eviction excluded; no internal kernel Events", "model_enabled": false}
+Generated:
+	/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_classified_results_20261023/formal_S8192_cold_locked1845_metrics_t2.nsys-rep

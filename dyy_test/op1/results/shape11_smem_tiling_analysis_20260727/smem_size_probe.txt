@@ -1,0 +1,4 @@
+M128_N192_E128x64_C1x1,stage=8,mainloop_tensor=188416,mainloop_pipeline=128,mainloop_shared=188544,epilogue_tensor=33792,epilogue_pipeline=48,epilogue_shared=34816,kernel_shared=223232
+M256_N192_E128x64_C2x1,stage=11,mainloop_tensor=191488,mainloop_pipeline=176,mainloop_shared=191744,epilogue_tensor=33792,epilogue_pipeline=48,epilogue_shared=34816,kernel_shared=226304
+M128_N256_E128x128_C1x1,stage=5,mainloop_tensor=138240,mainloop_pipeline=80,mainloop_shared=138368,epilogue_tensor=66560,epilogue_pipeline=32,epilogue_shared=67584,kernel_shared=205824
+M256_N256_E128x64_C2x1,stage=10,mainloop_tensor=194560,mainloop_pipeline=160,mainloop_shared=194816,epilogue_tensor=33792,epilogue_pipeline=64,epilogue_shared=34816,kernel_shared=229376

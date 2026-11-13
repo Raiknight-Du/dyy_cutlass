@@ -1,0 +1,32 @@
+{
+  "node_types": {
+    "94491322538288": 7,
+    "94491322540184": 0,
+    "94491322542080": 7
+  },
+  "event_node_handles": {
+    "94491309863136": 94491322538288,
+    "94491311550336": 94491322542080
+  },
+  "begin_event": 94491309863136,
+  "end_event": 94491311550336,
+  "kernel_name": "kernel_cutlass_kernel_shared_couplingSharedCoupling_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_Layout_B_0",
+  "grid": [
+    128,
+    1,
+    1
+  ],
+  "block": [
+    192,
+    1,
+    1
+  ],
+  "dynamic_SMEM_B": 225280,
+  "REG": 79,
+  "direct_lazy_invocations_in_enclosing_entry": 1,
+  "graph_instantiates": 0,
+  "graph_replays": 0,
+  "graph_warmups": 0,
+  "timing_samples": 0,
+  "model_enabled": false
+}

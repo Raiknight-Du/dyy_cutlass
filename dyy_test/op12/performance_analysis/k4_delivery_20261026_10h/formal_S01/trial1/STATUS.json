@@ -1,0 +1,13 @@
+{
+  "status": "COLLECTED",
+  "usable": [
+    "PBASE",
+    "FRAME0",
+    "FRAME7"
+  ],
+  "event_samples": 720,
+  "clock_rows": 34740,
+  "gpu_executed": true,
+  "local_bias_bound_cycles": null,
+  "model_enabled": false
+}

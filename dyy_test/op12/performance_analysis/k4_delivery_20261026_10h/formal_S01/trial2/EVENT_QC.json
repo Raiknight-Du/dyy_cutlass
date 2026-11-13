@@ -1,0 +1,56 @@
+{
+  "CP_EVENT_REF__FRAME0": {
+    "paired_change_pct": -0.07797094262564919,
+    "CI95_pct": [
+      -0.2818795909212246,
+      0.0578196380817908
+    ],
+    "paired_saving_us": 0.27999281883239746,
+    "equivalent": true
+  },
+  "CP_EVENT_PBASE__FRAME0": {
+    "paired_change_pct": 0.25903213600507735,
+    "CI95_pct": [
+      0.00220627263254336,
+      0.2818659691222303
+    ],
+    "paired_saving_us": -0.943996012210846,
+    "equivalent": true
+  },
+  "CP_EVENT_FRAME0__FRAME7": {
+    "paired_change_pct": -0.0087562507296024,
+    "CI95_pct": [
+      -0.05492957518400954,
+      0.024224187385235574
+    ],
+    "paired_saving_us": 0.03200024366378784,
+    "equivalent": true
+  },
+  "K4_EVENT_REF__FRAME0": {
+    "paired_change_pct": 0.6176380958569538,
+    "CI95_pct": [
+      0.436826928630174,
+      0.6801230496958244
+    ],
+    "paired_saving_us": -0.9200014173984528,
+    "equivalent": true
+  },
+  "K4_EVENT_PBASE__FRAME0": {
+    "paired_change_pct": 0.6025943369108,
+    "CI95_pct": [
+      0.10178564792030498,
+      0.6736222388803448
+    ],
+    "paired_saving_us": -0.9039975702762604,
+    "equivalent": true
+  },
+  "K4_EVENT_FRAME0__FRAME7": {
+    "paired_change_pct": 0.0,
+    "CI95_pct": [
+      -0.06336514988107833,
+      0.5984726176622379
+    ],
+    "paired_saving_us": 0.0,
+    "equivalent": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "user_policy": "Performance=cold/auto; theory=cold/locked1845; full-model test cancelled by user",
+  "shapes": [
+    8192,
+    16384,
+    32768
+  ],
+  "categories": [
+    "01_performance_cold_auto",
+    "02_theory_cold_locked1845"
+  ],
+  "no_eviction_data": "historical only; not used for current conclusions",
+  "old_evidence_archive": "_superseded/cp4_frequency_20261023",
+  "new_gpu_configurations": 2,
+  "new_formal_processes": 12,
+  "model_enabled": false
+}

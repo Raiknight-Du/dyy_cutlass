@@ -1,0 +1,121 @@
+{
+  "environment": {
+    "hostname": "metallic-matrix-fin-03",
+    "python": "3.10.12",
+    "torch": "2.11.0+cu130",
+    "cuda_runtime": "13.0",
+    "gpu": "NVIDIA B200",
+    "compute_capability": "10.0"
+  },
+  "thresholds": {
+    "o_relative_l2_max": 0.2,
+    "o_cosine_min": 0.98,
+    "state_relative_l2_max": 0.25
+  },
+  "results": [
+    {
+      "name": "BNSD_S1",
+      "passed": true,
+      "o_relative_l2": 0.019549906253814697,
+      "o_cosine": 0.9998098015785217,
+      "state_relative_l2": 0.019727380946278572,
+      "max_saturation_rate": 0.0009765625,
+      "details": "{\"backend\": \"scaled_mm_unfused\", \"route\": \"chunked\", \"logical_gemm_counts\": {\"1_Wkk_KKt\": 1, \"2_Wqk_QKt\": 1, \"3_KS_KSprev\": 2, \"4_QS_QSprev\": 2, \"5_NV_AinvV\": 2, \"6_Ointra_WqkvNV\": 2, \"7_dS_Ktdelta\": 2}, \"padded_tail_rows\": 15, \"quantization\": {\"state\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"a_inverse\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"delta\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0009765625, \"max_saturation_rate\": 0.0009765625}, \"wqkv\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"nv\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"delta_state\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}}}"
+    },
+    {
+      "name": "BNSD_S63",
+      "passed": true,
+      "o_relative_l2": 0.051433779299259186,
+      "o_cosine": 0.998790442943573,
+      "state_relative_l2": 0.042176783084869385,
+      "max_saturation_rate": 0.001708984375,
+      "details": "{\"backend\": \"scaled_mm_unfused\", \"route\": \"chunked\", \"logical_gemm_counts\": {\"1_Wkk_KKt\": 1, \"2_Wqk_QKt\": 1, \"3_KS_KSprev\": 2, \"4_QS_QSprev\": 2, \"5_NV_AinvV\": 2, \"6_Ointra_WqkvNV\": 2, \"7_dS_Ktdelta\": 2}, \"padded_tail_rows\": 1, \"quantization\": {\"state\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"a_inverse\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"delta\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0008544921875, \"max_saturation_rate\": 0.001708984375}, \"wqkv\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"nv\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"delta_state\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}}}"
+    },
+    {
+      "name": "BNSD_S64",
+      "passed": true,
+      "o_relative_l2": 0.048576634377241135,
+      "o_cosine": 0.9988453388214111,
+      "state_relative_l2": 0.04430106654763222,
+      "max_saturation_rate": 0.000244140625,
+      "details": "{\"backend\": \"scaled_mm_unfused\", \"route\": \"chunked\", \"logical_gemm_counts\": {\"1_Wkk_KKt\": 1, \"2_Wqk_QKt\": 1, \"3_KS_KSprev\": 2, \"4_QS_QSprev\": 2, \"5_NV_AinvV\": 2, \"6_Ointra_WqkvNV\": 2, \"7_dS_Ktdelta\": 2}, \"padded_tail_rows\": 0, \"quantization\": {\"state\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"a_inverse\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"delta\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"wqkv\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"nv\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0001220703125, \"max_saturation_rate\": 0.000244140625}, \"delta_state\": {\"tiles\": 2, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}}}"
+    },
+    {
+      "name": "BNSD_S65",
+      "passed": true,
+      "o_relative_l2": 0.0489041693508625,
+      "o_cosine": 0.9988040924072266,
+      "state_relative_l2": 0.04037284478545189,
+      "max_saturation_rate": 0.00390625,
+      "details": "{\"backend\": \"scaled_mm_unfused\", \"route\": \"chunked\", \"logical_gemm_counts\": {\"1_Wkk_KKt\": 2, \"2_Wqk_QKt\": 2, \"3_KS_KSprev\": 4, \"4_QS_QSprev\": 4, \"5_NV_AinvV\": 4, \"6_Ointra_WqkvNV\": 4, \"7_dS_Ktdelta\": 4}, \"padded_tail_rows\": 15, \"quantization\": {\"state\": {\"tiles\": 4, \"mean_saturation_rate\": 6.103515625e-05, \"max_saturation_rate\": 0.0001220703125}, \"a_inverse\": {\"tiles\": 4, \"mean_saturation_rate\": 0.0020751953125, \"max_saturation_rate\": 0.00390625}, \"delta\": {\"tiles\": 4, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"wqkv\": {\"tiles\": 4, \"mean_saturation_rate\": 0.001953125, \"max_saturation_rate\": 0.00390625}, \"nv\": {\"tiles\": 4, \"mean_saturation_rate\": 0.00146484375, \"max_saturation_rate\": 0.0029296875}, \"delta_state\": {\"tiles\": 4, \"mean_saturation_rate\": 0.00152587890625, \"max_saturation_rate\": 0.0029296875}}}"
+    },
+    {
+      "name": "BNSD_S127",
+      "passed": true,
+      "o_relative_l2": 0.05163116380572319,
+      "o_cosine": 0.9986722469329834,
+      "state_relative_l2": 0.04466048255562782,
+      "max_saturation_rate": 0.000244140625,
+      "details": "{\"backend\": \"scaled_mm_unfused\", \"route\": \"chunked\", \"logical_gemm_counts\": {\"1_Wkk_KKt\": 2, \"2_Wqk_QKt\": 2, \"3_KS_KSprev\": 4, \"4_QS_QSprev\": 4, \"5_NV_AinvV\": 4, \"6_Ointra_WqkvNV\": 4, \"7_dS_Ktdelta\": 4}, \"padded_tail_rows\": 1, \"quantization\": {\"state\": {\"tiles\": 4, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"a_inverse\": {\"tiles\": 4, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"delta\": {\"tiles\": 4, \"mean_saturation_rate\": 6.103515625e-05, \"max_saturation_rate\": 0.000244140625}, \"wqkv\": {\"tiles\": 4, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"nv\": {\"tiles\": 4, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"delta_state\": {\"tiles\": 4, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}}}"
+    },
+    {
+      "name": "BNSD_S257",
+      "passed": true,
+      "o_relative_l2": 0.05105655640363693,
+      "o_cosine": 0.9987137913703918,
+      "state_relative_l2": 0.042599428445100784,
+      "max_saturation_rate": 0.00390625,
+      "details": "{\"backend\": \"scaled_mm_unfused\", \"route\": \"chunked\", \"logical_gemm_counts\": {\"1_Wkk_KKt\": 5, \"2_Wqk_QKt\": 5, \"3_KS_KSprev\": 10, \"4_QS_QSprev\": 10, \"5_NV_AinvV\": 10, \"6_Ointra_WqkvNV\": 10, \"7_dS_Ktdelta\": 10}, \"padded_tail_rows\": 15, \"quantization\": {\"state\": {\"tiles\": 10, \"mean_saturation_rate\": 2.44140625e-05, \"max_saturation_rate\": 0.0001220703125}, \"a_inverse\": {\"tiles\": 10, \"mean_saturation_rate\": 0.000830078125, \"max_saturation_rate\": 0.00390625}, \"delta\": {\"tiles\": 10, \"mean_saturation_rate\": 4.8828125e-05, \"max_saturation_rate\": 0.000244140625}, \"wqkv\": {\"tiles\": 10, \"mean_saturation_rate\": 4.8828125e-05, \"max_saturation_rate\": 0.000244140625}, \"nv\": {\"tiles\": 10, \"mean_saturation_rate\": 2.44140625e-05, \"max_saturation_rate\": 0.000244140625}, \"delta_state\": {\"tiles\": 10, \"mean_saturation_rate\": 9.765625e-05, \"max_saturation_rate\": 0.000244140625}}}"
+    },
+    {
+      "name": "TND_varlen",
+      "passed": true,
+      "o_relative_l2": 0.05147883668541908,
+      "o_cosine": 0.9986848831176758,
+      "state_relative_l2": 0.046375058591365814,
+      "max_saturation_rate": 0.00390625,
+      "details": "{\"backend\": \"scaled_mm_unfused\", \"route\": \"chunked\", \"logical_gemm_counts\": {\"1_Wkk_KKt\": 12, \"2_Wqk_QKt\": 12, \"3_KS_KSprev\": 24, \"4_QS_QSprev\": 24, \"5_NV_AinvV\": 24, \"6_Ointra_WqkvNV\": 24, \"7_dS_Ktdelta\": 24}, \"padded_tail_rows\": 47, \"quantization\": {\"state\": {\"tiles\": 24, \"mean_saturation_rate\": 1.0172526041666666e-05, \"max_saturation_rate\": 0.0001220703125}, \"a_inverse\": {\"tiles\": 24, \"mean_saturation_rate\": 4.0690104166666664e-05, \"max_saturation_rate\": 0.000244140625}, \"delta\": {\"tiles\": 24, \"mean_saturation_rate\": 0.00019327799479166666, \"max_saturation_rate\": 0.0009765625}, \"wqkv\": {\"tiles\": 24, \"mean_saturation_rate\": 0.0007527669270833334, \"max_saturation_rate\": 0.00390625}, \"nv\": {\"tiles\": 24, \"mean_saturation_rate\": 0.00018310546875, \"max_saturation_rate\": 0.001953125}, \"delta_state\": {\"tiles\": 24, \"mean_saturation_rate\": 0.000213623046875, \"max_saturation_rate\": 0.001953125}}}"
+    },
+    {
+      "name": "GQA_8_2",
+      "passed": true,
+      "o_relative_l2": 0.051798827946186066,
+      "o_cosine": 0.9986606240272522,
+      "state_relative_l2": 0.044333670288324356,
+      "max_saturation_rate": 0.000244140625,
+      "details": "{\"backend\": \"scaled_mm_unfused\", \"route\": \"chunked\", \"logical_gemm_counts\": {\"1_Wkk_KKt\": 8, \"2_Wqk_QKt\": 8, \"3_KS_KSprev\": 16, \"4_QS_QSprev\": 16, \"5_NV_AinvV\": 16, \"6_Ointra_WqkvNV\": 16, \"7_dS_Ktdelta\": 16}, \"padded_tail_rows\": 0, \"quantization\": {\"state\": {\"tiles\": 16, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"a_inverse\": {\"tiles\": 16, \"mean_saturation_rate\": 0.0001220703125, \"max_saturation_rate\": 0.000244140625}, \"delta\": {\"tiles\": 16, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"wqkv\": {\"tiles\": 16, \"mean_saturation_rate\": 0.000152587890625, \"max_saturation_rate\": 0.000244140625}, \"nv\": {\"tiles\": 16, \"mean_saturation_rate\": 4.57763671875e-05, \"max_saturation_rate\": 0.000244140625}, \"delta_state\": {\"tiles\": 16, \"mean_saturation_rate\": 7.62939453125e-05, \"max_saturation_rate\": 0.000244140625}}}"
+    },
+    {
+      "name": "GVA_2_8",
+      "passed": true,
+      "o_relative_l2": 0.050122156739234924,
+      "o_cosine": 0.9987491369247437,
+      "state_relative_l2": 0.04523208737373352,
+      "max_saturation_rate": 0.000244140625,
+      "details": "{\"backend\": \"scaled_mm_unfused\", \"route\": \"chunked\", \"logical_gemm_counts\": {\"1_Wkk_KKt\": 8, \"2_Wqk_QKt\": 8, \"3_KS_KSprev\": 16, \"4_QS_QSprev\": 16, \"5_NV_AinvV\": 16, \"6_Ointra_WqkvNV\": 16, \"7_dS_Ktdelta\": 16}, \"padded_tail_rows\": 0, \"quantization\": {\"state\": {\"tiles\": 16, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"a_inverse\": {\"tiles\": 16, \"mean_saturation_rate\": 9.1552734375e-05, \"max_saturation_rate\": 0.000244140625}, \"delta\": {\"tiles\": 16, \"mean_saturation_rate\": 3.0517578125e-05, \"max_saturation_rate\": 0.000244140625}, \"wqkv\": {\"tiles\": 16, \"mean_saturation_rate\": 0.0001220703125, \"max_saturation_rate\": 0.000244140625}, \"nv\": {\"tiles\": 16, \"mean_saturation_rate\": 0.0001068115234375, \"max_saturation_rate\": 0.000244140625}, \"delta_state\": {\"tiles\": 16, \"mean_saturation_rate\": 6.103515625e-05, \"max_saturation_rate\": 0.000244140625}}}"
+    },
+    {
+      "name": "TND_initial_state",
+      "passed": true,
+      "o_relative_l2": 0.028050621971488,
+      "o_cosine": 0.9996066093444824,
+      "state_relative_l2": 0.015989936888217926,
+      "max_saturation_rate": 0.0009765625,
+      "details": "{\"backend\": \"scaled_mm_unfused\", \"route\": \"chunked\", \"logical_gemm_counts\": {\"1_Wkk_KKt\": 2, \"2_Wqk_QKt\": 2, \"3_KS_KSprev\": 4, \"4_QS_QSprev\": 4, \"5_NV_AinvV\": 4, \"6_Ointra_WqkvNV\": 4, \"7_dS_Ktdelta\": 4}, \"padded_tail_rows\": 15, \"quantization\": {\"state\": {\"tiles\": 4, \"mean_saturation_rate\": 3.0517578125e-05, \"max_saturation_rate\": 0.0001220703125}, \"a_inverse\": {\"tiles\": 4, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"delta\": {\"tiles\": 4, \"mean_saturation_rate\": 6.103515625e-05, \"max_saturation_rate\": 0.000244140625}, \"wqkv\": {\"tiles\": 4, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"nv\": {\"tiles\": 4, \"mean_saturation_rate\": 0.00030517578125, \"max_saturation_rate\": 0.0009765625}, \"delta_state\": {\"tiles\": 4, \"mean_saturation_rate\": 0.00030517578125, \"max_saturation_rate\": 0.0009765625}}}"
+    },
+    {
+      "name": "CP_semantic_4096",
+      "passed": true,
+      "o_relative_l2": 0.0,
+      "o_cosine": 1.0,
+      "state_relative_l2": 0.0,
+      "max_saturation_rate": 0.00048828125,
+      "details": "{\"backend\": \"scaled_mm_unfused\", \"route\": \"cp_semantic_4096\", \"logical_gemm_counts\": {\"1_Wkk_KKt\": 64, \"2_Wqk_QKt\": 64, \"3_KS_KSprev\": 128, \"4_QS_QSprev\": 128, \"5_NV_AinvV\": 128, \"6_Ointra_WqkvNV\": 128, \"7_dS_Ktdelta\": 128}, \"padded_tail_rows\": 0, \"quantization\": {\"state\": {\"tiles\": 128, \"mean_saturation_rate\": 4.673004150390625e-05, \"max_saturation_rate\": 0.0001220703125}, \"a_inverse\": {\"tiles\": 128, \"mean_saturation_rate\": 0.0, \"max_saturation_rate\": 0.0}, \"delta\": {\"tiles\": 128, \"mean_saturation_rate\": 8.392333984375e-05, \"max_saturation_rate\": 0.00048828125}, \"wqkv\": {\"tiles\": 128, \"mean_saturation_rate\": 6.4849853515625e-05, \"max_saturation_rate\": 0.000244140625}, \"nv\": {\"tiles\": 128, \"mean_saturation_rate\": 8.58306884765625e-05, \"max_saturation_rate\": 0.000244140625}, \"delta_state\": {\"tiles\": 128, \"mean_saturation_rate\": 9.72747802734375e-05, \"max_saturation_rate\": 0.000244140625}}}"
+    }
+  ],
+  "negative_tests": [
+    "FP8 Q contract rejection: q must be E4M3 (torch.float8_e4m3fn), got torch.float32",
+    "BNSD cu_seqlens rejection: BNSD does not accept cu_seqlens"
+  ],
+  "all_passed": true
+}

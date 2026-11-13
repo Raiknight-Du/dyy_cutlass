@@ -1,0 +1,26 @@
+[
+  {
+    "cohort": "r5_graph_formal01",
+    "actual_local_raw_SHA_match": true,
+    "all_gate_statistics_identical": true,
+    "all_conditional_rates_null": true,
+    "raw_SHA256": {
+      "trial0/EVENT_RAW.csv": "6abd5ab29eb31079dd88bb9767bd2c318bbb9dd5f951a86de3d72e50781b34ce",
+      "trial1/EVENT_RAW.csv": "d87c6120e6cccfa0e68f128855fdb48511476741411003c160c377bde28476dc",
+      "trial2/EVENT_RAW.csv": "5552416fde350f91fd1d454de8b669812e935f0cf2f663e369fd33b43ec43aaf"
+    },
+    "canonical_derived_SHA256": "eeeb68beaff169c5b10566c98fb2ca3adde7e82fec1b5808cf65c54b93b0ab76"
+  },
+  {
+    "cohort": "r5_graph_formal_ext16384_01",
+    "actual_local_raw_SHA_match": true,
+    "all_gate_statistics_identical": true,
+    "all_conditional_rates_null": true,
+    "raw_SHA256": {
+      "trial0/EVENT_RAW.csv": "73347e922c3663cd281c771ac97b9a4dbee08f51de8239d604b7250ffd056a3c",
+      "trial1/EVENT_RAW.csv": "7c158920eecfa42469d193d82662aed085edf27b87fd8c11b1937076c9ed6e00",
+      "trial2/EVENT_RAW.csv": "0719b2ed7d657e234d33f63ef6751d9f391270886cbd4ed733c5fbbe1bb697b9"
+    },
+    "canonical_derived_SHA256": "83774c9c049012c040ff22fbf46fd046d4ac0311d282c2a9b4c0cd2a399281be"
+  }
+]

@@ -1,0 +1,25 @@
+﻿shape,category,static_instructions,executed_instructions,all_samples
+5,TMA load,5,42240.0,13.0
+5,UMMA,2,8448.0,2.0
+5,TMEM load,12,12672.0,1.0
+5,SMEM store,24,25344.0,12.0
+5,TMA store,12,3168.0,0
+5,mbarrier trywait,57,206471.0,3.0
+8,TMA load,5,81920.0,37.0
+8,UMMA,4,16384.0,3.0
+8,TMEM load,8,32768.0,5.0
+8,SMEM store,32,131072.0,102.0
+8,TMA store,8,8192.0,1.0
+8,mbarrier trywait,52,383653.0,5.0
+11,TMA load,5,2580.0,0
+11,UMMA,2,516.0,0
+11,TMEM load,6,12384.0,5.0
+11,SMEM store,24,49536.0,13.0
+11,TMA store,6,3096.0,0
+11,mbarrier trywait,55,33438.0,0
+13,TMA load,5,5120.0,2.0
+13,UMMA,4,1024.0,1.0
+13,TMEM load,8,32768.0,1.0
+13,SMEM store,32,131072.0,24.0
+13,TMA store,8,8192.0,0
+13,mbarrier trywait,52,102373.0,6.0

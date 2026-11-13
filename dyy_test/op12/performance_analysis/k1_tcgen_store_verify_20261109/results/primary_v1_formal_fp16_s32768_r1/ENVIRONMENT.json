@@ -1,0 +1,15 @@
+{
+  "torch": "2.11.0+cu130",
+  "cutlass": "4.7.0",
+  "gpu": "_CudaDeviceProperties(name='NVIDIA B200', major=10, minor=0, total_memory=182631MB, multi_processor_count=148, uuid=6abbea3c-b8d3-7f4b-ca76-85d612930fdf, pci_bus_id=5, pci_device_id=0, pci_domain_id=0, L2_cache_size=126MB)",
+  "driver": "580.159.03",
+  "source_hashes": {
+    "tcgen_k1.py": "4d275ea32d9ef035d6348fffd67096a0a6e2fce31bb8b513bb4188e3ffbdc331",
+    "store_layout.py": "889e072745ad23d0f65a5f08a3b34760744e620bde7fb12edb45656dcf88b051",
+    "job_queue.py": "a340e8cd54a2df120f3e25f1fe773dfc3b85de9f67420f3cb690b895f0453ec9",
+    "guard_run.py": "d9316936d88aceb924cdfb3e0b0d1d07bf97178231f74961bb177d6ce178933d",
+    "clock_lease.py": "a9246befb5ee7e1263f98fb5182979e1b57d055c44c3b88a25b6f0dd79588ebc",
+    "run_compare.py": "fc8cc9b166594e5426e3f7009acda8a159bae4be6fa93a48fe7f97b0b14d01f1",
+    "validate_cases.py": "5474276f7ae73bda46ffb9f05ff252fc9992ecdaa4d64af81e246060c00b031b"
+  }
+}

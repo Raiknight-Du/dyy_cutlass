@@ -1,0 +1,9 @@
+{
+  "E00": "HISTORICAL_REPLAY_PASS; symbolic completion edges preserved",
+  "E01": "SIX_CURRENT_MATCHED_CONDITIONS_3x100",
+  "E02": "depends only on same-layout G0 envelope gate; max2 marker designs",
+  "E03": "independent own zero-dose gate; may continue after E02 failure",
+  "cross_layout_equivalence_required": false,
+  "model_enabled": false,
+  "effective_model_value": null
+}

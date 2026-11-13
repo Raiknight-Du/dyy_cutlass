@@ -1,0 +1,8 @@
+{
+  "analyzer_SHA256": "fa2a21f6e23e578d38f164fe73325c0a3cf068c79b1aad94297146063c4db085",
+  "statistics_unchanged": true,
+  "old_derived_preserved": "RATE_ANALYSIS_PRE_JOINT_CLEAR.json",
+  "raw_files_unchanged": true,
+  "joint_conditional_fields_cleared_on_failure": true,
+  "model_enabled": false
+}

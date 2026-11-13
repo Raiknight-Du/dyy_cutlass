@@ -1,0 +1,15 @@
+RESULT,empty_cluster_smem0,1,50,0.002463360
+RESULT,empty_cluster_smem0,2,50,0.002394240
+RESULT,empty_cluster_smem0,3,50,0.002360320
+RESULT,empty_cluster_smem0,4,50,0.002528640
+RESULT,empty_cluster_smem0,5,50,0.002345600
+RESULT,empty_cluster_smem227k,1,50,0.003101440
+RESULT,empty_cluster_smem227k,2,50,0.003139840
+RESULT,empty_cluster_smem227k,3,50,0.003139840
+RESULT,empty_cluster_smem227k,4,50,0.003100160
+RESULT,empty_cluster_smem227k,5,50,0.003102080
+RESULT,cluster_sync_smem227k,1,50,0.004159360
+RESULT,cluster_sync_smem227k,2,50,0.004153600
+RESULT,cluster_sync_smem227k,3,50,0.004132480
+RESULT,cluster_sync_smem227k,4,50,0.004115200
+RESULT,cluster_sync_smem227k,5,50,0.004154880

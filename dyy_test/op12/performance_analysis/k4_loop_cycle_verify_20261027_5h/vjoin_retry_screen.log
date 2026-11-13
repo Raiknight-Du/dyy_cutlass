@@ -1,0 +1,9 @@
+{"event": "admission", "quiet": 1, "state": {"UTC": "2026-10-26T19:26:40.388778+00:00", "gpu": "0, 1965, 3996, 33, 245.62", "apps": ""}}
+{"event": "admission", "quiet": 2, "state": {"UTC": "2026-10-26T19:27:10.446240+00:00", "gpu": "0, 120, 3996, 32, 189.21", "apps": ""}}
+{"event": "admission", "quiet": 3, "state": {"UTC": "2026-10-26T19:27:40.509633+00:00", "gpu": "0, 120, 3996, 32, 189.11", "apps": ""}}
+{"event": "start", "tag": "QSJOIN_t0", "before": {"UTC": "2026-10-26T19:27:40.544950+00:00", "gpu": "0, 120, 3996, 32, 189.13", "apps": ""}, "command": ["/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python", "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_v_join.py", "--variant", "QSJOIN", "--out", "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/vjoin_retry_screen/QSJOIN_t0", "--samples", "3"]}
+{"event": "finish", "tag": "QSJOIN_t0", "returncode": 1, "after": {"UTC": "2026-10-26T19:27:48.251799+00:00", "gpu": "0, 1965, 3996, 33, 246.08", "apps": ""}}
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_v_join_retry.py", line 33, in <module>
+    after=state();rec(dict(event='finish',tag=tag,returncode=q.returncode,after=after));assert q.returncode==0,tag;assert not after['apps'],after
+AssertionError: QSJOIN_t0

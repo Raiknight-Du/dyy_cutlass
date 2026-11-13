@@ -1,0 +1,14 @@
+{
+  "completed": true,
+  "configurations": [
+    "S_G1_LOAD",
+    "S_G1_CONTROL",
+    "S_G128_CONTROL",
+    "V_G1_LOAD",
+    "V_G1_CONTROL",
+    "V_G128_LOAD",
+    "V_G128_CONTROL"
+  ],
+  "NCU_invocations": 7,
+  "model_enabled": false
+}

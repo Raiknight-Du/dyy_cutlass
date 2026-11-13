@@ -1,0 +1,7 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 166167 (/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/shape13_bottleneck_ablation_pure_matmul_20260727/bin/e128_full)
+==PROF== Profiling "device_kernel" - 0 (1/1): 0%....50%....100% - 5 passes
+RESULT,13,M128_N256_K128_E128x128_C1x1x1,ok,1,639.719
+==PROF== Disconnected from process 166167
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/shape13_bottleneck_ablation_pure_matmul_20260727/ncu/e128_full_source_r1.ncu-rep

@@ -1,0 +1,10 @@
+{
+  "completed": true,
+  "configurations": [
+    "CONTROL",
+    "SHADER_ONLY",
+    "TC_ONLY"
+  ],
+  "NCU_invocations": 3,
+  "model_enabled": false
+}

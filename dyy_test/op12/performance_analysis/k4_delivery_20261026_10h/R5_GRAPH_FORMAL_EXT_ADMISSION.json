@@ -1,0 +1,36 @@
+{
+  "round": "R5",
+  "approved_modes": [
+    "formal"
+  ],
+  "source_SHA256": "5311b72c38a7c7efcbba7a15fb569bd1a28c924b04aa444e48df42f799eb3e0a",
+  "max_N": 16384,
+  "processes": 3,
+  "warmup_actual_graph_replays": 20,
+  "samples": 30,
+  "cases": [
+    "SS_CONTROL",
+    "SS_LOAD",
+    "TS_CONTROL",
+    "TS_LOAD"
+  ],
+  "points": [
+    128,
+    256,
+    512,
+    1024,
+    2048,
+    4096,
+    8192,
+    16384
+  ],
+  "main_gate": "raw SS_LOAD and TS_LOAD only; Event and same-CTA native-cycle; strict1% tail/process plus all-point CV/span",
+  "CONTROL_and_subtraction": "diagnostic only; no positive slope requirement",
+  "frequency_policy": "temporary1845SMrequest_actualtelemetry_finallyauto",
+  "one_16384_extension_only_if_tail_failure": true,
+  "model_enabled": false,
+  "authorization": "Lead corrected extension scope: complete8point4case3newPID cohort; old7point cohort separate and excluded from new fits",
+  "old_new_PID_splicing": false,
+  "extension_cohort_number": 1,
+  "additional_NCU": 0
+}

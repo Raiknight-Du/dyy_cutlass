@@ -1,0 +1,17 @@
+{
+  "round":"R3",
+  "revision":"v2_slot_major_native_only_cuda130",
+  "binary_sha256":"706756dda3c7bd8951361930b1bac35524dbddc2a582aac528851452e04f34f7",
+  "approved_modes":["formal"],
+  "max_processes":3,
+  "max_N":8192,
+  "configurations":8,
+  "points":[128,256,512,1024,2048,4096,8192],
+  "warmups_per_config_per_point":20,
+  "samples_per_config_per_point":30,
+  "frequency_policy":"Temporary SM request 1845MHz only; actual frequency/reasons sampled; finally reset auto; no HBM/power change",
+  "strict_gate":"raw/control-corrected independently; adjacent last-three-point slope change <1%; across3process (max-min)/mean <1%; R2>=0.99; CV<=5%; P95-P5/median<=10%",
+  "extra_16384_allowed_once_if_needed":true,
+  "cache_scope":"L1 all miss in natural N512 counter action; L2 not all hit; no pure L2 claim",
+  "model_enabled":false
+}

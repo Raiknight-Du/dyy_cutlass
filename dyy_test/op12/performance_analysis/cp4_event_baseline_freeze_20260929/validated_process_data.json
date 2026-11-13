@@ -1,0 +1,3141 @@
+{
+  "baseline": {
+    "schema_version": 1,
+    "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+    "status": "FROZEN",
+    "created_utc": "2026-09-28T23:38:39.853607+00:00",
+    "units": "microseconds",
+    "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+    "runner_sha256": "0d5989f8b6b1c9131f94b5f223d0334da978bd23a62515933f11d036aa9d2bfb",
+    "protocol_sha256": "bc7fc3a28562a1d2c1d314b5748445a404b0dd737152fb323b88fa626849f11a",
+    "source_sha256": {
+      "flashinfer/gdn_prefill.py": "e4475a2edc830b97d6bc27f13980e2f5951d7d97eb13547f539acf94e2a2132d",
+      "flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+      "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+      "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+      "flashinfer/gdn_kernels/delta_rule_dsl/delta_rule_cp_sm120.py": "5572cba70eab72426b2567322807be7fd27f3d84af6ac7410f13f715ca6a077b",
+      "flashinfer/gdn_kernels/delta_rule_dsl/varlen_helper.py": "c9cda29f3e9d0105d91326c4c670feace92f988ed9fde61dcea3035fd6e704ab"
+    },
+    "scope": {
+      "B": 1,
+      "Hq": 16,
+      "Hk": 16,
+      "Hv": 16,
+      "D": 128,
+      "dtype": "FP16",
+      "state_dtype": "FP32",
+      "gate_beta_dtype": "FP32",
+      "layout": "TND",
+      "algorithm_chunk": 64,
+      "P": 8,
+      "initial_state": true,
+      "final_state": true,
+      "use_cp": true,
+      "kernel_qk_l2norm": false,
+      "scale": 0.08838834764831843,
+      "cu_seqlens_dtype": "int64",
+      "rotating_qkv_buffers": 4
+    },
+    "method": {
+      "name": "sparse_cumulative_event_difference",
+      "samples_per_probe_per_process": 100,
+      "probes": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "calls_per_graph": 400,
+      "probe_stride_calls": 4,
+      "warmup_calls_before_each_probe": 20,
+      "independent_processes": 3,
+      "stage_formula": "mean(Pi)-mean(Pi-1); median of three process estimates",
+      "native_formula": "median of 5 graph batch per-call means per process; median across processes",
+      "timing_events_external": true,
+      "gpu_streams": 1,
+      "host_dispatch_timed": false,
+      "workspace_allocation_timed": false,
+      "jit_timed": false,
+      "ncu_used_for_latency": false,
+      "fixed_clock": false,
+      "cache_protocol": "natural K1→K2→K3→K4; rotating QKV; no prime/flush",
+      "is_direct_single_kernel_event_interval": false
+    },
+    "environment": {
+      "torch": "2.11.0+cu130",
+      "cuda": "13.0",
+      "nvidia-cutlass-dsl": "4.7.0",
+      "cuda-python": "13.2.0",
+      "gpu_name": "NVIDIA B200",
+      "sm_count": 148
+    },
+    "shapes": [
+      {
+        "S": 8192,
+        "C": 1024,
+        "P": 8,
+        "grid": {
+          "K1": 2048,
+          "K2": 128,
+          "K3": 32,
+          "K4": 128
+        },
+        "stage_us": {
+          "K1": 23.344640696886927,
+          "K2": 35.033280588686466,
+          "K3": 26.49823810905218,
+          "K4": 55.36160096526146
+        },
+        "stage_sum_us": 140.23776035988703,
+        "native_chain_us": 136.8509578704834,
+        "stage_sum_vs_native_pct": 2.4748109491560255,
+        "chain_estimate_median_us": 140.26560025522485,
+        "stage_process_minmax_us": {
+          "K1": [
+            23.318400629796088,
+            23.344640706200153
+          ],
+          "K2": [
+            35.01696052029729,
+            35.061120484024286
+          ],
+          "K3": [
+            26.19711797684431,
+            26.686078123748302
+          ],
+          "K4": [
+            55.17568081617355,
+            55.47744132578373
+          ]
+        },
+        "max_probe_vs_native_abs_pct": 1.69840632350442,
+        "max_nonempty_probe_cv_pct": 1.4526620823187788,
+        "input_signature_sha256": "4e828c9372df15ebbf71ca0bd50027c6d086a70127e4d2f98aed2c3ae5d1b6b6",
+        "frozen_input_tensor_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/frozen_inputs/S8192/inputs.pt",
+        "frozen_input_storage_sha256": "1b743c454f06a1a15582d5310f00325df3823ac4abb2947e677683835ac2f780",
+        "processes": 3,
+        "prefix_observations": 1500
+      },
+      {
+        "S": 16384,
+        "C": 2048,
+        "P": 8,
+        "grid": {
+          "K1": 4096,
+          "K2": 128,
+          "K3": 32,
+          "K4": 128
+        },
+        "stage_us": {
+          "K1": 38.445120237302035,
+          "K2": 60.60383774340153,
+          "K3": 25.67104145884514,
+          "K4": 84.36607986688614
+        },
+        "stage_sum_us": 209.08607930643484,
+        "native_chain_us": 205.46072006225586,
+        "stage_sum_vs_native_pct": 1.7645023550391992,
+        "chain_estimate_median_us": 209.08159907907248,
+        "stage_process_minmax_us": {
+          "K1": [
+            38.43200007919222,
+            38.642239943146706
+          ],
+          "K2": [
+            60.40223781019449,
+            60.647677555680275
+          ],
+          "K3": [
+            25.598401576280594,
+            25.711681470274925
+          ],
+          "K4": [
+            84.33407984673977,
+            84.40479971468449
+          ]
+        },
+        "max_probe_vs_native_abs_pct": 1.3272120192584946,
+        "max_nonempty_probe_cv_pct": 2.6305240503414784,
+        "input_signature_sha256": "3c9174ab9fc33a7662e104dcabf4e2e09539c27f4b0214a8daec7fd2a17f44d8",
+        "frozen_input_tensor_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/frozen_inputs/S16384/inputs.pt",
+        "frozen_input_storage_sha256": "133b9d4479b72272f0d1d7f3a64cb7a9070a3522b92915231bb5e0d76ee2d9ee",
+        "processes": 3,
+        "prefix_observations": 1500
+      },
+      {
+        "S": 32768,
+        "C": 4096,
+        "P": 8,
+        "grid": {
+          "K1": 8192,
+          "K2": 128,
+          "K3": 32,
+          "K4": 128
+        },
+        "stage_us": {
+          "K1": 72.50112249166705,
+          "K2": 113.2806383818388,
+          "K3": 27.16608002781868,
+          "K4": 146.15903601050377
+        },
+        "stage_sum_us": 359.1068769118283,
+        "native_chain_us": 363.33648681640625,
+        "stage_sum_vs_native_pct": -1.164102714164017,
+        "chain_estimate_median_us": 359.5692783338018,
+        "stage_process_minmax_us": {
+          "K1": [
+            72.48000254156068,
+            72.52512252889574
+          ],
+          "K2": [
+            113.10527794063091,
+            113.29727843403816
+          ],
+          "K3": [
+            25.59072032570839,
+            28.01120087504387
+          ],
+          "K4": [
+            145.97279697656631,
+            148.5193571448326
+          ]
+        },
+        "max_probe_vs_native_abs_pct": 4.001472182325538,
+        "max_nonempty_probe_cv_pct": 2.485972752345485,
+        "input_signature_sha256": "eb62764b4f2bc92c04c1accddf62db3211f657a1206bdc2279e6fe006bb94d1e",
+        "frozen_input_tensor_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/frozen_inputs/S32768/inputs.pt",
+        "frozen_input_storage_sha256": "5953da3926a1ab008c08b995fe574688c40edbb91ad0db561a8204c796c97d98",
+        "processes": 3,
+        "prefix_observations": 1500
+      }
+    ],
+    "ablation_policy": {
+      "absolute_baseline": "Use these frozen stage_us/native_chain_us, do not substitute a same-run B0.",
+      "drift_gate_pct": 5,
+      "same_run_B0_role": "Environment guard only; >5% needs review/retest.",
+      "required_context": "Same full CP chain, inputs SHA, buffer rotation, scope, C, probe placement/statistics.",
+      "isolated_K3_old_runs": "Historical diagnostics only; not directly subtractable from this baseline.",
+      "immutability": "Never overwrite; new measurements require an explicit new ID.",
+      "semantic_breaking_variants": "Report separately; no output-correctness claim."
+    },
+    "limitations": [
+      "Stage values are differences of cumulative Event means, not simultaneous direct per-kernel timestamps.",
+      "Remaining marker-position/cache/clock bias is not eliminated merely because sums close.",
+      "No HBM/L2 traffic measured here; natural cache history is not a guarantee of HBM residency.",
+      "Unsegmented graph E2E is GPU-only batch per-call mean, not host public API wall time.",
+      "No time→cycle conversion without time-window-matched clock evidence."
+    ]
+  },
+  "processes": [
+    {
+      "S": 8192,
+      "C": 1024,
+      "trial": 1,
+      "path": "formal/S8192_trial1",
+      "summary": {
+        "probes": {
+          "P0": {
+            "n": 100,
+            "median_us": 1.2159999459981918,
+            "mean_us": 1.228799948003143,
+            "p5_us": 1.2159999459981918,
+            "p95_us": 1.247999956831336,
+            "cv_pct": 6.3147691301562086,
+            "min_us": 1.2159999459981918,
+            "max_us": 1.9839999731630087,
+            "batch_per_call_mean_us": 138.29936027526855
+          },
+          "P1": {
+            "n": 100,
+            "median_us": 24.57600086927414,
+            "mean_us": 24.57344064489007,
+            "p5_us": 24.476800113916397,
+            "p95_us": 24.671999737620354,
+            "cv_pct": 0.6484159168663722,
+            "min_us": 23.520000278949738,
+            "max_us": 25.631999596953392,
+            "batch_per_call_mean_us": 139.02119636535645
+          },
+          "P2": {
+            "n": 100,
+            "median_us": 59.39200147986412,
+            "mean_us": 59.634561128914356,
+            "p5_us": 59.36000123620033,
+            "p95_us": 61.43999844789505,
+            "cv_pct": 1.1490578135406182,
+            "min_us": 59.007998555898666,
+            "max_us": 62.72000074386597,
+            "batch_per_call_mean_us": 139.0567970275879
+          },
+          "P3": {
+            "n": 100,
+            "median_us": 86.01599931716919,
+            "mean_us": 86.13279923796654,
+            "p5_us": 85.94879880547523,
+            "p95_us": 87.09119968116283,
+            "cv_pct": 0.8692183705486584,
+            "min_us": 83.93599838018417,
+            "max_us": 91.77599847316742,
+            "batch_per_call_mean_us": 139.15760040283203
+          },
+          "P4": {
+            "n": 100,
+            "median_us": 141.31200313568115,
+            "mean_us": 141.494400203228,
+            "p5_us": 140.09599387645721,
+            "p95_us": 143.36000382900238,
+            "cv_pct": 0.7728204137827775,
+            "min_us": 139.23199474811554,
+            "max_us": 146.81600034236908,
+            "batch_per_call_mean_us": 139.0009593963623
+          }
+        },
+        "stage_estimates": {
+          "K1": {
+            "estimate_us": 23.344640696886927,
+            "method": "mean(P1)-mean(P0)",
+            "independent_probe_standard_error_us": 0.017722796285933137,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K2": {
+            "estimate_us": 35.061120484024286,
+            "method": "mean(P2)-mean(P1)",
+            "independent_probe_standard_error_us": 0.07035171896577166,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K3": {
+            "estimate_us": 26.49823810905218,
+            "method": "mean(P3)-mean(P2)",
+            "independent_probe_standard_error_us": 0.10149249793824026,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K4": {
+            "estimate_us": 55.36160096526146,
+            "method": "mean(P4)-mean(P3)",
+            "independent_probe_standard_error_us": 0.1325240328794298,
+            "is_direct_single_kernel_event_interval": false
+          }
+        },
+        "chain_estimate_us": 140.26560025522485,
+        "native_batch_per_call": {
+          "n": 5,
+          "median_us": 136.8509578704834,
+          "mean_us": 136.84768104553223,
+          "p5_us": 136.80942344665527,
+          "p95_us": 136.878755569458,
+          "cv_pct": 0.021108798245552354,
+          "min_us": 136.80543899536133,
+          "max_us": 136.87904357910156
+        },
+        "marker_delta_pct_by_probe": {
+          "P0": 1.0583794423681958,
+          "P1": 1.5858409240562032,
+          "P2": 1.611855109696858,
+          "P3": 1.685514349509809,
+          "P4": 1.5710533264324589
+        },
+        "marker_check_pct_max": 1.685514349509809,
+        "chain_vs_native_pct": 2.4951541720103165,
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "input_signature": "4e828c9372df15ebbf71ca0bd50027c6d086a70127e4d2f98aed2c3ae5d1b6b6",
+        "status": "PASS",
+        "admission": {
+          "marker_perturbation_within_5pct": true,
+          "chain_closure_within_5pct": true,
+          "nonempty_prefix_cv_within_5pct": true,
+          "native_cv_within_5pct": true
+        }
+      },
+      "input_signature": "4e828c9372df15ebbf71ca0bd50027c6d086a70127e4d2f98aed2c3ae5d1b6b6",
+      "validation": {
+        "cp_graph_exact": [
+          {
+            "buffer": 0,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 1,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 2,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 3,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          }
+        ],
+        "non_cp_comparison": {
+          "O": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 9.664845129009336e-05,
+            "max_abs": 0.00048828125
+          },
+          "final_state": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 0.00031020576716400683,
+            "max_abs": 0.00031834840774536133
+          }
+        },
+        "initial_unchanged": true
+      },
+      "environment": {
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "pilot": false,
+        "S": 8192,
+        "C": 1024,
+        "P": 8,
+        "B": 1,
+        "H": 16,
+        "D": 128,
+        "trial": 1,
+        "pid": 262522,
+        "seed": 20269121,
+        "rotating_buffers": 4,
+        "warmup": 20,
+        "samples": 100,
+        "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+        "repo": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+        "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "gpu_name": "NVIDIA B200",
+        "sm_count": 148,
+        "compute_capability": [
+          10,
+          0
+        ],
+        "memory_bytes": 191503007744,
+        "telemetry": [
+          {
+            "phase": "start",
+            "wall_ns": 1790638446695956924,
+            "nvidia_smi": "2026/09/28 23:34:06.705, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 33, 240.73, 0, 0, 4"
+          },
+          {
+            "phase": "before_P0",
+            "wall_ns": 1790638454702497005,
+            "nvidia_smi": "2026/09/28 23:34:14.712, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 33, 270.51, 0, 0, 1574"
+          },
+          {
+            "phase": "before_P1",
+            "wall_ns": 1790638454832586083,
+            "nvidia_smi": "2026/09/28 23:34:14.842, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 39, 330.72, 90, 27, 1574"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638454843989464,
+            "nvidia_smi": "2026/09/28 23:34:14.854, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 39, 336.02, 90, 27, 1574"
+          },
+          {
+            "phase": "before_P2",
+            "wall_ns": 1790638454962463212,
+            "nvidia_smi": "2026/09/28 23:34:14.972, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 40, 394.20, 94, 28, 1574"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638455061226198,
+            "nvidia_smi": "2026/09/28 23:34:15.070, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 40, 445.04, 86, 26, 1574"
+          },
+          {
+            "phase": "before_P3",
+            "wall_ns": 1790638455091810704,
+            "nvidia_smi": "2026/09/28 23:34:15.101, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 40, 451.12, 86, 26, 1574"
+          },
+          {
+            "phase": "before_P4",
+            "wall_ns": 1790638455220941918,
+            "nvidia_smi": "2026/09/28 23:34:15.230, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 40, 518.76, 85, 26, 1574"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638455277583780,
+            "nvidia_smi": "2026/09/28 23:34:15.287, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 40, 538.19, 85, 26, 1574"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638455493882441,
+            "nvidia_smi": "2026/09/28 23:34:15.503, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 42, 658.15, 100, 31, 1574"
+          },
+          {
+            "phase": "end",
+            "wall_ns": 1790638455621338799,
+            "nvidia_smi": "2026/09/28 23:34:15.631, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 41, 730.31, 100, 31, 1574"
+          }
+        ],
+        "runner_sha256": "0d5989f8b6b1c9131f94b5f223d0334da978bd23a62515933f11d036aa9d2bfb",
+        "cu_seqlens_dtype": "torch.int64",
+        "initial_final_state_dtype": "torch.float32",
+        "qkvo_dtype": "torch.float16",
+        "kernel_qk_l2norm": false,
+        "use_cp": true,
+        "scale": 0.08838834764831843,
+        "probe_stride_calls": 4,
+        "calls_per_graph": 400,
+        "nvidia-cutlass-dsl": "4.7.0",
+        "cuda-python": "13.2.0",
+        "flashinfer-python": "0.6.12",
+        "source_sha256": {
+          "flashinfer/gdn_prefill.py": "e4475a2edc830b97d6bc27f13980e2f5951d7d97eb13547f539acf94e2a2132d",
+          "flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+          "flashinfer/gdn_kernels/delta_rule_dsl/delta_rule_cp_sm120.py": "5572cba70eab72426b2567322807be7fd27f3d84af6ac7410f13f715ca6a077b",
+          "flashinfer/gdn_kernels/delta_rule_dsl/varlen_helper.py": "c9cda29f3e9d0105d91326c4c670feace92f988ed9fde61dcea3035fd6e704ab"
+        }
+      },
+      "native_batch_samples": [
+        {
+          "repeat": 0,
+          "batch_us": 54751.617431640625,
+          "per_call_mean_us": 136.87904357910156
+        },
+        {
+          "repeat": 1,
+          "batch_us": 54730.14450073242,
+          "per_call_mean_us": 136.82536125183105
+        },
+        {
+          "repeat": 2,
+          "batch_us": 54722.17559814453,
+          "per_call_mean_us": 136.80543899536133
+        },
+        {
+          "repeat": 3,
+          "batch_us": 54740.38314819336,
+          "per_call_mean_us": 136.8509578704834
+        },
+        {
+          "repeat": 4,
+          "batch_us": 54751.041412353516,
+          "per_call_mean_us": 136.8776035308838
+        }
+      ]
+    },
+    {
+      "S": 8192,
+      "C": 1024,
+      "trial": 2,
+      "path": "formal/S8192_trial2",
+      "summary": {
+        "probes": {
+          "P0": {
+            "n": 100,
+            "median_us": 1.2159999459981918,
+            "mean_us": 1.2291199481114745,
+            "p5_us": 1.2159999459981918,
+            "p95_us": 1.247999956831336,
+            "cv_pct": 5.994755704735074,
+            "min_us": 1.2159999459981918,
+            "max_us": 1.9519999623298645,
+            "batch_per_call_mean_us": 137.96392440795898
+          },
+          "P1": {
+            "n": 100,
+            "median_us": 24.57600086927414,
+            "mean_us": 24.547520577907562,
+            "p5_us": 24.4463998824358,
+            "p95_us": 24.641599506139755,
+            "cv_pct": 1.4526620823187788,
+            "min_us": 22.495999932289124,
+            "max_us": 26.528000831604004,
+            "batch_per_call_mean_us": 138.71015548706055
+          },
+          "P2": {
+            "n": 100,
+            "median_us": 59.39200147986412,
+            "mean_us": 59.58080116659403,
+            "p5_us": 59.36000123620033,
+            "p95_us": 61.43999844789505,
+            "cv_pct": 1.1599928336519192,
+            "min_us": 58.33600088953972,
+            "max_us": 64.06400352716446,
+            "batch_per_call_mean_us": 138.7275218963623
+          },
+          "P3": {
+            "n": 100,
+            "median_us": 86.01599931716919,
+            "mean_us": 85.77791914343834,
+            "p5_us": 83.93599838018417,
+            "p95_us": 86.04959957301617,
+            "cv_pct": 1.1181160462253001,
+            "min_us": 83.67999643087387,
+            "max_us": 92.06400066614151,
+            "batch_per_call_mean_us": 138.80864143371582
+          },
+          "P4": {
+            "n": 100,
+            "median_us": 141.31200313568115,
+            "mean_us": 140.9535999596119,
+            "p5_us": 139.26400244235992,
+            "p95_us": 142.24480241537094,
+            "cv_pct": 0.7117810780612817,
+            "min_us": 139.23199474811554,
+            "max_us": 144.48000490665436,
+            "batch_per_call_mean_us": 138.5689640045166
+          }
+        },
+        "stage_estimates": {
+          "K1": {
+            "estimate_us": 23.318400629796088,
+            "method": "mean(P1)-mean(P0)",
+            "independent_probe_standard_error_us": 0.03641254918104825,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K2": {
+            "estimate_us": 35.033280588686466,
+            "method": "mean(P2)-mean(P1)",
+            "independent_probe_standard_error_us": 0.07777037253446056,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K3": {
+            "estimate_us": 26.19711797684431,
+            "method": "mean(P3)-mean(P2)",
+            "independent_probe_standard_error_us": 0.11821722778030046,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K4": {
+            "estimate_us": 55.17568081617355,
+            "method": "mean(P4)-mean(P3)",
+            "independent_probe_standard_error_us": 0.13879622869142055,
+            "is_direct_single_kernel_event_interval": false
+          }
+        },
+        "chain_estimate_us": 139.72448001150042,
+        "native_batch_per_call": {
+          "n": 5,
+          "median_us": 136.490478515625,
+          "mean_us": 136.49846267700195,
+          "p5_us": 136.47734260559082,
+          "p95_us": 136.52686500549316,
+          "cv_pct": 0.015302215508243143,
+          "min_us": 136.47687911987305,
+          "max_us": 136.52952194213867
+        },
+        "marker_delta_pct_by_probe": {
+          "P0": 1.0795228417089353,
+          "P1": 1.6262504136370648,
+          "P2": 1.6389739453372965,
+          "P3": 1.69840632350442,
+          "P4": 1.5228062143936683
+        },
+        "marker_check_pct_max": 1.69840632350442,
+        "chain_vs_native_pct": 2.369397141138463,
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "input_signature": "4e828c9372df15ebbf71ca0bd50027c6d086a70127e4d2f98aed2c3ae5d1b6b6",
+        "status": "PASS",
+        "admission": {
+          "marker_perturbation_within_5pct": true,
+          "chain_closure_within_5pct": true,
+          "nonempty_prefix_cv_within_5pct": true,
+          "native_cv_within_5pct": true
+        }
+      },
+      "input_signature": "4e828c9372df15ebbf71ca0bd50027c6d086a70127e4d2f98aed2c3ae5d1b6b6",
+      "validation": {
+        "cp_graph_exact": [
+          {
+            "buffer": 0,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 1,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 2,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 3,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          }
+        ],
+        "non_cp_comparison": {
+          "O": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 9.664845129009336e-05,
+            "max_abs": 0.00048828125
+          },
+          "final_state": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 0.00031020576716400683,
+            "max_abs": 0.00031834840774536133
+          }
+        },
+        "initial_unchanged": true
+      },
+      "environment": {
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "pilot": false,
+        "S": 8192,
+        "C": 1024,
+        "P": 8,
+        "B": 1,
+        "H": 16,
+        "D": 128,
+        "trial": 2,
+        "pid": 262979,
+        "seed": 20269121,
+        "rotating_buffers": 4,
+        "warmup": 20,
+        "samples": 100,
+        "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+        "repo": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+        "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "gpu_name": "NVIDIA B200",
+        "sm_count": 148,
+        "compute_capability": [
+          10,
+          0
+        ],
+        "memory_bytes": 191503007744,
+        "telemetry": [
+          {
+            "phase": "start",
+            "wall_ns": 1790638492468730251,
+            "nvidia_smi": "2026/09/28 23:34:52.479, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 35, 242.74, 0, 0, 4"
+          },
+          {
+            "phase": "before_P0",
+            "wall_ns": 1790638500489132887,
+            "nvidia_smi": "2026/09/28 23:35:00.499, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 34, 270.79, 11, 3, 1574"
+          },
+          {
+            "phase": "before_P1",
+            "wall_ns": 1790638500620369122,
+            "nvidia_smi": "2026/09/28 23:35:00.629, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 39, 328.00, 83, 25, 1574"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638500630815118,
+            "nvidia_smi": "2026/09/28 23:35:00.641, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 39, 332.49, 83, 25, 1574"
+          },
+          {
+            "phase": "before_P2",
+            "wall_ns": 1790638500749488025,
+            "nvidia_smi": "2026/09/28 23:35:00.759, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 41, 393.13, 99, 30, 1574"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638500847948003,
+            "nvidia_smi": "2026/09/28 23:35:00.857, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 41, 441.92, 84, 25, 1574"
+          },
+          {
+            "phase": "before_P3",
+            "wall_ns": 1790638500879712909,
+            "nvidia_smi": "2026/09/28 23:35:00.889, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 41, 448.01, 84, 25, 1574"
+          },
+          {
+            "phase": "before_P4",
+            "wall_ns": 1790638501008913102,
+            "nvidia_smi": "2026/09/28 23:35:01.018, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 42, 519.19, 85, 26, 1574"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638501064226605,
+            "nvidia_smi": "2026/09/28 23:35:01.073, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 41, 546.55, 85, 26, 1574"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638501280578237,
+            "nvidia_smi": "2026/09/28 23:35:01.289, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 43, 659.89, 100, 31, 1574"
+          },
+          {
+            "phase": "end",
+            "wall_ns": 1790638501408693189,
+            "nvidia_smi": "2026/09/28 23:35:01.418, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 43, 733.99, 100, 31, 1574"
+          }
+        ],
+        "runner_sha256": "0d5989f8b6b1c9131f94b5f223d0334da978bd23a62515933f11d036aa9d2bfb",
+        "cu_seqlens_dtype": "torch.int64",
+        "initial_final_state_dtype": "torch.float32",
+        "qkvo_dtype": "torch.float16",
+        "kernel_qk_l2norm": false,
+        "use_cp": true,
+        "scale": 0.08838834764831843,
+        "probe_stride_calls": 4,
+        "calls_per_graph": 400,
+        "nvidia-cutlass-dsl": "4.7.0",
+        "cuda-python": "13.2.0",
+        "flashinfer-python": "0.6.12",
+        "source_sha256": {
+          "flashinfer/gdn_prefill.py": "e4475a2edc830b97d6bc27f13980e2f5951d7d97eb13547f539acf94e2a2132d",
+          "flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+          "flashinfer/gdn_kernels/delta_rule_dsl/delta_rule_cp_sm120.py": "5572cba70eab72426b2567322807be7fd27f3d84af6ac7410f13f715ca6a077b",
+          "flashinfer/gdn_kernels/delta_rule_dsl/varlen_helper.py": "c9cda29f3e9d0105d91326c4c670feace92f988ed9fde61dcea3035fd6e704ab"
+        }
+      },
+      "native_batch_samples": [
+        {
+          "repeat": 0,
+          "batch_us": 54596.19140625,
+          "per_call_mean_us": 136.490478515625
+        },
+        {
+          "repeat": 1,
+          "batch_us": 54606.49490356445,
+          "per_call_mean_us": 136.51623725891113
+        },
+        {
+          "repeat": 2,
+          "batch_us": 54591.678619384766,
+          "per_call_mean_us": 136.4791965484619
+        },
+        {
+          "repeat": 3,
+          "batch_us": 54611.80877685547,
+          "per_call_mean_us": 136.52952194213867
+        },
+        {
+          "repeat": 4,
+          "batch_us": 54590.75164794922,
+          "per_call_mean_us": 136.47687911987305
+        }
+      ]
+    },
+    {
+      "S": 8192,
+      "C": 1024,
+      "trial": 3,
+      "path": "formal/S8192_trial3",
+      "summary": {
+        "probes": {
+          "P0": {
+            "n": 100,
+            "median_us": 1.2159999459981918,
+            "mean_us": 1.2300799484364688,
+            "p5_us": 1.2159999459981918,
+            "p95_us": 1.247999956831336,
+            "cv_pct": 6.512169923864687,
+            "min_us": 1.2159999459981918,
+            "max_us": 1.9839999731630087,
+            "batch_per_call_mean_us": 138.49224090576172
+          },
+          "P1": {
+            "n": 100,
+            "median_us": 24.57600086927414,
+            "mean_us": 24.57472065463662,
+            "p5_us": 24.480000138282776,
+            "p95_us": 24.609599262475967,
+            "cv_pct": 0.713436023619295,
+            "min_us": 23.552000522613525,
+            "max_us": 25.919999927282333,
+            "batch_per_call_mean_us": 139.28815841674805
+          },
+          "P2": {
+            "n": 100,
+            "median_us": 59.39200147986412,
+            "mean_us": 59.59168117493391,
+            "p5_us": 59.36000123620033,
+            "p95_us": 61.43999844789505,
+            "cv_pct": 1.052827225674318,
+            "min_us": 59.039998799562454,
+            "max_us": 62.6240000128746,
+            "batch_per_call_mean_us": 139.25959587097168
+          },
+          "P3": {
+            "n": 100,
+            "median_us": 86.01599931716919,
+            "mean_us": 86.27775929868221,
+            "p5_us": 85.91839857399464,
+            "p95_us": 88.06400001049042,
+            "cv_pct": 1.005438943252156,
+            "min_us": 85.75999736785889,
+            "max_us": 92.51199662685394,
+            "batch_per_call_mean_us": 139.32567596435547
+          },
+          "P4": {
+            "n": 100,
+            "median_us": 141.31200313568115,
+            "mean_us": 141.75520062446594,
+            "p5_us": 140.09599387645721,
+            "p95_us": 143.36000382900238,
+            "cv_pct": 0.7180446484247436,
+            "min_us": 139.20000195503235,
+            "max_us": 144.67200636863708,
+            "batch_per_call_mean_us": 139.18359756469727
+          }
+        },
+        "stage_estimates": {
+          "K1": {
+            "estimate_us": 23.344640706200153,
+            "method": "mean(P1)-mean(P0)",
+            "independent_probe_standard_error_us": 0.01927579270723362,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K2": {
+            "estimate_us": 35.01696052029729,
+            "method": "mean(P2)-mean(P1)",
+            "independent_probe_standard_error_us": 0.06514340920690102,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K3": {
+            "estimate_us": 26.686078123748302,
+            "method": "mean(P3)-mean(P2)",
+            "independent_probe_standard_error_us": 0.10705755859269106,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K4": {
+            "estimate_us": 55.47744132578373,
+            "method": "mean(P4)-mean(P3)",
+            "independent_probe_standard_error_us": 0.13373686767636836,
+            "is_direct_single_kernel_event_interval": false
+          }
+        },
+        "chain_estimate_us": 140.52512067602947,
+        "native_batch_per_call": {
+          "n": 5,
+          "median_us": 137.0969581604004,
+          "mean_us": 137.08073616027832,
+          "p5_us": 137.0275363922119,
+          "p95_us": 137.113920211792,
+          "cv_pct": 0.025741759613169865,
+          "min_us": 137.01663970947266,
+          "max_us": 137.11688041687012
+        },
+        "marker_delta_pct_by_probe": {
+          "P0": 1.0177342838846082,
+          "P1": 1.5982851011063337,
+          "P2": 1.5774512721435041,
+          "P3": 1.6256508049927065,
+          "P4": 1.5220172878347649
+        },
+        "marker_check_pct_max": 1.6256508049927065,
+        "chain_vs_native_pct": 2.500538714811018,
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "input_signature": "4e828c9372df15ebbf71ca0bd50027c6d086a70127e4d2f98aed2c3ae5d1b6b6",
+        "status": "PASS",
+        "admission": {
+          "marker_perturbation_within_5pct": true,
+          "chain_closure_within_5pct": true,
+          "nonempty_prefix_cv_within_5pct": true,
+          "native_cv_within_5pct": true
+        }
+      },
+      "input_signature": "4e828c9372df15ebbf71ca0bd50027c6d086a70127e4d2f98aed2c3ae5d1b6b6",
+      "validation": {
+        "cp_graph_exact": [
+          {
+            "buffer": 0,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 1,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 2,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 3,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          }
+        ],
+        "non_cp_comparison": {
+          "O": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 9.664845129009336e-05,
+            "max_abs": 0.00048828125
+          },
+          "final_state": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 0.00031020576716400683,
+            "max_abs": 0.00031834840774536133
+          }
+        },
+        "initial_unchanged": true
+      },
+      "environment": {
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "pilot": false,
+        "S": 8192,
+        "C": 1024,
+        "P": 8,
+        "B": 1,
+        "H": 16,
+        "D": 128,
+        "trial": 3,
+        "pid": 263433,
+        "seed": 20269121,
+        "rotating_buffers": 4,
+        "warmup": 20,
+        "samples": 100,
+        "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+        "repo": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+        "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "gpu_name": "NVIDIA B200",
+        "sm_count": 148,
+        "compute_capability": [
+          10,
+          0
+        ],
+        "memory_bytes": 191503007744,
+        "telemetry": [
+          {
+            "phase": "start",
+            "wall_ns": 1790638535892529623,
+            "nvidia_smi": "2026/09/28 23:35:35.902, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 36, 242.88, 0, 0, 4"
+          },
+          {
+            "phase": "before_P0",
+            "wall_ns": 1790638543565145675,
+            "nvidia_smi": "2026/09/28 23:35:43.575, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 37, 271.65, 36, 11, 1574"
+          },
+          {
+            "phase": "before_P1",
+            "wall_ns": 1790638543695571891,
+            "nvidia_smi": "2026/09/28 23:35:43.705, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 39, 329.49, 83, 25, 1574"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638543706635108,
+            "nvidia_smi": "2026/09/28 23:35:43.716, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 39, 333.60, 83, 25, 1574"
+          },
+          {
+            "phase": "before_P2",
+            "wall_ns": 1790638543825144394,
+            "nvidia_smi": "2026/09/28 23:35:43.834, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 41, 389.23, 85, 26, 1574"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638543923541816,
+            "nvidia_smi": "2026/09/28 23:35:43.932, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 42, 441.46, 85, 26, 1574"
+          },
+          {
+            "phase": "before_P3",
+            "wall_ns": 1790638543954732917,
+            "nvidia_smi": "2026/09/28 23:35:43.964, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 42, 448.06, 99, 30, 1574"
+          },
+          {
+            "phase": "before_P4",
+            "wall_ns": 1790638544084167541,
+            "nvidia_smi": "2026/09/28 23:35:44.093, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 42, 515.48, 85, 26, 1574"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638544139609189,
+            "nvidia_smi": "2026/09/28 23:35:44.149, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 42, 544.53, 85, 26, 1574"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638544355935650,
+            "nvidia_smi": "2026/09/28 23:35:44.365, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 43, 654.50, 100, 31, 1574"
+          },
+          {
+            "phase": "end",
+            "wall_ns": 1790638544485367344,
+            "nvidia_smi": "2026/09/28 23:35:44.495, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 44, 728.36, 100, 31, 1574"
+          }
+        ],
+        "runner_sha256": "0d5989f8b6b1c9131f94b5f223d0334da978bd23a62515933f11d036aa9d2bfb",
+        "cu_seqlens_dtype": "torch.int64",
+        "initial_final_state_dtype": "torch.float32",
+        "qkvo_dtype": "torch.float16",
+        "kernel_qk_l2norm": false,
+        "use_cp": true,
+        "scale": 0.08838834764831843,
+        "probe_stride_calls": 4,
+        "calls_per_graph": 400,
+        "nvidia-cutlass-dsl": "4.7.0",
+        "cuda-python": "13.2.0",
+        "flashinfer-python": "0.6.12",
+        "source_sha256": {
+          "flashinfer/gdn_prefill.py": "e4475a2edc830b97d6bc27f13980e2f5951d7d97eb13547f539acf94e2a2132d",
+          "flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+          "flashinfer/gdn_kernels/delta_rule_dsl/delta_rule_cp_sm120.py": "5572cba70eab72426b2567322807be7fd27f3d84af6ac7410f13f715ca6a077b",
+          "flashinfer/gdn_kernels/delta_rule_dsl/varlen_helper.py": "c9cda29f3e9d0105d91326c4c670feace92f988ed9fde61dcea3035fd6e704ab"
+        }
+      },
+      "native_batch_samples": [
+        {
+          "repeat": 0,
+          "batch_us": 54806.65588378906,
+          "per_call_mean_us": 137.01663970947266
+        },
+        {
+          "repeat": 1,
+          "batch_us": 54838.783264160156,
+          "per_call_mean_us": 137.0969581604004
+        },
+        {
+          "repeat": 2,
+          "batch_us": 54828.44924926758,
+          "per_call_mean_us": 137.07112312316895
+        },
+        {
+          "repeat": 3,
+          "batch_us": 54840.8317565918,
+          "per_call_mean_us": 137.1020793914795
+        },
+        {
+          "repeat": 4,
+          "batch_us": 54846.75216674805,
+          "per_call_mean_us": 137.11688041687012
+        }
+      ]
+    },
+    {
+      "S": 16384,
+      "C": 2048,
+      "trial": 1,
+      "path": "formal/S16384_trial1",
+      "summary": {
+        "probes": {
+          "P0": {
+            "n": 100,
+            "median_us": 1.2159999459981918,
+            "mean_us": 1.2291199481114745,
+            "p5_us": 1.2159999459981918,
+            "p95_us": 1.247999956831336,
+            "cv_pct": 7.785215846856837,
+            "min_us": 1.2159999459981918,
+            "max_us": 2.176000038161874,
+            "batch_per_call_mean_us": 207.25175857543945
+          },
+          "P1": {
+            "n": 100,
+            "median_us": 38.91199827194214,
+            "mean_us": 39.661120027303696,
+            "p5_us": 38.88000175356865,
+            "p95_us": 40.991999208927155,
+            "cv_pct": 2.5367255902785577,
+            "min_us": 38.62399980425835,
+            "max_us": 41.728001087903976,
+            "batch_per_call_mean_us": 207.89695739746094
+          },
+          "P2": {
+            "n": 100,
+            "median_us": 100.35199671983719,
+            "mean_us": 100.30879758298397,
+            "p5_us": 99.27679672837257,
+            "p95_us": 100.41759721934795,
+            "cv_pct": 0.8644696736110645,
+            "min_us": 98.30400347709656,
+            "max_us": 106.72000050544739,
+            "batch_per_call_mean_us": 208.1991195678711
+          },
+          "P3": {
+            "n": 100,
+            "median_us": 124.97599795460701,
+            "mean_us": 125.90719915926456,
+            "p5_us": 124.89599734544754,
+            "p95_us": 127.00800597667694,
+            "cv_pct": 1.057238442813663,
+            "min_us": 124.57600235939026,
+            "max_us": 134.46399569511414,
+            "batch_per_call_mean_us": 208.00016403198242
+          },
+          "P4": {
+            "n": 100,
+            "median_us": 209.77599918842316,
+            "mean_us": 210.24127900600433,
+            "p5_us": 208.85600298643112,
+            "p95_us": 212.99199759960175,
+            "cv_pct": 0.8269062582818065,
+            "min_us": 206.84799551963806,
+            "max_us": 219.55199539661407,
+            "batch_per_call_mean_us": 207.7773666381836
+          }
+        },
+        "stage_estimates": {
+          "K1": {
+            "estimate_us": 38.43200007919222,
+            "method": "mean(P1)-mean(P0)",
+            "independent_probe_standard_error_us": 0.10106340602840146,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K2": {
+            "estimate_us": 60.647677555680275,
+            "method": "mean(P2)-mean(P1)",
+            "independent_probe_standard_error_us": 0.1328214958500194,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K3": {
+            "estimate_us": 25.598401576280594,
+            "method": "mean(P3)-mean(P2)",
+            "independent_probe_standard_error_us": 0.15886667828523857,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K4": {
+            "estimate_us": 84.33407984673977,
+            "method": "mean(P4)-mean(P3)",
+            "independent_probe_standard_error_us": 0.218959087141736,
+            "is_direct_single_kernel_event_interval": false
+          }
+        },
+        "chain_estimate_us": 209.01215905789286,
+        "native_batch_per_call": {
+          "n": 5,
+          "median_us": 205.523681640625,
+          "mean_us": 205.5255355834961,
+          "p5_us": 205.44163513183594,
+          "p95_us": 205.58483123779297,
+          "cv_pct": 0.028376694049099555,
+          "min_us": 205.42232513427734,
+          "max_us": 205.58712005615234
+        },
+        "marker_delta_pct_by_probe": {
+          "P0": 0.8408164553202813,
+          "P1": 1.1547456419089386,
+          "P2": 1.3017662518931994,
+          "P3": 1.204962061592374,
+          "P4": 1.0965573307991638
+        },
+        "marker_check_pct_max": 1.3017662518931994,
+        "chain_vs_native_pct": 1.697360318490082,
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "input_signature": "3c9174ab9fc33a7662e104dcabf4e2e09539c27f4b0214a8daec7fd2a17f44d8",
+        "status": "PASS",
+        "admission": {
+          "marker_perturbation_within_5pct": true,
+          "chain_closure_within_5pct": true,
+          "nonempty_prefix_cv_within_5pct": true,
+          "native_cv_within_5pct": true
+        }
+      },
+      "input_signature": "3c9174ab9fc33a7662e104dcabf4e2e09539c27f4b0214a8daec7fd2a17f44d8",
+      "validation": {
+        "cp_graph_exact": [
+          {
+            "buffer": 0,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 1,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 2,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 3,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          }
+        ],
+        "non_cp_comparison": {
+          "O": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 9.63916172622703e-05,
+            "max_abs": 0.00048828125
+          },
+          "final_state": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 0.00031683227280154824,
+            "max_abs": 0.0003253519535064697
+          }
+        },
+        "initial_unchanged": true
+      },
+      "environment": {
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "pilot": false,
+        "S": 16384,
+        "C": 2048,
+        "P": 8,
+        "B": 1,
+        "H": 16,
+        "D": 128,
+        "trial": 1,
+        "pid": 262667,
+        "seed": 20277313,
+        "rotating_buffers": 4,
+        "warmup": 20,
+        "samples": 100,
+        "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+        "repo": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+        "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "gpu_name": "NVIDIA B200",
+        "sm_count": 148,
+        "compute_capability": [
+          10,
+          0
+        ],
+        "memory_bytes": 191503007744,
+        "telemetry": [
+          {
+            "phase": "start",
+            "wall_ns": 1790638457797146745,
+            "nvidia_smi": "2026/09/28 23:34:17.807, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 34, 241.35, 0, 0, 4"
+          },
+          {
+            "phase": "before_P0",
+            "wall_ns": 1790638468485637846,
+            "nvidia_smi": "2026/09/28 23:34:28.495, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 38, 299.29, 44, 19, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638468598080894,
+            "nvidia_smi": "2026/09/28 23:34:28.608, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 40, 363.36, 84, 38, 2262"
+          },
+          {
+            "phase": "before_P1",
+            "wall_ns": 1790638468672209206,
+            "nvidia_smi": "2026/09/28 23:34:28.681, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 42, 420.92, 99, 44, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638468814960619,
+            "nvidia_smi": "2026/09/28 23:34:28.824, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 43, 511.25, 84, 37, 2262"
+          },
+          {
+            "phase": "before_P2",
+            "wall_ns": 1790638468858743297,
+            "nvidia_smi": "2026/09/28 23:34:28.868, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 43, 539.88, 99, 44, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638469031916925,
+            "nvidia_smi": "2026/09/28 23:34:29.041, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 44, 649.11, 99, 44, 2262"
+          },
+          {
+            "phase": "before_P3",
+            "wall_ns": 1790638469044887101,
+            "nvidia_smi": "2026/09/28 23:34:29.054, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 44, 666.34, 99, 44, 2262"
+          },
+          {
+            "phase": "before_P4",
+            "wall_ns": 1790638469230741686,
+            "nvidia_smi": "2026/09/28 23:34:29.240, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 43, 786.63, 86, 38, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638469247726789,
+            "nvidia_smi": "2026/09/28 23:34:29.257, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 43, 794.73, 85, 38, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638469464476174,
+            "nvidia_smi": "2026/09/28 23:34:29.474, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 46, 895.72, 100, 45, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638469681154760,
+            "nvidia_smi": "2026/09/28 23:34:29.690, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 46, 911.13, 100, 45, 2262"
+          },
+          {
+            "phase": "end",
+            "wall_ns": 1790638469824068611,
+            "nvidia_smi": "2026/09/28 23:34:29.833, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 46, 914.17, 100, 45, 2262"
+          }
+        ],
+        "runner_sha256": "0d5989f8b6b1c9131f94b5f223d0334da978bd23a62515933f11d036aa9d2bfb",
+        "cu_seqlens_dtype": "torch.int64",
+        "initial_final_state_dtype": "torch.float32",
+        "qkvo_dtype": "torch.float16",
+        "kernel_qk_l2norm": false,
+        "use_cp": true,
+        "scale": 0.08838834764831843,
+        "probe_stride_calls": 4,
+        "calls_per_graph": 400,
+        "nvidia-cutlass-dsl": "4.7.0",
+        "cuda-python": "13.2.0",
+        "flashinfer-python": "0.6.12",
+        "source_sha256": {
+          "flashinfer/gdn_prefill.py": "e4475a2edc830b97d6bc27f13980e2f5951d7d97eb13547f539acf94e2a2132d",
+          "flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+          "flashinfer/gdn_kernels/delta_rule_dsl/delta_rule_cp_sm120.py": "5572cba70eab72426b2567322807be7fd27f3d84af6ac7410f13f715ca6a077b",
+          "flashinfer/gdn_kernels/delta_rule_dsl/varlen_helper.py": "c9cda29f3e9d0105d91326c4c670feace92f988ed9fde61dcea3035fd6e704ab"
+        }
+      },
+      "native_batch_samples": [
+        {
+          "repeat": 0,
+          "batch_us": 82234.84802246094,
+          "per_call_mean_us": 205.58712005615234
+        },
+        {
+          "repeat": 1,
+          "batch_us": 82207.55004882812,
+          "per_call_mean_us": 205.5188751220703
+        },
+        {
+          "repeat": 2,
+          "batch_us": 82230.27038574219,
+          "per_call_mean_us": 205.57567596435547
+        },
+        {
+          "repeat": 3,
+          "batch_us": 82209.47265625,
+          "per_call_mean_us": 205.523681640625
+        },
+        {
+          "repeat": 4,
+          "batch_us": 82168.93005371094,
+          "per_call_mean_us": 205.42232513427734
+        }
+      ]
+    },
+    {
+      "S": 16384,
+      "C": 2048,
+      "trial": 2,
+      "path": "formal/S16384_trial2",
+      "summary": {
+        "probes": {
+          "P0": {
+            "n": 100,
+            "median_us": 1.2159999459981918,
+            "mean_us": 1.2310399487614632,
+            "p5_us": 1.2159999459981918,
+            "p95_us": 1.247999956831336,
+            "cv_pct": 6.156366173348559,
+            "min_us": 1.2159999459981918,
+            "max_us": 1.9519999623298645,
+            "batch_per_call_mean_us": 207.69847869873047
+          },
+          "P1": {
+            "n": 100,
+            "median_us": 38.94399851560593,
+            "mean_us": 39.87327989190817,
+            "p5_us": 38.88000175356865,
+            "p95_us": 40.991999208927155,
+            "cv_pct": 2.6305240503414784,
+            "min_us": 38.84800150990486,
+            "max_us": 42.17600077390671,
+            "batch_per_call_mean_us": 207.97943115234375
+          },
+          "P2": {
+            "n": 100,
+            "median_us": 100.35199671983719,
+            "mean_us": 100.27551770210266,
+            "p5_us": 98.30400347709656,
+            "p95_us": 100.47999769449234,
+            "cv_pct": 0.9818848908311254,
+            "min_us": 98.27200323343277,
+            "max_us": 107.87200182676315,
+            "batch_per_call_mean_us": 208.18607330322266
+          },
+          "P3": {
+            "n": 100,
+            "median_us": 125.47200173139572,
+            "mean_us": 125.9465591609478,
+            "p5_us": 124.89599734544754,
+            "p95_us": 127.00800597667694,
+            "cv_pct": 1.0640972723484723,
+            "min_us": 124.64000284671783,
+            "max_us": 134.5919966697693,
+            "batch_per_call_mean_us": 208.08231353759766
+          },
+          "P4": {
+            "n": 100,
+            "median_us": 210.7359990477562,
+            "mean_us": 210.31263902783394,
+            "p5_us": 208.81440341472626,
+            "p95_us": 212.99199759960175,
+            "cv_pct": 0.8100359288176007,
+            "min_us": 206.84799551963806,
+            "max_us": 220.22399306297302,
+            "batch_per_call_mean_us": 207.80399322509766
+          }
+        },
+        "stage_estimates": {
+          "K1": {
+            "estimate_us": 38.642239943146706,
+            "method": "mean(P1)-mean(P0)",
+            "independent_probe_standard_error_us": 0.10516106874572531,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K2": {
+            "estimate_us": 60.40223781019449,
+            "method": "mean(P2)-mean(P1)",
+            "independent_probe_standard_error_us": 0.1438596224563092,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K3": {
+            "estimate_us": 25.67104145884514,
+            "method": "mean(P3)-mean(P2)",
+            "independent_probe_standard_error_us": 0.16629905200029607,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K4": {
+            "estimate_us": 84.36607986688614,
+            "method": "mean(P4)-mean(P3)",
+            "independent_probe_standard_error_us": 0.21675792260160923,
+            "is_direct_single_kernel_event_interval": false
+          }
+        },
+        "chain_estimate_us": 209.08159907907248,
+        "native_batch_per_call": {
+          "n": 5,
+          "median_us": 205.4591941833496,
+          "mean_us": 205.45966339111328,
+          "p5_us": 205.40002059936523,
+          "p95_us": 205.5424575805664,
+          "cv_pct": 0.02790491209958833,
+          "min_us": 205.39640426635742,
+          "max_us": 205.56135177612305
+        },
+        "marker_delta_pct_by_probe": {
+          "P0": 1.0898925814838645,
+          "P1": 1.2266362569032019,
+          "P2": 1.3272120192584946,
+          "P3": 1.2767106211402757,
+          "P4": 1.1412480473643738
+        },
+        "marker_check_pct_max": 1.3272120192584946,
+        "chain_vs_native_pct": 1.763077534748958,
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "input_signature": "3c9174ab9fc33a7662e104dcabf4e2e09539c27f4b0214a8daec7fd2a17f44d8",
+        "status": "PASS",
+        "admission": {
+          "marker_perturbation_within_5pct": true,
+          "chain_closure_within_5pct": true,
+          "nonempty_prefix_cv_within_5pct": true,
+          "native_cv_within_5pct": true
+        }
+      },
+      "input_signature": "3c9174ab9fc33a7662e104dcabf4e2e09539c27f4b0214a8daec7fd2a17f44d8",
+      "validation": {
+        "cp_graph_exact": [
+          {
+            "buffer": 0,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 1,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 2,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 3,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          }
+        ],
+        "non_cp_comparison": {
+          "O": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 9.63916172622703e-05,
+            "max_abs": 0.00048828125
+          },
+          "final_state": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 0.00031683227280154824,
+            "max_abs": 0.0003253519535064697
+          }
+        },
+        "initial_unchanged": true
+      },
+      "environment": {
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "pilot": false,
+        "S": 16384,
+        "C": 2048,
+        "P": 8,
+        "B": 1,
+        "H": 16,
+        "D": 128,
+        "trial": 2,
+        "pid": 263124,
+        "seed": 20277313,
+        "rotating_buffers": 4,
+        "warmup": 20,
+        "samples": 100,
+        "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+        "repo": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+        "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "gpu_name": "NVIDIA B200",
+        "sm_count": 148,
+        "compute_capability": [
+          10,
+          0
+        ],
+        "memory_bytes": 191503007744,
+        "telemetry": [
+          {
+            "phase": "start",
+            "wall_ns": 1790638503600223801,
+            "nvidia_smi": "2026/09/28 23:35:03.610, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 35, 242.13, 0, 0, 4"
+          },
+          {
+            "phase": "before_P0",
+            "wall_ns": 1790638513503265791,
+            "nvidia_smi": "2026/09/28 23:35:13.513, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1950, 3996, 37, 308.75, 32, 14, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638513615580695,
+            "nvidia_smi": "2026/09/28 23:35:13.625, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 42, 372.81, 83, 37, 2262"
+          },
+          {
+            "phase": "before_P1",
+            "wall_ns": 1790638513690585127,
+            "nvidia_smi": "2026/09/28 23:35:13.700, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 42, 427.00, 99, 44, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638513832995119,
+            "nvidia_smi": "2026/09/28 23:35:13.842, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 44, 517.67, 99, 44, 2262"
+          },
+          {
+            "phase": "before_P2",
+            "wall_ns": 1790638513877286528,
+            "nvidia_smi": "2026/09/28 23:35:13.887, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 44, 545.14, 99, 44, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638514049625469,
+            "nvidia_smi": "2026/09/28 23:35:14.059, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 45, 660.64, 99, 44, 2262"
+          },
+          {
+            "phase": "before_P3",
+            "wall_ns": 1790638514063819511,
+            "nvidia_smi": "2026/09/28 23:35:14.073, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 45, 668.44, 99, 44, 2262"
+          },
+          {
+            "phase": "before_P4",
+            "wall_ns": 1790638514249472581,
+            "nvidia_smi": "2026/09/28 23:35:14.259, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 45, 788.93, 99, 44, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638514265705164,
+            "nvidia_smi": "2026/09/28 23:35:14.275, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 45, 796.93, 99, 44, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638514482570042,
+            "nvidia_smi": "2026/09/28 23:35:14.492, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 46, 891.94, 98, 44, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638514699269090,
+            "nvidia_smi": "2026/09/28 23:35:14.708, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 47, 914.55, 100, 45, 2262"
+          },
+          {
+            "phase": "end",
+            "wall_ns": 1790638514842392245,
+            "nvidia_smi": "2026/09/28 23:35:14.851, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 47, 913.04, 100, 45, 2262"
+          }
+        ],
+        "runner_sha256": "0d5989f8b6b1c9131f94b5f223d0334da978bd23a62515933f11d036aa9d2bfb",
+        "cu_seqlens_dtype": "torch.int64",
+        "initial_final_state_dtype": "torch.float32",
+        "qkvo_dtype": "torch.float16",
+        "kernel_qk_l2norm": false,
+        "use_cp": true,
+        "scale": 0.08838834764831843,
+        "probe_stride_calls": 4,
+        "calls_per_graph": 400,
+        "nvidia-cutlass-dsl": "4.7.0",
+        "cuda-python": "13.2.0",
+        "flashinfer-python": "0.6.12",
+        "source_sha256": {
+          "flashinfer/gdn_prefill.py": "e4475a2edc830b97d6bc27f13980e2f5951d7d97eb13547f539acf94e2a2132d",
+          "flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+          "flashinfer/gdn_kernels/delta_rule_dsl/delta_rule_cp_sm120.py": "5572cba70eab72426b2567322807be7fd27f3d84af6ac7410f13f715ca6a077b",
+          "flashinfer/gdn_kernels/delta_rule_dsl/varlen_helper.py": "c9cda29f3e9d0105d91326c4c670feace92f988ed9fde61dcea3035fd6e704ab"
+        }
+      },
+      "native_batch_samples": [
+        {
+          "repeat": 0,
+          "batch_us": 82224.54071044922,
+          "per_call_mean_us": 205.56135177612305
+        },
+        {
+          "repeat": 1,
+          "batch_us": 82183.67767333984,
+          "per_call_mean_us": 205.4591941833496
+        },
+        {
+          "repeat": 2,
+          "batch_us": 82158.56170654297,
+          "per_call_mean_us": 205.39640426635742
+        },
+        {
+          "repeat": 3,
+          "batch_us": 82165.7943725586,
+          "per_call_mean_us": 205.41448593139648
+        },
+        {
+          "repeat": 4,
+          "batch_us": 82186.75231933594,
+          "per_call_mean_us": 205.46688079833984
+        }
+      ]
+    },
+    {
+      "S": 16384,
+      "C": 2048,
+      "trial": 3,
+      "path": "formal/S16384_trial3",
+      "summary": {
+        "probes": {
+          "P0": {
+            "n": 100,
+            "median_us": 1.2159999459981918,
+            "mean_us": 1.2268799473531544,
+            "p5_us": 1.2159999459981918,
+            "p95_us": 1.247999956831336,
+            "cv_pct": 7.27713642633622,
+            "min_us": 1.2159999459981918,
+            "max_us": 2.1120000164955854,
+            "batch_per_call_mean_us": 207.30072021484375
+          },
+          "P1": {
+            "n": 100,
+            "median_us": 38.91199827194214,
+            "mean_us": 39.67200018465519,
+            "p5_us": 38.88000175356865,
+            "p95_us": 40.991999208927155,
+            "cv_pct": 2.536267364300818,
+            "min_us": 38.62399980425835,
+            "max_us": 41.37599840760231,
+            "batch_per_call_mean_us": 207.9323959350586
+          },
+          "P2": {
+            "n": 100,
+            "median_us": 100.35199671983719,
+            "mean_us": 100.27583792805672,
+            "p5_us": 98.30400347709656,
+            "p95_us": 100.48159770667553,
+            "cv_pct": 0.800039474523399,
+            "min_us": 98.27200323343277,
+            "max_us": 105.82400113344193,
+            "batch_per_call_mean_us": 208.1697654724121
+          },
+          "P3": {
+            "n": 100,
+            "median_us": 125.91999769210815,
+            "mean_us": 125.98751939833164,
+            "p5_us": 124.89599734544754,
+            "p95_us": 127.00800597667694,
+            "cv_pct": 1.0173067124425899,
+            "min_us": 124.64000284671783,
+            "max_us": 133.69600474834442,
+            "batch_per_call_mean_us": 208.03232192993164
+          },
+          "P4": {
+            "n": 100,
+            "median_us": 209.9200040102005,
+            "mean_us": 210.39231911301613,
+            "p5_us": 208.89439657330513,
+            "p95_us": 212.99199759960175,
+            "cv_pct": 0.8509383995838598,
+            "min_us": 207.68000185489655,
+            "max_us": 222.6240038871765,
+            "batch_per_call_mean_us": 207.89831161499023
+          }
+        },
+        "stage_estimates": {
+          "K1": {
+            "estimate_us": 38.445120237302035,
+            "method": "mean(P1)-mean(P0)",
+            "independent_probe_standard_error_us": 0.10101413292385825,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K2": {
+            "estimate_us": 60.60383774340153,
+            "method": "mean(P2)-mean(P1)",
+            "independent_probe_standard_error_us": 0.12868618352017036,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K3": {
+            "estimate_us": 25.711681470274925,
+            "method": "mean(P3)-mean(P2)",
+            "independent_probe_standard_error_us": 0.15120520573476062,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K4": {
+            "estimate_us": 84.40479971468449,
+            "method": "mean(P4)-mean(P3)",
+            "independent_probe_standard_error_us": 0.2201796710284081,
+            "is_direct_single_kernel_event_interval": false
+          }
+        },
+        "chain_estimate_us": 209.16543916566297,
+        "native_batch_per_call": {
+          "n": 5,
+          "median_us": 205.46072006225586,
+          "mean_us": 205.45670700073242,
+          "p5_us": 205.41266250610352,
+          "p95_us": 205.51403427124023,
+          "cv_pct": 0.0201527573174007,
+          "min_us": 205.41200637817383,
+          "max_us": 205.52488327026367
+        },
+        "marker_delta_pct_by_probe": {
+          "P0": 0.8955483812333354,
+          "P1": 1.202991925684782,
+          "P2": 1.3185222992187384,
+          "P3": 1.251627010212264,
+          "P4": 1.1864027109394826
+        },
+        "marker_check_pct_max": 1.3185222992187384,
+        "chain_vs_native_pct": 1.8031276743722957,
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "input_signature": "3c9174ab9fc33a7662e104dcabf4e2e09539c27f4b0214a8daec7fd2a17f44d8",
+        "status": "PASS",
+        "admission": {
+          "marker_perturbation_within_5pct": true,
+          "chain_closure_within_5pct": true,
+          "nonempty_prefix_cv_within_5pct": true,
+          "native_cv_within_5pct": true
+        }
+      },
+      "input_signature": "3c9174ab9fc33a7662e104dcabf4e2e09539c27f4b0214a8daec7fd2a17f44d8",
+      "validation": {
+        "cp_graph_exact": [
+          {
+            "buffer": 0,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 1,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 2,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 3,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          }
+        ],
+        "non_cp_comparison": {
+          "O": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 9.63916172622703e-05,
+            "max_abs": 0.00048828125
+          },
+          "final_state": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 0.00031683227280154824,
+            "max_abs": 0.0003253519535064697
+          }
+        },
+        "initial_unchanged": true
+      },
+      "environment": {
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "pilot": false,
+        "S": 16384,
+        "C": 2048,
+        "P": 8,
+        "B": 1,
+        "H": 16,
+        "D": 128,
+        "trial": 3,
+        "pid": 263578,
+        "seed": 20277313,
+        "rotating_buffers": 4,
+        "warmup": 20,
+        "samples": 100,
+        "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+        "repo": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+        "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "gpu_name": "NVIDIA B200",
+        "sm_count": 148,
+        "compute_capability": [
+          10,
+          0
+        ],
+        "memory_bytes": 191503007744,
+        "telemetry": [
+          {
+            "phase": "start",
+            "wall_ns": 1790638546662261921,
+            "nvidia_smi": "2026/09/28 23:35:46.672, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 35, 242.13, 0, 0, 4"
+          },
+          {
+            "phase": "before_P0",
+            "wall_ns": 1790638556577356068,
+            "nvidia_smi": "2026/09/28 23:35:56.587, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 39, 294.49, 52, 23, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638556689870960,
+            "nvidia_smi": "2026/09/28 23:35:56.700, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 40, 366.30, 84, 38, 2262"
+          },
+          {
+            "phase": "before_P1",
+            "wall_ns": 1790638556764021200,
+            "nvidia_smi": "2026/09/28 23:35:56.773, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 42, 418.24, 99, 44, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638556907328634,
+            "nvidia_smi": "2026/09/28 23:35:56.916, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 43, 508.99, 86, 38, 2262"
+          },
+          {
+            "phase": "before_P2",
+            "wall_ns": 1790638556949716820,
+            "nvidia_smi": "2026/09/28 23:35:56.958, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 44, 534.78, 99, 44, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638557123562650,
+            "nvidia_smi": "2026/09/28 23:35:57.132, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 45, 654.84, 86, 38, 2262"
+          },
+          {
+            "phase": "before_P3",
+            "wall_ns": 1790638557135263661,
+            "nvidia_smi": "2026/09/28 23:35:57.144, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 45, 654.84, 92, 41, 2262"
+          },
+          {
+            "phase": "before_P4",
+            "wall_ns": 1790638557320801571,
+            "nvidia_smi": "2026/09/28 23:35:57.330, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 44, 764.79, 92, 41, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638557338612566,
+            "nvidia_smi": "2026/09/28 23:35:57.348, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1957, 3996, 44, 783.02, 84, 37, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638557556123578,
+            "nvidia_smi": "2026/09/28 23:35:57.565, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 46, 888.43, 100, 45, 2262"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638557772570300,
+            "nvidia_smi": "2026/09/28 23:35:57.781, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 47, 907.16, 100, 45, 2262"
+          },
+          {
+            "phase": "end",
+            "wall_ns": 1790638557913452787,
+            "nvidia_smi": "2026/09/28 23:35:57.922, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 47, 919.32, 100, 45, 2262"
+          }
+        ],
+        "runner_sha256": "0d5989f8b6b1c9131f94b5f223d0334da978bd23a62515933f11d036aa9d2bfb",
+        "cu_seqlens_dtype": "torch.int64",
+        "initial_final_state_dtype": "torch.float32",
+        "qkvo_dtype": "torch.float16",
+        "kernel_qk_l2norm": false,
+        "use_cp": true,
+        "scale": 0.08838834764831843,
+        "probe_stride_calls": 4,
+        "calls_per_graph": 400,
+        "nvidia-cutlass-dsl": "4.7.0",
+        "cuda-python": "13.2.0",
+        "flashinfer-python": "0.6.12",
+        "source_sha256": {
+          "flashinfer/gdn_prefill.py": "e4475a2edc830b97d6bc27f13980e2f5951d7d97eb13547f539acf94e2a2132d",
+          "flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+          "flashinfer/gdn_kernels/delta_rule_dsl/delta_rule_cp_sm120.py": "5572cba70eab72426b2567322807be7fd27f3d84af6ac7410f13f715ca6a077b",
+          "flashinfer/gdn_kernels/delta_rule_dsl/varlen_helper.py": "c9cda29f3e9d0105d91326c4c670feace92f988ed9fde61dcea3035fd6e704ab"
+        }
+      },
+      "native_batch_samples": [
+        {
+          "repeat": 0,
+          "batch_us": 82209.95330810547,
+          "per_call_mean_us": 205.52488327026367
+        },
+        {
+          "repeat": 1,
+          "batch_us": 82188.2553100586,
+          "per_call_mean_us": 205.47063827514648
+        },
+        {
+          "repeat": 2,
+          "batch_us": 82166.1148071289,
+          "per_call_mean_us": 205.41528701782227
+        },
+        {
+          "repeat": 3,
+          "batch_us": 82164.80255126953,
+          "per_call_mean_us": 205.41200637817383
+        },
+        {
+          "repeat": 4,
+          "batch_us": 82184.28802490234,
+          "per_call_mean_us": 205.46072006225586
+        }
+      ]
+    },
+    {
+      "S": 32768,
+      "C": 4096,
+      "trial": 1,
+      "path": "formal/S32768_trial1",
+      "summary": {
+        "probes": {
+          "P0": {
+            "n": 100,
+            "median_us": 1.247999956831336,
+            "mean_us": 1.2447999545838684,
+            "p5_us": 1.2159999459981918,
+            "p95_us": 1.247999956831336,
+            "cv_pct": 5.3369007083353415,
+            "min_us": 1.2159999459981918,
+            "max_us": 1.888000057078898,
+            "batch_per_call_mean_us": 349.95616912841797
+          },
+          "P1": {
+            "n": 100,
+            "median_us": 73.72800260782242,
+            "mean_us": 73.74592244625092,
+            "p5_us": 71.678401902318,
+            "p95_us": 75.77600330114365,
+            "cv_pct": 1.9473813567399165,
+            "min_us": 71.58400118350983,
+            "max_us": 80.89599758386612,
+            "batch_per_call_mean_us": 357.9163360595703
+          },
+          "P2": {
+            "n": 100,
+            "median_us": 188.4160041809082,
+            "mean_us": 187.04320088028908,
+            "p5_us": 182.1343943476677,
+            "p95_us": 192.51200556755066,
+            "cv_pct": 2.1281259396247183,
+            "min_us": 180.06399273872375,
+            "max_us": 202.59200036525726,
+            "batch_per_call_mean_us": 357.19215393066406
+          },
+          "P3": {
+            "n": 100,
+            "median_us": 212.94400095939636,
+            "mean_us": 212.63392120599747,
+            "p5_us": 206.81600272655487,
+            "p95_us": 219.16800737380981,
+            "cv_pct": 2.207625417119237,
+            "min_us": 205.79199492931366,
+            "max_us": 227.58400440216064,
+            "batch_per_call_mean_us": 354.4910430908203
+          },
+          "P4": {
+            "n": 100,
+            "median_us": 362.527996301651,
+            "mean_us": 361.1532783508301,
+            "p5_us": 352.2159934043884,
+            "p95_us": 368.6416059732437,
+            "cv_pct": 1.7847497179514524,
+            "min_us": 350.17600655555725,
+            "max_us": 386.46399974823,
+            "batch_per_call_mean_us": 358.45096588134766
+          }
+        },
+        "stage_estimates": {
+          "K1": {
+            "estimate_us": 72.50112249166705,
+            "method": "mean(P1)-mean(P0)",
+            "independent_probe_standard_error_us": 0.14376501151596147,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K2": {
+            "estimate_us": 113.29727843403816,
+            "method": "mean(P2)-mean(P1)",
+            "independent_probe_standard_error_us": 0.4231657251252545,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K3": {
+            "estimate_us": 25.59072032570839,
+            "method": "mean(P3)-mean(P2)",
+            "independent_probe_standard_error_us": 0.6154643887785898,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K4": {
+            "estimate_us": 148.5193571448326,
+            "method": "mean(P4)-mean(P3)",
+            "independent_probe_standard_error_us": 0.7973829735801805,
+            "is_direct_single_kernel_event_interval": false
+          }
+        },
+        "chain_estimate_us": 359.9084783962462,
+        "native_batch_per_call": {
+          "n": 5,
+          "median_us": 363.12808990478516,
+          "mean_us": 363.16246795654297,
+          "p5_us": 362.0670623779297,
+          "p95_us": 364.07213592529297,
+          "cv_pct": 0.21611393526689807,
+          "min_us": 361.8377685546875,
+          "max_us": 364.16614532470703
+        },
+        "marker_delta_pct_by_probe": {
+          "P0": -3.627348349674897,
+          "P1": -1.4352384158938025,
+          "P2": -1.634667253551647,
+          "P3": -2.378512446181058,
+          "P4": -1.2880094251766283
+        },
+        "marker_check_pct_max": 3.627348349674897,
+        "chain_vs_native_pct": -0.8866324578148621,
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "input_signature": "eb62764b4f2bc92c04c1accddf62db3211f657a1206bdc2279e6fe006bb94d1e",
+        "status": "PASS",
+        "admission": {
+          "marker_perturbation_within_5pct": true,
+          "chain_closure_within_5pct": true,
+          "nonempty_prefix_cv_within_5pct": true,
+          "native_cv_within_5pct": true
+        }
+      },
+      "input_signature": "eb62764b4f2bc92c04c1accddf62db3211f657a1206bdc2279e6fe006bb94d1e",
+      "validation": {
+        "cp_graph_exact": [
+          {
+            "buffer": 0,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 1,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 2,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 3,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          }
+        ],
+        "non_cp_comparison": {
+          "O": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 9.635819878894836e-05,
+            "max_abs": 0.00048828125
+          },
+          "final_state": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 0.00031143048545345664,
+            "max_abs": 0.0002783834934234619
+          }
+        },
+        "initial_unchanged": true
+      },
+      "environment": {
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "pilot": false,
+        "S": 32768,
+        "C": 4096,
+        "P": 8,
+        "B": 1,
+        "H": 16,
+        "D": 128,
+        "trial": 1,
+        "pid": 262816,
+        "seed": 20293697,
+        "rotating_buffers": 4,
+        "warmup": 20,
+        "samples": 100,
+        "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+        "repo": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+        "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "gpu_name": "NVIDIA B200",
+        "sm_count": 148,
+        "compute_capability": [
+          10,
+          0
+        ],
+        "memory_bytes": 191503007744,
+        "telemetry": [
+          {
+            "phase": "start",
+            "wall_ns": 1790638472054931389,
+            "nvidia_smi": "2026/09/28 23:34:32.065, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 35, 241.93, 0, 0, 4"
+          },
+          {
+            "phase": "before_P0",
+            "wall_ns": 1790638487937264430,
+            "nvidia_smi": "2026/09/28 23:34:47.947, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1920, 3996, 42, 353.10, 95, 51, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638487990307859,
+            "nvidia_smi": "2026/09/28 23:34:48.000, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1950, 3996, 42, 387.46, 95, 51, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638488208966609,
+            "nvidia_smi": "2026/09/28 23:34:48.218, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 44, 562.49, 99, 53, 3656"
+          },
+          {
+            "phase": "before_P1",
+            "wall_ns": 1790638488244690312,
+            "nvidia_smi": "2026/09/28 23:34:48.254, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 45, 586.70, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638488426143612,
+            "nvidia_smi": "2026/09/28 23:34:48.436, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 45, 719.79, 85, 45, 3656"
+          },
+          {
+            "phase": "before_P2",
+            "wall_ns": 1790638488556417255,
+            "nvidia_smi": "2026/09/28 23:34:48.566, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1875, 3996, 46, 809.23, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638488643297745,
+            "nvidia_smi": "2026/09/28 23:34:48.652, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1882, 3996, 46, 875.53, 85, 46, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638488859693744,
+            "nvidia_smi": "2026/09/28 23:34:48.869, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1875, 3996, 47, 978.66, 100, 52, 3656"
+          },
+          {
+            "phase": "before_P3",
+            "wall_ns": 1790638488867564095,
+            "nvidia_smi": "2026/09/28 23:34:48.879, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1875, 3996, 47, 978.66, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638489074390528,
+            "nvidia_smi": "2026/09/28 23:34:49.083, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1875, 3996, 47, 977.28, 99, 52, 3656"
+          },
+          {
+            "phase": "before_P4",
+            "wall_ns": 1790638489179597903,
+            "nvidia_smi": "2026/09/28 23:34:49.189, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1867, 3996, 47, 973.87, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638489290943755,
+            "nvidia_smi": "2026/09/28 23:34:49.300, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1867, 3996, 47, 973.38, 86, 45, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638489508341904,
+            "nvidia_smi": "2026/09/28 23:34:49.517, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 48, 972.77, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638489724986199,
+            "nvidia_smi": "2026/09/28 23:34:49.734, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1845, 3996, 48, 981.34, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638489941253189,
+            "nvidia_smi": "2026/09/28 23:34:49.950, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1852, 3996, 48, 988.03, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638490157512887,
+            "nvidia_smi": "2026/09/28 23:34:50.166, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 48, 985.98, 100, 52, 3656"
+          },
+          {
+            "phase": "end",
+            "wall_ns": 1790638490209768353,
+            "nvidia_smi": "2026/09/28 23:34:50.219, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1852, 3996, 48, 996.20, 100, 52, 3656"
+          }
+        ],
+        "runner_sha256": "0d5989f8b6b1c9131f94b5f223d0334da978bd23a62515933f11d036aa9d2bfb",
+        "cu_seqlens_dtype": "torch.int64",
+        "initial_final_state_dtype": "torch.float32",
+        "qkvo_dtype": "torch.float16",
+        "kernel_qk_l2norm": false,
+        "use_cp": true,
+        "scale": 0.08838834764831843,
+        "probe_stride_calls": 4,
+        "calls_per_graph": 400,
+        "nvidia-cutlass-dsl": "4.7.0",
+        "cuda-python": "13.2.0",
+        "flashinfer-python": "0.6.12",
+        "source_sha256": {
+          "flashinfer/gdn_prefill.py": "e4475a2edc830b97d6bc27f13980e2f5951d7d97eb13547f539acf94e2a2132d",
+          "flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+          "flashinfer/gdn_kernels/delta_rule_dsl/delta_rule_cp_sm120.py": "5572cba70eab72426b2567322807be7fd27f3d84af6ac7410f13f715ca6a077b",
+          "flashinfer/gdn_kernels/delta_rule_dsl/varlen_helper.py": "c9cda29f3e9d0105d91326c4c670feace92f988ed9fde61dcea3035fd6e704ab"
+        }
+      },
+      "native_batch_samples": [
+        {
+          "repeat": 0,
+          "batch_us": 144735.107421875,
+          "per_call_mean_us": 361.8377685546875
+        },
+        {
+          "repeat": 1,
+          "batch_us": 145666.4581298828,
+          "per_call_mean_us": 364.16614532470703
+        },
+        {
+          "repeat": 2,
+          "batch_us": 145478.4393310547,
+          "per_call_mean_us": 363.6960983276367
+        },
+        {
+          "repeat": 3,
+          "batch_us": 145251.23596191406,
+          "per_call_mean_us": 363.12808990478516
+        },
+        {
+          "repeat": 4,
+          "batch_us": 145193.69506835938,
+          "per_call_mean_us": 362.98423767089844
+        }
+      ]
+    },
+    {
+      "S": 32768,
+      "C": 4096,
+      "trial": 2,
+      "path": "formal/S32768_trial2",
+      "summary": {
+        "probes": {
+          "P0": {
+            "n": 100,
+            "median_us": 1.247999956831336,
+            "mean_us": 1.2553599569946527,
+            "p5_us": 1.2159999459981918,
+            "p95_us": 1.2799999676644802,
+            "cv_pct": 8.091882065825734,
+            "min_us": 1.2159999459981918,
+            "max_us": 2.208000048995018,
+            "batch_per_call_mean_us": 350.27408599853516
+          },
+          "P1": {
+            "n": 100,
+            "median_us": 73.72800260782242,
+            "mean_us": 73.78048248589039,
+            "p5_us": 71.58400118350983,
+            "p95_us": 75.77600330114365,
+            "cv_pct": 2.293964601259532,
+            "min_us": 71.35999947786331,
+            "max_us": 78.11199873685837,
+            "batch_per_call_mean_us": 357.90687561035156
+          },
+          "P2": {
+            "n": 100,
+            "median_us": 186.36800348758698,
+            "mean_us": 187.0611208677292,
+            "p5_us": 184.05439406633377,
+            "p95_us": 190.54559767246246,
+            "cv_pct": 1.8033867973560609,
+            "min_us": 182.27200210094452,
+            "max_us": 208.22399854660034,
+            "batch_per_call_mean_us": 356.7289733886719
+          },
+          "P3": {
+            "n": 100,
+            "median_us": 215.03999829292297,
+            "mean_us": 214.22720089554787,
+            "p5_us": 206.8463958799839,
+            "p95_us": 219.21600699424744,
+            "cv_pct": 2.4147071591951166,
+            "min_us": 205.85599541664124,
+            "max_us": 230.52799701690674,
+            "batch_per_call_mean_us": 356.7433547973633
+          },
+          "P4": {
+            "n": 100,
+            "median_us": 361.87198758125305,
+            "mean_us": 360.38623690605164,
+            "p5_us": 352.02241241931915,
+            "p95_us": 368.60959827899933,
+            "cv_pct": 1.7548357432245345,
+            "min_us": 350.20801424980164,
+            "max_us": 383.8079869747162,
+            "batch_per_call_mean_us": 357.64801025390625
+          }
+        },
+        "stage_estimates": {
+          "K1": {
+            "estimate_us": 72.52512252889574,
+            "method": "mean(P1)-mean(P0)",
+            "independent_probe_standard_error_us": 0.1695543848926181,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K2": {
+            "estimate_us": 113.2806383818388,
+            "method": "mean(P2)-mean(P1)",
+            "independent_probe_standard_error_us": 0.3774204213604389,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K3": {
+            "estimate_us": 27.16608002781868,
+            "method": "mean(P3)-mean(P2)",
+            "independent_probe_standard_error_us": 0.6175724899421597,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K4": {
+            "estimate_us": 146.15903601050377,
+            "method": "mean(P4)-mean(P3)",
+            "independent_probe_standard_error_us": 0.8170363850573643,
+            "is_direct_single_kernel_event_interval": false
+          }
+        },
+        "chain_estimate_us": 359.130876949057,
+        "native_batch_per_call": {
+          "n": 5,
+          "median_us": 363.33648681640625,
+          "mean_us": 363.36922454833984,
+          "p5_us": 362.21128845214844,
+          "p95_us": 364.8631057739258,
+          "cv_pct": 0.288335474847392,
+          "min_us": 362.05272674560547,
+          "max_us": 365.2347183227539
+        },
+        "marker_delta_pct_by_probe": {
+          "P0": -3.5951249851963074,
+          "P1": -1.49437543518669,
+          "P2": -1.8185658934587345,
+          "P3": -1.8146077419344042,
+          "P4": -1.5656221626248024
+        },
+        "marker_check_pct_max": 3.5951249851963074,
+        "chain_vs_native_pct": -1.1574972566612551,
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "input_signature": "eb62764b4f2bc92c04c1accddf62db3211f657a1206bdc2279e6fe006bb94d1e",
+        "status": "PASS",
+        "admission": {
+          "marker_perturbation_within_5pct": true,
+          "chain_closure_within_5pct": true,
+          "nonempty_prefix_cv_within_5pct": true,
+          "native_cv_within_5pct": true
+        }
+      },
+      "input_signature": "eb62764b4f2bc92c04c1accddf62db3211f657a1206bdc2279e6fe006bb94d1e",
+      "validation": {
+        "cp_graph_exact": [
+          {
+            "buffer": 0,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 1,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 2,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 3,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          }
+        ],
+        "non_cp_comparison": {
+          "O": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 9.635819878894836e-05,
+            "max_abs": 0.00048828125
+          },
+          "final_state": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 0.00031143048545345664,
+            "max_abs": 0.0002783834934234619
+          }
+        },
+        "initial_unchanged": true
+      },
+      "environment": {
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "pilot": false,
+        "S": 32768,
+        "C": 4096,
+        "P": 8,
+        "B": 1,
+        "H": 16,
+        "D": 128,
+        "trial": 2,
+        "pid": 263275,
+        "seed": 20293697,
+        "rotating_buffers": 4,
+        "warmup": 20,
+        "samples": 100,
+        "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+        "repo": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+        "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "gpu_name": "NVIDIA B200",
+        "sm_count": 148,
+        "compute_capability": [
+          10,
+          0
+        ],
+        "memory_bytes": 191503007744,
+        "telemetry": [
+          {
+            "phase": "start",
+            "wall_ns": 1790638517023325808,
+            "nvidia_smi": "2026/09/28 23:35:17.033, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 35, 242.24, 0, 0, 4"
+          },
+          {
+            "phase": "before_P0",
+            "wall_ns": 1790638531421955813,
+            "nvidia_smi": "2026/09/28 23:35:31.432, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1920, 3996, 40, 358.51, 66, 36, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638531475607891,
+            "nvidia_smi": "2026/09/28 23:35:31.485, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1950, 3996, 40, 385.04, 85, 46, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638531692873581,
+            "nvidia_smi": "2026/09/28 23:35:31.702, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1867, 3996, 45, 559.62, 99, 53, 3656"
+          },
+          {
+            "phase": "before_P1",
+            "wall_ns": 1790638531728549144,
+            "nvidia_smi": "2026/09/28 23:35:31.737, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1845, 3996, 45, 587.06, 99, 53, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638531909340538,
+            "nvidia_smi": "2026/09/28 23:35:31.918, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1867, 3996, 46, 708.41, 99, 53, 3656"
+          },
+          {
+            "phase": "before_P2",
+            "wall_ns": 1790638532039962912,
+            "nvidia_smi": "2026/09/28 23:35:32.049, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 46, 807.59, 93, 48, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638532126105533,
+            "nvidia_smi": "2026/09/28 23:35:32.135, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1890, 3996, 47, 861.24, 93, 48, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638532342754886,
+            "nvidia_smi": "2026/09/28 23:35:32.352, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1875, 3996, 47, 983.49, 100, 52, 3656"
+          },
+          {
+            "phase": "before_P3",
+            "wall_ns": 1790638532349934580,
+            "nvidia_smi": "2026/09/28 23:35:32.362, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1875, 3996, 47, 983.49, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638532557428918,
+            "nvidia_smi": "2026/09/28 23:35:32.567, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1867, 3996, 47, 979.54, 99, 52, 3656"
+          },
+          {
+            "phase": "before_P4",
+            "wall_ns": 1790638532662566855,
+            "nvidia_smi": "2026/09/28 23:35:32.672, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1867, 3996, 47, 969.92, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638532774461459,
+            "nvidia_smi": "2026/09/28 23:35:32.784, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1867, 3996, 48, 977.90, 84, 45, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638532991541450,
+            "nvidia_smi": "2026/09/28 23:35:33.001, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 48, 977.52, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638533208485120,
+            "nvidia_smi": "2026/09/28 23:35:33.218, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1852, 3996, 48, 985.18, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638533425204332,
+            "nvidia_smi": "2026/09/28 23:35:33.434, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1837, 3996, 48, 991.65, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638533641658887,
+            "nvidia_smi": "2026/09/28 23:35:33.651, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 48, 987.92, 100, 52, 3656"
+          },
+          {
+            "phase": "end",
+            "wall_ns": 1790638533693248523,
+            "nvidia_smi": "2026/09/28 23:35:33.702, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 48, 997.63, 100, 52, 3656"
+          }
+        ],
+        "runner_sha256": "0d5989f8b6b1c9131f94b5f223d0334da978bd23a62515933f11d036aa9d2bfb",
+        "cu_seqlens_dtype": "torch.int64",
+        "initial_final_state_dtype": "torch.float32",
+        "qkvo_dtype": "torch.float16",
+        "kernel_qk_l2norm": false,
+        "use_cp": true,
+        "scale": 0.08838834764831843,
+        "probe_stride_calls": 4,
+        "calls_per_graph": 400,
+        "nvidia-cutlass-dsl": "4.7.0",
+        "cuda-python": "13.2.0",
+        "flashinfer-python": "0.6.12",
+        "source_sha256": {
+          "flashinfer/gdn_prefill.py": "e4475a2edc830b97d6bc27f13980e2f5951d7d97eb13547f539acf94e2a2132d",
+          "flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+          "flashinfer/gdn_kernels/delta_rule_dsl/delta_rule_cp_sm120.py": "5572cba70eab72426b2567322807be7fd27f3d84af6ac7410f13f715ca6a077b",
+          "flashinfer/gdn_kernels/delta_rule_dsl/varlen_helper.py": "c9cda29f3e9d0105d91326c4c670feace92f988ed9fde61dcea3035fd6e704ab"
+        }
+      },
+      "native_batch_samples": [
+        {
+          "repeat": 0,
+          "batch_us": 144821.0906982422,
+          "per_call_mean_us": 362.05272674560547
+        },
+        {
+          "repeat": 1,
+          "batch_us": 146093.88732910156,
+          "per_call_mean_us": 365.2347183227539
+        },
+        {
+          "repeat": 2,
+          "batch_us": 145334.5947265625,
+          "per_call_mean_us": 363.33648681640625
+        },
+        {
+          "repeat": 3,
+          "batch_us": 145350.6622314453,
+          "per_call_mean_us": 363.3766555786133
+        },
+        {
+          "repeat": 4,
+          "batch_us": 145138.21411132812,
+          "per_call_mean_us": 362.8455352783203
+        }
+      ]
+    },
+    {
+      "S": 32768,
+      "C": 4096,
+      "trial": 3,
+      "path": "formal/S32768_trial3",
+      "summary": {
+        "probes": {
+          "P0": {
+            "n": 100,
+            "median_us": 1.247999956831336,
+            "mean_us": 1.2428799527697265,
+            "p5_us": 1.2159999459981918,
+            "p95_us": 1.247999956831336,
+            "cv_pct": 6.886640869662345,
+            "min_us": 1.2159999459981918,
+            "max_us": 2.0800000056624413,
+            "batch_per_call_mean_us": 348.8469696044922
+          },
+          "P1": {
+            "n": 100,
+            "median_us": 73.72800260782242,
+            "mean_us": 73.7228824943304,
+            "p5_us": 71.68000191450119,
+            "p95_us": 75.77600330114365,
+            "cv_pct": 1.9206438002756625,
+            "min_us": 71.42399996519089,
+            "max_us": 79.0719985961914,
+            "batch_per_call_mean_us": 358.5879898071289
+          },
+          "P2": {
+            "n": 100,
+            "median_us": 187.391996383667,
+            "mean_us": 186.82816043496132,
+            "p5_us": 182.08159431815147,
+            "p95_us": 190.46400487422943,
+            "cv_pct": 1.7408727917117333,
+            "min_us": 180.1919937133789,
+            "max_us": 204.12799715995789,
+            "batch_per_call_mean_us": 356.6466522216797
+          },
+          "P3": {
+            "n": 100,
+            "median_us": 217.0879989862442,
+            "mean_us": 214.8393613100052,
+            "p5_us": 206.81600272655487,
+            "p95_us": 221.18400037288666,
+            "cv_pct": 2.485972752345485,
+            "min_us": 206.59199357032776,
+            "max_us": 229.08799350261688,
+            "batch_per_call_mean_us": 357.6544952392578
+          },
+          "P4": {
+            "n": 100,
+            "median_us": 362.4959886074066,
+            "mean_us": 360.8121582865715,
+            "p5_us": 352.25600004196167,
+            "p95_us": 368.6400055885315,
+            "cv_pct": 1.6352457421653694,
+            "min_us": 351.0400056838989,
+            "max_us": 388.8320028781891,
+            "batch_per_call_mean_us": 358.0196762084961
+          }
+        },
+        "stage_estimates": {
+          "K1": {
+            "estimate_us": 72.48000254156068,
+            "method": "mean(P1)-mean(P0)",
+            "independent_probe_standard_error_us": 0.14185385992345578,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K2": {
+            "estimate_us": 113.10527794063091,
+            "method": "mean(P2)-mean(P1)",
+            "independent_probe_standard_error_us": 0.3547294121888548,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K3": {
+            "estimate_us": 28.01120087504387,
+            "method": "mean(P3)-mean(P2)",
+            "independent_probe_standard_error_us": 0.625324132902042,
+            "is_direct_single_kernel_event_interval": false
+          },
+          "K4": {
+            "estimate_us": 145.97279697656631,
+            "method": "mean(P4)-mean(P3)",
+            "independent_probe_standard_error_us": 0.7958430095568483,
+            "is_direct_single_kernel_event_interval": false
+          }
+        },
+        "chain_estimate_us": 359.5692783338018,
+        "native_batch_per_call": {
+          "n": 5,
+          "median_us": 363.38783264160156,
+          "mean_us": 363.0372772216797,
+          "p5_us": 361.7844009399414,
+          "p95_us": 363.6133728027344,
+          "cv_pct": 0.22726482811003434,
+          "min_us": 361.40392303466797,
+          "max_us": 363.6595153808594
+        },
+        "marker_delta_pct_by_probe": {
+          "P0": -4.001472182325538,
+          "P1": -1.3208595344485818,
+          "P2": -1.8550924974338634,
+          "P3": -1.577746112374201,
+          "P4": -1.4772526625567939
+        },
+        "marker_check_pct_max": 4.001472182325538,
+        "chain_vs_native_pct": -1.0508206287594413,
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "input_signature": "eb62764b4f2bc92c04c1accddf62db3211f657a1206bdc2279e6fe006bb94d1e",
+        "status": "PASS",
+        "admission": {
+          "marker_perturbation_within_5pct": true,
+          "chain_closure_within_5pct": true,
+          "nonempty_prefix_cv_within_5pct": true,
+          "native_cv_within_5pct": true
+        }
+      },
+      "input_signature": "eb62764b4f2bc92c04c1accddf62db3211f657a1206bdc2279e6fe006bb94d1e",
+      "validation": {
+        "cp_graph_exact": [
+          {
+            "buffer": 0,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 1,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 2,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          },
+          {
+            "buffer": 3,
+            "O_exact": true,
+            "state_exact": true,
+            "O_finite": true,
+            "state_finite": true
+          }
+        ],
+        "non_cp_comparison": {
+          "O": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 9.635819878894836e-05,
+            "max_abs": 0.00048828125
+          },
+          "final_state": {
+            "atol": 0.04,
+            "rtol": 0.04,
+            "allclose": true,
+            "relative_l2": 0.00031143048545345664,
+            "max_abs": 0.0002783834934234619
+          }
+        },
+        "initial_unchanged": true
+      },
+      "environment": {
+        "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+        "pilot": false,
+        "S": 32768,
+        "C": 4096,
+        "P": 8,
+        "B": 1,
+        "H": 16,
+        "D": 128,
+        "trial": 3,
+        "pid": 263728,
+        "seed": 20293697,
+        "rotating_buffers": 4,
+        "warmup": 20,
+        "samples": 100,
+        "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+        "repo": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+        "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "gpu_name": "NVIDIA B200",
+        "sm_count": 148,
+        "compute_capability": [
+          10,
+          0
+        ],
+        "memory_bytes": 191503007744,
+        "telemetry": [
+          {
+            "phase": "start",
+            "wall_ns": 1790638560091213029,
+            "nvidia_smi": "2026/09/28 23:36:00.101, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 35, 242.37, 0, 0, 4"
+          },
+          {
+            "phase": "before_P0",
+            "wall_ns": 1790638574400699536,
+            "nvidia_smi": "2026/09/28 23:36:14.411, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1912, 3996, 41, 357.95, 88, 48, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638574454147672,
+            "nvidia_smi": "2026/09/28 23:36:14.464, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1957, 3996, 41, 386.94, 84, 45, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638574672731962,
+            "nvidia_smi": "2026/09/28 23:36:14.682, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1920, 3996, 45, 561.91, 99, 53, 3656"
+          },
+          {
+            "phase": "before_P1",
+            "wall_ns": 1790638574707304607,
+            "nvidia_smi": "2026/09/28 23:36:14.717, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1830, 3996, 45, 580.95, 99, 53, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638574891012505,
+            "nvidia_smi": "2026/09/28 23:36:14.900, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1845, 3996, 46, 719.46, 100, 53, 3656"
+          },
+          {
+            "phase": "before_P2",
+            "wall_ns": 1790638575018794492,
+            "nvidia_smi": "2026/09/28 23:36:15.028, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1867, 3996, 46, 809.28, 99, 51, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638575109175659,
+            "nvidia_smi": "2026/09/28 23:36:15.118, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1912, 3996, 43, 873.60, 86, 45, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638575325635269,
+            "nvidia_smi": "2026/09/28 23:36:15.335, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1867, 3996, 47, 980.47, 99, 52, 3656"
+          },
+          {
+            "phase": "before_P3",
+            "wall_ns": 1790638575329272784,
+            "nvidia_smi": "2026/09/28 23:36:15.338, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1867, 3996, 47, 980.47, 87, 45, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638575540935629,
+            "nvidia_smi": "2026/09/28 23:36:15.550, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 47, 979.00, 99, 52, 3656"
+          },
+          {
+            "phase": "before_P4",
+            "wall_ns": 1790638575640419922,
+            "nvidia_smi": "2026/09/28 23:36:15.650, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1867, 3996, 48, 966.91, 98, 51, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638575757645056,
+            "nvidia_smi": "2026/09/28 23:36:15.767, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1882, 3996, 48, 975.02, 87, 46, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638575974347842,
+            "nvidia_smi": "2026/09/28 23:36:15.984, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1867, 3996, 48, 974.54, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638576192194187,
+            "nvidia_smi": "2026/09/28 23:36:16.201, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 48, 984.06, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638576408688535,
+            "nvidia_smi": "2026/09/28 23:36:16.418, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1852, 3996, 48, 988.97, 100, 52, 3656"
+          },
+          {
+            "phase": "measurement",
+            "wall_ns": 1790638576625109664,
+            "nvidia_smi": "2026/09/28 23:36:16.634, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1845, 3996, 49, 986.97, 100, 52, 3656"
+          },
+          {
+            "phase": "end",
+            "wall_ns": 1790638576670389187,
+            "nvidia_smi": "2026/09/28 23:36:16.680, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1852, 3996, 49, 998.54, 100, 52, 3656"
+          }
+        ],
+        "runner_sha256": "0d5989f8b6b1c9131f94b5f223d0334da978bd23a62515933f11d036aa9d2bfb",
+        "cu_seqlens_dtype": "torch.int64",
+        "initial_final_state_dtype": "torch.float32",
+        "qkvo_dtype": "torch.float16",
+        "kernel_qk_l2norm": false,
+        "use_cp": true,
+        "scale": 0.08838834764831843,
+        "probe_stride_calls": 4,
+        "calls_per_graph": 400,
+        "nvidia-cutlass-dsl": "4.7.0",
+        "cuda-python": "13.2.0",
+        "flashinfer-python": "0.6.12",
+        "source_sha256": {
+          "flashinfer/gdn_prefill.py": "e4475a2edc830b97d6bc27f13980e2f5951d7d97eb13547f539acf94e2a2132d",
+          "flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+          "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+          "flashinfer/gdn_kernels/delta_rule_dsl/delta_rule_cp_sm120.py": "5572cba70eab72426b2567322807be7fd27f3d84af6ac7410f13f715ca6a077b",
+          "flashinfer/gdn_kernels/delta_rule_dsl/varlen_helper.py": "c9cda29f3e9d0105d91326c4c670feace92f988ed9fde61dcea3035fd6e704ab"
+        }
+      },
+      "native_batch_samples": [
+        {
+          "repeat": 0,
+          "batch_us": 144561.5692138672,
+          "per_call_mean_us": 361.40392303466797
+        },
+        {
+          "repeat": 1,
+          "batch_us": 145463.80615234375,
+          "per_call_mean_us": 363.6595153808594
+        },
+        {
+          "repeat": 2,
+          "batch_us": 145322.52502441406,
+          "per_call_mean_us": 363.30631256103516
+        },
+        {
+          "repeat": 3,
+          "batch_us": 145355.13305664062,
+          "per_call_mean_us": 363.38783264160156
+        },
+        {
+          "repeat": 4,
+          "batch_us": 145371.52099609375,
+          "per_call_mean_us": 363.4288024902344
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "path": "formal/S8192_trial1",
+      "status": "PASS",
+      "raw_prefix_observations": 500,
+      "graph_kernels_each": 1600
+    },
+    {
+      "path": "formal/S8192_trial2",
+      "status": "PASS",
+      "raw_prefix_observations": 500,
+      "graph_kernels_each": 1600
+    },
+    {
+      "path": "formal/S8192_trial3",
+      "status": "PASS",
+      "raw_prefix_observations": 500,
+      "graph_kernels_each": 1600
+    },
+    {
+      "path": "formal/S16384_trial1",
+      "status": "PASS",
+      "raw_prefix_observations": 500,
+      "graph_kernels_each": 1600
+    },
+    {
+      "path": "formal/S16384_trial2",
+      "status": "PASS",
+      "raw_prefix_observations": 500,
+      "graph_kernels_each": 1600
+    },
+    {
+      "path": "formal/S16384_trial3",
+      "status": "PASS",
+      "raw_prefix_observations": 500,
+      "graph_kernels_each": 1600
+    },
+    {
+      "path": "formal/S32768_trial1",
+      "status": "PASS",
+      "raw_prefix_observations": 500,
+      "graph_kernels_each": 1600
+    },
+    {
+      "path": "formal/S32768_trial2",
+      "status": "PASS",
+      "raw_prefix_observations": 500,
+      "graph_kernels_each": 1600
+    },
+    {
+      "path": "formal/S32768_trial3",
+      "status": "PASS",
+      "raw_prefix_observations": 500,
+      "graph_kernels_each": 1600
+    }
+  ]
+}

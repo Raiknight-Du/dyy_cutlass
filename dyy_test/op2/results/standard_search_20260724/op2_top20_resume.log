@@ -1,0 +1,78 @@
+completed repeat=1 shape=1 samples=780
+completed repeat=1 shape=2 samples=780
+completed repeat=1 shape=3 samples=780
+completed repeat=1 shape=4 samples=780
+completed repeat=1 shape=5 samples=780
+completed repeat=1 shape=6 samples=780
+completed repeat=1 shape=7 samples=780
+completed repeat=1 shape=8 samples=780
+completed repeat=1 shape=9 samples=780
+completed repeat=1 shape=10 samples=780
+completed repeat=1 shape=11 samples=780
+completed repeat=1 shape=12 samples=780
+completed repeat=1 shape=13 samples=780
+completed repeat=2 shape=1 samples=780
+completed repeat=2 shape=13 samples=780
+completed repeat=2 shape=12 samples=780
+completed repeat=2 shape=11 samples=780
+completed repeat=2 shape=10 samples=780
+completed repeat=2 shape=9 samples=780
+completed repeat=2 shape=8 samples=780
+completed repeat=2 shape=7 samples=780
+completed repeat=2 shape=6 samples=780
+completed repeat=2 shape=5 samples=780
+completed repeat=2 shape=4 samples=780
+completed repeat=2 shape=3 samples=780
+completed repeat=2 shape=2 samples=780
+completed repeat=3 shape=3 samples=780
+completed repeat=3 shape=4 samples=780
+completed repeat=3 shape=5 samples=780
+completed repeat=3 shape=6 samples=780
+completed repeat=3 shape=7 samples=780
+completed repeat=3 shape=8 samples=780
+completed repeat=3 shape=9 samples=780
+completed repeat=3 shape=10 samples=780
+completed repeat=3 shape=11 samples=780
+completed repeat=3 shape=12 samples=780
+completed repeat=3 shape=13 samples=780
+completed repeat=3 shape=1 samples=780
+completed repeat=3 shape=2 samples=780
+completed repeat=4 shape=3 samples=800
+completed repeat=4 shape=2 samples=820
+completed repeat=4 shape=1 samples=840
+completed repeat=4 shape=13 samples=860
+completed repeat=4 shape=12 samples=880
+completed repeat=4 shape=11 samples=900
+completed repeat=4 shape=10 samples=920
+completed repeat=4 shape=9 samples=940
+completed repeat=4 shape=8 samples=960
+completed repeat=4 shape=7 samples=980
+completed repeat=4 shape=6 samples=1000
+completed repeat=4 shape=5 samples=1020
+completed repeat=4 shape=4 samples=1040
+completed repeat=5 shape=5 samples=1060
+completed repeat=5 shape=6 samples=1080
+completed repeat=5 shape=7 samples=1100
+completed repeat=5 shape=8 samples=1120
+completed repeat=5 shape=9 samples=1140
+completed repeat=5 shape=10 samples=1160
+completed repeat=5 shape=11 samples=1180
+completed repeat=5 shape=12 samples=1200
+completed repeat=5 shape=13 samples=1220
+completed repeat=5 shape=1 samples=1240
+completed repeat=5 shape=2 samples=1260
+completed repeat=5 shape=3 samples=1280
+completed repeat=5 shape=4 samples=1300
+INDEPENDENT_BEST,1,S2_M256_N256_K256_E128x64_C2x1x1,4.986895981 ms
+INDEPENDENT_BEST,2,S2_M256_N256_K256_E64x32_C4x1x1,16.425883484 ms
+INDEPENDENT_BEST,3,S2_M256_N256_K256_Eauto_C2x1x1,1.821274910 ms
+INDEPENDENT_BEST,4,S2_M256_N256_K256_Eauto_C2x1x1,5.514923553 ms
+INDEPENDENT_BEST,5,S2_M256_N192_K256_E128x32_C2x2x1,0.017120000 ms
+INDEPENDENT_BEST,6,S2_M256_N256_K256_E64x32_C2x2x1,0.034035200 ms
+INDEPENDENT_BEST,7,S2_M256_N192_K256_E128x32_C2x1x1,0.058074239 ms
+INDEPENDENT_BEST,8,S2_M256_N256_K256_E128x64_C2x1x1,0.042581760 ms
+INDEPENDENT_BEST,9,S2_M256_N256_K256_E64x32_C2x1x1,0.078165119 ms
+INDEPENDENT_BEST,10,S2_M256_N192_K256_E128x64_C2x1x1,0.046206720 ms
+INDEPENDENT_BEST,11,S2_M256_N192_K256_Eauto_C2x1x1,0.009032320 ms
+INDEPENDENT_BEST,12,S2_M256_N192_K256_Eauto_C2x1x1,0.013003520 ms
+INDEPENDENT_BEST,13,S2_M256_N256_K256_Eauto_C2x1x1,0.015009920 ms

@@ -1,0 +1,12 @@
+{
+  "manifest_files_verified": 210,
+  "evidence_files_verified": 213,
+  "new_processes_valid": 12,
+  "new_output_and_state_exact": true,
+  "runner_identical_to_previous": true,
+  "locked_NVML_all_shapes_1845": true,
+  "clocks_reset": true,
+  "permanent_deletions": false,
+  "local_archive_content_hashes_preserved": true,
+  "model_enabled": false
+}

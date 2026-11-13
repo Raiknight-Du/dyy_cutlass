@@ -1,0 +1,9 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 509010 (/usr/bin/python3.10)
+{"event": "measured_graph_start", "shape": 8192, "sample": 900, "evict_factor": 4, "l2_bytes": 132644864, "evict_bytes": 530579456}
+==PROF== Profiling "reduce_kernel" - 0: Application replay pass 1
+{"event": "app_pass_complete", "manifest": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/tail_diagnostic/S8192/control/app_passes/app_pass_509010_1790771823436888787/pass_manifest.json", "checks": {"output_exact": true, "state_exact": true, "output_finite": true, "state_finite": true, "initial_unchanged": true, "eviction_checksum_finite": true, "tail_checksum_finite": true}}
+==PROF== Disconnected from process 509010
+==PROF== Creating report from application replay data: 0%...100%
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/tail_diagnostic/S8192/control/tail.ncu-rep

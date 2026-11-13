@@ -1,0 +1,164 @@
+{
+  "selected_full_names": [
+    "dram__bytes_read.sum",
+    "lts__t_sectors_srcunit_tex_op_read.sum",
+    "lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum",
+    "lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum",
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.sum",
+    "sm__cycles_elapsed.avg",
+    "lts__cycles_elapsed.avg",
+    "dram__cycles_elapsed.avg",
+    "gpu__time_duration.sum",
+    "sm__cycles_elapsed.avg.per_second",
+    "lts__cycles_elapsed.avg.per_second",
+    "dram__cycles_elapsed.avg.per_second",
+    "profiler__replayer_passes"
+  ],
+  "catalogue_rows": {
+    "dram__bytes_read.sum": {
+      "Metric name": "dram__bytes_read.sum",
+      "Metric type": "Counter",
+      "Metric unit": "byte",
+      "Metric description": "# of bytes read from DRAM (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "dram__cycles_elapsed.avg": {
+      "Metric name": "dram__cycles_elapsed.avg",
+      "Metric type": "Counter",
+      "Metric unit": "cycle",
+      "Metric description": "# of elapsed DRAM memory clock cycles (This counter metric represents the avg across all unit instances)",
+      "gb100": "1"
+    },
+    "dram__cycles_elapsed.avg.per_second": {
+      "Metric name": "dram__cycles_elapsed.avg.per_second",
+      "Metric type": "Counter",
+      "Metric unit": "hz",
+      "Metric description": "# of elapsed DRAM memory clock cycles (This counter metric represents the avg of the number of operations per second across all unit instances)",
+      "gb100": "1"
+    },
+    "gpu__time_duration.sum": {
+      "Metric name": "gpu__time_duration.sum",
+      "Metric type": "Counter",
+      "Metric unit": "ns",
+      "Metric description": "equals to gpu__time_duration_measured_user if collectable, otherwise equals to gpu__time_duration_measured_wallclock (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of local/global/(distributed shared) read wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "lts__cycles_elapsed.avg": {
+      "Metric name": "lts__cycles_elapsed.avg",
+      "Metric type": "Counter",
+      "Metric unit": "cycle",
+      "Metric description": "# of cycles elapsed on LTS (This counter metric represents the avg across all unit instances)",
+      "gb100": "1"
+    },
+    "lts__cycles_elapsed.avg.per_second": {
+      "Metric name": "lts__cycles_elapsed.avg.per_second",
+      "Metric type": "Counter",
+      "Metric unit": "hz",
+      "Metric description": "# of cycles elapsed on LTS (This counter metric represents the avg of the number of operations per second across all unit instances)",
+      "gb100": "1"
+    },
+    "lts__t_sectors_srcunit_tex_op_read.sum": {
+      "Metric name": "lts__t_sectors_srcunit_tex_op_read.sum",
+      "Metric type": "Counter",
+      "Metric unit": "sector",
+      "Metric description": "# of LTS sectors from unit L1TEX for reads (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum": {
+      "Metric name": "lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum",
+      "Metric type": "Counter",
+      "Metric unit": "sector",
+      "Metric description": "# of LTS sectors from unit L1TEX for reads that hit (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum": {
+      "Metric name": "lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum",
+      "Metric type": "Counter",
+      "Metric unit": "sector",
+      "Metric description": "# of LTS sectors from unit L1TEX for reads that missed (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "sm__cycles_elapsed.avg": {
+      "Metric name": "sm__cycles_elapsed.avg",
+      "Metric type": "Counter",
+      "Metric unit": "cycle",
+      "Metric description": "# of cycles elapsed on SM (This counter metric represents the avg across all unit instances)",
+      "gb100": "1"
+    },
+    "sm__cycles_elapsed.avg.per_second": {
+      "Metric name": "sm__cycles_elapsed.avg.per_second",
+      "Metric type": "Counter",
+      "Metric unit": "hz",
+      "Metric description": "# of cycles elapsed on SM (This counter metric represents the avg of the number of operations per second across all unit instances)",
+      "gb100": "1"
+    },
+    "profiler__replayer_passes": {
+      "Metric name": "profiler__replayer_passes",
+      "Metric type": "Counter",
+      "Metric unit": "pass",
+      "Metric description": "Number of passes the result was replayed for profiling across all experiments.",
+      "gb100": "1"
+    }
+  },
+  "catalogue_missing": [],
+  "commands": [
+    {
+      "command": [
+        "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+        "--chips",
+        "gb100",
+        "--query-metrics-mode",
+        "all",
+        "--metrics",
+        "dram__bytes_read,lts__t_sectors_srcunit_tex_op_read,lts__t_sectors_srcunit_tex_op_read_lookup_hit,lts__t_sectors_srcunit_tex_op_read_lookup_miss,l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read,sm__cycles_elapsed,lts__cycles_elapsed,dram__cycles_elapsed,gpu__time_duration",
+        "--csv"
+      ],
+      "returncode": 0,
+      "stdout_SHA256": "b522be1e9a338e3d34b3401b6c6ca86905f835e35728916c914912593500b077"
+    },
+    {
+      "command": [
+        "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+        "--chips",
+        "gb100",
+        "--query-metrics-collection",
+        "stats",
+        "--query-metrics",
+        "--csv"
+      ],
+      "returncode": 0,
+      "stdout_SHA256": "11a25a1073dca2178f1081604a304af036ff380bddf35af0f0c5590abc31bc3f"
+    },
+    {
+      "command": [
+        "/opt/nvidia/nsight-compute/2026.2.1/ncu",
+        "--section",
+        "LaunchStats",
+        "--metrics",
+        "dram__bytes_read.sum,lts__t_sectors_srcunit_tex_op_read.sum,lts__t_sectors_srcunit_tex_op_read_lookup_hit.sum,lts__t_sectors_srcunit_tex_op_read_lookup_miss.sum,l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.sum,sm__cycles_elapsed.avg,lts__cycles_elapsed.avg,dram__cycles_elapsed.avg,gpu__time_duration.sum,sm__cycles_elapsed.avg.per_second,lts__cycles_elapsed.avg.per_second,dram__cycles_elapsed.avg.per_second,profiler__replayer_passes",
+        "--list-metrics"
+      ],
+      "returncode": 0,
+      "stdout_SHA256": "86853022afc40267e1cf398fa94b53ce47611bbb45611c018abcf0072a6065c2"
+    }
+  ],
+  "pass_count": "UNDETERMINED_WITHOUT_TARGET_COLLECTION_CONFIGURATION",
+  "expectation": "Small direct hardware set, intended to minimize passes; no offline CLI pass-count proof. Actual profiler__replayer_passes/log must decide, never assume one pass.",
+  "excluded": [
+    "SourceCounters",
+    "InstructionStats",
+    "warp sampling",
+    "PM sampling",
+    "new kernel",
+    "new rate measurement"
+  ],
+  "GPU_kernel_launches": 0,
+  "model_enabled": false
+}

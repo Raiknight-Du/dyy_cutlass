@@ -1,0 +1,385 @@
+{
+  "status": "READY",
+  "metrics": [
+    "l1tex__data_pipe_lsu_wavefronts.sum",
+    "l1tex__data_pipe_lsu_wavefronts_cmd_read.sum",
+    "l1tex__data_pipe_lsu_wavefronts_cmd_write.sum",
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds.sum",
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.sum",
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_write.sum",
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared.sum",
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_read.sum",
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_write.sum",
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ld.sum",
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_st.sum",
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_atom.sum",
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_misc.sum",
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_umemsets.sum",
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ipa.sum",
+    "l1tex__data_pipe_lsu_wavefronts_mem_surface.sum",
+    "l1tex__data_pipe_tc_wavefronts.sum",
+    "l1tex__data_pipe_tc_wavefronts_mem_shared.sum",
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utccp.sum",
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_a.sum",
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_1cta.sum",
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_2cta.sum",
+    "l1tex__data_pipe_tex_wavefronts.sum",
+    "l1tex__data_pipe_tex_wavefronts_mem_surface.sum",
+    "l1tex__data_pipe_tex_wavefronts_mem_texture.sum",
+    "l1tex__data_bank_conflicts_pipe_lsu.sum",
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld.sum",
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st.sum",
+    "l1tex__data_bank_conflicts_type_arbitration.sum",
+    "l1tex__data_bank_reads.sum",
+    "l1tex__data_bank_writes.sum",
+    "l1tex__cycles_active.sum",
+    "l1tex__cycles_elapsed.sum",
+    "l1tex__m_xbar2l1tex_read_bytes_mem_global_op_tma_ld.sum",
+    "l1tex__m_l1tex2xbar_write_bytes_mem_global_op_tma_st.sum",
+    "l1tex__data_pipe_lsu_wavefronts.avg.peak_sustained",
+    "l1tex__data_pipe_lsu_wavefronts.avg.pct_of_peak_sustained_elapsed",
+    "l1tex__data_pipe_lsu_wavefronts.avg.pct_of_peak_sustained_active",
+    "l1tex__data_pipe_tc_wavefronts.avg.peak_sustained",
+    "l1tex__data_pipe_tc_wavefronts.avg.pct_of_peak_sustained_elapsed",
+    "l1tex__data_pipe_tc_wavefronts.avg.pct_of_peak_sustained_active",
+    "l1tex__data_pipe_tex_wavefronts.avg.peak_sustained",
+    "l1tex__data_pipe_tex_wavefronts.avg.pct_of_peak_sustained_elapsed",
+    "l1tex__data_pipe_tex_wavefronts.avg.pct_of_peak_sustained_active",
+    "l1tex__cycles_active.avg",
+    "l1tex__cycles_elapsed.avg",
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.sum",
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.sum",
+    "l1tex__t_sectors_pipe_lsu_mem_local_op_st.sum",
+    "lts__t_sectors_op_read.sum",
+    "lts__t_sectors_op_write.sum",
+    "dram__bytes_read.sum",
+    "dram__bytes_write.sum"
+  ],
+  "missing": [],
+  "definitions": {
+    "l1tex__data_pipe_lsu_wavefronts.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of local/global/shared/(distributed shared) + surface write wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_read.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_cmd_read.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of local/global/shared/(distributed shared) read wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_cmd_write.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_cmd_write.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of local/global/shared/(distributed shared)/surface write wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_mem_lgds.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of local/global/(distributed shared) wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_read.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of local/global/(distributed shared) read wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_write.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_mem_lgds_cmd_write.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of local/global/(distributed shared) write wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_mem_shared.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of shared memory wavefronts processed by Data-Stage for LDS, LD, 3D attribute loads, LDSM, STS, ST, ATOMS, ATOM, 3D attribute stores, STSM, LDGSTS, UMEMSETS and Misc (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_read.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_read.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of shared read wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_write.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_mem_shared_cmd_write.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of shared write wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ld.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ld.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of shared memory wavefronts processed by Data-Stage for LDS, LD, 3D attribute loads, LDSM (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_st.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_st.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of shared memory wavefronts processed by Data-Stage for STS, ST, 3D attribute stores, STSM (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_atom.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_atom.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of shared memory wavefronts processed by Data-Stage for ATOMS, ATOM (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_misc.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_misc.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of shared memory wavefronts processed by Data-Stage for misc (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_umemsets.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_umemsets.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of UMEMSETS wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ipa.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ipa.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of IPA wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts_mem_surface.sum": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts_mem_surface.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of surface write wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tc_wavefronts.sum": {
+      "Metric name": "l1tex__data_pipe_tc_wavefronts.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of wavefronts processed by Data-Stage for Tensor Core (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared.sum": {
+      "Metric name": "l1tex__data_pipe_tc_wavefronts_mem_shared.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of shared memory wavefronts processed by Data-Stage for Tensor Core (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utccp.sum": {
+      "Metric name": "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utccp.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of shared memory wavefronts processed by Data-Stage for Tensor Core (UTCCP ops) (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_a.sum": {
+      "Metric name": "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_a.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of shared memory wavefronts processed by Data-Stage for Tensor Core (matrix A reads by UTCHMMA/UTCIMMA/UTCQMMA/UTCOMMA ops) (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_1cta.sum": {
+      "Metric name": "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_1cta.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of shared memory wavefronts processed by Data-Stage for Tensor Core (matrix B reads by 1CTA UTCHMMA/UTCIMMA/UTCQMMA/UTCOMMA ops) (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_2cta.sum": {
+      "Metric name": "l1tex__data_pipe_tc_wavefronts_mem_shared_op_utcmma_matrix_b_scope_2cta.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of shared memory wavefronts processed by Data-Stage for Tensor Core (matrix B reads by 2CTA UTCHMMA/UTCIMMA/UTCQMMA/UTCOMMA ops) (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tex_wavefronts.sum": {
+      "Metric name": "l1tex__data_pipe_tex_wavefronts.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of texture + surface read wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_surface.sum": {
+      "Metric name": "l1tex__data_pipe_tex_wavefronts_mem_surface.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of surface read wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tex_wavefronts_mem_texture.sum": {
+      "Metric name": "l1tex__data_pipe_tex_wavefronts_mem_texture.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of texture wavefronts processed by Data-Stage (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu.sum": {
+      "Metric name": "l1tex__data_bank_conflicts_pipe_lsu.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of data bank conflicts generated by LSU pipe (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld.sum": {
+      "Metric name": "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of shared memory data bank conflicts generated by LDS, LD, 3D attribute loads, LDSM (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st.sum": {
+      "Metric name": "l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of shared memory data bank conflicts generated by STS, ST, 3D attribute stores, STSM (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_bank_conflicts_type_arbitration.sum": {
+      "Metric name": "l1tex__data_bank_conflicts_type_arbitration.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of data bank conflicts generated by l1data client arbitration (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_bank_reads.sum": {
+      "Metric name": "l1tex__data_bank_reads.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of data bank reads (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_bank_writes.sum": {
+      "Metric name": "l1tex__data_bank_writes.sum",
+      "Metric type": "Counter",
+      "Metric unit": "",
+      "Metric description": "# of data bank writes (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__cycles_active.sum": {
+      "Metric name": "l1tex__cycles_active.sum",
+      "Metric type": "Counter",
+      "Metric unit": "cycle",
+      "Metric description": "# of cycles where L1TEX was active (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__cycles_elapsed.sum": {
+      "Metric name": "l1tex__cycles_elapsed.sum",
+      "Metric type": "Counter",
+      "Metric unit": "cycle",
+      "Metric description": "# of cycles elapsed on L1TEX (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__m_xbar2l1tex_read_bytes_mem_global_op_tma_ld.sum": {
+      "Metric name": "l1tex__m_xbar2l1tex_read_bytes_mem_global_op_tma_ld.sum",
+      "Metric type": "Counter",
+      "Metric unit": "byte",
+      "Metric description": "# of bytes read from L2 into L1TEX M-Stage for global TMA loads (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__m_l1tex2xbar_write_bytes_mem_global_op_tma_st.sum": {
+      "Metric name": "l1tex__m_l1tex2xbar_write_bytes_mem_global_op_tma_st.sum",
+      "Metric type": "Counter",
+      "Metric unit": "byte",
+      "Metric description": "# of bytes written from L1tex M-Stage for global TMA stores (This counter metric represents the sum across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.avg.peak_sustained": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts.avg.peak_sustained",
+      "Metric type": "Counter",
+      "Metric unit": "1/cycle",
+      "Metric description": "# of local/global/shared/(distributed shared) + surface write wavefronts processed by Data-Stage (This counter metric represents the avg peak sustained rate across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.avg.pct_of_peak_sustained_elapsed": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts.avg.pct_of_peak_sustained_elapsed",
+      "Metric type": "Counter",
+      "Metric unit": "%",
+      "Metric description": "# of local/global/shared/(distributed shared) + surface write wavefronts processed by Data-Stage (This counter metric represents the avg percent of the peak sustained rate achieved during elapsed cycles across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_lsu_wavefronts.avg.pct_of_peak_sustained_active": {
+      "Metric name": "l1tex__data_pipe_lsu_wavefronts.avg.pct_of_peak_sustained_active",
+      "Metric type": "Counter",
+      "Metric unit": "%",
+      "Metric description": "# of local/global/shared/(distributed shared) + surface write wavefronts processed by Data-Stage (This counter metric represents the avg percent of the peak sustained rate achieved during unit active cycles across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tc_wavefronts.avg.peak_sustained": {
+      "Metric name": "l1tex__data_pipe_tc_wavefronts.avg.peak_sustained",
+      "Metric type": "Counter",
+      "Metric unit": "1/cycle",
+      "Metric description": "# of wavefronts processed by Data-Stage for Tensor Core (This counter metric represents the avg peak sustained rate across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tc_wavefronts.avg.pct_of_peak_sustained_elapsed": {
+      "Metric name": "l1tex__data_pipe_tc_wavefronts.avg.pct_of_peak_sustained_elapsed",
+      "Metric type": "Counter",
+      "Metric unit": "%",
+      "Metric description": "# of wavefronts processed by Data-Stage for Tensor Core (This counter metric represents the avg percent of the peak sustained rate achieved during elapsed cycles across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tc_wavefronts.avg.pct_of_peak_sustained_active": {
+      "Metric name": "l1tex__data_pipe_tc_wavefronts.avg.pct_of_peak_sustained_active",
+      "Metric type": "Counter",
+      "Metric unit": "%",
+      "Metric description": "# of wavefronts processed by Data-Stage for Tensor Core (This counter metric represents the avg percent of the peak sustained rate achieved during unit active cycles across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tex_wavefronts.avg.peak_sustained": {
+      "Metric name": "l1tex__data_pipe_tex_wavefronts.avg.peak_sustained",
+      "Metric type": "Counter",
+      "Metric unit": "1/cycle",
+      "Metric description": "# of texture + surface read wavefronts processed by Data-Stage (This counter metric represents the avg peak sustained rate across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tex_wavefronts.avg.pct_of_peak_sustained_elapsed": {
+      "Metric name": "l1tex__data_pipe_tex_wavefronts.avg.pct_of_peak_sustained_elapsed",
+      "Metric type": "Counter",
+      "Metric unit": "%",
+      "Metric description": "# of texture + surface read wavefronts processed by Data-Stage (This counter metric represents the avg percent of the peak sustained rate achieved during elapsed cycles across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__data_pipe_tex_wavefronts.avg.pct_of_peak_sustained_active": {
+      "Metric name": "l1tex__data_pipe_tex_wavefronts.avg.pct_of_peak_sustained_active",
+      "Metric type": "Counter",
+      "Metric unit": "%",
+      "Metric description": "# of texture + surface read wavefronts processed by Data-Stage (This counter metric represents the avg percent of the peak sustained rate achieved during unit active cycles across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__cycles_active.avg": {
+      "Metric name": "l1tex__cycles_active.avg",
+      "Metric type": "Counter",
+      "Metric unit": "cycle",
+      "Metric description": "# of cycles where L1TEX was active (This counter metric represents the avg across all unit instances)",
+      "gb100": "1"
+    },
+    "l1tex__cycles_elapsed.avg": {
+      "Metric name": "l1tex__cycles_elapsed.avg",
+      "Metric type": "Counter",
+      "Metric unit": "cycle",
+      "Metric description": "# of cycles elapsed on L1TEX (This counter metric represents the avg across all unit instances)",
+      "gb100": "1"
+    }
+  },
+  "caution": "LSU is not the total Data parent including TC/TEX. Memory and command axes are alternate partitions. Hardware bank conflicts can include arbitration; do not add them to actual WF or independently sum replay costs with TC/TMA service.",
+  "model_enabled": false
+}

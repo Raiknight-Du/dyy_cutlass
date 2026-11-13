@@ -1,0 +1,49 @@
+{
+  "mode": "screen",
+  "admission": {
+    "round": "R3",
+    "binary_sha256": "bdeabbb53a7a4313d734aa8db7db4f04f567fae39a1fc6880bdf6caf59a30531",
+    "approved_modes": [
+      "screen"
+    ],
+    "max_processes": 1,
+    "max_N": 256,
+    "configurations": 8,
+    "warmups_per_configuration_per_point": 20,
+    "samples_per_point": 5,
+    "frequency_policy": "automatic; no R3 clock lock",
+    "authorization_source": "Lead explicit R3 screen-only message after independent SASS review, 2026-10-26",
+    "wrapper_sha256": "ebe3c86fa6adfc44d77ea2959fcd6aec9fa0d782b9d3057d54992c8081f1f95c",
+    "initial_guard": "three observations separated by 30 seconds; no compute apps and GPU utilization <=5%",
+    "formal_or_NCU_authorized": false,
+    "model_enabled": false
+  },
+  "runs": [
+    {
+      "trial": 0,
+      "command": [
+        "/home/ubuntu/workspace/op12/k4_10h_native_r3_20261026/compile02_hostfix/ldg_service",
+        "--mode",
+        "screen",
+        "--out",
+        "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_screen01/trial0",
+        "--config",
+        "all",
+        "--points",
+        "128,256",
+        "--trial",
+        "0",
+        "--warmup",
+        "20",
+        "--samples",
+        "30"
+      ],
+      "pid": 1416361,
+      "returncode": 0,
+      "foreign": [],
+      "binary_sha256": "bdeabbb53a7a4313d734aa8db7db4f04f567fae39a1fc6880bdf6caf59a30531",
+      "CUDA_DISABLE_PTX_JIT": "1"
+    }
+  ],
+  "model_enabled": false
+}

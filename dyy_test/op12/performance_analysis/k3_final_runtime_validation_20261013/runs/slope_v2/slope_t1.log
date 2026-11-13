@@ -1,0 +1,8 @@
+
+[91m[1merror[INTERNAL]:[0m The compiler hit an internal DSL problem while compiling your code.
+  [94mnote:[0m This is a bug in the DSL, not a mistake in your kernel.
+  [91merror:[0m runtime._Tensor is not a TVM-FFI tensor. Enable TVM-FFI with `from_dlpack(...,
+         enable_tvm_ffi=True)` or `CUTE_DSL_ENABLE_TVM_FFI=1`.
+  [92msuggestion:[0m Please report this with the snippet above and your kernel.
+  [92msuggestion:[0m Re-run with CUTE_DSL_SHOW_STACKTRACE=1 to include the full technical detail.
+

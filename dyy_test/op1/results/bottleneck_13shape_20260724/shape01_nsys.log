@@ -1,0 +1,6 @@
+RESULT,1,M256_N256_K256_E64x64_C2x1x1,ok,10,3.56859
+Collecting data...
+Generating '/tmp/nsys-report-f2dd.qdstrm'
+[1/1] [0%                          ] shape01_nsys.nsys-rep[1/1] [0%                          ] shape01_nsys.nsys-rep[1/1] [==========49%               ] shape01_nsys.nsys-rep[1/1] [=======================96%  ] shape01_nsys.nsys-rep[1/1] [========================97% ] shape01_nsys.nsys-rep[1/1] [========================100%] shape01_nsys.nsys-rep[1/1] [========================100%] shape01_nsys.nsys-rep
+Generated:
+	/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/bottleneck_13shape_20260724/shape01_nsys.nsys-rep

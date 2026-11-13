@@ -1,0 +1,14 @@
+{
+  "round": "R3",
+  "binary_sha256": "bdeabbb53a7a4313d734aa8db7db4f04f567fae39a1fc6880bdf6caf59a30531",
+  "approved_modes": ["NCU"],
+  "max_processes": 1,
+  "max_N": 512,
+  "allowed_configurations": ["S_G128_LOAD"],
+  "authorized_NCU_invocations": 1,
+  "remaining_R3_configurations_authorized": false,
+  "formal_authorized": false,
+  "frequency_policy": "automatic; no R3 clock lock",
+  "authorization_source": "Lead explicit post-screen admission for first scalar grid128 N512 NCU only, 2026-10-26",
+  "model_enabled": false
+}

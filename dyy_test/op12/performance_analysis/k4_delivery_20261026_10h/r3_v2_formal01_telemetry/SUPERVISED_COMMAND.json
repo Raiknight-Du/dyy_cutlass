@@ -1,0 +1,20 @@
+[
+  "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+  "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_init_l2_competition_20261024_3_run01/clock_lease.py",
+  "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+  "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/run_batch.py",
+  "--binary",
+  "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/compile01_cuda130/ldg_service",
+  "--gate",
+  "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_ldg_service_v2/STATIC_GATE.json",
+  "--authorization",
+  "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/R3_V2_FORMAL_ADMISSION.json",
+  "--out",
+  "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/r3_v2_formal01",
+  "--mode",
+  "formal",
+  "--processes",
+  "3",
+  "--points",
+  "128,256,512,1024,2048,4096,8192"
+]

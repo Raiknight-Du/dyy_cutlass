@@ -1,0 +1,49 @@
+[
+  {
+    "wall_ns": 1792757926925662013,
+    "request": "locked1845",
+    "before": {
+      "wall_ns": 1792757926716379932,
+      "monotonic_ns": 4580219853318066,
+      "SM_MHz": 120,
+      "memory_MHz": 3996,
+      "power_mW": 188946,
+      "temperature_C": 32,
+      "throttle": 1,
+      "util": 0,
+      "processes": [],
+      "power_violation": {
+        "violationTime": 491721854304,
+        "referenceTime": 1792757926716806,
+        "unit": "NVML raw nanoseconds"
+      },
+      "thermal_violation": {
+        "violationTime": 0,
+        "referenceTime": 1792757926718128,
+        "unit": "NVML raw nanoseconds"
+      }
+    },
+    "after": {
+      "wall_ns": 1792757926925669613,
+      "monotonic_ns": 4580220062607907,
+      "SM_MHz": 1845,
+      "memory_MHz": 3996,
+      "power_mW": 194714,
+      "temperature_C": 32,
+      "throttle": 1,
+      "util": 0,
+      "processes": [],
+      "power_violation": {
+        "violationTime": 491803717440,
+        "referenceTime": 1792757926926045,
+        "unit": "NVML raw nanoseconds"
+      },
+      "thermal_violation": {
+        "violationTime": 0,
+        "referenceTime": 1792757926926672,
+        "unit": "NVML raw nanoseconds"
+      }
+    },
+    "smi": "\n==============NVSMI LOG==============\n\nTimestamp                                              : Fri Oct 23 12:18:46 2026\nDriver Version                                         : 580.159.03\nCUDA Version                                           : 13.0\n\nAttached GPUs                                          : 1\nGPU 00000000:05:00.0\n    Performance State                                  : P0\n    Clocks Event Reasons\n        Idle                                           : Active\n        Applications Clocks Setting                    : Not Active\n        SW Power Cap                                   : Not Active\n        HW Slowdown                                    : Not Active\n            HW Thermal Slowdown                        : Not Active\n            HW Power Brake Slowdown                    : Not Active\n        Sync Boost                                     : Not Active\n        SW Thermal Slowdown                            : Not Active\n        Display Clock Setting                          : Not Active\n    Clocks Event Reasons Counters\n        SW Power Capping                               : 491787528 us\n        Sync Boost                                     : 0 us\n        SW Thermal Slowdown                            : 153746489 us\n        HW Thermal Slowdown                            : 0 us\n        HW Power Braking                               : 0 us\n    Sparse Operation Mode                              : N/A\n    Temperature\n        GPU Current Temp                               : 32 C\n        GPU T.Limit Temp                               : 55 C\n        GPU Shutdown T.Limit Temp                      : -5 C\n        GPU Slowdown T.Limit Temp                      : -3 C\n        GPU Max Operating T.Limit Temp                 : 0 C\n        GPU Target Temperature                         : N/A\n        Memory Current Temp                            : 32 C\n        Memory Max Operating T.Limit Temp              : 0 C\n    GPU Power Readings\n        Average Power Draw                             : 194.71 W\n        Instantaneous Power Draw                       : 230.66 W\n        Current Power Limit                            : 1000.00 W\n        Requested Power Limit                          : 1000.00 W\n        Default Power Limit                            : 1000.00 W\n        Min Power Limit                                : 200.00 W\n        Max Power Limit                                : 1000.00 W\n    Power Samples\n        Duration                                       : 2.36 sec\n        Number of Samples                              : 119\n        Max                                            : 230.01 W\n        Min                                            : 187.56 W\n        Avg                                            : 192.48 W\n    GPU Memory Power Readings \n        Average Power Draw                             : 21.72 W\n        Instantaneous Power Draw                       : N/A\n    Module Power Readings\n        Average Power Draw                             : N/A\n        Instantaneous Power Draw                       : N/A\n        Current Power Limit                            : N/A\n        Requested Power Limit                          : N/A\n        Default Power Limit                            : N/A\n        Min Power Limit                                : N/A\n        Max Power Limit                                : N/A\n    Clocks\n        Graphics                                       : 1845 MHz\n        SM                                             : 1845 MHz\n        Memory                                         : 3996 MHz\n        Video                                          : 1747 MHz\n    Applications Clocks\n        Graphics                                       : 1965 MHz\n        Memory                                         : 3996 MHz\n    Default Applications Clocks\n        Graphics                                       : 1965 MHz\n        Memory                                         : 3996 MHz\n    Deferred Clocks\n        Memory                                         : N/A\n    Max Clocks\n        Graphics                                       : 1965 MHz\n        SM                                             : 1965 MHz\n        Memory                                         : 3996 MHz\n        Video                                          : 1965 MHz\n    Max Customer Boost Clocks\n        Graphics                                       : 1965 MHz\n    SM Clock Samples\n        Duration                                       : N/A\n        Number of Samples                              : N/A\n        Max                                            : N/A\n        Min                                            : N/A\n        Avg                                            : N/A\n    Memory Clock Samples\n        Duration                                       : N/A\n        Number of Samples                              : N/A\n        Max                                            : N/A\n        Min                                            : N/A\n        Avg                                            : N/A\n    Clock Policy\n        Auto Boost                                     : N/A\n        Auto Boost Default                             : N/A\n\n"
+  }
+]

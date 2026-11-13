@@ -1,0 +1,22 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 497839 (/usr/bin/python3.10)
+==PROF== Profiling "reduce_kernel" - 0: Application replay pass 1
+==PROF== Profiling "reduce_kernel" - 1: Application replay pass 1
+==PROF== Profiling "reduce_kernel" - 2: Application replay pass 1
+{"event": "probe_pass_complete", "factor": 2, "l2_bytes": 132644864, "target_bytes": 8388608, "evict_bytes": 265289728, "warm": 1048385.625, "hot": 1048385.625, "cold": 1048385.625, "eviction_checksum": 33160720.0}
+==PROF== Disconnected from process 497839
+==PROF== Connected to process 497894 (/usr/bin/python3.10)
+==PROF== Profiling "reduce_kernel" - 0: Application replay pass 2
+==PROF== Profiling "reduce_kernel" - 1: Application replay pass 2
+==PROF== Profiling "reduce_kernel" - 2: Application replay pass 2
+{"event": "probe_pass_complete", "factor": 2, "l2_bytes": 132644864, "target_bytes": 8388608, "evict_bytes": 265289728, "warm": 1048385.625, "hot": 1048385.625, "cold": 1048385.625, "eviction_checksum": 33160720.0}
+==PROF== Disconnected from process 497894
+==PROF== Connected to process 497948 (/usr/bin/python3.10)
+==PROF== Profiling "reduce_kernel" - 0: Application replay pass 3
+==PROF== Profiling "reduce_kernel" - 1: Application replay pass 3
+==PROF== Profiling "reduce_kernel" - 2: Application replay pass 3
+{"event": "probe_pass_complete", "factor": 2, "l2_bytes": 132644864, "target_bytes": 8388608, "evict_bytes": 265289728, "warm": 1048385.625, "hot": 1048385.625, "cold": 1048385.625, "eviction_checksum": 33160720.0}
+==PROF== Disconnected from process 497948
+==PROF== Creating report from application replay data: 0%...........100%
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/l2_probe/evict2/probe.ncu-rep

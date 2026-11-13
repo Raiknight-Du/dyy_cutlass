@@ -1,0 +1,90 @@
+{
+  "launch": {
+    "baseline": {
+      "grid": [
+        80,
+        6,
+        1
+      ],
+      "block": [
+        128,
+        1,
+        1
+      ],
+      "dynamic_smem": 24960,
+      "occupancy_api_max_active_ctas_per_sm": 8,
+      "NUM_REGS": 64,
+      "SHARED_SIZE_BYTES": 0,
+      "LOCAL_SIZE_BYTES": 0
+    },
+    "tcgen05": {
+      "grid": [
+        80,
+        6,
+        1
+      ],
+      "block": [
+        128,
+        1,
+        1
+      ],
+      "dynamic_smem": 24960,
+      "occupancy_api_max_active_ctas_per_sm": 1,
+      "NUM_REGS": 52,
+      "SHARED_SIZE_BYTES": 0,
+      "LOCAL_SIZE_BYTES": 0
+    },
+    "layout": {
+      "grid": [
+        80,
+        6,
+        1
+      ],
+      "block": [
+        128,
+        1,
+        1
+      ],
+      "dynamic_smem": 24960,
+      "occupancy_api_max_active_ctas_per_sm": 8,
+      "NUM_REGS": 64,
+      "SHARED_SIZE_BYTES": 0,
+      "LOCAL_SIZE_BYTES": 0
+    },
+    "both": {
+      "grid": [
+        80,
+        6,
+        1
+      ],
+      "block": [
+        128,
+        1,
+        1
+      ],
+      "dynamic_smem": 24960,
+      "occupancy_api_max_active_ctas_per_sm": 1,
+      "NUM_REGS": 52,
+      "SHARED_SIZE_BYTES": 0,
+      "LOCAL_SIZE_BYTES": 0
+    }
+  },
+  "correctness": {
+    "tcgen05": {
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "exact": true
+    },
+    "layout": {
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "exact": true
+    },
+    "both": {
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "exact": true,
+      "exact_vs_tcgen05": true
+    }
+  }
+}

@@ -1,0 +1,2 @@
+invocation,trial,config,N,sample,event_us,cta_cycle_median,cta_cycle_p5,cta_cycle_p95,cta_cycle_max,unique_SMs,valid,model_enabled
+0,0,SHADER_ONLY,512,0,247946.533203125,38728160.5,38709409.15,39110518.5,39127059,128,1,False

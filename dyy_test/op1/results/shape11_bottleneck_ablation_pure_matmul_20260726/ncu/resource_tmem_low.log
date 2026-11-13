@@ -1,0 +1,31 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 4173675 (/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/shape11_bottleneck_ablation_pure_matmul_20260726/bin/shape11_resource_control)
+==PROF== Profiling "tmem_kernel": 0%....50%....100% - 9 passes
+RESULT,shape11_empty,1,50,0.025289601
+RESULT,shape11_empty,2,50,0.025735682
+RESULT,shape11_empty,3,50,0.025147520
+RESULT,shape11_empty,4,50,0.025099522
+RESULT,shape11_empty,5,50,0.025345281
+RESULT,shape11_smem,1,50,0.025381120
+RESULT,shape11_smem,2,50,0.025027839
+RESULT,shape11_smem,3,50,0.025659520
+RESULT,shape11_smem,4,50,0.024960639
+RESULT,shape11_smem,5,50,0.025139201
+RESULT,shape11_sync,1,50,0.025727998
+RESULT,shape11_sync,2,50,0.025444480
+RESULT,shape11_sync,3,50,0.025833599
+RESULT,shape11_sync,4,50,0.025419518
+RESULT,shape11_sync,5,50,0.025637761
+RESULT,shape11_tmem512_4B_smem,1,50,0.036365438
+RESULT,shape11_tmem512_4B_smem,2,50,0.041448321
+RESULT,shape11_tmem512_4B_smem,3,50,0.053045761
+RESULT,shape11_tmem512_4B_smem,4,50,0.076117121
+RESULT,shape11_tmem512_4B_smem,5,50,0.063989118
+RESULT,shape11_tmem512_224256B_smem,1,50,0.064280316
+RESULT,shape11_tmem512_224256B_smem,2,50,0.063753597
+RESULT,shape11_tmem512_224256B_smem,3,50,0.064567678
+RESULT,shape11_tmem512_224256B_smem,4,50,0.065175042
+RESULT,shape11_tmem512_224256B_smem,5,50,0.063397124
+==PROF== Disconnected from process 4173675
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/shape11_bottleneck_ablation_pure_matmul_20260726/ncu/resource_tmem_low.ncu-rep

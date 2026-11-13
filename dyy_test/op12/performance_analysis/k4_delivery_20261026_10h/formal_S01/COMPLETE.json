@@ -1,0 +1,6 @@
+{
+  "independent_processes": 3,
+  "warmup": 20,
+  "paired_blocks": 30,
+  "model_enabled": false
+}

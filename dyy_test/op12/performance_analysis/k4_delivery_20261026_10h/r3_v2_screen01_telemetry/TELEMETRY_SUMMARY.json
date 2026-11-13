@@ -1,0 +1,401 @@
+{
+  "all_command_snapshots": {
+    "samples": 473,
+    "fields": {
+      "clocks.mem": {
+        "observations": {
+          "3996": 473
+        },
+        "min": 3996.0,
+        "max": 3996.0
+      },
+      "clocks.sm": {
+        "observations": {
+          "120": 466,
+          "615": 1,
+          "1965": 6
+        },
+        "min": 120.0,
+        "max": 1965.0
+      },
+      "clocks_event_reasons.active": {
+        "observations": {
+          "0x0000000000000001": 467,
+          "0x0000000000000000": 6
+        }
+      },
+      "clocks_event_reasons.applications_clocks_setting": {
+        "observations": {
+          "Not Active": 473
+        }
+      },
+      "clocks_event_reasons.display_clock_setting": {
+        "observations": {
+          "UNKNOWN": 473
+        }
+      },
+      "clocks_event_reasons.gpu_idle": {
+        "observations": {
+          "Active": 467,
+          "Not Active": 6
+        }
+      },
+      "clocks_event_reasons.hw_power_brake_slowdown": {
+        "observations": {
+          "Not Active": 473
+        }
+      },
+      "clocks_event_reasons.hw_slowdown": {
+        "observations": {
+          "Not Active": 473
+        }
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "observations": {
+          "Not Active": 473
+        }
+      },
+      "clocks_event_reasons.supported": {
+        "observations": {
+          "0x00000000000001FF": 473
+        }
+      },
+      "clocks_event_reasons.sw_power_cap": {
+        "observations": {
+          "Not Active": 473
+        }
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "observations": {
+          "Not Active": 473
+        }
+      },
+      "clocks_event_reasons.sync_boost": {
+        "observations": {
+          "Not Active": 473
+        }
+      },
+      "clocks_event_reasons_counters.hw_power_brake_slowdown": {
+        "observations": {
+          "0": 473
+        }
+      },
+      "clocks_event_reasons_counters.hw_thermal_slowdown": {
+        "observations": {
+          "0": 473
+        }
+      },
+      "clocks_event_reasons_counters.sw_power_cap": {
+        "observations": {
+          "10176152547": 473
+        }
+      },
+      "clocks_event_reasons_counters.sw_thermal_slowdown": {
+        "observations": {
+          "9834165095": 473
+        }
+      },
+      "clocks_event_reasons_counters.sync_boost": {
+        "observations": {
+          "0": 473
+        }
+      },
+      "enforced.power.limit": {
+        "observations": {
+          "1000.00": 473
+        },
+        "min": 1000.0,
+        "max": 1000.0
+      },
+      "power.draw": {
+        "observations": {
+          "188.76": 35,
+          "188.75": 15,
+          "188.71": 17,
+          "188.74": 14,
+          "188.80": 41,
+          "188.81": 34,
+          "188.86": 7,
+          "188.89": 18,
+          "188.87": 21,
+          "188.85": 30,
+          "188.83": 33,
+          "188.84": 30,
+          "188.90": 5,
+          "188.88": 8,
+          "188.77": 36,
+          "188.73": 14,
+          "188.67": 3,
+          "188.70": 3,
+          "188.72": 13,
+          "188.79": 25,
+          "188.91": 5,
+          "188.93": 4,
+          "188.94": 4,
+          "188.92": 3,
+          "188.78": 15,
+          "188.69": 2,
+          "188.82": 24,
+          "188.68": 3,
+          "188.66": 1,
+          "188.64": 1,
+          "188.65": 1,
+          "188.96": 1,
+          "189.03": 1,
+          "193.93": 1,
+          "209.08": 1,
+          "224.78": 1,
+          "250.90": 1,
+          "260.71": 1,
+          "261.75": 1
+        },
+        "min": 188.64,
+        "max": 261.75
+      },
+      "power.draw.instant": {
+        "observations": {
+          "188.60": 310,
+          "189.26": 139,
+          "187.95": 13,
+          "189.91": 4,
+          "191.94": 1,
+          "240.45": 1,
+          "369.92": 1,
+          "419.31": 1,
+          "346.71": 1,
+          "243.07": 1,
+          "241.11": 1
+        },
+        "min": 187.95,
+        "max": 419.31
+      },
+      "power.limit": {
+        "observations": {
+          "1000.00": 473
+        },
+        "min": 1000.0,
+        "max": 1000.0
+      },
+      "pstate": {
+        "observations": {
+          "P0": 473
+        }
+      },
+      "temperature.gpu": {
+        "observations": {
+          "32": 469,
+          "34": 2,
+          "33": 2
+        },
+        "min": 32.0,
+        "max": 34.0
+      },
+      "temperature.memory": {
+        "observations": {
+          "31": 246,
+          "32": 227
+        },
+        "min": 31.0,
+        "max": 32.0
+      },
+      "utilization.gpu": {
+        "observations": {
+          "0": 469,
+          "36": 1,
+          "97": 2,
+          "8": 1
+        },
+        "min": 0.0,
+        "max": 97.0
+      },
+      "utilization.memory": {
+        "observations": {
+          "0": 471,
+          "1": 2
+        },
+        "min": 0.0,
+        "max": 1.0
+      },
+      "uuid": {
+        "observations": {
+          "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf": 473
+        }
+      }
+    }
+  },
+  "model_enabled": false,
+  "limitation": "Values are sampled during host query bounds. Overlap is an association, not proof of continuous frequency or reason state throughout a kernel; cumulative counters include historical activity.",
+  "snapshots_whose_query_bounds_overlap_sampled_Event_host_envelopes": {
+    "samples": 2,
+    "fields": {
+      "clocks.mem": {
+        "observations": {
+          "3996": 2
+        },
+        "min": 3996.0,
+        "max": 3996.0
+      },
+      "clocks.sm": {
+        "observations": {
+          "1965": 2
+        },
+        "min": 1965.0,
+        "max": 1965.0
+      },
+      "clocks_event_reasons.active": {
+        "observations": {
+          "0x0000000000000000": 2
+        }
+      },
+      "clocks_event_reasons.applications_clocks_setting": {
+        "observations": {
+          "Not Active": 2
+        }
+      },
+      "clocks_event_reasons.display_clock_setting": {
+        "observations": {
+          "UNKNOWN": 2
+        }
+      },
+      "clocks_event_reasons.gpu_idle": {
+        "observations": {
+          "Not Active": 2
+        }
+      },
+      "clocks_event_reasons.hw_power_brake_slowdown": {
+        "observations": {
+          "Not Active": 2
+        }
+      },
+      "clocks_event_reasons.hw_slowdown": {
+        "observations": {
+          "Not Active": 2
+        }
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "observations": {
+          "Not Active": 2
+        }
+      },
+      "clocks_event_reasons.supported": {
+        "observations": {
+          "0x00000000000001FF": 2
+        }
+      },
+      "clocks_event_reasons.sw_power_cap": {
+        "observations": {
+          "Not Active": 2
+        }
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "observations": {
+          "Not Active": 2
+        }
+      },
+      "clocks_event_reasons.sync_boost": {
+        "observations": {
+          "Not Active": 2
+        }
+      },
+      "clocks_event_reasons_counters.hw_power_brake_slowdown": {
+        "observations": {
+          "0": 2
+        }
+      },
+      "clocks_event_reasons_counters.hw_thermal_slowdown": {
+        "observations": {
+          "0": 2
+        }
+      },
+      "clocks_event_reasons_counters.sw_power_cap": {
+        "observations": {
+          "10176152547": 2
+        }
+      },
+      "clocks_event_reasons_counters.sw_thermal_slowdown": {
+        "observations": {
+          "9834165095": 2
+        }
+      },
+      "clocks_event_reasons_counters.sync_boost": {
+        "observations": {
+          "0": 2
+        }
+      },
+      "enforced.power.limit": {
+        "observations": {
+          "1000.00": 2
+        },
+        "min": 1000.0,
+        "max": 1000.0
+      },
+      "power.draw": {
+        "observations": {
+          "209.08": 1,
+          "250.90": 1
+        },
+        "min": 209.08,
+        "max": 250.9
+      },
+      "power.draw.instant": {
+        "observations": {
+          "369.92": 1,
+          "346.71": 1
+        },
+        "min": 346.71,
+        "max": 369.92
+      },
+      "power.limit": {
+        "observations": {
+          "1000.00": 2
+        },
+        "min": 1000.0,
+        "max": 1000.0
+      },
+      "pstate": {
+        "observations": {
+          "P0": 2
+        }
+      },
+      "temperature.gpu": {
+        "observations": {
+          "32": 1,
+          "34": 1
+        },
+        "min": 32.0,
+        "max": 34.0
+      },
+      "temperature.memory": {
+        "observations": {
+          "31": 1,
+          "32": 1
+        },
+        "min": 31.0,
+        "max": 32.0
+      },
+      "utilization.gpu": {
+        "observations": {
+          "36": 1,
+          "97": 1
+        },
+        "min": 36.0,
+        "max": 97.0
+      },
+      "utilization.memory": {
+        "observations": {
+          "0": 1,
+          "1": 1
+        },
+        "min": 0.0,
+        "max": 1.0
+      },
+      "uuid": {
+        "observations": {
+          "GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf": 2
+        }
+      }
+    }
+  },
+  "sampled_invocations": 80,
+  "invocations_with_any_query_bounds_overlap": 39
+}

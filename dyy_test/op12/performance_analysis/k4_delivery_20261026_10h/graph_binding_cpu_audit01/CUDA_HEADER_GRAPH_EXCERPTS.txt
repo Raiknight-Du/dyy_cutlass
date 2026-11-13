@@ -1,0 +1,60 @@
+otation for edges in a CUDA graph. Note, all edges implicitly have annotations and
+ * default to a zero-initialized value if not specified. A zero-initialized struct indicates a
+ * standard full serialization of two nodes with memory visibility.
+ */
+typedef struct CUgraphEdgeData_st {
+    unsigned char from_port; /**< This indicates when the dependency is triggered from the upstream
+                                  node on the edge. The meaning is specfic to the node type. A value
+                                  of 0 in all cases means full completion of the upstream node, with
+                                  memory visibility to the downstream node or portion thereof
+                                  (indicated by \c to_port).
+                                  <br>
+                                  Only kernel nodes define non-zero ports. A kernel node
+                                  can use the following output port types:
+                                  ::CU_GRAPH_KERNEL_NODE_PORT_DEFAULT, ::CU_GRAPH_KERNEL_NODE_PORT_PROGRAMMATIC,
+                                  or ::CU_GRAPH_KERNEL_NODE_PORT_LAUNCH_ORDER. */
+    unsigned char to_port; /**< This indicates what portion of the downstream node is dependent on
+          
+
+ * \note_graph_thread_safety
+ * \notefnerr
+ *
+ * \sa
+ * ::cuGraphGetNodes,
+ * ::cuGraphGetRootNodes,
+ * ::cuGraphAddDependencies,
+ * ::cuGraphRemoveDependencies,
+ * ::cuGraphNodeGetDependencies,
+ * ::cuGraphNodeGetDependentNodes
+ */
+CUresult CUDAAPI cuGraphGetEdges(CUgraph hGraph, CUgraphNode *from, CUgraphNode *to, CUgraphEdgeData *edgeData, size_t *numEdges);
+
+/**
+ * \brief Returns a node's dependencies
+ *
+ * Returns a list of \p node's dependencies. \p dependencies may be NULL, in which case this
+ * function will return the number of dependencies in \p numDependencies. Otherwise,
+ * \p numDependencies entries will be filled in. If \p numDependencies is higher than the actual
+ * number of dependencies, the remaining entries in \p dependencies will be set to NULL, and the
+ * number of nodes actually obtained will be returned in \p numDependencies.
+ *
+ * Note that if an edge has non-zero (non-default) edge data and \p edgeData is NULL,
+ * this API will return ::CUDA_ERROR_LOSSY_QUERY. If \p edgeData is non-NULL, then
+ * \p dependencies must be as well.
+ *
+ * \param hNode           - Node to query
+ * \param dependencies    - Pointer to return the dependencies
+ * \param edgeData        - Optional array to return edge data for each d
+
+hGraph, CUgraphNode *hErrorNode_out, CUgraphExecUpdateResult *updateResult_out);
+    CUresult CUDAAPI cuGraphUpload(CUgraphExec hGraph, CUstream hStream);
+    CUresult CUDAAPI cuGraphLaunch(CUgraphExec hGraph, CUstream hStream);
+    CUresult CUDAAPI cuGraphGetEdges(CUgraph hGraph, CUgraphNode *from, CUgraphNode *to, size_t *numEdges);
+    CUresult CUDAAPI cuGraphNodeGetDependencies(CUgraphNode hNode, CUgraphNode *dependencies, size_t *numDependencies);
+    CUresult CUDAAPI cuGraphNodeGetDependentNodes(CUgraphNode hNode, CUgraphNode *dependentNodes, size_t *numDependentNodes);
+    CUresult CUDAAPI cuGraphAddDependencies(CUgraph hGraph, const CUgraphNode *from, const CUgraphNode *to, size_t numDependencies);
+    CUresult CUDAAPI cuGraphRemoveDependencies(CUgraph hGraph, const CUgraphNode *from, const CUgraphNode *to, size_t numDependencies);
+    CUresult CUDAAPI cuGraphAddNode(CUgraphNode *phGraphNode, CUgraph hGraph, const CUgraphNode *dependencies, size_t numDependencies, CUgraphNodeParams *nodeParams);
+    CUresult CUDAAPI cuStreamCopyAttributes(CUstream dstStream, CUstream srcStream);
+    CUresult CUDAAPI cuStreamGetAttribute(CUstream hStream, CUstreamAttrID attr, CUstreamAttrValue *value);
+    CUresult CUDAAPI cuStreamSetAttrib

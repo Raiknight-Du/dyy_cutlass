@@ -1,0 +1,108 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 464322 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 1
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_464322"}
+==PROF== Disconnected from process 464322
+==PROF== Connected to process 464466 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 2
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_464466"}
+==PROF== Disconnected from process 464466
+==PROF== Connected to process 464602 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 3
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_464602"}
+==PROF== Disconnected from process 464602
+==PROF== Connected to process 464752 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 4
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_464752"}
+==PROF== Disconnected from process 464752
+==PROF== Connected to process 464901 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 5
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_464901"}
+==PROF== Disconnected from process 464901
+==PROF== Connected to process 465036 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 6
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_465036"}
+==PROF== Disconnected from process 465036
+==PROF== Connected to process 465183 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 7
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_465183"}
+==PROF== Disconnected from process 465183
+==PROF== Connected to process 465333 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 8
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_465333"}
+==PROF== Disconnected from process 465333
+==PROF== Connected to process 465465 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 9
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_465465"}
+==PROF== Disconnected from process 465465
+==PROF== Connected to process 465617 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 10
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_465617"}
+==PROF== Disconnected from process 465617
+==PROF== Connected to process 465768 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 11
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_465768"}
+==PROF== Disconnected from process 465768
+==PROF== Connected to process 465910 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 12
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_465910"}
+==PROF== Disconnected from process 465910
+==PROF== Connected to process 466098 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 13
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_466098"}
+==PROF== Disconnected from process 466098
+==PROF== Connected to process 466246 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 14
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_466246"}
+==PROF== Disconnected from process 466246
+==PROF== Connected to process 466457 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 15
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_466457"}
+==PROF== Disconnected from process 466457
+==PROF== Connected to process 466607 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 16
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_466607"}
+==PROF== Disconnected from process 466607
+==PROF== Connected to process 466788 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 17
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_466788"}
+==PROF== Disconnected from process 466788
+==PROF== Connected to process 466930 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 18
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_466930"}
+==PROF== Disconnected from process 466930
+==PROF== Connected to process 467073 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 19
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_467073"}
+==PROF== Disconnected from process 467073
+==PROF== Connected to process 467255 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 20
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_467255"}
+==PROF== Disconnected from process 467255
+==PROF== Connected to process 467405 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 21
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_467405"}
+==PROF== Disconnected from process 467405
+==PROF== Connected to process 467553 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 22
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_467553"}
+==PROF== Disconnected from process 467553
+==PROF== Connected to process 467692 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 23
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_467692"}
+==PROF== Disconnected from process 467692
+==PROF== Connected to process 467839 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 24
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_467839"}
+==PROF== Disconnected from process 467839
+==PROF== Connected to process 468014 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 25
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_468014"}
+==PROF== Disconnected from process 468014
+==PROF== Connected to process 468164 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_micro_final_he..." - 0: Application replay pass 26
+{"phase": "micro_profile", "status": "PASS", "out": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3/host/pid_468164"}
+==PROF== Disconnected from process 468164
+==PROF== Creating report from application replay data: 0%...............100%
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k3_final_runtime_validation_20261013/runs/padded_ncu_v1/micro_profile_PADDED_M3.ncu-rep

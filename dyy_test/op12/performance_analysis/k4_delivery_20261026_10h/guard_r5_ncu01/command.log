@@ -1,0 +1,6 @@
+{"status": "SUPERVISED_COMMAND_COMPLETE", "returncode": 0, "model_enabled": false}
+{"status": "DYNAMIC_MMA_AND_TC_COUNTS_PASS", "configuration": "SS", "model_enabled": false}
+SS_LOAD WHOLE_CUBIN_AND_DYNAMIC_GATE_PASS
+{"status": "SUPERVISED_COMMAND_COMPLETE", "returncode": 0, "model_enabled": false}
+{"status": "DYNAMIC_MMA_AND_TC_COUNTS_PASS", "configuration": "TS", "model_enabled": false}
+TS_LOAD WHOLE_CUBIN_AND_DYNAMIC_GATE_PASS

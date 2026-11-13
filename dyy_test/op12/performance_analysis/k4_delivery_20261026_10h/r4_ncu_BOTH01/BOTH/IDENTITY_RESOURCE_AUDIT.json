@@ -1,0 +1,13 @@
+{
+  "status": "ACTUAL_NATIVE_IDENTITY_RESOURCE_PASS",
+  "exported_PCs": 1000,
+  "native_PCs": 1000,
+  "metadata_replays_checked": 17,
+  "SASS_mismatches": [],
+  "normalization": "whitespace, displayed .reuse hints, optional branch labels and absolute branch relocation only",
+  "REG": 79,
+  "LDL": 0,
+  "STL": 0,
+  "dynamic_SMEM_B": 225280,
+  "model_enabled": false
+}

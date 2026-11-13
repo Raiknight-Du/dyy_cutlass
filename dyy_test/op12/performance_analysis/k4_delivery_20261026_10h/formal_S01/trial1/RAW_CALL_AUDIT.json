@@ -1,0 +1,3002 @@
+[
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_23_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_4_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_28_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_6_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_9_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_0_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_24_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_1_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_6_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_11_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_4_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_15_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_20_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_26_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_7_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_5_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_19_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_19_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_1_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_0_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_7_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_13_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_2_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_10_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_10_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_13_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_26_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_1_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_19_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_24_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_4_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_6_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_26_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_14_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_20_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_19_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_24_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_29_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_18_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_27_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_22_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_21_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_2_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_21_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_11_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_12_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_19_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_26_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_9_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_1_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_27_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_4_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_25_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_23_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_20_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_8_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_0_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_27_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_21_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_16_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_16_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_7_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_20_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_1_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_28_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_8_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_7_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_23_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_3_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_25_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_6_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_6_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_14_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_11_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_23_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_7_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_24_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_22_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_20_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_8_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_28_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_1_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_25_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_25_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_9_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_21_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_21_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_10_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_27_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_25_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_17_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_15_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_0_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_26_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_21_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_29_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_18_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_18_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_29_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_8_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_11_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_16_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_4_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_9_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_28_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_10_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_27_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_29_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_4_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_25_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_18_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_19_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_18_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_10_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_14_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_2_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_17_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_2_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_8_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_15_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_17_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_27_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_3_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_2_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_12_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_28_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_10_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_10_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_8_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_11_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_12_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_0_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_3_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_1_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_17_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_21_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_28_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_29_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_19_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_29_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_4_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_29_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_29_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_29_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_24_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_5_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_3_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_25_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_23_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_8_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_10_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_6_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_10_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_2_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_7_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_10_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_15_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_17_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_5_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_9_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_3_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_4_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_2_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_28_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_22_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_22_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_16_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_26_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_17_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_7_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_9_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_21_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_26_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_17_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_11_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_6_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_17_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_1_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_22_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_20_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_21_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_23_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_16_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_8_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_22_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_24_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_0_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_12_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_17_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_4_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_3_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_15_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_8_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_28_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_27_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_5_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_13_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_14_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_7_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_3_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_24_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_11_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_8_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_28_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_2_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_4_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_7_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_12_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_27_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_24_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_9_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_17_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_4_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_22_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_4_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_11_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_2_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_8_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_1_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_21_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_13_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_0_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_22_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_4_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_16_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_10_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_5_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_5_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_13_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_9_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_14_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_11_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_17_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_25_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_13_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_11_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_23_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_16_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_0_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_2_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_27_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_23_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_5_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_18_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_18_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_3_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_9_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_29_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_9_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_11_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_13_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_12_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_7_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_2_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_17_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_22_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_23_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_10_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_15_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_1_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_15_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_19_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_6_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_16_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_1_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_12_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_25_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_26_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_18_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_21_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_23_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_1_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_4_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_17_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_24_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_22_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_19_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_12_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_21_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_27_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_23_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_20_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_3_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_6_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_25_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_27_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_22_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_23_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_24_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_1_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_25_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_3_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_21_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_28_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_9_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_2_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_23_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_18_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_6_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_19_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_17_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_16_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_11_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_7_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_12_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_16_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_4_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_12_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_19_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_21_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_15_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_16_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_15_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_15_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_28_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_12_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_14_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_7_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_16_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_7_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_23_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_14_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_19_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_27_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_5_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_21_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_19_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_2_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_1_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_11_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_4_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_11_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_28_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_6_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_0_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_14_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_12_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_27_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_15_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_13_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_13_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_1_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_29_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_9_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_24_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_19_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_3_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_13_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_13_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_16_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_10_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_2_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_14_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_18_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_11_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_15_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_19_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_25_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_16_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_0_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_0_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_19_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_8_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_0_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_18_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_11_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_12_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_5_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_17_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_14_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_24_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_2_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_27_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_20_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_13_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_29_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_25_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_27_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_8_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_27_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_13_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_9_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_18_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_28_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_14_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_3_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_18_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_12_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_1_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_26_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_19_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_27_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_13_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_9_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_19_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_11_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_13_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_2_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_0_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_24_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_5_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_5_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_18_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_4_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_28_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_0_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_23_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_22_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_26_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_10_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_13_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_0_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_28_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_25_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_10_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_9_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_5_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_3_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_20_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_23_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_2_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_12_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_25_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_14_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_18_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_6_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_8_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_12_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_10_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_22_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_10_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_9_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_22_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_8_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_20_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_16_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_22_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_17_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_27_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_20_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_14_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_6_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_4_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_29_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_0_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_22_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_28_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_17_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_5_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_15_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_10_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_7_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_7_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_9_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_12_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_27_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_26_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_5_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_26_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_20_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_13_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_0_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_4_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_14_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_3_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_28_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_10_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_0_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_15_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_6_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_7_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_19_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_18_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_5_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_25_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_28_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_16_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_28_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_1_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_22_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_6_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_3_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_12_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_20_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_15_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_26_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_3_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_29_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_29_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_29_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_8_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_7_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_12_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_1_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_19_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_21_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_29_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_21_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_26_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_2_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_17_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_8_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_17_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_28_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_2_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_11_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_7_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_24_2_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_10_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_6_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_15_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_15_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_18_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_5_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_20_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_11_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_14_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_15_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_18_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_6_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_29_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_4_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_9_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_5_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_16_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_1_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_15_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_20_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_26_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_23_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_16_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_29_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_21_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_14_3_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_20_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_23_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_20_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_22_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_24_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_22_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_3_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_24_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_9_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_26_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_18_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_16_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_8_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_21_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_25_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_8_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_8_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_14_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_7_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_15_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_12_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_21_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_6_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_13_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_22_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_20_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_5_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_25_0_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_0_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_26_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_23_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_14_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_13_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_13_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_6_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_0_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_7_1_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_14_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_26_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_5_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_14_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_24_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_23_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_26_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_6_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_2_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_3_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_1_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_3_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_18_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_5_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_17_2_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_16_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_29_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_REF__FRAME0_20_3_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_PBASE__FRAME0_25_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_11_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_9_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_24_3_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_24_1_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_26_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_25_0_FRAME7.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_PBASE__FRAME0_20_1_PBASE.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_REF__FRAME0_27_2_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_K4_EVENT_FRAME0__FRAME7_3_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  },
+  {
+    "file": "t1_CP_EVENT_FRAME0__FRAME7_24_0_FRAME0.npz",
+    "SMID": 5,
+    "events": 193
+  }
+]

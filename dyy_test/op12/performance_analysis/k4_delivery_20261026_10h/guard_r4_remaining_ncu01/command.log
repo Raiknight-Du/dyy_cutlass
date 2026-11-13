@@ -1,0 +1,6 @@
+{"status": "SUPERVISED_COMMAND_COMPLETE", "returncode": 0, "model_enabled": false}
+R4 CONTROL NCU_COMPLETE
+{"status": "SUPERVISED_COMMAND_COMPLETE", "returncode": 0, "model_enabled": false}
+R4 SHADER_ONLY NCU_COMPLETE
+{"status": "SUPERVISED_COMMAND_COMPLETE", "returncode": 0, "model_enabled": false}
+R4 TC_ONLY NCU_COMPLETE

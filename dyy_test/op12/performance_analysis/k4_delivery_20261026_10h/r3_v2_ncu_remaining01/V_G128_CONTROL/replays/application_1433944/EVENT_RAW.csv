@@ -1,0 +1,2 @@
+invocation,trial,config,N,sample,event_us,cta_cycle_median,cta_cycle_p5,cta_cycle_p95,cta_cycle_max,unique_SMs,valid,logical_B,theoretical_request_B,model_enabled,host_start_time_ns,host_end_time_ns
+0,0,V_G128_CONTROL,512,0,140625.62561035156,4231586.5,4222542.4000000004,4259643.5999999996,4270840,128,1,0,0,false,1792965066876036089,1792965067016677511

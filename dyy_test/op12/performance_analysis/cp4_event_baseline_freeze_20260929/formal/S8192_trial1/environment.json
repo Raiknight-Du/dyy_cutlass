@@ -1,0 +1,105 @@
+{
+  "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+  "pilot": false,
+  "S": 8192,
+  "C": 1024,
+  "P": 8,
+  "B": 1,
+  "H": 16,
+  "D": 128,
+  "trial": 1,
+  "pid": 262522,
+  "seed": 20269121,
+  "rotating_buffers": 4,
+  "warmup": 20,
+  "samples": 100,
+  "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "repo": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+  "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "gpu_name": "NVIDIA B200",
+  "sm_count": 148,
+  "compute_capability": [
+    10,
+    0
+  ],
+  "memory_bytes": 191503007744,
+  "telemetry": [
+    {
+      "phase": "start",
+      "wall_ns": 1790638446695956924,
+      "nvidia_smi": "2026/09/28 23:34:06.705, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 33, 240.73, 0, 0, 4"
+    },
+    {
+      "phase": "before_P0",
+      "wall_ns": 1790638454702497005,
+      "nvidia_smi": "2026/09/28 23:34:14.712, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 33, 270.51, 0, 0, 1574"
+    },
+    {
+      "phase": "before_P1",
+      "wall_ns": 1790638454832586083,
+      "nvidia_smi": "2026/09/28 23:34:14.842, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 39, 330.72, 90, 27, 1574"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638454843989464,
+      "nvidia_smi": "2026/09/28 23:34:14.854, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 39, 336.02, 90, 27, 1574"
+    },
+    {
+      "phase": "before_P2",
+      "wall_ns": 1790638454962463212,
+      "nvidia_smi": "2026/09/28 23:34:14.972, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 40, 394.20, 94, 28, 1574"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638455061226198,
+      "nvidia_smi": "2026/09/28 23:34:15.070, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 40, 445.04, 86, 26, 1574"
+    },
+    {
+      "phase": "before_P3",
+      "wall_ns": 1790638455091810704,
+      "nvidia_smi": "2026/09/28 23:34:15.101, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 40, 451.12, 86, 26, 1574"
+    },
+    {
+      "phase": "before_P4",
+      "wall_ns": 1790638455220941918,
+      "nvidia_smi": "2026/09/28 23:34:15.230, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 40, 518.76, 85, 26, 1574"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638455277583780,
+      "nvidia_smi": "2026/09/28 23:34:15.287, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 40, 538.19, 85, 26, 1574"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638455493882441,
+      "nvidia_smi": "2026/09/28 23:34:15.503, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 42, 658.15, 100, 31, 1574"
+    },
+    {
+      "phase": "end",
+      "wall_ns": 1790638455621338799,
+      "nvidia_smi": "2026/09/28 23:34:15.631, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 41, 730.31, 100, 31, 1574"
+    }
+  ],
+  "runner_sha256": "0d5989f8b6b1c9131f94b5f223d0334da978bd23a62515933f11d036aa9d2bfb",
+  "cu_seqlens_dtype": "torch.int64",
+  "initial_final_state_dtype": "torch.float32",
+  "qkvo_dtype": "torch.float16",
+  "kernel_qk_l2norm": false,
+  "use_cp": true,
+  "scale": 0.08838834764831843,
+  "probe_stride_calls": 4,
+  "calls_per_graph": 400,
+  "nvidia-cutlass-dsl": "4.7.0",
+  "cuda-python": "13.2.0",
+  "flashinfer-python": "0.6.12",
+  "source_sha256": {
+    "flashinfer/gdn_prefill.py": "e4475a2edc830b97d6bc27f13980e2f5951d7d97eb13547f539acf94e2a2132d",
+    "flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+    "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+    "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+    "flashinfer/gdn_kernels/delta_rule_dsl/delta_rule_cp_sm120.py": "5572cba70eab72426b2567322807be7fd27f3d84af6ac7410f13f715ca6a077b",
+    "flashinfer/gdn_kernels/delta_rule_dsl/varlen_helper.py": "c9cda29f3e9d0105d91326c4c670feace92f988ed9fde61dcea3035fd6e704ab"
+  }
+}

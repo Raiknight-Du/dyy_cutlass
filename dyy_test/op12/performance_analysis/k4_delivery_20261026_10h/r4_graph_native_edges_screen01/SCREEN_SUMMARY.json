@@ -1,0 +1,112 @@
+{
+  "status": "SCREEN_RAW_VALIDATED_PENDING_LEAD_REVIEW",
+  "invocations": 40,
+  "CTA_records": 5120,
+  "empty_commit_modes_returned": true,
+  "cases": [
+    {
+      "config": "BOTH",
+      "N": 128,
+      "event_us_median": 43.64800080657005,
+      "CTA_cycle_median": 66197.5,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "BOTH",
+      "N": 256,
+      "event_us_median": 77.53600180149078,
+      "CTA_cycle_median": 131739.0,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "CONTROL",
+      "N": 128,
+      "event_us_median": 8.25599953532219,
+      "CTA_cycle_median": 2581.5,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "CONTROL",
+      "N": 256,
+      "event_us_median": 7.935999892652035,
+      "CTA_cycle_median": 4598.0,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "SHADER_ONLY",
+      "N": 128,
+      "event_us_median": 25.05600079894066,
+      "CTA_cycle_median": 33307.0,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "SHADER_ONLY",
+      "N": 256,
+      "event_us_median": 41.18400067090988,
+      "CTA_cycle_median": 66074.0,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "TC_ONLY",
+      "N": 128,
+      "event_us_median": 25.087999179959297,
+      "CTA_cycle_median": 33169.5,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "config": "TC_ONLY",
+      "N": 256,
+      "event_us_median": 43.10400038957596,
+      "CTA_cycle_median": 65938.0,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    }
+  ],
+  "actual_metadata": {
+    "actual_CUBIN_SHA256": "5ebdc94be5cda307ee64cb975209e11ed68ef25a420cfc3598b00c15368cc066",
+    "native_text_hashes": {
+      ".text.kernel_cutlass_kernel_shared_couplingSharedCoupling_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_Layout_B_0": "fd716896514947492e51f1815171fd9e5d05bbe9d51fdae9e0f28621b287b7ce"
+    },
+    "CPU_text_exact_match": true,
+    "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_shared_couplingSharedCoupling_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_Layout_B_0:\n  REG:79 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1248 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+    "python": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "torch": "2.11.0+cu130",
+    "cutlass": "4.7.0",
+    "torch_cuda": "13.0",
+    "device": "_CudaDeviceProperties(name='NVIDIA B200', major=10, minor=0, total_memory=182631MB, multi_processor_count=148, uuid=6abbea3c-b8d3-7f4b-ca76-85d612930fdf, pci_bus_id=5, pci_device_id=0, pci_domain_id=0, L2_cache_size=126MB)",
+    "reserved_dynamic_SMEM_B": 225280,
+    "used_struct_SMEM_B": 66560,
+    "grid": 128,
+    "threads": 192,
+    "mode_flags_runtime": true,
+    "admission": {
+      "round": "R4",
+      "approved_modes": [
+        "screen"
+      ],
+      "source_SHA256": "690d1432059d27dc1e6b0de3c45738e6d7b11a3ba7092adb413064335fab9d9b",
+      "max_N": 256,
+      "watchdog_seconds": 120,
+      "protocol": "New graph Event cohort, exactly3nodes2edges,20actual graph warmups/5sample; one direct CONTROL128 lazy call separately recorded",
+      "kernel_or_NCU_changed": false,
+      "model_enabled": false,
+      "edge_audit": "Owned native cuGraphGetEdges_v2 zero buffers + NULL edgeData full lossless validation; Python fields diagnostic only",
+      "authorization": "Lead approved after same-graph native API audit proof"
+    },
+    "helper_invoked": true,
+    "model_enabled": false,
+    "max_CTA_per_SM": 1,
+    "direct_lazy_invocations": 1,
+    "actual_invocations": 40
+  },
+  "clock_policy": "automatic; screen separate from R3 formal 1845 request",
+  "interpretation": "Per-launch median of same-CTA durations. Short CONTROL may use fewer SMs; occupancy cap is not a concurrency guarantee. Fixed prefix/notification/poll remain in common envelope. No stable rate or model admission.",
+  "model_enabled": false
+}

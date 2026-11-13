@@ -1,0 +1,790 @@
+﻿pc,pc_hex,opcode,SASS,resource,work,rate,cycles,reason
+9008,0x2330,SYNCS.PHASECHK.TRANS64.TRYWAIT,"SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR8+0x80], R5",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9024,0x2340,BRA,@!P0  BRA 0x7f082f5d4f60,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9040,0x2350,LEA,"LEA R21, R90, UR22, 0x3",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9056,0x2360,UIADD3,"UIADD3 UR5, UPT, UPT, UR6, 0x1, URZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9072,0x2370,SHF.L.U32,"SHF.L.U32 R4, R43, 0x1f, RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9088,0x2380,LEA,"LEA R20, R92, UR22, 0x3",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9104,0x2390,UISETP.NE.U32.AND,"UISETP.NE.U32.AND UP2, UPT, UR5, 0x5, UPT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9120,0x23a0,SYNCS.PHASECHK.TRANS64.TRYWAIT,"SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [R21+URZ+0xd0], R4",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9136,0x23b0,SHF.L.U32,"SHF.L.U32 R5, R67, 0x1f, RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9152,0x23c0,USEL,"USEL UR10, UR5, URZ, UP2",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9168,0x23d0,USEL,"USEL UR5, URZ, 0x1, UP2",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9184,0x23e0,ULOP3.LUT,"ULOP3.LUT UR9, UR9, UR5, URZ, 0x3c, !UPT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9200,0x23f0,BRA,@!P0  BRA 0x7f082f5d4fc0,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9216,0x2400,SYNCS.PHASECHK.TRANS64.TRYWAIT,"SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [R20+URZ+0x158], R5",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9232,0x2410,UIMAD,"UIMAD UR5, UR4, -0x40, UR37",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9248,0x2420,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P2, PT, R60, R69, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9264,0x2430,VIMNMX,"VIMNMX R82, PT, PT, R69, R60, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9280,0x2440,ISETP.LT.AND,"ISETP.LT.AND P1, PT, R82, UR5, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9296,0x2450,ISETP.GT.AND,"ISETP.GT.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9312,0x2460,ISETP.LE.AND,"ISETP.LE.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9328,0x2470,BRA,@!P0  BRA 0x7f082f5d5010,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9344,0x2480,USHF.L.U32,"USHF.L.U32 UR6, UR6, 0x6, URZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9360,0x2490,PLOP3.LUT,"PLOP3.LUT P1, PT, P2, P1, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9376,0x24a0,CS2R,"CS2R R112, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9392,0x24b0,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P3, PT, R58, R69, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9408,0x24c0,CS2R,"CS2R R106, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9424,0x24d0,VIMNMX,"VIMNMX R81, PT, PT, R69, R58, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9440,0x24e0,CS2R,"CS2R R104, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9456,0x24f0,LOP3.LUT,"LOP3.LUT R74, R70, UR6, RZ, 0xfc, !PT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9472,0x2500,IMAD.MOV.U32,"IMAD.MOV.U32 R110, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9488,0x2510,LOP3.LUT,"LOP3.LUT R73, R69, UR6, RZ, 0xfc, !PT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9504,0x2520,CS2R,"CS2R R108, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9520,0x2530,LEA,"LEA R74, R74, UR22, 0x2",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9536,0x2540,CS2R,"CS2R R100, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9552,0x2550,LEA,"LEA R73, R73, UR22, 0x2",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9568,0x2560,CS2R,"CS2R R102, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9584,0x2570,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P0, PT, R58, R37, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9600,0x2580,LDS,"@P1   LDS R5, [R74+0x36440]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+9616,0x2590,VIMNMX,"VIMNMX R79, PT, PT, R58, R37, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9632,0x25a0,CS2R,"CS2R R98, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9648,0x25b0,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P2, PT, R60, R37, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9664,0x25c0,LDS,"@P1   LDS R4, [R73+0x36400]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+9680,0x25d0,ISETP.LT.AND,"ISETP.LT.AND P6, PT, R81, UR5, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9696,0x25e0,CS2R,"CS2R R96, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9712,0x25f0,VIMNMX,"VIMNMX R80, PT, PT, R60, R37, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9728,0x2600,CS2R,"CS2R R94, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9744,0x2610,ISETP.LT.AND,"ISETP.LT.AND P4, PT, R79, UR5, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9760,0x2620,IMAD.MOV.U32,"IMAD.MOV.U32 R114, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9776,0x2630,ISETP.GT.AND,"ISETP.GT.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9792,0x2640,IMAD.MOV.U32,"IMAD.MOV.U32 R91, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9808,0x2650,ISETP.LE.AND,"ISETP.LE.AND P6, PT, R36, UR4, P6",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9824,0x2660,IMAD.MOV.U32,"IMAD.MOV.U32 R89, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9840,0x2670,ISETP.LT.AND,"ISETP.LT.AND P5, PT, R80, UR5, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9856,0x2680,CS2R,"CS2R R18, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9872,0x2690,ISETP.GT.AND,"ISETP.GT.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9888,0x26a0,IMAD.MOV.U32,"IMAD.MOV.U32 R93, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9904,0x26b0,ISETP.LE.AND,"ISETP.LE.AND P4, PT, R36, UR4, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9920,0x26c0,IMAD.MOV.U32,"IMAD.MOV.U32 R127, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9936,0x26d0,VIMNMX,"VIMNMX R78, PT, PT, R69, R56, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9952,0x26e0,PLOP3.LUT,"PLOP3.LUT P6, PT, P3, P6, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+9968,0x26f0,ISETP.GT.AND,"ISETP.GT.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+9984,0x2700,ISETP.LE.AND,"ISETP.LE.AND P5, PT, R36, UR4, P5",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10000,0x2710,PLOP3.LUT,"PLOP3.LUT P4, PT, P0, P4, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+10016,0x2720,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P0, PT, R54, R69, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10032,0x2730,VIMNMX,"VIMNMX R77, PT, PT, R69, R54, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10048,0x2740,PLOP3.LUT,"PLOP3.LUT P5, PT, P2, P5, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+10064,0x2750,LDS,"@P6   LDS R15, [R74+0x36444]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+10080,0x2760,ISETP.LT.AND,"ISETP.LT.AND P2, PT, R77, UR5, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10096,0x2770,ISETP.GT.AND,"ISETP.GT.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10112,0x2780,LDS,"@P6   LDS R14, [R73+0x36400]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+10128,0x2790,ISETP.LE.AND,"ISETP.LE.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10144,0x27a0,VIMNMX,"VIMNMX R76, PT, PT, R56, R37, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10160,0x27b0,FADD,"@P1   FADD R4, R5, -R4",FP,48.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+10176,0x27c0,PLOP3.LUT,"PLOP3.LUT P2, PT, P0, P2, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+10192,0x27d0,LDS,"@P4   LDS R11, [R74+0x36444]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+10208,0x27e0,VIMNMX,"VIMNMX R75, PT, PT, R54, R37, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10224,0x27f0,MUFU.EX2,"@P1   MUFU.EX2 R112, R4",SFU,48.0,16,3,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+10240,0x2800,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P1, PT, R56, R69, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10256,0x2810,LDS,"@P4   LDS R10, [R73+0x36420]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+10272,0x2820,VIMNMX,"VIMNMX R34, PT, PT, R69, R50, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10288,0x2830,ISETP.LT.AND,"ISETP.LT.AND P3, PT, R78, UR5, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10304,0x2840,LDS,"@P5   LDS R13, [R74+0x36440]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+10320,0x2850,ISETP.GT.AND,"ISETP.GT.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10336,0x2860,ISETP.LE.AND,"ISETP.LE.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10352,0x2870,LDS,"@P2   LDS R7, [R74+0x36464]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+10368,0x2880,VIMNMX,"VIMNMX R35, PT, PT, R69, R52, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10384,0x2890,PLOP3.LUT,"PLOP3.LUT P3, PT, P1, P3, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+10400,0x28a0,LDS,"@P2   LDS R6, [R73+0x36400]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+10416,0x28b0,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P1, PT, R56, R37, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10432,0x28c0,VIMNMX,"VIMNMX R33, PT, PT, R52, R37, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10448,0x28d0,LDS,"@P5   LDS R12, [R73+0x36420]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+10464,0x28e0,ISETP.LT.AND,"ISETP.LT.AND P0, PT, R76, UR5, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10480,0x28f0,ISETP.GT.AND,"ISETP.GT.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10496,0x2900,ISETP.LE.AND,"ISETP.LE.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10512,0x2910,VIMNMX,"VIMNMX R32, PT, PT, R50, R37, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10528,0x2920,LDS,"@P3   LDS R9, [R74+0x36460]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+10544,0x2930,PLOP3.LUT,"PLOP3.LUT P0, PT, P1, P0, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+10560,0x2940,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P1, PT, R52, R37, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10576,0x2950,LDS,"@P3   LDS R8, [R73+0x36400]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+10592,0x2960,VIMNMX,"VIMNMX R31, PT, PT, R69, R48, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10608,0x2970,FADD,"@P6   FADD R14, R15, -R14",FP,52.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+10624,0x2980,VIMNMX,"VIMNMX R30, PT, PT, R69, R46, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10640,0x2990,VIMNMX,"VIMNMX R29, PT, PT, R48, R37, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10656,0x29a0,MUFU.EX2,"@P6   MUFU.EX2 R110, R14",SFU,52.0,16,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+10672,0x29b0,VIMNMX,"VIMNMX R28, PT, PT, R46, R37, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10688,0x29c0,VIMNMX,"VIMNMX R86, PT, PT, R69, R62, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10704,0x29d0,LDS,"@P0   LDS R5, [R74+0x36460]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+10720,0x29e0,VIMNMX,"VIMNMX R85, PT, PT, R69, R66, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10736,0x29f0,FADD,"@P4   FADD R10, R11, -R10",FP,32.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+10752,0x2a00,VIMNMX,"VIMNMX R27, PT, PT, R69, R44, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10768,0x2a10,LDS,"@P0   LDS R4, [R73+0x36420]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+10784,0x2a20,VIMNMX,"VIMNMX R26, PT, PT, R69, R42, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10800,0x2a30,MUFU.EX2,"@P4   MUFU.EX2 R108, R10",SFU,32.0,16,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+10816,0x2a40,VIMNMX,"VIMNMX R25, PT, PT, R44, R37, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10832,0x2a50,VIMNMX,"VIMNMX R24, PT, PT, R42, R37, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10848,0x2a60,VIMNMX,"VIMNMX R23, PT, PT, R40, R37, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10864,0x2a70,VIMNMX,"VIMNMX R22, PT, PT, R38, R37, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10880,0x2a80,FADD,"@P2   FADD R6, R7, -R6",FP,64.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+10896,0x2a90,VIMNMX,"VIMNMX R87, PT, PT, R69, R64, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10912,0x2aa0,VIMNMX,"VIMNMX R88, PT, PT, R70, R69, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10928,0x2ab0,FADD,"@P5   FADD R12, R13, -R12",FP,32.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+10944,0x2ac0,MUFU.EX2,"@P2   MUFU.EX2 R106, R6",SFU,64.0,16,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+10960,0x2ad0,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P2, PT, R52, R69, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10976,0x2ae0,VIMNMX,"VIMNMX R83, PT, PT, R66, R37, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+10992,0x2af0,VIMNMX,"VIMNMX R84, PT, PT, R62, R37, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11008,0x2b00,MUFU.EX2,"@P5   MUFU.EX2 R109, R12",SFU,32.0,16,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11024,0x2b10,ISETP.LT.AND,"ISETP.LT.AND P5, PT, R35, UR5, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11040,0x2b20,FADD,"@P3   FADD R8, R9, -R8",FP,64.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11056,0x2b30,ISETP.GT.AND,"ISETP.GT.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11072,0x2b40,ISETP.LE.AND,"ISETP.LE.AND P5, PT, R36, UR4, P5",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11088,0x2b50,MUFU.EX2,"@P3   MUFU.EX2 R107, R8",SFU,64.0,16,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11104,0x2b60,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P3, PT, R54, R37, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11120,0x2b70,PLOP3.LUT,"PLOP3.LUT P5, PT, P2, P5, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+11136,0x2b80,ISETP.LT.AND,"ISETP.LT.AND P6, PT, R75, UR5, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11152,0x2b90,ISETP.GT.AND,"ISETP.GT.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11168,0x2ba0,FADD,"@P0   FADD R4, R5, -R4",FP,48.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11184,0x2bb0,ISETP.LE.AND,"ISETP.LE.AND P6, PT, R36, UR4, P6",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11200,0x2bc0,MUFU.EX2,"@P0   MUFU.EX2 R105, R4",SFU,48.0,16,3,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11216,0x2bd0,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P0, PT, R50, R69, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11232,0x2be0,PLOP3.LUT,"PLOP3.LUT P6, PT, P3, P6, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+11248,0x2bf0,LDS,"@P5   LDS R13, [R74+0x36480]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+11264,0x2c00,ISETP.LT.AND,"ISETP.LT.AND P4, PT, R34, UR5, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11280,0x2c10,ISETP.GT.AND,"ISETP.GT.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11296,0x2c20,LDS,"@P5   LDS R12, [R73+0x36400]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+11312,0x2c30,ISETP.LE.AND,"ISETP.LE.AND P4, PT, R36, UR4, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11328,0x2c40,ISETP.LT.AND,"ISETP.LT.AND P3, PT, R33, UR5, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11344,0x2c50,PLOP3.LUT,"PLOP3.LUT P4, PT, P0, P4, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+11360,0x2c60,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P0, PT, R50, R37, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11376,0x2c70,LDS,"@P6   LDS R15, [R74+0x36464]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+11392,0x2c80,ISETP.GT.AND,"ISETP.GT.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11408,0x2c90,ISETP.LE.AND,"ISETP.LE.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11424,0x2ca0,LDS,"@P6   LDS R14, [R73+0x36420]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+11440,0x2cb0,ISETP.LT.AND,"ISETP.LT.AND P2, PT, R32, UR5, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11456,0x2cc0,PLOP3.LUT,"PLOP3.LUT P3, PT, P1, P3, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+11472,0x2cd0,ISETP.GT.AND,"ISETP.GT.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11488,0x2ce0,LDS,"@P4   LDS R11, [R74+0x36484]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+11504,0x2cf0,ISETP.LE.AND,"ISETP.LE.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11520,0x2d00,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P1, PT, R48, R69, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11536,0x2d10,LDS,"@P4   LDS R10, [R73+0x36400]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+11552,0x2d20,PLOP3.LUT,"PLOP3.LUT P2, PT, P0, P2, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+11568,0x2d30,ISETP.LT.AND,"ISETP.LT.AND P0, PT, R31, UR5, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11584,0x2d40,ISETP.GT.AND,"ISETP.GT.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11600,0x2d50,LDS,"@P3   LDS R9, [R74+0x36480]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+11616,0x2d60,ISETP.LE.AND,"ISETP.LE.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11632,0x2d70,LDS,"@P3   LDS R8, [R73+0x36420]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+11648,0x2d80,PLOP3.LUT,"PLOP3.LUT P0, PT, P1, P0, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+11664,0x2d90,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P1, PT, R48, R37, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11680,0x2da0,LDS,"@P2   LDS R7, [R74+0x36484]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+11696,0x2db0,LDS,"@P2   LDS R6, [R73+0x36420]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+11712,0x2dc0,FADD,"@P5   FADD R12, R13, -R12",FP,80.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11728,0x2dd0,MUFU.EX2,"@P5   MUFU.EX2 R103, R12",SFU,80.0,16,5,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11744,0x2de0,LDS,"@P0   LDS R5, [R74+0x364a0]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+11760,0x2df0,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P5, PT, R62, R69, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11776,0x2e00,LDS,"@P0   LDS R4, [R73+0x36400]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+11792,0x2e10,FADD,"@P6   FADD R14, R15, -R14",FP,52.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11808,0x2e20,MUFU.EX2,"@P6   MUFU.EX2 R104, R14",SFU,52.0,16,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11824,0x2e30,ISETP.GT.AND,"ISETP.GT.AND P6, PT, R36, UR4, P5",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11840,0x2e40,FADD,"@P4   FADD R10, R11, -R10",FP,84.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11856,0x2e50,MUFU.EX2,"@P4   MUFU.EX2 R102, R10",SFU,84.0,16,6,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11872,0x2e60,FADD,"@P3   FADD R8, R9, -R8",FP,64.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11888,0x2e70,MUFU.EX2,"@P3   MUFU.EX2 R101, R8",SFU,64.0,16,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11904,0x2e80,ISETP.LT.AND,"ISETP.LT.AND P3, PT, R29, UR5, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11920,0x2e90,ISETP.GT.AND,"ISETP.GT.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11936,0x2ea0,FADD,"@P2   FADD R6, R7, -R6",FP,64.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11952,0x2eb0,ISETP.LE.AND,"ISETP.LE.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+11968,0x2ec0,MUFU.EX2,"@P2   MUFU.EX2 R100, R6",SFU,64.0,16,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+11984,0x2ed0,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P2, PT, R46, R69, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12000,0x2ee0,PLOP3.LUT,"PLOP3.LUT P3, PT, P1, P3, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+12016,0x2ef0,ISETP.LT.AND,"ISETP.LT.AND P4, PT, R30, UR5, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12032,0x2f00,FADD,"@P0   FADD R4, R5, -R4",FP,96.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+12048,0x2f10,ISETP.GT.AND,"ISETP.GT.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12064,0x2f20,ISETP.LE.AND,"ISETP.LE.AND P4, PT, R36, UR4, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12080,0x2f30,MUFU.EX2,"@P0   MUFU.EX2 R99, R4",SFU,96.0,16,6,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+12096,0x2f40,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P0, PT, R46, R37, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12112,0x2f50,PLOP3.LUT,"PLOP3.LUT P4, PT, P2, P4, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+12128,0x2f60,ISETP.LT.AND,"ISETP.LT.AND P2, PT, R28, UR5, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12144,0x2f70,LDS,"@P3   LDS R13, [R74+0x364a0]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+12160,0x2f80,ISETP.GT.AND,"ISETP.GT.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12176,0x2f90,ISETP.LE.AND,"ISETP.LE.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12192,0x2fa0,LDS,"@P3   LDS R12, [R73+0x36420]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+12208,0x2fb0,ISETP.LT.AND,"ISETP.LT.AND P1, PT, R86, UR5, P5",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12224,0x2fc0,PLOP3.LUT,"PLOP3.LUT P2, PT, P0, P2, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+12240,0x2fd0,ISETP.LE.AND,"ISETP.LE.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12256,0x2fe0,LDS,"@P4   LDS R15, [R74+0x364a4]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+12272,0x2ff0,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P0, PT, R66, R69, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12288,0x3000,PLOP3.LUT,"PLOP3.LUT P6, PT, P6, P1, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+12304,0x3010,LDS,"@P4   LDS R14, [R73+0x36400]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+12320,0x3020,ISETP.LT.AND,"ISETP.LT.AND P1, PT, R85, UR5, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12336,0x3030,ISETP.GT.AND,"ISETP.GT.AND P5, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12352,0x3040,ISETP.LE.AND,"ISETP.LE.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12368,0x3050,LDS,"@P2   LDS R11, [R74+0x364a4]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+12384,0x3060,PLOP3.LUT,"PLOP3.LUT P5, PT, P5, P1, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+12400,0x3070,LDS,"@P2   LDS R10, [R73+0x36420]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+12416,0x3080,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P1, PT, R44, R69, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12432,0x3090,LDS,"@P6   LDS R9, [R74+0x36420]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+12448,0x30a0,ISETP.LT.AND,"ISETP.LT.AND P0, PT, R27, UR5, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12464,0x30b0,ISETP.GT.AND,"ISETP.GT.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12480,0x30c0,LDS,"@P6   LDS R8, [R73+0x36400]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+12496,0x30d0,ISETP.LE.AND,"ISETP.LE.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12512,0x30e0,LDS,"@P5   LDS R7, [R74+0x36424]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+12528,0x30f0,PLOP3.LUT,"PLOP3.LUT P0, PT, P1, P0, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+12544,0x3100,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P1, PT, R40, R37, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12560,0x3110,LDS,"@P5   LDS R6, [R73+0x36400]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+12576,0x3120,FADD,"@P3   FADD R12, R13, -R12",FP,80.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+12592,0x3130,MUFU.EX2,"@P3   MUFU.EX2 R97, R12",SFU,80.0,16,5,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+12608,0x3140,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P3, PT, R42, R69, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12624,0x3150,LDS,"@P0   LDS R5, [R74+0x364c0]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+12640,0x3160,LDS,"@P0   LDS R4, [R73+0x36400]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+12656,0x3170,FADD,"@P4   FADD R14, R15, -R14",FP,96.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+12672,0x3180,MUFU.EX2,"@P4   MUFU.EX2 R98, R14",SFU,96.0,16,6,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+12688,0x3190,FADD,"@P2   FADD R10, R11, -R10",FP,84.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+12704,0x31a0,MUFU.EX2,"@P2   MUFU.EX2 R96, R10",SFU,84.0,16,6,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+12720,0x31b0,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P2, PT, R42, R37, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12736,0x31c0,FADD,"@P6   FADD R8, R9, -R8",FP,32.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+12752,0x31d0,MUFU.EX2,"@P6   MUFU.EX2 R114, R8",SFU,32.0,16,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+12768,0x31e0,ISETP.NE.AND,"ISETP.NE.AND P6, PT, R71, RZ, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12784,0x31f0,FADD,"@P5   FADD R6, R7, -R6",FP,32.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+12800,0x3200,MUFU.EX2,"@P5   MUFU.EX2 R113, R6",SFU,32.0,16,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+12816,0x3210,ISETP.LT.AND,"ISETP.LT.AND P5, PT, R26, UR5, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12832,0x3220,ISETP.GT.AND,"ISETP.GT.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12848,0x3230,ISETP.LE.AND,"ISETP.LE.AND P5, PT, R36, UR4, P5",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12864,0x3240,PLOP3.LUT,"PLOP3.LUT P5, PT, P3, P5, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+12880,0x3250,FADD,"@P0   FADD R4, R5, -R4",FP,112.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+12896,0x3260,ISETP.LT.AND,"ISETP.LT.AND P3, PT, R24, UR5, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12912,0x3270,ISETP.GT.AND,"ISETP.GT.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12928,0x3280,MUFU.EX2,"@P0   MUFU.EX2 R95, R4",SFU,112.0,16,7,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+12944,0x3290,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P0, PT, R44, R37, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12960,0x32a0,ISETP.LE.AND,"ISETP.LE.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12976,0x32b0,ISETP.LT.AND,"ISETP.LT.AND P4, PT, R25, UR5, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+12992,0x32c0,ISETP.GT.AND,"ISETP.GT.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13008,0x32d0,LDS,"@P5   LDS R15, [R74+0x364c4]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13024,0x32e0,ISETP.LE.AND,"ISETP.LE.AND P4, PT, R36, UR4, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13040,0x32f0,PLOP3.LUT,"PLOP3.LUT P3, PT, P2, P3, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+13056,0x3300,LDS,"@P5   LDS R14, [R73+0x36400]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13072,0x3310,PLOP3.LUT,"PLOP3.LUT P4, PT, P0, P4, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+13088,0x3320,ISETP.LT.AND,"ISETP.LT.AND P0, PT, R23, UR5, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13104,0x3330,VIMNMX,"VIMNMX R4, PT, PT, R69, R40, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13120,0x3340,ISETP.GT.AND,"ISETP.GT.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13136,0x3350,ISETP.GE.AND,"ISETP.GE.AND P2, PT, R4, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13152,0x3360,ISETP.LE.AND,"ISETP.LE.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13168,0x3370,LDS,"@P3   LDS R11, [R74+0x364c4]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13184,0x3380,VIMNMX,"VIMNMX R4, PT, PT, R69, R38, !PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13200,0x3390,ISETP.LE.AND,"ISETP.LE.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13216,0x33a0,LDS,"@P3   LDS R10, [R73+0x36420]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13232,0x33b0,PLOP3.LUT,"PLOP3.LUT P0, PT, P1, P0, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+13248,0x33c0,ISETP.GE.AND,"ISETP.GE.AND P1, PT, R4, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13264,0x33d0,LDS,"@P4   LDS R13, [R74+0x364c0]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13280,0x33e0,ISETP.LE.AND,"ISETP.LE.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13296,0x33f0,LDS,"@P4   LDS R12, [R73+0x36420]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13312,0x3400,LDS,"@!P2  LDS R9, [R74+0x364e0]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13328,0x3410,LDS,"@!P2  LDS R8, [R73+0x36400]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13344,0x3420,LDS,"@!P1  LDS R7, [R74+0x364e4]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13360,0x3430,LDS,"@!P1  LDS R6, [R73+0x36400]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13376,0x3440,FADD,"@P5   FADD R14, R15, -R14",FP,116.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+13392,0x3450,LDS,"@P0   LDS R5, [R74+0x364e0]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13408,0x3460,MUFU.EX2,"@P5   MUFU.EX2 R94, R14",SFU,116.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+13424,0x3470,LDS,"@P0   LDS R4, [R73+0x36420]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13440,0x3480,FADD,"@P3   FADD R10, R11, -R10",FP,96.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+13456,0x3490,MUFU.EX2,"@P3   MUFU.EX2 R91, R10",SFU,96.0,16,6,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+13472,0x34a0,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P3, PT, R38, R37, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13488,0x34b0,FADD,"@P4   FADD R12, R13, -R12",FP,96.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+13504,0x34c0,MUFU.EX2,"@P4   MUFU.EX2 R93, R12",SFU,96.0,16,6,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+13520,0x34d0,ISETP.GT.AND,"ISETP.GT.AND P4, PT, R36, UR4, P6",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13536,0x34e0,ISETP.LT.AND,"ISETP.LT.AND P6, PT, R88, UR5, P6",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13552,0x34f0,FADD,"@!P2  FADD R8, R9, -R8",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+13568,0x3500,ISETP.LE.AND,"ISETP.LE.AND P6, PT, R36, UR4, P6",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13584,0x3510,MUFU.EX2,"@!P2  MUFU.EX2 R89, R8",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+13600,0x3520,ISETP.LT.AND,"ISETP.LT.AND P2, PT, R22, UR5, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13616,0x3530,ISETP.GT.AND,"ISETP.GT.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13632,0x3540,FADD,"@!P1  FADD R6, R7, -R6",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+13648,0x3550,ISETP.LE.AND,"ISETP.LE.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13664,0x3560,PLOP3.LUT,"PLOP3.LUT P6, PT, P4, P6, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+13680,0x3570,MUFU.EX2,"@!P1  MUFU.EX2 R19, R6",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+13696,0x3580,PLOP3.LUT,"PLOP3.LUT P1, PT, P3, P2, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+13712,0x3590,IMAD,"IMAD R12, R90, 0x2000, R55",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13728,0x35a0,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P3, PT, R64, R69, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13744,0x35b0,FADD,"@P0   FADD R5, R5, -R4",FP,112.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+13760,0x35c0,IMAD,"IMAD R4, R90, 0x2000, R59",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13776,0x35d0,ISETP.LT.AND,"ISETP.LT.AND P2, PT, R87, UR5, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13792,0x35e0,LDSM.16.M88.4,"LDSM.16.M88.4 R12, [R12]",LSU_Data|SMEM_Read,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13808,0x35f0,ISETP.GT.AND,"ISETP.GT.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13824,0x3600,MUFU.EX2,"@P0   MUFU.EX2 R18, R5",SFU,112.0,16,7,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+13840,0x3610,ISETP.LE.AND,"ISETP.LE.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13856,0x3620,IMAD,"IMAD R8, R90, 0x2000, R57",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13872,0x3630,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P0, PT, R66, R37, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13888,0x3640,LDS,"@P1   LDS R125, [R74+0x364e4]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13904,0x3650,PLOP3.LUT,"PLOP3.LUT P2, PT, P3, P2, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+13920,0x3660,ISETP.GE.U32.AND,"ISETP.GE.U32.AND P3, PT, R70, R69, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13936,0x3670,LDS,"@P1   LDS R126, [R73+0x36420]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+13952,0x3680,ISETP.LT.AND,"ISETP.LT.AND P5, PT, R83, UR5, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+13968,0x3690,P2R,"P2R R71, PR, RZ, 0x8",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+13984,0x36a0,LDSM.16.M88.4,"LDSM.16.M88.4 R8, [R8]",LSU_Data|SMEM_Read,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+14000,0x36b0,ISETP.LT.AND,"ISETP.LT.AND P3, PT, R84, UR5, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+14016,0x36c0,ISETP.GT.AND,"ISETP.GT.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+14032,0x36d0,LDS,"@P6   LDS R118, [R74+0x36400]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+14048,0x36e0,ISETP.LE.AND,"ISETP.LE.AND P5, PT, R36, UR4, P5",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+14064,0x36f0,ISETP.LE.AND,"ISETP.LE.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+14080,0x3700,LDSM.16.M88.4,"LDSM.16.M88.4 R4, [R4]",LSU_Data|SMEM_Read,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+14096,0x3710,PLOP3.LUT,"PLOP3.LUT P0, PT, P0, P5, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+14112,0x3720,PLOP3.LUT,"PLOP3.LUT P3, PT, P4, P3, PT, 0xf8, 0x8f",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+14128,0x3730,LDS,"@P2   LDS R17, [R74+0x36404]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+14144,0x3740,LDS,"@P2   LDS R16, [R73+0x36400]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+14160,0x3750,LDS,"@P6   LDS R117, [R73+0x36400]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+14176,0x3760,LDS,"@P0   LDS R124, [R74+0x36424]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+14192,0x3770,HADD2.F32,"HADD2.F32 R111, -RZ, R12.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14208,0x3780,LDS,"@P0   LDS R123, [R73+0x36420]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+14224,0x3790,HADD2.F32,"HADD2.F32 R115, -RZ, R12.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14240,0x37a0,IMAD,"IMAD R12, R90, 0x2000, R53",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+14256,0x37b0,LDS,"@P3   LDS R130, [R73+0x36420]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+14272,0x37c0,HADD2.F32,"HADD2.F32 R116, -RZ, R13.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14288,0x37d0,FMUL,"FMUL R110, R115, -R110",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14304,0x37e0,HADD2.F32,"HADD2.F32 R119, -RZ, R13.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14320,0x37f0,FADD,"@P1   FADD R126, R125, -R126",FP,116.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14336,0x3800,HADD2.F32,"HADD2.F32 R120, -RZ, R14.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14352,0x3810,LDS,"@P3   LDS R125, [R74+0x36420]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+14368,0x3820,HADD2.F32,"HADD2.F32 R121, -RZ, R14.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14384,0x3830,MUFU.EX2,"@P1   MUFU.EX2 R127, R126",SFU,116.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14400,0x3840,HADD2.F32,"HADD2.F32 R122, -RZ, R15.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14416,0x3850,FMUL,"FMUL R111, R111, -R112",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14432,0x3860,HADD2.F32,"HADD2.F32 R129, -RZ, R15.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14448,0x3870,FMUL,"FMUL R109, R116, -R109",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14464,0x3880,LDSM.16.M88.4,"LDSM.16.M88.4 R12, [R12]",LSU_Data|SMEM_Read,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+14480,0x3890,HADD2.F32,"HADD2.F32 R128, -RZ, R8.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14496,0x38a0,FMUL,"FMUL R108, R119, -R108",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14512,0x38b0,HADD2.F32,"HADD2.F32 R131, -RZ, R8.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14528,0x38c0,FMUL,"FMUL R107, R120, -R107",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14544,0x38d0,HADD2.F32,"HADD2.F32 R8, -RZ, R9.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14560,0x38e0,FMUL,"FMUL R106, R121, -R106",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14576,0x38f0,HADD2.F32,"HADD2.F32 R9, -RZ, R9.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14592,0x3900,FMUL,"FMUL R105, R122, -R105",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14608,0x3910,HADD2.F32,"HADD2.F32 R136, -RZ, R4.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14624,0x3920,FMUL,"FMUL R101, R8, -R101",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14640,0x3930,HADD2.F32,"HADD2.F32 R135, -RZ, R4.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14656,0x3940,FADD,"@P2   FADD R16, R17, -R16",FP,20.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14672,0x3950,HADD2.F32,"HADD2.F32 R4, -RZ, R5.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14688,0x3960,FMUL,"FMUL R100, R9, -R100",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14704,0x3970,HADD2.F32,"HADD2.F32 R140, -RZ, R5.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14720,0x3980,FADD,"@P6   FADD R117, R118, -R117",FP,16.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14736,0x3990,HADD2.F32,"HADD2.F32 R5, -RZ, R7.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14752,0x39a0,FMUL,"FMUL R135, R135, -R94",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14768,0x39b0,HADD2.F32,"HADD2.F32 R142, -RZ, R7.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14784,0x39c0,FMUL,"FMUL R93, R4, -R93",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14800,0x39d0,IMAD.MOV.U32,"IMAD.MOV.U32 R7, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+14816,0x39e0,FMUL,"FMUL R104, R129, -R104",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14832,0x39f0,IMAD.MOV.U32,"IMAD.MOV.U32 R17, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+14848,0x3a00,FADD,"@P0   FADD R123, R124, -R123",FP,20.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14864,0x3a10,IMAD.MOV.U32,"IMAD.MOV.U32 R8, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+14880,0x3a20,FMUL,"FMUL R103, R128, -R103",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14896,0x3a30,IMAD.MOV.U32,"IMAD.MOV.U32 R9, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+14912,0x3a40,MUFU.EX2,"@P2   MUFU.EX2 R7, R16",SFU,20.0,16,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14928,0x3a50,HADD2.F32,"HADD2.F32 R138, -RZ, R6.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14944,0x3a60,FMUL,"FMUL R102, R131, -R102",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14960,0x3a70,HADD2.F32,"HADD2.F32 R6, -RZ, R6.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14976,0x3a80,FMUL,"FMUL R140, R140, -R91",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+14992,0x3a90,FADD,"@P3   FADD R125, -R130, R125",FP,16.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15008,0x3aa0,HADD2.F32,"HADD2.F32 R134, -RZ, R10.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15024,0x3ab0,FMUL,"FMUL R89, R138, -R89",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15040,0x3ac0,MUFU.EX2,"@P6   MUFU.EX2 R17, R117",SFU,16.0,16,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15056,0x3ad0,FMUL,"FMUL R94, R6, -R19",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15072,0x3ae0,FMUL,"FMUL R19, R5, -R18",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15088,0x3af0,HADD2.F32,"HADD2.F32 R133, -RZ, R10.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15104,0x3b00,FMUL,"FMUL R99, R134, -R99",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15120,0x3b10,HADD2.F32,"HADD2.F32 R115, -RZ, R14.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15136,0x3b20,FMUL,"FMUL R142, R142, -R127",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15152,0x3b30,HADD2.F32,"HADD2.F32 R4, -RZ, R12.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15168,0x3b40,MUFU.EX2,"@P0   MUFU.EX2 R8, R123",SFU,20.0,16,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15184,0x3b50,HADD2.F32,"HADD2.F32 R16, -RZ, R14.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15200,0x3b60,FMUL,"FMUL R14, R115, -R114",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15216,0x3b70,HADD2.F32,"HADD2.F32 R6, -RZ, R12.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15232,0x3b80,FMUL,"FMUL R12, R4, -R7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15248,0x3b90,HADD2.F32,"HADD2.F32 R5, -RZ, R15.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15264,0x3ba0,FMUL,"FMUL R113, R16, -R113",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15280,0x3bb0,HADD2.F32,"HADD2.F32 R18, -RZ, R15.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15296,0x3bc0,MUFU.EX2,"@P3   MUFU.EX2 R9, R125",SFU,16.0,16,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15312,0x3bd0,HADD2.F32,"HADD2.F32 R10, -RZ, R11.H0_H0",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15328,0x3be0,FMUL,"FMUL R17, R6, -R17",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15344,0x3bf0,HADD2.F32,"HADD2.F32 R11, -RZ, R11.H1_H1",FP,128.0,64,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15360,0x3c00,FMUL,"FMUL R98, R133, -R98",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15376,0x3c10,FMUL,"FMUL R16, R136, -R95",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15392,0x3c20,FMUL,"FMUL R97, R10, -R97",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15408,0x3c30,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R14, R113, R14",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15424,0x3c40,FMUL,"FMUL R96, R11, -R96",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15440,0x3c50,FMUL,"FMUL R15, R5, -R8",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15456,0x3c60,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R12, R12, R17",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15472,0x3c70,IMAD,"IMAD R95, R92, 0x2000, R61",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+15488,0x3c80,HMUL2,"HMUL2 R13, R13, -RZ.H0_H0",HALF,256.0,64,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15504,0x3c90,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R8, R110, R111",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15520,0x3ca0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R10, R106, R107",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15536,0x3cb0,FMUL,"FMUL R18, R18, -R9",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15552,0x3cc0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R9, R108, R109",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15568,0x3cd0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R11, R104, R105",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15584,0x3ce0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R15, R15, R18",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15600,0x3cf0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R4, R102, R103",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15616,0x3d00,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R5, R100, R101",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15632,0x3d10,STSM.16.MT88.4,"STSM.16.MT88.4 [R95+0x24400], R12",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+15648,0x3d20,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R6, R98, R99",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15664,0x3d30,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R7, R96, R97",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15680,0x3d40,STSM.16.MT88.4,"STSM.16.MT88.4 [R95+0x24c00], R8",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+15696,0x3d50,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R16, R135, R16",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15712,0x3d60,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R17, R140, R93",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15728,0x3d70,STSM.16.MT88.4,"STSM.16.MT88.4 [R95+0x25400], R4",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+15744,0x3d80,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R18, R94, R89",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15760,0x3d90,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R19, R142, R19",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+15776,0x3da0,ISETP.NE.U32.AND,"ISETP.NE.U32.AND P0, PT, R132, RZ, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+15792,0x3db0,LEA,"LEA R89, R72, UR22, 0x3",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+15808,0x3dc0,STSM.16.MT88.4,"STSM.16.MT88.4 [R95+0x25c00], R16",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+15824,0x3dd0,SHF.L.U32,"SHF.L.U32 R94, R65, 0x1f, RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+15840,0x3de0,LEA,"LEA R91, R45, UR22, 0x3",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+15856,0x3df0,MEMBAR.ALL.CTA,MEMBAR.ALL.CTA,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+15872,0x3e00,FENCE.VIEW.ASYNC.S,FENCE.VIEW.ASYNC.S,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+15888,0x3e10,SHF.L.U32,"SHF.L.U32 R8, R47, 0x1f, RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+15904,0x3e20,BAR.SYNC.DEFER_BLOCKING,"BAR.SYNC.DEFER_BLOCKING 0x2, 0x80",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+15920,0x3e30,SYNCS.ARRIVE.TRANS64.A1T0,"@!P0  SYNCS.ARRIVE.TRANS64.A1T0 RZ, [R21+URZ+0xe0], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+15936,0x3e40,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [R20+URZ+0x140], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+15952,0x3e50,SYNCS.PHASECHK.TRANS64.TRYWAIT,"SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [R89+URZ+0x180], R94",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+15968,0x3e60,BRA,@!P0  BRA 0x7f082f5d5060,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+15984,0x3e70,SYNCS.PHASECHK.TRANS64.TRYWAIT,"SYNCS.PHASECHK.TRANS64.TRYWAIT P3, [R91+URZ+0x110], R8",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16000,0x3e80,VIADD,"VIADD R90, R90, 0x1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16016,0x3e90,VIADD,"VIADD R92, R92, 0x1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16032,0x3ea0,VIADD,"VIADD R93, R72, 0x1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16048,0x3eb0,ISETP.NE.U32.AND,"ISETP.NE.U32.AND P2, PT, R90, 0x2, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16064,0x3ec0,ISETP.NE.U32.AND,"ISETP.NE.U32.AND P1, PT, R92, 0x3, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16080,0x3ed0,ISETP.NE.U32.AND,"ISETP.NE.U32.AND P0, PT, R93, 0x2, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16096,0x3ee0,SEL,"SEL R10, RZ, 0x1, P2",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16112,0x3ef0,SEL,"SEL R6, RZ, 0x1, P1",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16128,0x3f00,SEL,"SEL R4, RZ, 0x1, P0",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16144,0x3f10,LOP3.LUT,"LOP3.LUT R43, R43, R10, RZ, 0x3c, !PT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16160,0x3f20,LOP3.LUT,"LOP3.LUT R67, R67, R6, RZ, 0x3c, !PT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16176,0x3f30,LOP3.LUT,"LOP3.LUT R65, R65, R4, RZ, 0x3c, !PT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16192,0x3f40,SEL,"SEL R90, R90, RZ, P2",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16208,0x3f50,SEL,"SEL R92, R92, RZ, P1",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16224,0x3f60,SEL,"SEL R93, R93, RZ, P0",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16240,0x3f70,BRA,@!P3  BRA 0x7f082f5d50b0,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16256,0x3f80,ISETP.GE.AND,"ISETP.GE.AND P3, PT, R88, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16272,0x3f90,CS2R,"CS2R R94, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16288,0x3fa0,ISETP.GE.AND,"ISETP.GE.AND P2, PT, R87, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16304,0x3fb0,CS2R,"CS2R R96, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16320,0x3fc0,ISETP.LE.AND,"ISETP.LE.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16336,0x3fd0,IMAD.MOV.U32,"IMAD.MOV.U32 R88, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16352,0x3fe0,ISETP.GE.AND,"ISETP.GE.AND P1, PT, R86, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16368,0x3ff0,CS2R,"CS2R R86, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16384,0x4000,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P3, PT, R69, R70, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16400,0x4010,CS2R,"CS2R R108, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16416,0x4020,ISETP.GE.AND,"ISETP.GE.AND P4, PT, R85, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16432,0x4030,CS2R,"CS2R R98, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16448,0x4040,ISETP.LE.AND,"ISETP.LE.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16464,0x4050,CS2R,"CS2R R100, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16480,0x4060,ISETP.LE.AND,"ISETP.LE.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16496,0x4070,IMAD.MOV.U32,"IMAD.MOV.U32 R117, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16512,0x4080,ISETP.LE.AND,"ISETP.LE.AND P4, PT, R36, UR4, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16528,0x4090,UPLOP3.LUT,"UPLOP3.LUT UP2, UPT, UPT, UPT, UPT, 0x40, 0x4",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16544,0x40a0,ISETP.LE.U32.OR,"ISETP.LE.U32.OR P2, PT, R69, R70, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16560,0x40b0,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P1, PT, R69, R62, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16576,0x40c0,LDS,"@!P3  LDS R15, [R73+0x36400]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+16592,0x40d0,ISETP.GE.AND,"ISETP.GE.AND P0, PT, R83, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16608,0x40e0,IMAD.MOV.U32,"IMAD.MOV.U32 R83, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16624,0x40f0,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P4, PT, R69, R66, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16640,0x4100,LDS,"@!P3  LDS R14, [R74+0x36400]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+16656,0x4110,ISETP.GE.AND,"ISETP.GE.AND P5, PT, R84, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16672,0x4120,CS2R,"CS2R R84, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+16688,0x4130,ISETP.LE.AND,"ISETP.LE.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16704,0x4140,ISETP.LE.AND,"ISETP.LE.AND P5, PT, R36, UR4, P5",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16720,0x4150,LDS,"@!P2  LDS R9, [R73+0x36400]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+16736,0x4160,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P0, PT, R37, R66, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16752,0x4170,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P5, PT, R69, R70, P5",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16768,0x4180,LDS,"@!P2  LDS R10, [R74+0x36404]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+16784,0x4190,LDS,"@!P1  LDS R12, [R73+0x36400]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+16800,0x41a0,LDS,"@!P1  LDS R13, [R74+0x36420]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+16816,0x41b0,LDS,"@!P4  LDS R8, [R73+0x36400]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+16832,0x41c0,LDS,"@!P4  LDS R11, [R74+0x36424]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+16848,0x41d0,LDS,"@!P0  LDS R5, [R73+0x36420]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+16864,0x41e0,LDS,"@!P0  LDS R4, [R74+0x36424]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+16880,0x41f0,LDS,"@!P5  LDS R7, [R73+0x36420]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+16896,0x4200,FADD,"@!P3  FADD R14, R15, -R14",FP,116.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+16912,0x4210,LDS,"@!P5  LDS R6, [R74+0x36420]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+16928,0x4220,MUFU.EX2,"@!P3  MUFU.EX2 R83, R14",SFU,116.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+16944,0x4230,ISETP.GE.AND,"ISETP.GE.AND P3, PT, R82, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16960,0x4240,IMAD.MOV.U32,"IMAD.MOV.U32 R82, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16976,0x4250,ISETP.LE.AND,"ISETP.LE.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+16992,0x4260,FADD,"@!P2  FADD R9, -R10, R9",FP,112.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17008,0x4270,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P3, PT, R69, R60, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17024,0x4280,MUFU.EX2,"@!P2  MUFU.EX2 R84, R9",SFU,112.0,16,7,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17040,0x4290,ISETP.GE.AND,"ISETP.GE.AND P2, PT, R81, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17056,0x42a0,FADD,"@!P1  FADD R12, -R13, R12",FP,96.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17072,0x42b0,ISETP.LE.AND,"ISETP.LE.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17088,0x42c0,MUFU.EX2,"@!P1  MUFU.EX2 R85, R12",SFU,96.0,16,6,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17104,0x42d0,ISETP.GE.AND,"ISETP.GE.AND P1, PT, R80, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17120,0x42e0,CS2R,"CS2R R80, SRZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+17136,0x42f0,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P2, PT, R69, R58, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17152,0x4300,FADD,"@!P4  FADD R8, -R11, R8",FP,96.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17168,0x4310,LDS,"@!P3  LDS R14, [R73+0x36400]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+17184,0x4320,ISETP.LE.AND,"ISETP.LE.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17200,0x4330,MUFU.EX2,"@!P4  MUFU.EX2 R82, R8",SFU,96.0,16,6,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17216,0x4340,ISETP.GE.AND,"ISETP.GE.AND P4, PT, R79, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17232,0x4350,IMAD.MOV.U32,"IMAD.MOV.U32 R79, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17248,0x4360,LDS,"@!P3  LDS R15, [R74+0x36440]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+17264,0x4370,FADD,"@!P0  FADD R4, R5, -R4",FP,112.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17280,0x4380,ISETP.LE.AND,"ISETP.LE.AND P4, PT, R36, UR4, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17296,0x4390,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P1, PT, R37, R60, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17312,0x43a0,MUFU.EX2,"@!P0  MUFU.EX2 R80, R4",SFU,112.0,16,7,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17328,0x43b0,ISETP.GE.AND,"ISETP.GE.AND P0, PT, R77, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17344,0x43c0,LDS,"@!P2  LDS R10, [R73+0x36400]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+17360,0x43d0,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P4, PT, R37, R58, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17376,0x43e0,FADD,"@!P5  FADD R6, R7, -R6",FP,116.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17392,0x43f0,ISETP.LE.AND,"ISETP.LE.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17408,0x4400,LDS,"@!P2  LDS R11, [R74+0x36444]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+17424,0x4410,IMAD.MOV.U32,"IMAD.MOV.U32 R77, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17440,0x4420,MUFU.EX2,"@!P5  MUFU.EX2 R79, R6",SFU,116.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17456,0x4430,ISETP.GE.AND,"ISETP.GE.AND P5, PT, R78, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17472,0x4440,IMAD.MOV.U32,"IMAD.MOV.U32 R78, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17488,0x4450,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P0, PT, R69, R54, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17504,0x4460,LDS,"@!P1  LDS R13, [R73+0x36420]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+17520,0x4470,ISETP.LE.AND,"ISETP.LE.AND P5, PT, R36, UR4, P5",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17536,0x4480,LDS,"@!P4  LDS R9, [R73+0x36420]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+17552,0x4490,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P5, PT, R69, R56, P5",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17568,0x44a0,LDS,"@!P4  LDS R8, [R74+0x36444]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+17584,0x44b0,LDS,"@!P0  LDS R4, [R73+0x36400]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+17600,0x44c0,LDS,"@!P0  LDS R5, [R74+0x36464]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+17616,0x44d0,LDS,"@!P5  LDS R6, [R73+0x36400]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+17632,0x44e0,FADD,"@!P3  FADD R14, -R15, R14",FP,84.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17648,0x44f0,LDS,"@!P5  LDS R7, [R74+0x36460]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+17664,0x4500,MUFU.EX2,"@!P3  MUFU.EX2 R77, R14",SFU,84.0,16,6,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17680,0x4510,LDS,"@!P1  LDS R12, [R74+0x36440]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+17696,0x4520,ISETP.GE.AND,"ISETP.GE.AND P3, PT, R76, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17712,0x4530,IMAD.MOV.U32,"IMAD.MOV.U32 R76, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17728,0x4540,ISETP.LE.AND,"ISETP.LE.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17744,0x4550,FADD,"@!P2  FADD R10, -R11, R10",FP,80.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17760,0x4560,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P3, PT, R37, R56, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17776,0x4570,MUFU.EX2,"@!P2  MUFU.EX2 R78, R10",SFU,80.0,16,5,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17792,0x4580,ISETP.GE.AND,"ISETP.GE.AND P2, PT, R75, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17808,0x4590,IMAD.MOV.U32,"IMAD.MOV.U32 R75, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17824,0x45a0,ISETP.LE.AND,"ISETP.LE.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17840,0x45b0,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P2, PT, R37, R54, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17856,0x45c0,FADD,"@!P4  FADD R8, R9, -R8",FP,96.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17872,0x45d0,LDS,"@!P3  LDS R14, [R73+0x36420]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+17888,0x45e0,MUFU.EX2,"@!P4  MUFU.EX2 R76, R8",SFU,96.0,16,6,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17904,0x45f0,ISETP.GE.AND,"ISETP.GE.AND P4, PT, R34, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17920,0x4600,FADD,"@!P0  FADD R4, -R5, R4",FP,64.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17936,0x4610,ISETP.LE.AND,"ISETP.LE.AND P4, PT, R36, UR4, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17952,0x4620,MUFU.EX2,"@!P0  MUFU.EX2 R86, R4",SFU,64.0,16,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+17968,0x4630,ISETP.GE.AND,"ISETP.GE.AND P0, PT, R32, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+17984,0x4640,LDS,"@!P2  LDS R10, [R73+0x36420]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18000,0x4650,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P4, PT, R69, R50, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18016,0x4660,FADD,"@!P5  FADD R6, -R7, R6",FP,64.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18032,0x4670,ISETP.LE.AND,"ISETP.LE.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18048,0x4680,LDS,"@!P2  LDS R9, [R74+0x36464]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18064,0x4690,MUFU.EX2,"@!P5  MUFU.EX2 R75, R6",SFU,64.0,16,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18080,0x46a0,ISETP.GE.AND,"ISETP.GE.AND P5, PT, R33, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18096,0x46b0,FADD,"@!P1  FADD R12, R13, -R12",FP,96.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18112,0x46c0,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P0, PT, R37, R50, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18128,0x46d0,LDS,"@!P3  LDS R13, [R74+0x36460]",LSU_Data|SMEM_Read,3.0,1,3,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18144,0x46e0,ISETP.LE.AND,"ISETP.LE.AND P5, PT, R36, UR4, P5",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18160,0x46f0,MUFU.EX2,"@!P1  MUFU.EX2 R81, R12",SFU,96.0,16,6,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18176,0x4700,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P5, PT, R37, R52, P5",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18192,0x4710,LDS,"@!P4  LDS R8, [R73+0x36400]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18208,0x4720,ISETP.GE.AND,"ISETP.GE.AND P1, PT, R35, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18224,0x4730,LDS,"@!P4  LDS R11, [R74+0x36484]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18240,0x4740,ISETP.LE.AND,"ISETP.LE.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18256,0x4750,LDS,"@!P0  LDS R5, [R73+0x36420]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18272,0x4760,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P1, PT, R69, R52, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18288,0x4770,LDS,"@!P0  LDS R4, [R74+0x36484]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18304,0x4780,LDS,"@!P5  LDS R7, [R73+0x36420]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18320,0x4790,LDS,"@!P5  LDS R6, [R74+0x36480]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18336,0x47a0,LDS,"@!P1  LDS R12, [R73+0x36400]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18352,0x47b0,LDS,"@!P1  LDS R15, [R74+0x36480]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18368,0x47c0,FADD,"@!P2  FADD R9, R10, -R9",FP,80.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18384,0x47d0,MUFU.EX2,"@!P2  MUFU.EX2 R88, R9",SFU,80.0,16,5,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18400,0x47e0,FADD,"@!P3  FADD R13, R14, -R13",FP,84.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18416,0x47f0,ISETP.GE.AND,"ISETP.GE.AND P2, PT, R30, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18432,0x4800,ISETP.LE.AND,"ISETP.LE.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18448,0x4810,MUFU.EX2,"@!P3  MUFU.EX2 R87, R13",SFU,84.0,16,6,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18464,0x4820,ISETP.GE.AND,"ISETP.GE.AND P3, PT, R31, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18480,0x4830,FADD,"@!P4  FADD R8, -R11, R8",FP,48.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18496,0x4840,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P2, PT, R69, R46, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18512,0x4850,ISETP.LE.AND,"ISETP.LE.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18528,0x4860,MUFU.EX2,"@!P4  MUFU.EX2 R94, R8",SFU,48.0,16,3,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18544,0x4870,ISETP.GE.AND,"ISETP.GE.AND P4, PT, R28, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18560,0x4880,FADD,"@!P0  FADD R4, R5, -R4",FP,64.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18576,0x4890,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P3, PT, R69, R48, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18592,0x48a0,ISETP.LE.AND,"ISETP.LE.AND P4, PT, R36, UR4, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18608,0x48b0,MUFU.EX2,"@!P0  MUFU.EX2 R96, R4",SFU,64.0,16,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18624,0x48c0,ISETP.GE.AND,"ISETP.GE.AND P0, PT, R26, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18640,0x48d0,LDS,"@!P2  LDS R10, [R73+0x36400]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18656,0x48e0,FADD,"@!P5  FADD R6, R7, -R6",FP,64.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18672,0x48f0,ISETP.LE.AND,"ISETP.LE.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18688,0x4900,LDS,"@!P2  LDS R11, [R74+0x364a4]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18704,0x4910,MUFU.EX2,"@!P5  MUFU.EX2 R97, R6",SFU,64.0,16,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18720,0x4920,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P5, PT, R37, R46, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18736,0x4930,LDS,"@!P3  LDS R14, [R73+0x36400]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18752,0x4940,ISETP.GE.AND,"ISETP.GE.AND P4, PT, R27, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18768,0x4950,FADD,"@!P1  FADD R12, -R15, R12",FP,52.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18784,0x4960,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P0, PT, R69, R42, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18800,0x4970,LDS,"@!P3  LDS R15, [R74+0x364a0]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18816,0x4980,ISETP.LE.AND,"ISETP.LE.AND P4, PT, R36, UR4, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18832,0x4990,MUFU.EX2,"@!P1  MUFU.EX2 R95, R12",SFU,52.0,16,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+18848,0x49a0,ISETP.GE.AND,"ISETP.GE.AND P1, PT, R29, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18864,0x49b0,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P4, PT, R69, R44, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18880,0x49c0,ISETP.LE.AND,"ISETP.LE.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18896,0x49d0,LDS,"@!P5  LDS R9, [R73+0x36420]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18912,0x49e0,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P1, PT, R37, R48, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+18928,0x49f0,LDS,"@!P0  LDS R4, [R73+0x36400]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18944,0x4a00,LDS,"@!P0  LDS R5, [R74+0x364c4]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18960,0x4a10,LDS,"@!P4  LDS R6, [R73+0x36400]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18976,0x4a20,LDS,"@!P4  LDS R7, [R74+0x364c0]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+18992,0x4a30,LDS,"@!P1  LDS R13, [R73+0x36420]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19008,0x4a40,LDS,"@!P1  LDS R12, [R74+0x364a0]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19024,0x4a50,FADD,"@!P2  FADD R10, -R11, R10",FP,32.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19040,0x4a60,LDS,"@!P5  LDS R8, [R74+0x364a4]",LSU_Data|SMEM_Read,2.0,1,2,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19056,0x4a70,MUFU.EX2,"@!P2  MUFU.EX2 R98, R10",SFU,32.0,16,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19072,0x4a80,ISETP.GE.AND,"ISETP.GE.AND P2, PT, R24, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19088,0x4a90,FADD,"@!P3  FADD R14, -R15, R14",FP,32.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19104,0x4aa0,ISETP.LE.AND,"ISETP.LE.AND P2, PT, R36, UR4, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19120,0x4ab0,MUFU.EX2,"@!P3  MUFU.EX2 R99, R14",SFU,32.0,16,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19136,0x4ac0,ISETP.GE.AND,"ISETP.GE.AND P3, PT, R25, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19152,0x4ad0,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P2, PT, R37, R42, P2",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19168,0x4ae0,ISETP.LE.AND,"ISETP.LE.AND P3, PT, R36, UR4, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19184,0x4af0,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P3, PT, R37, R44, P3",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19200,0x4b00,FADD,"@!P0  FADD R110, -R5, R4",FP,16.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19216,0x4b10,IMAD,"IMAD R4, R45, 0x40, R68",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19232,0x4b20,VIADD,"VIADD R45, R45, 0x1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19248,0x4b30,MUFU.EX2,"@!P0  MUFU.EX2 R108, R110",SFU,16.0,16,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19264,0x4b40,ISETP.GE.AND,"ISETP.GE.AND P0, PT, R22, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19280,0x4b50,LDS,"@!P2  LDS R104, [R73+0x36420]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19296,0x4b60,R2UR,"R2UR UR6, R4",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+19312,0x4b70,FADD,"@!P4  FADD R6, -R7, R6",FP,20.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19328,0x4b80,ISETP.LE.AND,"ISETP.LE.AND P0, PT, R36, UR4, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19344,0x4b90,LDS,"@!P2  LDS R103, [R74+0x364c4]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19360,0x4ba0,MUFU.EX2,"@!P4  MUFU.EX2 R109, R6",SFU,20.0,16,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19376,0x4bb0,ISETP.GE.AND,"ISETP.GE.AND P4, PT, R39, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19392,0x4bc0,LDS,"@!P3  LDS R106, [R73+0x36420]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19408,0x4bd0,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P0, PT, R37, R38, P0",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19424,0x4be0,FADD,"@!P1  FADD R12, R13, -R12",FP,52.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19440,0x4bf0,ISETP.LE.AND,"ISETP.LE.AND P4, PT, R36, UR4, P4",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19456,0x4c00,LDS,"@!P3  LDS R105, [R74+0x364c0]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19472,0x4c10,FADD,"@!P5  FADD R8, R9, -R8",FP,48.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19488,0x4c20,MUFU.EX2,"@!P1  MUFU.EX2 R101, R12",SFU,52.0,16,4,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19504,0x4c30,ISETP.GE.AND,"ISETP.GE.AND P1, PT, R23, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19520,0x4c40,ISETP.LE.AND,"ISETP.LE.AND P1, PT, R36, UR4, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19536,0x4c50,LDS,"@!P0  LDS R114, [R73+0x36420]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19552,0x4c60,MUFU.EX2,"@!P5  MUFU.EX2 R100, R8",SFU,48.0,16,3,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19568,0x4c70,ISETP.GE.AND,"ISETP.GE.AND P5, PT, R41, UR5, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19584,0x4c80,LDS,"@!P4  LDS R111, [R73+0x36420]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19600,0x4c90,ISETP.LT.U32.OR,"ISETP.LT.U32.OR P1, PT, R37, R40, P1",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19616,0x4ca0,ISETP.LE.AND,"ISETP.LE.AND P5, PT, R36, UR4, P5",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19632,0x4cb0,LDS,"@!P4  LDS R110, [R74+0x36404]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19648,0x4cc0,UMOV,"UMOV UR4, 0x1",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+19664,0x4cd0,LDS,"@!P0  LDS R115, [R74+0x364e4]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19680,0x4ce0,LDTM.16dp256bit.x8,"LDTM.16dp256bit.x8 R4, tmem[UR6+0x100]",TMEM,16384,256,64,Explicit native register bytes / subtype-conditioned service; no raw latency included
+19696,0x4cf0,LDS,"@!P1  LDS R102, [R73+0x36420]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19712,0x4d00,UMOV,"UMOV UR6, UR10",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+19728,0x4d10,FADD,"@!P2  FADD R103, R104, -R103",FP,32.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19744,0x4d20,LDS,"@!P5  LDS R113, [R73+0x36420]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19760,0x4d30,IMAD.MOV.U32,"IMAD.MOV.U32 R104, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19776,0x4d40,LDS,"@!P5  LDS R112, [R74+0x36400]",LSU_Data|SMEM_Read,4.0,1,4,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19792,0x4d50,FADD,"@!P3  FADD R105, R106, -R105",FP,32.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19808,0x4d60,LDS,"@!P1  LDS R107, [R74+0x364e0]",LSU_Data|SMEM_Read,1.0,1,1,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+19824,0x4d70,MUFU.EX2,"@!P2  MUFU.EX2 R104, R103",SFU,32.0,16,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19840,0x4d80,MUFU.EX2,"@!P3  MUFU.EX2 R117, R105",SFU,32.0,16,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19856,0x4d90,FMUL,"FMUL R77, R12, R77",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19872,0x4da0,FMUL,"FMUL R81, R14, R81",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19888,0x4db0,IMAD.MOV.U32,"IMAD.MOV.U32 R12, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19904,0x4dc0,FMUL,"FMUL R10, R10, R79",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19920,0x4dd0,IMAD.MOV.U32,"IMAD.MOV.U32 R14, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19936,0x4de0,FMUL,"FMUL R4, R4, R83",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19952,0x4df0,FADD,"@!P4  FADD R110, R111, -R110",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+19968,0x4e00,IMAD.MOV.U32,"IMAD.MOV.U32 R79, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+19984,0x4e10,FMUL,"FMUL R5, R5, R84",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20000,0x4e20,IMAD.MOV.U32,"IMAD.MOV.U32 R73, RZ, RZ, RZ",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+20016,0x4e30,FADD,"@!P0  FADD R114, -R115, R114",FP,16.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20032,0x4e40,MUFU.EX2,"@!P4  MUFU.EX2 R12, R110",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20048,0x4e50,FMUL,"FMUL R8, R8, R85",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20064,0x4e60,FMUL,"FMUL R9, R9, R82",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20080,0x4e70,FMUL,"FMUL R32, RZ, R32",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20096,0x4e80,FMUL,"FMUL R4, R4, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20112,0x4e90,FMUL,"FMUL R5, R5, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20128,0x4ea0,FMUL,"FMUL R8, R8, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20144,0x4eb0,FMUL,"FMUL R9, R9, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20160,0x4ec0,MUFU.EX2,"@!P0  MUFU.EX2 R14, R114",SFU,16.0,16,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20176,0x4ed0,FMUL,"FMUL R15, R15, R76",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20192,0x4ee0,FMUL,"FMUL R87, R18, R87",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20208,0x4ef0,FMUL,"FMUL R18, R32, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20224,0x4f00,FMUL,"FMUL R11, R11, R80",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20240,0x4f10,FMUL,"FMUL R16, R16, R75",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20256,0x4f20,FADD,"@!P5  FADD R112, R113, -R112",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20272,0x4f30,FMUL,"FMUL R17, R17, R86",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20288,0x4f40,FMUL,"FMUL R20, R20, R95",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20304,0x4f50,FMUL,"FMUL R32, R7, R12",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20320,0x4f60,FADD,"@!P1  FADD R102, -R107, R102",FP,20.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20336,0x4f70,MUFU.EX2,"@!P5  MUFU.EX2 R79, R112",SFU,128.0,16,8,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20352,0x4f80,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R12, R5, R4",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20368,0x4f90,FMUL,"FMUL R4, R15, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20384,0x4fa0,FMUL,"FMUL R13, R13, R78",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20400,0x4fb0,FMUL,"FMUL R26, R26, R101",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20416,0x4fc0,FMUL,"FMUL R27, R27, R100",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20432,0x4fd0,FMUL,"FMUL R35, R35, R14",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20448,0x4fe0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R14, R9, R8",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20464,0x4ff0,MUFU.EX2,"@!P1  MUFU.EX2 R73, R102",SFU,20.0,16,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20480,0x5000,FMUL,"FMUL R9, R81, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20496,0x5010,FMUL,"FMUL R10, R10, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20512,0x5020,FMUL,"FMUL R11, R11, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20528,0x5030,FMUL,"FMUL R19, R19, R88",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20544,0x5040,FMUL,"FMUL R16, R16, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20560,0x5050,FMUL,"FMUL R17, R17, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20576,0x5060,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R9, R4, R9",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20592,0x5070,FMUL,"FMUL R22, R22, R97",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20608,0x5080,FMUL,"FMUL R4, R20, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20624,0x5090,FMUL,"FMUL R30, R30, R117",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20640,0x50a0,FMUL,"FMUL R31, R31, R104",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20656,0x50b0,FMUL,"FMUL R8, R77, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20672,0x50c0,FMUL,"FMUL R13, R13, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20688,0x50d0,FMUL,"FMUL R7, R26, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20704,0x50e0,FMUL,"FMUL R20, R27, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20720,0x50f0,FMUL,"FMUL R79, R6, R79",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20736,0x5100,FMUL,"FMUL R21, R21, R94",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20752,0x5110,FMUL,"FMUL R87, R87, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20768,0x5120,FMUL,"FMUL R6, R19, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20784,0x5130,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R15, R11, R10",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20800,0x5140,FMUL,"FMUL R5, R22, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20816,0x5150,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R10, R17, R16",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20832,0x5160,FMUL,"FMUL R23, R23, R96",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20848,0x5170,FMUL,"FMUL R24, R24, R99",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20864,0x5180,FMUL,"FMUL R25, R25, R98",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20880,0x5190,FMUL,"FMUL R17, R30, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20896,0x51a0,FMUL,"FMUL R22, R31, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20912,0x51b0,FMUL,"FMUL R28, R28, R109",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20928,0x51c0,FMUL,"FMUL R29, R29, R108",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20944,0x51d0,FMUL,"FMUL R33, RZ, R33",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20960,0x51e0,FMUL,"FMUL R34, R34, R73",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20976,0x51f0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R8, R13, R8",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+20992,0x5200,FMUL,"FMUL R21, R21, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21008,0x5210,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R7, R20, R7",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21024,0x5220,FMUL,"FMUL R13, R79, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21040,0x5230,FMUL,"FMUL R32, R32, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21056,0x5240,IMAD,"IMAD R20, R72, 0x2000, R63",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+21072,0x5250,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R11, R6, R87",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21088,0x5260,FMUL,"FMUL R16, R23, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21104,0x5270,FMUL,"FMUL R6, R24, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21120,0x5280,FMUL,"FMUL R25, R25, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21136,0x5290,FMUL,"FMUL R33, R33, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21152,0x52a0,FMUL,"FMUL R28, R28, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21168,0x52b0,FMUL,"FMUL R29, R29, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21184,0x52c0,FMUL,"FMUL R19, R34, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21200,0x52d0,FMUL,"FMUL R24, R35, UR7",FP,128.0,128,1,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21216,0x52e0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R17, R22, R17",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21232,0x52f0,IMAD.IADD,"IMAD.IADD R22, R49, 0x1, R20",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+21248,0x5300,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R4, R21, R4",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21264,0x5310,IMAD.IADD,"IMAD.IADD R21, R51, 0x1, R20",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+21280,0x5320,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R13, R32, R13",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21296,0x5330,IMAD.IADD,"IMAD.IADD R23, R51, 0x1, R22",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+21312,0x5340,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R5, R16, R5",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21328,0x5350,IMAD.MOV.U32,"IMAD.MOV.U32 R72, RZ, RZ, R93",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+21344,0x5360,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R6, R25, R6",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21360,0x5370,STSM.16.M88.4,"STSM.16.M88.4 [R20+0x2a400], R12",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+21376,0x5380,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R18, R33, R18",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21392,0x5390,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R16, R29, R28",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21408,0x53a0,STSM.16.M88.4,"STSM.16.M88.4 [R21+0x2a400], R8",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+21424,0x53b0,F2FP.F16.F32.PACK_AB,"F2FP.F16.F32.PACK_AB R19, R24, R19",ALU_PACK,256.0,128,2,Native per-PC scalar work/rate; one issue floor; fixed generic rates are explicit conditions
+21440,0x53c0,ISETP.NE.U32.AND,"ISETP.NE.U32.AND P0, PT, R45, 0x2, PT",ALU_PACK,128.0,64,2,Known generic32 integer work/64; exact unknown subtypes retain issue-only floor
+21456,0x53d0,STSM.16.M88.4,"STSM.16.M88.4 [R22+0x2a400], R4",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+21472,0x53e0,SEL,"SEL R24, RZ, 0x1, P0",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+21488,0x53f0,STSM.16.M88.4,"STSM.16.M88.4 [R23+0x2a400], R16",LSU_Data|SMEM_Write,16.0,1,16,"Enumerated instruction-address WF / NCU Data capacity, same-clock condition"
+21504,0x5400,SEL,"SEL R45, R45, RZ, P0",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+21520,0x5410,LOP3.LUT,"LOP3.LUT R47, R47, R24, RZ, 0x3c, !PT",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+21536,0x5420,MEMBAR.ALL.CTA,MEMBAR.ALL.CTA,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+21552,0x5430,FENCE.VIEW.ASYNC.S,FENCE.VIEW.ASYNC.S,ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+21568,0x5440,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [R91+URZ+0x120], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+21584,0x5450,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [R89+URZ+0x170], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+21600,0x5460,SYNCS.ARRIVE.TRANS64.A1T0,"SYNCS.ARRIVE.TRANS64.A1T0 RZ, [UR8+0xa8], RZ",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN
+21616,0x5470,BRA.U,"BRA.U UP3, 0x7f082f5c5d60",ISSUE,4.0,4.0,1,Four successful warp issues / four SMSP schedulers; extra polling/ready latency UNKNOWN

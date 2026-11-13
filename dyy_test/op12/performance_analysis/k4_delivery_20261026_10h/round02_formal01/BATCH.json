@@ -1,0 +1,266 @@
+[
+  {
+    "S": 8192,
+    "trial": 0,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_round02.py",
+      "--phase",
+      "formal",
+      "--shape",
+      "8192",
+      "--trial",
+      "0",
+      "--out",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_formal01/S8192/trial0",
+      "--compile-approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_compile01/S8192/COMPILE_AUDIT.json",
+      "--approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_compile01/S8192/COMPILE_AUDIT.json"
+    ],
+    "start_epoch": 1792960830.146364,
+    "returncode": 0,
+    "end_epoch": 1792960838.3704615,
+    "event": {
+      "CP_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": 0.0,
+        "CI95_pct": [
+          -0.1199655801581434,
+          0.36024514144124
+        ],
+        "paired_saving_us": 0.0,
+        "equivalent": true
+      },
+      "K4_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": 1.354699517976976,
+        "CI95_pct": [
+          0.09150904012485972,
+          1.6030203511188001
+        ],
+        "paired_saving_us": -0.8159996941685677,
+        "equivalent": true
+      }
+    },
+    "gate_pass": true
+  },
+  {
+    "S": 8192,
+    "trial": 1,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_round02.py",
+      "--phase",
+      "formal",
+      "--shape",
+      "8192",
+      "--trial",
+      "1",
+      "--out",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_formal01/S8192/trial1",
+      "--compile-approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_compile01/S8192/COMPILE_AUDIT.json",
+      "--approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_compile01/S8192/COMPILE_AUDIT.json"
+    ],
+    "start_epoch": 1792960838.4845946,
+    "returncode": 0,
+    "end_epoch": 1792960846.8596103,
+    "event": {
+      "CP_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": -0.04890995638218154,
+        "CI95_pct": [
+          -0.6287573060957397,
+          0.03259831408654046
+        ],
+        "paired_saving_us": 0.07200241088867188,
+        "equivalent": true
+      },
+      "K4_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": 0.026104537957905016,
+        "CI95_pct": [
+          -0.16581017314792335,
+          0.1962413272062924
+        ],
+        "paired_saving_us": -0.016001053154468536,
+        "equivalent": true
+      }
+    },
+    "gate_pass": true
+  },
+  {
+    "S": 8192,
+    "trial": 2,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_round02.py",
+      "--phase",
+      "formal",
+      "--shape",
+      "8192",
+      "--trial",
+      "2",
+      "--out",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_formal01/S8192/trial2",
+      "--compile-approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_compile01/S8192/COMPILE_AUDIT.json",
+      "--approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_compile01/S8192/COMPILE_AUDIT.json"
+    ],
+    "start_epoch": 1792960847.0240827,
+    "returncode": 0,
+    "end_epoch": 1792960855.2491393,
+    "event": {
+      "CP_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": 0.0,
+        "CI95_pct": [
+          -0.3658284806759726,
+          0.10946825301172414
+        ],
+        "paired_saving_us": 0.0,
+        "equivalent": true
+      },
+      "K4_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": 1.4344946963760097,
+        "CI95_pct": [
+          0.15827729526920464,
+          1.6057462899800035
+        ],
+        "paired_saving_us": -0.8799983188509941,
+        "equivalent": true
+      }
+    },
+    "gate_pass": true
+  },
+  {
+    "S": 16384,
+    "trial": 0,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_round02.py",
+      "--phase",
+      "formal",
+      "--shape",
+      "16384",
+      "--trial",
+      "0",
+      "--out",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_formal01/S16384/trial0",
+      "--compile-approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_compile01/S16384/COMPILE_AUDIT.json",
+      "--approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_compile01/S16384/COMPILE_AUDIT.json"
+    ],
+    "start_epoch": 1792960855.4135685,
+    "returncode": 0,
+    "end_epoch": 1792960864.389404,
+    "event": {
+      "CP_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": -0.055114496175584504,
+        "CI95_pct": [
+          -0.42639474723739634,
+          0.047643085428539234
+        ],
+        "paired_saving_us": 0.12000277638435364,
+        "equivalent": true
+      },
+      "K4_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": 1.0579090328037832,
+        "CI95_pct": [
+          0.0175995709556509,
+          1.1505829027666947
+        ],
+        "paired_saving_us": -0.9519997984170914,
+        "equivalent": true
+      }
+    },
+    "gate_pass": true
+  },
+  {
+    "S": 16384,
+    "trial": 1,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_round02.py",
+      "--phase",
+      "formal",
+      "--shape",
+      "16384",
+      "--trial",
+      "1",
+      "--out",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_formal01/S16384/trial1",
+      "--compile-approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_compile01/S16384/COMPILE_AUDIT.json",
+      "--approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_compile01/S16384/COMPILE_AUDIT.json"
+    ],
+    "start_epoch": 1792960864.5037627,
+    "returncode": 0,
+    "end_epoch": 1792960873.4297159,
+    "event": {
+      "CP_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": -0.0585654039189476,
+        "CI95_pct": [
+          -0.21982798807531623,
+          0.0
+        ],
+        "paired_saving_us": 0.12800097465515137,
+        "equivalent": true
+      },
+      "K4_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": 0.1232496927069393,
+        "CI95_pct": [
+          0.0,
+          1.0683742641264815
+        ],
+        "paired_saving_us": -0.11200085282325745,
+        "equivalent": true
+      }
+    },
+    "gate_pass": true
+  },
+  {
+    "S": 16384,
+    "trial": 2,
+    "command": [
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/run_round02.py",
+      "--phase",
+      "formal",
+      "--shape",
+      "16384",
+      "--trial",
+      "2",
+      "--out",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_formal01/S16384/trial2",
+      "--compile-approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_compile01/S16384/COMPILE_AUDIT.json",
+      "--approved",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_delivery_20261026_10h/round02_compile01/S16384/COMPILE_AUDIT.json"
+    ],
+    "start_epoch": 1792960873.5440764,
+    "returncode": 0,
+    "end_epoch": 1792960882.5698128,
+    "event": {
+      "CP_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": -0.11668763948468053,
+        "CI95_pct": [
+          -0.46427443798404133,
+          0.0
+        ],
+        "paired_saving_us": 0.25600194931030273,
+        "equivalent": true
+      },
+      "K4_EVENT_REF__CLOCK_RETURNS": {
+        "paired_change_pct": 0.11297632663658241,
+        "CI95_pct": [
+          0.0,
+          0.9041419573650122
+        ],
+        "paired_saving_us": -0.10400079190731049,
+        "equivalent": true
+      }
+    },
+    "gate_pass": true
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+    "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k1_tcgen_store_verify_20261109/source/run_compare.py",
+    "--mode",
+    "compile",
+    "--variants",
+    "tcgen05",
+    "--tag",
+    "min8_control_v1",
+    "--tc-min8"
+  ],
+  "timeout": 1800
+}

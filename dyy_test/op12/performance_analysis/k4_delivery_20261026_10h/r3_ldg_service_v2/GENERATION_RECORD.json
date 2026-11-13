@@ -1,0 +1,9 @@
+{
+  "output": "ldg_service.cu",
+  "sha256": "49bf11c98c6eb0d3812f57d90c70a36783f4d18cbbeeb645b24a6fcb900fec7f",
+  "generator_sha256": "1a1c7feabf2fcce8439e9a83e40953ec07bd9e0cd03c5bc1f638e04e4323982f",
+  "template_sha256": "83e0d4a311edd313a625a94d6059877a112e30c9680ce0e3c298dadbddea233f",
+  "PTX_ld_volatile": false,
+  "CUDA_CXX_asm_volatile": true,
+  "model_enabled": false
+}

@@ -1,0 +1,943 @@
+{
+  "status": "PASS",
+  "package": "E:\\Work\\Lab\\HUAWEI benchmark\\op12\\K4\\分析交付_20261026_10h\\06_packaging\\reproduce_zip_final01\\package",
+  "isolated_output": "E:\\Work\\Lab\\HUAWEI benchmark\\op12\\K4\\分析交付_20261026_10h\\06_packaging\\reproduce_zip_final01\\result",
+  "python": "C:\\Users\\27194\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "elapsed_s": 20.282593965530396,
+  "records": [
+    {
+      "id": "native",
+      "returncode": 0,
+      "elapsed_s": 0.5711405277252197,
+      "log": "native.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "01_native_audit/derived/AUDIT_CHECKS.json",
+          "exists": true,
+          "sha256": "f14691801cee68839ee9d92dafb80a19e3ea7bd9c9b875b9984870b08f90f6af",
+          "review_status": {
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "conditional_dag",
+      "returncode": 0,
+      "elapsed_s": 0.10976266860961914,
+      "log": "conditional_dag.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "01_native_audit/conditional_service_dag/CONDITIONAL_IDEAL_SERVICE_DAG.json",
+          "exists": true,
+          "sha256": "af677f5afc30a997db2ee21dff816a8ce74542e0b08109d38f423d210d7697b6",
+          "review_status": {
+            "status": "DISABLED_CONDITIONAL_IDEAL_SERVICE_DESIGN",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "data_request_bridge",
+      "returncode": 0,
+      "elapsed_s": 0.10462713241577148,
+      "log": "data_request_bridge.log",
+      "note": "",
+      "outputs": []
+    },
+    {
+      "id": "publication_lead",
+      "returncode": 0,
+      "elapsed_s": 0.09395217895507812,
+      "log": "publication_lead.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/PUBLICATION_COMPLETION_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "594b388df6e2655064fd87735f4ccdcbe93d7e55556e1e1383c767ed5835c57e",
+          "review_status": {
+            "status": "PASS_COMPLETION_ORDER_ONLY",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "existing_trace",
+      "returncode": 0,
+      "elapsed_s": 0.5091667175292969,
+      "log": "existing_trace.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/EXISTING_EVIDENCE_RECOMPUTED.json",
+          "exists": true,
+          "sha256": "8156624295ce9bff7bd9194fc6f8ad1c4475155c2c96138a93acce5309826c19",
+          "review_status": {
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "shared_counts",
+      "returncode": 0,
+      "elapsed_s": 0.08422160148620605,
+      "log": "shared_counts.log",
+      "note": "",
+      "outputs": []
+    },
+    {
+      "id": "r1_ncu",
+      "returncode": 0,
+      "elapsed_s": 0.18562817573547363,
+      "log": "r1_ncu.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R1_NCU_RAW_RECOMPUTED.json",
+          "exists": true,
+          "sha256": "c75956348a2b4d8a32651543e689ecc3b5c58210a81a1f4151be337ef7b24cee",
+          "review_status": {
+            "status": "RAW_COUNTER_CHECKS_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r3_ncu",
+      "returncode": 0,
+      "elapsed_s": 0.11248564720153809,
+      "log": "r3_ncu.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R3_ALL_NCU_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "54b3e17ce362beca2179a011bfe6973950cba2226a488dfe09a28946ae60bb43",
+          "review_status": {
+            "status": "LEAD_EIGHT_CONFIG_DYNAMIC_COUNT_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r4_static",
+      "returncode": 0,
+      "elapsed_s": 0.08507823944091797,
+      "log": "r4_static.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R4_STATIC_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "aa064cb4d0537d988439f2d52b6287bd4f5fc4f60ec5ca19badcf61e74264908",
+          "review_status": {
+            "status": "LEAD_CPU_STATIC_PASS_PENDING_RUNTIME_METADATA",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r4_ncu_both",
+      "returncode": 0,
+      "elapsed_s": 0.10910296440124512,
+      "log": "r4_ncu_both.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R4_BOTH_NCU_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "da65218fcddadebd77c3912c179d67649e48a6fd1dc70ccb2f85138751e4ae91",
+          "review_status": {
+            "status": "LEAD_SOURCE_HW_COUNTS_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r4_ncu_control",
+      "returncode": 0,
+      "elapsed_s": 0.11433148384094238,
+      "log": "r4_ncu_control.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R4_CONTROL_NCU_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "8060b2fd987bfffd8baa5d0cf3425d0481ece0e04bd97e014267137ee7deb9ae",
+          "review_status": {
+            "status": "LEAD_SOURCE_HW_COUNTS_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r4_ncu_shader_only",
+      "returncode": 0,
+      "elapsed_s": 0.11760473251342773,
+      "log": "r4_ncu_shader_only.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R4_SHADER_ONLY_NCU_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "b8c9b44800a014dbcf1c1a4b798b7257cb46ac1cf77835e1103c4892470e45b5",
+          "review_status": {
+            "status": "LEAD_SOURCE_HW_COUNTS_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r4_ncu_tc_only",
+      "returncode": 0,
+      "elapsed_s": 0.09419035911560059,
+      "log": "r4_ncu_tc_only.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R4_TC_ONLY_NCU_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "e14b3c92eca15f49a5b43b9d6b6add722d2a72a8a874dd348c6348f0e4b535c6",
+          "review_status": {
+            "status": "LEAD_SOURCE_HW_COUNTS_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r6_bridge",
+      "returncode": 0,
+      "elapsed_s": 0.15984129905700684,
+      "log": "r6_bridge.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R6_BRIDGE_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "326e1fff0fe2a372deffaa473e155f21e14b7adc236275c18e91c6d623f9db26",
+          "review_status": {
+            "status": "LEAD_ORIGINAL_REQUEST_BRIDGE_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "all_source_stg",
+      "returncode": 0,
+      "elapsed_s": 0.13369011878967285,
+      "log": "all_source_stg.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/ALL_SOURCE_AND_STG_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "08b17cea8e888ca5f981d5fe280fb2870710d9001fe1c9a2d1eb8edb55b5f40c",
+          "review_status": {
+            "status": "LEAD_ALL_SOURCE_AND_FIXED_STG_COUNTS_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r5_ncu",
+      "returncode": 0,
+      "elapsed_s": 0.10628581047058105,
+      "log": "r5_ncu.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R5_NCU_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "39bf167b7ac475d9645c41dd0576be502770fbd0ed1652728cd8df54cfccf278",
+          "review_status": {
+            "status": "LEAD_R5_OPERAND_SOURCE_COUNTS_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r7_native_static",
+      "returncode": 0,
+      "elapsed_s": 0.26286935806274414,
+      "log": "r7_native_static.log",
+      "note": "",
+      "outputs": []
+    },
+    {
+      "id": "r7_static",
+      "returncode": 0,
+      "elapsed_s": 0.2751607894897461,
+      "log": "r7_static.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R7_STATIC_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "d80600837ca15a4fe4048f896e3a7043bf2aaff72de813b8bc244e3921538b4d",
+          "review_status": {
+            "status": "LEAD_R7_STATIC_PASS_PENDING_ACTUAL_METADATA_AND_SCREEN",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "nv_feedback",
+      "returncode": 0,
+      "elapsed_s": 0.15265631675720215,
+      "log": "nv_feedback.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "01_native_audit/nv_feedback_refinement/NV_PUBLICATION_COMPLETION_PROOF.json",
+          "exists": true,
+          "sha256": "82a0819675fa27c8123b4241d4bf4618e11802cf9aee24651e4105e8fd35bfe5",
+          "review_status": {
+            "status": "CPU_NV_PUBLICATION_WINDOW_PROOF_PENDING_LEAD_REVIEW",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "nv_feedback_lead",
+      "returncode": 0,
+      "elapsed_s": 0.12478303909301758,
+      "log": "nv_feedback_lead.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/NV_FEEDBACK_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "68c78fe3eb0988d91a311f302e1c7010fc6367f0308a658db11c6f00f0a320eb",
+          "review_status": {
+            "status": "LEAD_NV_PUBLICATION_DEPENDENCY_AND_WORK_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r8_native_static",
+      "returncode": 0,
+      "elapsed_s": 0.2761504650115967,
+      "log": "r8_native_static.log",
+      "note": "",
+      "outputs": []
+    },
+    {
+      "id": "r8_static_lead",
+      "returncode": 0,
+      "elapsed_s": 0.27417421340942383,
+      "log": "r8_static_lead.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R8_STATIC_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "f70d6aed222559fab5aa80582279c5324d15000be99ca0de6d7f7a7eea707c60",
+          "review_status": {
+            "status": "LEAD_R8_STATIC_PASS_PENDING_ACTUAL_METADATA",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r8_screen",
+      "returncode": 0,
+      "elapsed_s": 0.3214130401611328,
+      "log": "r8_screen.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R8_SCREEN_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "ae0e73061817f110337a488030573fac746428ab117f5c6f8d2c85ace93a0fce",
+          "review_status": {
+            "status": "LEAD_R8_FINITE_SCREEN_RAW_RECOMPUTED",
+            "model_enabled": false
+          }
+        },
+        {
+          "path": "03_independent_review/R8_SCREEN_RAW_ENDPOINT_REVIEW.json",
+          "exists": true,
+          "sha256": "c59d20bd8088509389073be61cacbfe7f86258d3b3d5b9aba3ff49099947d0d6",
+          "review_status": {
+            "status": "LEAD_RAW_ENDPOINT_RECOMPUTATION_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r8_screen_topology",
+      "returncode": 0,
+      "elapsed_s": 0.0951688289642334,
+      "log": "r8_screen_topology.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R8_SCREEN_TOPOLOGY_REVIEW.json",
+          "exists": true,
+          "sha256": "92435b8e4bf46966b8e773a51ada3ae75aa2aade98d1b3665d6065852d0fc60e",
+          "review_status": {
+            "status": "LEAD_SAVED_GRAPH_TOPOLOGY_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r7_screen",
+      "returncode": 0,
+      "elapsed_s": 0.4189326763153076,
+      "log": "r7_screen.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R7_SCREEN_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "f61340797f7e3c7adb0e67da403ecbd441ae3425578bab60b11a111cc9057962",
+          "review_status": {
+            "status": "LEAD_R7_FINITE_SCREEN_RECOMPUTED",
+            "model_enabled": false
+          }
+        },
+        {
+          "path": "03_independent_review/R7_SCREEN_RAW_ENDPOINT_REVIEW.json",
+          "exists": true,
+          "sha256": "f4a0233e1819bb109a6ad43950b7de3e2748251a511ecb802d43ce016d1954e3",
+          "review_status": {
+            "status": "LEAD_RAW_ENDPOINT_RECOMPUTATION_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r7_screen_topology",
+      "returncode": 0,
+      "elapsed_s": 0.08729982376098633,
+      "log": "r7_screen_topology.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R7_SCREEN_TOPOLOGY_REVIEW.json",
+          "exists": true,
+          "sha256": "1bb0de74ae303817af780965fbb6a9551628171510aa03f75867e1bccd1ad77d",
+          "review_status": {
+            "status": "LEAD_SAVED_GRAPH_TOPOLOGY_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r1_t0",
+      "returncode": 0,
+      "elapsed_s": 0.9187045097351074,
+      "log": "r1_t0.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R1_FORMAL_S01_T0_RAW_RECOMPUTED.json",
+          "exists": true,
+          "sha256": "a2bf26f5758f91300af674121d98d6492b126aa9b17003d3c6336a3ceea3c6a2",
+          "review_status": {
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r1_t1",
+      "returncode": 0,
+      "elapsed_s": 0.8931643962860107,
+      "log": "r1_t1.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R1_FORMAL_S01_T1_RAW_RECOMPUTED.json",
+          "exists": true,
+          "sha256": "78bd9816d22543cfe2fe9734c09d693ce9d8bbcaffcda5258528cfd56458c364",
+          "review_status": {
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r1_t2",
+      "returncode": 0,
+      "elapsed_s": 0.8981518745422363,
+      "log": "r1_t2.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R1_FORMAL_S01_T2_RAW_RECOMPUTED.json",
+          "exists": true,
+          "sha256": "61f1359037aec95533462b05aa118b95b94da089de2f5d6fe27aef73916173cc",
+          "review_status": {
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r2_s8192_t0",
+      "returncode": 0,
+      "elapsed_s": 0.30245065689086914,
+      "log": "r2_s8192_t0.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R2_FORMAL_S8192_T0_RECOMPUTED.json",
+          "exists": true,
+          "sha256": "b72cc56a6ebc94f5097c089bea438e61fec37bbe1de5bbff5eda6933a8eef30d",
+          "review_status": {
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r2_s8192_t1",
+      "returncode": 0,
+      "elapsed_s": 0.29767823219299316,
+      "log": "r2_s8192_t1.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R2_FORMAL_S8192_T1_RECOMPUTED.json",
+          "exists": true,
+          "sha256": "a071092504b2758eac7b0bbb3f78cf773b840960b93c0ed1b4b9ebfe7497aece",
+          "review_status": {
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r2_s8192_t2",
+      "returncode": 0,
+      "elapsed_s": 0.30481743812561035,
+      "log": "r2_s8192_t2.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R2_FORMAL_S8192_T2_RECOMPUTED.json",
+          "exists": true,
+          "sha256": "53ec6e38e3c4f768f59902c27486c3d5a7f4ce5d8fa3457796345554a8cf7fed",
+          "review_status": {
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r2_s16384_t0",
+      "returncode": 0,
+      "elapsed_s": 0.30844879150390625,
+      "log": "r2_s16384_t0.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R2_FORMAL_S16384_T0_RECOMPUTED.json",
+          "exists": true,
+          "sha256": "5bac30efef10253a6e0e32f04dbc63f3bd746a5508462dc16c55641f26f3167e",
+          "review_status": {
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r2_s16384_t1",
+      "returncode": 0,
+      "elapsed_s": 0.3097233772277832,
+      "log": "r2_s16384_t1.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R2_FORMAL_S16384_T1_RECOMPUTED.json",
+          "exists": true,
+          "sha256": "ddc6679616223774e62f1182ecc09b3d86a3d23c57c5412d5252646942f3b516",
+          "review_status": {
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r2_s16384_t2",
+      "returncode": 0,
+      "elapsed_s": 0.329242467880249,
+      "log": "r2_s16384_t2.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R2_FORMAL_S16384_T2_RECOMPUTED.json",
+          "exists": true,
+          "sha256": "2e0c354dc3a28e980a8e9575c45c9c958843f5f12a9aa5f3af3543d553000d29",
+          "review_status": {
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r3_formal",
+      "returncode": 0,
+      "elapsed_s": 2.0860140323638916,
+      "log": "r3_formal.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R3_V2_FORMAL01_INDEPENDENT_REVIEW_RECOMPUTED.json",
+          "exists": true,
+          "sha256": "735b0257bcf1f503a0ef699fd538b775071e86fe0fb28fd47ccbf68ff9becc74",
+          "review_status": {
+            "all_pass": true,
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r4_direct_formal",
+      "returncode": 0,
+      "elapsed_s": 1.6141440868377686,
+      "log": "r4_direct_formal.log",
+      "note": "Reproduces the preserved direct-Event gate failure; failure of the measured rate gate is an expected result, not a failed CPU audit.",
+      "outputs": [
+        {
+          "path": "03_independent_review/R4_DIRECT_FORMAL01_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "06819d35a8b8703df658158944f4a3941cb44ee2264e0ce19377991bca37f16e",
+          "review_status": {
+            "status": "LEAD_FORMAL_RECOMPUTED",
+            "all_records_pass": false,
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r4_graph_formal",
+      "returncode": 0,
+      "elapsed_s": 1.5710458755493164,
+      "log": "r4_graph_formal.log",
+      "note": "Reproduces the second cohort joint-rate failure, including CONTROL diagnostics; no stable joint rate is admitted.",
+      "outputs": [
+        {
+          "path": "03_independent_review/R4_GRAPH_FORMAL01_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "92d2c52a1d3a4a7a472698a5819f2ee07b845071da3441ffe58a1dc0d884c6a1",
+          "review_status": {
+            "status": "LEAD_FORMAL_RECOMPUTED",
+            "all_records_pass": false,
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r4_graph_topology",
+      "returncode": 0,
+      "elapsed_s": 0.13386011123657227,
+      "log": "r4_graph_topology.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R4_GRAPH_FORMAL_TOPOLOGY_REVIEW.json",
+          "exists": true,
+          "sha256": "837ea07ff8f94f8b3c320d80f3bea7fd384b8c319de7c6111e01b32527487b8b",
+          "review_status": {
+            "status": "LEAD_SAVED_GRAPH_TOPOLOGY_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r5_static_lead",
+      "returncode": 0,
+      "elapsed_s": 0.2507004737854004,
+      "log": "r5_static_lead.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R5_STATIC_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "7567d29676e1cb3a6cd2a243be45083822a41bccd690bbef31b79f34aeef426c",
+          "review_status": {
+            "status": "LEAD_STATIC_PASS_PENDING_ACTUAL_METADATA_AND_SCREEN",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r5_formal_initial",
+      "returncode": 0,
+      "elapsed_s": 1.5891356468200684,
+      "log": "r5_formal_initial.log",
+      "note": "Initial R5 raw Event tail gate fails; passing single-domain values stay descriptive, all joint conditional rates null.",
+      "outputs": [
+        {
+          "path": "03_independent_review/R5_FORMAL01_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "f289d8bf771045b8ae4766328e4e9ed1d855b9fa3ab568f934e6e1222fe191dc",
+          "review_status": {
+            "status": "LEAD_R5_FORMAL_RAW_RECOMPUTED",
+            "all_primary_records_pass": false,
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r5_formal_topology",
+      "returncode": 0,
+      "elapsed_s": 0.13303256034851074,
+      "log": "r5_formal_topology.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R5_FORMAL01_TOPOLOGY_REVIEW.json",
+          "exists": true,
+          "sha256": "680e65f8b6061b299d2e4f5f1f40c08040cc0b165b369ffca6d16da9fa766b1c",
+          "review_status": {
+            "status": "LEAD_SAVED_GRAPH_TOPOLOGY_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r5_formal_extension",
+      "returncode": 0,
+      "elapsed_s": 1.7475318908691406,
+      "log": "r5_formal_extension.log",
+      "note": "Unique full eight-point new cohort, never spliced into earlier processes; joint-rate failure retained and all admitted rate fields null.",
+      "outputs": [
+        {
+          "path": "03_independent_review/R5_EXT16384_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "d9e231f6dce7a625e0ff097d5aea749fdd87052a1e3219b1ae6e6c8210cd0138",
+          "review_status": {
+            "status": "LEAD_R5_FORMAL_RAW_RECOMPUTED",
+            "all_primary_records_pass": false,
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r5_extension_topology",
+      "returncode": 0,
+      "elapsed_s": 0.15414834022521973,
+      "log": "r5_extension_topology.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R5_EXT16384_TOPOLOGY_REVIEW.json",
+          "exists": true,
+          "sha256": "6f1e0217c176229e61e161bd7609da765732eaf659326d069480b5a626d8c1b5",
+          "review_status": {
+            "status": "LEAD_SAVED_GRAPH_TOPOLOGY_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "invocation_ledger",
+      "returncode": 0,
+      "elapsed_s": 0.17115068435668945,
+      "log": "invocation_ledger.log",
+      "note": "Full evidence mode: copies all97 referenced evidence items and all19 valid NCU reports,15,725,570 bytes; immutable R7 candidate ledger.",
+      "outputs": [
+        {
+          "path": "03_independent_review/INVOCATION_LEDGER_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "51b022330f19c674f2bf127bf66177329917d86e8374c97de860ccb3f6b6e67e",
+          "review_status": {
+            "status": "LEAD_FROZEN_LEDGER_FILE_COMMAND_AUDIT_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "candidate_ledger_r8_01",
+      "returncode": 0,
+      "elapsed_s": 0.26493144035339355,
+      "log": "candidate_ledger_r8_01.log",
+      "note": "Full binaryNCU evidence, immutable candidate; the finalR9 record includes21reports/23attempts.",
+      "outputs": [
+        {
+          "path": "03_independent_review/PORTABLE_CANDIDATE_LEDGER_R8_01.json",
+          "exists": true,
+          "sha256": "63ad2bbcb69cc99f7f68f76f29c668dd044253daba7970a2858d2bc18c3c8341",
+          "review_status": {
+            "status": "PORTABLE_IMMUTABLE_LEDGER_HASH_COMMAND_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "candidate_ledger_final_r9_01",
+      "returncode": 0,
+      "elapsed_s": 0.26342320442199707,
+      "log": "candidate_ledger_final_r9_01.log",
+      "note": "Full binaryNCU evidence, immutable candidate; the finalR9 record includes21reports/23attempts.",
+      "outputs": [
+        {
+          "path": "03_independent_review/PORTABLE_CANDIDATE_LEDGER_FINAL_R9_01.json",
+          "exists": true,
+          "sha256": "19ebd537738e9eec367a83c77029c48b6190da6bf1225c4408040b8ca2e8a6eb",
+          "review_status": {
+            "status": "PORTABLE_IMMUTABLE_LEDGER_HASH_COMMAND_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r9_scope",
+      "returncode": 0,
+      "elapsed_s": 0.08654403686523438,
+      "log": "r9_scope.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "04_report_build/R9_SCOPE_REPORT_INPUT.json",
+          "exists": true,
+          "sha256": "7a7079a98757b02009982a360c3b6617a355b4652187c75b8704387c13e662f5",
+          "review_status": {
+            "status": "CPU_TWO_R9_COUNTER_SCOPE_RECOMPUTED",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "final_invocation_ledger_lead",
+      "returncode": 0,
+      "elapsed_s": 0.1686418056488037,
+      "log": "final_invocation_ledger_lead.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/FINAL_INVOCATION_LEDGER_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "02be3f18f48aa59fc7ed3db886a7cc3bb8afc0ec23aacf75f4268636281a07be",
+          "review_status": {
+            "status": "LEAD_FROZEN_LEDGER_FILE_COMMAND_AUDIT_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "r9_counter_scope_lead",
+      "returncode": 0,
+      "elapsed_s": 0.10082721710205078,
+      "log": "r9_counter_scope_lead.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/R9_COUNTER_SCOPE_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "ae5aa797ac9cbb01f2f9a69f267340c0f4cea9ebf8704202c7a3b954cbab2d5b",
+          "review_status": {
+            "status": "LEAD_R9_RAW_HISTORY_AND_FINAL_STATE_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "full_event_context",
+      "returncode": 0,
+      "elapsed_s": 0.11968255043029785,
+      "log": "full_event_context.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "04_report_build/FULL_EVENT_CONTEXT_REPORT_INPUT.json",
+          "exists": true,
+          "sha256": "67ebacd317013cc3ce8da47e9b7f39a9ffa09c3fb41ed2fb01594a2cc149e531",
+          "review_status": {
+            "status": "CPU_RAW_COMPLETE_EVENT_CONTEXT_PENDING_LEAD_REVIEW",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "selected_service_arithmetic",
+      "returncode": 0,
+      "elapsed_s": 0.09880757331848145,
+      "log": "selected_service_arithmetic.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "04_report_build/SELECTED_NATIVE_SERVICE_ARITHMETIC.json",
+          "exists": true,
+          "sha256": "3b9c839a8bc65a8250083d6f575a50a0a81dc1260f28a365c9c512109d878829",
+          "review_status": {
+            "status": "SELECTED_NATIVE_ARITHMETIC_WITH_EXPLICIT_RATE_TYPES",
+            "model_enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "final_context_tables_lead",
+      "returncode": 0,
+      "elapsed_s": 0.12644171714782715,
+      "log": "final_context_tables_lead.log",
+      "note": "",
+      "outputs": [
+        {
+          "path": "03_independent_review/FINAL_CONTEXT_TABLES_INDEPENDENT_REVIEW.json",
+          "exists": true,
+          "sha256": "9988e4b17b0e1bf450e124d023014e62dbe3cdba1878ae91417908b25a96c12f",
+          "review_status": {
+            "status": "LEAD_FINAL_CONTEXT_RAW_CHECK_PASS",
+            "model_enabled": false
+          }
+        }
+      ]
+    }
+  ],
+  "copied_input_files": 7735,
+  "copied_input_bytes": 492837244,
+  "source_package_modified_by_entry": false,
+  "child_write_guard": "Only isolated output allowed",
+  "GPU_modules_and_tools_forbidden": true,
+  "PASS_means": "CPU scripts completed and raw invariants held; preserved measurement-rate failures are not changed into passes",
+  "pending_interfaces": [],
+  "model_enabled": false,
+  "full_prediction": null
+}

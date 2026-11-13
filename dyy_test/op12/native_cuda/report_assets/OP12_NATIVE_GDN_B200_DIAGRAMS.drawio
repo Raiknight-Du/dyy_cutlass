@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-08-29T00:00:00.000Z" agent="Codex" version="24.7.17">
+  <diagram id="native-architecture" name="图1-原生CUDA执行路径">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title1" value="op12 原生 CUDA GDN Prefill：功能等价与执行路径" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=28;fontStyle=1;fontColor=#153B66;" vertex="1" parent="1"><mxGeometry x="60" y="30" width="900" height="50" as="geometry"/></mxCell>
+        <mxCell id="input" value="TND packed-varlen&lt;br&gt;Q/K/V: FP16 或 BF16&lt;br&gt;g/beta: FP32, D=128&lt;br&gt;initial/final state" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FB;strokeColor=#3478C0;strokeWidth=2;fontSize=18;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="60" y="150" width="260" height="150" as="geometry"/></mxCell>
+        <mxCell id="dispatch" value="use_cp&lt;br&gt;False / True / auto" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3E5;strokeColor=#D9852B;strokeWidth=2;fontSize=18;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="390" y="155" width="220" height="140" as="geometry"/></mxCell>
+        <mxCell id="recurrent" value="非 CP：cuda_recurrent_v0（1 kernel）&lt;br&gt;&lt;br&gt;每个 sequence/output-head 一个 256-thread CTA&lt;br&gt;FP32 [K,V] state 常驻 68.1 KiB SMEM&lt;br&gt;逐 token 严格递推" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FB;strokeColor=#3478C0;strokeWidth=2;fontSize=17;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="710" y="120" width="570" height="210" as="geometry"/></mxCell>
+        <mxCell id="affine" value="① affine M/N&lt;br&gt;partition-local&lt;br&gt;内部 [K,V]：Sout = M·Sin + N&lt;br&gt;主配置 128 CTA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF6EF;strokeColor=#3E8E61;strokeWidth=2;fontSize=17;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="100" y="450" width="330" height="170" as="geometry"/></mxCell>
+        <mxCell id="fixup" value="② prefix fixup&lt;br&gt;顺序修正 partition 边界 state&lt;br&gt;仅 16 CTA&lt;br&gt;FP32 M·state + N" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E5;strokeColor=#D9852B;strokeWidth=2;fontSize=17;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="520" y="450" width="350" height="170" as="geometry"/></mxCell>
+        <mxCell id="final" value="③ final prefill&lt;br&gt;从正确边界 state 独立递推&lt;br&gt;主配置 128 CTA&lt;br&gt;写 O 与 final state" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF6EF;strokeColor=#3E8E61;strokeWidth=2;fontSize=17;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="960" y="450" width="330" height="170" as="geometry"/></mxCell>
+        <mxCell id="note1" value="功能等价已验证；性能核心仍为标量 FP32 FFMA，尚未复现 FlashInfer 的 64-token tcgen05 七组 GEMM。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F6F7F9;strokeColor=#D9E1E8;fontSize=16;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="210" y="710" width="970" height="80" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#153B66;strokeWidth=2;" edge="1" parent="1" source="input" target="dispatch"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#153B66;strokeWidth=2;" edge="1" parent="1" source="dispatch" target="recurrent"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#153B66;strokeWidth=2;" edge="1" parent="1" source="dispatch" target="affine"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#153B66;strokeWidth=2;" edge="1" parent="1" source="affine" target="fixup"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#153B66;strokeWidth=2;" edge="1" parent="1" source="fixup" target="final"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="performance" name="图2-端到端性能">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="p0"/>
+        <mxCell id="p1" parent="p0"/>
+        <mxCell id="pt" value="B200 端到端延迟（B1/H16/D128/FP16）" style="text;html=1;strokeColor=none;fillColor=none;fontSize=28;fontStyle=1;fontColor=#153B66;" vertex="1" parent="p1"><mxGeometry x="60" y="30" width="900" height="50" as="geometry"/></mxCell>
+        <mxCell id="ps8192" value="S=8192&lt;br&gt;&lt;br&gt;Native non-CP 47.532 ms&lt;br&gt;Native CP 13.751 ms&lt;br&gt;FlashInfer non-CP 0.253696 ms&lt;br&gt;FlashInfer CP 0.144944 ms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FB;strokeColor=#3478C0;strokeWidth=2;fontSize=18;" vertex="1" parent="p1"><mxGeometry x="80" y="150" width="360" height="260" as="geometry"/></mxCell>
+        <mxCell id="ps16384" value="S=16384&lt;br&gt;&lt;br&gt;Native non-CP 94.407 ms&lt;br&gt;Native CP 25.244 ms&lt;br&gt;FlashInfer non-CP 0.483072 ms&lt;br&gt;FlashInfer CP 0.215648 ms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF6EF;strokeColor=#3E8E61;strokeWidth=2;fontSize=18;" vertex="1" parent="p1"><mxGeometry x="520" y="150" width="360" height="260" as="geometry"/></mxCell>
+        <mxCell id="ps32768" value="S=32768&lt;br&gt;&lt;br&gt;Native non-CP 188.744 ms&lt;br&gt;Native CP 48.264 ms&lt;br&gt;FlashInfer non-CP 0.941888 ms&lt;br&gt;FlashInfer CP 0.352016 ms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E5;strokeColor=#D9852B;strokeWidth=2;fontSize=18;" vertex="1" parent="p1"><mxGeometry x="960" y="150" width="360" height="260" as="geometry"/></mxCell>
+        <mxCell id="pnote" value="Native CP 相对 Native non-CP：3.46× / 3.74× / 3.91×。差距根因不是接口语义，而是 tensor-core blockwise 算法与 warp-specialized pipeline 尚未移植。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F6F7F9;strokeColor=#D9E1E8;fontSize=19;fontStyle=1;" vertex="1" parent="p1"><mxGeometry x="210" y="540" width="980" height="130" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ncu-evidence" name="图3-NCU证据链">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="n0"/>
+        <mxCell id="n1" parent="n0"/>
+        <mxCell id="nt" value="原生 CP 三阶段 NCU 证据链" style="text;html=1;strokeColor=none;fillColor=none;fontSize=28;fontStyle=1;fontColor=#153B66;" vertex="1" parent="n1"><mxGeometry x="60" y="30" width="900" height="50" as="geometry"/></mxCell>
+        <mxCell id="na" value="Affine M/N&lt;br&gt;主 grid 128 CTA&lt;br&gt;约 43.3% SM throughput&lt;br&gt;0% Tensor pipe&lt;br&gt;133.12 KiB SMEM/CTA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FB;strokeColor=#3478C0;strokeWidth=2;fontSize=19;fontStyle=1;" vertex="1" parent="n1"><mxGeometry x="90" y="180" width="340" height="250" as="geometry"/></mxCell>
+        <mxCell id="nf" value="Fixup&lt;br&gt;仅 16 CTA&lt;br&gt;约 2.54 ms，随 S 基本不变&lt;br&gt;约 85.2% no-eligible&lt;br&gt;约 2.47% SM throughput" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E5;strokeColor=#D9852B;strokeWidth=2;fontSize=19;fontStyle=1;" vertex="1" parent="n1"><mxGeometry x="530" y="180" width="340" height="250" as="geometry"/></mxCell>
+        <mxCell id="np" value="Final prefill&lt;br&gt;主 grid 128 CTA&lt;br&gt;约 35.9% SM throughput&lt;br&gt;0% Tensor pipe&lt;br&gt;68.10 KiB SMEM/CTA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF6EF;strokeColor=#3E8E61;strokeWidth=2;fontSize=19;fontStyle=1;" vertex="1" parent="n1"><mxGeometry x="970" y="180" width="340" height="250" as="geometry"/></mxCell>
+        <mxCell id="nn" value="SASS：FFMA / LDS / STS / BAR；没有 HMMA、UTCHMMA 或 tcgen05。CP 提高了全卡并行度，但活跃 SM 内仍受标量计算、shared-memory 访问与同步依赖限制。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F6F7F9;strokeColor=#D9E1E8;fontSize=19;fontStyle=1;" vertex="1" parent="n1"><mxGeometry x="220" y="560" width="960" height="150" as="geometry"/></mxCell>
+        <mxCell id="ne1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#153B66;strokeWidth=2;" edge="1" parent="n1" source="na" target="nf"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ne2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#153B66;strokeWidth=2;" edge="1" parent="n1" source="nf" target="np"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,72 @@
+{
+  "shape": 16384,
+  "chunk": 2048,
+  "sample": 900,
+  "evict_factor": 4,
+  "l2_bytes": 132644864,
+  "evict_bytes": 530579456,
+  "graph": {
+    "kernel_count": 4,
+    "stages": [
+      "CPDeltaRuleTPrecomputeSm100",
+      "CPDeltaRuleMNPrecomputeUtcmma1Sm100",
+      "CPDeltaRuleFixupUtcmmaSm100",
+      "CPDeltaRulePrefillTcgen05Sm100"
+    ],
+    "nodes": [
+      "graph_1_node_0",
+      "graph_1_node_1",
+      "graph_1_node_2",
+      "graph_1_node_3"
+    ],
+    "edges": [
+      [
+        "graph_1_node_0",
+        "graph_1_node_1"
+      ],
+      [
+        "graph_1_node_1",
+        "graph_1_node_2"
+      ],
+      [
+        "graph_1_node_2",
+        "graph_1_node_3"
+      ]
+    ],
+    "sha256": "274eca3420dda5f602067a3e651253d9bf0f3957954cf8d6b8911ad53596a2e0"
+  },
+  "post_evict_idle_ms": 0,
+  "tail_mode": "after_cp",
+  "source_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+  "frozen_input_file": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/frozen_inputs/S16384/inputs.pt",
+  "frozen_input_sha256": "133b9d4479b72272f0d1d7f3a64cb7a9070a3522b92915231bb5e0d76ee2d9ee",
+  "harness_sha256": "1c2c44d5fe3498519920d91f861f1c837a59ea13a9930eb42b84d025b92f5cd4",
+  "torch": "2.11.0+cu130",
+  "cuda_runtime": "13.0",
+  "gpu_name": "NVIDIA B200",
+  "gpu_sm_count": 148,
+  "input_dtypes": {
+    "qkv_output": "float16",
+    "gate_beta_state": "float32",
+    "cu_seqlens": "int64"
+  },
+  "public_entry": "flashinfer.gdn_prefill.chunk_gated_delta_rule",
+  "use_cp": true,
+  "output_final_state": true,
+  "use_qk_l2norm_in_kernel": false,
+  "scale": 0.08838834764831843,
+  "checks": {
+    "output_exact": true,
+    "state_exact": true,
+    "output_finite": true,
+    "state_finite": true,
+    "initial_unchanged": true,
+    "eviction_checksum_finite": true,
+    "tail_checksum_finite": true
+  },
+  "output_hashes": {
+    "output_sha256": "43f1914f10cdb58581c3bfbc7ee97c3804637e7f1f7a2a8a4fe44b5c446b36a1",
+    "final_state_sha256": "8991e53372d1bf5731ec7eb802e0ad309de0328f31b535220eb8276a111cef5e"
+  }
+}

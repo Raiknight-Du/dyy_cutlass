@@ -1,0 +1,12 @@
+{
+  "status": "CPU_ONLY_PENDING_LEAD_GRAPH_SCREEN",
+  "original_host_SHA256": "fd5e01d3f5baab05924df289d20361f24d295ddac479db5609c4eb492b4477ec",
+  "new_host_SHA256": "82b11ce02d9be1a843a0e0d24c38b81e4b81df3e4cef7e228e8e54a2f2c438cf",
+  "graph_helper_SHA256": "3bf5c3cade83fb08ba1b109b4674fe65905cf933f9e5cd47a97a88615bfc627d",
+  "kernel_source_changed": false,
+  "whole_CUBIN_expected": "5ebdc94be5cda307ee64cb975209e11ed68ef25a420cfc3598b00c15368cc066",
+  "GPU_executed": false,
+  "model_enabled": false,
+  "prior_reviewed_host_SHA256": "2ae77fbc9d2e7369da24b87341255a55f8b894b41915821d91c5fa9fd2942890",
+  "bookkeeping_only_update": "Immediately mark successful direct lazy invocation in metadata before graph API audit, so a later API failure cannot falsely say helper_invoked=false"
+}

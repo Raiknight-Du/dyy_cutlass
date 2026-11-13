@@ -1,0 +1,6 @@
+{"event": "admission", "quiet": 1, "state": {"UTC": "2026-10-26T21:17:05.617624+00:00", "gpu": "0, 120, 32, 188.63", "apps": ""}}
+{"event": "admission", "quiet": 2, "state": {"UTC": "2026-10-26T21:17:35.672722+00:00", "gpu": "0, 120, 32, 188.62", "apps": ""}}
+{"event": "admission", "quiet": 3, "state": {"UTC": "2026-10-26T21:18:05.707764+00:00", "gpu": "0, 120, 32, 188.61", "apps": ""}}
+{"event": "start", "cmd": ["/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python", "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/run_alu_mix_v2.py", "--out", "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/k4_loop_cycle_verify_20261027_5h/alu_mix_v2_screen/t0_m-1_p-1", "--trial", "0", "--points", "128", "--samples", "1"], "state": {"UTC": "2026-10-26T21:18:05.740478+00:00", "gpu": "0, 120, 32, 188.63", "apps": ""}}
+{"event": "finish", "tag": "t0_m-1_p-1", "returncode": 0, "state": {"UTC": "2026-10-26T21:18:07.088160+00:00", "gpu": "0, 1965, 33, 215.08", "apps": ""}}
+{"event": "COMPLETE"}

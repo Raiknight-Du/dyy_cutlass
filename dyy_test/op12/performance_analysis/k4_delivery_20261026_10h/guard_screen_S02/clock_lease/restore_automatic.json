@@ -1,0 +1,14 @@
+{
+  "command": [
+    "sudo",
+    "-n",
+    "nvidia-smi",
+    "-i",
+    "0",
+    "-rgc"
+  ],
+  "epoch": 1792958430.230765,
+  "returncode": 0,
+  "stdout": "All done.\n",
+  "stderr": ""
+}

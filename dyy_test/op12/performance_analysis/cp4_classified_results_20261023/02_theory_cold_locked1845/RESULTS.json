@@ -1,0 +1,108 @@
+{
+  "category": "Theory validation: cold K1, lock request 1845 MHz",
+  "definition": "cold K1, complete original CP K1-K4, P8",
+  "Event_scope": "independent no-profiler CP only; excludes eviction",
+  "GPC_scope": "separate NSYS process, complete in-kernel sampling windows; not exact per-SM cycle integral",
+  "aggregate": "median of three process medians; frequency and timing never multiplied",
+  "results": [
+    {
+      "S": 8192,
+      "C": 1024,
+      "P": 8,
+      "clock": "locked1845",
+      "cache": "cold_before_K1_only",
+      "independent_CP_Event_median3_us": 153.53600680828094,
+      "native_process_medians_us": [
+        153.48800271749496,
+        153.53600680828094,
+        153.60000729560852
+      ],
+      "profiled_CP_Event_median3_us": 151.48800611495972,
+      "kernel_profiled": {
+        "K1": {
+          "NSYS_HW_median3_us": 21.696,
+          "GPC_median3_MHz": 1700.006176978678
+        },
+        "K2": {
+          "NSYS_HW_median3_us": 38.272,
+          "GPC_median3_MHz": 1681.446932373989
+        },
+        "K3": {
+          "NSYS_HW_median3_us": 27.679,
+          "GPC_median3_MHz": 1747.5020581442673
+        },
+        "K4": {
+          "NSYS_HW_median3_us": 58.7355,
+          "GPC_median3_MHz": 1686.2019188465042
+        }
+      },
+      "model_enabled": false
+    },
+    {
+      "S": 16384,
+      "C": 2048,
+      "P": 8,
+      "clock": "locked1845",
+      "cache": "cold_before_K1_only",
+      "independent_CP_Event_median3_us": 228.33599895238876,
+      "native_process_medians_us": [
+        228.33599895238876,
+        227.35999524593353,
+        229.37600314617157
+      ],
+      "profiled_CP_Event_median3_us": 227.02399641275406,
+      "kernel_profiled": {
+        "K1": {
+          "NSYS_HW_median3_us": 39.04,
+          "GPC_median3_MHz": 1702.5400637634452
+        },
+        "K2": {
+          "NSYS_HW_median3_us": 65.408,
+          "GPC_median3_MHz": 1677.0980456992793
+        },
+        "K3": {
+          "NSYS_HW_median3_us": 27.648,
+          "GPC_median3_MHz": 1746.9224429912974
+        },
+        "K4": {
+          "NSYS_HW_median3_us": 89.535,
+          "GPC_median3_MHz": 1670.6589783997015
+        }
+      },
+      "model_enabled": false
+    },
+    {
+      "S": 32768,
+      "C": 4096,
+      "P": 8,
+      "clock": "locked1845",
+      "cache": "cold_before_K1_only",
+      "independent_CP_Event_median3_us": 374.783992767334,
+      "native_process_medians_us": [
+        374.783992767334,
+        374.783992767334,
+        374.783992767334
+      ],
+      "profiled_CP_Event_median3_us": 374.6879994869232,
+      "kernel_profiled": {
+        "K1": {
+          "NSYS_HW_median3_us": 72.639,
+          "GPC_median3_MHz": 1716.1950178299285
+        },
+        "K2": {
+          "NSYS_HW_median3_us": 118.719,
+          "GPC_median3_MHz": 1683.7500041522019
+        },
+        "K3": {
+          "NSYS_HW_median3_us": 27.904,
+          "GPC_median3_MHz": 1745.8525520717726
+        },
+        "K4": {
+          "NSYS_HW_median3_us": 150.271,
+          "GPC_median3_MHz": 1668.2856755990083
+        }
+      },
+      "model_enabled": false
+    }
+  ]
+}

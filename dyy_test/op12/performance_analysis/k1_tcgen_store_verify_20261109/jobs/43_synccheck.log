@@ -1,0 +1,5 @@
+========= COMPUTE-SANITIZER
+double free or corruption (out)
+========= Error: process didn't terminate successfully
+========= Target application returned an error
+========= ERROR SUMMARY: 0 errors

@@ -1,0 +1,14 @@
+{
+  "start_UTC": "2026-10-26 18:39:17 UTC",
+  "deadline_UTC": "2026-10-26 23:39:17 UTC",
+  "scope": "FlashInfer e77a4a0d original FP16 K4, B1/H16/D128, S8192/16384/32768, C1024/2048/4096, P8. Steady64-token loop; retain fullCP cache context for target observations.",
+  "acceptance": "signed(model-observed)/observed within [-0.10,+0.10] for samecycle envelope; nativework and NCU counts consistent; no fullstage measured durations as theory weights, no targetresidual constants.",
+  "GPU_authorized": true,
+  "experiments": "At most12 active configurations firstbatch, max24 count-onlyNCU invocations; isolated versus concurrentTC for native sharedinstruction families. Counter slopes and service rates explicitly distinct.",
+  "slope_rate_gate": "If a continuousrate is admitted: >=4 Npoints;20warmup,30samples,3processes; adjacenttail3pointwindow andcrossprocesschanges<1%,R2>=0.99 inEvent andnativecycle. ExtendN onlyto16384, at mostone extension. No relaxedgate.",
+  "GPU_admission": "Three quiet checks>=30seconds apart, noexternalcomputeprocess andlowutilization. Neverterminateothers. Pauseoncompetition. Experiments serialized.",
+  "frequency": "Prioruserpermission for temporary1845MHzSMlock remains; use onlyifneeded, preservememoryandpower, recordrequestedandactual,restoreinitialpolicy.",
+  "model_enabled": false,
+  "effective_model_value": null,
+  "historical_files": "Read-only. Newversionsonly. No upstream edits or formalmodel enabling."
+}

@@ -1,0 +1,8 @@
+{
+  "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+  "local_relative_path": "cp4_event_baseline_freeze_20260929/frozen_baseline.json",
+  "b200_absolute_path": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_event_baseline_freeze_20260929/frozen_baseline.json",
+  "sha256": "f84842965b4aa3245000ded3e91c764344837abe1bee801c8fee154419b6db3f",
+  "scope": "FP16 Q/K/V/O, FP32 state, B1/H16/D128, S8192/16384/32768, P8, real CP four-kernel chain",
+  "policy": "Old measurements remain historical. Future compatible ablations use this frozen baseline; isolated-kernel data are not directly comparable."
+}

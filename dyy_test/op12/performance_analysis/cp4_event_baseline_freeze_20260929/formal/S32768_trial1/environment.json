@@ -1,0 +1,140 @@
+{
+  "baseline_id": "OP12_CP4_EVENT_FP16_B1H16_P8_20260929_V1",
+  "pilot": false,
+  "S": 32768,
+  "C": 4096,
+  "P": 8,
+  "B": 1,
+  "H": 16,
+  "D": 128,
+  "trial": 1,
+  "pid": 262816,
+  "seed": 20293697,
+  "rotating_buffers": 4,
+  "warmup": 20,
+  "samples": 100,
+  "pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "repo": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer",
+  "flashinfer_import": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/__init__.py",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "gpu_name": "NVIDIA B200",
+  "sm_count": 148,
+  "compute_capability": [
+    10,
+    0
+  ],
+  "memory_bytes": 191503007744,
+  "telemetry": [
+    {
+      "phase": "start",
+      "wall_ns": 1790638472054931389,
+      "nvidia_smi": "2026/09/28 23:34:32.065, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1965, 3996, 35, 241.93, 0, 0, 4"
+    },
+    {
+      "phase": "before_P0",
+      "wall_ns": 1790638487937264430,
+      "nvidia_smi": "2026/09/28 23:34:47.947, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1920, 3996, 42, 353.10, 95, 51, 3656"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638487990307859,
+      "nvidia_smi": "2026/09/28 23:34:48.000, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1950, 3996, 42, 387.46, 95, 51, 3656"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638488208966609,
+      "nvidia_smi": "2026/09/28 23:34:48.218, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 44, 562.49, 99, 53, 3656"
+    },
+    {
+      "phase": "before_P1",
+      "wall_ns": 1790638488244690312,
+      "nvidia_smi": "2026/09/28 23:34:48.254, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 45, 586.70, 100, 52, 3656"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638488426143612,
+      "nvidia_smi": "2026/09/28 23:34:48.436, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 45, 719.79, 85, 45, 3656"
+    },
+    {
+      "phase": "before_P2",
+      "wall_ns": 1790638488556417255,
+      "nvidia_smi": "2026/09/28 23:34:48.566, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1875, 3996, 46, 809.23, 100, 52, 3656"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638488643297745,
+      "nvidia_smi": "2026/09/28 23:34:48.652, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1882, 3996, 46, 875.53, 85, 46, 3656"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638488859693744,
+      "nvidia_smi": "2026/09/28 23:34:48.869, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1875, 3996, 47, 978.66, 100, 52, 3656"
+    },
+    {
+      "phase": "before_P3",
+      "wall_ns": 1790638488867564095,
+      "nvidia_smi": "2026/09/28 23:34:48.879, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1875, 3996, 47, 978.66, 100, 52, 3656"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638489074390528,
+      "nvidia_smi": "2026/09/28 23:34:49.083, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1875, 3996, 47, 977.28, 99, 52, 3656"
+    },
+    {
+      "phase": "before_P4",
+      "wall_ns": 1790638489179597903,
+      "nvidia_smi": "2026/09/28 23:34:49.189, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1867, 3996, 47, 973.87, 100, 52, 3656"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638489290943755,
+      "nvidia_smi": "2026/09/28 23:34:49.300, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1867, 3996, 47, 973.38, 86, 45, 3656"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638489508341904,
+      "nvidia_smi": "2026/09/28 23:34:49.517, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 48, 972.77, 100, 52, 3656"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638489724986199,
+      "nvidia_smi": "2026/09/28 23:34:49.734, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1845, 3996, 48, 981.34, 100, 52, 3656"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638489941253189,
+      "nvidia_smi": "2026/09/28 23:34:49.950, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1852, 3996, 48, 988.03, 100, 52, 3656"
+    },
+    {
+      "phase": "measurement",
+      "wall_ns": 1790638490157512887,
+      "nvidia_smi": "2026/09/28 23:34:50.166, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1860, 3996, 48, 985.98, 100, 52, 3656"
+    },
+    {
+      "phase": "end",
+      "wall_ns": 1790638490209768353,
+      "nvidia_smi": "2026/09/28 23:34:50.219, GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf, NVIDIA B200, 580.159.03, 1852, 3996, 48, 996.20, 100, 52, 3656"
+    }
+  ],
+  "runner_sha256": "0d5989f8b6b1c9131f94b5f223d0334da978bd23a62515933f11d036aa9d2bfb",
+  "cu_seqlens_dtype": "torch.int64",
+  "initial_final_state_dtype": "torch.float32",
+  "qkvo_dtype": "torch.float16",
+  "kernel_qk_l2norm": false,
+  "use_cp": true,
+  "scale": 0.08838834764831843,
+  "probe_stride_calls": 4,
+  "calls_per_graph": 400,
+  "nvidia-cutlass-dsl": "4.7.0",
+  "cuda-python": "13.2.0",
+  "flashinfer-python": "0.6.12",
+  "source_sha256": {
+    "flashinfer/gdn_prefill.py": "e4475a2edc830b97d6bc27f13980e2f5951d7d97eb13547f539acf94e2a2132d",
+    "flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py": "8dd9577f8b950f03f69ce22fdaf3b84acf8ef016c70d8d40c6cfdc9f2b2493b5",
+    "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+    "flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py": "7e7c0308004801adf71eff9494fb7a0b0c56fa986cee5c83d244f31f115c3ebc",
+    "flashinfer/gdn_kernels/delta_rule_dsl/delta_rule_cp_sm120.py": "5572cba70eab72426b2567322807be7fd27f3d84af6ac7410f13f715ca6a077b",
+    "flashinfer/gdn_kernels/delta_rule_dsl/varlen_helper.py": "c9cda29f3e9d0105d91326c4c670feace92f988ed9fde61dcea3035fd6e704ab"
+  }
+}

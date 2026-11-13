@@ -1,0 +1,32 @@
+{
+  "actual_CUBIN_SHA256": "3136891d6594d34f3fc4dffc33bb28bfa0fd5370dc3e156f90e1df06d192afca",
+  "native_text_hashes": {
+    ".text.kernel_cutlass_kernel_atom_interleavingAtomInterleavingProbe_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_0": "94722a9604856e3de9b0681da017e7b6d4470abe098b792d536bc91d2a84f931"
+  },
+  "CPU_text_exact_match": true,
+  "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_atom_interleavingAtomInterleavingProbe_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_646416_TV_Layout_A_1641664164_TV_0:\n  REG:56 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1248 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+  "python": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python",
+  "torch": "2.11.0+cu130",
+  "cutlass": "4.7.0",
+  "torch_cuda": "13.0",
+  "device": "_CudaDeviceProperties(name='NVIDIA B200', major=10, minor=0, total_memory=182631MB, multi_processor_count=148, uuid=6abbea3c-b8d3-7f4b-ca76-85d612930fdf, pci_bus_id=5, pci_device_id=0, pci_domain_id=0, L2_cache_size=126MB)",
+  "grid": 128,
+  "threads": 192,
+  "reserved_dynamic_SMEM_B": 225280,
+  "used_struct_SMEM_B": 33792,
+  "TMEM_columns": 512,
+  "admission": {
+    "round": "R8",
+    "approved_modes": [
+      "prepare"
+    ],
+    "source_SHA256": "9e7b8f5aba3a86dfd7ac70903550b3715fb9ef36456b94b565bfbc663426a89a",
+    "max_N": 256,
+    "helper_or_gold_authorized": false,
+    "authorization_source": "Lead explicit R8 actual metadata prepare-only admission 2026-10-26",
+    "model_enabled": false
+  },
+  "helper_invoked": false,
+  "model_enabled": false,
+  "max_CTA_per_SM": 1
+}

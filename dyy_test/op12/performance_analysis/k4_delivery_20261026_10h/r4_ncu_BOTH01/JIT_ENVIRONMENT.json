@@ -1,0 +1,7 @@
+{
+  "before": {
+    "CUDA_DISABLE_PTX_JIT": null,
+    "CUDA_FORCE_PTX_JIT": null
+  },
+  "tool_and_application_policy": "CUDA_DISABLE_PTX_JIT and CUDA_FORCE_PTX_JIT unset; R3 application native-only fatbin; R4 actual metadata text verified each process"
+}

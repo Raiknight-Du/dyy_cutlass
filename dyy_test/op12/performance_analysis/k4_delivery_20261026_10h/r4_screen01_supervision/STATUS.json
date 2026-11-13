@@ -1,0 +1,10 @@
+{
+  "pid": 1424096,
+  "returncode": 0,
+  "timed_out": false,
+  "start_time_ns": 1792964458593045968,
+  "end_time_ns": 1792964460809652966,
+  "clock_policy": "automatic",
+  "only_own_child_process_group_terminated": true,
+  "model_enabled": false
+}

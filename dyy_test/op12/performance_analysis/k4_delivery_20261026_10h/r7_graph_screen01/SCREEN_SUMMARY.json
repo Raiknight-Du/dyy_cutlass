@@ -1,0 +1,71 @@
+{
+  "status": "NEGATIVE_FINITE_CONTROL_STOP_FURTHER_GPU",
+  "effects": [
+    {
+      "N": 128,
+      "C1_native_cycles": 33075.5,
+      "C8_native_cycles": 33076.0,
+      "ratio_of_medians_change_pct": 0.0015116929449332517,
+      "paired_change_pct_median": 0.0,
+      "paired_change_pct_samples": [
+        0.0,
+        -0.0030233401862367337,
+        0.0,
+        0.0030234315948618473,
+        0.0015116929449332517
+      ]
+    },
+    {
+      "N": 256,
+      "C1_native_cycles": 65843.5,
+      "C8_native_cycles": 65844.0,
+      "ratio_of_medians_change_pct": 0.0007593764000946024,
+      "paired_change_pct_median": 0.0,
+      "paired_change_pct_samples": [
+        0.0,
+        0.0015187643333414158,
+        0.0007593764000946024,
+        0.0,
+        -0.0007593648672199471
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "configuration": "C1",
+      "N": 128,
+      "Event_us_median": 30.33600002527237,
+      "native_cycles_median": 33075.5,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "configuration": "C8",
+      "N": 128,
+      "Event_us_median": 31.775999814271927,
+      "native_cycles_median": 33076.0,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "configuration": "C1",
+      "N": 256,
+      "Event_us_median": 48.895999789237976,
+      "native_cycles_median": 65843.5,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    },
+    {
+      "configuration": "C8",
+      "N": 256,
+      "Event_us_median": 49.984000623226166,
+      "native_cycles_median": 65844.0,
+      "unique_SM_min": 128,
+      "unique_SM_max": 128
+    }
+  ],
+  "raw_gate": "20calls/2560CTA/128lazy/4graphs and32768gold_elements_per_CTA passed",
+  "stop_further_GPU": true,
+  "limits": "Native internal cycles are primary. Whole Event includes common16MiB output with different values; no independent MMA benefit inferred. Screen is not a formal stable rate.",
+  "model_enabled": false
+}

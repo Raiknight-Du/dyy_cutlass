@@ -1,0 +1,12 @@
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_classified_results_20261023/runs/S8192_cold_locked1845_metrics_t1/chain.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-3cce.qdstrm'
+[1/1] [0%                          ] formal_S8192_cold_locked1845_metrics_t1.nsys-repProcessing events...
+[1/1] [0%                          ] formal_S8192_cold_locked1845_metrics_t1.nsys-rep[1/1] [14%                         ] formal_S8192_cold_locked1845_metrics_t1.nsys-rep[1/1] [====27%                     ] formal_S8192_cold_locked1845_metrics_t1.nsys-rep[1/1] [=====29%                    ] formal_S8192_cold_locked1845_metrics_t1.nsys-rep[1/1] [=====32%                    ] formal_S8192_cold_locked1845_metrics_t1.nsys-rep[1/1] [==========47%               ] formal_S8192_cold_locked1845_metrics_t1.nsys-rep[1/1] [============57%             ] formal_S8192_cold_locked1845_metrics_t1.nsys-rep[1/1] [========================100%] formal_S8192_cold_locked1845_metrics_t1.nsys-rep[1/1] [========================100%] formal_S8192_cold_locked1845_metrics_t1.nsys-rep
+{"S": 8192, "cache": "cold", "clock": "locked1845", "mode": "metrics", "trial": 1, "CP_Event_us": {"n": 300, "median": 151.5199989080429, "mean": 151.46485567092896, "p5": 149.4400054216385, "p95": 153.56799960136414, "cv_percent": 0.8405982744405415}, "event_scope": "complete K1-K4 only, each eviction excluded; no internal kernel Events", "model_enabled": false}
+Generated:
+	/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/cp4_classified_results_20261023/formal_S8192_cold_locked1845_metrics_t1.nsys-rep

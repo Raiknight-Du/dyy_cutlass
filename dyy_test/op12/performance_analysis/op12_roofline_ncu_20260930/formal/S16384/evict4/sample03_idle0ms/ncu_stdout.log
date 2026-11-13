@@ -1,0 +1,12 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 533563 (/usr/bin/python3.10)
+{"event": "measured_graph_start", "shape": 16384, "sample": 3, "evict_factor": 4, "l2_bytes": 132644864, "evict_bytes": 530579456}
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 0: Application replay pass 1
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 1: Application replay pass 1
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 2: Application replay pass 1
+==PROF== Profiling "kernel_cutlass_kernel_flashin..." - 3: Application replay pass 1
+{"event": "app_pass_complete", "manifest": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample03_idle0ms/app_passes/app_pass_533563_1790776669501130368/pass_manifest.json", "checks": {"output_exact": true, "state_exact": true, "output_finite": true, "state_finite": true, "initial_unchanged": true, "eviction_checksum_finite": true, "tail_checksum_finite": true}}
+==PROF== Disconnected from process 533563
+==PROF== Creating report from application replay data: 0%......100%
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/performance_analysis/op12_roofline_ncu_20260930/formal/S16384/evict4/sample03_idle0ms/cp4.ncu-rep

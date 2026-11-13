@@ -1,0 +1,80 @@
+{
+  "UTC": "2026-10-26T22:23:51.038048+00:00",
+  "status": "DELIVERED_WITH_SCOPE",
+  "scope": "OriginalFP16K4 B1H16D128, three targetS/C, completeCP cache-history target return cadence, 64-token body block only.",
+  "stop_reason": "Requested body-slope +/-10% achieved for allthree shapes; independent mechanism/count evidence exists; remaining uncertainty is disclosed. No whole-kernel90% or complete causalGap closure claimed.",
+  "observed_slopes": [
+    3175.3252645502644,
+    3163.680890522876,
+    3141.200245151252
+  ],
+  "conditional_model_cycle_range": [
+    3430.25,
+    3435.25
+  ],
+  "signed_error_ranges": [
+    [
+      0.08028303062232643,
+      0.08185767245691913
+    ],
+    [
+      0.0842591647835465,
+      0.08583960230965035
+    ],
+    [
+      0.09201888841531966,
+      0.09361063666751021
+    ]
+  ],
+  "main_evidence": [
+    "CG0 all132 sharedPCs: max intrinsic address conflict1; source/active predicates match.",
+    "Six shared families isolated/concurrentTC:24 accepted NCU; read interference, write/read overlap.",
+    "CompleteCP same-work waiting-order intervention:12 NCU, bitwise outputs/state, unchanged native work.",
+    "OneLDTM exactNOP pair:8NCU, strict1% slopes, native firstconsumer q2, conditional ready26/74.",
+    "SameCUBIN PACK/IADD3:6NCU and strict1% dual-domain slopes; shared ALU service condition.",
+    "Actualdevice maxIPC4/SM and1/scheduler; aggregate issue queue included; CPU resource overlap checks pass."
+  ],
+  "limitations": [
+    "Sparse EX2 exact lane-service granularity; some predicate/select/uniform native capacity and completion endpoints.",
+    "Actual hardware queue priority, per-warp issue skew and short-MMA notification latency; FIFO/group model is conditional.",
+    "TMA/gate/O inputs modeled as steady-ready; their full service constraints are reported separately, not charged zero. Late arrival contribution remains unknown.",
+    "Original local/spill traffic is retained in work inventory but not assigned a fabricated latency.",
+    "Return-marker trace local bias is not fully bounded; these slopes are instrumented observations, not original phase truth.",
+    "Grouped/FIFO issue schedule can overestimate actual per-SMSP warp-skew schedule; signed residual255..294cycles/block is not a positive unmodeled cost.",
+    "Model/observation agreement is not the proportion of the original causalGap explained."
+  ],
+  "original_upstream_clean": true,
+  "formal_workbook_overwritten": false,
+  "model_enabled": false,
+  "effective_model_value": null,
+  "evidence_verification": {
+    "status": "PASS",
+    "UTC": "2026-10-26T22:22:46.703277+00:00",
+    "files_verified": 2736,
+    "NCU_reports": 74,
+    "archive_bytes": 45318243,
+    "archive_sha256": "df0d0fb577b5f37e416f3493e21713cebea86e8867a24ff9e4d6b68a0d118502",
+    "local_remote_common_files": 184,
+    "common_file_hashes_match": true,
+    "model_enabled": false,
+    "effective_model_value": null
+  },
+  "deliverables": [
+    {
+      "file": "K4_LOOP_CYCLE_ANALYSIS_CN.md",
+      "sha256": "7ba22cd195f1cfeb1f3ea6c1ea4d96f09f11ede7be06da353d1f2aff12e4a31d"
+    },
+    {
+      "file": "K4_LOOP_CYCLE_REVIEW_20261027.xlsx",
+      "sha256": "addbfb524d1b2fa432ae10dda14592bb9816c76ca5f9ffcde7e2dfd7491868f8"
+    },
+    {
+      "file": "K4_LOOP_NATIVE_DAG.drawio",
+      "sha256": "89f0f07adda785e0fda32c902a50dea9b6d68868b79d8b509190883ff05cde10"
+    },
+    {
+      "file": "K4_LOOP_EVIDENCE_20261027.tar.gz",
+      "sha256": "df0d0fb577b5f37e416f3493e21713cebea86e8867a24ff9e4d6b68a0d118502"
+    }
+  ]
+}

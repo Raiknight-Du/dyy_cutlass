@@ -1,0 +1,47 @@
+{
+  "shape": 32768,
+  "mode": "after_cp",
+  "kernels": [
+    {
+      "id": 0,
+      "name": "kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgdn_cp_prefillCPDeltaRuleTPrecomputeSm100_object_at__CopyAtom_ThrID10_TVLayoutSrc1409601_TVLayoutDst1409601_Valuetypef16_tensor000o1011_0",
+      "read_bytes": 136354560,
+      "write_bytes": 33411072,
+      "duration_ns": 74208,
+      "passes": 1
+    },
+    {
+      "id": 1,
+      "name": "kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleMNPrecomputeUtcmma1Sm100_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID__0",
+      "read_bytes": 327248640,
+      "write_bytes": 37748736,
+      "duration_ns": 120352,
+      "passes": 1
+    },
+    {
+      "id": 2,
+      "name": "kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleFixupUtcmmaSm100_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_0",
+      "read_bytes": 1073664,
+      "write_bytes": 4352,
+      "duration_ns": 27616,
+      "passes": 1
+    },
+    {
+      "id": 3,
+      "name": "kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_Sh_0",
+      "read_bytes": 472291584,
+      "write_bytes": 138270464,
+      "duration_ns": 152480,
+      "passes": 1
+    },
+    {
+      "id": 4,
+      "name": "void at::reduce_kernel<512, 1, at::ReduceOp<float, at::func_wrapper_t<float, at::sum_functor<float, float, float>::operator ()(at::TensorIterator &)::[lambda(float, float) (instance 1)]>, unsigned int, float, 4, 4>>(T3)",
+      "read_bytes": 530669824,
+      "write_bytes": 24367616,
+      "duration_ns": 96992,
+      "passes": 1
+    }
+  ],
+  "app_passes": 1
+}

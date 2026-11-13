@@ -1,0 +1,7202 @@
+[
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 0,
+    "position": 0,
+    "role": "target",
+    "event_us": 187.1359944343567
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 0,
+    "position": 1,
+    "role": "target",
+    "event_us": 239.55200612545013
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 0,
+    "position": 2,
+    "role": "target",
+    "event_us": 210.7519954442978
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 0,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.64800333976746
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 1,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.43200504779816
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 1,
+    "position": 1,
+    "role": "target",
+    "event_us": 210.07999777793884
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 1,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.2960081100464
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 1,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.29600310325623
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 2,
+    "position": 0,
+    "role": "target",
+    "event_us": 212.19199895858765
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 2,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.91200518608093
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 2,
+    "position": 2,
+    "role": "target",
+    "event_us": 186.65599822998047
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 2,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.49600553512573
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 3,
+    "position": 0,
+    "role": "target",
+    "event_us": 263.61599564552307
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 3,
+    "position": 1,
+    "role": "target",
+    "event_us": 186.5919977426529
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 3,
+    "position": 2,
+    "role": "target",
+    "event_us": 239.04000222682953
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 3,
+    "position": 3,
+    "role": "target",
+    "event_us": 211.16800606250763
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 4,
+    "position": 0,
+    "role": "target",
+    "event_us": 264.51200246810913
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 4,
+    "position": 1,
+    "role": "target",
+    "event_us": 210.207998752594
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 4,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.52799832820892
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 4,
+    "position": 3,
+    "role": "target",
+    "event_us": 185.82400679588318
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 5,
+    "position": 0,
+    "role": "target",
+    "event_us": 187.55200505256653
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 5,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.62399554252625
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 5,
+    "position": 2,
+    "role": "target",
+    "event_us": 211.0079973936081
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 5,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.68800699710846
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 6,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.49600553512573
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 6,
+    "position": 1,
+    "role": "target",
+    "event_us": 186.91200017929077
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 6,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.264000415802
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 6,
+    "position": 3,
+    "role": "target",
+    "event_us": 210.65600216388702
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 7,
+    "position": 0,
+    "role": "target",
+    "event_us": 211.5200012922287
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 7,
+    "position": 1,
+    "role": "target",
+    "event_us": 239.3600046634674
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 7,
+    "position": 2,
+    "role": "target",
+    "event_us": 185.56800484657288
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 7,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.10399174690247
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 8,
+    "position": 0,
+    "role": "target",
+    "event_us": 185.72799861431122
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 8,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.46399784088135
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 8,
+    "position": 2,
+    "role": "target",
+    "event_us": 210.40000021457672
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 8,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.10399174690247
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 9,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.97600173950195
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 9,
+    "position": 1,
+    "role": "target",
+    "event_us": 210.11200547218323
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 9,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.4879946708679
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 9,
+    "position": 3,
+    "role": "target",
+    "event_us": 186.27199530601501
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 10,
+    "position": 0,
+    "role": "target",
+    "event_us": 210.68799495697021
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 10,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.62399554252625
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 10,
+    "position": 2,
+    "role": "target",
+    "event_us": 188.1919950246811
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 10,
+    "position": 3,
+    "role": "target",
+    "event_us": 239.84000086784363
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 11,
+    "position": 0,
+    "role": "target",
+    "event_us": 264.5759880542755
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 11,
+    "position": 1,
+    "role": "target",
+    "event_us": 185.47199666500092
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 11,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.3359968662262
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 11,
+    "position": 3,
+    "role": "target",
+    "event_us": 211.74399554729462
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 12,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.91200518608093
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 12,
+    "position": 1,
+    "role": "target",
+    "event_us": 211.07199788093567
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 12,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.71999979019165
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 12,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.26399540901184
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 13,
+    "position": 0,
+    "role": "target",
+    "event_us": 187.26399540901184
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 13,
+    "position": 1,
+    "role": "target",
+    "event_us": 263.5520100593567
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 13,
+    "position": 2,
+    "role": "target",
+    "event_us": 211.39200031757355
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 13,
+    "position": 3,
+    "role": "target",
+    "event_us": 240.06399512290955
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 14,
+    "position": 0,
+    "role": "target",
+    "event_us": 239.00799453258514
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 14,
+    "position": 1,
+    "role": "target",
+    "event_us": 185.7600063085556
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 14,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.91200518608093
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 14,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.88799631595612
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 15,
+    "position": 0,
+    "role": "target",
+    "event_us": 211.8079960346222
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 15,
+    "position": 1,
+    "role": "target",
+    "event_us": 240.12799561023712
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 15,
+    "position": 2,
+    "role": "target",
+    "event_us": 186.71999871730804
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 15,
+    "position": 3,
+    "role": "target",
+    "event_us": 265.1839852333069
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 16,
+    "position": 0,
+    "role": "target",
+    "event_us": 185.82400679588318
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 16,
+    "position": 1,
+    "role": "target",
+    "event_us": 240.57599902153015
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 16,
+    "position": 2,
+    "role": "target",
+    "event_us": 210.207998752594
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 16,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.7760043144226
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 17,
+    "position": 0,
+    "role": "target",
+    "event_us": 240.54400622844696
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 17,
+    "position": 1,
+    "role": "target",
+    "event_us": 211.16800606250763
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 17,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.36799359321594
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 17,
+    "position": 3,
+    "role": "target",
+    "event_us": 186.8479996919632
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 18,
+    "position": 0,
+    "role": "target",
+    "event_us": 210.4640007019043
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 18,
+    "position": 1,
+    "role": "target",
+    "event_us": 264.47999477386475
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 18,
+    "position": 2,
+    "role": "target",
+    "event_us": 187.1040016412735
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 18,
+    "position": 3,
+    "role": "target",
+    "event_us": 240.60800671577454
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 19,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.9759907722473
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 19,
+    "position": 1,
+    "role": "target",
+    "event_us": 186.91200017929077
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 19,
+    "position": 2,
+    "role": "target",
+    "event_us": 239.00799453258514
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 19,
+    "position": 3,
+    "role": "target",
+    "event_us": 211.67999505996704
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 20,
+    "position": 0,
+    "role": "target",
+    "event_us": 263.45598697662354
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 20,
+    "position": 1,
+    "role": "target",
+    "event_us": 212.41599321365356
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 20,
+    "position": 2,
+    "role": "target",
+    "event_us": 239.87199366092682
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 20,
+    "position": 3,
+    "role": "target",
+    "event_us": 185.31200289726257
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 21,
+    "position": 0,
+    "role": "target",
+    "event_us": 187.42400407791138
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 21,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.9440128803253
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 21,
+    "position": 2,
+    "role": "target",
+    "event_us": 210.4959934949875
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 21,
+    "position": 3,
+    "role": "target",
+    "event_us": 239.1359955072403
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 22,
+    "position": 0,
+    "role": "target",
+    "event_us": 239.9359941482544
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 22,
+    "position": 1,
+    "role": "target",
+    "event_us": 186.71999871730804
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 22,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.93601298332214
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 22,
+    "position": 3,
+    "role": "target",
+    "event_us": 210.33599972724915
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 23,
+    "position": 0,
+    "role": "target",
+    "event_us": 211.0079973936081
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 23,
+    "position": 1,
+    "role": "target",
+    "event_us": 239.1040027141571
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 23,
+    "position": 2,
+    "role": "target",
+    "event_us": 186.78399920463562
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 23,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.64800333976746
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 24,
+    "position": 0,
+    "role": "target",
+    "event_us": 186.75200641155243
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 24,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.75199258327484
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 24,
+    "position": 2,
+    "role": "target",
+    "event_us": 210.30400693416595
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 24,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.61599564552307
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 25,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.20799589157104
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 25,
+    "position": 1,
+    "role": "target",
+    "event_us": 210.9760046005249
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 25,
+    "position": 2,
+    "role": "target",
+    "event_us": 265.7279968261719
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 25,
+    "position": 3,
+    "role": "target",
+    "event_us": 186.97600066661835
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 26,
+    "position": 0,
+    "role": "target",
+    "event_us": 211.5519940853119
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 26,
+    "position": 1,
+    "role": "target",
+    "event_us": 263.68001103401184
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 26,
+    "position": 2,
+    "role": "target",
+    "event_us": 185.88800728321075
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 26,
+    "position": 3,
+    "role": "target",
+    "event_us": 239.1040027141571
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 27,
+    "position": 0,
+    "role": "target",
+    "event_us": 263.61599564552307
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 27,
+    "position": 1,
+    "role": "target",
+    "event_us": 186.49600446224213
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 27,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.94399404525757
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 27,
+    "position": 3,
+    "role": "target",
+    "event_us": 210.68799495697021
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 28,
+    "position": 0,
+    "role": "target",
+    "event_us": 263.90400528907776
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 28,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.79200303554535
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 28,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.39999735355377
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 28,
+    "position": 3,
+    "role": "target",
+    "event_us": 186.46399676799774
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 29,
+    "position": 0,
+    "role": "target",
+    "event_us": 186.52799725532532
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 29,
+    "position": 1,
+    "role": "target",
+    "event_us": 264.0320062637329
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 29,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.53600108623505
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 29,
+    "position": 3,
+    "role": "target",
+    "event_us": 240.48000574111938
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 30,
+    "position": 0,
+    "role": "target",
+    "event_us": 240.7039999961853
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 30,
+    "position": 1,
+    "role": "target",
+    "event_us": 185.248002409935
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 30,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.5200023651123
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 30,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.72800254821777
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 31,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.56799387931824
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 31,
+    "position": 1,
+    "role": "target",
+    "event_us": 239.96800184249878
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 31,
+    "position": 2,
+    "role": "target",
+    "event_us": 187.77599930763245
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 31,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.0400061607361
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 32,
+    "position": 0,
+    "role": "target",
+    "event_us": 187.32799589633942
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 32,
+    "position": 1,
+    "role": "target",
+    "event_us": 239.16800320148468
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 32,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.24800634384155
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 32,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.8719975948334
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 33,
+    "position": 0,
+    "role": "target",
+    "event_us": 239.1040027141571
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 33,
+    "position": 1,
+    "role": "target",
+    "event_us": 211.2639993429184
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 33,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.81601190567017
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 33,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.71199882030487
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 34,
+    "position": 0,
+    "role": "target",
+    "event_us": 211.10400557518005
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 34,
+    "position": 1,
+    "role": "target",
+    "event_us": 264.6079957485199
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 34,
+    "position": 2,
+    "role": "target",
+    "event_us": 185.59999763965607
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 34,
+    "position": 3,
+    "role": "target",
+    "event_us": 239.16800320148468
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 35,
+    "position": 0,
+    "role": "target",
+    "event_us": 264.3199861049652
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 35,
+    "position": 1,
+    "role": "target",
+    "event_us": 187.51999735832214
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 35,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.5600060224533
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 35,
+    "position": 3,
+    "role": "target",
+    "event_us": 211.10400557518005
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 36,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.2399926185608
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 36,
+    "position": 1,
+    "role": "target",
+    "event_us": 211.5519940853119
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 36,
+    "position": 2,
+    "role": "target",
+    "event_us": 237.98400163650513
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 36,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.9359930753708
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 37,
+    "position": 0,
+    "role": "target",
+    "event_us": 186.62400543689728
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 37,
+    "position": 1,
+    "role": "target",
+    "event_us": 264.384001493454
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 37,
+    "position": 2,
+    "role": "target",
+    "event_us": 210.14399826526642
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 37,
+    "position": 3,
+    "role": "target",
+    "event_us": 239.6479994058609
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 38,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.63200640678406
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 38,
+    "position": 1,
+    "role": "target",
+    "event_us": 187.58399784564972
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 38,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.30400800704956
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 38,
+    "position": 3,
+    "role": "target",
+    "event_us": 211.42399311065674
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 39,
+    "position": 0,
+    "role": "target",
+    "event_us": 211.58400177955627
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 39,
+    "position": 1,
+    "role": "target",
+    "event_us": 240.6720072031021
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 39,
+    "position": 2,
+    "role": "target",
+    "event_us": 187.19999492168427
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 39,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.264000415802
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 40,
+    "position": 0,
+    "role": "target",
+    "event_us": 186.94399297237396
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 40,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.39999735355377
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 40,
+    "position": 2,
+    "role": "target",
+    "event_us": 212.0639979839325
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 40,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.81601190567017
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 41,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.52799832820892
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 41,
+    "position": 1,
+    "role": "target",
+    "event_us": 210.7200026512146
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 41,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.0079984664917
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 41,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.00799345970154
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 42,
+    "position": 0,
+    "role": "target",
+    "event_us": 210.04800498485565
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 42,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.4000012874603
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 42,
+    "position": 2,
+    "role": "target",
+    "event_us": 187.23200261592865
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 42,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.39999735355377
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 43,
+    "position": 0,
+    "role": "target",
+    "event_us": 264.8000121116638
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 43,
+    "position": 1,
+    "role": "target",
+    "event_us": 186.94399297237396
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 43,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.5600060224533
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 43,
+    "position": 3,
+    "role": "target",
+    "event_us": 211.58400177955627
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 44,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.87999749183655
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 44,
+    "position": 1,
+    "role": "target",
+    "event_us": 210.4640007019043
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 44,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.27199637889862
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 44,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.04000115394592
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 45,
+    "position": 0,
+    "role": "target",
+    "event_us": 186.8479996919632
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 45,
+    "position": 1,
+    "role": "target",
+    "event_us": 264.22399282455444
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 45,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.75999534130096
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 45,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.97600173950195
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 46,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.14399540424347
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 46,
+    "position": 1,
+    "role": "target",
+    "event_us": 187.9359930753708
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 46,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.39200139045715
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 46,
+    "position": 3,
+    "role": "target",
+    "event_us": 211.776003241539
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 47,
+    "position": 0,
+    "role": "target",
+    "event_us": 210.27199923992157
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 47,
+    "position": 1,
+    "role": "target",
+    "event_us": 239.87199366092682
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 47,
+    "position": 2,
+    "role": "target",
+    "event_us": 187.23200261592865
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 47,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.0079984664917
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 48,
+    "position": 0,
+    "role": "target",
+    "event_us": 186.20799481868744
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 48,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.97600173950195
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 48,
+    "position": 2,
+    "role": "target",
+    "event_us": 210.27199923992157
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 48,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.839989900589
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 49,
+    "position": 0,
+    "role": "target",
+    "event_us": 240.51199853420258
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 49,
+    "position": 1,
+    "role": "target",
+    "event_us": 210.40000021457672
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 49,
+    "position": 2,
+    "role": "target",
+    "event_us": 265.5999958515167
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 49,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.80800700187683
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 50,
+    "position": 0,
+    "role": "target",
+    "event_us": 211.45600080490112
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 50,
+    "position": 1,
+    "role": "target",
+    "event_us": 263.5839879512787
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 50,
+    "position": 2,
+    "role": "target",
+    "event_us": 187.55200505256653
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 50,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.304004073143
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 51,
+    "position": 0,
+    "role": "target",
+    "event_us": 263.5839879512787
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 51,
+    "position": 1,
+    "role": "target",
+    "event_us": 187.42400407791138
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 51,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.11200261116028
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 51,
+    "position": 3,
+    "role": "target",
+    "event_us": 211.5200012922287
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 52,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.7840042114258
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 52,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.1519981622696
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 52,
+    "position": 2,
+    "role": "target",
+    "event_us": 240.83200097084045
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 52,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.19999492168427
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 53,
+    "position": 0,
+    "role": "target",
+    "event_us": 186.88000738620758
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 53,
+    "position": 1,
+    "role": "target",
+    "event_us": 264.73599672317505
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 53,
+    "position": 2,
+    "role": "target",
+    "event_us": 210.84800362586975
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 53,
+    "position": 3,
+    "role": "target",
+    "event_us": 240.38399755954742
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 54,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.5919988155365
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 54,
+    "position": 1,
+    "role": "target",
+    "event_us": 185.56800484657288
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 54,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.59198784828186
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 54,
+    "position": 3,
+    "role": "target",
+    "event_us": 210.01599729061127
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 55,
+    "position": 0,
+    "role": "target",
+    "event_us": 211.04000508785248
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 55,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.49600553512573
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 55,
+    "position": 2,
+    "role": "target",
+    "event_us": 187.32799589633942
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 55,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.87999749183655
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 56,
+    "position": 0,
+    "role": "target",
+    "event_us": 187.83999979496002
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 56,
+    "position": 1,
+    "role": "target",
+    "event_us": 239.00799453258514
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 56,
+    "position": 2,
+    "role": "target",
+    "event_us": 211.0079973936081
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 56,
+    "position": 3,
+    "role": "target",
+    "event_us": 264.6400034427643
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 57,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.94399404525757
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 57,
+    "position": 1,
+    "role": "target",
+    "event_us": 210.59200167655945
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 57,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.56000995635986
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 57,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.68000602722168
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 58,
+    "position": 0,
+    "role": "target",
+    "event_us": 210.24000644683838
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 58,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.33598589897156
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 58,
+    "position": 2,
+    "role": "target",
+    "event_us": 188.06399405002594
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 58,
+    "position": 3,
+    "role": "target",
+    "event_us": 237.8239929676056
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 59,
+    "position": 0,
+    "role": "target",
+    "event_us": 264.5759880542755
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 59,
+    "position": 1,
+    "role": "target",
+    "event_us": 186.49600446224213
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 59,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.0799949169159
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 59,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.47200059890747
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 60,
+    "position": 0,
+    "role": "target",
+    "event_us": 263.0400061607361
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 60,
+    "position": 1,
+    "role": "target",
+    "event_us": 212.25599944591522
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 60,
+    "position": 2,
+    "role": "target",
+    "event_us": 239.99999463558197
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 60,
+    "position": 3,
+    "role": "target",
+    "event_us": 186.27199530601501
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 61,
+    "position": 0,
+    "role": "target",
+    "event_us": 187.391996383667
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 61,
+    "position": 1,
+    "role": "target",
+    "event_us": 263.0400061607361
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 61,
+    "position": 2,
+    "role": "target",
+    "event_us": 210.59200167655945
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 61,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.49600553512573
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 62,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.11200261116028
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 62,
+    "position": 1,
+    "role": "target",
+    "event_us": 185.5040043592453
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 62,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.4639868736267
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 62,
+    "position": 3,
+    "role": "target",
+    "event_us": 211.42399311065674
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 63,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.6959948539734
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 63,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.0799949169159
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 63,
+    "position": 2,
+    "role": "target",
+    "event_us": 187.04000115394592
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 63,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.2319927215576
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 64,
+    "position": 0,
+    "role": "target",
+    "event_us": 185.82400679588318
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 64,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.0799949169159
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 64,
+    "position": 2,
+    "role": "target",
+    "event_us": 210.24000644683838
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 64,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.2720003128052
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 65,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.39999735355377
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 65,
+    "position": 1,
+    "role": "target",
+    "event_us": 212.38400042057037
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 65,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.5839879512787
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 65,
+    "position": 3,
+    "role": "target",
+    "event_us": 186.5600049495697
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 66,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.85600352287292
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 66,
+    "position": 1,
+    "role": "target",
+    "event_us": 263.96799087524414
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 66,
+    "position": 2,
+    "role": "target",
+    "event_us": 186.65599822998047
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 66,
+    "position": 3,
+    "role": "target",
+    "event_us": 239.32799696922302
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 67,
+    "position": 0,
+    "role": "target",
+    "event_us": 264.67201113700867
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 67,
+    "position": 1,
+    "role": "target",
+    "event_us": 186.49600446224213
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 67,
+    "position": 2,
+    "role": "target",
+    "event_us": 239.1040027141571
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 67,
+    "position": 3,
+    "role": "target",
+    "event_us": 210.27199923992157
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 68,
+    "position": 0,
+    "role": "target",
+    "event_us": 264.0320062637329
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 68,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.75999534130096
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 68,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.81599307060242
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 68,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.0719939470291
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 69,
+    "position": 0,
+    "role": "target",
+    "event_us": 187.04000115394592
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 69,
+    "position": 1,
+    "role": "target",
+    "event_us": 263.3279860019684
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 69,
+    "position": 2,
+    "role": "target",
+    "event_us": 211.8079960346222
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 69,
+    "position": 3,
+    "role": "target",
+    "event_us": 239.07199501991272
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 70,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.8480007648468
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 70,
+    "position": 1,
+    "role": "target",
+    "event_us": 187.19999492168427
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 70,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.68001103401184
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 70,
+    "position": 3,
+    "role": "target",
+    "event_us": 210.07999777793884
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 71,
+    "position": 0,
+    "role": "target",
+    "event_us": 211.45600080490112
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 71,
+    "position": 1,
+    "role": "target",
+    "event_us": 239.07199501991272
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 71,
+    "position": 2,
+    "role": "target",
+    "event_us": 188.03200125694275
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 71,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.07201385498047
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 72,
+    "position": 0,
+    "role": "target",
+    "event_us": 186.20799481868744
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 72,
+    "position": 1,
+    "role": "target",
+    "event_us": 239.19999599456787
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 72,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.82399582862854
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 72,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.9999985694885
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 73,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.304004073143
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 73,
+    "position": 1,
+    "role": "target",
+    "event_us": 211.61599457263947
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 73,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.90400528907776
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 73,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.9040002822876
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 74,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.85600352287292
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 74,
+    "position": 1,
+    "role": "target",
+    "event_us": 263.2319927215576
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 74,
+    "position": 2,
+    "role": "target",
+    "event_us": 187.0719939470291
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 74,
+    "position": 3,
+    "role": "target",
+    "event_us": 237.8239929676056
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 75,
+    "position": 0,
+    "role": "target",
+    "event_us": 263.2000148296356
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 75,
+    "position": 1,
+    "role": "target",
+    "event_us": 187.32799589633942
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 75,
+    "position": 2,
+    "role": "target",
+    "event_us": 239.99999463558197
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 75,
+    "position": 3,
+    "role": "target",
+    "event_us": 210.65600216388702
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 76,
+    "position": 0,
+    "role": "target",
+    "event_us": 263.90400528907776
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 76,
+    "position": 1,
+    "role": "target",
+    "event_us": 211.74399554729462
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 76,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.81599307060242
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 76,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.48800456523895
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 77,
+    "position": 0,
+    "role": "target",
+    "event_us": 187.26399540901184
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 77,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.1760070323944
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 77,
+    "position": 2,
+    "role": "target",
+    "event_us": 211.32799983024597
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 77,
+    "position": 3,
+    "role": "target",
+    "event_us": 239.9040013551712
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 78,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.5919988155365
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 78,
+    "position": 1,
+    "role": "target",
+    "event_us": 185.59999763965607
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 78,
+    "position": 2,
+    "role": "target",
+    "event_us": 264.5759880542755
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 78,
+    "position": 3,
+    "role": "target",
+    "event_us": 210.07999777793884
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 79,
+    "position": 0,
+    "role": "target",
+    "event_us": 211.4879935979843
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 79,
+    "position": 1,
+    "role": "target",
+    "event_us": 237.63200640678406
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 79,
+    "position": 2,
+    "role": "target",
+    "event_us": 187.99999356269836
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 79,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.7439966201782
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 80,
+    "position": 0,
+    "role": "target",
+    "event_us": 186.5919977426529
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 80,
+    "position": 1,
+    "role": "target",
+    "event_us": 239.04000222682953
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 80,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.9200040102005
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 80,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.4320089817047
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 81,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.8480007648468
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 81,
+    "position": 1,
+    "role": "target",
+    "event_us": 210.04800498485565
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 81,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.0079984664917
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 81,
+    "position": 3,
+    "role": "target",
+    "event_us": 185.92000007629395
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 82,
+    "position": 0,
+    "role": "target",
+    "event_us": 212.16000616550446
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 82,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.59198784828186
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 82,
+    "position": 2,
+    "role": "target",
+    "event_us": 187.3600035905838
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 82,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.81599307060242
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 83,
+    "position": 0,
+    "role": "target",
+    "event_us": 264.6079957485199
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 83,
+    "position": 1,
+    "role": "target",
+    "event_us": 186.65599822998047
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 83,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.5919988155365
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 83,
+    "position": 3,
+    "role": "target",
+    "event_us": 212.0639979839325
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 84,
+    "position": 0,
+    "role": "target",
+    "event_us": 263.10399174690247
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 84,
+    "position": 1,
+    "role": "target",
+    "event_us": 211.5200012922287
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 84,
+    "position": 2,
+    "role": "target",
+    "event_us": 239.87199366092682
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 84,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.29600310325623
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 85,
+    "position": 0,
+    "role": "target",
+    "event_us": 187.3600035905838
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 85,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.4320089817047
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 85,
+    "position": 2,
+    "role": "target",
+    "event_us": 210.65600216388702
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 85,
+    "position": 3,
+    "role": "target",
+    "event_us": 239.9359941482544
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 86,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.49600553512573
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 86,
+    "position": 1,
+    "role": "target",
+    "event_us": 186.46399676799774
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 86,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.8719975948334
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 86,
+    "position": 3,
+    "role": "target",
+    "event_us": 211.64800226688385
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 87,
+    "position": 0,
+    "role": "target",
+    "event_us": 210.24000644683838
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 87,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.5919988155365
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 87,
+    "position": 2,
+    "role": "target",
+    "event_us": 187.0719939470291
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 87,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.91200518608093
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 88,
+    "position": 0,
+    "role": "target",
+    "event_us": 185.31200289726257
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 88,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.17600309848785
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 88,
+    "position": 2,
+    "role": "target",
+    "event_us": 211.84000372886658
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 88,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.64800333976746
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 89,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.27199637889862
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 89,
+    "position": 1,
+    "role": "target",
+    "event_us": 211.74399554729462
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 89,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.59198784828186
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 89,
+    "position": 3,
+    "role": "target",
+    "event_us": 186.43200397491455
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 90,
+    "position": 0,
+    "role": "target",
+    "event_us": 210.4640007019043
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 90,
+    "position": 1,
+    "role": "target",
+    "event_us": 263.5839879512787
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 90,
+    "position": 2,
+    "role": "target",
+    "event_us": 186.71999871730804
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 90,
+    "position": 3,
+    "role": "target",
+    "event_us": 239.1359955072403
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 91,
+    "position": 0,
+    "role": "target",
+    "event_us": 263.90400528907776
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 91,
+    "position": 1,
+    "role": "target",
+    "event_us": 188.06399405002594
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 91,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.81599307060242
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 91,
+    "position": 3,
+    "role": "target",
+    "event_us": 210.30400693416595
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 92,
+    "position": 0,
+    "role": "target",
+    "event_us": 263.35999369621277
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 92,
+    "position": 1,
+    "role": "target",
+    "event_us": 210.52800118923187
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 92,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.39999735355377
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 92,
+    "position": 3,
+    "role": "target",
+    "event_us": 186.39999628067017
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 93,
+    "position": 0,
+    "role": "target",
+    "event_us": 186.0799938440323
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 93,
+    "position": 1,
+    "role": "target",
+    "event_us": 263.68001103401184
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 93,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.24800634384155
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 93,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.304004073143
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 94,
+    "position": 0,
+    "role": "target",
+    "event_us": 240.76800048351288
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 94,
+    "position": 1,
+    "role": "target",
+    "event_us": 186.78399920463562
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 94,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.4879946708679
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 94,
+    "position": 3,
+    "role": "target",
+    "event_us": 211.90400421619415
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 95,
+    "position": 0,
+    "role": "target",
+    "event_us": 211.32799983024597
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 95,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.39999735355377
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 95,
+    "position": 2,
+    "role": "target",
+    "event_us": 186.46399676799774
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 95,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.10399174690247
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 96,
+    "position": 0,
+    "role": "target",
+    "event_us": 187.23200261592865
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 96,
+    "position": 1,
+    "role": "target",
+    "event_us": 239.04000222682953
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 96,
+    "position": 2,
+    "role": "target",
+    "event_us": 211.19999885559082
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 96,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.07201385498047
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 97,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.71999979019165
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 97,
+    "position": 1,
+    "role": "target",
+    "event_us": 211.32799983024597
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 97,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.96799087524414
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 97,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.42400407791138
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 98,
+    "position": 0,
+    "role": "target",
+    "event_us": 211.0079973936081
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 98,
+    "position": 1,
+    "role": "target",
+    "event_us": 263.5200023651123
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 98,
+    "position": 2,
+    "role": "target",
+    "event_us": 187.42400407791138
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 98,
+    "position": 3,
+    "role": "target",
+    "event_us": 237.98400163650513
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "evicted",
+    "iteration": 99,
+    "position": 0,
+    "role": "target",
+    "event_us": 265.1839852333069
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "evicted",
+    "iteration": 99,
+    "position": 1,
+    "role": "target",
+    "event_us": 187.51999735832214
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "evicted",
+    "iteration": 99,
+    "position": 2,
+    "role": "target",
+    "event_us": 237.8239929676056
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "evicted",
+    "iteration": 99,
+    "position": 3,
+    "role": "target",
+    "event_us": 210.36800742149353
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 0,
+    "position": 0,
+    "role": "target",
+    "event_us": 185.02399325370789
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 0,
+    "position": 1,
+    "role": "target",
+    "event_us": 237.63200640678406
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 0,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.60000157356262
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 0,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.11199164390564
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 1,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.5359982252121
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 1,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.05600488185883
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 1,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.1760070323944
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 1,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.57600474357605
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 2,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.4080001115799
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 2,
+    "position": 1,
+    "role": "target",
+    "event_us": 264.19198513031006
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 2,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.57600474357605
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 2,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.17600309848785
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 3,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.65600323677063
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 3,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.51200425624847
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 3,
+    "position": 2,
+    "role": "target",
+    "event_us": 237.72799968719482
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 3,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.47200059890747
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 4,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.56000995635986
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 4,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.27999913692474
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 4,
+    "position": 2,
+    "role": "target",
+    "event_us": 237.72799968719482
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 4,
+    "position": 3,
+    "role": "target",
+    "event_us": 185.15199422836304
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 5,
+    "position": 0,
+    "role": "target",
+    "event_us": 184.9599927663803
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 5,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.04800605773926
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 5,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.21599864959717
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 5,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.3359968662262
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 6,
+    "position": 0,
+    "role": "target",
+    "event_us": 236.03199422359467
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 6,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.54399704933167
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 6,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.719988822937
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 6,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.1519981622696
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 7,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.50399339199066
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 7,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.0480021238327
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 7,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.54399704933167
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 7,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.4959945678711
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 8,
+    "position": 0,
+    "role": "target",
+    "event_us": 185.95199286937714
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 8,
+    "position": 1,
+    "role": "target",
+    "event_us": 237.47199773788452
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 8,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.08799767494202
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 8,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.4959945678711
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 9,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.98400163650513
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 9,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.24800634384155
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 9,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.4320089817047
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 9,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.51200425624847
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 10,
+    "position": 0,
+    "role": "target",
+    "event_us": 208.8319957256317
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 10,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.56000995635986
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 10,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.57600474357605
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 10,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.11200261116028
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 11,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.04800605773926
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 11,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.7040057182312
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 11,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.20799589157104
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 11,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.08799767494202
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 12,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.4639868736267
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 12,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.1200053691864
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 12,
+    "position": 2,
+    "role": "target",
+    "event_us": 237.88799345493317
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 12,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.83200669288635
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 13,
+    "position": 0,
+    "role": "target",
+    "event_us": 185.05600094795227
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 13,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.4639868736267
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 13,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.02399718761444
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 13,
+    "position": 3,
+    "role": "target",
+    "event_us": 237.72799968719482
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 14,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.0480021238327
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 14,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.86399948596954
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 14,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.4320089817047
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 14,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.24800634384155
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 15,
+    "position": 0,
+    "role": "target",
+    "event_us": 208.54400098323822
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 15,
+    "position": 1,
+    "role": "target",
+    "event_us": 237.8239929676056
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 15,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.60799753665924
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 15,
+    "position": 3,
+    "role": "target",
+    "event_us": 261.4719867706299
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 16,
+    "position": 0,
+    "role": "target",
+    "event_us": 184.7359985113144
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 16,
+    "position": 1,
+    "role": "target",
+    "event_us": 236.76800727844238
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 16,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.6319943666458
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 16,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.59198784828186
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 17,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.66399919986725
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 17,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.1200053691864
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 17,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.11199164390564
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 17,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.7359985113144
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 18,
+    "position": 0,
+    "role": "target",
+    "event_us": 208.73600244522095
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 18,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.30400800704956
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 18,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.57600474357605
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 18,
+    "position": 3,
+    "role": "target",
+    "event_us": 237.8239929676056
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 19,
+    "position": 0,
+    "role": "target",
+    "event_us": 261.9200050830841
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 19,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.4480037689209
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 19,
+    "position": 2,
+    "role": "target",
+    "event_us": 237.95199394226074
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 19,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.4080001115799
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 20,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.4639868736267
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 20,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.21599864959717
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 20,
+    "position": 2,
+    "role": "target",
+    "event_us": 237.85600066184998
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 20,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.83200669288635
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 21,
+    "position": 0,
+    "role": "target",
+    "event_us": 185.18400192260742
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 21,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.4959945678711
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 21,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.05600488185883
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 21,
+    "position": 3,
+    "role": "target",
+    "event_us": 237.69600689411163
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 22,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.40799725055695
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 22,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.67199802398682
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 22,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.4320089817047
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 22,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.1200053691864
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 23,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.60000157356262
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 23,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.01599442958832
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 23,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.76800620555878
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 23,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.2720003128052
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 24,
+    "position": 0,
+    "role": "target",
+    "event_us": 185.31200289726257
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 24,
+    "position": 1,
+    "role": "target",
+    "event_us": 237.85600066184998
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 24,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.18400585651398
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 24,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.4320089817047
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 25,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.8239929676056
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 25,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.24800634384155
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 25,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.4959945678711
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 25,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.35199558734894
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 26,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.02399718761444
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 26,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.36799359321594
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 26,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.60799753665924
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 26,
+    "position": 3,
+    "role": "target",
+    "event_us": 237.69600689411163
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 27,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.08001375198364
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 27,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.76800620555878
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 27,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.24000358581543
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 27,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.31200683116913
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 28,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.4959945678711
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 28,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.24800634384155
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 28,
+    "position": 2,
+    "role": "target",
+    "event_us": 237.98400163650513
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 28,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.60799753665924
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 29,
+    "position": 0,
+    "role": "target",
+    "event_us": 185.02399325370789
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 29,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.33598589897156
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 29,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.4080001115799
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 29,
+    "position": 3,
+    "role": "target",
+    "event_us": 237.56800591945648
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 30,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.92000114917755
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 30,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.35199558734894
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 30,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.33598589897156
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 30,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.18400585651398
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 31,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.31200683116913
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 31,
+    "position": 1,
+    "role": "target",
+    "event_us": 237.88799345493317
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 31,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.76800620555878
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 31,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.4639868736267
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 32,
+    "position": 0,
+    "role": "target",
+    "event_us": 184.25600230693817
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 32,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.0480021238327
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 32,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.21599864959717
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 32,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.62399554252625
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 33,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.92000114917755
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 33,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.24800634384155
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 33,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.688010931015
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 33,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.79999899864197
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 34,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.31200683116913
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 34,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.9440128803253
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 34,
+    "position": 2,
+    "role": "target",
+    "event_us": 185.15199422836304
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 34,
+    "position": 3,
+    "role": "target",
+    "event_us": 237.85600066184998
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 35,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.4000012874603
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 35,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.4799965620041
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 35,
+    "position": 2,
+    "role": "target",
+    "event_us": 236.4480048418045
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 35,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.1519981622696
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 36,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.4000012874603
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 36,
+    "position": 1,
+    "role": "target",
+    "event_us": 208.92800390720367
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 36,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.49600553512573
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 36,
+    "position": 3,
+    "role": "target",
+    "event_us": 183.87199938297272
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 37,
+    "position": 0,
+    "role": "target",
+    "event_us": 184.7359985113144
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 37,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.2399926185608
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 37,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.79200303554535
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 37,
+    "position": 3,
+    "role": "target",
+    "event_us": 237.2799962759018
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 38,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.69600689411163
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 38,
+    "position": 1,
+    "role": "target",
+    "event_us": 185.18400192260742
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 38,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.56000995635986
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 38,
+    "position": 3,
+    "role": "target",
+    "event_us": 208.95999670028687
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 39,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.1200053691864
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 39,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.01599442958832
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 39,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.7040057182312
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 39,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.56000995635986
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 40,
+    "position": 0,
+    "role": "target",
+    "event_us": 184.7040057182312
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 40,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.3359968662262
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 40,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.4080001115799
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 40,
+    "position": 3,
+    "role": "target",
+    "event_us": 261.6640031337738
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 41,
+    "position": 0,
+    "role": "target",
+    "event_us": 238.24000358581543
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 41,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.4080001115799
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 41,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.4639868736267
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 41,
+    "position": 3,
+    "role": "target",
+    "event_us": 185.31200289726257
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 42,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.24800634384155
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 42,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.719988822937
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 42,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.79999899864197
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 42,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.01599442958832
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 43,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.36799359321594
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 43,
+    "position": 1,
+    "role": "target",
+    "event_us": 185.248002409935
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 43,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.17600309848785
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 43,
+    "position": 3,
+    "role": "target",
+    "event_us": 208.99200439453125
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 44,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.4639868736267
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 44,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.6319943666458
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 44,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.27199637889862
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 44,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.7359985113144
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 45,
+    "position": 0,
+    "role": "target",
+    "event_us": 185.12000143527985
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 45,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.7519965171814
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 45,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.1519981622696
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 45,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.01599442958832
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 46,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.7920001745224
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 46,
+    "position": 1,
+    "role": "target",
+    "event_us": 185.34399569034576
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 46,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.7519965171814
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 46,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.1519981622696
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 47,
+    "position": 0,
+    "role": "target",
+    "event_us": 210.94399690628052
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 47,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.39999735355377
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 47,
+    "position": 2,
+    "role": "target",
+    "event_us": 185.02399325370789
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 47,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.4639868736267
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 48,
+    "position": 0,
+    "role": "target",
+    "event_us": 186.49600446224213
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 48,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.0480021238327
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 48,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.34399962425232
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 48,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.36799359321594
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 49,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.7920001745224
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 49,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.4399929046631
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 49,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.65600323677063
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 49,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.76800620555878
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 50,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.82399582862854
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 50,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.688010931015
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 50,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.76800620555878
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 50,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.11200261116028
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 51,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.14399933815
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 51,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.9599927663803
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 51,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.304004073143
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 51,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.4399929046631
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 52,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.33598589897156
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 52,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.6319943666458
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 52,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.17600309848785
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 52,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.67199802398682
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 53,
+    "position": 0,
+    "role": "target",
+    "event_us": 185.2159947156906
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 53,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.5280022621155
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 53,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.47200059890747
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 53,
+    "position": 3,
+    "role": "target",
+    "event_us": 237.59999871253967
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 54,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.8239929676056
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 54,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.9599927663803
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 54,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.7840042114258
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 54,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.21599864959717
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 55,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.88799631595612
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 55,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.20799589157104
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 55,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.86399948596954
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 55,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.62399554252625
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 56,
+    "position": 0,
+    "role": "target",
+    "event_us": 185.248002409935
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 56,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.0799949169159
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 56,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.34399962425232
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 56,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.4000012874603
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 57,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.69600689411163
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 57,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.21599864959717
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 57,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.1760070323944
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 57,
+    "position": 3,
+    "role": "target",
+    "event_us": 185.85599958896637
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 58,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.1519981622696
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 58,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.4000012874603
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 58,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.92799997329712
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 58,
+    "position": 3,
+    "role": "target",
+    "event_us": 237.98400163650513
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 59,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.84798979759216
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 59,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.7359985113144
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 59,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.52799832820892
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 59,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.4399929046631
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 60,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.2720003128052
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 60,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.6959948539734
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 60,
+    "position": 2,
+    "role": "target",
+    "event_us": 237.8239929676056
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 60,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.89600718021393
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 61,
+    "position": 0,
+    "role": "target",
+    "event_us": 184.38400328159332
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 61,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.84798979759216
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 61,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.53600108623505
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 61,
+    "position": 3,
+    "role": "target",
+    "event_us": 236.06400191783905
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 62,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.72799968719482
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 62,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.60799753665924
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 62,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.84798979759216
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 62,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.31200683116913
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 63,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.47200059890747
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 63,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.46399784088135
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 63,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.79999899864197
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 63,
+    "position": 3,
+    "role": "target",
+    "event_us": 263.0400061607361
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 64,
+    "position": 0,
+    "role": "target",
+    "event_us": 184.32000279426575
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 64,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.0799949169159
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 64,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.4080001115799
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 64,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.2399926185608
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 65,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.56800591945648
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 65,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.53600108623505
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 65,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.7840042114258
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 65,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.9599927663803
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 66,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.47200059890747
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 66,
+    "position": 1,
+    "role": "target",
+    "event_us": 263.13599944114685
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 66,
+    "position": 2,
+    "role": "target",
+    "event_us": 185.2799952030182
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 66,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.14399540424347
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 67,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.688010931015
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 67,
+    "position": 1,
+    "role": "target",
+    "event_us": 185.05600094795227
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 67,
+    "position": 2,
+    "role": "target",
+    "event_us": 236.41599714756012
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 67,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.53600108623505
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 68,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.4959945678711
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 68,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.47200059890747
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 68,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.304004073143
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 68,
+    "position": 3,
+    "role": "target",
+    "event_us": 187.32799589633942
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 69,
+    "position": 0,
+    "role": "target",
+    "event_us": 184.67199802398682
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 69,
+    "position": 1,
+    "role": "target",
+    "event_us": 261.8879973888397
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 69,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.75999534130096
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 69,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.27199637889862
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 70,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.72799968719482
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 70,
+    "position": 1,
+    "role": "target",
+    "event_us": 185.15199422836304
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 70,
+    "position": 2,
+    "role": "target",
+    "event_us": 263.10399174690247
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 70,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.53600108623505
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 71,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.18400585651398
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 71,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.24000358581543
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 71,
+    "position": 2,
+    "role": "target",
+    "event_us": 185.05600094795227
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 71,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.9759907722473
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 72,
+    "position": 0,
+    "role": "target",
+    "event_us": 184.67199802398682
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 72,
+    "position": 1,
+    "role": "target",
+    "event_us": 236.4480048418045
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 72,
+    "position": 2,
+    "role": "target",
+    "event_us": 208.8959962129593
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 72,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.81601190567017
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 73,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.8239929676056
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 73,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.79200303554535
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 73,
+    "position": 2,
+    "role": "target",
+    "event_us": 261.02399826049805
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 73,
+    "position": 3,
+    "role": "target",
+    "event_us": 185.05600094795227
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 74,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.34399962425232
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 74,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.9440128803253
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 74,
+    "position": 2,
+    "role": "target",
+    "event_us": 185.31200289726257
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 74,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.5919988155365
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 75,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.7840042114258
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 75,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.54399704933167
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 75,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.39999735355377
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 75,
+    "position": 3,
+    "role": "target",
+    "event_us": 208.8959962129593
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 76,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.30400800704956
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 76,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.1519981622696
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 76,
+    "position": 2,
+    "role": "target",
+    "event_us": 237.8239929676056
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 76,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.89600718021393
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 77,
+    "position": 0,
+    "role": "target",
+    "event_us": 184.4480037689209
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 77,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.719988822937
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 77,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.4399929046631
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 77,
+    "position": 3,
+    "role": "target",
+    "event_us": 237.85600066184998
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 78,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.66399919986725
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 78,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.76800620555878
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 78,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.81601190567017
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 78,
+    "position": 3,
+    "role": "target",
+    "event_us": 210.4959934949875
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 79,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.50399339199066
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 79,
+    "position": 1,
+    "role": "target",
+    "event_us": 237.7600073814392
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 79,
+    "position": 2,
+    "role": "target",
+    "event_us": 185.2799952030182
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 79,
+    "position": 3,
+    "role": "target",
+    "event_us": 261.6640031337738
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 80,
+    "position": 0,
+    "role": "target",
+    "event_us": 186.49600446224213
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 80,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.27199637889862
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 80,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.05600488185883
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 80,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.9440128803253
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 81,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.69600689411163
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 81,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.3760073184967
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 81,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.56000995635986
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 81,
+    "position": 3,
+    "role": "target",
+    "event_us": 185.05600094795227
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 82,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.21599864959717
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 82,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.7519965171814
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 82,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.86399948596954
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 82,
+    "position": 3,
+    "role": "target",
+    "event_us": 237.2480034828186
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 83,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.7519965171814
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 83,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.83200669288635
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 83,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.39999735355377
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 83,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.27999913692474
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 84,
+    "position": 0,
+    "role": "target",
+    "event_us": 264.19198513031006
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 84,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.53600108623505
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 84,
+    "position": 2,
+    "role": "target",
+    "event_us": 237.56800591945648
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 84,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.86399948596954
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 85,
+    "position": 0,
+    "role": "target",
+    "event_us": 184.32000279426575
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 85,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.5280022621155
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 85,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.4399929046631
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 85,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.0480021238327
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 86,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.40799725055695
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 86,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.35199558734894
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 86,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.4000012874603
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 86,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.50399339199066
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 87,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.9200040102005
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 87,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.11200261116028
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 87,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.9920004606247
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 87,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.7840042114258
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 88,
+    "position": 0,
+    "role": "target",
+    "event_us": 186.43200397491455
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 88,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.17600309848785
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 88,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.4080001115799
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 88,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.688010931015
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 89,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.66399919986725
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 89,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.50399339199066
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 89,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.59198784828186
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 89,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.57600474357605
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 90,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.02399718761444
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 90,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.7519965171814
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 90,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.76800620555878
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 90,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.17600309848785
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 91,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.33598589897156
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 91,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.9920004606247
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 91,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.3359968662262
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 91,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.24800634384155
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 92,
+    "position": 0,
+    "role": "target",
+    "event_us": 261.9839906692505
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 92,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.47200059890747
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 92,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.24000358581543
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 92,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.89600718021393
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 93,
+    "position": 0,
+    "role": "target",
+    "event_us": 185.05600094795227
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 93,
+    "position": 1,
+    "role": "target",
+    "event_us": 262.30400800704956
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 93,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.50399339199066
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 93,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.17600309848785
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 94,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.34399676322937
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 94,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.89600718021393
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 94,
+    "position": 2,
+    "role": "target",
+    "event_us": 261.79200410842896
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 94,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.4080001115799
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 95,
+    "position": 0,
+    "role": "target",
+    "event_us": 209.02399718761444
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 95,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.11200261116028
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 95,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.83200669288635
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 95,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.33598589897156
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 96,
+    "position": 0,
+    "role": "target",
+    "event_us": 184.25600230693817
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 96,
+    "position": 1,
+    "role": "target",
+    "event_us": 238.20799589157104
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 96,
+    "position": 2,
+    "role": "target",
+    "event_us": 209.34399962425232
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 96,
+    "position": 3,
+    "role": "target",
+    "event_us": 262.81601190567017
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 97,
+    "position": 0,
+    "role": "target",
+    "event_us": 237.95199394226074
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 97,
+    "position": 1,
+    "role": "target",
+    "event_us": 209.1200053691864
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 97,
+    "position": 2,
+    "role": "target",
+    "event_us": 262.62399554252625
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 97,
+    "position": 3,
+    "role": "target",
+    "event_us": 184.83200669288635
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 98,
+    "position": 0,
+    "role": "target",
+    "event_us": 208.8640034198761
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 98,
+    "position": 1,
+    "role": "target",
+    "event_us": 263.0079984664917
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 98,
+    "position": 2,
+    "role": "target",
+    "event_us": 184.7359985113144
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 98,
+    "position": 3,
+    "role": "target",
+    "event_us": 238.0480021238327
+  },
+  {
+    "trial": 2,
+    "variant": "both",
+    "cache": "repeat_no_evict",
+    "iteration": 99,
+    "position": 0,
+    "role": "target",
+    "event_us": 262.9440128803253
+  },
+  {
+    "trial": 2,
+    "variant": "baseline",
+    "cache": "repeat_no_evict",
+    "iteration": 99,
+    "position": 1,
+    "role": "target",
+    "event_us": 184.7040057182312
+  },
+  {
+    "trial": 2,
+    "variant": "tcgen05",
+    "cache": "repeat_no_evict",
+    "iteration": 99,
+    "position": 2,
+    "role": "target",
+    "event_us": 238.3359968662262
+  },
+  {
+    "trial": 2,
+    "variant": "layout",
+    "cache": "repeat_no_evict",
+    "iteration": 99,
+    "position": 3,
+    "role": "target",
+    "event_us": 209.47200059890747
+  }
+]

@@ -1,0 +1,7 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 3934641 (/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/shape5_overhead_decomposition_pure_matmul_20260725/shell_utccp)
+==PROF== Profiling "device_kernel" - 0 (1/1): 0%....50%....100% - 17 passes
+RESULT,5,M256_N192_K256_Eauto_C2x2x1,ok,1,921.075
+==PROF== Disconnected from process 3934641
+==PROF== Report: /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op1/results/shape5_overhead_decomposition_pure_matmul_20260725/ncu/shell_utccp.ncu-rep

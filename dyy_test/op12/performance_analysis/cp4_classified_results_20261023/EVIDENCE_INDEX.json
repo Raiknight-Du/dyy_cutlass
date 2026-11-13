@@ -1,0 +1,854 @@
+{
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/FORMAL_CLOCK_BEFORE.json": {
+    "sha256": "08a35989508c971bfae0561a561999109ab176fed1646b9fa4fb8ca384fe6ad0",
+    "bytes": 5963
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/FORMAL_CLOCK_CHANGES.json": {
+    "sha256": "a9cd1744c37938de4c9ebddd820e8e95ea60c67005b81a91c60851ca8ca47f19",
+    "bytes": 19697
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/FORMAL_CLOCK_RESTORED.json": {
+    "sha256": "4fcf0780c88e74868e423e3b5f6109c404774130b599df201150f832f9da6393",
+    "bytes": 5982
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/FORMAL_STATUS.json": {
+    "sha256": "47f2f06e3a27abea5fa3765bf70a070037d4514c5835b1cd4dee1cf33bb3db25",
+    "bytes": 54718
+  },
+  "cp4_classified_results_20261023/FORMAL_CLOCK_BEFORE.json": {
+    "sha256": "f8d4c22b35d6fa7f2fb110bad0f1f2176d5e40e7ef213c42bcab096563a7e45f",
+    "bytes": 5963
+  },
+  "cp4_classified_results_20261023/FORMAL_CLOCK_CHANGES.json": {
+    "sha256": "f8b99a4f82619f78bccfc0cc2b1e3883bc18b6011f5fc3f0d658e2d1b8c17d30",
+    "bytes": 6564
+  },
+  "cp4_classified_results_20261023/FORMAL_CLOCK_RESTORED.json": {
+    "sha256": "ed0304a553aa21c04659e94cdb42ccc86330a95eeec2beb09f1a6fbbd0f71038",
+    "bytes": 5982
+  },
+  "cp4_classified_results_20261023/FORMAL_STATUS.json": {
+    "sha256": "cc69b76b2ecf17cf255000aa763862434cd6609cd1e8e56b332db9c445c4a1dd",
+    "bytes": 18493
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/CACHE_VALIDATION.json": {
+    "sha256": "8d4a723673c0e1b3c9f6555b04dfda741caca6c1a65ee03472d216b3c8f645a0",
+    "bytes": 2758
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_native_t1/IDENTITY.json": {
+    "sha256": "0db3caad36a94c35c5d035285570fb20bd5c576ed704a7063d0c862d456b6c93",
+    "bytes": 1242
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_native_t1/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_native_t1/EVENT_SAMPLES.json": {
+    "sha256": "39e168831e638431d8fde0dbe20d922e2aad050d45ffa956f3dd5e471cdf5e93",
+    "bytes": 8529
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_native_t1/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "5c42f878e9fcbe9224a077661929d5d0574970e797ffe6ba5884ddfd30d2141a",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S8192_cold_auto_native_t1_NVML.json": {
+    "sha256": "184bf688d65be65f5e6c9bca177bed32b6f911159cfc882bb85a04ec49d6f4ae",
+    "bytes": 206648
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_metrics_t1/IDENTITY.json": {
+    "sha256": "a8dbd3a07841f18ec3a63490b2ef68fbb3cdfefee6228ef3d6d68ea1fcff1102",
+    "bytes": 1243
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_metrics_t1/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_metrics_t1/EVENT_SAMPLES.json": {
+    "sha256": "2a9d0646593b184b5f3d75bc8d33edf834c205de317e319716cb2420434fe512",
+    "bytes": 8480
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_metrics_t1/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "4a58bbd7b2a39bb2c3e3cb8bc14b33a73206d9501f21af904e15482c1b8acd7a",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S8192_cold_auto_metrics_t1_NVML.json": {
+    "sha256": "92d662afdd5edd014b2e880d594ef965e9b5ff5c2e7734f9fe0e18c4f0b6c910",
+    "bytes": 294209
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S8192_cold_auto_metrics_t1/KERNEL_INTERVALS.csv": {
+    "sha256": "e69fdd2a5f9a4eef671103cdff84c78265c208beefaa2642f8a4b723be7b4337",
+    "bytes": 255633
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_native_t2/IDENTITY.json": {
+    "sha256": "5c4bc68dce8bfae31d59346a8dd64fbd0988d20b45e7f8097f3294dcecbc5239",
+    "bytes": 1242
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_native_t2/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_native_t2/EVENT_SAMPLES.json": {
+    "sha256": "8e3907d3347b59b26f9a9a6db66a640c14ea8ff49cb61ac8b2b8d3ebde6edf58",
+    "bytes": 8518
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_native_t2/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "e1f67f328f3c399e59b5cd58e93cc9ad05e5c311f0ef6ccef68bff3d4d4be94b",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S8192_cold_auto_native_t2_NVML.json": {
+    "sha256": "8dd6cbb3233e9bd488fad28bf99470a3332c72a70d2354ccc4685a41c22f27c7",
+    "bytes": 202600
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_metrics_t2/IDENTITY.json": {
+    "sha256": "379a1a6de22ab79f161ff5ea1c1114982f056e82519a5f1160250a7f114852bb",
+    "bytes": 1243
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_metrics_t2/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_metrics_t2/EVENT_SAMPLES.json": {
+    "sha256": "6f38b74c1c38ed8d0a0b85653f4c1017156efa6df366ffc71b61922f91dec4d3",
+    "bytes": 8489
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_metrics_t2/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "4af8b4b49c7e3468ebbadeb8c0005bd5726cd24e0714730f72738adc5feca06d",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S8192_cold_auto_metrics_t2_NVML.json": {
+    "sha256": "d8981af115f5bc5efdad2e522020a23c4ef48dce21c8e9f34989b10fd2f4ee6b",
+    "bytes": 298927
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S8192_cold_auto_metrics_t2/KERNEL_INTERVALS.csv": {
+    "sha256": "4bb1a33eaed39e5e3836458eb046b08311b2e0f17c1487e5faebfc9246caf35c",
+    "bytes": 255424
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_native_t3/IDENTITY.json": {
+    "sha256": "ef4b6592a2068a8716d51912633941ace6c336ce1d918f06b4a35ab3c3e21094",
+    "bytes": 1242
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_native_t3/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_native_t3/EVENT_SAMPLES.json": {
+    "sha256": "4c62ffee32d7977ccc45216117c08b67cc81bbb08d5c3f4aa6a1059f985a604a",
+    "bytes": 8546
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_native_t3/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "52c65623499023a3cdc833ecced484a1b9d82163e83ef7c96a0ae1c3687b1cb4",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S8192_cold_auto_native_t3_NVML.json": {
+    "sha256": "19ab0a4842c70d86952d26bd0e4a7671f278b2ce1c22c28b22fec3b6d396ed6f",
+    "bytes": 207266
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_metrics_t3/IDENTITY.json": {
+    "sha256": "1eda85c4a19316ce314f05f02aedb8462dfd2175361020f4866c0be903bc589d",
+    "bytes": 1243
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_metrics_t3/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_metrics_t3/EVENT_SAMPLES.json": {
+    "sha256": "be40b95b6034b8dd386b9d934fcb25877a581b3cb4acdeb81b5a7c6dd1311b86",
+    "bytes": 8486
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S8192_cold_auto_metrics_t3/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "15acc2d1c86fce8c0c5f3edac92c8bff76d16ff01b5ea8a50ab08ced492c289c",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S8192_cold_auto_metrics_t3_NVML.json": {
+    "sha256": "a4f596a7cb12e1a1a7bb6a2aa6ef5e8e71ef78e13ae56eb105bb3a9a8bfef8b3",
+    "bytes": 294791
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S8192_cold_auto_metrics_t3/KERNEL_INTERVALS.csv": {
+    "sha256": "10db0d1d8e686da4badfbe76083cd4729aecd7c40d609c50a3c80850652f23c4",
+    "bytes": 255668
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_native_t1/IDENTITY.json": {
+    "sha256": "a27e2b64e25997fa3ef6bee72588a187a33ac3de2c85251d8e36b1dbd3a60526",
+    "bytes": 1243
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_native_t1/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_native_t1/EVENT_SAMPLES.json": {
+    "sha256": "fe4d42456ddd6b14b6ba097a6a2e27fd945aa91da55f0235cdf1d6d0a9cc4f6f",
+    "bytes": 8599
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_native_t1/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "90d274605629c41f2053f68b2b96839d54209395caef5645ead870bca4df8db8",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S16384_cold_auto_native_t1_NVML.json": {
+    "sha256": "288428675df8368f6236e34ff3a450b222d83b118351079a7c79143f14e9ffd0",
+    "bytes": 225031
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_metrics_t1/IDENTITY.json": {
+    "sha256": "08fee42e7078e5b97f3d40ce82cfd9dacc600c1083084b743f99c8fe42125b3e",
+    "bytes": 1244
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_metrics_t1/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_metrics_t1/EVENT_SAMPLES.json": {
+    "sha256": "c17c210f64bb28f4fef60dc464c088c8231a27cecb6fb953787e00b3c45b79a1",
+    "bytes": 8579
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_metrics_t1/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "d2f1814b9b4120810de0cc79a5cbf49690f0c1c0538ec34fa6cad100b4282767",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S16384_cold_auto_metrics_t1_NVML.json": {
+    "sha256": "360438eb2b106a91fb2a2385b94d33da7feee62030c59a30700a94c90e5a9ab3",
+    "bytes": 319910
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S16384_cold_auto_metrics_t1/KERNEL_INTERVALS.csv": {
+    "sha256": "eb1f985161a8d74ecb38a798822462bffe2c92851a7711f838ed61d7d104d88c",
+    "bytes": 260061
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_native_t2/IDENTITY.json": {
+    "sha256": "896e3ca4e060c05cf06c31efdeba2c0eec20b1318b74c122b8e03db3e2fc5fad",
+    "bytes": 1243
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_native_t2/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_native_t2/EVENT_SAMPLES.json": {
+    "sha256": "2c0ed0ec388a922c2229b9f451d9c8ec817a860ab46b5cb3ec17ca5f88d1d4b3",
+    "bytes": 8594
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_native_t2/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "510e427791e47adfda6a5c15fe659dbf535ec0f6d855f85f2ebab2365bb5225b",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S16384_cold_auto_native_t2_NVML.json": {
+    "sha256": "c6efd975a94ec53866a98a7d3fb04008066985a68ac0e767d837ee39015f4464",
+    "bytes": 226109
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_metrics_t2/IDENTITY.json": {
+    "sha256": "b724c1fcfb4ee1c8bcd752197c0ad20f3473459eab4d00148c6bfe8f0805890a",
+    "bytes": 1244
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_metrics_t2/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_metrics_t2/EVENT_SAMPLES.json": {
+    "sha256": "08c9e779f62851b977e52a71acb252d736a7e6f97e88d13298a7eab93f5aa93a",
+    "bytes": 8569
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_metrics_t2/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "68b17ffbaab9e2815e8360062cf3cd1e17313f1c1a6db4a8b54812ba93115957",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S16384_cold_auto_metrics_t2_NVML.json": {
+    "sha256": "70abab906ceeb1631673b2e076542017c5bd847e246f83bfa43409a49c11de9d",
+    "bytes": 315614
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S16384_cold_auto_metrics_t2/KERNEL_INTERVALS.csv": {
+    "sha256": "39e04327eb42ec4141300e2986e7f7e0c3e26acf59aab7f51e67f9608087ec96",
+    "bytes": 258811
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_native_t3/IDENTITY.json": {
+    "sha256": "1162fa4313787222b041a6cfa7430573cbc1bf058ecc8bcdc3f095faf52f9623",
+    "bytes": 1243
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_native_t3/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_native_t3/EVENT_SAMPLES.json": {
+    "sha256": "e75d81bdd70a35327c24b682c894959534e75ceeda9c328ad848d10f397c2d95",
+    "bytes": 8594
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_native_t3/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "51cc727efbfbe1a9a7f53d2f7e1b4ddc489a2f4cf3a44538b8dc18f4c87d4b7e",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S16384_cold_auto_native_t3_NVML.json": {
+    "sha256": "209a6c7bd1c5f8ea9f4ce841651c2e98369333fde2d627113c5c363a4a4798c1",
+    "bytes": 226610
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_metrics_t3/IDENTITY.json": {
+    "sha256": "3ef59b79efc0c2fac72ddf3955eea9da6fc423ffeee0ff073c6f8ade014f5f85",
+    "bytes": 1244
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_metrics_t3/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_metrics_t3/EVENT_SAMPLES.json": {
+    "sha256": "dd76025195f4d45bd3a260b1a072cd4c1748afd600a90ef5ab389a6eb1273b92",
+    "bytes": 8576
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S16384_cold_auto_metrics_t3/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "b9d6f3203928acd8bce8df43bf8b3a2c1df6b4fd4371ba6b5c36c56ba15e2b72",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S16384_cold_auto_metrics_t3_NVML.json": {
+    "sha256": "c7983985e6a27d671b66841c1b805c194d071ec4bc5bbf6697bbb8450228416c",
+    "bytes": 314042
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S16384_cold_auto_metrics_t3/KERNEL_INTERVALS.csv": {
+    "sha256": "f5e0ba08e101eabac718c2ee9d36aadccf9ffd0e465fc076fdfbfd8bfa708d49",
+    "bytes": 258766
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_native_t1/IDENTITY.json": {
+    "sha256": "4f25f047b4657da7320f27a107cfd99c69ee9a7dad16f7e8d228797beb68bc81",
+    "bytes": 1243
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_native_t1/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_native_t1/EVENT_SAMPLES.json": {
+    "sha256": "3440fa4eaf779e622ddff8e935ff19c4ff1de706b58812025b9365251e22e61b",
+    "bytes": 8545
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_native_t1/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "929206bf0f53eaa478ad234d4a0e1465446b886c31c45ee53723e7f63ab8c65c",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_auto_native_t1_NVML.json": {
+    "sha256": "165b57e850d465bded20aa13d6f07683deeae2794c376b509e8d446bda5c8d5c",
+    "bytes": 266814
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_metrics_t1/IDENTITY.json": {
+    "sha256": "bb2d15f0fa686f704856180f00f303855685e61d969a187a87bf9b3bcde4a7cd",
+    "bytes": 1244
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_metrics_t1/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_metrics_t1/EVENT_SAMPLES.json": {
+    "sha256": "b1812a9d76649effa439f31356c35bcf8cf41bf5a738beb3563bd5e23e2da4c5",
+    "bytes": 8477
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_metrics_t1/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "587a24c807eb8d51fa1c13ef8ed73e643555d2d97794bbbb13cd7a4d40fa66bd",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_auto_metrics_t1_NVML.json": {
+    "sha256": "cc4256bbb6b69b75333374041b2af155f83403c1ba9d619607cb2b0f8c54d834",
+    "bytes": 350560
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_auto_metrics_t1/KERNEL_INTERVALS.csv": {
+    "sha256": "456fbe57a11905b800934bccffc351ce0b8c3f23391f08760cfa47719c0e2d4a",
+    "bytes": 262101
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_native_t2/IDENTITY.json": {
+    "sha256": "7182a07138c72509665ad51c2c44e3287690133cccd701a3d38f0e9a454d0f35",
+    "bytes": 1243
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_native_t2/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_native_t2/EVENT_SAMPLES.json": {
+    "sha256": "ab858a6d095dfe5b7e89ab173a757d00d1cd008d54f2222683d4894cb96ed539",
+    "bytes": 8553
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_native_t2/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "5c25065ce5a2b1a829f8cd28f2e6df0f1379e7a38c79df375ddd4795fafe8fad",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_auto_native_t2_NVML.json": {
+    "sha256": "58beff65e48466121d6a1206b63d29b76d26c154e7ab6813e0feda9f98f4fe58",
+    "bytes": 266781
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_metrics_t2/IDENTITY.json": {
+    "sha256": "ceb5f4f36b3d22cd0108fde3e56382e4bf9dde3b1d1ca35d5685ef9ee9c30883",
+    "bytes": 1244
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_metrics_t2/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_metrics_t2/EVENT_SAMPLES.json": {
+    "sha256": "005835a77e92e759b9125967526f2a89120c86e4a9860927ac33daa854152ac3",
+    "bytes": 8471
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_metrics_t2/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "8325f2973ccccd236a5e6aa0d2417762a13b89855ac451c5ede50cee5c20c4a9",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_auto_metrics_t2_NVML.json": {
+    "sha256": "0155526d4a2ac4d2434baa1e630bc2a938bfde2e49953461de24f36981e889fe",
+    "bytes": 351508
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_auto_metrics_t2/KERNEL_INTERVALS.csv": {
+    "sha256": "9c22c9b8d00a967421421abcd3f4d4d0e2a8c06597d472e682bf7252775f88bd",
+    "bytes": 262108
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_native_t3/IDENTITY.json": {
+    "sha256": "b26742c99175336d01142a6baca3a64738d1beac34647b32893ab5b9b54b5dd9",
+    "bytes": 1243
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_native_t3/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_native_t3/EVENT_SAMPLES.json": {
+    "sha256": "e595eeb4c43771b2ed70f5701bfce49c689189a563d8b1357df6488635601596",
+    "bytes": 8515
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_native_t3/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "f5d62082a421bde11266e8fa80a33e2751e9e8355c84c11676b9ae543759fc93",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_auto_native_t3_NVML.json": {
+    "sha256": "25e1f7bbc870080b807eddcfe4139809eb4eff5ab7c51323299667036dbc9495",
+    "bytes": 263629
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_metrics_t3/IDENTITY.json": {
+    "sha256": "376735a63d2bb47c1981fd9efba0872d5182370da34803d45952d59fdf6506be",
+    "bytes": 1244
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_metrics_t3/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_metrics_t3/EVENT_SAMPLES.json": {
+    "sha256": "0697a8872df6224c1f9501c4abfd59726aa5908090c4e86addc91f31a400f10f",
+    "bytes": 8470
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_auto_metrics_t3/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "954957eb973fa79439bf3073bcd45990c67d6bd5dd07c988f281aed8f1a944ef",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_auto_metrics_t3_NVML.json": {
+    "sha256": "9fca44c0fe7b205f65ecd4bb702c2c0a7219de37cdfbc654f255cbd7dc287a58",
+    "bytes": 346373
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_auto_metrics_t3/KERNEL_INTERVALS.csv": {
+    "sha256": "cc5d98982ba577ef22383307eaa598281ce0b6dc0d7212d2798b0b3ace2d003d",
+    "bytes": 262010
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S8192_cold_auto_metrics_t2/GPC_FREQUENCY_RAW.csv": {
+    "sha256": "cd9fc2cadee67d72601da735fc5f00ad9fec45e08a1a3aec1a5fd9c45b782658",
+    "bytes": 939044
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S16384_cold_auto_metrics_t2/GPC_FREQUENCY_RAW.csv": {
+    "sha256": "f5ec320403868986156c3fed1c1dfcaafc49882c5da6fd489d44e6594afd48d3",
+    "bytes": 1151208
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_auto_metrics_t2/GPC_FREQUENCY_RAW.csv": {
+    "sha256": "758785f77a740c7d694ed7d3d08531305f0b9bf59ee96e2b0b8c84201764c85f",
+    "bytes": 1077026
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_native_t1/IDENTITY.json": {
+    "sha256": "a95fc391053a435915995c5f13398d8b9d8be25e3b33d8e3c46c3a4817307dfb",
+    "bytes": 1248
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_native_t1/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_native_t1/EVENT_SAMPLES.json": {
+    "sha256": "78f50e38006eddbb137bf91ea3b3275a81cc2091fc2dd1b1f24a8a0abafbebb9",
+    "bytes": 8493
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_native_t1/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "dca9182349d65d0e95ab8d50990e1c1f8e9406cadf54469d4f0bd82267a22493",
+    "bytes": 165
+  },
+  "cp4_classified_results_20261023/formal_S8192_cold_locked1845_native_t1_NVML.json": {
+    "sha256": "967572e0169e976040c4e5c1068232c4b279ecf7eac7c9a7925584f922d54c59",
+    "bytes": 213084
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_metrics_t1/IDENTITY.json": {
+    "sha256": "d06cf5d9082b1fe5f477b52abcccebcbb1f86d0880590faba09a5092fc2c8d3e",
+    "bytes": 1249
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_metrics_t1/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_metrics_t1/EVENT_SAMPLES.json": {
+    "sha256": "0de3d926583c718f7837f2a10990b3d075013afef240a71b8c30e051c2540e8e",
+    "bytes": 8525
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_metrics_t1/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "ccd609b4438f4490eb54a51ff146ba22d5357906b8ebbc58ff0ae7fa5c71a260",
+    "bytes": 165
+  },
+  "cp4_classified_results_20261023/formal_S8192_cold_locked1845_metrics_t1_NVML.json": {
+    "sha256": "d3eb1a6887128ef8e344af52fb3efcaa9a7ae3d5b32e09b7932b743f320dc8d9",
+    "bytes": 295801
+  },
+  "cp4_classified_results_20261023/formal_S8192_cold_locked1845_metrics_t1/KERNEL_INTERVALS.csv": {
+    "sha256": "10aff2d8511a189af4290ddbb369b6c5770e0088f07677c86fda93c55a692537",
+    "bytes": 270274
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_native_t2/IDENTITY.json": {
+    "sha256": "3e21532843e2b52ffd5efc6e072c317348139607e6ef0227b64bb0e11b08a46e",
+    "bytes": 1248
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_native_t2/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_native_t2/EVENT_SAMPLES.json": {
+    "sha256": "3ee5c07a61905dc7ff1302b8629321577ecb6e0f3724bb6daed2a2e6e4598ba8",
+    "bytes": 8508
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_native_t2/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "ca81ef3b83bf0cf2f85d644e733eebf9de68f0f09b131bd88de73117f66e4038",
+    "bytes": 165
+  },
+  "cp4_classified_results_20261023/formal_S8192_cold_locked1845_native_t2_NVML.json": {
+    "sha256": "fa241f838222a842af14fb8831c5aacd8fa2206b0f953f6fbd2293e7e505f72f",
+    "bytes": 215733
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_metrics_t2/IDENTITY.json": {
+    "sha256": "d7633008b61a8eec70ad82fa7cc05073465cee19b84fd6b62f99ca4df0386b80",
+    "bytes": 1249
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_metrics_t2/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_metrics_t2/EVENT_SAMPLES.json": {
+    "sha256": "8938e92ff8ae30a67d0d02f17e6fcb93bc3b569d56f8913db3e3337dc532ee8f",
+    "bytes": 8531
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_metrics_t2/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "f35d51e6d62de37c0536b39e42ff00069043326d8df9cafa1bbf33570780d77b",
+    "bytes": 165
+  },
+  "cp4_classified_results_20261023/formal_S8192_cold_locked1845_metrics_t2_NVML.json": {
+    "sha256": "aeaefcb58e1d2bdb7c716ff153bca3b1bf542ab89871c91f0af72da4d278e349",
+    "bytes": 298919
+  },
+  "cp4_classified_results_20261023/formal_S8192_cold_locked1845_metrics_t2/KERNEL_INTERVALS.csv": {
+    "sha256": "ac8c46ebc4ad128c0af5f29b500a66083074e6e9c1a51a3c3738f223a168b49f",
+    "bytes": 270199
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_native_t3/IDENTITY.json": {
+    "sha256": "67228dd47f89b34dda439e8216aa0d286969e7f2a77d0a466fcc471ce9bcc2e6",
+    "bytes": 1248
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_native_t3/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_native_t3/EVENT_SAMPLES.json": {
+    "sha256": "b4688aca20ea9ec9f9638d5cec29d0912f7516a0607f2fb904aa0fb478f76cdd",
+    "bytes": 8525
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_native_t3/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "283ac31a2a2e706edc4ccd1fb410c0afafb71454af4bdfec21ac577ca52a5ce6",
+    "bytes": 165
+  },
+  "cp4_classified_results_20261023/formal_S8192_cold_locked1845_native_t3_NVML.json": {
+    "sha256": "1a5fd3ad24bb6c265be8fddd3bfbbd5dc53cb349efcb1aefb30ab3786ec5512c",
+    "bytes": 205636
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_metrics_t3/IDENTITY.json": {
+    "sha256": "529686d20eb08ff6ebbdc9df5a920703ea6e3deee0bbecda1d31781ae5a5a05c",
+    "bytes": 1249
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_metrics_t3/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_metrics_t3/EVENT_SAMPLES.json": {
+    "sha256": "95d34a05265574d54d8f607dd18d11a46de5db6823fe572ece43e2d75a0d281b",
+    "bytes": 8523
+  },
+  "cp4_classified_results_20261023/runs/S8192_cold_locked1845_metrics_t3/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "7adf8569d68a93be8f501727106e63fca858fc23daff013c180b59132e05c481",
+    "bytes": 165
+  },
+  "cp4_classified_results_20261023/formal_S8192_cold_locked1845_metrics_t3_NVML.json": {
+    "sha256": "9aef770c0670a13597a8b92dba4d40cb87072f4f3f93c94545f40e1c01f2eb92",
+    "bytes": 297333
+  },
+  "cp4_classified_results_20261023/formal_S8192_cold_locked1845_metrics_t3/KERNEL_INTERVALS.csv": {
+    "sha256": "05fe49339fad9110a9301011faa2619546043e8f6a73883291a5fe435870df20",
+    "bytes": 270134
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_native_t1/IDENTITY.json": {
+    "sha256": "97bfc4b53368028d21aad85e964152561981748cc09a661d2e17aa27d4a0512d",
+    "bytes": 1249
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_native_t1/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_native_t1/EVENT_SAMPLES.json": {
+    "sha256": "8b6177a684e0ac03006bd4f6cd799a2a17884937c7a6f6e3d84de7bb88ef2646",
+    "bytes": 8601
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_native_t1/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "514ea39f3c5d81eac9e2358b781810607e770fc693ebdeb81fe07e4089c8bcfd",
+    "bytes": 165
+  },
+  "cp4_classified_results_20261023/formal_S16384_cold_locked1845_native_t1_NVML.json": {
+    "sha256": "293a78ad41db9e5daf921d6ec049a91e3b91df2a02f920ef1fae074793347940",
+    "bytes": 230642
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_metrics_t1/IDENTITY.json": {
+    "sha256": "7c22439a0f092e4faf3e72ab9fc9cff968275bdaa5292c130e8d251114e91485",
+    "bytes": 1250
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_metrics_t1/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_metrics_t1/EVENT_SAMPLES.json": {
+    "sha256": "57d43118771a35fde4d48122f040ea3b5b6bae98499549446baa8d018d9d7319",
+    "bytes": 8566
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_metrics_t1/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "3306f43e31b27ff7ed2ae8f7926d096b26a9753675ef4980c099bf6a84b50e05",
+    "bytes": 165
+  },
+  "cp4_classified_results_20261023/formal_S16384_cold_locked1845_metrics_t1_NVML.json": {
+    "sha256": "0c51d77eefc52e3a02349d44f96b5084fe6112545762c909e8e1ca5f5cb0720b",
+    "bytes": 319270
+  },
+  "cp4_classified_results_20261023/formal_S16384_cold_locked1845_metrics_t1/KERNEL_INTERVALS.csv": {
+    "sha256": "2cd0cb7a7450296f562dd07e00cec4acccdb2aac5851f96c7d9a093ac5b69c79",
+    "bytes": 274141
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_native_t2/IDENTITY.json": {
+    "sha256": "557e349e8e149dbdda9c7c176bd224eb8d75492a0d4df774b3f77da47cc9a010",
+    "bytes": 1249
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_native_t2/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_native_t2/EVENT_SAMPLES.json": {
+    "sha256": "131b8c3ee9730896737fc850f8fa0fb8ed72e56ca66da26bf0515e9582833b1f",
+    "bytes": 8599
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_native_t2/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "04c0a3aa504cb851c4a0e2926dee226ef21ea0a050ecac3530dbf38f4fcc2d79",
+    "bytes": 165
+  },
+  "cp4_classified_results_20261023/formal_S16384_cold_locked1845_native_t2_NVML.json": {
+    "sha256": "c8b942f8eab5d8e22847d3a52d0f38f063415dbbcaba1261b70afbf41be91480",
+    "bytes": 231780
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_metrics_t2/IDENTITY.json": {
+    "sha256": "185000f4e663d8ed1914f905a1d0f54c7d2e131068f3d3a0fb056c912ffec65d",
+    "bytes": 1250
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_metrics_t2/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_metrics_t2/EVENT_SAMPLES.json": {
+    "sha256": "e80c80f40db1f8d6b2171a16f8c4b9947b4ea54741816026210524c31f321c47",
+    "bytes": 8569
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_metrics_t2/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "59209c765f4d30ef934dcc0ebfd1c282823b9f5b7fd8204e6dda220416cbc2ec",
+    "bytes": 165
+  },
+  "cp4_classified_results_20261023/formal_S16384_cold_locked1845_metrics_t2_NVML.json": {
+    "sha256": "e57c4386a2cfce675a9b7032ff790d44393fa3e378baa107fb743a1acd7d6fe1",
+    "bytes": 323436
+  },
+  "cp4_classified_results_20261023/formal_S16384_cold_locked1845_metrics_t2/KERNEL_INTERVALS.csv": {
+    "sha256": "0e1eab065a764b34688fdba4be00f63b66c3ac9984dc12feaa7e7541c853feae",
+    "bytes": 274203
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_native_t3/IDENTITY.json": {
+    "sha256": "870aa96cb12a20bb1ab0254888e195776fc4c8a705c28907b7cea957f6c0eadb",
+    "bytes": 1249
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_native_t3/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_native_t3/EVENT_SAMPLES.json": {
+    "sha256": "17673fcb9bc08a6f60055bc3aceb8a60675af1d75646f72419154fc8e9531a5f",
+    "bytes": 8581
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_native_t3/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "4def9e1b90925a48ce1aebd1c38911ab034e2e363f6dc2fcbdae8b6b240b9785",
+    "bytes": 165
+  },
+  "cp4_classified_results_20261023/formal_S16384_cold_locked1845_native_t3_NVML.json": {
+    "sha256": "6ea24d030ccb1d05b932990805f41e0579ee6e18e7864ac74e3a21f771c98c0c",
+    "bytes": 231249
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_metrics_t3/IDENTITY.json": {
+    "sha256": "8414937f66b6c64341e3998bec63087f48c687c963a496f209b4afa16977fa29",
+    "bytes": 1250
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_metrics_t3/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_metrics_t3/EVENT_SAMPLES.json": {
+    "sha256": "055a0d17621d977d8c62ce82bb53a0d356075586700b6552c589606f72c355c2",
+    "bytes": 8556
+  },
+  "cp4_classified_results_20261023/runs/S16384_cold_locked1845_metrics_t3/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "7116c36a2dc33a785d7626e8a17bcb6a9c98cbe854e241a6547136261be2030f",
+    "bytes": 165
+  },
+  "cp4_classified_results_20261023/formal_S16384_cold_locked1845_metrics_t3_NVML.json": {
+    "sha256": "b38dc57d378396ba46a745a772d79876742c973abf8a77288b49435d1301917f",
+    "bytes": 318770
+  },
+  "cp4_classified_results_20261023/formal_S16384_cold_locked1845_metrics_t3/KERNEL_INTERVALS.csv": {
+    "sha256": "1935338f3f0d4461790c8dfe18b34b2f7188c7f04524bc9d302cbcdd719f5551",
+    "bytes": 274042
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_native_t1/IDENTITY.json": {
+    "sha256": "6a0be81a0f3bb1a9c2ba705e94c15502092b23ef45a9964fc3d4978a2b63267a",
+    "bytes": 1249
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_native_t1/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_native_t1/EVENT_SAMPLES.json": {
+    "sha256": "9ef10af6fb3439925c3d7778c3b109826e14816582c1075e30731fc66f382312",
+    "bytes": 8253
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_native_t1/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "6e88063dcfebe3691912cf13c0b9883b1e10af85bad946a1806529c5086e014d",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_locked1845_native_t1_NVML.json": {
+    "sha256": "cfd933d672af96f2c58d4d662b7693e657be001bc7418b5acd2da3ea07218c86",
+    "bytes": 267272
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_metrics_t1/IDENTITY.json": {
+    "sha256": "3d0717f8a15ba816a9d49835febf212ce769f7a9e3b5086894147d22b905d7e8",
+    "bytes": 1250
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_metrics_t1/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_metrics_t1/EVENT_SAMPLES.json": {
+    "sha256": "4b81474df2d7c1e13054a051e41056532cf4ac92ec6bead3f5eb70907e4ec215",
+    "bytes": 8379
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_metrics_t1/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "8ad23ff019606fd888b238c6d75c559ac062a73c265f0491522131a98c317795",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_locked1845_metrics_t1_NVML.json": {
+    "sha256": "ed1811e593ebd5cf21baa52bd0dad1ca30b4652f6d8fa0e7296d43f8414af6ef",
+    "bytes": 349463
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_locked1845_metrics_t1/KERNEL_INTERVALS.csv": {
+    "sha256": "beb473b07d51487b50066954d50ab9632ec9d3b82b1e1c31e0c7bd02d5859484",
+    "bytes": 276962
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_native_t2/IDENTITY.json": {
+    "sha256": "08c4d735977ffa265ac656989a1e4b79e96d21344b02a6dde8eb6ac3153a0c62",
+    "bytes": 1249
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_native_t2/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_native_t2/EVENT_SAMPLES.json": {
+    "sha256": "396bd5a6149f83ecb8ba429430780641b1a04546ad738b5cfde5b2e74a4b1a5f",
+    "bytes": 8253
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_native_t2/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "b2e4929e388652377ab0f5174df44737b854221db5c71b3eaa7577c94383aed4",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_locked1845_native_t2_NVML.json": {
+    "sha256": "34d69a8cbdcd106ddb2ce1a2b40a1496280e07783088e05700be7297b47ac873",
+    "bytes": 274605
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_metrics_t2/IDENTITY.json": {
+    "sha256": "7d65e29cfafb1c673d1040191f110767eac281e1281052572c72ce1aa160e92a",
+    "bytes": 1250
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_metrics_t2/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_metrics_t2/EVENT_SAMPLES.json": {
+    "sha256": "b8f14e46bed31b3783dec294702d17eade62feb0340122cf2a16ebc9c2638cf7",
+    "bytes": 8414
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_metrics_t2/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "afd1e81b7348ad5290744d769f6640f0be3e887e48eafedb2620351cda9f0001",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_locked1845_metrics_t2_NVML.json": {
+    "sha256": "2ef3b3d17612c42876024ac93fb0464ff1e7f6a28ffecfb189bc3b7e2cdae823",
+    "bytes": 372722
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_locked1845_metrics_t2/KERNEL_INTERVALS.csv": {
+    "sha256": "85b50e60b3f76b2788b1c513af06f6a78b9bc753daee89af9896cd6eb9f2f303",
+    "bytes": 276885
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_native_t3/IDENTITY.json": {
+    "sha256": "ad156ae61e22fb9c5e895d3e84d60b99d4a4f39a300dee337c9bd36e043a5e1b",
+    "bytes": 1249
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_native_t3/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_native_t3/EVENT_SAMPLES.json": {
+    "sha256": "d88f3da318c72538c4fd38cb56eefa4e16da4cc23d3be47c4eac4a8b46b3294f",
+    "bytes": 8281
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_native_t3/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "846d5c51accecacd9adef7112a933dda5e5c3326f4d9b85d9ad4f308a9673f7e",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_locked1845_native_t3_NVML.json": {
+    "sha256": "90d926448694e10a05b4d4a04773278f0e5fd203e0ef589c7a977ea712604194",
+    "bytes": 269320
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_metrics_t3/IDENTITY.json": {
+    "sha256": "355e3bc3d5df7ba28fc8cd46ac383e661943614df7739514990b1515a149075e",
+    "bytes": 1250
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_metrics_t3/CORRECTNESS.json": {
+    "sha256": "77a3c07d007abfab3e5f475851f5cc537b9b2b6fb9382ea02f5eb6c00d3671ba",
+    "bytes": 366
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_metrics_t3/EVENT_SAMPLES.json": {
+    "sha256": "9a0536ca4437077ecda9978e21d28216114289175cab0de06baa4d6e247d4ec9",
+    "bytes": 8359
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/runs/S32768_cold_locked1845_metrics_t3/MEASUREMENT_WALL_RANGE.json": {
+    "sha256": "44a532a1ce739de878247d1c741dc8cfd4d90f3cda714ff1f73e901428d979bc",
+    "bytes": 165
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_locked1845_metrics_t3_NVML.json": {
+    "sha256": "5a9c318b06e2b3ac2704c1934c34968fa8ac4af343472e61cc69ece729a8e5df",
+    "bytes": 357915
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_locked1845_metrics_t3/KERNEL_INTERVALS.csv": {
+    "sha256": "b39fa4e96695bb82d4557fbc6accf04e341520645d5b39082bf2da50763b3014",
+    "bytes": 276835
+  },
+  "cp4_classified_results_20261023/formal_S8192_cold_locked1845_metrics_t2/GPC_FREQUENCY_RAW.csv": {
+    "sha256": "8d178ae1dfc7864701c67100c5adbdf472d4c1bfaf0fefc5ff2d37eea890f4df",
+    "bytes": 921166
+  },
+  "cp4_classified_results_20261023/formal_S16384_cold_locked1845_metrics_t2/GPC_FREQUENCY_RAW.csv": {
+    "sha256": "d79ca82e3880c7642e91a0fe6c22f5b0bccacc35a974c497bfdfca8dfacc1cfd",
+    "bytes": 1053886
+  },
+  "_superseded/cp4_frequency_20261023/cp4_cold_l2_lock1845_20261023/formal_S32768_cold_locked1845_metrics_t2/GPC_FREQUENCY_RAW.csv": {
+    "sha256": "871ae7ac64889be0c189f46d1319059367d49fb0286b029f97e2a8bf7c379aea",
+    "bytes": 2819008
+  }
+}

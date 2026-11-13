@@ -1,0 +1,66 @@
+{
+  "CP_EVENT_PBASE__FRAME0": {
+    "paired_change_pct": 0.665529857788516,
+    "CI95_pct": [
+      0.41217238112649657,
+      0.8702717060137699
+    ],
+    "raw_paired_block_change_pct": [
+      0.665529857788516,
+      0.8702717060137699,
+      0.41217238112649657
+    ],
+    "relative_stability_limit_pct": 5,
+    "relative_stability_pass": true,
+    "local_absolute_bias_bound_cycles": null,
+    "screen_only": true
+  },
+  "CP_EVENT_FRAME0__FRAME7": {
+    "paired_change_pct": -4.322085988806579,
+    "CI95_pct": [
+      -4.849251182343672,
+      -3.9926621344555935
+    ],
+    "raw_paired_block_change_pct": [
+      -4.322085988806579,
+      -3.9926621344555935,
+      -4.849251182343672
+    ],
+    "relative_stability_limit_pct": null,
+    "relative_stability_pass": null,
+    "local_absolute_bias_bound_cycles": null,
+    "screen_only": true
+  },
+  "K4_EVENT_PBASE__FRAME0": {
+    "paired_change_pct": 0.022750540325322532,
+    "CI95_pct": [
+      -1.876396821455173,
+      1.4270489892430183
+    ],
+    "raw_paired_block_change_pct": [
+      0.022750540325322532,
+      -1.876396821455173,
+      1.4270489892430183
+    ],
+    "relative_stability_limit_pct": 5,
+    "relative_stability_pass": true,
+    "local_absolute_bias_bound_cycles": null,
+    "screen_only": true
+  },
+  "K4_EVENT_FRAME0__FRAME7": {
+    "paired_change_pct": -5.3680905968015,
+    "CI95_pct": [
+      -6.146883225268018,
+      -3.65296803652968
+    ],
+    "raw_paired_block_change_pct": [
+      -6.146883225268018,
+      -3.65296803652968,
+      -5.3680905968015
+    ],
+    "relative_stability_limit_pct": null,
+    "relative_stability_pass": null,
+    "local_absolute_bias_bound_cycles": null,
+    "screen_only": true
+  }
+}

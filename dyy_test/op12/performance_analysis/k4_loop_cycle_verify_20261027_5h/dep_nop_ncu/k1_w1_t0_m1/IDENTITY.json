@@ -1,0 +1,146 @@
+{
+  "kind": 1,
+  "warps": 1,
+  "grid": 1,
+  "threads": 128,
+  "original_sha256": "f9eee9bebcb750b7d210522a0429246bb85058d0ce923342d69ba7acc41bec4f",
+  "nop_sha256": "fd68685ee2b4a958fe79336ce8f665c28049f9edd8af84a6d715044434ad3b7b",
+  "ABI": {
+    "1": [
+      [
+        0,
+        32
+      ],
+      [
+        32,
+        8
+      ],
+      [
+        40,
+        8
+      ],
+      [
+        48,
+        4
+      ],
+      [
+        52,
+        4
+      ]
+    ],
+    "0": [
+      [
+        0,
+        32
+      ],
+      [
+        32,
+        8
+      ],
+      [
+        40,
+        8
+      ],
+      [
+        48,
+        4
+      ],
+      [
+        52,
+        4
+      ]
+    ]
+  },
+  "Cute_and_driver_original_verified": true,
+  "patch": {
+    "original": "f9eee9bebcb750b7d210522a0429246bb85058d0ce923342d69ba7acc41bec4f",
+    "patched": "fd68685ee2b4a958fe79336ce8f665c28049f9edd8af84a6d715044434ad3b7b",
+    "function": "kernel_cutlass_kernel_tmem_dep_nopTmemReadDepNop_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_1286416_TV_Layout_A_1128161281128_TV_Layout__0",
+    "targets": [
+      {
+        "pc": "0x410",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x460",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x4b0",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x500",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x550",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x5a0",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x5f0",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x640",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x690",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x6e0",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x730",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x780",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x7d0",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x820",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x870",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      },
+      {
+        "pc": "0x8c0",
+        "original": "000e2200081a000000000006000479ee",
+        "patched": "000fe200000000000000000000007918"
+      }
+    ],
+    "only_target_instruction_words_modified": true,
+    "model_enabled": false
+  },
+  "description": "Same final machine code, only 16 LDTM instructions replaced by NOP and their WB/RB disabled. Nonload instruction bytes, registers and schedule unchanged. Address data all zero in both modes.",
+  "model_enabled": false
+}

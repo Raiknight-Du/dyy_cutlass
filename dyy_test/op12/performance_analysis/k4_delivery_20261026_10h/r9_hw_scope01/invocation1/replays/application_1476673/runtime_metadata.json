@@ -1,0 +1,1 @@
+{"device":"NVIDIA B200","SM_count":148,"l2_size_B":132644864,"registers_per_SM":65536,"dynamic_SMEM_B":225280,"scalar_REG":139,"vector_REG":140,"scalar_local_B":0,"vector_local_B":0,"scalar_max_dynamic_SMEM":225280,"vector_max_dynamic_SMEM":225280,"max_CTA_per_SM_scalar":1,"max_CTA_per_SM_vector":1,"model_enabled":false}

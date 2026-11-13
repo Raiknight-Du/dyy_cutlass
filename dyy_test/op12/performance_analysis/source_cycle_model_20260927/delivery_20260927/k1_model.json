@@ -1,0 +1,4449 @@
+{
+  "schema_version": 1,
+  "model_id": "B200_148SM_SOURCE_A_20260927",
+  "kernel_id": "K1",
+  "kernel_name": "CPDeltaRuleTPrecomputeSm120 / SM100 subclass",
+  "prediction_type": "source_ordered_ideal_resource_scenario_with_symbolic_tails",
+  "strict_hardware_cycle_prediction": false,
+  "timing_evidence_inspected": false,
+  "source_identity": {
+    "commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+    "source_tree": "../ablation_20260908/source_original",
+    "entry_import": "gdn_cp_prefill.py:17-21,52-54",
+    "body": "delta_rule_cp_sm120.py:80-477",
+    "inverse_helper": "collective_inverse_hmma.py:14-404"
+  },
+  "workload": {
+    "batch": 1,
+    "sab_heads": 16,
+    "head_dim": 128,
+    "element_bytes": 2,
+    "beta_dtype": "FP32",
+    "sequence_lengths": [
+      8192,
+      16384,
+      32768
+    ],
+    "token_block": 64,
+    "num_k_heads": "source parameter; may be smaller than sab_heads and cause repeated logical K requests",
+    "tail_case": "none; every requested S is divisible by 64"
+  },
+  "launch": {
+    "grid_formula": "(num_sab_heads * max_t_blocks_per_seq, num_seqs, 1)",
+    "block_threads": 128,
+    "requested_min_blocks_per_sm": 8,
+    "cta_count_formula": "N = B * H * ceil(S/64)",
+    "cta_counts": [
+      2048,
+      4096,
+      8192
+    ],
+    "grid_source": "delta_rule_cp_sm120.py:290-306",
+    "block_index_source": "delta_rule_cp_sm120.py:321-335"
+  },
+  "common_hardware_model": {
+    "file": "hardware_model.json",
+    "enabled_sms": 148,
+    "reference_clock_hz": 1965000000,
+    "R16_flop_per_sm_cycle": 7736.744377965752,
+    "rho_HMMA": 1,
+    "rho_HMMA_classification": "optimistic modeling assumption; no evidence that warp HMMA equals tcgen05 rate",
+    "B_smem_byte_per_sm_cycle": 128,
+    "R_scalar_results_per_sm_cycle": 128,
+    "R_cvt_elements_per_sm_cycle": 64,
+    "R_warp_issue_instructions_per_sm_cycle": 4,
+    "B_gpu_byte_per_gpu_cycle": 3918.5750636132316,
+    "B_share_byte_per_sm_cycle_optional": 26.47685853792724,
+    "extra_symbolic_tails_numeric_setting": 0
+  },
+  "residency": {
+    "threads_per_cta": 128,
+    "warps_per_cta": 4,
+    "registers_per_thread": 64,
+    "registers_per_cta": 8192,
+    "register_cap_ctas_per_sm": 8,
+    "source_shared_storage_dynamic_bytes": 24960,
+    "supplied_untimed_static_shared_bytes": 1024,
+    "cuda_shared_reservation_bytes_per_cta": 1024,
+    "total_shared_budgeted_bytes_per_cta": 27008,
+    "shared_memory_cap_bytes_per_sm": 233472,
+    "shared_cap_ctas_per_sm": 8,
+    "warp_cap_ctas_per_sm": 16,
+    "architectural_cta_cap_per_sm": 32,
+    "supported_resident_cta_count_b": 8,
+    "metadata_source": "untimed clean pinned-source CUBIN supplied for structural accounting; no target timing evidence",
+    "basis": "register ceiling is 8; exact supplied untimed occupancy query at dynamic shared 24960 B reports 8 active CTAs/SM; compiled metadata and occupancy are structural evidence, not timing evidence",
+    "untimed_occupancy_query": {
+      "api": "cudaOccupancyMaxActiveBlocksPerMultiprocessor",
+      "dynamic_shared_bytes": 24960,
+      "active_blocks_per_sm": 8,
+      "classification": "untimed structural evidence; no launch or timing"
+    }
+  },
+  "traffic_per_cta": {
+    "D_global_logical_bytes": {
+      "cu_seqlens": 8,
+      "K_tma_read": 16384,
+      "beta_scalar_read": 256,
+      "T_global_write": 8192,
+      "total": 24840
+    },
+    "D_HBM_scenario_bytes": 24840,
+    "D_HBM_scenario": "no-cache logical-request scenario: each logical source byte reaches HBM once, no beta transaction amplification; actual cache/reuse policy is unknown",
+    "D_smem_explicit_reference_bytes": {
+      "K_tma_stage": 16384,
+      "beta_stage_write": 256,
+      "Wkk_operand_reads": 32768,
+      "strictlower_beta_refs": 8064,
+      "Aconstruct_write": 8192,
+      "inverse8_read_write": 2048,
+      "inverse16_operand_and_output": 2048,
+      "inverse32_operand_and_output": 4096,
+      "inverse64_four_warp_operands_and_cross_warp_partial_io": 18432,
+      "T_inverse_read": 8192,
+      "T_beta_refs": 16384,
+      "total": 116864
+    },
+    "D_smem_unique_beta_reuse_sensitivity_bytes": 92928,
+    "D_smem_unique_beta_reuse_sensitivity_note": "use one 256 B beta-vector read per consumer in place of 2016/4096 source-indexed references; no bank-conflict factor added"
+  },
+  "work_per_cta": {
+    "tensor_hmma_flops": {
+      "Wkk_64x64x128": 1048576,
+      "inverse8_to16": 16384,
+      "inverse16_to32": 32768,
+      "inverse32_to64": 131072,
+      "inverse_blockwise_total": 180224,
+      "total": 1228800
+    },
+    "source_dynamic_warp_hmma_instructions": {
+      "Wkk": 256,
+      "inverse8_to16_HMMA_1688": 8,
+      "inverse16_to32_HMMA_16816": 8,
+      "inverse32_to64_HMMA_16816": 32,
+      "total": 304,
+      "note": "derived from source MMA shapes and warp tiling; do not confuse with supplied static SASS sites"
+    },
+    "fp32_scalar_flops": {
+      "strictlower_betaweight_multiply": 2016,
+      "inverse8_gauss_multiply_add": 896,
+      "T_fold_multiply": 4096,
+      "total": 7008
+    },
+    "other_scalar_work": {
+      "fp32_negations": 6592,
+      "fp16_cross_warp_add_results": 1024,
+      "gauss_fma_candidate_results": 448,
+      "gauss_uncontracted_scalar_result_sensitivity": 448
+    },
+    "converted_scalar_elements": {
+      "Aconstruct_fp32_to_fp16": 4096,
+      "inverse8": 1024,
+      "inverse8_to16": 1024,
+      "inverse16_to32": 1024,
+      "inverse32_to64": 3072,
+      "T_fold_to_source_dtype": 4096,
+      "total": 14336
+    },
+    "warp_shuffle_instructions": 42
+  },
+  "dag_nodes": [
+    {
+      "id": "seq_decode",
+      "source": "delta_rule_cp_sm120.py:321-335",
+      "shape": "2 x cu_seqlens int32 values; CTA control/index scalars",
+      "work": {
+        "fp32_flops": 0,
+        "other_flops": 0
+      },
+      "global_logical_bytes": 8,
+      "smem_explicit_bytes": 0,
+      "resources": [
+        "HBM/global-load queue"
+      ],
+      "predecessors": [
+        "CTA admission"
+      ],
+      "overlap": "precedes K and beta address generation",
+      "symbolic_tails": [
+        "L_HBM_response",
+        "L_CTA_dispatch"
+      ]
+    },
+    {
+      "id": "Kload",
+      "source": "delta_rule_cp_sm120.py:98-128,252-289,375-380",
+      "shape": "64 x 128 source-dtype K tile",
+      "work": {
+        "fp16_bf16_bytes": 16384
+      },
+      "global_logical_bytes": 16384,
+      "smem_explicit_bytes": 16384,
+      "resources": [
+        "HBM/global-load queue",
+        "SMEM write",
+        "TMA engine/issue"
+      ],
+      "predecessors": [
+        "seq_decode"
+      ],
+      "overlap": "source branch uses warp 1 and may overlap beta_load; same CTA SMEM demand is aggregated",
+      "symbolic_tails": [
+        "L_descriptor",
+        "L_TMA_issue",
+        "L_TMA_engine",
+        "L_TMA_response",
+        "L_mbarrier"
+      ]
+    },
+    {
+      "id": "beta_load",
+      "source": "delta_rule_cp_sm120.py:130-152,383-388,415-427",
+      "shape": "64 FP32 beta values",
+      "work": {
+        "fp32_flops": 0
+      },
+      "global_logical_bytes": 256,
+      "smem_explicit_bytes": 256,
+      "resources": [
+        "HBM/global-load queue",
+        "SMEM write",
+        "warp issue"
+      ],
+      "predecessors": [
+        "seq_decode"
+      ],
+      "overlap": "source branch uses warp 2 concurrently with Kload; beta vector is strided by num_sab_heads in global memory",
+      "symbolic_tails": [
+        "L_HBM_response",
+        "L_fence",
+        "L_mbarrier"
+      ]
+    },
+    {
+      "id": "load_join",
+      "source": "delta_rule_cp_sm120.py:401-431",
+      "shape": "two one-stage pipeline waits, async-SMEM fence, CTA sync",
+      "work": {
+        "bytes": 0,
+        "flops": 0
+      },
+      "resources": [
+        "mbarrier",
+        "fence",
+        "CTA barrier"
+      ],
+      "predecessors": [
+        "Kload",
+        "beta_load"
+      ],
+      "overlap": "join is required before Wkk; numerical zero does not remove edges",
+      "symbolic_tails": [
+        "L_mbarrier",
+        "L_fence",
+        "L_barrier"
+      ]
+    },
+    {
+      "id": "Wkk",
+      "source": "delta_rule_cp_sm120.py:433-462",
+      "shape": "(64 x 128) x (128 x 64) -> 64 x 64 FP32 accumulators",
+      "work": {
+        "tensor_flops": 1048576,
+        "warp_hmma_instructions": 256
+      },
+      "global_logical_bytes": 0,
+      "smem_explicit_bytes": 32768,
+      "resources": [
+        "SMEM LdMatrix",
+        "warp HMMA tensor arithmetic",
+        "warp issue"
+      ],
+      "predecessors": [
+        "load_join"
+      ],
+      "overlap": "A/B SMEM copies precede GEMM; K consumer release follows GEMM",
+      "scenario_service_cycles": {
+        "smem_operand_copies": 256,
+        "hmma": 136,
+        "node_total": 392
+      },
+      "symbolic_tails": [
+        "L_SMEM_response",
+        "L_MMA_issue",
+        "L_MMA_response"
+      ]
+    },
+    {
+      "id": "strictlower_betaweight",
+      "source": "delta_rule_cp_sm120.py:181-194",
+      "shape": "64 x 64 accumulator, strict-lower 2016 values",
+      "work": {
+        "fp32_flops": 2016
+      },
+      "global_logical_bytes": 0,
+      "smem_explicit_reference_bytes": 8064,
+      "unique_beta_vector_bytes": 256,
+      "resources": [
+        "SMEM beta references",
+        "FP32 scalar multiply",
+        "warp issue"
+      ],
+      "predecessors": [
+        "Wkk"
+      ],
+      "overlap": "independent lower-triangle elements may pipeline; values above/on diagonal become zero",
+      "scenario_service_cycles": {
+        "node_total": 63
+      },
+      "symbolic_tails": [
+        "L_SMEM_response",
+        "L_FMA_dep"
+      ]
+    },
+    {
+      "id": "Aconstruct",
+      "source": "delta_rule_cp_sm120.py:154-179",
+      "shape": "64 x 64 FP16 inverse input; strict lower retained, other positions zero",
+      "work": {
+        "conversions": 4096
+      },
+      "global_logical_bytes": 0,
+      "smem_explicit_write_bytes": 8192,
+      "resources": [
+        "FP32-to-FP16 conversion",
+        "SMEM StMatrix"
+      ],
+      "predecessors": [
+        "strictlower_betaweight"
+      ],
+      "overlap": "source completes element conversion loop before shared store",
+      "scenario_service_cycles": {
+        "conversion": 64,
+        "smem_store": 64,
+        "node_total": 128
+      },
+      "symbolic_tails": [
+        "L_CVT_dep",
+        "L_SMEM_response"
+      ]
+    },
+    {
+      "id": "inverse8_gauss",
+      "source": "collective_inverse_hmma.py:26-73,378-386",
+      "shape": "8 diagonal blocks x 8 x 8",
+      "work": {
+        "fp32_flops": 896,
+        "fp32_negations": 448,
+        "warp_shuffle_instructions": 42,
+        "conversions": 1024,
+        "fp32_fma_results": 448
+      },
+      "global_logical_bytes": 0,
+      "smem_explicit_bytes": 2048,
+      "resources": [
+        "SMEM",
+        "FP32 scalar",
+        "conversion",
+        "warp shuffle/issue"
+      ],
+      "predecessors": [
+        "Aconstruct"
+      ],
+      "overlap": "Source-causal cohort plan unrolls src_row rounds: row_scale then each dependent shuffle->FMA step; only read/conversion before and conversion/store after. The old isolated max(shuffle service, scalar pool) is a relaxed resource bound, not this path.",
+      "scenario_service_cycles": {
+        "node_total": 81,
+        "relaxed_resource_bound_cycles": 43,
+        "classification": "source-causal integer issue-rate service, symbolic response tails retained"
+      },
+      "symbolic_tails": [
+        "L_SMEM_response",
+        "L_shuffle_dep",
+        "L_FMA_dep",
+        "L_CVT_dep",
+        "L_barrier"
+      ]
+    },
+    {
+      "id": "inverse16_blocks",
+      "source": "collective_inverse_hmma.py:79-172,388-393",
+      "shape": "4 calls; duplicated accumulator tile is 16 x 8",
+      "work": {
+        "tensor_flops": 16384,
+        "fp32_negations": 512,
+        "conversions": 1024,
+        "mma_ops": 8
+      },
+      "global_logical_bytes": 0,
+      "smem_explicit_bytes": 2048,
+      "resources": [
+        "SMEM LdMatrix/StMatrix",
+        "warp HMMA",
+        "FP32 scalar",
+        "conversion",
+        "warp issue"
+      ],
+      "predecessors": [
+        "inverse8_gauss",
+        "inverse8_barrier"
+      ],
+      "overlap": "D/C read -> MMA1 -> negate/convert -> A read -> MMA2 -> convert/store; then 128-thread barrier",
+      "scenario_service_cycles": {
+        "node_total": 40
+      },
+      "symbolic_tails": [
+        "L_MMA_response",
+        "L_CVT_dep",
+        "L_barrier"
+      ]
+    },
+    {
+      "id": "inverse32_blocks",
+      "source": "collective_inverse_hmma.py:177-251,395-401",
+      "shape": "2 calls; each 16 x 16 lower-left output",
+      "work": {
+        "tensor_flops": 32768,
+        "fp32_negations": 512,
+        "conversions": 1024,
+        "mma_ops": 16
+      },
+      "global_logical_bytes": 0,
+      "smem_explicit_bytes": 4096,
+      "resources": [
+        "SMEM LdMatrix/StMatrix",
+        "warp HMMA",
+        "FP32 scalar",
+        "conversion",
+        "warp issue"
+      ],
+      "predecessors": [
+        "inverse16_blocks",
+        "inverse16_barrier"
+      ],
+      "overlap": "D/C read -> MMA1 -> negate/convert -> A read -> MMA2 -> convert/store; then 128-thread barrier",
+      "scenario_service_cycles": {
+        "node_total": 58
+      },
+      "symbolic_tails": [
+        "L_MMA_response",
+        "L_CVT_dep",
+        "L_barrier"
+      ]
+    },
+    {
+      "id": "inverse64_block",
+      "source": "collective_inverse_hmma.py:257-370,403-404",
+      "shape": "one 32 x 32 lower-left output, computed by four warp shards",
+      "work": {
+        "tensor_flops": 131072,
+        "fp32_negations": 1024,
+        "fp16_add_results": 1024,
+        "conversions": 3072,
+        "mma_ops": 32
+      },
+      "global_logical_bytes": 0,
+      "smem_explicit_bytes": 18432,
+      "resources": [
+        "SMEM LdMatrix/StMatrix",
+        "warp HMMA",
+        "FP32 scalar",
+        "conversion",
+        "cross-warp shared reduction",
+        "warp issue"
+      ],
+      "predecessors": [
+        "inverse32_blocks",
+        "inverse32_barrier"
+      ],
+      "overlap": "four warps compute partials; x=0 stores, barrier, x=1 reloads/adds/stores; preserve both cross-warp barrier edges",
+      "scenario_service_cycles": {
+        "node_total": 218,
+        "unknown_fp16_add_service_numeric_omission": 0
+      },
+      "symbolic_tails": [
+        "L_MMA_response",
+        "L_CVT_dep",
+        "L_barrier",
+        "R_FP16_add"
+      ]
+    },
+    {
+      "id": "beta_sign_fold_Tstore",
+      "source": "delta_rule_cp_sm120.py:196-236,464-477",
+      "shape": "64 x 64 inverse to 64 x 64 source-dtype T",
+      "work": {
+        "fp32_flops": 4096,
+        "fp32_negations": 4096,
+        "conversions": 4096
+      },
+      "global_logical_bytes": 8192,
+      "smem_explicit_read_bytes": 8192,
+      "smem_beta_reference_bytes": 16384,
+      "unique_beta_vector_bytes": 256,
+      "resources": [
+        "SMEM inverse read",
+        "SMEM beta reads",
+        "FP32 scalar",
+        "conversion",
+        "HBM/global-store queue"
+      ],
+      "predecessors": [
+        "inverse64_block",
+        "inverse64_barrier"
+      ],
+      "overlap": "inverse read precedes independent per-element beta/multiply/convert loop; global store follows loop; beta pipeline release follows store",
+      "scenario_service_cycles": {
+        "node_total": 195
+      },
+      "symbolic_tails": [
+        "L_SMEM_response",
+        "L_CVT_dep",
+        "L_HBM_response",
+        "L_store_drain"
+      ]
+    }
+  ],
+  "cta_scenario_cycles": {
+    "policy": "source order with legal resource overlap inside independent element loops; numeric extra tails zero",
+    "global_hbm_cta_alone_service_path": {
+      "stage_cycles": {
+        "seq_decode": 1,
+        "Kload_and_beta_load": 130,
+        "Wkk": 392,
+        "strictlower_betaweight": 63,
+        "Aconstruct": 128,
+        "inverse8_gauss": 81,
+        "inverse16_blocks": 40,
+        "inverse32_blocks": 58,
+        "inverse64_block": 218,
+        "beta_sign_fold_Tstore": 195
+      },
+      "span_cycles": 1306,
+      "symbolic_tails": [
+        "L_CTA_dispatch",
+        "L_descriptor",
+        "L_TMA_issue",
+        "L_TMA_response",
+        "L_mbarrier",
+        "L_fence",
+        "L_barrier",
+        "L_SMEM_response",
+        "L_MMA_response",
+        "L_FMA_dep",
+        "L_CVT_dep",
+        "L_shuffle_dep",
+        "L_HBM_response",
+        "L_store_drain"
+      ]
+    },
+    "fully_serialized_in_node_sensitivity_cycles": 1457,
+    "inverse8_relaxed_resource_bound_cycles": 43
+  },
+  "k1_resource_floor": {
+    "formula_per_sm": "C_i >= max(ceil(q_i/b)*L_CTA, ceil(q_i*D_smem/B_smem), ceil(q_i*F_HMMA/R_HMMA), ceil(q_i*E_cvt/R_cvt), ceil(q_i*E_scalar/R_scalar))",
+    "formula_gpu": "C_GPU >= max(max_i C_i, ceil(N*D_HBM/B_gpu))",
+    "q_assignment": "balanced assumption: q_i in {floor(N/148), ceil(N/148)}",
+    "b": 8,
+    "L_CTA_cycles": 1306,
+    "per_cta_service_resource_cycles": {
+      "smem_reference": 913,
+      "smem_unique_beta_reuse_sensitivity": 726,
+      "tensor_hmma_aggregate": 159,
+      "conversion": 224,
+      "fp32_scalar": 103,
+      "known_hmma_warp_issue": 76,
+      "shuffle_warp_issue": 11
+    },
+    "cases": [
+      {
+        "S": 8192,
+        "N": 2048,
+        "q_max": 14,
+        "q_max_sm_count": 124,
+        "q_min": 13,
+        "q_min_sm_count": 24,
+        "slot_dependency_cycles": 2612,
+        "max_sm_smem_cycles": 12782,
+        "max_sm_hmma_cycles": 2224,
+        "max_sm_conversion_cycles": 3136,
+        "max_sm_scalar_cycles": 1442,
+        "D_HBM_total_bytes": 50872320,
+        "whole_gpu_hbm_floor_cycles": 12983,
+        "ideal_resource_floor_cycles": 12983,
+        "optional_equal_share_max_sm_hbm_cycles": 13135
+      },
+      {
+        "S": 16384,
+        "N": 4096,
+        "q_max": 28,
+        "q_max_sm_count": 100,
+        "q_min": 27,
+        "q_min_sm_count": 48,
+        "slot_dependency_cycles": 5224,
+        "max_sm_smem_cycles": 25564,
+        "max_sm_hmma_cycles": 4448,
+        "max_sm_conversion_cycles": 6272,
+        "max_sm_scalar_cycles": 2884,
+        "D_HBM_total_bytes": 101744640,
+        "whole_gpu_hbm_floor_cycles": 25965,
+        "ideal_resource_floor_cycles": 25965,
+        "optional_equal_share_max_sm_hbm_cycles": 26269
+      },
+      {
+        "S": 32768,
+        "N": 8192,
+        "q_max": 56,
+        "q_max_sm_count": 52,
+        "q_min": 55,
+        "q_min_sm_count": 96,
+        "slot_dependency_cycles": 9142,
+        "max_sm_smem_cycles": 51128,
+        "max_sm_hmma_cycles": 8895,
+        "max_sm_conversion_cycles": 12544,
+        "max_sm_scalar_cycles": 5768,
+        "D_HBM_total_bytes": 203489280,
+        "whole_gpu_hbm_floor_cycles": 51930,
+        "ideal_resource_floor_cycles": 51930,
+        "optional_equal_share_max_sm_hbm_cycles": 52538
+      }
+    ],
+    "L_CTA_relaxed_pool_resource_cycles": 1268
+  },
+  "synchronized_cohort_scenario": {
+    "classification": "primary finite-grid ideal schedule illustration under an explicit synchronized-cohort assumption; not an exact model of unsynchronized CTA staggering",
+    "schedule_policy": "balanced CTA-to-SM assignment; on each SM, drain synchronized cohorts of up to 8 CTAs before the next cohort; each cohort shares the SM-wide rates; add source-ordered per-phase costs; finally bound by the whole-GPU HBM floor",
+    "resident_ctas_per_cohort": 8,
+    "cycle_rounding": "ceil each resource substep to integer cycles before source-order summation; max only for explicitly independent work in a phase",
+    "formula_C_batch": "sum the source-ordered stages below; Wkk is 8 * (per-pass SMEM service + per-pass HMMA service)",
+    "formula_C_SM": "floor(q/8)*C_batch(8) + C_batch(q mod 8), where C_batch(0)=0",
+    "formula_C_GPU": "max(max_i C_SM(q_i), ceil(N*D_HBM/B_gpu))",
+    "producer_policy": "K and beta are independent source producer branches but their combined whole-packet HBM bytes are charged once against B_share, then their combined SMEM staging bytes once against B_smem; do not stream-overlap those two packet stages in the primary scenario",
+    "substep_specs": [
+      {
+        "stage": "seq_decode",
+        "source_node": "seq_decode",
+        "combine": "sum",
+        "substeps": [
+          {
+            "id": "metadata_hbm",
+            "rate_key": "B_share_byte_per_sm_cycle_optional",
+            "unit": "byte",
+            "per_cta_demand": 8,
+            "source_order": 1
+          }
+        ]
+      },
+      {
+        "stage": "Kload_beta_load",
+        "source_nodes": [
+          "Kload",
+          "beta_load",
+          "load_join"
+        ],
+        "combine": "sum",
+        "substeps": [
+          {
+            "id": "producer_hbm_packet",
+            "rate_key": "B_share_byte_per_sm_cycle_optional",
+            "unit": "byte",
+            "per_cta_demand": 16640,
+            "source_order": 1
+          },
+          {
+            "id": "smem_stage_packet",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 16640,
+            "source_order": 2
+          }
+        ]
+      },
+      {
+        "stage": "Wkk",
+        "source_node": "Wkk",
+        "combine": "sum_then_repeat",
+        "repetitions": 8,
+        "substeps": [
+          {
+            "id": "one_K_pass_smem_LdMatrix",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 4096,
+            "source_order": 1
+          },
+          {
+            "id": "one_K_pass_HMMA",
+            "rate_key": "R16_flop_per_sm_cycle_times_rho_HMMA",
+            "unit": "FLOP",
+            "per_cta_demand": 131072,
+            "source_order": 2
+          }
+        ]
+      },
+      {
+        "stage": "strictlower_betaweight",
+        "source_node": "strictlower_betaweight",
+        "combine": "max",
+        "substeps": [
+          {
+            "id": "beta_smem_refs",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 8064
+          },
+          {
+            "id": "fp32_multiply_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 2016
+          }
+        ]
+      },
+      {
+        "stage": "Aconstruct",
+        "source_node": "Aconstruct",
+        "combine": "sum",
+        "substeps": [
+          {
+            "id": "fp32_to_fp16",
+            "rate_key": "R_cvt_elements_per_sm_cycle",
+            "unit": "element",
+            "per_cta_demand": 4096,
+            "source_order": 1
+          },
+          {
+            "id": "smem_store",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 8192,
+            "source_order": 2
+          }
+        ]
+      },
+      {
+        "stage": "inverse8_gauss",
+        "source_node": "inverse8_gauss",
+        "combine": "sum_source_order_unrolled_RAW",
+        "substeps": [
+          {
+            "id": "smem_read",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 1024,
+            "source_order": 1,
+            "source_lines": "collective_inverse_hmma.py:41-43",
+            "predecessor_step_id": null
+          },
+          {
+            "id": "fp16_to_fp32",
+            "rate_key": "R_cvt_elements_per_sm_cycle",
+            "unit": "element",
+            "per_cta_demand": 512,
+            "source_order": 2,
+            "source_lines": "collective_inverse_hmma.py:41-55",
+            "predecessor_step_id": "smem_read"
+          },
+          {
+            "id": "src_row_0_row_scale_negates",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 64,
+            "source_order": 3,
+            "source_row": 0,
+            "active_warps": 2,
+            "operation_model": "R_scalar result proxy for unary sign negation; exact bitwise/issue mapping unknown",
+            "source_lines": "collective_inverse_hmma.py:58-59",
+            "predecessor_step_id": "fp16_to_fp32"
+          },
+          {
+            "id": "src_row_1_row_scale_negates",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 64,
+            "source_order": 4,
+            "source_row": 1,
+            "active_warps": 2,
+            "operation_model": "R_scalar result proxy for unary sign negation; exact bitwise/issue mapping unknown",
+            "source_lines": "collective_inverse_hmma.py:58-59",
+            "predecessor_step_id": "src_row_0_row_scale_negates"
+          },
+          {
+            "id": "src_row_1_i_0_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 5,
+            "source_row": 1,
+            "inner_i": 0,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_1_row_scale_negates"
+          },
+          {
+            "id": "src_row_1_i_0_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 48,
+            "source_order": 6,
+            "source_row": 1,
+            "inner_i": 0,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_1_i_0_shuffle"
+          },
+          {
+            "id": "src_row_2_row_scale_negates",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 64,
+            "source_order": 7,
+            "source_row": 2,
+            "active_warps": 2,
+            "operation_model": "R_scalar result proxy for unary sign negation; exact bitwise/issue mapping unknown",
+            "source_lines": "collective_inverse_hmma.py:58-59",
+            "predecessor_step_id": "src_row_1_i_0_FMA_results"
+          },
+          {
+            "id": "src_row_2_i_0_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 8,
+            "source_row": 2,
+            "inner_i": 0,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_2_row_scale_negates"
+          },
+          {
+            "id": "src_row_2_i_0_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 40,
+            "source_order": 9,
+            "source_row": 2,
+            "inner_i": 0,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_2_i_0_shuffle"
+          },
+          {
+            "id": "src_row_2_i_1_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 10,
+            "source_row": 2,
+            "inner_i": 1,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_2_i_0_FMA_results"
+          },
+          {
+            "id": "src_row_2_i_1_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 40,
+            "source_order": 11,
+            "source_row": 2,
+            "inner_i": 1,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_2_i_1_shuffle"
+          },
+          {
+            "id": "src_row_3_row_scale_negates",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 64,
+            "source_order": 12,
+            "source_row": 3,
+            "active_warps": 2,
+            "operation_model": "R_scalar result proxy for unary sign negation; exact bitwise/issue mapping unknown",
+            "source_lines": "collective_inverse_hmma.py:58-59",
+            "predecessor_step_id": "src_row_2_i_1_FMA_results"
+          },
+          {
+            "id": "src_row_3_i_0_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 13,
+            "source_row": 3,
+            "inner_i": 0,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_3_row_scale_negates"
+          },
+          {
+            "id": "src_row_3_i_0_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 32,
+            "source_order": 14,
+            "source_row": 3,
+            "inner_i": 0,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_3_i_0_shuffle"
+          },
+          {
+            "id": "src_row_3_i_1_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 15,
+            "source_row": 3,
+            "inner_i": 1,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_3_i_0_FMA_results"
+          },
+          {
+            "id": "src_row_3_i_1_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 32,
+            "source_order": 16,
+            "source_row": 3,
+            "inner_i": 1,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_3_i_1_shuffle"
+          },
+          {
+            "id": "src_row_3_i_2_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 17,
+            "source_row": 3,
+            "inner_i": 2,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_3_i_1_FMA_results"
+          },
+          {
+            "id": "src_row_3_i_2_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 32,
+            "source_order": 18,
+            "source_row": 3,
+            "inner_i": 2,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_3_i_2_shuffle"
+          },
+          {
+            "id": "src_row_4_row_scale_negates",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 64,
+            "source_order": 19,
+            "source_row": 4,
+            "active_warps": 2,
+            "operation_model": "R_scalar result proxy for unary sign negation; exact bitwise/issue mapping unknown",
+            "source_lines": "collective_inverse_hmma.py:58-59",
+            "predecessor_step_id": "src_row_3_i_2_FMA_results"
+          },
+          {
+            "id": "src_row_4_i_0_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 20,
+            "source_row": 4,
+            "inner_i": 0,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_4_row_scale_negates"
+          },
+          {
+            "id": "src_row_4_i_0_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 24,
+            "source_order": 21,
+            "source_row": 4,
+            "inner_i": 0,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_4_i_0_shuffle"
+          },
+          {
+            "id": "src_row_4_i_1_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 22,
+            "source_row": 4,
+            "inner_i": 1,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_4_i_0_FMA_results"
+          },
+          {
+            "id": "src_row_4_i_1_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 24,
+            "source_order": 23,
+            "source_row": 4,
+            "inner_i": 1,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_4_i_1_shuffle"
+          },
+          {
+            "id": "src_row_4_i_2_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 24,
+            "source_row": 4,
+            "inner_i": 2,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_4_i_1_FMA_results"
+          },
+          {
+            "id": "src_row_4_i_2_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 24,
+            "source_order": 25,
+            "source_row": 4,
+            "inner_i": 2,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_4_i_2_shuffle"
+          },
+          {
+            "id": "src_row_4_i_3_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 26,
+            "source_row": 4,
+            "inner_i": 3,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_4_i_2_FMA_results"
+          },
+          {
+            "id": "src_row_4_i_3_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 24,
+            "source_order": 27,
+            "source_row": 4,
+            "inner_i": 3,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_4_i_3_shuffle"
+          },
+          {
+            "id": "src_row_5_row_scale_negates",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 64,
+            "source_order": 28,
+            "source_row": 5,
+            "active_warps": 2,
+            "operation_model": "R_scalar result proxy for unary sign negation; exact bitwise/issue mapping unknown",
+            "source_lines": "collective_inverse_hmma.py:58-59",
+            "predecessor_step_id": "src_row_4_i_3_FMA_results"
+          },
+          {
+            "id": "src_row_5_i_0_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 29,
+            "source_row": 5,
+            "inner_i": 0,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_5_row_scale_negates"
+          },
+          {
+            "id": "src_row_5_i_0_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 16,
+            "source_order": 30,
+            "source_row": 5,
+            "inner_i": 0,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_5_i_0_shuffle"
+          },
+          {
+            "id": "src_row_5_i_1_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 31,
+            "source_row": 5,
+            "inner_i": 1,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_5_i_0_FMA_results"
+          },
+          {
+            "id": "src_row_5_i_1_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 16,
+            "source_order": 32,
+            "source_row": 5,
+            "inner_i": 1,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_5_i_1_shuffle"
+          },
+          {
+            "id": "src_row_5_i_2_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 33,
+            "source_row": 5,
+            "inner_i": 2,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_5_i_1_FMA_results"
+          },
+          {
+            "id": "src_row_5_i_2_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 16,
+            "source_order": 34,
+            "source_row": 5,
+            "inner_i": 2,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_5_i_2_shuffle"
+          },
+          {
+            "id": "src_row_5_i_3_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 35,
+            "source_row": 5,
+            "inner_i": 3,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_5_i_2_FMA_results"
+          },
+          {
+            "id": "src_row_5_i_3_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 16,
+            "source_order": 36,
+            "source_row": 5,
+            "inner_i": 3,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_5_i_3_shuffle"
+          },
+          {
+            "id": "src_row_5_i_4_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 37,
+            "source_row": 5,
+            "inner_i": 4,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_5_i_3_FMA_results"
+          },
+          {
+            "id": "src_row_5_i_4_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 16,
+            "source_order": 38,
+            "source_row": 5,
+            "inner_i": 4,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_5_i_4_shuffle"
+          },
+          {
+            "id": "src_row_6_row_scale_negates",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 64,
+            "source_order": 39,
+            "source_row": 6,
+            "active_warps": 2,
+            "operation_model": "R_scalar result proxy for unary sign negation; exact bitwise/issue mapping unknown",
+            "source_lines": "collective_inverse_hmma.py:58-59",
+            "predecessor_step_id": "src_row_5_i_4_FMA_results"
+          },
+          {
+            "id": "src_row_6_i_0_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 40,
+            "source_row": 6,
+            "inner_i": 0,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_6_row_scale_negates"
+          },
+          {
+            "id": "src_row_6_i_0_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 8,
+            "source_order": 41,
+            "source_row": 6,
+            "inner_i": 0,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_6_i_0_shuffle"
+          },
+          {
+            "id": "src_row_6_i_1_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 42,
+            "source_row": 6,
+            "inner_i": 1,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_6_i_0_FMA_results"
+          },
+          {
+            "id": "src_row_6_i_1_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 8,
+            "source_order": 43,
+            "source_row": 6,
+            "inner_i": 1,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_6_i_1_shuffle"
+          },
+          {
+            "id": "src_row_6_i_2_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 44,
+            "source_row": 6,
+            "inner_i": 2,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_6_i_1_FMA_results"
+          },
+          {
+            "id": "src_row_6_i_2_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 8,
+            "source_order": 45,
+            "source_row": 6,
+            "inner_i": 2,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_6_i_2_shuffle"
+          },
+          {
+            "id": "src_row_6_i_3_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 46,
+            "source_row": 6,
+            "inner_i": 3,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_6_i_2_FMA_results"
+          },
+          {
+            "id": "src_row_6_i_3_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 8,
+            "source_order": 47,
+            "source_row": 6,
+            "inner_i": 3,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_6_i_3_shuffle"
+          },
+          {
+            "id": "src_row_6_i_4_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 48,
+            "source_row": 6,
+            "inner_i": 4,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_6_i_3_FMA_results"
+          },
+          {
+            "id": "src_row_6_i_4_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 8,
+            "source_order": 49,
+            "source_row": 6,
+            "inner_i": 4,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_6_i_4_shuffle"
+          },
+          {
+            "id": "src_row_6_i_5_shuffle",
+            "rate_key": "R_warp_issue_instructions_per_sm_cycle",
+            "unit": "warp_instruction",
+            "per_cta_demand": 2,
+            "source_order": 50,
+            "source_row": 6,
+            "inner_i": 5,
+            "active_warps": 2,
+            "source_lines": "collective_inverse_hmma.py:60-63",
+            "dependency": "two active warp shuffle instructions before dependent FMA",
+            "predecessor_step_id": "src_row_6_i_4_FMA_results"
+          },
+          {
+            "id": "src_row_6_i_5_FMA_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 8,
+            "source_order": 51,
+            "source_row": 6,
+            "inner_i": 5,
+            "active_warps": 2,
+            "operation_model": "FMA counts as one scalar result; result count aggregated over eight 8x8 blocks",
+            "source_lines": "collective_inverse_hmma.py:64-66",
+            "dependency": "RAW from preceding shuffle and row_scale",
+            "predecessor_step_id": "src_row_6_i_5_shuffle"
+          },
+          {
+            "id": "fp32_to_fp16",
+            "rate_key": "R_cvt_elements_per_sm_cycle",
+            "unit": "element",
+            "per_cta_demand": 512,
+            "source_order": 52,
+            "source_lines": "collective_inverse_hmma.py:72-73",
+            "predecessor_step_id": "src_row_6_i_5_FMA_results"
+          },
+          {
+            "id": "smem_write",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 1024,
+            "source_order": 53,
+            "source_lines": "collective_inverse_hmma.py:72-73",
+            "predecessor_step_id": "fp32_to_fp16"
+          }
+        ],
+        "source_causal_schedule": "Unrolled src_row=0..6: 64 row_scale negate results first, then for each i<src_row a 2-warp shuffle followed by 8*(7-src_row) FMA results; each event ordered after its predecessor (RAW). Active lanes are threads 0..63 (two warps). Unknown dependent response/issue tails remain symbolic."
+      },
+      {
+        "stage": "inverse16_blocks",
+        "source_node": "inverse16_blocks",
+        "combine": "sum_source_order",
+        "substeps": [
+          {
+            "id": "D_C_smem_read",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 1024,
+            "source_order": 1
+          },
+          {
+            "id": "HMMA_step1",
+            "rate_key": "R16_flop_per_sm_cycle_times_rho_HMMA",
+            "unit": "FLOP",
+            "per_cta_demand": 8192,
+            "source_order": 2
+          },
+          {
+            "id": "fp32_negate_step1",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 512,
+            "source_order": 3,
+            "additional_issue_tail": "symbolic; no extra issue cost assigned numerically"
+          },
+          {
+            "id": "fp32_to_fp16_intermediate",
+            "rate_key": "R_cvt_elements_per_sm_cycle",
+            "unit": "element",
+            "per_cta_demand": 512,
+            "source_order": 4
+          },
+          {
+            "id": "A_inverse_smem_read",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 512,
+            "source_order": 5
+          },
+          {
+            "id": "HMMA_step2",
+            "rate_key": "R16_flop_per_sm_cycle_times_rho_HMMA",
+            "unit": "FLOP",
+            "per_cta_demand": 8192,
+            "source_order": 6
+          },
+          {
+            "id": "fp32_to_fp16_output",
+            "rate_key": "R_cvt_elements_per_sm_cycle",
+            "unit": "element",
+            "per_cta_demand": 512,
+            "source_order": 7
+          },
+          {
+            "id": "smem_output_write",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 512,
+            "source_order": 8
+          }
+        ]
+      },
+      {
+        "stage": "inverse32_blocks",
+        "source_node": "inverse32_blocks",
+        "combine": "sum_source_order",
+        "substeps": [
+          {
+            "id": "D_C_smem_read",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 2048,
+            "source_order": 1
+          },
+          {
+            "id": "HMMA_step1",
+            "rate_key": "R16_flop_per_sm_cycle_times_rho_HMMA",
+            "unit": "FLOP",
+            "per_cta_demand": 16384,
+            "source_order": 2
+          },
+          {
+            "id": "fp32_negate_step1",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 512,
+            "source_order": 3,
+            "additional_issue_tail": "symbolic; no extra issue cost assigned numerically"
+          },
+          {
+            "id": "fp32_to_fp16_intermediate",
+            "rate_key": "R_cvt_elements_per_sm_cycle",
+            "unit": "element",
+            "per_cta_demand": 512,
+            "source_order": 4
+          },
+          {
+            "id": "A_inverse_smem_read",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 1024,
+            "source_order": 5
+          },
+          {
+            "id": "HMMA_step2",
+            "rate_key": "R16_flop_per_sm_cycle_times_rho_HMMA",
+            "unit": "FLOP",
+            "per_cta_demand": 16384,
+            "source_order": 6
+          },
+          {
+            "id": "fp32_to_fp16_output",
+            "rate_key": "R_cvt_elements_per_sm_cycle",
+            "unit": "element",
+            "per_cta_demand": 512,
+            "source_order": 7
+          },
+          {
+            "id": "smem_output_write",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 1024,
+            "source_order": 8
+          }
+        ]
+      },
+      {
+        "stage": "inverse64_block",
+        "source_node": "inverse64_block",
+        "combine": "sum_source_order",
+        "substeps": [
+          {
+            "id": "D_C_smem_read",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 8192,
+            "source_order": 1
+          },
+          {
+            "id": "HMMA_step1",
+            "rate_key": "R16_flop_per_sm_cycle_times_rho_HMMA",
+            "unit": "FLOP",
+            "per_cta_demand": 65536,
+            "source_order": 2
+          },
+          {
+            "id": "fp32_negate_step1",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 1024,
+            "source_order": 3,
+            "additional_issue_tail": "symbolic; no extra issue cost assigned numerically"
+          },
+          {
+            "id": "fp32_to_fp16_intermediate",
+            "rate_key": "R_cvt_elements_per_sm_cycle",
+            "unit": "element",
+            "per_cta_demand": 1024,
+            "source_order": 4
+          },
+          {
+            "id": "A_inverse_smem_read",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 4096,
+            "source_order": 5
+          },
+          {
+            "id": "HMMA_step2",
+            "rate_key": "R16_flop_per_sm_cycle_times_rho_HMMA",
+            "unit": "FLOP",
+            "per_cta_demand": 65536,
+            "source_order": 6
+          },
+          {
+            "id": "fp32_to_fp16_output",
+            "rate_key": "R_cvt_elements_per_sm_cycle",
+            "unit": "element",
+            "per_cta_demand": 2048,
+            "source_order": 7
+          },
+          {
+            "id": "cross_warp_partial_store",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 2048,
+            "source_order": 8
+          },
+          {
+            "id": "cross_warp_barrier_1",
+            "rate_key": "symbolic_barrier_not_numeric",
+            "unit": "barrier",
+            "per_cta_demand": 1,
+            "numeric_service_cycles": 0,
+            "source_order": 9
+          },
+          {
+            "id": "cross_warp_partial_reload",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 2048,
+            "source_order": 10
+          },
+          {
+            "id": "fp16_cross_warp_add",
+            "rate_key": "symbolic_fp16_add_not_numeric",
+            "unit": "result",
+            "per_cta_demand": 1024,
+            "numeric_service_cycles": 0,
+            "source_order": 11
+          },
+          {
+            "id": "cross_warp_final_store",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 2048,
+            "source_order": 12
+          },
+          {
+            "id": "cross_warp_barrier_2",
+            "rate_key": "symbolic_barrier_not_numeric",
+            "unit": "barrier",
+            "per_cta_demand": 1,
+            "numeric_service_cycles": 0,
+            "source_order": 13
+          }
+        ]
+      },
+      {
+        "stage": "beta_sign_fold_Tstore",
+        "source_node": "beta_sign_fold_Tstore",
+        "combine": "sum_with_max_element_loop",
+        "substeps": [
+          {
+            "id": "inverse_smem_read",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 8192,
+            "source_order": 1
+          },
+          {
+            "id": "beta_smem_refs",
+            "rate_key": "B_smem_byte_per_sm_cycle",
+            "unit": "byte",
+            "per_cta_demand": 16384,
+            "source_order": 2
+          },
+          {
+            "id": "fp32_multiply_and_sign_results",
+            "rate_key": "R_scalar_results_per_sm_cycle",
+            "unit": "result",
+            "per_cta_demand": 8192,
+            "source_order": 2,
+            "result_components": {
+              "multiply_results": 4096,
+              "sign_negate_results": 4096
+            }
+          },
+          {
+            "id": "fp32_to_output_dtype",
+            "rate_key": "R_cvt_elements_per_sm_cycle",
+            "unit": "element",
+            "per_cta_demand": 4096,
+            "source_order": 2
+          },
+          {
+            "id": "T_global_store_hbm",
+            "rate_key": "B_share_byte_per_sm_cycle_optional",
+            "unit": "byte",
+            "per_cta_demand": 8192,
+            "source_order": 3
+          }
+        ]
+      }
+    ],
+    "batch_cases": [
+      {
+        "k": 1,
+        "stage_substep_cycles": {
+          "seq_decode": {
+            "metadata_hbm": 1
+          },
+          "Kload_beta_load": {
+            "producer_hbm_packet": 629,
+            "smem_stage_packet": 130
+          },
+          "Wkk": {
+            "per_K_pass": {
+              "smem_LdMatrix": 32,
+              "HMMA": 17,
+              "pass_total": 49
+            },
+            "repetitions": 8
+          },
+          "strictlower_betaweight": {
+            "beta_smem_refs": 63,
+            "fp32_multiply_results": 16,
+            "combined_max": 63
+          },
+          "Aconstruct": {
+            "fp32_to_fp16": 64,
+            "smem_store": 64
+          },
+          "inverse8_gauss": {
+            "smem_read": 8,
+            "fp16_to_fp32": 8,
+            "rounds": [
+              {
+                "src_row": 0,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 1,
+                "active_warps": 2,
+                "inner": []
+              },
+              {
+                "src_row": 1,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 1,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 48,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 2,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 1,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 3,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 1,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 4,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 1,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 5,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 1,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 6,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 1,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 5,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              }
+            ],
+            "fp32_to_fp16": 8,
+            "smem_write": 8,
+            "stage_total": 81
+          },
+          "inverse16_blocks": {
+            "D_C_smem_read": 8,
+            "HMMA_step1": 2,
+            "fp32_to_fp16_intermediate": 8,
+            "A_inverse_smem_read": 4,
+            "HMMA_step2": 2,
+            "fp32_to_fp16_output": 8,
+            "smem_output_write": 4,
+            "fp32_negate_scalar_result_service": 4,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse32_blocks": {
+            "D_C_smem_read": 16,
+            "HMMA_step1": 3,
+            "fp32_to_fp16_intermediate": 8,
+            "A_inverse_smem_read": 8,
+            "HMMA_step2": 3,
+            "fp32_to_fp16_output": 8,
+            "smem_output_write": 8,
+            "fp32_negate_scalar_result_service": 4,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse64_block": {
+            "D_C_smem_read": 64,
+            "HMMA_step1": 9,
+            "fp32_to_fp16_intermediate": 16,
+            "A_inverse_smem_read": 32,
+            "HMMA_step2": 9,
+            "fp32_to_fp16_output": 32,
+            "cross_warp_partial_store": 16,
+            "cross_warp_barrier_1_numeric_zero": 0,
+            "cross_warp_partial_reload": 16,
+            "fp16_add_service_numeric_zero": 0,
+            "cross_warp_final_store": 16,
+            "cross_warp_barrier_2_numeric_zero": 0,
+            "fp32_negate_scalar_result_service": 8,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "beta_sign_fold_Tstore": {
+            "inverse_smem_read": 64,
+            "element_loop_max": 128,
+            "T_global_store_hbm": 310,
+            "beta_smem_refs": 128,
+            "fp32_scalar_results_including_signs": 64,
+            "output_conversion": 64
+          }
+        },
+        "stage_cycles": {
+          "seq_decode": 1,
+          "Kload_beta_load": 759,
+          "Wkk": 392,
+          "strictlower_betaweight": 63,
+          "Aconstruct": 128,
+          "inverse8_gauss": 81,
+          "inverse16_blocks": 40,
+          "inverse32_blocks": 58,
+          "inverse64_block": 218,
+          "beta_sign_fold_Tstore": 502
+        },
+        "C_batch": 2242,
+        "resource_demands": {
+          "logical_HBM_bytes": 24840,
+          "explicit_smem_reference_bytes": 116864,
+          "tensor_HMMA_flops": 1228800,
+          "converted_elements": 14336,
+          "fp32_scalar_results": 13152,
+          "source_dynamic_warp_HMMA_instructions": 304,
+          "warp_shuffle_instructions": 42
+        }
+      },
+      {
+        "k": 2,
+        "stage_substep_cycles": {
+          "seq_decode": {
+            "metadata_hbm": 1
+          },
+          "Kload_beta_load": {
+            "producer_hbm_packet": 1257,
+            "smem_stage_packet": 260
+          },
+          "Wkk": {
+            "per_K_pass": {
+              "smem_LdMatrix": 64,
+              "HMMA": 34,
+              "pass_total": 98
+            },
+            "repetitions": 8
+          },
+          "strictlower_betaweight": {
+            "beta_smem_refs": 126,
+            "fp32_multiply_results": 32,
+            "combined_max": 126
+          },
+          "Aconstruct": {
+            "fp32_to_fp16": 128,
+            "smem_store": 128
+          },
+          "inverse8_gauss": {
+            "smem_read": 16,
+            "fp16_to_fp32": 16,
+            "rounds": [
+              {
+                "src_row": 0,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 1,
+                "active_warps": 2,
+                "inner": []
+              },
+              {
+                "src_row": 1,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 1,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 48,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 2,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 1,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 3,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 1,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 4,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 1,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 5,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 1,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 6,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 1,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 5,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 1,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              }
+            ],
+            "fp32_to_fp16": 16,
+            "smem_write": 16,
+            "stage_total": 113
+          },
+          "inverse16_blocks": {
+            "D_C_smem_read": 16,
+            "HMMA_step1": 3,
+            "fp32_to_fp16_intermediate": 16,
+            "A_inverse_smem_read": 8,
+            "HMMA_step2": 3,
+            "fp32_to_fp16_output": 16,
+            "smem_output_write": 8,
+            "fp32_negate_scalar_result_service": 8,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse32_blocks": {
+            "D_C_smem_read": 32,
+            "HMMA_step1": 5,
+            "fp32_to_fp16_intermediate": 16,
+            "A_inverse_smem_read": 16,
+            "HMMA_step2": 5,
+            "fp32_to_fp16_output": 16,
+            "smem_output_write": 16,
+            "fp32_negate_scalar_result_service": 8,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse64_block": {
+            "D_C_smem_read": 128,
+            "HMMA_step1": 17,
+            "fp32_to_fp16_intermediate": 32,
+            "A_inverse_smem_read": 64,
+            "HMMA_step2": 17,
+            "fp32_to_fp16_output": 64,
+            "cross_warp_partial_store": 32,
+            "cross_warp_barrier_1_numeric_zero": 0,
+            "cross_warp_partial_reload": 32,
+            "fp16_add_service_numeric_zero": 0,
+            "cross_warp_final_store": 32,
+            "cross_warp_barrier_2_numeric_zero": 0,
+            "fp32_negate_scalar_result_service": 16,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "beta_sign_fold_Tstore": {
+            "inverse_smem_read": 128,
+            "element_loop_max": 256,
+            "T_global_store_hbm": 619,
+            "beta_smem_refs": 256,
+            "fp32_scalar_results_including_signs": 128,
+            "output_conversion": 128
+          }
+        },
+        "stage_cycles": {
+          "seq_decode": 1,
+          "Kload_beta_load": 1517,
+          "Wkk": 784,
+          "strictlower_betaweight": 126,
+          "Aconstruct": 256,
+          "inverse8_gauss": 113,
+          "inverse16_blocks": 78,
+          "inverse32_blocks": 114,
+          "inverse64_block": 434,
+          "beta_sign_fold_Tstore": 1003
+        },
+        "C_batch": 4426,
+        "resource_demands": {
+          "logical_HBM_bytes": 49680,
+          "explicit_smem_reference_bytes": 233728,
+          "tensor_HMMA_flops": 2457600,
+          "converted_elements": 28672,
+          "fp32_scalar_results": 26304,
+          "source_dynamic_warp_HMMA_instructions": 608,
+          "warp_shuffle_instructions": 84
+        }
+      },
+      {
+        "k": 3,
+        "stage_substep_cycles": {
+          "seq_decode": {
+            "metadata_hbm": 1
+          },
+          "Kload_beta_load": {
+            "producer_hbm_packet": 1886,
+            "smem_stage_packet": 390
+          },
+          "Wkk": {
+            "per_K_pass": {
+              "smem_LdMatrix": 96,
+              "HMMA": 51,
+              "pass_total": 147
+            },
+            "repetitions": 8
+          },
+          "strictlower_betaweight": {
+            "beta_smem_refs": 189,
+            "fp32_multiply_results": 48,
+            "combined_max": 189
+          },
+          "Aconstruct": {
+            "fp32_to_fp16": 192,
+            "smem_store": 192
+          },
+          "inverse8_gauss": {
+            "smem_read": 24,
+            "fp16_to_fp32": 24,
+            "rounds": [
+              {
+                "src_row": 0,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 2,
+                "active_warps": 2,
+                "inner": []
+              },
+              {
+                "src_row": 1,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 2,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 48,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 2,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 2,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 3,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 2,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 4,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 2,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 5,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 2,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 6,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 2,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 5,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              }
+            ],
+            "fp32_to_fp16": 24,
+            "smem_write": 24,
+            "stage_total": 174
+          },
+          "inverse16_blocks": {
+            "D_C_smem_read": 24,
+            "HMMA_step1": 4,
+            "fp32_to_fp16_intermediate": 24,
+            "A_inverse_smem_read": 12,
+            "HMMA_step2": 4,
+            "fp32_to_fp16_output": 24,
+            "smem_output_write": 12,
+            "fp32_negate_scalar_result_service": 12,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse32_blocks": {
+            "D_C_smem_read": 48,
+            "HMMA_step1": 7,
+            "fp32_to_fp16_intermediate": 24,
+            "A_inverse_smem_read": 24,
+            "HMMA_step2": 7,
+            "fp32_to_fp16_output": 24,
+            "smem_output_write": 24,
+            "fp32_negate_scalar_result_service": 12,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse64_block": {
+            "D_C_smem_read": 192,
+            "HMMA_step1": 26,
+            "fp32_to_fp16_intermediate": 48,
+            "A_inverse_smem_read": 96,
+            "HMMA_step2": 26,
+            "fp32_to_fp16_output": 96,
+            "cross_warp_partial_store": 48,
+            "cross_warp_barrier_1_numeric_zero": 0,
+            "cross_warp_partial_reload": 48,
+            "fp16_add_service_numeric_zero": 0,
+            "cross_warp_final_store": 48,
+            "cross_warp_barrier_2_numeric_zero": 0,
+            "fp32_negate_scalar_result_service": 24,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "beta_sign_fold_Tstore": {
+            "inverse_smem_read": 192,
+            "element_loop_max": 384,
+            "T_global_store_hbm": 929,
+            "beta_smem_refs": 384,
+            "fp32_scalar_results_including_signs": 192,
+            "output_conversion": 192
+          }
+        },
+        "stage_cycles": {
+          "seq_decode": 1,
+          "Kload_beta_load": 2276,
+          "Wkk": 1176,
+          "strictlower_betaweight": 189,
+          "Aconstruct": 384,
+          "inverse8_gauss": 174,
+          "inverse16_blocks": 116,
+          "inverse32_blocks": 170,
+          "inverse64_block": 652,
+          "beta_sign_fold_Tstore": 1505
+        },
+        "C_batch": 6643,
+        "resource_demands": {
+          "logical_HBM_bytes": 74520,
+          "explicit_smem_reference_bytes": 350592,
+          "tensor_HMMA_flops": 3686400,
+          "converted_elements": 43008,
+          "fp32_scalar_results": 39456,
+          "source_dynamic_warp_HMMA_instructions": 912,
+          "warp_shuffle_instructions": 126
+        }
+      },
+      {
+        "k": 4,
+        "stage_substep_cycles": {
+          "seq_decode": {
+            "metadata_hbm": 2
+          },
+          "Kload_beta_load": {
+            "producer_hbm_packet": 2514,
+            "smem_stage_packet": 520
+          },
+          "Wkk": {
+            "per_K_pass": {
+              "smem_LdMatrix": 128,
+              "HMMA": 68,
+              "pass_total": 196
+            },
+            "repetitions": 8
+          },
+          "strictlower_betaweight": {
+            "beta_smem_refs": 252,
+            "fp32_multiply_results": 63,
+            "combined_max": 252
+          },
+          "Aconstruct": {
+            "fp32_to_fp16": 256,
+            "smem_store": 256
+          },
+          "inverse8_gauss": {
+            "smem_read": 32,
+            "fp16_to_fp32": 32,
+            "rounds": [
+              {
+                "src_row": 0,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 2,
+                "active_warps": 2,
+                "inner": []
+              },
+              {
+                "src_row": 1,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 2,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 48,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 2,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 2,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 3,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 2,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 4,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 2,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 5,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 2,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 6,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 2,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 5,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 2,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              }
+            ],
+            "fp32_to_fp16": 32,
+            "smem_write": 32,
+            "stage_total": 208
+          },
+          "inverse16_blocks": {
+            "D_C_smem_read": 32,
+            "HMMA_step1": 5,
+            "fp32_to_fp16_intermediate": 32,
+            "A_inverse_smem_read": 16,
+            "HMMA_step2": 5,
+            "fp32_to_fp16_output": 32,
+            "smem_output_write": 16,
+            "fp32_negate_scalar_result_service": 16,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse32_blocks": {
+            "D_C_smem_read": 64,
+            "HMMA_step1": 9,
+            "fp32_to_fp16_intermediate": 32,
+            "A_inverse_smem_read": 32,
+            "HMMA_step2": 9,
+            "fp32_to_fp16_output": 32,
+            "smem_output_write": 32,
+            "fp32_negate_scalar_result_service": 16,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse64_block": {
+            "D_C_smem_read": 256,
+            "HMMA_step1": 34,
+            "fp32_to_fp16_intermediate": 64,
+            "A_inverse_smem_read": 128,
+            "HMMA_step2": 34,
+            "fp32_to_fp16_output": 128,
+            "cross_warp_partial_store": 64,
+            "cross_warp_barrier_1_numeric_zero": 0,
+            "cross_warp_partial_reload": 64,
+            "fp16_add_service_numeric_zero": 0,
+            "cross_warp_final_store": 64,
+            "cross_warp_barrier_2_numeric_zero": 0,
+            "fp32_negate_scalar_result_service": 32,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "beta_sign_fold_Tstore": {
+            "inverse_smem_read": 256,
+            "element_loop_max": 512,
+            "T_global_store_hbm": 1238,
+            "beta_smem_refs": 512,
+            "fp32_scalar_results_including_signs": 256,
+            "output_conversion": 256
+          }
+        },
+        "stage_cycles": {
+          "seq_decode": 2,
+          "Kload_beta_load": 3034,
+          "Wkk": 1568,
+          "strictlower_betaweight": 252,
+          "Aconstruct": 512,
+          "inverse8_gauss": 208,
+          "inverse16_blocks": 154,
+          "inverse32_blocks": 226,
+          "inverse64_block": 868,
+          "beta_sign_fold_Tstore": 2006
+        },
+        "C_batch": 8830,
+        "resource_demands": {
+          "logical_HBM_bytes": 99360,
+          "explicit_smem_reference_bytes": 467456,
+          "tensor_HMMA_flops": 4915200,
+          "converted_elements": 57344,
+          "fp32_scalar_results": 52608,
+          "source_dynamic_warp_HMMA_instructions": 1216,
+          "warp_shuffle_instructions": 168
+        }
+      },
+      {
+        "k": 5,
+        "stage_substep_cycles": {
+          "seq_decode": {
+            "metadata_hbm": 2
+          },
+          "Kload_beta_load": {
+            "producer_hbm_packet": 3143,
+            "smem_stage_packet": 650
+          },
+          "Wkk": {
+            "per_K_pass": {
+              "smem_LdMatrix": 160,
+              "HMMA": 85,
+              "pass_total": 245
+            },
+            "repetitions": 8
+          },
+          "strictlower_betaweight": {
+            "beta_smem_refs": 315,
+            "fp32_multiply_results": 79,
+            "combined_max": 315
+          },
+          "Aconstruct": {
+            "fp32_to_fp16": 320,
+            "smem_store": 320
+          },
+          "inverse8_gauss": {
+            "smem_read": 40,
+            "fp16_to_fp32": 40,
+            "rounds": [
+              {
+                "src_row": 0,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 3,
+                "active_warps": 2,
+                "inner": []
+              },
+              {
+                "src_row": 1,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 3,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 48,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 2,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 3,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 3,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 3,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 4,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 3,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 5,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 3,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 6,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 3,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 5,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              }
+            ],
+            "fp32_to_fp16": 40,
+            "smem_write": 40,
+            "stage_total": 271
+          },
+          "inverse16_blocks": {
+            "D_C_smem_read": 40,
+            "HMMA_step1": 6,
+            "fp32_to_fp16_intermediate": 40,
+            "A_inverse_smem_read": 20,
+            "HMMA_step2": 6,
+            "fp32_to_fp16_output": 40,
+            "smem_output_write": 20,
+            "fp32_negate_scalar_result_service": 20,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse32_blocks": {
+            "D_C_smem_read": 80,
+            "HMMA_step1": 11,
+            "fp32_to_fp16_intermediate": 40,
+            "A_inverse_smem_read": 40,
+            "HMMA_step2": 11,
+            "fp32_to_fp16_output": 40,
+            "smem_output_write": 40,
+            "fp32_negate_scalar_result_service": 20,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse64_block": {
+            "D_C_smem_read": 320,
+            "HMMA_step1": 43,
+            "fp32_to_fp16_intermediate": 80,
+            "A_inverse_smem_read": 160,
+            "HMMA_step2": 43,
+            "fp32_to_fp16_output": 160,
+            "cross_warp_partial_store": 80,
+            "cross_warp_barrier_1_numeric_zero": 0,
+            "cross_warp_partial_reload": 80,
+            "fp16_add_service_numeric_zero": 0,
+            "cross_warp_final_store": 80,
+            "cross_warp_barrier_2_numeric_zero": 0,
+            "fp32_negate_scalar_result_service": 40,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "beta_sign_fold_Tstore": {
+            "inverse_smem_read": 320,
+            "element_loop_max": 640,
+            "T_global_store_hbm": 1548,
+            "beta_smem_refs": 640,
+            "fp32_scalar_results_including_signs": 320,
+            "output_conversion": 320
+          }
+        },
+        "stage_cycles": {
+          "seq_decode": 2,
+          "Kload_beta_load": 3793,
+          "Wkk": 1960,
+          "strictlower_betaweight": 315,
+          "Aconstruct": 640,
+          "inverse8_gauss": 271,
+          "inverse16_blocks": 192,
+          "inverse32_blocks": 282,
+          "inverse64_block": 1086,
+          "beta_sign_fold_Tstore": 2508
+        },
+        "C_batch": 11049,
+        "resource_demands": {
+          "logical_HBM_bytes": 124200,
+          "explicit_smem_reference_bytes": 584320,
+          "tensor_HMMA_flops": 6144000,
+          "converted_elements": 71680,
+          "fp32_scalar_results": 65760,
+          "source_dynamic_warp_HMMA_instructions": 1520,
+          "warp_shuffle_instructions": 210
+        }
+      },
+      {
+        "k": 6,
+        "stage_substep_cycles": {
+          "seq_decode": {
+            "metadata_hbm": 2
+          },
+          "Kload_beta_load": {
+            "producer_hbm_packet": 3771,
+            "smem_stage_packet": 780
+          },
+          "Wkk": {
+            "per_K_pass": {
+              "smem_LdMatrix": 192,
+              "HMMA": 102,
+              "pass_total": 294
+            },
+            "repetitions": 8
+          },
+          "strictlower_betaweight": {
+            "beta_smem_refs": 378,
+            "fp32_multiply_results": 95,
+            "combined_max": 378
+          },
+          "Aconstruct": {
+            "fp32_to_fp16": 384,
+            "smem_store": 384
+          },
+          "inverse8_gauss": {
+            "smem_read": 48,
+            "fp16_to_fp32": 48,
+            "rounds": [
+              {
+                "src_row": 0,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 3,
+                "active_warps": 2,
+                "inner": []
+              },
+              {
+                "src_row": 1,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 3,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 48,
+                    "FMA_SIMT_cycles": 3,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 2,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 3,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 3,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 3,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 4,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 3,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 5,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 3,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 6,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 3,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 5,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 3,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              }
+            ],
+            "fp32_to_fp16": 48,
+            "smem_write": 48,
+            "stage_total": 308
+          },
+          "inverse16_blocks": {
+            "D_C_smem_read": 48,
+            "HMMA_step1": 7,
+            "fp32_to_fp16_intermediate": 48,
+            "A_inverse_smem_read": 24,
+            "HMMA_step2": 7,
+            "fp32_to_fp16_output": 48,
+            "smem_output_write": 24,
+            "fp32_negate_scalar_result_service": 24,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse32_blocks": {
+            "D_C_smem_read": 96,
+            "HMMA_step1": 13,
+            "fp32_to_fp16_intermediate": 48,
+            "A_inverse_smem_read": 48,
+            "HMMA_step2": 13,
+            "fp32_to_fp16_output": 48,
+            "smem_output_write": 48,
+            "fp32_negate_scalar_result_service": 24,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse64_block": {
+            "D_C_smem_read": 384,
+            "HMMA_step1": 51,
+            "fp32_to_fp16_intermediate": 96,
+            "A_inverse_smem_read": 192,
+            "HMMA_step2": 51,
+            "fp32_to_fp16_output": 192,
+            "cross_warp_partial_store": 96,
+            "cross_warp_barrier_1_numeric_zero": 0,
+            "cross_warp_partial_reload": 96,
+            "fp16_add_service_numeric_zero": 0,
+            "cross_warp_final_store": 96,
+            "cross_warp_barrier_2_numeric_zero": 0,
+            "fp32_negate_scalar_result_service": 48,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "beta_sign_fold_Tstore": {
+            "inverse_smem_read": 384,
+            "element_loop_max": 768,
+            "T_global_store_hbm": 1857,
+            "beta_smem_refs": 768,
+            "fp32_scalar_results_including_signs": 384,
+            "output_conversion": 384
+          }
+        },
+        "stage_cycles": {
+          "seq_decode": 2,
+          "Kload_beta_load": 4551,
+          "Wkk": 2352,
+          "strictlower_betaweight": 378,
+          "Aconstruct": 768,
+          "inverse8_gauss": 308,
+          "inverse16_blocks": 230,
+          "inverse32_blocks": 338,
+          "inverse64_block": 1302,
+          "beta_sign_fold_Tstore": 3009
+        },
+        "C_batch": 13238,
+        "resource_demands": {
+          "logical_HBM_bytes": 149040,
+          "explicit_smem_reference_bytes": 701184,
+          "tensor_HMMA_flops": 7372800,
+          "converted_elements": 86016,
+          "fp32_scalar_results": 78912,
+          "source_dynamic_warp_HMMA_instructions": 1824,
+          "warp_shuffle_instructions": 252
+        }
+      },
+      {
+        "k": 7,
+        "stage_substep_cycles": {
+          "seq_decode": {
+            "metadata_hbm": 3
+          },
+          "Kload_beta_load": {
+            "producer_hbm_packet": 4400,
+            "smem_stage_packet": 910
+          },
+          "Wkk": {
+            "per_K_pass": {
+              "smem_LdMatrix": 224,
+              "HMMA": 119,
+              "pass_total": 343
+            },
+            "repetitions": 8
+          },
+          "strictlower_betaweight": {
+            "beta_smem_refs": 441,
+            "fp32_multiply_results": 111,
+            "combined_max": 441
+          },
+          "Aconstruct": {
+            "fp32_to_fp16": 448,
+            "smem_store": 448
+          },
+          "inverse8_gauss": {
+            "smem_read": 56,
+            "fp16_to_fp32": 56,
+            "rounds": [
+              {
+                "src_row": 0,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 4,
+                "active_warps": 2,
+                "inner": []
+              },
+              {
+                "src_row": 1,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 4,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 48,
+                    "FMA_SIMT_cycles": 3,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 2,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 4,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 3,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 3,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 3,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 4,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 4,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 4,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 5,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 4,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 6,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 4,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 5,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              }
+            ],
+            "fp32_to_fp16": 56,
+            "smem_write": 56,
+            "stage_total": 370
+          },
+          "inverse16_blocks": {
+            "D_C_smem_read": 56,
+            "HMMA_step1": 8,
+            "fp32_to_fp16_intermediate": 56,
+            "A_inverse_smem_read": 28,
+            "HMMA_step2": 8,
+            "fp32_to_fp16_output": 56,
+            "smem_output_write": 28,
+            "fp32_negate_scalar_result_service": 28,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse32_blocks": {
+            "D_C_smem_read": 112,
+            "HMMA_step1": 15,
+            "fp32_to_fp16_intermediate": 56,
+            "A_inverse_smem_read": 56,
+            "HMMA_step2": 15,
+            "fp32_to_fp16_output": 56,
+            "smem_output_write": 56,
+            "fp32_negate_scalar_result_service": 28,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse64_block": {
+            "D_C_smem_read": 448,
+            "HMMA_step1": 60,
+            "fp32_to_fp16_intermediate": 112,
+            "A_inverse_smem_read": 224,
+            "HMMA_step2": 60,
+            "fp32_to_fp16_output": 224,
+            "cross_warp_partial_store": 112,
+            "cross_warp_barrier_1_numeric_zero": 0,
+            "cross_warp_partial_reload": 112,
+            "fp16_add_service_numeric_zero": 0,
+            "cross_warp_final_store": 112,
+            "cross_warp_barrier_2_numeric_zero": 0,
+            "fp32_negate_scalar_result_service": 56,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "beta_sign_fold_Tstore": {
+            "inverse_smem_read": 448,
+            "element_loop_max": 896,
+            "T_global_store_hbm": 2166,
+            "beta_smem_refs": 896,
+            "fp32_scalar_results_including_signs": 448,
+            "output_conversion": 448
+          }
+        },
+        "stage_cycles": {
+          "seq_decode": 3,
+          "Kload_beta_load": 5310,
+          "Wkk": 2744,
+          "strictlower_betaweight": 441,
+          "Aconstruct": 896,
+          "inverse8_gauss": 370,
+          "inverse16_blocks": 268,
+          "inverse32_blocks": 394,
+          "inverse64_block": 1520,
+          "beta_sign_fold_Tstore": 3510
+        },
+        "C_batch": 15456,
+        "resource_demands": {
+          "logical_HBM_bytes": 173880,
+          "explicit_smem_reference_bytes": 818048,
+          "tensor_HMMA_flops": 8601600,
+          "converted_elements": 100352,
+          "fp32_scalar_results": 92064,
+          "source_dynamic_warp_HMMA_instructions": 2128,
+          "warp_shuffle_instructions": 294
+        }
+      },
+      {
+        "k": 8,
+        "stage_substep_cycles": {
+          "seq_decode": {
+            "metadata_hbm": 3
+          },
+          "Kload_beta_load": {
+            "producer_hbm_packet": 5028,
+            "smem_stage_packet": 1040
+          },
+          "Wkk": {
+            "per_K_pass": {
+              "smem_LdMatrix": 256,
+              "HMMA": 136,
+              "pass_total": 392
+            },
+            "repetitions": 8
+          },
+          "strictlower_betaweight": {
+            "beta_smem_refs": 504,
+            "fp32_multiply_results": 126,
+            "combined_max": 504
+          },
+          "Aconstruct": {
+            "fp32_to_fp16": 512,
+            "smem_store": 512
+          },
+          "inverse8_gauss": {
+            "smem_read": 64,
+            "fp16_to_fp32": 64,
+            "rounds": [
+              {
+                "src_row": 0,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 4,
+                "active_warps": 2,
+                "inner": []
+              },
+              {
+                "src_row": 1,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 4,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 48,
+                    "FMA_SIMT_cycles": 3,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 2,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 4,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 3,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 40,
+                    "FMA_SIMT_cycles": 3,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 3,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 4,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 32,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 4,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 4,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 24,
+                    "FMA_SIMT_cycles": 2,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 5,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 4,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 16,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              },
+              {
+                "src_row": 6,
+                "row_scale_negate_results_per_cta": 64,
+                "row_scale_SIMT_cycles": 4,
+                "active_warps": 2,
+                "inner": [
+                  {
+                    "i": 0,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 1,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 2,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 3,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 4,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  },
+                  {
+                    "i": 5,
+                    "shuffle_instructions_per_cta": 2,
+                    "shuffle_issue_cycles": 4,
+                    "FMA_results_per_cta": 8,
+                    "FMA_SIMT_cycles": 1,
+                    "predecessor": "shuffle -> FMA RAW"
+                  }
+                ]
+              }
+            ],
+            "fp32_to_fp16": 64,
+            "smem_write": 64,
+            "stage_total": 402
+          },
+          "inverse16_blocks": {
+            "D_C_smem_read": 64,
+            "HMMA_step1": 9,
+            "fp32_to_fp16_intermediate": 64,
+            "A_inverse_smem_read": 32,
+            "HMMA_step2": 9,
+            "fp32_to_fp16_output": 64,
+            "smem_output_write": 32,
+            "fp32_negate_scalar_result_service": 32,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse32_blocks": {
+            "D_C_smem_read": 128,
+            "HMMA_step1": 17,
+            "fp32_to_fp16_intermediate": 64,
+            "A_inverse_smem_read": 64,
+            "HMMA_step2": 17,
+            "fp32_to_fp16_output": 64,
+            "smem_output_write": 64,
+            "fp32_negate_scalar_result_service": 32,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "inverse64_block": {
+            "D_C_smem_read": 512,
+            "HMMA_step1": 68,
+            "fp32_to_fp16_intermediate": 128,
+            "A_inverse_smem_read": 256,
+            "HMMA_step2": 68,
+            "fp32_to_fp16_output": 256,
+            "cross_warp_partial_store": 128,
+            "cross_warp_barrier_1_numeric_zero": 0,
+            "cross_warp_partial_reload": 128,
+            "fp16_add_service_numeric_zero": 0,
+            "cross_warp_final_store": 128,
+            "cross_warp_barrier_2_numeric_zero": 0,
+            "fp32_negate_scalar_result_service": 64,
+            "additional_warp_issue_service_numeric_zero": 0
+          },
+          "beta_sign_fold_Tstore": {
+            "inverse_smem_read": 512,
+            "element_loop_max": 1024,
+            "T_global_store_hbm": 2476,
+            "beta_smem_refs": 1024,
+            "fp32_scalar_results_including_signs": 512,
+            "output_conversion": 512
+          }
+        },
+        "stage_cycles": {
+          "seq_decode": 3,
+          "Kload_beta_load": 6068,
+          "Wkk": 3136,
+          "strictlower_betaweight": 504,
+          "Aconstruct": 1024,
+          "inverse8_gauss": 402,
+          "inverse16_blocks": 306,
+          "inverse32_blocks": 450,
+          "inverse64_block": 1736,
+          "beta_sign_fold_Tstore": 4012
+        },
+        "C_batch": 17641,
+        "resource_demands": {
+          "logical_HBM_bytes": 198720,
+          "explicit_smem_reference_bytes": 934912,
+          "tensor_HMMA_flops": 9830400,
+          "converted_elements": 114688,
+          "fp32_scalar_results": 105216,
+          "source_dynamic_warp_HMMA_instructions": 2432,
+          "warp_shuffle_instructions": 336
+        }
+      }
+    ],
+    "grid_cases": [
+      {
+        "S": 8192,
+        "N": 2048,
+        "q_max": 14,
+        "q_max_sm_count": 124,
+        "q_min": 13,
+        "q_min_sm_count": 24,
+        "high_q_decomposition": "C_batch(8)+C_batch(6)",
+        "low_q_decomposition": "C_batch(8)+C_batch(5)",
+        "high_q_sm_cycles": 30879,
+        "low_q_sm_cycles": 28690,
+        "whole_gpu_hbm_floor_cycles": 12983,
+        "kernel_cycles": 30879
+      },
+      {
+        "S": 16384,
+        "N": 4096,
+        "q_max": 28,
+        "q_max_sm_count": 100,
+        "q_min": 27,
+        "q_min_sm_count": 48,
+        "high_q_decomposition": "3*C_batch(8)+C_batch(4)",
+        "low_q_decomposition": "3*C_batch(8)+C_batch(3)",
+        "high_q_sm_cycles": 61753,
+        "low_q_sm_cycles": 59566,
+        "whole_gpu_hbm_floor_cycles": 25965,
+        "kernel_cycles": 61753
+      },
+      {
+        "S": 32768,
+        "N": 8192,
+        "q_max": 56,
+        "q_max_sm_count": 52,
+        "q_min": 55,
+        "q_min_sm_count": 96,
+        "high_q_decomposition": "7*C_batch(8)",
+        "low_q_decomposition": "6*C_batch(8)+C_batch(7)",
+        "high_q_sm_cycles": 123487,
+        "low_q_sm_cycles": 121302,
+        "whole_gpu_hbm_floor_cycles": 51930,
+        "kernel_cycles": 123487
+      }
+    ],
+    "symbolic_tails": "zero only for the ideal scenario; all source edges remain",
+    "per_cta_resource_demands": {
+      "logical_HBM_bytes": 24840,
+      "explicit_smem_reference_bytes": 116864,
+      "tensor_HMMA_flops": 1228800,
+      "converted_elements": 14336,
+      "fp32_scalar_results": 13152,
+      "source_dynamic_warp_HMMA_instructions": 304,
+      "warp_shuffle_instructions": 42,
+      "fp32_scalar_result_components": {
+        "beta_multiply": 2016,
+        "gauss_fma_result": 448,
+        "gauss_sign_negate_result": 448,
+        "inverse16_sign_negate_result": 512,
+        "inverse32_sign_negate_result": 512,
+        "inverse64_sign_negate_result": 1024,
+        "T_multiply": 4096,
+        "T_sign_negate_result": 4096
+      }
+    },
+    "symbolic_sign_issue_policy": "All 6,592 FP32 sign-negate results are included in the 13,152 scalar-result proxy; additional issue cost is unknown and omitted numerically, not asserted free."
+  },
+  "relaxed_equal_share_fluid_sensitivity": {
+    "classification": "relaxed, unattained sensitivity only; aggregate average occupancy and throughput do not prove a legal CTA schedule; not primary",
+    "steady_cta_interval_cycles": 938.1777662337663,
+    "cta_dependency_span_cycles": 2242,
+    "mean_inflight_ctas": 2.3897390033024504,
+    "peak_inflight_bound_ctas": 3,
+    "resident_cta_cap": 8,
+    "makespan_formula": "ceil(L_share + (q_max-1)*II); sensitivity only, no discrete shared-resource calendar supplied",
+    "cases": [
+      {
+        "S": 8192,
+        "q_max": 14,
+        "cycles": 14439
+      },
+      {
+        "S": 16384,
+        "q_max": 28,
+        "cycles": 27573
+      },
+      {
+        "S": 32768,
+        "q_max": 56,
+        "cycles": 53842
+      }
+    ],
+    "symbolic_tails": "zero only for sensitivity; no feasibility claim"
+  },
+  "unknowns": [
+    "TMA descriptor, issue, engine throughput, queue depth and response",
+    "HBM cache outcome, repeated K-head reuse, beta transaction sectors and replay",
+    "SMEM bank wavefronts/replay and response latency",
+    "warp HMMA compiler lowering, issue/accumulator response and actual shape efficiency",
+    "whether Gauss multiply-add expressions contract to FMA",
+    "warp shuffle dependency/service beyond ideal warp issue accounting",
+    "FP16 cross-warp add service",
+    "sign-negate instruction issue throughput and any coupling to warp issue",
+    "mbarrier, CTA barrier, fence, allocation and dispatch latency",
+    "compiled register/shared allocation rounding and exact occupancy query",
+    "final global-store visibility/drain"
+  ],
+  "untimed_compile_metadata": {
+    "classification": "untimed clean pinned-source compile; structural metadata only",
+    "registers_per_thread": 64,
+    "stack_bytes_per_thread": 0,
+    "static_shared_bytes": 1024,
+    "local_bytes_per_thread": 0,
+    "block_threads": 128,
+    "static_SASS_sites": {
+      "HMMA.16816.F32": 76,
+      "HMMA.1688.F32": 2,
+      "LDSM": 48
+    },
+    "static_site_counts_are_not_dynamic_counts": true
+  }
+}

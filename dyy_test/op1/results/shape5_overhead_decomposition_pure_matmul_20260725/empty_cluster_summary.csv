@@ -1,0 +1,4 @@
+variant,mean_us,ci95_half_us
+empty_cluster_smem0,2.378624,0.025021
+empty_cluster_smem227k,3.117696,0.038220
+cluster_sync_smem227k,4.124416,0.003380
