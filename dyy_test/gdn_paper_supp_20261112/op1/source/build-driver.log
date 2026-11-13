@@ -1,0 +1,18 @@
+++ dirname build.sh
++ cd .
++ repo=/home/ubuntu/workspace/dyy/dyy_cutlass
++ cuda=/usr/local/cuda-13.0/bin/nvcc
++ common=(-std=c++17 -O3 -arch=sm_100a --expt-relaxed-constexpr --expt-extended-lambda --threads 2 -lineinfo -Xptxas=-v)
++ includes=(-I"$repo/include" -I"$repo/tools/util/include" -I"$repo/examples/common")
++ mkdir -p bin build overlay/cutlass/gemm/collective
++ install -m 644 sm100_blockscaled_mma_warpspecialized_packed.hpp overlay/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp
++ packer_pid=2226544
++ baseline_pid=2226545
++ wait 2226544
++ /usr/local/cuda-13.0/bin/nvcc -std=c++17 -O3 -arch=sm_100a --expt-relaxed-constexpr --expt-extended-lambda --threads 2 -lineinfo -Xptxas=-v -I/home/ubuntu/workspace/dyy/dyy_cutlass/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/tools/util/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/examples/common -c reuse_packer.cu -o build/reuse_packer.o
++ /usr/local/cuda-13.0/bin/nvcc -std=c++17 -O3 -arch=sm_100a --expt-relaxed-constexpr --expt-extended-lambda --threads 2 -lineinfo -Xptxas=-v -I/home/ubuntu/workspace/dyy/dyy_cutlass/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/tools/util/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/examples/common reuse_gemm.cu -o bin/reuse_baseline
++ /usr/local/cuda-13.0/bin/nvcc -std=c++17 -O3 -arch=sm_100a --expt-relaxed-constexpr --expt-extended-lambda --threads 2 -lineinfo -Xptxas=-v -DPACKED_INPUT -Ioverlay -I/home/ubuntu/workspace/dyy/dyy_cutlass/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/tools/util/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/examples/common reuse_gemm.cu build/reuse_packer.o -o bin/reuse_packed
++ wait 2226545
++ sha256sum reuse_gemm.cu reuse_packer.cu bin/reuse_baseline bin/reuse_packed
++ git -C /home/ubuntu/workspace/dyy/dyy_cutlass rev-parse HEAD
++ /usr/local/cuda-13.0/bin/nvcc --version

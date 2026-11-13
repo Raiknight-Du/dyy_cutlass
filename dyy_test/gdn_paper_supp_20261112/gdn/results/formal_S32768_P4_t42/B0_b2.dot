@@ -1,0 +1,63 @@
+digraph dot {
+subgraph cluster_7 {
+label="graph_7" graph[style="dashed"];
+"graph_7_node_0"[style="bold" shape="record" label="{KERNEL
+| {ID | 0 (topoId: 6) | _ZN2at6native29vectorized_elementwise_kernelILi4ENS0_11FillFunctorIhEESt5arrayIPcLm1EEEEviT0_T1_\<\<\<259072,128,0\>\>\>}
+| {{node handle | func handle} | {0x0000563BC2CA5320 | 0x0000563BC1CF9200}}
+| {accessPolicyWindow | {base_ptr | num_bytes | hitRatio | hitProp | missProp} | {0x0000000000000000 | 0 | 0.000000 | N | N}}
+| {cooperative | 0}
+| {priority | 0}
+}"];
+
+"graph_7_node_1"[style="solid" shape="rectangle" label="1 (topoId: 5)
+EVENT_RECORD
+node handle: 0x0000563BC2CA5A88
+event: 0x0000563BC1BC36A0
+"];
+
+"graph_7_node_2"[style="bold" shape="record" label="{KERNEL
+| {ID | 2 (topoId: 4) | kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgdn_cp_prefillCPDeltaRuleTPrecomputeSm100_object_at__CopyAtom_ThrID10_TVLayoutSrc1409601_TVLayoutDst1409601_Valuetypef16_tensor000o1011_0\<\<\<8192,128,24960\>\>\>}
+| {{node handle | func handle} | {0x0000563BC2CA61F0 | 0x0000563BC11D2730}}
+| {accessPolicyWindow | {base_ptr | num_bytes | hitRatio | hitProp | missProp} | {0x0000000000000000 | 0 | 0.000000 | N | N}}
+| {cooperative | 0}
+| {priority | 0}
+}"];
+
+"graph_7_node_3"[style="bold" shape="record" label="{KERNEL
+| {ID | 3 (topoId: 3) | kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleMNPrecomputeUtcmma1Sm100_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID__0\<\<\<64,384,159744\>\>\>}
+| {{node handle | func handle} | {0x0000563BC2CA6958 | 0x0000563BC136F3E0}}
+| {accessPolicyWindow | {base_ptr | num_bytes | hitRatio | hitProp | missProp} | {0x0000000000000000 | 0 | 0.000000 | N | N}}
+| {cooperative | 0}
+| {priority | 0}
+}"];
+
+"graph_7_node_4"[style="bold" shape="record" label="{KERNEL
+| {ID | 4 (topoId: 2) | kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleFixupUtcmmaSm100_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_0\<\<\<32,256,164864\>\>\>}
+| {{node handle | func handle} | {0x0000563BC2CA70C0 | 0x0000563BC1411660}}
+| {accessPolicyWindow | {base_ptr | num_bytes | hitRatio | hitProp | missProp} | {0x0000000000000000 | 0 | 0.000000 | N | N}}
+| {cooperative | 0}
+| {priority | 0}
+}"];
+
+"graph_7_node_5"[style="bold" shape="record" label="{KERNEL
+| {ID | 5 (topoId: 1) | kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_Sh_0\<\<\<64,384,225280\>\>\>}
+| {{node handle | func handle} | {0x0000563BC2CA7828 | 0x0000563BC1E65130}}
+| {accessPolicyWindow | {base_ptr | num_bytes | hitRatio | hitProp | missProp} | {0x0000000000000000 | 0 | 0.000000 | N | N}}
+| {cooperative | 0}
+| {priority | 0}
+}"];
+
+"graph_7_node_6"[style="solid" shape="rectangle" label="6 (topoId: 0)
+EVENT_RECORD
+node handle: 0x0000563BC2CA7F90
+event: 0x0000563BC1B61BA0
+"];
+
+"graph_7_node_0" -> "graph_7_node_1" [headlabel=0];
+"graph_7_node_1" -> "graph_7_node_2" [headlabel=0];
+"graph_7_node_2" -> "graph_7_node_3" [headlabel=0];
+"graph_7_node_3" -> "graph_7_node_4" [headlabel=0];
+"graph_7_node_4" -> "graph_7_node_5" [headlabel=0];
+"graph_7_node_5" -> "graph_7_node_6" [headlabel=0];
+}
+}

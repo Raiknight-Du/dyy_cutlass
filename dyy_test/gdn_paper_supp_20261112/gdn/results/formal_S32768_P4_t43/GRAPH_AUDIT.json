@@ -1,0 +1,418 @@
+{
+  "B0:0": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "CPDeltaRuleMNPrecomputeUtcmma1Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "CPDeltaRuleFixupUtcmmaSm100",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 164864
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "B0:1": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "CPDeltaRuleMNPrecomputeUtcmma1Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "CPDeltaRuleFixupUtcmmaSm100",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 164864
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "B0:2": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "CPDeltaRuleMNPrecomputeUtcmma1Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "CPDeltaRuleFixupUtcmmaSm100",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 164864
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "B0:3": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "CPDeltaRuleMNPrecomputeUtcmma1Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "CPDeltaRuleFixupUtcmmaSm100",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 164864
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "K2:0": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "K2OptScaleNEarlyFusedM",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "CPDeltaRuleFixupUtcmmaSm100",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 164864
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "K2:1": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "K2OptScaleNEarlyFusedM",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "CPDeltaRuleFixupUtcmmaSm100",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 164864
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "K2:2": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "K2OptScaleNEarlyFusedM",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "CPDeltaRuleFixupUtcmmaSm100",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 164864
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "K2:3": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "K2OptScaleNEarlyFusedM",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "CPDeltaRuleFixupUtcmmaSm100",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 164864
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "K3:0": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "CPDeltaRuleMNPrecomputeUtcmma1Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "K3OptCoalescedStore",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 198656
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "K3:1": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "CPDeltaRuleMNPrecomputeUtcmma1Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "K3OptCoalescedStore",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 198656
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "K3:2": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "CPDeltaRuleMNPrecomputeUtcmma1Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "K3OptCoalescedStore",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 198656
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "K3:3": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "CPDeltaRuleMNPrecomputeUtcmma1Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "K3OptCoalescedStore",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 198656
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "K23:0": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "K2OptScaleNEarlyFusedM",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "K3OptCoalescedStore",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 198656
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "K23:1": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "K2OptScaleNEarlyFusedM",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "K3OptCoalescedStore",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 198656
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "K23:2": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "K2OptScaleNEarlyFusedM",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "K3OptCoalescedStore",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 198656
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ],
+  "K23:3": [
+    {
+      "symbol": "CPDeltaRuleTPrecomputeSm100",
+      "grid_x": 8192,
+      "threads": 128,
+      "dynamic_smem": 24960
+    },
+    {
+      "symbol": "K2OptScaleNEarlyFusedM",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 159744
+    },
+    {
+      "symbol": "K3OptCoalescedStore",
+      "grid_x": 32,
+      "threads": 256,
+      "dynamic_smem": 198656
+    },
+    {
+      "symbol": "CPDeltaRulePrefillTcgen05Sm100",
+      "grid_x": 64,
+      "threads": 384,
+      "dynamic_smem": 225280
+    }
+  ]
+}

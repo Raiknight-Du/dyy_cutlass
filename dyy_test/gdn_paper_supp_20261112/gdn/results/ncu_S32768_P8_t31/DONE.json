@@ -1,0 +1,8 @@
+{
+  "samples": 1,
+  "arms": [
+    "B0",
+    "K3"
+  ],
+  "event_rows": 4
+}

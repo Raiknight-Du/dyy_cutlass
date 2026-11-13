@@ -1,0 +1,17 @@
+session,shape,reuse,group,arm,mode,processes,ms_per_chain
+0,7,1,0,baseline,gemm_only,2,0.043171999975
+0,7,1,1,baseline,gemm_only,2,0.042773999275
+0,7,1,0,packed,gemm_only,2,0.04236599989
+0,7,1,1,packed,gemm_only,2,0.041509998965
+0,7,1,0,packed_late,gemm_only,2,0.12092199925
+0,7,1,1,packed_late,gemm_only,2,0.12034599855
+0,7,1,0,baseline_late,gemm_only,2,0.12950199845
+0,7,1,1,baseline_late,gemm_only,2,0.12838999925
+0,10,1,0,baseline,gemm_only,2,0.04395600036
+0,10,1,1,baseline,gemm_only,2,0.04416600056
+0,10,1,0,packed,gemm_only,2,0.04484400153
+0,10,1,1,packed,gemm_only,2,0.044797999785
+0,10,1,0,packed_late,gemm_only,2,0.044921999795
+0,10,1,1,packed_late,gemm_only,2,0.044980000704999995
+0,10,1,0,baseline_late,gemm_only,2,0.043743999675000006
+0,10,1,1,baseline_late,gemm_only,2,0.04444799945

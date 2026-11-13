@@ -1,0 +1,129 @@
+{
+  "source": "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/upstreams/flashinfer/flashinfer/gdn_kernels/blackwell/gated_delta_net_cp.py",
+  "source_sha256": "cb9a174f6fb02d6a69415e34dbe1bf799bf283e2a46747b39d4c538d83919b8b",
+  "pin_commit": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "variants": [
+    {
+      "class_name": "K2OptScaleNEarly",
+      "description": "N scaled before the y_acc wait (off the N loop critical path)",
+      "edits": {
+        "run_compute_group_1": {
+          "moved": [
+            "block_coeff",
+            "_scale_tmem_matrix"
+          ],
+          "before": "y_acc_consumer.wait_and_advance()"
+        }
+      },
+      "handshakes_touched": false,
+      "outputs_valid_expected": true,
+      "instrument": "design"
+    },
+    {
+      "class_name": "K2OptFusedM",
+      "description": "M scaled and converted in one TMEM pass at the end of the iteration; m_in for block b+1 published there",
+      "edits": {
+        "run_compute_group_0": {
+          "rewritten": true,
+          "helper": "_scale_and_convert_tmem_matrix"
+        }
+      },
+      "handshakes_touched": true,
+      "outputs_valid_expected": true,
+      "instrument": "design"
+    },
+    {
+      "class_name": "K2OptProcYPre",
+      "description": "V*alpha computed before the y_acc wait",
+      "edits": {
+        "run_compute_group_1": {
+          "replaced": [
+            "y_acc wait + _process_y -> _process_y_split (wait inside, after V*alpha)"
+          ]
+        }
+      },
+      "handshakes_touched": false,
+      "outputs_valid_expected": true,
+      "instrument": "design"
+    },
+    {
+      "class_name": "K2OptScaleNEarlyFusedM",
+      "description": "ScaleNEarly + FusedM",
+      "edits": {
+        "run_compute_group_0": {
+          "rewritten": true
+        },
+        "run_compute_group_1": {
+          "moved": [
+            "block_coeff",
+            "_scale_tmem_matrix"
+          ],
+          "before": "y_acc_consumer.wait_and_advance()"
+        }
+      },
+      "handshakes_touched": true,
+      "outputs_valid_expected": true,
+      "instrument": "design"
+    },
+    {
+      "class_name": "K2OptAll",
+      "description": "ScaleNEarly + FusedM + ProcYPre",
+      "edits": {
+        "run_compute_group_0": {
+          "rewritten": true
+        },
+        "run_compute_group_1": {
+          "moved": [
+            "block_coeff",
+            "_scale_tmem_matrix"
+          ],
+          "before": "y_acc_consumer.wait_and_advance()",
+          "replaced": [
+            "y_acc wait + _process_y -> _process_y_split (wait inside, after V*alpha)"
+          ]
+        }
+      },
+      "handshakes_touched": true,
+      "outputs_valid_expected": true,
+      "instrument": "design"
+    },
+    {
+      "class_name": "K2OptScaleNEarlyProcYPre",
+      "description": "ScaleNEarly + ProcYPre",
+      "edits": {
+        "run_compute_group_1": {
+          "moved": [
+            "block_coeff",
+            "_scale_tmem_matrix"
+          ],
+          "before": "y_acc_consumer.wait_and_advance()",
+          "replaced": [
+            "y_acc wait + _process_y -> _process_y_split (wait inside, after V*alpha)"
+          ]
+        }
+      },
+      "handshakes_touched": false,
+      "outputs_valid_expected": true,
+      "instrument": "design"
+    },
+    {
+      "class_name": "K2OptFusedMProcYPre",
+      "description": "FusedM + ProcYPre",
+      "edits": {
+        "run_compute_group_0": {
+          "rewritten": true
+        },
+        "run_compute_group_1": {
+          "replaced": [
+            "y_acc wait + _process_y -> _process_y_split (wait inside, after V*alpha)"
+          ]
+        }
+      },
+      "handshakes_touched": true,
+      "outputs_valid_expected": true,
+      "instrument": "design"
+    }
+  ],
+  "variants_sha256": "de951c0f812c9ac03ec16217456b78de42898bb0d690a157d34150b9f9be5ec2",
+  "model_enabled": false
+}

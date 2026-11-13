@@ -1,0 +1,1 @@
+/home/ubuntu/gdn_paper_supp_20261112/op2/bin/op2_trace --shape-id=11 --m=768 --n=16384 --k=256 --session=2 --groups=1 --iterations=1 --warmups=1 --dataset-root=/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op2/random_datasets --profile-mode=0

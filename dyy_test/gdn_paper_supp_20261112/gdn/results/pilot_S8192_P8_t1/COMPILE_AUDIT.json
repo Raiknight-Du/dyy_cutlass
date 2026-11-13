@@ -1,0 +1,20 @@
+{
+  "CPDeltaRuleMNPrecomputeUtcmma1Sm100": {
+    "sha256": "2ab6fe6197ecd6e8f7ac33d41191e6b6ec45f448f1abe84544122a619a9eb5bc",
+    "resource_usage": "Resource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleMNPrecomputeUtcmma1Sm100_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID__0:\n  REG:168 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1704 TEXTURE:0 SURFACE:0 SAMPLER:0",
+    "local_ops_static": 0,
+    "stg_static": 64
+  },
+  "CPDeltaRuleFixupUtcmmaSm100": {
+    "sha256": "4e1e8742827bde20ded79ef52609af44994436e382ed48e680aedec4c070695e",
+    "resource_usage": "Resource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleFixupUtcmmaSm100_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_0:\n  REG:120 STACK:16 SHARED:1024 LOCAL:0 CONSTANT[0]:1456 TEXTURE:0 SURFACE:0 SAMPLER:0",
+    "local_ops_static": 5,
+    "stg_static": 64
+  },
+  "K3OptCoalescedStore": {
+    "sha256": "fa79cdb34e6f8273419baede4d24d652ef9591f14cd24cfc9af1f2eb1c5932d2",
+    "resource_usage": "Resource usage:\n Common:\n  GLOBAL:0\n Function kernel_cutlass_kernel_variants_k3optK3OptCoalescedStore_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_64648_TV_Layout_A_164864164_TV_Layout_0:\n  REG:120 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1456 TEXTURE:0 SURFACE:0 SAMPLER:0",
+    "local_ops_static": 0,
+    "stg_static": 64
+  }
+}

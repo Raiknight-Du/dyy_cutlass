@@ -1,0 +1,23 @@
+{
+  "phase": "dense",
+  "utc": "2026-11-13T01:49:15.164657+00:00",
+  "cases_kernel_coordinates": [
+    [
+      "8",
+      "4096",
+      "8192",
+      "512",
+      "None"
+    ],
+    [
+      "8",
+      "4096",
+      "8192",
+      "3072",
+      "None"
+    ]
+  ],
+  "treatment": "mode0 dense over the same masked operands; mode1 native sparse; all scales 1",
+  "binary": "/home/ubuntu/gdn_paper_supp_20261112/op2/bin/op2_dense_reference",
+  "natural_gpu_clocks": true
+}

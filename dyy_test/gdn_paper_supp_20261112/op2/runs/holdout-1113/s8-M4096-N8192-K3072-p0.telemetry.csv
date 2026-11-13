@@ -1,0 +1,9 @@
+timestamp, pstate, utilization.gpu [%], clocks.current.sm [MHz], clocks.current.memory [MHz], power.draw [W], temperature.gpu, memory.used [MiB]
+2026/11/13 01:50:05.854, P0, 0 %, 1965 MHz, 3996 MHz, 248.51 W, 35, 1 MiB
+2026/11/13 01:50:06.069, P0, 0 %, 1965 MHz, 3996 MHz, 248.62 W, 35, 32 MiB
+2026/11/13 01:50:06.269, P0, 2 %, 1965 MHz, 3996 MHz, 248.64 W, 35, 714 MiB
+2026/11/13 01:50:06.469, P0, 0 %, 1965 MHz, 3996 MHz, 248.59 W, 35, 714 MiB
+2026/11/13 01:50:06.669, P0, 0 %, 1965 MHz, 3996 MHz, 248.64 W, 35, 714 MiB
+2026/11/13 01:50:06.869, P0, 0 %, 1965 MHz, 3996 MHz, 248.62 W, 35, 808 MiB
+2026/11/13 01:50:07.070, P0, 2 %, 1965 MHz, 3996 MHz, 284.98 W, 35, 810 MiB
+2026/11/13 01:50:07.270, P0, 65 %, 1965 MHz, 3996 MHz, 388.03 W, 39, 0 MiB

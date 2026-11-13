@@ -1,0 +1,63 @@
+digraph dot {
+subgraph cluster_25 {
+label="graph_25" graph[style="dashed"];
+"graph_25_node_0"[style="bold" shape="record" label="{KERNEL
+| {ID | 0 (topoId: 6) | _ZN2at6native29vectorized_elementwise_kernelILi4ENS0_11FillFunctorIhEESt5arrayIPcLm1EEEEviT0_T1_\<\<\<259072,128,0\>\>\>}
+| {{node handle | func handle} | {0x00005619122AD440 | 0x0000561910062960}}
+| {accessPolicyWindow | {base_ptr | num_bytes | hitRatio | hitProp | missProp} | {0x0000000000000000 | 0 | 0.000000 | N | N}}
+| {cooperative | 0}
+| {priority | 0}
+}"];
+
+"graph_25_node_1"[style="solid" shape="rectangle" label="1 (topoId: 5)
+EVENT_RECORD
+node handle: 0x00005619122ADBA8
+event: 0x00005619124CA8F0
+"];
+
+"graph_25_node_2"[style="bold" shape="record" label="{KERNEL
+| {ID | 2 (topoId: 4) | kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgdn_cp_prefillCPDeltaRuleTPrecomputeSm100_object_at__CopyAtom_ThrID10_TVLayoutSrc1409601_TVLayoutDst1409601_Valuetypef16_tensor000o1011_0\<\<\<8192,128,24960\>\>\>}
+| {{node handle | func handle} | {0x00005619122AE310 | 0x000056190F24C7B0}}
+| {accessPolicyWindow | {base_ptr | num_bytes | hitRatio | hitProp | missProp} | {0x0000000000000000 | 0 | 0.000000 | N | N}}
+| {cooperative | 0}
+| {priority | 0}
+}"];
+
+"graph_25_node_3"[style="bold" shape="record" label="{KERNEL
+| {ID | 3 (topoId: 3) | kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleMNPrecomputeUtcmma1Sm100_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID__0\<\<\<128,384,159744\>\>\>}
+| {{node handle | func handle} | {0x00005619122AEA78 | 0x000056190F01FA30}}
+| {accessPolicyWindow | {base_ptr | num_bytes | hitRatio | hitProp | missProp} | {0x0000000000000000 | 0 | 0.000000 | N | N}}
+| {cooperative | 0}
+| {priority | 0}
+}"];
+
+"graph_25_node_4"[style="bold" shape="record" label="{KERNEL
+| {ID | 4 (topoId: 2) | kernel_cutlass_kernel_variants_k3optK3OptCoalescedStore_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_64648_TV_Layout_A_164864164_TV_Layout_0\<\<\<32,256,198656\>\>\>}
+| {{node handle | func handle} | {0x00005619122AF1E0 | 0x0000561912528510}}
+| {accessPolicyWindow | {base_ptr | num_bytes | hitRatio | hitProp | missProp} | {0x0000000000000000 | 0 | 0.000000 | N | N}}
+| {cooperative | 0}
+| {priority | 0}
+}"];
+
+"graph_25_node_5"[style="bold" shape="record" label="{KERNEL
+| {ID | 5 (topoId: 1) | kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cp_prefillCPDeltaRulePrefillTcgen05Sm100_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_Sh_0\<\<\<128,384,225280\>\>\>}
+| {{node handle | func handle} | {0x00005619122AF948 | 0x000056190F98B190}}
+| {accessPolicyWindow | {base_ptr | num_bytes | hitRatio | hitProp | missProp} | {0x0000000000000000 | 0 | 0.000000 | N | N}}
+| {cooperative | 0}
+| {priority | 0}
+}"];
+
+"graph_25_node_6"[style="solid" shape="rectangle" label="6 (topoId: 0)
+EVENT_RECORD
+node handle: 0x00005619122B00B0
+event: 0x000056190F6883A0
+"];
+
+"graph_25_node_0" -> "graph_25_node_1" [headlabel=0];
+"graph_25_node_1" -> "graph_25_node_2" [headlabel=0];
+"graph_25_node_2" -> "graph_25_node_3" [headlabel=0];
+"graph_25_node_3" -> "graph_25_node_4" [headlabel=0];
+"graph_25_node_4" -> "graph_25_node_5" [headlabel=0];
+"graph_25_node_5" -> "graph_25_node_6" [headlabel=0];
+}
+}

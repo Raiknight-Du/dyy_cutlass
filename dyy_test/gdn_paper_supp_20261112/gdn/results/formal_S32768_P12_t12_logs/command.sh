@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python -B src/k3trace/run_chain.py --out results/formal_S32768_P12_t12 --s 32768 --partitions 12 --trial 12 --arms B0\,K3 --samples 20 --warmup 20 

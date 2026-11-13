@@ -1,0 +1,10 @@
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/pilot_S8192_P8_t0/B0_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+Traceback (most recent call last):
+  File "/home/ubuntu/gdn_paper_supp_20261112/gdn/src/k3trace/run_chain.py", line 186, in <module>
+    audit[f"{arm}:{index}"] = kernel_nodes(path, ["CPDeltaRuleTPrecomputeSm100", k2.__name__, k3.__name__, "CPDeltaRulePrefillTcgen05Sm100"])
+  File "/home/ubuntu/gdn_paper_supp_20261112/gdn/src/k3trace/run_chain.py", line 139, in kernel_nodes
+    assert len(kernels) == 4, (path, len(kernels))
+AssertionError: (PosixPath('results/pilot_S8192_P8_t0/B0_b0.dot'), 5)

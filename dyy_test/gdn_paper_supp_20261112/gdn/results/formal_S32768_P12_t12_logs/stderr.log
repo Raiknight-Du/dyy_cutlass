@@ -1,0 +1,4 @@
+usage: run_chain.py [-h] --out OUT --s {8192,32768} --partitions {4,8} --trial
+                    TRIAL [--warmup WARMUP] [--samples SAMPLES]
+                    [--arms {B0,K3,B0,K2,K3,K23}]
+run_chain.py: error: argument --partitions: invalid choice: 12 (choose from 4, 8)

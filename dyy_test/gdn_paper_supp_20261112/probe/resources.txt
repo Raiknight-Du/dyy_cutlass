@@ -1,0 +1,72 @@
+
+Fatbin elf code:
+================
+arch = sm_100a
+code version = [1,8]
+host = linux
+compile_size = 64bit
+identifier = same_buffer_tma.cu 
+
+Resource usage:
+ Common:
+  GLOBAL:0
+
+Fatbin ptx code:
+================
+arch = sm_100
+code version = [9,3]
+host = linux
+compile_size = 64bit
+compressed
+identifier = same_buffer_tma.cu
+ptxasOptions = -v  --generate-line-info 
+
+Fatbin elf code:
+================
+arch = sm_100a
+code version = [1,8]
+host = linux
+compile_size = 64bit
+identifier = same_buffer_tma.cu
+
+Resource usage:
+ Common:
+  GLOBAL:62 CONSTANT[4]:496
+ Function _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb0ELi4ELb0EEEvNS_4MapsES1_iPjPNS_5TraceE:
+  REG:16 STACK:16 SHARED:1024 LOCAL:0 CONSTANT[0]:1688 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb1ELi4ELb0EEEvNS_4MapsES1_iPjPNS_5TraceE:
+  REG:16 STACK:16 SHARED:1024 LOCAL:0 CONSTANT[0]:1688 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb0ELi1ELb0EEEvNS_4MapsES1_iPjPNS_5TraceE:
+  REG:16 STACK:16 SHARED:1024 LOCAL:0 CONSTANT[0]:1688 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb1ELi1ELb0EEEvNS_4MapsES1_iPjPNS_5TraceE:
+  REG:16 STACK:16 SHARED:1024 LOCAL:0 CONSTANT[0]:1688 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb0ELi4ELb1EEEvNS_4MapsES1_iPjPNS_5TraceE:
+  REG:23 STACK:16 SHARED:1024 LOCAL:0 CONSTANT[0]:1688 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb1ELi4ELb1EEEvNS_4MapsES1_iPjPNS_5TraceE:
+  REG:22 STACK:16 SHARED:1024 LOCAL:0 CONSTANT[0]:1688 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb0ELi1ELb1EEEvNS_4MapsES1_iPjPNS_5TraceE:
+  REG:20 STACK:16 SHARED:1024 LOCAL:0 CONSTANT[0]:1688 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb1ELi1ELb1EEEvNS_4MapsES1_iPjPNS_5TraceE:
+  REG:17 STACK:16 SHARED:1024 LOCAL:0 CONSTANT[0]:1688 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main10initializeEPhS0_i:
+  REG:14 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:916 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN3cub17_V_300304_SM_10006detail9transform16transform_kernelINS2_26policy_selector_from_typesILb0ELb1EN4cuda3std3__45tupleIJEEEN6thrust17_V_300304_SM_100010device_ptrIN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5TraceEEEEElNS2_21always_true_predicateENSB_8cuda_cub17__return_constantISE_EEPSE_JEEEvT0_ibT1_T2_T3_DpNS2_10kernel_argIT4_EE:
+  REG:32 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:952 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN3cub17_V_300304_SM_10006detail9transform16transform_kernelINS2_26policy_selector_from_typesILb0ELb1EN4cuda3std3__45tupleIJEEEN6thrust17_V_300304_SM_100010device_ptrIN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5TraceEEEEEiNS2_21always_true_predicateENSB_8cuda_cub17__return_constantISE_EEPSE_JEEEvT0_ibT1_T2_T3_DpNS2_10kernel_argIT4_EE:
+  REG:32 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:952 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN3cub17_V_300304_SM_10006detail8for_each13static_kernelINS2_12policy_hub_t12policy_500_tEmN6thrust17_V_300304_SM_10008cuda_cub20__uninitialized_fill7functorINS7_10device_ptrIjEEjEEEEvT0_T1_:
+  REG:8 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:920 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN3cub17_V_300304_SM_10006detail8for_each13static_kernelINS2_12policy_hub_t12policy_500_tEmN6thrust17_V_300304_SM_10008cuda_cub20__uninitialized_fill7functorINS7_10device_ptrIhEEhEEEEvT0_T1_:
+  REG:10 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:920 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN3cub17_V_300304_SM_10006detail11EmptyKernelIvEEvv:
+  REG:4 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:896 TEXTURE:0 SURFACE:0 SAMPLER:0
+
+Fatbin ptx code:
+================
+arch = sm_100a
+code version = [9,3]
+host = linux
+compile_size = 64bit
+compressed
+identifier = same_buffer_tma.cu
+ptxasOptions = -v  --generate-line-info 

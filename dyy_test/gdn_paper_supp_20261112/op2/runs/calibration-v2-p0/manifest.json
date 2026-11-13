@@ -1,0 +1,23 @@
+{
+  "phase": "calibration",
+  "utc": "2026-11-12T14:06:20.817008+00:00",
+  "cases_kernel_coordinates": [
+    [
+      "8",
+      "4096",
+      "8192",
+      "4096",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op2/random_datasets"
+    ],
+    [
+      "11",
+      "768",
+      "16384",
+      "256",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op2/random_datasets"
+    ]
+  ],
+  "treatment": "after issuing stage k, both producer CTAs add a 512-cycle inter-issue gap if another stage follows",
+  "binary": "/home/ubuntu/gdn_paper_supp_20261112/op2/bin/op2_schedule",
+  "natural_gpu_clocks": true
+}

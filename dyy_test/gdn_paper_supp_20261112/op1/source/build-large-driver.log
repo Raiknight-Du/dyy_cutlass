@@ -1,0 +1,13 @@
+++ dirname build_large.sh
++ cd .
++ repo=/home/ubuntu/workspace/dyy/dyy_cutlass
++ cuda=/usr/local/cuda-13.0/bin/nvcc
++ common=(-std=c++17 -O3 -arch=sm_100a --expt-relaxed-constexpr --expt-extended-lambda --threads 2 -lineinfo -Xptxas=-v)
++ includes=(-I"$repo/include" -I"$repo/tools/util/include" -I"$repo/examples/common")
++ baseline_pid=2250867
++ /usr/local/cuda-13.0/bin/nvcc -std=c++17 -O3 -arch=sm_100a --expt-relaxed-constexpr --expt-extended-lambda --threads 2 -lineinfo -Xptxas=-v -I/home/ubuntu/workspace/dyy/dyy_cutlass/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/tools/util/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/examples/common reuse_gemm_large.cu -o bin/reuse_large_baseline
++ packed_pid=2250868
++ wait 2250867
++ /usr/local/cuda-13.0/bin/nvcc -std=c++17 -O3 -arch=sm_100a --expt-relaxed-constexpr --expt-extended-lambda --threads 2 -lineinfo -Xptxas=-v -DPACKED_INPUT -Ioverlay -I/home/ubuntu/workspace/dyy/dyy_cutlass/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/tools/util/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/examples/common reuse_gemm_large.cu build/reuse_packer.o -o bin/reuse_large_packed
++ wait 2250868
++ sha256sum reuse_gemm_large.cu bin/reuse_large_baseline bin/reuse_large_packed

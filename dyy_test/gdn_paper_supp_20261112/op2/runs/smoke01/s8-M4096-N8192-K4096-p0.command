@@ -1,0 +1,1 @@
+/home/ubuntu/gdn_paper_supp_20261112/op2/bin/op2_schedule --shape-id=8 --m=4096 --n=8192 --k=4096 --session=0 --groups=2 --iterations=8 --warmups=2 --dataset-root=/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op2/random_datasets

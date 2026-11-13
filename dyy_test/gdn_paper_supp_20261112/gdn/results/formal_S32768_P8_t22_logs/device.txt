@@ -1,0 +1,1 @@
+GPU 0: NVIDIA B200 (UUID: GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf)

@@ -1,0 +1,6 @@
+timestamp, index, name, clocks.current.sm [MHz], clocks.current.memory [MHz], temperature.gpu, power.draw [W], utilization.gpu [%], memory.used [MiB]
+2026/11/12 13:59:28.573, 0, NVIDIA B200, 1965 MHz, 3996 MHz, 35, 249.19 W, 0 %, 0 MiB
+2026/11/12 13:59:29.077, 0, NVIDIA B200, 1965 MHz, 3996 MHz, 36, 280.41 W, 33 %, 0 MiB
+2026/11/12 13:59:29.577, 0, NVIDIA B200, 1965 MHz, 3996 MHz, 35, 313.53 W, 0 %, 3150 MiB
+2026/11/12 13:59:30.077, 0, NVIDIA B200, 1965 MHz, 3996 MHz, 35, 344.11 W, 0 %, 3150 MiB
+2026/11/12 13:59:30.578, 0, NVIDIA B200, 1965 MHz, 3996 MHz, 36, 400.85 W, 1 %, 4 MiB

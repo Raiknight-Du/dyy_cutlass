@@ -1,0 +1,12 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 2406564 (/home/ubuntu/gdn_paper_supp_20261112/op2/bin/op2_dense_reference)
+VERIFY,0,8,4096,8192,3072,33554432,0,33327046,0,0,998cfa026a94bc75
+TIME,0,8,4096,8192,3072,0,0,0,1,79.32800055
+TIME,0,8,4096,8192,3072,0,1,1,1,73.56800139
+TIME,0,8,4096,8192,3072,0,2,1,1,71.13599777
+TIME,0,8,4096,8192,3072,0,3,0,1,79.87199724
+==PROF== Disconnected from process 2406564
+==WARNING== No kernels were profiled.
+Available Kernels:
+1. device_kernel

@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python -B src/k3trace/run_chain.py --out results/pilot_S8192_P8_t0 --s 8192 --partitions 8 --trial 0 --arms B0\,K3 --samples 2 --warmup 2 

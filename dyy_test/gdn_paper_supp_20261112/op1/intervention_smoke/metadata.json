@@ -1,0 +1,11 @@
+{
+  "timing": "intervention",
+  "sessions": 1,
+  "repeats": 2,
+  "shapes": [
+    7,
+    10
+  ],
+  "fixed_input_seed_index": 2011112,
+  "hostname": "metallic-matrix-fin-03"
+}

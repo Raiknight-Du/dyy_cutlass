@@ -1,0 +1,27 @@
+++ dirname build_intervention.sh
++ cd .
++ repo=/home/ubuntu/workspace/dyy/dyy_cutlass
++ cuda=/usr/local/cuda-13.0/bin/nvcc
++ common=(-std=c++17 -O3 -arch=sm_100a --expt-relaxed-constexpr --expt-extended-lambda --threads 2 -lineinfo -Xptxas=-v)
++ includes=(-I"$repo/include" -I"$repo/tools/util/include" -I"$repo/examples/common")
++ for variant in baseline_late packed_late
++ dir=overlay_baseline_late/cutlass/gemm/collective
++ mkdir -p overlay_baseline_late/cutlass/gemm/collective
++ install -m 644 sm100_blockscaled_mma_warpspecialized_baseline_late.hpp overlay_baseline_late/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp
++ for variant in baseline_late packed_late
++ dir=overlay_packed_late/cutlass/gemm/collective
++ mkdir -p overlay_packed_late/cutlass/gemm/collective
++ install -m 644 sm100_blockscaled_mma_warpspecialized_packed_late.hpp overlay_packed_late/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp
++ baseline_pid=2230710
++ /usr/local/cuda-13.0/bin/nvcc -std=c++17 -O3 -arch=sm_100a --expt-relaxed-constexpr --expt-extended-lambda --threads 2 -lineinfo -Xptxas=-v -I/home/ubuntu/workspace/dyy/dyy_cutlass/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/tools/util/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/examples/common intervention_gemm.cu -o bin/intervention_baseline
++ packed_pid=2230711
++ wait 2230710
++ /usr/local/cuda-13.0/bin/nvcc -std=c++17 -O3 -arch=sm_100a --expt-relaxed-constexpr --expt-extended-lambda --threads 2 -lineinfo -Xptxas=-v -DPACKED_INPUT -Ioverlay -I/home/ubuntu/workspace/dyy/dyy_cutlass/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/tools/util/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/examples/common intervention_gemm.cu build/reuse_packer.o -o bin/intervention_packed
++ wait 2230711
++ /usr/local/cuda-13.0/bin/nvcc -std=c++17 -O3 -arch=sm_100a --expt-relaxed-constexpr --expt-extended-lambda --threads 2 -lineinfo -Xptxas=-v -Ioverlay_baseline_late -I/home/ubuntu/workspace/dyy/dyy_cutlass/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/tools/util/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/examples/common intervention_gemm.cu -o bin/intervention_baseline_late
++ baseline_pid=2232150
++ packed_pid=2232151
++ wait 2232150
++ /usr/local/cuda-13.0/bin/nvcc -std=c++17 -O3 -arch=sm_100a --expt-relaxed-constexpr --expt-extended-lambda --threads 2 -lineinfo -Xptxas=-v -DPACKED_INPUT -Ioverlay_packed_late -I/home/ubuntu/workspace/dyy/dyy_cutlass/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/tools/util/include -I/home/ubuntu/workspace/dyy/dyy_cutlass/examples/common intervention_gemm.cu build/reuse_packer.o -o bin/intervention_packed_late
++ wait 2232151
++ sha256sum intervention_gemm.cu sm100_blockscaled_mma_warpspecialized_baseline_late.hpp sm100_blockscaled_mma_warpspecialized_packed_late.hpp bin/intervention_baseline bin/intervention_baseline_late bin/intervention_packed bin/intervention_packed_late

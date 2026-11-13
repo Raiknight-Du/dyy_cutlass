@@ -1,0 +1,509 @@
+2026-11-13T01:52:07+00:00 BEGIN D1-holdout
+session0_shape21_0_baseline.log: 20 timing rows, matched 16 output digests
+session0_shape21_1_packed.log: 20 timing rows, matched 16 output digests
+session0_shape21_2_packed_late.log: 20 timing rows, matched 16 output digests
+session0_shape21_3_baseline_late.log: 20 timing rows, matched 16 output digests
+session0_shape21_4_baseline_late.log: 20 timing rows, matched 16 output digests
+session0_shape21_5_packed_late.log: 20 timing rows, matched 16 output digests
+session0_shape21_6_packed.log: 20 timing rows, matched 16 output digests
+session0_shape21_7_baseline.log: 20 timing rows, matched 16 output digests
+session0_shape22_0_baseline.log: 20 timing rows, matched 16 output digests
+session0_shape22_1_packed.log: 20 timing rows, matched 16 output digests
+session0_shape22_2_packed_late.log: 20 timing rows, matched 16 output digests
+session0_shape22_3_baseline_late.log: 20 timing rows, matched 16 output digests
+session0_shape22_4_baseline_late.log: 20 timing rows, matched 16 output digests
+session0_shape22_5_packed_late.log: 20 timing rows, matched 16 output digests
+session0_shape22_6_packed.log: 20 timing rows, matched 16 output digests
+session0_shape22_7_baseline.log: 20 timing rows, matched 16 output digests
+session0_shape23_0_baseline.log: 20 timing rows, matched 16 output digests
+session0_shape23_1_packed.log: 20 timing rows, matched 16 output digests
+session0_shape23_2_packed_late.log: 20 timing rows, matched 16 output digests
+session0_shape23_3_baseline_late.log: 20 timing rows, matched 16 output digests
+session0_shape23_4_baseline_late.log: 20 timing rows, matched 16 output digests
+session0_shape23_5_packed_late.log: 20 timing rows, matched 16 output digests
+session0_shape23_6_packed.log: 20 timing rows, matched 16 output digests
+session0_shape23_7_baseline.log: 20 timing rows, matched 16 output digests
+session0_shape24_0_baseline.log: 20 timing rows, matched 16 output digests
+session0_shape24_1_packed.log: 20 timing rows, matched 16 output digests
+session0_shape24_2_packed_late.log: 20 timing rows, matched 16 output digests
+session0_shape24_3_baseline_late.log: 20 timing rows, matched 16 output digests
+session0_shape24_4_baseline_late.log: 20 timing rows, matched 16 output digests
+session0_shape24_5_packed_late.log: 20 timing rows, matched 16 output digests
+session0_shape24_6_packed.log: 20 timing rows, matched 16 output digests
+session0_shape24_7_baseline.log: 20 timing rows, matched 16 output digests
+session0_shape25_0_baseline.log: 20 timing rows, matched 16 output digests
+session0_shape25_1_packed.log: 20 timing rows, matched 16 output digests
+session0_shape25_2_packed_late.log: 20 timing rows, matched 16 output digests
+session0_shape25_3_baseline_late.log: 20 timing rows, matched 16 output digests
+session0_shape25_4_baseline_late.log: 20 timing rows, matched 16 output digests
+session0_shape25_5_packed_late.log: 20 timing rows, matched 16 output digests
+session0_shape25_6_packed.log: 20 timing rows, matched 16 output digests
+session0_shape25_7_baseline.log: 20 timing rows, matched 16 output digests
+session0_shape26_0_baseline.log: 20 timing rows, matched 16 output digests
+session0_shape26_1_packed.log: 20 timing rows, matched 16 output digests
+session0_shape26_2_packed_late.log: 20 timing rows, matched 16 output digests
+session0_shape26_3_baseline_late.log: 20 timing rows, matched 16 output digests
+session0_shape26_4_baseline_late.log: 20 timing rows, matched 16 output digests
+session0_shape26_5_packed_late.log: 20 timing rows, matched 16 output digests
+session0_shape26_6_packed.log: 20 timing rows, matched 16 output digests
+session0_shape26_7_baseline.log: 20 timing rows, matched 16 output digests
+session1_shape22_0_baseline_late.log: 20 timing rows, matched 16 output digests
+session1_shape22_1_packed_late.log: 20 timing rows, matched 16 output digests
+session1_shape22_2_packed.log: 20 timing rows, matched 16 output digests
+session1_shape22_3_baseline.log: 20 timing rows, matched 16 output digests
+session1_shape22_4_baseline.log: 20 timing rows, matched 16 output digests
+session1_shape22_5_packed.log: 20 timing rows, matched 16 output digests
+session1_shape22_6_packed_late.log: 20 timing rows, matched 16 output digests
+session1_shape22_7_baseline_late.log: 20 timing rows, matched 16 output digests
+session1_shape23_0_baseline_late.log: 20 timing rows, matched 16 output digests
+session1_shape23_1_packed_late.log: 20 timing rows, matched 16 output digests
+session1_shape23_2_packed.log: 20 timing rows, matched 16 output digests
+session1_shape23_3_baseline.log: 20 timing rows, matched 16 output digests
+session1_shape23_4_baseline.log: 20 timing rows, matched 16 output digests
+session1_shape23_5_packed.log: 20 timing rows, matched 16 output digests
+session1_shape23_6_packed_late.log: 20 timing rows, matched 16 output digests
+session1_shape23_7_baseline_late.log: 20 timing rows, matched 16 output digests
+session1_shape24_0_baseline_late.log: 20 timing rows, matched 16 output digests
+session1_shape24_1_packed_late.log: 20 timing rows, matched 16 output digests
+session1_shape24_2_packed.log: 20 timing rows, matched 16 output digests
+session1_shape24_3_baseline.log: 20 timing rows, matched 16 output digests
+session1_shape24_4_baseline.log: 20 timing rows, matched 16 output digests
+session1_shape24_5_packed.log: 20 timing rows, matched 16 output digests
+session1_shape24_6_packed_late.log: 20 timing rows, matched 16 output digests
+session1_shape24_7_baseline_late.log: 20 timing rows, matched 16 output digests
+session1_shape25_0_baseline_late.log: 20 timing rows, matched 16 output digests
+session1_shape25_1_packed_late.log: 20 timing rows, matched 16 output digests
+session1_shape25_2_packed.log: 20 timing rows, matched 16 output digests
+session1_shape25_3_baseline.log: 20 timing rows, matched 16 output digests
+session1_shape25_4_baseline.log: 20 timing rows, matched 16 output digests
+session1_shape25_5_packed.log: 20 timing rows, matched 16 output digests
+session1_shape25_6_packed_late.log: 20 timing rows, matched 16 output digests
+session1_shape25_7_baseline_late.log: 20 timing rows, matched 16 output digests
+session1_shape26_0_baseline_late.log: 20 timing rows, matched 16 output digests
+session1_shape26_1_packed_late.log: 20 timing rows, matched 16 output digests
+session1_shape26_2_packed.log: 20 timing rows, matched 16 output digests
+session1_shape26_3_baseline.log: 20 timing rows, matched 16 output digests
+session1_shape26_4_baseline.log: 20 timing rows, matched 16 output digests
+session1_shape26_5_packed.log: 20 timing rows, matched 16 output digests
+session1_shape26_6_packed_late.log: 20 timing rows, matched 16 output digests
+session1_shape26_7_baseline_late.log: 20 timing rows, matched 16 output digests
+session1_shape21_0_baseline_late.log: 20 timing rows, matched 16 output digests
+session1_shape21_1_packed_late.log: 20 timing rows, matched 16 output digests
+session1_shape21_2_packed.log: 20 timing rows, matched 16 output digests
+session1_shape21_3_baseline.log: 20 timing rows, matched 16 output digests
+session1_shape21_4_baseline.log: 20 timing rows, matched 16 output digests
+session1_shape21_5_packed.log: 20 timing rows, matched 16 output digests
+session1_shape21_6_packed_late.log: 20 timing rows, matched 16 output digests
+session1_shape21_7_baseline_late.log: 20 timing rows, matched 16 output digests
+session2_shape23_0_baseline.log: 20 timing rows, matched 16 output digests
+session2_shape23_1_packed.log: 20 timing rows, matched 16 output digests
+session2_shape23_2_packed_late.log: 20 timing rows, matched 16 output digests
+session2_shape23_3_baseline_late.log: 20 timing rows, matched 16 output digests
+session2_shape23_4_baseline_late.log: 20 timing rows, matched 16 output digests
+session2_shape23_5_packed_late.log: 20 timing rows, matched 16 output digests
+session2_shape23_6_packed.log: 20 timing rows, matched 16 output digests
+session2_shape23_7_baseline.log: 20 timing rows, matched 16 output digests
+session2_shape24_0_baseline.log: 20 timing rows, matched 16 output digests
+session2_shape24_1_packed.log: 20 timing rows, matched 16 output digests
+session2_shape24_2_packed_late.log: 20 timing rows, matched 16 output digests
+session2_shape24_3_baseline_late.log: 20 timing rows, matched 16 output digests
+session2_shape24_4_baseline_late.log: 20 timing rows, matched 16 output digests
+session2_shape24_5_packed_late.log: 20 timing rows, matched 16 output digests
+session2_shape24_6_packed.log: 20 timing rows, matched 16 output digests
+session2_shape24_7_baseline.log: 20 timing rows, matched 16 output digests
+session2_shape25_0_baseline.log: 20 timing rows, matched 16 output digests
+session2_shape25_1_packed.log: 20 timing rows, matched 16 output digests
+session2_shape25_2_packed_late.log: 20 timing rows, matched 16 output digests
+session2_shape25_3_baseline_late.log: 20 timing rows, matched 16 output digests
+session2_shape25_4_baseline_late.log: 20 timing rows, matched 16 output digests
+session2_shape25_5_packed_late.log: 20 timing rows, matched 16 output digests
+session2_shape25_6_packed.log: 20 timing rows, matched 16 output digests
+session2_shape25_7_baseline.log: 20 timing rows, matched 16 output digests
+session2_shape26_0_baseline.log: 20 timing rows, matched 16 output digests
+session2_shape26_1_packed.log: 20 timing rows, matched 16 output digests
+session2_shape26_2_packed_late.log: 20 timing rows, matched 16 output digests
+session2_shape26_3_baseline_late.log: 20 timing rows, matched 16 output digests
+session2_shape26_4_baseline_late.log: 20 timing rows, matched 16 output digests
+session2_shape26_5_packed_late.log: 20 timing rows, matched 16 output digests
+session2_shape26_6_packed.log: 20 timing rows, matched 16 output digests
+session2_shape26_7_baseline.log: 20 timing rows, matched 16 output digests
+session2_shape21_0_baseline.log: 20 timing rows, matched 16 output digests
+session2_shape21_1_packed.log: 20 timing rows, matched 16 output digests
+session2_shape21_2_packed_late.log: 20 timing rows, matched 16 output digests
+session2_shape21_3_baseline_late.log: 20 timing rows, matched 16 output digests
+session2_shape21_4_baseline_late.log: 20 timing rows, matched 16 output digests
+session2_shape21_5_packed_late.log: 20 timing rows, matched 16 output digests
+session2_shape21_6_packed.log: 20 timing rows, matched 16 output digests
+session2_shape21_7_baseline.log: 20 timing rows, matched 16 output digests
+session2_shape22_0_baseline.log: 20 timing rows, matched 16 output digests
+session2_shape22_1_packed.log: 20 timing rows, matched 16 output digests
+session2_shape22_2_packed_late.log: 20 timing rows, matched 16 output digests
+session2_shape22_3_baseline_late.log: 20 timing rows, matched 16 output digests
+session2_shape22_4_baseline_late.log: 20 timing rows, matched 16 output digests
+session2_shape22_5_packed_late.log: 20 timing rows, matched 16 output digests
+session2_shape22_6_packed.log: 20 timing rows, matched 16 output digests
+session2_shape22_7_baseline.log: 20 timing rows, matched 16 output digests
+2026-11-13T01:53:38+00:00 END D1-holdout 0
+2026-11-13T01:53:38+00:00 BEGIN D1-NCU
+++ dirname op1/source/profile_shape7.sh
++ cd op1/source
++ out=../profile_shape7
++ mkdir ../profile_shape7
++ ncu=/usr/local/cuda-13.0/bin/ncu
++ metrics=gpu__time_duration.sum,sm__sass_inst_executed_op_tma_ld.sum,l1tex__m_xbar2l1tex_read_bytes_mem_global_op_tma_ld.sum,dram__bytes_read.sum,dram__bytes_write.sum,launch__registers_per_thread,launch__shared_mem_per_block,sm__warps_active.avg.pct_of_peak_sustained_active
++ /usr/local/cuda-13.0/bin/ncu --version
++ for arm in baseline packed baseline_late packed_late
++ nvidia-smi --query-compute-apps=pid --format=csv,noheader,nounits
++ grep -qE '^[0-9]'
++ timeout 75 /usr/local/cuda-13.0/bin/ncu --clock-control none --cache-control none --kernel-name-base function --kernel-name regex:device_kernel --launch-count 1 --metrics gpu__time_duration.sum,sm__sass_inst_executed_op_tma_ld.sum,l1tex__m_xbar2l1tex_read_bytes_mem_global_op_tma_ld.sum,dram__bytes_read.sum,dram__bytes_write.sum,launch__registers_per_thread,launch__shared_mem_per_block,sm__warps_active.avg.pct_of_peak_sustained_active --force-overwrite --export ../profile_shape7/baseline /home/ubuntu/gdn_paper_supp_20261112/op1/source/bin/intervention_baseline --shape-id=7 --seed-index=2011112 --profile
++ /usr/local/cuda-13.0/bin/ncu --import ../profile_shape7/baseline.ncu-rep --page raw --csv
++ for arm in baseline packed baseline_late packed_late
++ nvidia-smi --query-compute-apps=pid --format=csv,noheader,nounits
++ grep -qE '^[0-9]'
++ timeout 75 /usr/local/cuda-13.0/bin/ncu --clock-control none --cache-control none --kernel-name-base function --kernel-name regex:device_kernel --launch-count 1 --metrics gpu__time_duration.sum,sm__sass_inst_executed_op_tma_ld.sum,l1tex__m_xbar2l1tex_read_bytes_mem_global_op_tma_ld.sum,dram__bytes_read.sum,dram__bytes_write.sum,launch__registers_per_thread,launch__shared_mem_per_block,sm__warps_active.avg.pct_of_peak_sustained_active --force-overwrite --export ../profile_shape7/packed /home/ubuntu/gdn_paper_supp_20261112/op1/source/bin/intervention_packed --shape-id=7 --seed-index=2011112 --profile
++ /usr/local/cuda-13.0/bin/ncu --import ../profile_shape7/packed.ncu-rep --page raw --csv
++ for arm in baseline packed baseline_late packed_late
++ nvidia-smi --query-compute-apps=pid --format=csv,noheader,nounits
++ grep -qE '^[0-9]'
++ timeout 75 /usr/local/cuda-13.0/bin/ncu --clock-control none --cache-control none --kernel-name-base function --kernel-name regex:device_kernel --launch-count 1 --metrics gpu__time_duration.sum,sm__sass_inst_executed_op_tma_ld.sum,l1tex__m_xbar2l1tex_read_bytes_mem_global_op_tma_ld.sum,dram__bytes_read.sum,dram__bytes_write.sum,launch__registers_per_thread,launch__shared_mem_per_block,sm__warps_active.avg.pct_of_peak_sustained_active --force-overwrite --export ../profile_shape7/baseline_late /home/ubuntu/gdn_paper_supp_20261112/op1/source/bin/intervention_baseline_late --shape-id=7 --seed-index=2011112 --profile
++ /usr/local/cuda-13.0/bin/ncu --import ../profile_shape7/baseline_late.ncu-rep --page raw --csv
++ for arm in baseline packed baseline_late packed_late
++ nvidia-smi --query-compute-apps=pid --format=csv,noheader,nounits
++ grep -qE '^[0-9]'
++ timeout 75 /usr/local/cuda-13.0/bin/ncu --clock-control none --cache-control none --kernel-name-base function --kernel-name regex:device_kernel --launch-count 1 --metrics gpu__time_duration.sum,sm__sass_inst_executed_op_tma_ld.sum,l1tex__m_xbar2l1tex_read_bytes_mem_global_op_tma_ld.sum,dram__bytes_read.sum,dram__bytes_write.sum,launch__registers_per_thread,launch__shared_mem_per_block,sm__warps_active.avg.pct_of_peak_sustained_active --force-overwrite --export ../profile_shape7/packed_late /home/ubuntu/gdn_paper_supp_20261112/op1/source/bin/intervention_packed_late --shape-id=7 --seed-index=2011112 --profile
++ /usr/local/cuda-13.0/bin/ncu --import ../profile_shape7/packed_late.ncu-rep --page raw --csv
+2026-11-13T01:53:44+00:00 END D1-NCU 0
+2026-11-13T01:53:44+00:00 BEGIN G2-P4-41
+GPU 0: NVIDIA B200 (UUID: GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/B0_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/B0_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/B0_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/B0_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/K2_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/K2_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/K2_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/K2_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/K3_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/K3_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/K3_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/K3_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/K23_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/K23_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/K23_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t41/K23_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+2026-11-13T01:53:54+00:00 END G2-P4-41 0
+2026-11-13T01:53:54+00:00 BEGIN G2-P4-42
+GPU 0: NVIDIA B200 (UUID: GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/B0_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/B0_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/B0_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/B0_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/K2_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/K2_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/K2_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/K2_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/K3_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/K3_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/K3_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/K3_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/K23_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/K23_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/K23_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t42/K23_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+2026-11-13T01:54:04+00:00 END G2-P4-42 0
+2026-11-13T01:54:04+00:00 BEGIN G2-P4-43
+GPU 0: NVIDIA B200 (UUID: GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/B0_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/B0_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/B0_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/B0_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/K2_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/K2_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/K2_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/K2_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/K3_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/K3_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/K3_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/K3_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/K23_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/K23_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/K23_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P4_t43/K23_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+2026-11-13T01:54:15+00:00 END G2-P4-43 0
+2026-11-13T01:54:15+00:00 BEGIN G2-P8-8192-41
+GPU 0: NVIDIA B200 (UUID: GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/B0_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/B0_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/B0_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/B0_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/K2_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/K2_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/K2_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/K2_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/K3_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/K3_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/K3_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/K3_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/K23_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/K23_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/K23_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t41/K23_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+2026-11-13T01:54:23+00:00 END G2-P8-8192-41 0
+2026-11-13T01:54:23+00:00 BEGIN G2-P8-8192-42
+GPU 0: NVIDIA B200 (UUID: GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/B0_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/B0_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/B0_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/B0_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/K2_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/K2_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/K2_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/K2_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/K3_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/K3_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/K3_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/K3_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/K23_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/K23_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/K23_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t42/K23_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+2026-11-13T01:54:31+00:00 END G2-P8-8192-42 0
+2026-11-13T01:54:31+00:00 BEGIN G2-P8-8192-43
+GPU 0: NVIDIA B200 (UUID: GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/B0_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/B0_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/B0_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/B0_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/K2_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/K2_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/K2_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/K2_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/K3_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/K3_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/K3_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/K3_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/K23_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/K23_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/K23_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S8192_P8_t43/K23_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+2026-11-13T01:54:40+00:00 END G2-P8-8192-43 0
+2026-11-13T01:54:40+00:00 BEGIN G2-P8-32768-41
+GPU 0: NVIDIA B200 (UUID: GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/B0_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/B0_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/B0_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/B0_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/K2_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/K2_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/K2_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/K2_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/K3_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/K3_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/K3_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/K3_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/K23_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/K23_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/K23_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t41/K23_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+2026-11-13T01:54:50+00:00 END G2-P8-32768-41 0
+2026-11-13T01:54:50+00:00 BEGIN G2-P8-32768-42
+GPU 0: NVIDIA B200 (UUID: GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/B0_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/B0_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/B0_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/B0_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/K2_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/K2_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/K2_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/K2_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/K3_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/K3_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/K3_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/K3_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/K23_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/K23_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/K23_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t42/K23_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+2026-11-13T01:55:01+00:00 END G2-P8-32768-42 0
+2026-11-13T01:55:01+00:00 BEGIN G2-P8-32768-43
+GPU 0: NVIDIA B200 (UUID: GPU-6abbea3c-b8d3-7f4b-ca76-85d612930fdf)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling debug_dump() (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:217.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/B0_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/B0_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/B0_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/B0_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/K2_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/K2_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/K2_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/K2_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/K3_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/K3_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/K3_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/K3_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/K23_b0.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/K23_b1.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/K23_b2.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+/usr/local/lib/python3.10/dist-packages/torch/cuda/graphs.py:165: UserWarning: DEBUG: calling cudaGraphDebugDotPrint() with results/formal_S32768_P8_t43/K23_b3.dot (Triggered internally at /pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:219.)
+  return super().debug_dump(debug_path)
+2026-11-13T01:55:11+00:00 END G2-P8-32768-43 0
+2026-11-13T01:55:11+00:00 END-OF-QUEUE

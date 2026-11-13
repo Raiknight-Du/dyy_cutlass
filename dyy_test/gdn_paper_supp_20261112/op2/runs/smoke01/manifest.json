@@ -1,0 +1,24 @@
+{
+  "phase": "smoke",
+  "utc": "2026-11-12T13:54:31.019134+00:00",
+  "cases_kernel_coordinates": [
+    [
+      "8",
+      "4096",
+      "8192",
+      "4096",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op2/random_datasets"
+    ],
+    [
+      "11",
+      "768",
+      "16384",
+      "256",
+      "/home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op2/random_datasets"
+    ]
+  ],
+  "treatment": "after issuing stage k, the producer waits for its full barrier if another stage follows",
+  "binary": "/home/ubuntu/gdn_paper_supp_20261112/op2/bin/op2_schedule",
+  "natural_gpu_clocks": true,
+  "predict_heldout": "gated should not be faster when normal prefetch spans multiple in-flight stages"
+}

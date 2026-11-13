@@ -1,0 +1,6 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 2228171 (/home/ubuntu/gdn_paper_supp_20261112/probe/same_buffer_tma)
+==PROF== Profiling "probe": 0%....50%....100% - 4 passes
+==PROF== Disconnected from process 2228171
+==PROF== Report: /home/ubuntu/gdn_paper_supp_20261112/probe/results/counters_7168_a1.ncu-rep

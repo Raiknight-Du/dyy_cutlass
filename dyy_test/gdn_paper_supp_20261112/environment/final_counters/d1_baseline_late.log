@@ -1,0 +1,8 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 2402532 (/home/ubuntu/gdn_paper_supp_20261112/op1/source/bin/intervention_baseline_late)
+META,7,32768,768,4096,2011112,148,20
+==PROF== Profiling "device_kernel": 0%....50%....100% - 3 passes
+DIGEST,0,1bef85a62c6e9ba3,ad19e6c784c4d7b9
+==PROF== Disconnected from process 2402532
+==PROF== Report: /home/ubuntu/gdn_paper_supp_20261112/environment/final_counters/d1_baseline_late.ncu-rep

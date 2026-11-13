@@ -1,0 +1,71 @@
+ptxas info    : 62 bytes gmem
+ptxas info    : Compiling entry function '_ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb0ELi4ELb0EEEvNS_4MapsES1_iPjPNS_5TraceE' for 'sm_100a'
+ptxas info    : Function properties for _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb0ELi4ELb0EEEvNS_4MapsES1_iPjPNS_5TraceE
+    16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 16 registers, used 0 barriers, 16 bytes cumulative stack size
+ptxas info    : Compile time = 6.456 ms
+ptxas info    : Compiling entry function '_ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb1ELi4ELb0EEEvNS_4MapsES1_iPjPNS_5TraceE' for 'sm_100a'
+ptxas info    : Function properties for _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb1ELi4ELb0EEEvNS_4MapsES1_iPjPNS_5TraceE
+    16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 16 registers, used 0 barriers, 16 bytes cumulative stack size
+ptxas info    : Compile time = 6.282 ms
+ptxas info    : Compiling entry function '_ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb0ELi1ELb0EEEvNS_4MapsES1_iPjPNS_5TraceE' for 'sm_100a'
+ptxas info    : Function properties for _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb0ELi1ELb0EEEvNS_4MapsES1_iPjPNS_5TraceE
+    16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 16 registers, used 0 barriers, 16 bytes cumulative stack size
+ptxas info    : Compile time = 3.932 ms
+ptxas info    : Compiling entry function '_ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb1ELi1ELb0EEEvNS_4MapsES1_iPjPNS_5TraceE' for 'sm_100a'
+ptxas info    : Function properties for _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb1ELi1ELb0EEEvNS_4MapsES1_iPjPNS_5TraceE
+    16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 16 registers, used 0 barriers, 16 bytes cumulative stack size
+ptxas info    : Compile time = 4.463 ms
+ptxas info    : Compiling entry function '_ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb0ELi4ELb1EEEvNS_4MapsES1_iPjPNS_5TraceE' for 'sm_100a'
+ptxas info    : Function properties for _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb0ELi4ELb1EEEvNS_4MapsES1_iPjPNS_5TraceE
+    16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 23 registers, used 0 barriers, 16 bytes cumulative stack size
+ptxas info    : Compile time = 6.531 ms
+ptxas info    : Compiling entry function '_ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb1ELi4ELb1EEEvNS_4MapsES1_iPjPNS_5TraceE' for 'sm_100a'
+ptxas info    : Function properties for _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb1ELi4ELb1EEEvNS_4MapsES1_iPjPNS_5TraceE
+    16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 22 registers, used 0 barriers, 16 bytes cumulative stack size
+ptxas info    : Compile time = 7.742 ms
+ptxas info    : Compiling entry function '_ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb0ELi1ELb1EEEvNS_4MapsES1_iPjPNS_5TraceE' for 'sm_100a'
+ptxas info    : Function properties for _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb0ELi1ELb1EEEvNS_4MapsES1_iPjPNS_5TraceE
+    16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, used 0 barriers, 16 bytes cumulative stack size
+ptxas info    : Compile time = 4.660 ms
+ptxas info    : Compiling entry function '_ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb1ELi1ELb1EEEvNS_4MapsES1_iPjPNS_5TraceE' for 'sm_100a'
+ptxas info    : Function properties for _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5probeILb1ELi1ELb1EEEvNS_4MapsES1_iPjPNS_5TraceE
+    16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 17 registers, used 0 barriers, 16 bytes cumulative stack size
+ptxas info    : Compile time = 5.383 ms
+ptxas info    : Compiling entry function '_ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main10initializeEPhS0_i' for 'sm_100a'
+ptxas info    : Function properties for _ZN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main10initializeEPhS0_i
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 14 registers, used 0 barriers
+ptxas info    : Compile time = 1.245 ms
+ptxas info    : Compiling entry function '_ZN3cub17_V_300304_SM_10006detail9transform16transform_kernelINS2_26policy_selector_from_typesILb0ELb1EN4cuda3std3__45tupleIJEEEN6thrust17_V_300304_SM_100010device_ptrIN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5TraceEEEEElNS2_21always_true_predicateENSB_8cuda_cub17__return_constantISE_EEPSE_JEEEvT0_ibT1_T2_T3_DpNS2_10kernel_argIT4_EE' for 'sm_100a'
+ptxas info    : Function properties for _ZN3cub17_V_300304_SM_10006detail9transform16transform_kernelINS2_26policy_selector_from_typesILb0ELb1EN4cuda3std3__45tupleIJEEEN6thrust17_V_300304_SM_100010device_ptrIN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5TraceEEEEElNS2_21always_true_predicateENSB_8cuda_cub17__return_constantISE_EEPSE_JEEEvT0_ibT1_T2_T3_DpNS2_10kernel_argIT4_EE
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 0 barriers
+ptxas info    : Compile time = 6.918 ms
+ptxas info    : Compiling entry function '_ZN3cub17_V_300304_SM_10006detail9transform16transform_kernelINS2_26policy_selector_from_typesILb0ELb1EN4cuda3std3__45tupleIJEEEN6thrust17_V_300304_SM_100010device_ptrIN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5TraceEEEEEiNS2_21always_true_predicateENSB_8cuda_cub17__return_constantISE_EEPSE_JEEEvT0_ibT1_T2_T3_DpNS2_10kernel_argIT4_EE' for 'sm_100a'
+ptxas info    : Function properties for _ZN3cub17_V_300304_SM_10006detail9transform16transform_kernelINS2_26policy_selector_from_typesILb0ELb1EN4cuda3std3__45tupleIJEEEN6thrust17_V_300304_SM_100010device_ptrIN47_GLOBAL__N__6c720fcd_18_same_buffer_tma_cu_main5TraceEEEEEiNS2_21always_true_predicateENSB_8cuda_cub17__return_constantISE_EEPSE_JEEEvT0_ibT1_T2_T3_DpNS2_10kernel_argIT4_EE
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 0 barriers
+ptxas info    : Compile time = 5.637 ms
+ptxas info    : Compiling entry function '_ZN3cub17_V_300304_SM_10006detail8for_each13static_kernelINS2_12policy_hub_t12policy_500_tEmN6thrust17_V_300304_SM_10008cuda_cub20__uninitialized_fill7functorINS7_10device_ptrIjEEjEEEEvT0_T1_' for 'sm_100a'
+ptxas info    : Function properties for _ZN3cub17_V_300304_SM_10006detail8for_each13static_kernelINS2_12policy_hub_t12policy_500_tEmN6thrust17_V_300304_SM_10008cuda_cub20__uninitialized_fill7functorINS7_10device_ptrIjEEjEEEEvT0_T1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 8 registers, used 0 barriers
+ptxas info    : Compile time = 1.378 ms
+ptxas info    : Compiling entry function '_ZN3cub17_V_300304_SM_10006detail8for_each13static_kernelINS2_12policy_hub_t12policy_500_tEmN6thrust17_V_300304_SM_10008cuda_cub20__uninitialized_fill7functorINS7_10device_ptrIhEEhEEEEvT0_T1_' for 'sm_100a'
+ptxas info    : Function properties for _ZN3cub17_V_300304_SM_10006detail8for_each13static_kernelINS2_12policy_hub_t12policy_500_tEmN6thrust17_V_300304_SM_10008cuda_cub20__uninitialized_fill7functorINS7_10device_ptrIhEEhEEEEvT0_T1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 10 registers, used 0 barriers
+ptxas info    : Compile time = 1.308 ms
+ptxas info    : Compiling entry function '_ZN3cub17_V_300304_SM_10006detail11EmptyKernelIvEEvv' for 'sm_100a'
+ptxas info    : Function properties for _ZN3cub17_V_300304_SM_10006detail11EmptyKernelIvEEvv
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 4 registers, used 0 barriers
+ptxas info    : Compile time = 0.297 ms

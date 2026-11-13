@@ -1,0 +1,1 @@
+/usr/local/bin/nsys profile --trace=cuda --sample=none --cpuctxsw=none --cuda-graph-trace=node --export=sqlite --output=results/nsys_S8192_P8_t31_trace /home/ubuntu/workspace/dyy/dyy_cutlass/dyy_test/op12/.venv/bin/python -B src/k3trace/run_chain.py --out results/nsys_S8192_P8_t31 --s 8192 --partitions 8 --trial 31 --arms B0\,K3 --samples 20 --warmup 20 

@@ -1,0 +1,9 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 2405958 (/usr/bin/python3.10)
+==PROF== Profiling "kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleFixupUtcmmaSm100_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_0": 0%....50%....100% - 6 passes
+==PROF== Profiling "kernel_cutlass_kernel_variants_k3optK3OptCoalescedStore_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_64648_TV_Layout_A_164864164_TV_Layout_0": 0%....50%....100% - 6 passes
+==PROF== Profiling "kernel_cutlass_kernel_flashinfergdn_kernelsblackwellgated_delta_net_cpCPDeltaRuleFixupUtcmmaSm100_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_0": 0%....50%....100% - 6 passes
+==PROF== Profiling "kernel_cutlass_kernel_variants_k3optK3OptCoalescedStore_object_at__Tiled_MMA_Thr_Layout_VMNK_11110000_Permutation_MNK_____MMA_Atom_ThrID_10_Shape_MNK_64648_TV_Layout_A_164864164_TV_Layout_0": 0%....50%....100% - 6 passes
+==PROF== Disconnected from process 2405958
+==PROF== Report: /home/ubuntu/gdn_paper_supp_20261112/gdn/results/wf_S32768_P8_t51_counters.ncu-rep

@@ -1,0 +1,51 @@
+{
+  "phase": "holdout",
+  "utc": "2026-11-13T01:50:00.244264+00:00",
+  "cases_kernel_coordinates": [
+    [
+      "8",
+      "4096",
+      "8192",
+      "512",
+      "None"
+    ],
+    [
+      "8",
+      "4096",
+      "8192",
+      "1536",
+      "None"
+    ],
+    [
+      "8",
+      "4096",
+      "8192",
+      "3072",
+      "None"
+    ],
+    [
+      "11",
+      "768",
+      "32768",
+      "512",
+      "None"
+    ],
+    [
+      "11",
+      "768",
+      "32768",
+      "1536",
+      "None"
+    ],
+    [
+      "11",
+      "768",
+      "32768",
+      "3072",
+      "None"
+    ]
+  ],
+  "treatment": "after issuing stage k, both producer CTAs add a 512-cycle inter-issue gap if another stage follows",
+  "binary": "/home/ubuntu/gdn_paper_supp_20261112/op2/bin/op2_schedule",
+  "natural_gpu_clocks": true
+}

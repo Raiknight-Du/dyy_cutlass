@@ -1,0 +1,198 @@
+{
+  "S": 32768,
+  "P": 8,
+  "C": 4096,
+  "arms": [
+    "B0",
+    "K3"
+  ],
+  "trial": 12,
+  "repo_pin": "e77a4a0d276367895c3b50a642fd8f326c03fb72",
+  "inputs_sha256": "5953da3926a1ab008c08b995fe574688c40edbb91ad0db561a8204c796c97d98",
+  "input_signature": "eb62764b4f2bc92c04c1accddf62db3211f657a1206bdc2279e6fe006bb94d1e",
+  "runner_sha256": "785de29b46de9d90a0b35044f10ee2501a1fa4db6f36d03e99d5959d6b2cd538",
+  "input_manifest": {
+    "seed": 20293697,
+    "buffers": [
+      {
+        "q": {
+          "sha256": "604a9e35d14d8c6dae5b74c6459f7e07f869e641d45959603e3eb66dd3c0c85a",
+          "shape": [
+            32768,
+            16,
+            128
+          ],
+          "dtype": "torch.float16",
+          "bytes": 134217728
+        },
+        "k": {
+          "sha256": "b423783f2b50614e74c4b991b6130a338dc10ee4ce561a050e25860f2efbcdb3",
+          "shape": [
+            32768,
+            16,
+            128
+          ],
+          "dtype": "torch.float16",
+          "bytes": 134217728
+        },
+        "v": {
+          "sha256": "9a5737cb970e2bbffb9b4b74c57b1304ca218a76386f1fca0fd9ff7128b2acd5",
+          "shape": [
+            32768,
+            16,
+            128
+          ],
+          "dtype": "torch.float16",
+          "bytes": 134217728
+        }
+      },
+      {
+        "q": {
+          "sha256": "5d7c3080348476a890f9158a3cfdd653296e8a81e579cf4b01d8908df636b2c7",
+          "shape": [
+            32768,
+            16,
+            128
+          ],
+          "dtype": "torch.float16",
+          "bytes": 134217728
+        },
+        "k": {
+          "sha256": "358979b0f07615cce2b5150b641c6d400a60e9d5767f48d6cbaa88b187cad448",
+          "shape": [
+            32768,
+            16,
+            128
+          ],
+          "dtype": "torch.float16",
+          "bytes": 134217728
+        },
+        "v": {
+          "sha256": "ad7bd31b179813bc96e3c2339b29c9b665f4d68cff9f9b0d9b28a760da0fb06c",
+          "shape": [
+            32768,
+            16,
+            128
+          ],
+          "dtype": "torch.float16",
+          "bytes": 134217728
+        }
+      },
+      {
+        "q": {
+          "sha256": "cc9ac66428336a1c698257a5f2a4b03460dc0ff339152ed6186fcfdd34f41be3",
+          "shape": [
+            32768,
+            16,
+            128
+          ],
+          "dtype": "torch.float16",
+          "bytes": 134217728
+        },
+        "k": {
+          "sha256": "3b4be5867eb6a9a6eb40eeae37aaa81000f422b18bc61872559aae916997a88d",
+          "shape": [
+            32768,
+            16,
+            128
+          ],
+          "dtype": "torch.float16",
+          "bytes": 134217728
+        },
+        "v": {
+          "sha256": "940345fc08498565cd1a2a48c53f16fbfb4e4a73702bae4dd2c301a5fa05c696",
+          "shape": [
+            32768,
+            16,
+            128
+          ],
+          "dtype": "torch.float16",
+          "bytes": 134217728
+        }
+      },
+      {
+        "q": {
+          "sha256": "3861471536803b0d1520f35f45bdb1ed24f7395988596b0d87db2256915f9b0a",
+          "shape": [
+            32768,
+            16,
+            128
+          ],
+          "dtype": "torch.float16",
+          "bytes": 134217728
+        },
+        "k": {
+          "sha256": "87ae6bd326a9b751a5a6900ede667fd37aa40f33733d020c5b012b0aae868f12",
+          "shape": [
+            32768,
+            16,
+            128
+          ],
+          "dtype": "torch.float16",
+          "bytes": 134217728
+        },
+        "v": {
+          "sha256": "cde0accecf2088f4fc533e2a64023fa3d508f318920167785ba188894797679e",
+          "shape": [
+            32768,
+            16,
+            128
+          ],
+          "dtype": "torch.float16",
+          "bytes": 134217728
+        }
+      }
+    ],
+    "shared": {
+      "gate": {
+        "sha256": "06439b9484e3e2418cdbc16a46a681c50cacbe19b0ef22ebef498ada2a5521ad",
+        "shape": [
+          32768,
+          16
+        ],
+        "dtype": "torch.float32",
+        "bytes": 2097152
+      },
+      "beta": {
+        "sha256": "2b4f5e7b873e561092ce5a10daa77e3b8cbcef195459d49fad5ce834d888a5ac",
+        "shape": [
+          32768,
+          16
+        ],
+        "dtype": "torch.float32",
+        "bytes": 2097152
+      },
+      "initial": {
+        "sha256": "9165d85cc1fcf078f8983882c8dc0cfb88ebd743bd9c2499642b07dfb60834af",
+        "shape": [
+          1,
+          16,
+          128,
+          128
+        ],
+        "dtype": "torch.float32",
+        "bytes": 1048576
+      },
+      "cu_seqlens": {
+        "sha256": "df025aee9fdf68726fcaeac22bc0e2f4509af153894eff3e3640421f2863fb70",
+        "shape": [
+          2
+        ],
+        "dtype": "torch.int64",
+        "bytes": 16
+      }
+    },
+    "content_signature_sha256": "eb62764b4f2bc92c04c1accddf62db3211f657a1206bdc2279e6fe006bb94d1e"
+  },
+  "gpu": "NVIDIA B200",
+  "sms": 148,
+  "evict_bytes": 530579456,
+  "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "dsl": "4.7.0",
+  "timing": "CUDA Event inside graph around four kernels",
+  "clock_policy": "natural clocks",
+  "samples": 20,
+  "warmup": 20
+}

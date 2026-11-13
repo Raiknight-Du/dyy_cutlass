@@ -1,0 +1,6 @@
+{
+  "output": "exact",
+  "final_state": "exact",
+  "k3_fixed_state": "exact",
+  "buffers": 4
+}
